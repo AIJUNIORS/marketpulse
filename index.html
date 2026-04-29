@@ -1194,13 +1194,13 @@ function renderRotation(SD,el){
   const cycleMap={
     US:[
       {phase:'Early Cycle',secs:'Financials · Disc · Industrials',key:'early'},
-      {phase:'',secs:'Tech · Semis · Materials',key:'mid'},
+      {phase:'Mid Cycle',secs:'Tech · Semis · Materials',key:'mid'},
       {phase:'Late Cycle',secs:'Energy · Healthcare · Staples',key:'late'},
       {phase:'Recession',secs:'Utilities · Staples · Healthcare',key:'rec'}
     ],
     INDIA:[
       {phase:'Early Cycle',secs:'PSU Bank · Infra · Auto',key:'early'},
-      {phase:'',secs:'Metal · IT · Pvt Bank',key:'mid'},
+      {phase:'Mid Cycle',secs:'Metal · IT · Pvt Bank',key:'mid'},
       {phase:'Late Cycle',secs:'Energy · Oil & Gas · FMCG',key:'late'},
       {phase:'Recession',secs:'Pharma · Health · FMCG',key:'rec'}
     ],
@@ -1306,8 +1306,14 @@ function renderRotation(SD,el){
 }
 function renderSectNowHistory(SD,el){
   const bYtd=SD.bm.ytd,curMo=TODAY_MO;
-  let html=`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">`;
-  SD.sectors.forEach(s=>{
+  // Only rotation-eligible sectors (exclude macro and broad indices)
+  const rotSecs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
+  let html=`<div class="pnl" style="margin-bottom:10px;background:#f8fafc;border-color:#e2e8f0">
+    <div style="font-size:11px;font-weight:700;color:#374151">Now vs History — per-sector deep dive · ${rotSecs.length} sectors · benchmark: ${SD.bm.label} (${pct(bYtd)} YTD)</div>
+    <div style="font-size:9px;color:#9ca3af;margin-top:2px">Each card: YTD rank vs all prior years · MTD vs 5yr/20yr seasonal avg · Week ${TODAY_WK} signal</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">`;
+  rotSecs.forEach(s=>{
     const allY=Object.values(s.annual);
     const rank=Math.round(allY.filter(v=>v<s.ytd).length/allY.length*100);
     const worst=Math.min(...allY),best=Math.max(...allY);
@@ -1359,7 +1365,7 @@ function renderSectNowHistory(SD,el){
 }
 
 function renderSectAnnHM(SD,el){
-  const secs=SD.sectors;
+  const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   const allYrs=[...new Set(secs.flatMap(s=>Object.keys(s.annual).map(Number)))].sort();
   let h=`<div class="pnl"><div class="ptl">Annual returns — all sectors × all years</div><div style="overflow-x:auto;margin-top:8px">
     <table class="hm"><thead><tr><th class="yl" style="min-width:120px">Sector</th>${allYrs.map(y=>`<th>${y}</th>`).join('')}<th>Avg</th></tr></thead><tbody>`;
@@ -1389,10 +1395,11 @@ function renderSectMoHM(SD,el){
 function pickSect(i){curSect=i;renderSectMoHM(SECTS[curSctry],document.getElementById('cnt'));}
 
 function renderSectSeas(SD,el){
+  const rotSecs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   let html=`<div class="curr-seas" style="margin-bottom:10px">
-    <div class="cs-title">Current period vs seasonal norm — all sectors · April (Wk 17)</div>
+    <div class="cs-title">Current period vs seasonal norm — rotation sectors · April (Wk ${TODAY_WK})</div>
     <div class="cs-grid">`;
-  SD.sectors.forEach(s=>{
+  rotSecs.forEach(s=>{
     const seasMo=s.seas.avg[TODAY_MO],wkAvg=s.seas.wkAvg[TODAY_MO];
     const seasMo5=(s.seas.avg5||s.seas.avg)[TODAY_MO],wkAvg5=(s.seas.wkAvg5||s.seas.wkAvg)[TODAY_MO];
     html+=`<div class="cs-item">
@@ -1412,7 +1419,7 @@ function renderSectSeas(SD,el){
       const v=avg5_[mi],v20=avg[mi],p=Math.abs(v)/maxA,h=Math.round(p*36),h20=Math.round(Math.abs(v20)/maxA*36);
       const col=v>=0?'#16a34a':'#dc2626',bg=v>=0?'rgba(22,163,74,.15)':'rgba(220,38,38,.15)';
       const isCur=mi===TODAY_MO;
-      sg+=`<div class="sc" style="${isCur?'outline:2px solid #2563eb;border-radius:3px;':''}"><div class="sm" style="${isCur?'color:#1e40af':''}">${m}</div><div class="sbw">
+      sg+=`<div class="sc" style="${isCur?'outline:2px solid #2563eb;border-radius:3px;':''}"><div class="sm" style="${isCur?'color:#1e40af':''}">${m}${isCur?'*':''}</div><div class="sbw">
         ${v>=0?`<div style="height:${h}px;width:70%;background:${bg};border-top:2px solid ${col};border-radius:3px 3px 0 0"></div>`
               :`<div style="position:absolute;bottom:0;width:70%;height:${h}px;background:${bg};border-bottom:2px solid ${col};border-radius:0 0 3px 3px"></div>`}
       </div><div class="sv" style="color:${col};font-size:9px">${v>=0?'+':''}${v.toFixed(1)}</div>
@@ -1428,13 +1435,13 @@ function renderSectSeas(SD,el){
 }
 
 function renderStress(SD,el){
-  const secs=SD.sectors;
+  const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   const events=[{yr:2020,label:'COVID 2020'},{yr:2022,label:'Rate Hike 2022'},{yr:2021,label:'Bull 2021'}];
   let h=`<div class="pnl"><div class="ptl">Annual returns by stress event — who held up?</div>
     <div style="overflow-x:auto;margin-top:8px"><table class="rel-tbl">
     <thead><tr><th class="al">Sector</th><th>Type</th><th>Max DD</th>${events.map(e=>`<th>${e.label}</th>`).join('')}</tr></thead><tbody>`;
   secs.forEach(s=>{
-    h+=`<tr><td class="al">${s.name}</td><td><span class="badge ${s.type==='c'?'bc':'bd'}">${s.type==='c'?'Cyc':'Def'}</span></td>
+    h+=`<tr><td class="al">${s.name}</td><td><span class="badge ${s.type==='c'?'bc':s.type==='d'?'bd':'bm'}">${s.type==='c'?'Cyc':s.type==='d'?'Def':'Mac'}</span></td>
       <td style="background:#fef2f2;color:#991b1b;font-weight:800;font-family:'Courier New',monospace">${s.maxdd}%</td>`;
     events.forEach(e=>{
       const v=s.annual[e.yr];
@@ -1515,10 +1522,11 @@ async function loadLiveData(){
           // Merge into SECTS sector
           const s=SECTS[job.ctry].sectors[job.idx];
           if(d.kpi){
-            s.ytd=parseFloat(d.kpi.ytd)||s.ytd;
-            s.r1m=parseFloat(d.kpi.r1m)||s.r1m;
-            s.r3m=parseFloat(d.kpi.r3m)||s.r3m;
-            s.r1y=parseFloat(d.kpi.r1y)||s.r1y;
+            s.ytd  =parseFloat(d.kpi.ytd)  ||s.ytd;
+            s.r1m  =parseFloat(d.kpi.r1m)  ||s.r1m;
+            s.r3m  =parseFloat(d.kpi.r3m)  ||s.r3m;
+            s.r1y  =parseFloat(d.kpi.r1y)  ||s.r1y;
+            s.maxdd=parseFloat(d.kpi.maxdd) ||s.maxdd;
           }
           if(d.annual) s.annual=d.annual;
           if(d.monthly)s.monthly=d.monthly;
@@ -1529,7 +1537,17 @@ async function loadLiveData(){
     }));
   }
 
-  // 4. Re-render with live data
+  // 4. Sync benchmark YTD from live MKTS into SECTS (keeps rotation comparison fresh)
+  if(MKTS.SP    && MKTS.SP.kpi)    SECTS.US.bm.ytd    = parseFloat(MKTS.SP.kpi.ytd);
+  if(MKTS.NIFTY && MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd = parseFloat(MKTS.NIFTY.kpi.ytd);
+  if(MKTS.TSX   && MKTS.TSX.kpi)   SECTS.TSX.bm.ytd   = parseFloat(MKTS.TSX.kpi.ytd);
+
+  // 5. Sync benchmark YTD into SECTS from live MKTS data
+  if(MKTS.SP    && MKTS.SP.kpi)    SECTS.US.bm.ytd    = parseFloat(MKTS.SP.kpi.ytd);
+  if(MKTS.NIFTY && MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd = parseFloat(MKTS.NIFTY.kpi.ytd);
+  if(MKTS.TSX   && MKTS.TSX.kpi)   SECTS.TSX.bm.ytd   = parseFloat(MKTS.TSX.kpi.ytd);
+
+  // 6. Re-render with live data
   if(updated>0){
     killCharts();
     buildMktStrip();

@@ -154,7 +154,9 @@ table.hm tr:hover td{filter:brightness(.96)}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 const MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const TODAY_MO=3,TODAY_WK=17,TODAY_MTD=parseFloat('-0.4'),TODAY_WTD=parseFloat('-0.4');
+const _now=new Date(),TODAY_YR=_now.getFullYear(),TODAY_MO=_now.getMonth(),TODAY_WK=Math.max(1,Math.ceil((Math.floor((_now-new Date(_now.getFullYear(),0,1))/86400000)+1)/7));
+const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MO_NAME=MONTHS[TODAY_MO],MO_NEXT=MONTHS[(TODAY_MO+1)%12];
 
 const MKTS={
   SP:{label:'S&P 500',regime:'Compounder',rc:'c',color:'#7c3aed',
@@ -599,7 +601,7 @@ const MKTS_TK={'returns_GSPC':'SP','returns_IXIC':'NQ','returns_GSPTSE':'TSX',
   'returns_NSEI':'NIFTY','returns_GCF':'GOLD','returns_CLF':'CRUDE','returns_NGF':'NATGAS'};
 
 // Safe filename from ticker (mirrors fetch_data.py _safe() function)
-function safeTk(t){return t.replace(/[\^=.]/g,'_').replace(/_+/g,'_');}
+function safeTk(t){return t.replace(/\^/g,'').replace(/=/g,'').replace(/\./g,'_');}
 
 function pct(v){return(parseFloat(v)>=0?'+':'')+parseFloat(v).toFixed(1)+'%'}
 function pc(v){return parseFloat(v)>=0?'pos':'neg'}
@@ -721,15 +723,20 @@ function renderMktsShell(){
   const ks=Object.keys(MKTS);
   document.getElementById('atabs').innerHTML=ks.map(k=>`<div class="at ${k===curA?'on':''}" onclick="swA('${k}')">${MKTS[k].label}</div>`).join('')+
     `<div class="at ${curA==='_x'?'on':''}" onclick="swX()">Cross-Asset</div>`;
-  const tabs={overview:'Overview',position:'Now vs History',calendar:'Calendar Yr',monthly:'Monthly Heatmap',seasonality:'Seasonality',drawdown:'Drawdown'};
-  document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>
-    `<div class="st ${curSec===s?'on':''}" onclick="swSec('${s}',this)">${l}</div>`).join('');
+  // Hide section tabs when on cross-asset view — they don't apply
+  if(curA==='_x'){
+    document.getElementById('stabs').innerHTML='';
+  } else {
+    const tabs={overview:'Overview',position:'Now vs History',calendar:'Calendar Yr',monthly:'Monthly Heatmap',seasonality:'Seasonality',drawdown:'Drawdown'};
+    document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>
+      `<div class="st ${curSec===s?'on':''}" onclick="swSec('${s}',this)">${l}</div>`).join('');
+  }
   renderMktSec();
 }
 
 function swA(k){curA=k;renderMktsShell();}
 function swX(){curA='_x';renderMktsShell();}
-function swSec(s,el){curSec=s;document.querySelectorAll('.st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderMktSec();}
+function swSec(s,el){curSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderMktSec();}
 
 function renderMktSec(){
   killCharts();const cnt=document.getElementById('cnt');
@@ -748,7 +755,7 @@ function renderSectsShell(){
 }
 
 function swCtry(k){curSctry=k;curSect=0;renderSectsShell();}
-function swSSec(s,el){curSSec=s;document.querySelectorAll('.st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderSectSec();}
+function swSSec(s,el){curSSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderSectSec();}
 
 function renderSectSec(){
   killCharts();const cnt=document.getElementById('cnt');const SD=SECTS[curSctry];
@@ -759,10 +766,10 @@ function buildHM(monthly,years){
   let h=`<table class="hm"><thead><tr><th class="yl">Year</th>${MO.map(m=>`<th>${m}</th>`).join('')}<th style="background:#f3f4f6">Total</th></tr></thead><tbody>`;
   years.forEach(yr=>{
     const row=monthly[yr];if(!row)return;
-    const tot=row.slice(0,yr===2026?4:12).reduce((s,v)=>s+v,0);
+    const tot=row.slice(0,yr===TODAY_YR?TODAY_MO:12).reduce((s,v)=>s+v,0);
     h+=`<tr><td class="yl">${yr}</td>`;
     row.forEach((v,mi)=>{
-      if(yr===2026&&mi>3){h+=`<td style="color:#d1d5db;font-size:8px">·</td>`;return;}
+      if(yr===TODAY_YR&&mi>=TODAY_MO){h+=`<td style="color:#d1d5db;font-size:8px">·</td>`;return;}
       const{bg,tc}=hc(v);
       h+=`<td style="background:${bg};color:${tc}">${v>=0?'+':''}${v.toFixed(1)}</td>`;
     });
@@ -777,7 +784,7 @@ function nowBanner(D){
   const seasMo5=(D.seas.avg5||D.seas.avg)[TODAY_MO],seasWk5=(D.seas.wkAvg5||D.seas.wkAvg)[TODAY_MO];
   const allVals=Object.values(D.annual);
   const rank=Math.round(allVals.filter(v=>v<ytd).length/allVals.length*100);
-  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<2026).map(y=>D.monthly[y][TODAY_MO]).filter(v=>Math.abs(v)>0);
+  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<TODAY_YR).map(y=>D.monthly[y][TODAY_MO]).filter(v=>Math.abs(v)>0);
   const moRank=Math.round(moVals.filter(v=>v<mtd).length/moVals.length*100);
   const moPos=Math.max(0,Math.min(100,(ytd-Math.min(...allVals))/(Math.max(...allVals)-Math.min(...allVals))*100));
   const moAbove=mtd>seasMo5;const wkAbove=seasWk5>=0;
@@ -787,8 +794,8 @@ function nowBanner(D){
   if(rank>65)verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — top-tercile year, <b>${rank}th percentile</b> historically at this calendar point`);
   else if(rank<35)verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — below-average year, <b>${rank}th percentile</b> historically`);
   else verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — tracking near historical average`);
-  if(moAbove)verdictParts.push(`April running <b>above seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of Aprils)`);
-  else verdictParts.push(`April running <b>below seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`);
+  if(moAbove)verdictParts.push(`${MO_NAME} running <b>above seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of Aprils)`);
+  else verdictParts.push(`${MO_NAME} running <b>below seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`);
   if(seasNext5<-0.5)verdictParts.push(`seasonal <b>headwind</b> in May (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
   else if(seasNext5>0.5)verdictParts.push(`seasonal <b>tailwind</b> in May (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
   const curDD=parseFloat(D.kpi.curdd);
@@ -801,7 +808,7 @@ function nowBanner(D){
     <div class="now-div"></div>
     <div class="now-metric"><div class="now-label">MTD</div><div class="now-val" style="color:${mtd>=0?'#60a5fa':'#f87171'}">${D.kpi.mtd}%</div><div class="now-sub" style="color:${moAbove?'#34d399':'#f87171'}">${moAbove?'Above':'Below'} 5yr ${pct(seasMo5)}<span style="font-size:9px;color:#6b7280"> · 20yr ${pct(seasMo)}</span></div></div>
     <div class="now-div"></div>
-    <div class="now-metric"><div class="now-label">Wk 17</div><div class="now-val" style="color:${wkAbove?'#60a5fa':'#f87171'}">${pct(seasWk5)}<span style="font-size:10px;color:#6b7280"> 5yr</span></div><div class="now-sub" style="color:${wkAbove?'#34d399':'#f87171'}">20yr ${pct(seasWk)} · +ve ${D.seas.wkPos[TODAY_MO]}%</div></div>
+    <div class="now-metric"><div class="now-label">Wk ${TODAY_WK}</div><div class="now-val" style="color:${wkAbove?'#60a5fa':'#f87171'}">${pct(seasWk5)}<span style="font-size:10px;color:#6b7280"> 5yr</span></div><div class="now-sub" style="color:${wkAbove?'#34d399':'#f87171'}">20yr ${pct(seasWk)} · +ve ${D.seas.wkPos[TODAY_MO]}%</div></div>
     <div class="now-div"></div>
     <div class="pos-bar-wrap"><div class="pos-bar-label" style="color:#9ca3af;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px">YTD rank vs history</div>
       <div class="pos-track"><div class="pos-fill" style="width:${moPos}%;background:${ytd>=0?'#3b82f6':'#ef4444'}"></div></div>
@@ -817,6 +824,40 @@ function renderOverview(D,el){
   const bestY=yrs[vals.indexOf(best)],worstY=yrs[vals.indexOf(worst)];
   const cum=[];let c=100;yrs.forEach((y,i)=>{c*=(1+vals[i]/100);cum.push(parseFloat(c.toFixed(1)));});
   const moYrs=Object.keys(D.monthly).map(Number).sort();
+
+  // Consistency score — computed from monthly data
+  const allMoRets=moYrs.flatMap(y=>D.monthly[y].filter(v=>v!==0));
+  const allQtrRets=moYrs.flatMap(y=>[0,3,6,9].map(s=>D.monthly[y].slice(s,s+3).reduce((a,v)=>a+v,0)).filter(v=>v!==0));
+  const allYrRets=Object.values(D.annual);
+  const consistPct={
+    mo: allMoRets.length?Math.round(allMoRets.filter(v=>v>0).length/allMoRets.length*100):0,
+    qtr:allQtrRets.length?Math.round(allQtrRets.filter(v=>v>0).length/allQtrRets.length*100):0,
+    yr: allYrRets.length?Math.round(allYrRets.filter(v=>v>0).length/allYrRets.length*100):0
+  };
+
+  // Best/worst streak — consecutive positive/negative months
+  let curStreak=0,bestStreak=0,worstStreak=0,streakDir=0;
+  allMoRets.forEach(v=>{
+    const d=v>0?1:-1;
+    if(d===streakDir){curStreak++;}else{curStreak=1;streakDir=d;}
+    if(streakDir===1&&curStreak>bestStreak)bestStreak=curStreak;
+    if(streakDir===-1&&curStreak>worstStreak)worstStreak=curStreak;
+  });
+  // Current streak from end of series
+  const moFlat=[...allMoRets];
+  let curStk=0,curStkDir=moFlat.length?(moFlat[moFlat.length-1]>0?1:-1):0;
+  for(let i=moFlat.length-1;i>=0;i--){
+    if((moFlat[i]>0?1:-1)===curStkDir)curStk++;else break;
+  }
+
+  // Avg monthly move (volatility proxy)
+  const avgMove=allMoRets.length?parseFloat((allMoRets.reduce((a,v)=>a+Math.abs(v),0)/allMoRets.length).toFixed(1)):0;
+  const maxSingleMo=allMoRets.length?parseFloat(Math.max(...allMoRets.map(Math.abs)).toFixed(1)):0;
+
+  // Seasonal dual window for overview (fallback: avg5->avg for embedded data)
+  const seasMo=D.seas?(D.seas.avg||[])[TODAY_MO]||0:0;
+  const seasMo5=D.seas?((D.seas.avg5||D.seas.avg)||[])[TODAY_MO]||0:0;
+
   el.innerHTML=nowBanner(D)+`
   <div class="krow">
     <div class="kpi ${lc(D.kpi.mtd)}"><div class="kl">MTD</div><div class="kv ${pc(D.kpi.mtd)}">${D.kpi.mtd}%</div></div>
@@ -838,12 +879,23 @@ function renderOverview(D,el){
       <div class="chips">
         <div class="chip"><span class="cl">Best</span><span class="pos">${bestY} ${pct(best)}</span></div>
         <div class="chip"><span class="cl">Worst</span><span class="neg">${worstY} ${pct(worst)}</span></div>
-        <div class="chip"><span class="cl">Mo</span>${D.consistPct.mo}% +ve</div>
-        <div class="chip"><span class="cl">Qtr</span>${D.consistPct.qtr}%</div>
-        <div class="chip"><span class="cl">Yr</span>${D.consistPct.yr}%</div>
+        <div class="chip"><span class="cl">Mo +ve</span><span class="${consistPct.mo>=60?'pos':consistPct.mo>=40?'':'neg'}">${consistPct.mo}%</span></div>
+        <div class="chip"><span class="cl">Qtr +ve</span><span class="${consistPct.qtr>=60?'pos':consistPct.qtr>=40?'':'neg'}">${consistPct.qtr}%</span></div>
+        <div class="chip"><span class="cl">Yr +ve</span><span class="${consistPct.yr>=60?'pos':consistPct.yr>=40?'':'neg'}">${consistPct.yr}%</span></div>
       </div>
       <div style="font-size:9px;color:#9ca3af;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">Annual record</div>
       <div class="dots">${yrs.map((y,i)=>`<div class="dot2 ${vals[i]>=0?'p':'n'}" title="${y}: ${pct(vals[i])}"></div>`).join('')}</div>
+      <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">
+        <div class="chip"><span class="cl">Avg move</span><span>±${avgMove}%</span></div>
+        <div class="chip"><span class="cl">Best mo ever</span><span class="pos">+${maxSingleMo}%</span></div>
+        <div class="chip"><span class="cl">Best streak</span><span class="pos">${bestStreak} mo ↑</span></div>
+        <div class="chip"><span class="cl">Worst streak</span><span class="neg">${worstStreak} mo ↓</span></div>
+        <div class="chip"><span class="cl">Now streak</span><span class="${curStkDir>0?'pos':'neg'}">${curStk} mo ${curStkDir>0?'↑':'↓'}</span></div>
+        <div class="chip" style="border-left:2px solid ${seasMo5>=0?'#16a34a':'#dc2626'}">
+          <span class="cl">${MO_NAME} seas 5yr</span><span class="${seasMo5>=0?'pos':'neg'}">${seasMo5>=0?'+':''}${seasMo5}%</span>
+          <span style="color:#9ca3af;margin-left:4px">20yr ${seasMo>=0?'+':''}${seasMo}%</span>
+        </div>
+      </div>
     </div>
     <div class="pnl"><div class="ptl">Cumulative growth (base 100)</div>
       <div style="position:relative;height:110px;margin-top:4px">
@@ -877,7 +929,7 @@ function renderPosition(D,el){
   const wkAvg=D.seas.wkAvg[TODAY_MO],wkPos=D.seas.wkPos[TODAY_MO];
   const wkAvg5=(D.seas.wkAvg5||D.seas.wkAvg)[TODAY_MO],wkPos5=(D.seas.wkPos5||D.seas.wkPos)[TODAY_MO];
   const curDD=parseFloat(D.kpi.curdd),r3m=parseFloat(D.kpi.r3m);
-  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<2026).map(y=>D.monthly[y][TODAY_MO]).filter(v=>Math.abs(v)>0||v===0);
+  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<TODAY_YR).map(y=>D.monthly[y][TODAY_MO]).filter(v=>Math.abs(v)>0||v===0);
   const moWorst=Math.min(...moVals),moBest=Math.max(...moVals);
   const moPos=Math.max(0,Math.min(100,(mtd-moWorst)/(moBest-moWorst)*100));
   const moRank=Math.round(moVals.filter(v=>v<mtd).length/moVals.length*100);
@@ -887,13 +939,13 @@ function renderPosition(D,el){
   if(rank>66)flags.push({c:'g',t:`YTD ${D.kpi.ytd}% — top tercile across all years (${rank}th percentile)`});
   else if(rank<33)flags.push({c:'r',t:`YTD ${D.kpi.ytd}% — bottom tercile historically (${rank}th percentile)`});
   else flags.push({c:'y',t:`YTD ${D.kpi.ytd}% — mid-range year (${rank}th percentile)`});
-  if(mtd>seasMo5+0.5)flags.push({c:'g',t:`April MTD ${D.kpi.mtd}% — outpacing seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
-  else if(mtd<seasMo5-0.5)flags.push({c:'r',t:`April MTD ${D.kpi.mtd}% — lagging seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
+  if(mtd>seasMo5+0.5)flags.push({c:'g',t:`${MO_NAME} MTD ${D.kpi.mtd}% — outpacing seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
+  else if(mtd<seasMo5-0.5)flags.push({c:'r',t:`${MO_NAME} MTD ${D.kpi.mtd}% — lagging seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
   else flags.push({c:'y',t:`April MTD ${D.kpi.mtd}% — tracking seasonal norm (5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`});
-  if(wkAvg5>0.1)flags.push({c:'g',t:`Week ${TODAY_WK} historically positive — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
-  else if(wkAvg5<-0.1)flags.push({c:'r',t:`Week ${TODAY_WK} historically negative — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
-  if(seasNext5>0.5)flags.push({c:'g',t:`May ahead — historically strong (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
-  else if(seasNext5<-0.5)flags.push({c:'r',t:`May ahead — historically weak (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
+  if(wkAvg5>0.1)flags.push({c:'g',t:`Wk ${TODAY_WK} historically positive — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
+  else if(wkAvg5<-0.1)flags.push({c:'r',t:`Wk ${TODAY_WK} historically negative — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
+  if(seasNext5>0.5)flags.push({c:'g',t:`${MO_NEXT} ahead — historically strong (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
+  else if(seasNext5<-0.5)flags.push({c:'r',t:`${MO_NEXT} ahead — historically weak (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
   if(curDD<-10)flags.push({c:'r',t:`${Math.abs(curDD).toFixed(1)}% below peak — in meaningful drawdown`});
   else if(curDD>=0)flags.push({c:'g',t:`At or near all-time high — ${Math.abs(curDD).toFixed(1)}% from peak`});
   else flags.push({c:'y',t:`${Math.abs(curDD).toFixed(1)}% below peak — mild pullback`});
@@ -916,7 +968,7 @@ function renderPosition(D,el){
       </div>
     </div>
     <div class="pnl">
-      <div class="ptl">Monthly lens — April MTD vs all prior Aprils</div>
+      <div class="ptl">Monthly lens — ${MO_NAME} MTD vs all prior ${MO_NAME}s</div>
       <div style="font-size:10px;color:#6b7280;margin-bottom:5px;font-weight:500">Worst Apr ${moWorst.toFixed(1)}% ← → Best ${moBest.toFixed(1)}%</div>
       <div class="ytd-track">
         <div class="ytd-fill" style="width:${moPos}%;background:${mtd>=0?'#16a34a':'#dc2626'}"></div>
@@ -980,7 +1032,7 @@ function renderSeasonality(D,el){
   const qAvg=[0,1,2,3].map(q=>parseFloat((avg.slice(q*3,q*3+3).reduce((a,v)=>a+v,0)/3).toFixed(2)));
   const seasMo=avg[TODAY_MO],seasWk=wk[TODAY_MO];
   const seasMo5=avg5[TODAY_MO],seasWk5=wk5[TODAY_MO];
-  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<2026).map(y=>D.monthly[y][TODAY_MO]).filter(v=>v!==0||true);
+  const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<TODAY_YR).map(y=>D.monthly[y][TODAY_MO]).filter(v=>v!==0||true);
   const moWorst=Math.min(...moVals),moBest=Math.max(...moVals);
   const moPos=Math.max(0,Math.min(100,(mtd-moWorst)/(moBest-moWorst)*100));
   let sg=`<div class="seas-grid">`;
@@ -1012,7 +1064,7 @@ function renderSeasonality(D,el){
     <div class="cs-title">Current month vs seasonal norm — April (Week 17) · * = current period</div>
     <div class="cs-grid">
       <div class="cs-item">
-        <div class="cs-label">April MTD so far</div>
+        <div class="cs-label">${MO_NAME} MTD so far</div>
         <div class="cs-val" style="color:${mtd>=0?'#60a5fa':'#f87171'}">${D.kpi.mtd}%</div>
         <div class="cs-sub">vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)} · ${mtd>seasMo5?'above':'below'} 5yr norm</div>
         <div class="cs-bar"><div class="cs-fill" style="width:${moPos}%;background:${mtd>=0?'#3b82f6':'#ef4444'}"></div></div>
@@ -1180,7 +1232,7 @@ function renderCross(el){
   }
   el.innerHTML=tabBar+body;
 }
-function setCxTab(t){window.cxTab=t;renderMktSec();}
+function setCxTab(t){window.cxTab=t;renderCross(document.getElementById("cnt"));}
 
 function renderRotation(SD,el){
   const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
@@ -1206,13 +1258,12 @@ function renderRotation(SD,el){
     ],
     TSX:[
       {phase:'Early Cycle',secs:'Financials · Industrials · Disc',key:'early'},
-      {phase:'',secs:'Materials · Technology · Energy',key:'mid'},
+      {phase:'Mid Cycle',secs:'Materials · Technology · Energy',key:'mid'},
       {phase:'Late Cycle',secs:'Energy · Gold · Healthcare',key:'late'},
       {phase:'Recession',secs:'Utilities · Staples · Telecom',key:'rec'}
     ]
   };
   const cycles=cycleMap[curSctry]||cycleMap.US;
-  const ap=computedPhase.toLowerCase();
   // Compute phase from data — no hardcoded opinions
   const breadthPct=Math.round(aboveBm/secs.length*100);
   const cycLead=cycAvg>defAvg;
@@ -1221,6 +1272,7 @@ function renderRotation(SD,el){
   const computedPhase=bothNeg?'Recession':
     (!cycLead&&defAvg>0&&defAvg>cycAvg+1)?'Late Cycle':
     (cycLead&&bothPos&&breadthPct>55)?'Mid Cycle':'Early/Mixed';
+  const ap=computedPhase.toLowerCase();
 
   // Best and worst sector from data
   const bestSec=secs.reduce((a,b)=>b.ytd>a.ytd?b:a);
@@ -1292,7 +1344,7 @@ function renderRotation(SD,el){
         return`<tr>
           <td class="al">${s.name}</td>
           <td><span class="badge ${s.type==='c'?'bc':s.type==='d'?'bd':'bm'}" style="font-size:8px">${s.type==='c'?'C':s.type==='d'?'D':'M'}</span></td>
-          <td style="color:${s.r1m>=0?'#15803d':'#991b1b'}">${pct(s.r1m)}</td>
+          <td style="color:${(s.mtd||s.r1m)>=0?'#15803d':'#991b1b'}">${pct(s.mtd||s.r1m)}</td>
           <td style="color:${s.ytd>=0?'#15803d':'#991b1b'};font-weight:800">${pct(s.ytd)}</td>
           <td style="color:${rel>=0?'#15803d':'#991b1b'};background:${rel>=0?'#f0fdf4':'#fef2f2'};font-weight:800">${rel>=0?'+':''}${rel}%</td>
           <td style="color:${s.r1m>=0?'#15803d':'#991b1b'}">${pct(s.r1m)}</td>
@@ -1323,7 +1375,7 @@ function renderSectNowHistory(SD,el){
     const seasMo5=(s.seas.avg5||s.seas.avg)[curMo],seasNext5=(s.seas.avg5||s.seas.avg)[(curMo+1)%12];
     const wkAvg=s.seas.wkAvg[curMo],wkPos=s.seas.wkPos[curMo];
     const wkAvg5=(s.seas.wkAvg5||s.seas.wkAvg)[curMo],wkPos5=(s.seas.wkPos5||s.seas.wkPos)[curMo];
-    const moVals=Object.keys(s.monthly||{}).filter(y=>parseInt(y)<2026).map(y=>s.monthly[y][curMo]).filter(v=>v!==undefined);
+    const moVals=Object.keys(s.monthly||{}).filter(y=>parseInt(y)<TODAY_YR).map(y=>s.monthly[y][curMo]).filter(v=>v!==undefined);
     const moWorst=moVals.length?Math.min(...moVals):-10,moBest=moVals.length?Math.max(...moVals):10;
     const mtdProxy=s.r1m;
     const moPos=Math.max(0,Math.min(100,(mtdProxy-moWorst)/(moBest-moWorst)*100));
@@ -1352,7 +1404,7 @@ function renderSectNowHistory(SD,el){
         <div class="chip" style="font-size:9px"><span class="cl">20yr</span><b class="${seasMo>=0?'pos':'neg'}">${pct(seasMo)}</b></div>
         <div class="chip" style="font-size:9px"><span class="cl">+ve</span><b>${s.seas.posRate[curMo]}%</b></div>
       </div>
-      <div class="ptl" style="margin-bottom:3px">Weekly lens (Wk 17)</div>
+      <div class="ptl" style="margin-bottom:3px">Weekly lens (Wk ${TODAY_WK})</div>
       <div class="chips" style="margin-bottom:6px">
         <div class="chip" style="font-size:9px;background:#fffbeb;border-color:#fde68a"><span class="cl">5yr</span><b style="color:${wkAvg5>=0?'#92400e':'#991b1b'}">${pct(wkAvg5)}</b></div>
         <div class="chip" style="font-size:9px;background:#fffbeb;border-color:#fde68a"><span class="cl">20yr</span><b style="color:${wkAvg>=0?'#92400e':'#991b1b'}">${pct(wkAvg)}</b></div>
@@ -1523,10 +1575,13 @@ async function loadLiveData(){
           const s=SECTS[job.ctry].sectors[job.idx];
           if(d.kpi){
             s.ytd  =parseFloat(d.kpi.ytd)  ||s.ytd;
+            s.mtd  =parseFloat(d.kpi.mtd)  ||s.mtd||0;
             s.r1m  =parseFloat(d.kpi.r1m)  ||s.r1m;
             s.r3m  =parseFloat(d.kpi.r3m)  ||s.r3m;
+            s.r6m  =parseFloat(d.kpi.r6m)  ||s.r6m||0;
             s.r1y  =parseFloat(d.kpi.r1y)  ||s.r1y;
             s.maxdd=parseFloat(d.kpi.maxdd) ||s.maxdd;
+            s.curdd=parseFloat(d.kpi.curdd) ||s.curdd||0;
           }
           if(d.annual) s.annual=d.annual;
           if(d.monthly)s.monthly=d.monthly;
@@ -1542,10 +1597,7 @@ async function loadLiveData(){
   if(MKTS.NIFTY && MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd = parseFloat(MKTS.NIFTY.kpi.ytd);
   if(MKTS.TSX   && MKTS.TSX.kpi)   SECTS.TSX.bm.ytd   = parseFloat(MKTS.TSX.kpi.ytd);
 
-  // 5. Sync benchmark YTD into SECTS from live MKTS data
-  if(MKTS.SP    && MKTS.SP.kpi)    SECTS.US.bm.ytd    = parseFloat(MKTS.SP.kpi.ytd);
-  if(MKTS.NIFTY && MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd = parseFloat(MKTS.NIFTY.kpi.ytd);
-  if(MKTS.TSX   && MKTS.TSX.kpi)   SECTS.TSX.bm.ytd   = parseFloat(MKTS.TSX.kpi.ytd);
+
 
   // 6. Re-render with live data
   if(updated>0){

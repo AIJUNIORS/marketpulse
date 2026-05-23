@@ -194,30 +194,29 @@ table.hm tr:hover td{filter:brightness(.96)}
 
 
 
-/* ── SURGICAL TECHNICAL TAB FIX OVERRIDES ───────────────────────── */
-.tech-stack{display:flex;flex-direction:column;gap:10px;margin-bottom:10px}
-.tech-layout{display:block}
-.tech-buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:10px}
-.tech-bucket{background:#fff;border:1px solid #e5e7eb;border-left:3px solid #2563eb;border-radius:8px;padding:10px 12px}
-.tech-bucket-l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;font-weight:800;margin-bottom:4px}
-.tech-bucket-v{font-size:22px;font-family:'Courier New',monospace;font-weight:900;color:#111827;line-height:1}
-.tech-bucket-s{font-size:9px;color:#9ca3af;margin-top:4px;line-height:1.35}
-.tech-panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
-.tech-filter-count{font-size:10px;color:#6b7280;font-weight:700}
-.tech-filters{display:grid;grid-template-columns:minmax(180px,2fr) repeat(4,minmax(130px,1fr));gap:7px;margin-bottom:10px}
-.tech-input{border:1px solid #d1d5db;background:#fff;border-radius:6px;padding:7px 9px;font-size:11px;color:#111827;font-weight:600;min-width:0}
-.tech-input:focus{outline:2px solid #bfdbfe;border-color:#60a5fa}
-.tech-table-wrap{width:100%;overflow-x:auto;border-radius:8px;border:1px solid #e5e7eb;background:#fff;margin-bottom:0}
-.tech-table-wrap.compact .tech-table{min-width:780px}
-.tech-table{width:100%;border-collapse:collapse;font-size:10px;min-width:1180px}
-.tech-table th{position:sticky;top:0;z-index:1;background:#f9fafb;color:#6b7280;font-size:9px;text-transform:uppercase;letter-spacing:.5px;padding:7px 8px;text-align:left;border-bottom:1px solid #e5e7eb;white-space:nowrap}
-.tech-table td{padding:7px 8px;border-bottom:1px solid #f3f4f6;font-weight:600;white-space:nowrap;vertical-align:middle}
-.tech-table tr:hover td{background:#f9fafb}
-.tech-table .num{text-align:right;font-family:'Courier New',monospace;font-weight:800}
-.tech-table .tk{font-family:'Courier New',monospace;color:#475569;font-weight:900}
-.status-cpr{background:#e0f2fe;color:#075985}.status-missing{background:#f3f4f6;color:#6b7280}.cpr-missing{background:#f3f4f6;color:#6b7280}
-#techUniverseCards{display:none}
-@media(max-width:760px){.tech-filters{grid-template-columns:1fr}.tech-kpis{grid-template-columns:repeat(2,1fr)}.tech-table-wrap{display:none}.tech-cards,#techUniverseCards{display:flex}.tech-buckets{grid-template-columns:1fr 1fr}.tech-stack{gap:8px}}
+/* ── UNIFIED UNIVERSE RECONFIGURATION CSS ───────────────────────── */
+.uni-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.uni-input{border:1px solid #d1d5db;background:#fff;border-radius:6px;padding:7px 9px;font-size:11px;color:#111827;font-weight:600;min-width:120px}
+.uni-input:focus{outline:2px solid #bfdbfe;border-color:#60a5fa}
+.uni-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:10px}
+.uni-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:10px 12px;border-left:3px solid #2563eb}
+.uni-l{font-size:9px;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;font-weight:800;margin-bottom:4px}
+.uni-v{font-size:20px;font-family:'Courier New',monospace;font-weight:900;color:#111827;line-height:1}
+.uni-s{font-size:9px;color:#9ca3af;margin-top:4px;line-height:1.35}
+.uni-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid #e5e7eb;background:#fff}
+.uni-table{width:100%;border-collapse:collapse;font-size:10px;min-width:980px}
+.uni-table th{position:sticky;top:0;z-index:1;background:#f9fafb;color:#6b7280;font-size:9px;text-transform:uppercase;letter-spacing:.5px;padding:7px 8px;text-align:left;border-bottom:1px solid #e5e7eb;white-space:nowrap}
+.uni-table td{padding:7px 8px;border-bottom:1px solid #f3f4f6;font-weight:600;white-space:nowrap;vertical-align:middle}
+.uni-table tr:hover td{background:#f9fafb}
+.uni-table .num{text-align:right;font-family:'Courier New',monospace;font-weight:800}
+.uni-muted{font-size:10px;color:#6b7280;line-height:1.5}
+.uni-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.uni-title{font-size:11px;font-weight:900;color:#374151;text-transform:uppercase;letter-spacing:.8px}
+.uni-pill{display:inline-block;border-radius:999px;padding:2px 7px;font-size:9px;font-weight:900;letter-spacing:.3px;background:#f3f4f6;color:#374151}
+.uni-status-s2{background:#7f1d1d;color:#fee2e2}.uni-status-s1{background:#fee2e2;color:#991b1b}.uni-status-piv{background:#ffedd5;color:#9a3412}.uni-status-ok{background:#dcfce7;color:#166534}.uni-status-cpr{background:#e0f2fe;color:#075985}
+.uni-mobile{display:none;gap:8px;flex-direction:column}
+.uni-mcard{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:10px 12px}
+@media(max-width:760px){.uni-table-wrap{display:none}.uni-mobile{display:flex}.uni-toolbar{display:grid;grid-template-columns:1fr}.uni-grid{grid-template-columns:repeat(2,1fr)}}
 
 </style>
 </head>
@@ -946,22 +945,152 @@ function maCard(item){
 }
 
 // ── CORE APP ─────────────────────────────────────────────────────────────────
-let mode='markets',curA='SP',curSec='overview',curSect=0,curSctry='US',curSSec='rotation',curPeriod='ytd',curTechTf='weekly',techSummary=null,charts={};
+let mode='markets',curA='SP',curSec='overview',curSect=0,curSctry='ALL',curSSec='rotation',curPeriod='ytd',curTechTf='weekly',techSummary=null,charts={};
+const APP={universe:{weekly:[],monthly:[],annual:[]},metadata:null,legacy:{MKTS,SECTS}};
+
+// ── UNIFIED UNIVERSE INTEGRATION LAYER ───────────────────────────────────────
+function htmlEsc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function normTk(v){return String(v||'').toUpperCase().replace(/^RETURNS_/,'').replace(/[^A-Z0-9]/g,'');}
+function firstNonNull(...vals){for(const v of vals){if(v!==undefined&&v!==null&&v!=='')return v;}return null;}
+function nval(v){const n=safeNum(v);return n===null?null:n;}
+function fmtPctVal(v){const n=nval(v);return n===null?'--':(n>=0?'+':'')+n.toFixed(1)+'%';}
+function fmtNumVal(v,d=2){const n=nval(v);return n===null?'--':Number(n).toFixed(d);}
+function inferRegion(r){
+  const t=String(r.ticker||r.tk||'').toUpperCase(),g=String(r.group||'').toUpperCase(),lab=String(r.label||r.name||'').toUpperCase();
+  if(t.endsWith('.TO')||t.endsWith('_TO')||g.includes('CANADA')||g.includes('TSX')||lab.includes('TSX'))return'Canada';
+  if(t.endsWith('.NS')||t.endsWith('_NS')||t.includes('NSE')||g.includes('INDIA')||lab.includes('NIFTY'))return'India';
+  if(g.includes('CRYPTO')||['BTC-USD','ETH-USD','BTCUSD','ETHUSD'].includes(t))return'Crypto';
+  if(g.includes('COMMOD')||['GC=F','CL=F','NG=F','GCF','CLF','NGF'].includes(t))return'Commodity';
+  if(g.includes('BOND')||g.includes('TREASURY')||['TLT','IEF','SHY','LQD','HYG'].includes(t))return'Bonds';
+  return'US';
+}
+function inferAssetClass(r){
+  const g=String(r.group||'').toLowerCase(),t=String(r.ticker||'').toUpperCase();
+  if(g.includes('crypto')||t.includes('BTC')||t.includes('ETH'))return'Crypto';
+  if(g.includes('bond')||g.includes('treasury')||['TLT','IEF','SHY','LQD','HYG'].includes(t))return'Bond';
+  if(g.includes('commod')||g.includes('gold')||g.includes('oil')||['GC=F','CL=F','NG=F','GLD','GDX','USO','UNG'].includes(t))return'Commodity';
+  if(g.includes('currency')||t.includes('USDINR')||t.includes('CAD'))return'Currency';
+  if(g.includes('volatility')||t.includes('VIX'))return'Volatility';
+  if(g.includes('sector')||g.includes('technology')||g.includes('financial')||g.includes('energy')||g.includes('health')||g.includes('utility')||g.includes('material'))return'Sector';
+  return'ETF';
+}
+function cleanStatus(r,price,pivot,s1,s2){
+  const s=firstNonNull(r.status,r.pivot_status,r.price_status,r.zone_status);
+  if(s)return String(s);
+  if(price!==null&&s2!==null&&price<s2)return'Below S2';
+  if(price!==null&&s1!==null&&price<s1)return'Below S1';
+  if(price!==null&&pivot!==null&&price<pivot)return'Below Pivot';
+  if(price!==null&&pivot!==null&&price>=pivot)return'Above Pivot';
+  return'Unknown';
+}
+function cprStatus(r){return firstNonNull(r.price_vs_cpr,r.cpr_position,r.cpr_status,'--');}
+function statusClass(status){
+  if(status==='Below S2')return'uni-status-s2';
+  if(status==='Below S1')return'uni-status-s1';
+  if(status==='Below Pivot')return'uni-status-piv';
+  if(String(status).includes('CPR'))return'uni-status-cpr';
+  if(status==='Unknown')return'';
+  return'uni-status-ok';
+}
+function perfField(tf){return tf==='weekly'?'r1m':(tf==='monthly'?'mtd':'ytd');}
+function getRawTechRows(tf){
+  if(!techSummary)return[];
+  if(Array.isArray(techSummary))return techSummary;
+  const block=techSummary[tf]||{};
+  return block.all||block.rows||block.instruments||block.below_pivot||techSummary.all||techSummary.rows||techSummary.instruments||[];
+}
+function normalizeUniverseRow(r,tf){
+  const price=nval(firstNonNull(r.last_close,r.price,r.close,r.current_price));
+  const pivot=nval(r.pivot),s1=nval(r.s1),s2=nval(r.s2),r1=nval(r.r1),bc=nval(r.bc),tc=nval(r.tc);
+  const ticker=String(firstNonNull(r.ticker,r.symbol,r.tk,'')).trim();
+  const name=String(firstNonNull(r.label,r.name,r.long_name,ticker)).trim();
+  const lensReturn=nval(firstNonNull(r[perfField(tf)],r.selected_return,r.lens_return,r.r1m,r.mtd,r.ytd));
+  const dd=nval(firstNonNull(r.current_drawdown,r.curdd,r.drawdown));
+  const status=cleanStatus(r,price,pivot,s1,s2);
+  let weakness=nval(firstNonNull(r.weakness_rank,r.weakness_score));
+  if(weakness===null){weakness=(status==='Below S2'?4:status==='Below S1'?3:status==='Below Pivot'?2:status==='Above Pivot'?0:1)+(dd!==null?Math.min(4,Math.abs(Math.min(dd,0))/10):0);}
+  const region=String(firstNonNull(r.region,inferRegion({...r,ticker,name}))).trim();
+  const group=String(firstNonNull(r.group,r.category,r.sector,inferAssetClass({...r,ticker,name}))).trim();
+  const cprType=String(firstNonNull(r.cpr_type,r.cprType,'')).trim();
+  const cprWidth=nval(firstNonNull(r.cpr_width_pct,r.cpr_width,r.cpr_pct));
+  return {...r,ticker,name,label:name,tk:ticker,group,region,assetClass:inferAssetClass({...r,ticker,group}),price,last_close:price,
+    daily_change:nval(firstNonNull(r.daily_change,r.change)),daily_change_pct:nval(firstNonNull(r.daily_change_pct,r.change_pct)),
+    lens_return:lensReturn,selected_return:lensReturn,ytd:nval(r.ytd),mtd:nval(r.mtd),r1m:nval(r.r1m),r3m:nval(r.r3m),r6m:nval(r.r6m),r1y:nval(r.r1y),
+    current_drawdown:dd,max_drawdown:nval(firstNonNull(r.max_drawdown,r.maxdd)),pivot,s1,s2,r1,bc,tc,
+    cpr_type:cprType,cpr_width_pct:cprWidth,price_vs_cpr:cprStatus(r),inside_cpr:cprStatus(r)==='Inside CPR',status,weakness_rank:weakness,
+    signal:String(firstNonNull(r.signal,r.dip_zone,r.zone,status==='Below S2'?'Best Buy Area':status==='Below S1'?'Better Buy Area':status==='Below Pivot'?'Good Buy Area':cprStatus(r)==='Inside CPR'?'Compression Watch':'Watch'))};
+}
+function buildUniverse(){
+  ['weekly','monthly','annual'].forEach(tf=>{
+    const seen=new Set();
+    APP.universe[tf]=getRawTechRows(tf).map(r=>normalizeUniverseRow(r,tf)).filter(r=>{
+      const key=normTk(r.ticker)+'|'+r.group+'|'+r.name;
+      if(!r.ticker&& !r.name)return false;
+      if(seen.has(key))return false;seen.add(key);return true;
+    });
+  });
+  applyUniverseToLegacy();
+}
+function getUniverseRows(tf=curTechTf){
+  if(APP.universe[tf]&&APP.universe[tf].length)return APP.universe[tf];
+  const seen=new Set();
+  return getRawTechRows(tf).map(r=>normalizeUniverseRow(r,tf)).filter(r=>{const key=normTk(r.ticker)+'|'+r.group+'|'+r.name;if(seen.has(key))return false;seen.add(key);return true;});
+}
+function matchUniverseByTickers(tickers,tf='weekly'){
+  const set=tickers.map(normTk);
+  return getUniverseRows(tf).find(r=>set.includes(normTk(r.ticker))||set.includes(normTk(r.name)));
+}
+function overlayLegacyItem(item,row){
+  if(!item||!row)return;
+  item.price=row.price??item.price;item.daily_change=row.daily_change??item.daily_change;item.daily_change_pct=row.daily_change_pct??item.daily_change_pct;
+  item.ma50=row.ma50??item.ma50;item.ma200=row.ma200??item.ma200;item.week52_high=row.week52_high??item.week52_high;item.week52_low=row.week52_low??item.week52_low;
+  item.zone=row.signal||row.status||item.zone;
+  item.ytd=row.ytd??item.ytd;item.r1m=row.r1m??item.r1m;item.r3m=row.r3m??item.r3m;item.r1y=row.r1y??item.r1y;item.maxdd=row.max_drawdown??item.maxdd;
+  item.current_drawdown=row.current_drawdown??item.current_drawdown;
+  if(item.kpi){item.kpi.ytd=row.ytd!==null?fmtPctVal(row.ytd).replace('%',''):item.kpi.ytd;item.kpi.r1m=row.r1m!==null?fmtPctVal(row.r1m).replace('%',''):item.kpi.r1m;item.kpi.curdd=row.current_drawdown!==null?fmtPctVal(row.current_drawdown).replace('%',''):item.kpi.curdd;}
+}
+function applyUniverseToLegacy(){
+  const m={SP:['^GSPC','GSPC','SPY','VOO','VFV.TO','VFV_TO'],NQ:['^IXIC','IXIC','QQQ','HXQ.TO'],TSX:['^GSPTSE','GSPTSE','XIU.TO','XIC.TO'],NIFTY:['^NSEI','NSEI','NIFTYBEES.NS'],GOLD:['GC=F','GCF','GLD','CGL.TO','GOLDBEES.NS'],CRUDE:['CL=F','CLF','USO'],NATGAS:['NG=F','NGF','UNG']};
+  Object.entries(m).forEach(([k,tks])=>overlayLegacyItem(MKTS[k],matchUniverseByTickers(tks)));
+  Object.values(SECTS).forEach(sd=>(sd.sectors||[]).forEach(sec=>overlayLegacyItem(sec,matchUniverseByTickers([sec.tk,sec.name]))));
+}
+function uniKpis(rows){
+  const total=rows.length,pos=rows.filter(r=>(r.lens_return??0)>0).length,neg=rows.filter(r=>(r.lens_return??0)<0).length;
+  const belowP=rows.filter(r=>['Below Pivot','Below S1','Below S2'].includes(r.status)).length;
+  const belowS1=rows.filter(r=>['Below S1','Below S2'].includes(r.status)).length;
+  const belowS2=rows.filter(r=>r.status==='Below S2').length;
+  const cpr=rows.filter(r=>r.price_vs_cpr==='Inside CPR').length;
+  return {total,pos,neg,belowP,belowS1,belowS2,cpr};
+}
+function universeTable(rows,limit=9999){
+  const view=rows.slice(0,limit);
+  return `<div class="uni-table-wrap"><table class="uni-table"><thead><tr><th>Ticker</th><th>Name</th><th>Region</th><th>Group</th><th class="num">Price</th><th class="num">Return</th><th class="num">YTD</th><th class="num">DD</th><th class="num">Pivot</th><th class="num">S1</th><th class="num">S2</th><th>CPR</th><th>Status</th><th>Signal</th></tr></thead><tbody>${view.map(r=>`<tr><td class="tk">${htmlEsc(r.ticker)}</td><td>${htmlEsc(r.name)}</td><td>${htmlEsc(r.region)}</td><td>${htmlEsc(r.group)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num ${Number(r.lens_return)>=0?'pos':'neg'}">${fmtPctVal(r.lens_return)}</td><td class="num ${Number(r.ytd)>=0?'pos':'neg'}">${fmtPctVal(r.ytd)}</td><td class="num neg">${fmtPctVal(r.current_drawdown)}</td><td class="num">${fmtPrice(r.pivot)}</td><td class="num">${fmtPrice(r.s1)}</td><td class="num">${fmtPrice(r.s2)}</td><td>${htmlEsc(r.cpr_type||'--')} ${r.cpr_width_pct!==null?`(${fmtNumVal(r.cpr_width_pct,2)}%)`:''}<br><span class="muted">${htmlEsc(r.price_vs_cpr||'--')}</span></td><td><span class="uni-pill ${statusClass(r.status)}">${htmlEsc(r.status)}</span></td><td>${htmlEsc(r.signal)}</td></tr>`).join('')}</tbody></table></div>`;
+}
+function universeCards(rows,limit=50){return `<div class="uni-mobile">${rows.slice(0,limit).map(r=>`<div class="uni-mcard"><div style="display:flex;justify-content:space-between;gap:8px"><div><b>${htmlEsc(r.name)}</b><div class="muted">${htmlEsc(r.ticker)} · ${htmlEsc(r.region)} · ${htmlEsc(r.group)}</div></div><div style="text-align:right"><b>${fmtPrice(r.price)}</b><div class="${Number(r.lens_return)>=0?'pos':'neg'}">${fmtPctVal(r.lens_return)}</div></div></div><div style="margin-top:6px" class="muted">${htmlEsc(r.status)} · ${htmlEsc(r.signal)} · CPR ${htmlEsc(r.price_vs_cpr||'--')}</div></div>`).join('')}</div>`;}
+
 
 function killCharts(){Object.values(charts).forEach(c=>{try{c.destroy();}catch(e){}});charts={};}
 function setMode(m,el){mode=m;document.querySelectorAll('.mt').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderAll();}
 
+
 function buildMktStrip(){
-  document.getElementById('mktStrip').innerHTML=Object.keys(MKTS).map(k=>{
-    const D=MKTS[k];
-    const ytdV=parseFloat(D.kpi.ytd);
-    const hasPrice=D.price!==null&&D.price!==undefined;
-    const{txt:chgTxt,cls:chgCls}=hasPrice?fmtChg(D.daily_change,D.daily_change_pct):{txt:'',cls:''};
-    return`<div class="ms" onclick="swA('${k}');if(mode!=='markets'){setMode('markets',document.querySelectorAll('.mt')[1])}else{renderMktsShell()}">
-      <span class="ms-n">${D.label}</span>
-      ${hasPrice?`<span class="ms-p">${fmtPrice(D.price)}</span>`:''}
-      <span class="ms-v ${ytdV>=0?'p':'n'}">${D.kpi.ytd}% YTD</span>
-      ${hasPrice&&chgTxt?`<span class="ms-v ${chgCls}" style="font-size:9px">${chgTxt}</span>`:''}
+  const headline=[
+    {label:'S&P 500',keys:['^GSPC','GSPC','SPY','VOO'],legacy:'SP'},
+    {label:'Nasdaq',keys:['^IXIC','IXIC','QQQ'],legacy:'NQ'},
+    {label:'TSX',keys:['^GSPTSE','GSPTSE','XIU.TO','XIC.TO'],legacy:'TSX'},
+    {label:'Nifty',keys:['^NSEI','NSEI','NIFTYBEES.NS'],legacy:'NIFTY'},
+    {label:'Gold',keys:['GC=F','GCF','GLD','CGL.TO'],legacy:'GOLD'},
+    {label:'Crude',keys:['CL=F','CLF','USO'],legacy:'CRUDE'},
+    {label:'Nat Gas',keys:['NG=F','NGF','UNG'],legacy:'NATGAS'}
+  ];
+  document.getElementById('mktStrip').innerHTML=headline.map(h=>{
+    const r=matchUniverseByTickers(h.keys)||{};const D=MKTS[h.legacy]||{};
+    const price=firstNonNull(r.price,D.price);const ytd=nval(firstNonNull(r.ytd,D.kpi&&D.kpi.ytd));
+    const chg=nval(firstNonNull(r.daily_change,D.daily_change)),chgPct=nval(firstNonNull(r.daily_change_pct,D.daily_change_pct));
+    const hasPrice=price!==null&&price!==undefined;const {txt:chgTxt,cls:chgCls}=hasPrice?fmtChg(chg,chgPct):{txt:'',cls:''};
+    return `<div class="ms" onclick="swA('${h.legacy}');if(mode!=='markets'){setMode('markets',document.querySelectorAll('.mt')[1])}else{renderMktsShell()}">
+      <span class="ms-n">${h.label}</span>${hasPrice?`<span class="ms-p">${fmtPrice(price)}</span>`:''}
+      <span class="ms-v ${ytd>=0?'p':'n'}">${fmtPctVal(ytd)} YTD</span>${hasPrice&&chgTxt?`<span class="ms-v ${chgCls}" style="font-size:9px">${chgTxt}</span>`:''}
     </div>`;
   }).join('');
 }
@@ -974,91 +1103,22 @@ function renderAll(){
   else{renderSectsShell();}
 }
 
-function renderPulse(){
-  document.getElementById('atabs').innerHTML='';
-  document.getElementById('stabs').innerHTML='';
-  if(!window.grpPeriod) window.grpPeriod={0:'ytd',1:'ytd',2:'ytd',3:'ytd'};
-  function gv(item,p){
-    if(p==='ytd')return item.kpi?parseFloat(item.kpi.ytd):item.ytd||0;
-    if(p==='mtd')return item.kpi?parseFloat(item.kpi.mtd)||parseFloat(item.kpi.r1m):item.r1m||0;
-    if(p==='r1y')return item.kpi?parseFloat(item.kpi.r1y):item.r1y||0;
-    return 0;
-  }
-  function avg(arr){return arr.length?parseFloat((arr.reduce((s,v)=>s+v,0)/arr.length).toFixed(1)):0;}
-  function buildGroup(g,gi){
-    const p=window.grpPeriod[gi]||'ytd';
-    const periods=['mtd','ytd','r1y'];
-    const labels={mtd:'MTD',ytd:'YTD',r1y:'1Y'};
-    const vals=periods.map(pp=>avg(g.items.map(it=>gv(it,pp))));
-    const pos=g.items.filter(it=>gv(it,p)>0).length;
-    const best=g.items.reduce((b,it)=>gv(it,p)>gv(b,p)?it:b,g.items[0]);
-    const worst=g.items.reduce((w,it)=>gv(it,p)<gv(w,p)?it:w,g.items[0]);
-    const mxA=Math.max(...g.items.map(it=>Math.abs(gv(it,p))),0.1);
-    const summary=`<div style="display:flex;align-items:center;justify-content:space-between;padding:5px 0 7px;border-bottom:1px solid #f3f4f6;margin-bottom:7px;flex-wrap:wrap;gap:4px">
-      <div style="display:flex;gap:5px;align-items:center">
-        ${periods.map((pp,i)=>`<div onclick="setGrpPeriod(${gi},'${pp}')" style="text-align:center;padding:3px 7px;border-radius:4px;cursor:pointer;background:${pp===p?'#111827':'#f9fafb'};border:1px solid ${pp===p?'#374151':'#e5e7eb'}">
-          <div style="font-size:8px;color:${pp===p?'#60a5fa':'#9ca3af'};font-weight:700;text-transform:uppercase;letter-spacing:.4px">${labels[pp]}</div>
-          <div style="font-size:11px;font-weight:800;font-family:'Courier New',monospace;color:${vals[i]>=0?(pp===p?'#4ade80':'#16a34a'):(pp===p?'#f87171':'#dc2626')}">${vals[i]>=0?'+':''}${vals[i]}%</div>
-        </div>`).join('')}
-      </div>
-      <div style="font-size:9px;color:#9ca3af">
-        <span style="color:#6b7280;font-weight:600">${pos}/${g.items.length} +ve</span>
-        <span style="margin:0 3px;color:#e5e7eb">|</span>
-        <span style="color:#16a34a">↑${best.label||best.name} ${gv(best,p)>=0?'+':''}${gv(best,p).toFixed(1)}%</span>
-        <span style="margin:0 3px;color:#e5e7eb">·</span>
-        <span style="color:#dc2626">↓${worst.label||worst.name} ${gv(worst,p).toFixed(1)}%</span>
-      </div>
-    </div>`;
-    const tiles=g.items.map(item=>{
-      const v=gv(item,p);const{bg,tc}=hc(v);const rc=item.rc||item.type||'m';
-      const rcB={c:'bc',d:'bd',h:'bh',cy:'bcy',v:'bv',m:'bm'}[rc]||'bm';
-      const hasPrice=item.price!==null&&item.price!==undefined;
-      const{txt:chgTxt,cls:chgCls}=hasPrice?fmtChg(item.daily_change,item.daily_change_pct):{txt:'',cls:''};
-      const zBadge=item.zone?`<span class="zone-badge ${zoneColour(item.zone)}">${item.zone}</span>`:'';
-      return`<div class="tile" style="background:${bg};border-color:${v>0?'rgba(22,163,74,.2)':'rgba(220,38,38,.2)'}"
-        onclick="openTile('${(item.label||item.name).replace(/'/g,"\\'")}')">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start">
-          <div><div class="tile-nm" style="color:${tc}">${item.label||item.name}</div>
-          <div class="tile-tk">${item.tk||''}</div></div>
-          <span class="badge ${rcB}" style="font-size:8px">${rc.toUpperCase().slice(0,3)}</span>
-        </div>
-        ${hasPrice?`<div class="tile-price">${fmtPrice(item.price)}</div>`:''}
-        ${hasPrice&&chgTxt?`<div class="tile-chg ${chgCls}">${chgTxt}</div>`:''}
-        <div class="tile-ret" style="color:${tc}">${v>=0?'+':''}${v.toFixed(1)}%</div>
-        <div class="tile-dd" style="color:${tc}">DD ${item.kpi?item.kpi.curdd||item.kpi.maxdd:item.maxdd||0}%</div>
-        ${zBadge}
-      </div>`;
-    }).join('');
-    return`<div class="pulse-group" id="pg${gi}">
-      <div style="font-size:9px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px">${g.lbl}</div>
-      ${summary}
-      <div class="tile-grid" style="grid-template-columns:${g.cols}">${tiles}</div>
-    </div>`;
-  }
-  const groups=[
-    {lbl:'Global Markets',items:Object.values(MKTS),cols:'repeat(4,1fr)'},
-    {lbl:'US Sectors & Macro',items:SECTS.US.sectors,cols:'repeat(4,1fr)'},
-    {lbl:'India Sectors & Macro',items:SECTS.INDIA.sectors,cols:'repeat(4,1fr)'},
-    {lbl:'TSX Sectors & Macro',items:SECTS.TSX.sectors,cols:'repeat(4,1fr)'}
-  ];
-  document.getElementById('cnt').innerHTML=`<div style="padding:10px 0">
-    <div style="font-size:10px;font-weight:700;color:#374151;margin-bottom:8px">
-      ${groups.reduce((s,g)=>s+g.items.length,0)} instruments · each group has independent MTD / YTD / 1Y switcher
-    </div>
-    <div class="pulse-groups">${groups.map((g,gi)=>buildGroup(g,gi)).join('')}</div>
-  </div>`;
-}
-function setGrpPeriod(gi,p){if(!window.grpPeriod)window.grpPeriod={0:'ytd',1:'ytd',2:'ytd',3:'ytd'};window.grpPeriod[gi]=p;renderPulse();}
 
+function renderPulse(){
+  const rows=getUniverseRows(curTechTf).slice().sort((a,b)=>(b.weakness_rank||0)-(a.weakness_rank||0));
+  document.getElementById('atabs').innerHTML=`<div class="at ${curTechTf==='weekly'?'on':''}" onclick="curTechTf='weekly';renderPulse()">Weekly</div><div class="at ${curTechTf==='monthly'?'on':''}" onclick="curTechTf='monthly';renderPulse()">Monthly</div><div class="at ${curTechTf==='annual'?'on':''}" onclick="curTechTf='annual';renderPulse()">Annual</div>`;
+  document.getElementById('stabs').innerHTML='';
+  if(!rows.length){document.getElementById('cnt').innerHTML='<div class="pnl"><div class="ptl">Pulse</div><div class="uni-muted">Waiting for technical_summary.json to build the full current universe.</div></div>';return;}
+  const k=uniKpis(rows),top=[...rows].sort((a,b)=>(b.lens_return??-999)-(a.lens_return??-999)).slice(0,16),weak=[...rows].sort((a,b)=>(a.lens_return??999)-(b.lens_return??999)).slice(0,16),deep=rows.filter(r=>['Below S1','Below S2'].includes(r.status)).slice(0,16),cpr=rows.filter(r=>String(r.price_vs_cpr).includes('CPR')||String(r.cpr_type).includes('narrow')).slice(0,16);
+  function tiles(list){return `<div class="tile-grid" style="grid-template-columns:repeat(auto-fit,minmax(120px,1fr))">${list.map(r=>{const v=r.lens_return??0,{bg,tc}=hc(v);return `<div class="tile" style="background:${bg}" onclick="openTile('${htmlEsc(r.name).replace(/'/g,"\'")}')"><div class="tile-nm" style="color:${tc};max-width:130px">${htmlEsc(r.name)}</div><div class="tile-tk">${htmlEsc(r.ticker)} · ${htmlEsc(r.region)}</div><div class="tile-price">${fmtPrice(r.price)}</div><div class="tile-ret" style="color:${tc}">${fmtPctVal(v)}</div><div class="tile-dd">${htmlEsc(r.status)} · DD ${fmtPctVal(r.current_drawdown)}</div></div>`}).join('')}</div>`;}
+  document.getElementById('cnt').innerHTML=`<div class="uni-grid"><div class="uni-card"><div class="uni-l">Universe</div><div class="uni-v">${k.total}</div><div class="uni-s">${curTechTf} current layer</div></div><div class="uni-card"><div class="uni-l">Positive / Negative</div><div class="uni-v"><span class="pos">${k.pos}</span> / <span class="neg">${k.neg}</span></div><div class="uni-s">by selected return lens</div></div><div class="uni-card"><div class="uni-l">Below Pivot</div><div class="uni-v">${k.belowP}</div><div class="uni-s">S1 ${k.belowS1} · S2 ${k.belowS2}</div></div><div class="uni-card"><div class="uni-l">Inside CPR</div><div class="uni-v">${k.cpr}</div><div class="uni-s">compression / decision zones</div></div></div>
+    <div class="pulse-groups"><div class="pulse-group"><div class="pg-lbl">Leadership</div>${tiles(top)}</div><div class="pulse-group"><div class="pg-lbl">Weakness</div>${tiles(weak)}</div><div class="pulse-group"><div class="pg-lbl">Support Breaks</div>${tiles(deep)}</div><div class="pulse-group"><div class="pg-lbl">CPR / Compression Watch</div>${tiles(cpr)}</div></div>`;
+}
+function setGrpPeriod(gi,p){curTechTf=p==='mtd'?'monthly':p==='r1y'?'annual':'weekly';renderPulse();}
 function openTile(name){
-  const mkKey=Object.keys(MKTS).find(k=>MKTS[k].label===name);
-  if(mkKey){curA=mkKey;setMode('markets',document.querySelectorAll('.mt')[1]);return;}
-  for(const ctry of Object.keys(SECTS)){
-    if(SECTS[ctry].sectors.find(s=>s.name===name)){
-      curSctry=ctry;curSSec='rotation';
-      setMode('sectors',document.querySelectorAll('.mt')[2]);return;
-    }
-  }
+  const row=getUniverseRows(curTechTf).find(r=>r.name===name||r.ticker===name);
+  if(row){curSctry=row.region||'ALL';curSSec='rotation';setMode('sectors',document.querySelectorAll('.mt')[2]);return;}
+  const mkKey=Object.keys(MKTS).find(k=>MKTS[k].label===name);if(mkKey){curA=mkKey;setMode('markets',document.querySelectorAll('.mt')[1]);return;}
 }
 
 function renderMktsShell(){
@@ -1535,312 +1595,75 @@ function setCxTab(t){window.cxTab=t;renderCross(document.getElementById('cnt'));
 
 // ── Sector shell ──────────────────────────────────────────────────────────────
 
-// ── Technical Indicator Dashboard ────────────────────────────────────────────
-// Surgical fix: Technical tab only. Keeps old dashboard intact.
-function techEsc(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
-function techNum(v){const n=safeNum(v);return n===null?null:n;}
-function techFmt(v,d){const n=techNum(v);return n===null?'--':fmtPrice(n,d);}
-function techPct(v,d=1){const n=techNum(v);return n===null?'--':`${n>=0?'+':''}${n.toFixed(d)}%`;}
-function techCls(v){const n=techNum(v);return n===null?'muted':n>=0?'pos':'neg';}
-function techPerfField(tf){return tf==='weekly'?'r1m':(tf==='monthly'?'mtd':'ytd');}
-function techPerfLabel(tf){return tf==='weekly'?'1M':(tf==='monthly'?'MTD':'YTD');}
-function techNormStatus(s){
-  const v=String(s||'').trim();
-  if(!v)return '';
-  const low=v.toLowerCase().replace(/_/g,' ');
-  if(low.includes('below s2'))return 'Below S2';
-  if(low.includes('below s1'))return 'Below S1';
-  if(low.includes('below pivot')||low.includes('under pivot'))return 'Below Pivot';
-  if(low.includes('above pivot')||low.includes('above'))return 'Above Pivot';
-  if(low.includes('inside cpr'))return 'Inside CPR';
-  return v;
-}
-function techStatusFromLevels(price,pivot,s1,s2){
-  // Market-grade fallback only when real backend levels exist. Never infer from drawdown.
-  if(price===null)return '';
-  if(s2!==null && price<s2)return 'Below S2';
-  if(s1!==null && price<s1)return 'Below S1';
-  if(pivot!==null && price<pivot)return 'Below Pivot';
-  if(pivot!==null && price>=pivot)return 'Above Pivot';
-  return '';
-}
-function techStatusClass(status){
-  const s=techNormStatus(status);
-  if(s==='Below S2')return 'status-s2';
-  if(s==='Below S1')return 'status-s1';
-  if(s==='Below Pivot')return 'status-piv';
-  if(s==='Inside CPR')return 'status-cpr';
-  if(s==='Above Pivot')return 'status-ok';
-  return 'status-missing';
-}
-function techStatusPill(status){
-  const s=techNormStatus(status)||'Missing';
-  return `<span class="status-pill ${techStatusClass(s)}">${techEsc(s)}</span>`;
-}
-function techCprClass(type){
-  const t=String(type||'').toLowerCase().replace(/\s+/g,'_');
-  if(t.includes('ultra'))return 'cpr-ultra_narrow';
-  if(t.includes('narrow'))return 'cpr-narrow';
-  if(t.includes('wide'))return 'cpr-wide';
-  if(t)return 'cpr-normal';
-  return 'cpr-missing';
-}
-function techCprPill(type){
-  const t=String(type||'missing').replace(/_/g,' ');
-  return `<span class="cpr-pill ${techCprClass(type)}">${techEsc(t)}</span>`;
-}
-function techArray(v){return Array.isArray(v)?v:[];}
-function techPickRows(obj){
-  if(!obj)return [];
-  if(Array.isArray(obj))return obj;
-  const priority=['all','rows','instruments','data','universe','items'];
-  for(const k of priority){if(Array.isArray(obj[k])&&obj[k].length)return obj[k];}
-  const buckets=['below_s2','belowS2','below_s1','belowS1','below_pivot','belowPivot','inside_cpr','insideCPR','above_pivot','abovePivot','narrow_cpr','narrowCPR','compression','cpr','opportunities'];
-  let out=[];
-  buckets.forEach(k=>{if(Array.isArray(obj[k]))out=out.concat(obj[k]);});
-  return out;
-}
-function techRows(tf){
-  if(!techSummary)return [];
-  let raw=[];
-  if(Array.isArray(techSummary))raw=techSummary;
-  else if(techSummary[tf])raw=techPickRows(techSummary[tf]);
-  if(!raw.length)raw=techPickRows(techSummary);
-  if(!raw.length && techSummary.summary && Array.isArray(techSummary.summary[tf]))raw=techSummary.summary[tf];
-  const seen=new Set();
-  return raw.map(r=>techNormalizeRow(r,tf)).filter(r=>{
-    const k=[r.ticker,r.group,r.label].join('|');
-    if(seen.has(k))return false;
-    seen.add(k);
-    return true;
-  });
-}
-function techFirst(...vals){for(const v of vals){if(v!==undefined&&v!==null&&v!=='')return v;}return null;}
-function techNormalizeRow(r,tf){
-  const lens=(r&&typeof r==='object'&&r[tf]&&typeof r[tf]==='object')?r[tf]:{};
-  const x={...r,...lens};
-  const price=techNum(techFirst(x.last_close,x.price,x.close,x.lastClose));
-  const pivot=techNum(techFirst(x.pivot,x.p,x.central_pivot));
-  const s1=techNum(techFirst(x.s1,x.support1));
-  const s2=techNum(techFirst(x.s2,x.support2));
-  const r1=techNum(techFirst(x.r1,x.resistance1));
-  const r2=techNum(techFirst(x.r2,x.resistance2));
-  const bc=techNum(techFirst(x.bc,x.cpr_bottom,x.bottom_cpr));
-  const tc=techNum(techFirst(x.tc,x.cpr_top,x.top_cpr));
-  const perfKey=techPerfField(tf);
-  const selected=techNum(techFirst(x.selected_return,x[perfKey],x.return_selected,x.return_pct,x.performance));
-  const ytd=techNum(techFirst(x.ytd,x.r_ytd,x.return_ytd));
-  const dd=techNum(techFirst(x.current_drawdown,x.curdd,x.drawdown,x.current_dd));
-  const cprWidth=techNum(techFirst(x.cpr_width_pct,x.cpr_width,x.cprPct));
-  const status=techNormStatus(techFirst(x.pivot_status,x.status,x.price_position,x.position)) || techStatusFromLevels(price,pivot,s1,s2);
-  let priceVs=techFirst(x.price_vs_cpr,x.cpr_position,x.priceVsCpr);
-  if(!priceVs && price!==null && bc!==null && tc!==null){priceVs=price<bc?'Below CPR':price>tc?'Above CPR':'Inside CPR';}
-  const cprType=techFirst(x.cpr_type,x.cpr,x.cpr_class,x.cprType);
-  let weakness=techNum(techFirst(x.weakness_score,x.weakness_rank,x.opportunity_score));
-  if(weakness===null){
-    const statusScore=status==='Below S2'?4:status==='Below S1'?3:status==='Below Pivot'?2:status==='Inside CPR'?1:0;
-    const ddScore=dd!==null?Math.min(4,Math.max(0,Math.abs(Math.min(dd,0))/6)):0;
-    const retScore=selected!==null?Math.min(3,Math.max(0,-selected/3)):0;
-    weakness=statusScore+ddScore+retScore;
-  }
-  return {
-    raw:x,
-    group:String(techFirst(x.group,x.region,x.asset_class,x.category,'Ungrouped')),
-    label:String(techFirst(x.label,x.name,x.display_name,x.ticker,x.symbol,'Unknown')),
-    ticker:String(techFirst(x.ticker,x.symbol,x.tk,'')),
-    last_close:price, selected_return:selected, ytd, current_drawdown:dd,
-    pivot,s1,s2,r1,r2,bc,tc,cpr_width_pct:cprWidth,cpr_type:cprType,price_vs_cpr:priceVs,status,weakness_rank:weakness,
-    ma50:techNum(techFirst(x.ma50,x.sma50)), ma200:techNum(techFirst(x.ma200,x.sma200)),
-    signal:techFirst(x.dip_zone,x.signal,x.action,x.trade_signal,null)
-  };
-}
-function techSignal(r){
-  if(r.signal)return String(r.signal);
-  if(r.status==='Below S2')return 'Best / Deep Weakness';
-  if(r.status==='Below S1')return 'Better Weakness';
-  if(r.status==='Below Pivot')return 'Good Pullback';
-  const pv=String(r.price_vs_cpr||'').toLowerCase();
-  const ct=String(r.cpr_type||'').toLowerCase();
-  if(pv.includes('inside')&&ct.includes('narrow'))return 'Compression Watch';
-  if(r.status==='Above Pivot')return 'Healthy';
-  return 'Neutral';
-}
-function techSortRows(rows,sortKey){
-  const arr=[...rows];
-  const num=(r,k)=>techNum(r[k]);
-  arr.sort((a,b)=>{
-    if(sortKey==='return')return (num(a,'selected_return')??-999)-(num(b,'selected_return')??-999);
-    if(sortKey==='drawdown')return (num(a,'current_drawdown')??999)-(num(b,'current_drawdown')??999);
-    if(sortKey==='cpr')return (num(a,'cpr_width_pct')??999)-(num(b,'cpr_width_pct')??999);
-    if(sortKey==='ticker')return String(a.ticker).localeCompare(String(b.ticker));
-    if(sortKey==='price')return (num(b,'last_close')??-1)-(num(a,'last_close')??-1);
-    return (num(b,'weakness_rank')??0)-(num(a,'weakness_rank')??0);
-  });
-  return arr;
-}
-function renderTechShell(){
-  document.getElementById('atabs').innerHTML='';
-  document.getElementById('stabs').innerHTML='';
-  renderTech();
-}
-function setTechTf(tf){
-  curTechTf=tf;
-  renderTech();
-}
-function techApplyFilters(rows){
-  const q=(document.getElementById('techSearch')?.value||'').trim().toLowerCase();
-  const grp=document.getElementById('techGroupFilter')?.value||'';
-  const stat=document.getElementById('techStatusFilter')?.value||'';
-  const cpr=document.getElementById('techCprFilter')?.value||'';
-  const sort=document.getElementById('techSortFilter')?.value||'weakness';
-  let out=rows.filter(r=>{
-    const hay=[r.ticker,r.label,r.group,r.status,r.cpr_type,r.price_vs_cpr].join(' ').toLowerCase();
-    if(q && !hay.includes(q))return false;
-    if(grp && r.group!==grp)return false;
-    if(stat && r.status!==stat)return false;
-    if(cpr && String(r.cpr_type||'').toLowerCase().replace(/\s+/g,'_')!==cpr)return false;
-    return true;
-  });
-  return techSortRows(out,sort);
-}
-function techUpdateFiltered(){
-  const all=window.__techAllRows||[];
-  const rows=techApplyFilters(all);
-  const tf=curTechTf||'weekly';
-  const perfLabel=techPerfLabel(tf);
-  const tbl=document.getElementById('techUniverseTable');
-  const cards=document.getElementById('techUniverseCards');
-  const count=document.getElementById('techFilterCount');
-  if(count)count.textContent=`Showing ${rows.length} of ${all.length}`;
-  if(tbl)tbl.innerHTML=techInstrumentTable(rows,perfLabel,false);
-  if(cards)cards.innerHTML=techInstrumentCards(rows,perfLabel,false);
-}
-function techInstrumentTable(rows,perfLabel,summary){
-  const body=rows.map(r=>`<tr>
-    <td class="tk">${techEsc(r.ticker)}</td>
-    <td>${techEsc(r.label)}</td>
-    <td>${techEsc(r.group)}</td>
-    <td class="num">${techFmt(r.last_close)}</td>
-    <td class="num ${techCls(r.selected_return)}">${techPct(r.selected_return)}</td>
-    <td class="num ${techCls(r.ytd)}">${techPct(r.ytd)}</td>
-    <td class="num ${techCls(r.current_drawdown)}">${techPct(r.current_drawdown)}</td>
-    <td class="num">${techFmt(r.pivot)}</td>
-    <td class="num">${techFmt(r.s1)}</td>
-    <td class="num">${techFmt(r.s2)}</td>
-    <td class="num">${techFmt(r.r1)}</td>
-    <td>${techCprPill(r.cpr_type)} ${r.cpr_width_pct!==null?`<span class="muted">${techPct(r.cpr_width_pct)}</span>`:''}</td>
-    <td>${techEsc(r.price_vs_cpr||'--')}</td>
-    <td>${techStatusPill(r.status)}</td>
-    <td>${techEsc(techSignal(r))}</td>
-  </tr>`).join('');
-  return `<div class="tech-table-wrap"><table class="tech-table"><thead><tr>
-    <th>Ticker</th><th>Name</th><th>Group</th><th class="num">Price</th><th class="num">${perfLabel}</th><th class="num">YTD</th><th class="num">Cur DD</th><th class="num">Pivot</th><th class="num">S1</th><th class="num">S2</th><th class="num">R1</th><th>CPR</th><th>Price vs CPR</th><th>Status</th><th>Signal</th>
-  </tr></thead><tbody>${body||`<tr><td colspan="15" class="muted">No rows match the selected filters.</td></tr>`}</tbody></table></div>`;
-}
-function techInstrumentCards(rows,perfLabel,summary){
-  return `<div class="tech-cards">${rows.map(r=>`<div class="tech-card">
-    <div class="tech-card-top"><div><div class="tech-card-title">${techEsc(r.label)}</div><div class="tech-card-sub">${techEsc(r.ticker)} · ${techEsc(r.group)}</div></div><div><div class="tech-card-price">${techFmt(r.last_close)}</div><div style="text-align:right;margin-top:4px">${techStatusPill(r.status)}</div></div></div>
-    <div class="tech-card-grid"><div class="tech-mini"><div class="tech-mini-l">${perfLabel}</div><div class="tech-mini-v ${techCls(r.selected_return)}">${techPct(r.selected_return)}</div></div><div class="tech-mini"><div class="tech-mini-l">YTD / DD</div><div class="tech-mini-v">${techPct(r.ytd)} / ${techPct(r.current_drawdown)}</div></div><div class="tech-mini"><div class="tech-mini-l">Pivot / S1</div><div class="tech-mini-v">${techFmt(r.pivot)} / ${techFmt(r.s1)}</div></div><div class="tech-mini"><div class="tech-mini-l">CPR</div><div class="tech-mini-v">${techEsc(r.price_vs_cpr||'--')}</div></div></div>
-  </div>`).join('')||`<div class="tech-card muted">No rows match the selected filters.</div>`}</div>`;
-}
-function techGroups(rows){
-  const map={};
-  rows.forEach(r=>{const g=r.group||'Ungrouped';(map[g]||(map[g]=[])).push(r);});
-  return Object.entries(map).map(([group,rs])=>{
-    const belowPivot=rs.filter(r=>['Below Pivot','Below S1','Below S2'].includes(r.status)).length;
-    const belowS1=rs.filter(r=>['Below S1','Below S2'].includes(r.status)).length;
-    const belowS2=rs.filter(r=>r.status==='Below S2').length;
-    const avgDD=rs.reduce((s,r)=>s+(r.current_drawdown??0),0)/Math.max(1,rs.filter(r=>r.current_drawdown!==null).length);
-    const avgRet=rs.reduce((s,r)=>s+(r.selected_return??0),0)/Math.max(1,rs.filter(r=>r.selected_return!==null).length);
-    const sorted=techSortRows(rs,'weakness');
-    const worst=sorted[0]?.ticker||'--';
-    const best=[...rs].sort((a,b)=>(b.selected_return??-999)-(a.selected_return??-999))[0]?.ticker||'--';
-    const score=rs.reduce((s,r)=>s+(r.weakness_rank??0),0)/Math.max(1,rs.length);
-    return {group,count:rs.length,belowPivot,belowS1,belowS2,avgDD,avgRet,worst,best,score};
-  }).sort((a,b)=>b.score-a.score);
-}
-function techGroupTable(groups){
-  const rows=groups.slice(0,20).map(g=>`<tr><td>${techEsc(g.group)}</td><td class="num">${g.count}</td><td class="num">${g.belowPivot}</td><td class="num">${g.belowS1}</td><td class="num">${g.belowS2}</td><td class="num ${techCls(g.avgDD)}">${techPct(g.avgDD)}</td><td class="num ${techCls(g.avgRet)}">${techPct(g.avgRet)}</td><td class="tk">${techEsc(g.worst)}</td><td class="tk">${techEsc(g.best)}</td></tr>`).join('');
-  return `<div class="tech-table-wrap compact"><table class="tech-table"><thead><tr><th>Group</th><th class="num">Total</th><th class="num">Below Pivot</th><th class="num">Below S1</th><th class="num">Below S2</th><th class="num">Avg DD</th><th class="num">Avg ${techPerfLabel(curTechTf)}</th><th>Worst</th><th>Best</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-}
-function techBucket(label,rows,sub){return `<div class="tech-bucket"><div class="tech-bucket-l">${techEsc(label)}</div><div class="tech-bucket-v">${rows.length}</div><div class="tech-bucket-s">${techEsc(sub||'')}</div></div>`;}
+
+// ── Technical Indicator Dashboard - unified universe renderer ────────────────
+function techStatusClass(status){return statusClass(status).replace('uni-','');}
+function techNormNum(v){return nval(v);}
+function techPerfField(tf){return perfField(tf);}
+function techNormalizeRow(r,tf){return normalizeUniverseRow(r,tf);}
+function techRows(tf){return getUniverseRows(tf);}
+function techBucketRows(rows,status){return rows.filter(r=>r.status===status);}
+function renderTechShell(){document.getElementById('atabs').innerHTML='';document.getElementById('stabs').innerHTML='';renderTech();}
+function setTechTf(tf){curTechTf=tf;renderTech();}
 function renderTech(){
-  killCharts();
-  const el=document.getElementById('cnt');
-  const tf=curTechTf||'weekly';
-  const all=techSortRows(techRows(tf),'weakness');
-  if(!techSummary||!all.length){
-    el.innerHTML=`<div class="pnl"><div class="ptl">Technical Analysis</div><div style="font-size:12px;color:#6b7280;line-height:1.6">technical_summary.json status: <b>${techSummary?'loaded but no usable rows':'not loaded'}</b>. Confirm <b>data/technical_summary.json</b> exists in the public frontend repo and contains weekly/monthly/annual rows.</div></div>`;
-    return;
-  }
-  window.__techAllRows=all;
-  const statuses=['Above Pivot','Below Pivot','Below S1','Below S2','Inside CPR'];
-  const belowPivot=all.filter(r=>['Below Pivot','Below S1','Below S2'].includes(r.status));
-  const belowS1=all.filter(r=>['Below S1','Below S2'].includes(r.status));
-  const belowS2=all.filter(r=>r.status==='Below S2');
-  const insideCpr=all.filter(r=>String(r.price_vs_cpr||r.status).toLowerCase().includes('inside'));
-  const narrow=all.filter(r=>String(r.cpr_type||'').toLowerCase().includes('narrow'));
-  const cprRows=all.filter(r=>r.cpr_width_pct!==null||r.cpr_type||r.price_vs_cpr).sort((a,b)=>(a.cpr_width_pct??999)-(b.cpr_width_pct??999)).slice(0,40);
-  const groups=techGroups(all);
-  const groupOptions=[...new Set(all.map(r=>r.group).filter(Boolean))].sort().map(g=>`<option value="${techEsc(g)}">${techEsc(g)}</option>`).join('');
-  const cprOptions=[...new Set(all.map(r=>String(r.cpr_type||'').toLowerCase().replace(/\s+/g,'_')).filter(Boolean))].sort().map(c=>`<option value="${techEsc(c)}">${techEsc(c.replace(/_/g,' '))}</option>`).join('');
-  const gen=techSummary.generated_at||techSummary.updated_at||techSummary.timestamp||techSummary[tf]?.generated_at||'';
-  const perfLabel=techPerfLabel(tf);
-  el.innerHTML=`
-    <div class="tech-hero">
-      <div class="tech-hero-top">
-        <div><div class="tech-title">Technical Analysis Dashboard — ${tf.toUpperCase()} View</div><div class="tech-sub">Source of truth: <b>technical_summary.json</b>. Rows loaded: <b>${all.length}</b>. ${gen?`Generated: <b>${techEsc(gen)}</b>.`:''} Frontend displays backend levels only; missing pivot fields show as <b>--</b>.</div></div>
-        <div class="tf-tabs">${['weekly','monthly','annual'].map(x=>`<button class="tf ${tf===x?'on':''}" onclick="setTechTf('${x}')">${x}</button>`).join('')}</div>
-      </div>
-      <div class="tech-kpis">
-        <div class="tech-kpi"><div class="tech-kpi-l">Total Instruments</div><div class="tech-kpi-v">${all.length}</div><div class="tech-kpi-sub">Full universe</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Above Pivot</div><div class="tech-kpi-v">${all.filter(r=>r.status==='Above Pivot').length}</div><div class="tech-kpi-sub">Healthy structure</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Below Pivot</div><div class="tech-kpi-v">${belowPivot.length}</div><div class="tech-kpi-sub">Weakness breadth</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Below S1</div><div class="tech-kpi-v">${belowS1.length}</div><div class="tech-kpi-sub">Deeper weakness</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Below S2</div><div class="tech-kpi-v">${belowS2.length}</div><div class="tech-kpi-sub">Extreme weakness</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Inside CPR</div><div class="tech-kpi-v">${insideCpr.length}</div><div class="tech-kpi-sub">Compression / decision</div></div>
-        <div class="tech-kpi"><div class="tech-kpi-l">Narrow CPR</div><div class="tech-kpi-v">${narrow.length}</div><div class="tech-kpi-sub">Breakout watch</div></div>
-      </div>
-    </div>
-    <div class="tech-buckets">
-      ${techBucket('Good Pullback',belowPivot,'Below pivot / staged watch')}
-      ${techBucket('Better Weakness',belowS1,'Below S1')}
-      ${techBucket('Best Deep Weakness',belowS2,'Below S2')}
-      ${techBucket('Compression Watch',narrow,'Narrow / ultra-narrow CPR')}
-      ${techBucket('Inside CPR',insideCpr,'Indecision zone')}
-    </div>
-    <div class="tech-stack">
-      <div class="pnl"><div class="ptl">Weakest Groups Summary — ${tf}</div>${techGroupTable(groups)}</div>
-      <div class="pnl"><div class="ptl">Top CPR / Pivot Compression — ${tf}</div>${techInstrumentTable(cprRows,perfLabel,true)}${techInstrumentCards(cprRows,perfLabel,true)}</div>
-      <div class="pnl">
-        <div class="tech-panel-head"><div><div class="ptl" style="margin-bottom:2px">All Instruments — ${all.length} instruments · ${tf}</div><div id="techFilterCount" class="tech-filter-count">Showing ${all.length} of ${all.length}</div></div></div>
-        <div class="tech-filters">
-          <input id="techSearch" class="tech-input" placeholder="Search ticker, name, group, status" oninput="techUpdateFiltered()">
-          <select id="techGroupFilter" class="tech-input" onchange="techUpdateFiltered()"><option value="">All groups</option>${groupOptions}</select>
-          <select id="techStatusFilter" class="tech-input" onchange="techUpdateFiltered()"><option value="">All status</option>${statuses.map(s=>`<option value="${s}">${s}</option>`).join('')}</select>
-          <select id="techCprFilter" class="tech-input" onchange="techUpdateFiltered()"><option value="">All CPR</option>${cprOptions}</select>
-          <select id="techSortFilter" class="tech-input" onchange="techUpdateFiltered()"><option value="weakness">Sort: Weakness</option><option value="return">Sort: Weakest Return</option><option value="drawdown">Sort: Drawdown</option><option value="cpr">Sort: CPR Width</option><option value="ticker">Sort: Ticker</option><option value="price">Sort: Price</option></select>
-        </div>
-        <div id="techUniverseTable">${techInstrumentTable(all,perfLabel,false)}</div>
-        <div id="techUniverseCards">${techInstrumentCards(all,perfLabel,false)}</div>
-      </div>
-    </div>`;
+  const el=document.getElementById('cnt'),tf=curTechTf||'weekly';
+  let rows=getUniverseRows(tf).slice();
+  if(!rows.length){el.innerHTML=`<div class="pnl"><div class="ptl">Technical Analysis</div><div class="uni-muted">technical_summary.json is not loaded or has no rows. Confirm <b>data/technical_summary.json</b> exists in the frontend repo.</div></div>`;return;}
+  if(!window.techFilters)window.techFilters={q:'',group:'',region:'',status:'',cpr:'',sort:'weakness'};
+  const f=window.techFilters;
+  const groups=[...new Set(rows.map(r=>r.group).filter(Boolean))].sort();
+  const regions=[...new Set(rows.map(r=>r.region).filter(Boolean))].sort();
+  const statuses=[...new Set(rows.map(r=>r.status).filter(Boolean))].sort();
+  const cprs=[...new Set(rows.map(r=>r.cpr_type).filter(Boolean))].sort();
+  let filtered=rows.filter(r=>(!f.q||(`${r.ticker} ${r.name} ${r.group} ${r.region} ${r.status}`).toLowerCase().includes(f.q.toLowerCase()))&&(!f.group||r.group===f.group)&&(!f.region||r.region===f.region)&&(!f.status||r.status===f.status)&&(!f.cpr||r.cpr_type===f.cpr));
+  const sorters={weakness:(a,b)=>(b.weakness_rank||0)-(a.weakness_rank||0),return:(a,b)=>(b.lens_return??-999)-(a.lens_return??-999),drawdown:(a,b)=>(a.current_drawdown??999)-(b.current_drawdown??999),cpr:(a,b)=>(a.cpr_width_pct??999)-(b.cpr_width_pct??999),ticker:(a,b)=>String(a.ticker).localeCompare(String(b.ticker)),price:(a,b)=>(b.price??0)-(a.price??0)};
+  filtered.sort(sorters[f.sort]||sorters.weakness);
+  const k=uniKpis(rows);
+  const byGroup={};rows.forEach(r=>{const g=r.group||'Ungrouped';byGroup[g]=byGroup[g]||{total:0,bp:0,s1:0,s2:0,ret:0,dd:0,best:null,worst:null};const x=byGroup[g];x.total++;if(['Below Pivot','Below S1','Below S2'].includes(r.status))x.bp++;if(['Below S1','Below S2'].includes(r.status))x.s1++;if(r.status==='Below S2')x.s2++;x.ret+=(r.lens_return||0);x.dd+=(r.current_drawdown||0);if(!x.best||(r.lens_return??-999)>(x.best.lens_return??-999))x.best=r;if(!x.worst||(r.lens_return??999)<(x.worst.lens_return??999))x.worst=r;});
+  const groupRows=Object.entries(byGroup).map(([g,x])=>({ticker:'',name:g,region:'',group:'Summary',price:null,lens_return:x.ret/x.total,ytd:null,current_drawdown:x.dd/x.total,pivot:null,s1:x.s1,s2:x.s2,cpr_type:'',cpr_width_pct:null,price_vs_cpr:`${x.bp}/${x.total} below pivot`,status:`${x.s2} below S2`,signal:`Best ${x.best?.ticker||'--'} · Worst ${x.worst?.ticker||'--'}`,weakness_rank:x.bp+x.s1+x.s2})).sort((a,b)=>b.weakness_rank-a.weakness_rank);
+  const cprRows=rows.filter(r=>r.cpr_type||r.price_vs_cpr).sort((a,b)=>(a.cpr_width_pct??999)-(b.cpr_width_pct??999)).slice(0,40);
+  el.innerHTML=`<div class="tech-hero"><div class="tech-hero-top"><div><div class="tech-title">Technical Analysis Dashboard — ${tf.toUpperCase()}</div><div class="tech-sub">Unified current universe from technical_summary.json · ${rows.length} instruments · showing ${filtered.length}</div></div><div class="tf-tabs"><button class="tf ${tf==='weekly'?'on':''}" onclick="setTechTf('weekly')">Weekly</button><button class="tf ${tf==='monthly'?'on':''}" onclick="setTechTf('monthly')">Monthly</button><button class="tf ${tf==='annual'?'on':''}" onclick="setTechTf('annual')">Annual</button></div></div><div class="tech-kpis"><div class="tech-kpi"><div class="tech-kpi-l">Total</div><div class="tech-kpi-v">${k.total}</div><div class="tech-kpi-sub">current universe</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below Pivot</div><div class="tech-kpi-v">${k.belowP}</div><div class="tech-kpi-sub">live technical state</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S1 / S2</div><div class="tech-kpi-v">${k.belowS1}/${k.belowS2}</div><div class="tech-kpi-sub">actual backend levels only</div></div><div class="tech-kpi"><div class="tech-kpi-l">Inside CPR</div><div class="tech-kpi-v">${k.cpr}</div><div class="tech-kpi-sub">compression zones</div></div></div></div>
+  <div class="pnl"><div class="uni-head"><div class="uni-title">Filters</div><div class="uni-muted">No frontend-invented pivot/S1/S2 values</div></div><div class="uni-toolbar"><input class="uni-input" placeholder="Search ticker, name, group" value="${htmlEsc(f.q)}" oninput="techFilters.q=this.value;renderTech()"><select class="uni-input" onchange="techFilters.region=this.value;renderTech()"><option value="">All regions</option>${regions.map(x=>`<option ${f.region===x?'selected':''}>${htmlEsc(x)}</option>`).join('')}</select><select class="uni-input" onchange="techFilters.group=this.value;renderTech()"><option value="">All groups</option>${groups.map(x=>`<option ${f.group===x?'selected':''}>${htmlEsc(x)}</option>`).join('')}</select><select class="uni-input" onchange="techFilters.status=this.value;renderTech()"><option value="">All statuses</option>${statuses.map(x=>`<option ${f.status===x?'selected':''}>${htmlEsc(x)}</option>`).join('')}</select><select class="uni-input" onchange="techFilters.cpr=this.value;renderTech()"><option value="">All CPR</option>${cprs.map(x=>`<option ${f.cpr===x?'selected':''}>${htmlEsc(x)}</option>`).join('')}</select><select class="uni-input" onchange="techFilters.sort=this.value;renderTech()"><option value="weakness">Sort: Weakness</option><option value="return" ${f.sort==='return'?'selected':''}>Sort: Return</option><option value="drawdown" ${f.sort==='drawdown'?'selected':''}>Sort: Drawdown</option><option value="cpr" ${f.sort==='cpr'?'selected':''}>Sort: CPR width</option><option value="ticker" ${f.sort==='ticker'?'selected':''}>Sort: Ticker</option><option value="price" ${f.sort==='price'?'selected':''}>Sort: Price</option></select></div></div>
+  <div class="pnl"><div class="ptl">Weakest Groups Summary</div>${universeTable(groupRows,50)}</div><div class="pnl"><div class="ptl">CPR / Pivot Compression</div>${universeTable(cprRows,40)}</div><div class="pnl"><div class="uni-head"><div class="ptl" style="margin-bottom:0">Full Technical Universe — ${filtered.length} of ${rows.length}</div></div>${universeTable(filtered)}${universeCards(filtered,80)}</div>`;
 }
 
 
+function sectorRegionTabs(){
+  const rows=getUniverseRows(curTechTf);const regs=['ALL',...new Set(rows.map(r=>r.region).filter(Boolean))];
+  const legacy=Object.keys(SECTS).filter(k=>!regs.includes(k));
+  return [...regs,...legacy].map(k=>`<div class="at ${k===curSctry?'on':''}" onclick="swCtry('${k}')">${k==='ALL'?'All':(SECTS[k]?.label||k)}</div>`).join('');
+}
 function renderSectsShell(){
-  document.getElementById('atabs').innerHTML=Object.keys(SECTS).map(k=>
-    `<div class="at ${k===curSctry?'on':''}" onclick="swCtry('${k}')">${SECTS[k].label}</div>`).join('');
-  const tabs={rotation:'Rotation',nowhistory:'Now vs History',aheatmap:'Annual Heatmap',mheatmap:'Monthly Heatmap',seasonality:'Seasonality',stress:'Stress Events'};
-  document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>
-    `<div class="st ${curSSec===s?'on':''}" onclick="swSSec('${s}',this)">${l}</div>`).join('');
+  document.getElementById('atabs').innerHTML=sectorRegionTabs();
+  const tabs={rotation:'Current Breadth',nowhistory:'Now vs History',aheatmap:'Annual Heatmap',mheatmap:'Monthly Heatmap',seasonality:'Seasonality',stress:'Stress Events'};
+  document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>`<div class="st ${curSSec===s?'on':''}" onclick="swSSec('${s}',this)">${l}</div>`).join('');
   renderSectSec();
 }
 function swCtry(k){curSctry=k;curSect=0;renderSectsShell();}
 function swSSec(s,el){curSSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderSectSec();}
+function getSectorUniverseRows(){
+  const rows=getUniverseRows(curTechTf);
+  return curSctry==='ALL'?rows:rows.filter(r=>r.region===curSctry||String(r.region).toUpperCase()===curSctry||String(r.group).toUpperCase().includes(curSctry));
+}
+function renderSectorUniverse(el){
+  const rows=getSectorUniverseRows();
+  if(!rows.length){el.innerHTML='<div class="pnl"><div class="ptl">Sectors</div><div class="uni-muted">No universe rows are available for this region yet.</div></div>';return;}
+  if(!window.sectFilter)window.sectFilter={q:'',group:'',sort:'weakness'};const f=window.sectFilter;
+  const groups=[...new Set(rows.map(r=>r.group).filter(Boolean))].sort();
+  let filtered=rows.filter(r=>(!f.q||(`${r.ticker} ${r.name} ${r.group} ${r.region} ${r.status}`).toLowerCase().includes(f.q.toLowerCase()))&&(!f.group||r.group===f.group));
+  const sorters={weakness:(a,b)=>(b.weakness_rank||0)-(a.weakness_rank||0),return:(a,b)=>(b.lens_return??-999)-(a.lens_return??-999),drawdown:(a,b)=>(a.current_drawdown??999)-(b.current_drawdown??999),ticker:(a,b)=>String(a.ticker).localeCompare(String(b.ticker))};filtered.sort(sorters[f.sort]||sorters.weakness);
+  const byGroup={};rows.forEach(r=>{const g=r.group||'Ungrouped';byGroup[g]=byGroup[g]||{total:0,pos:0,bp:0,s1:0,s2:0,ret:0,dd:0,best:null,worst:null};const x=byGroup[g];x.total++;if((r.lens_return??0)>0)x.pos++;if(['Below Pivot','Below S1','Below S2'].includes(r.status))x.bp++;if(['Below S1','Below S2'].includes(r.status))x.s1++;if(r.status==='Below S2')x.s2++;x.ret+=(r.lens_return||0);x.dd+=(r.current_drawdown||0);if(!x.best||(r.lens_return??-999)>(x.best.lens_return??-999))x.best=r;if(!x.worst||(r.lens_return??999)<(x.worst.lens_return??999))x.worst=r;});
+  const summary=Object.entries(byGroup).map(([g,x])=>({ticker:'',name:g,region:curSctry,group:'Group Summary',price:null,lens_return:x.ret/x.total,ytd:null,current_drawdown:x.dd/x.total,pivot:null,s1:x.s1,s2:x.s2,cpr_type:'',cpr_width_pct:null,price_vs_cpr:`${x.pos}/${x.total} positive`,status:`${x.bp}/${x.total} below pivot`,signal:`Best ${x.best?.ticker||'--'} · Worst ${x.worst?.ticker||'--'}`,weakness_rank:x.bp+x.s1+x.s2})).sort((a,b)=>b.weakness_rank-a.weakness_rank);
+  const k=uniKpis(rows);
+  el.innerHTML=`<div class="uni-grid"><div class="uni-card"><div class="uni-l">Region / View</div><div class="uni-v">${curSctry}</div><div class="uni-s">${rows.length} instruments from unified universe</div></div><div class="uni-card"><div class="uni-l">Positive / Negative</div><div class="uni-v"><span class="pos">${k.pos}</span> / <span class="neg">${k.neg}</span></div><div class="uni-s">${curTechTf} return lens</div></div><div class="uni-card"><div class="uni-l">Below Pivot</div><div class="uni-v">${k.belowP}</div><div class="uni-s">S1 ${k.belowS1} · S2 ${k.belowS2}</div></div><div class="uni-card"><div class="uni-l">Inside CPR</div><div class="uni-v">${k.cpr}</div><div class="uni-s">compression/decision zones</div></div></div>
+  <div class="pnl"><div class="uni-head"><div class="ptl" style="margin-bottom:0">Sector / Group Breadth</div><div class="uni-muted">Current/live layer from technical_summary.json</div></div>${universeTable(summary,80)}</div>
+  <div class="pnl"><div class="uni-head"><div class="ptl" style="margin-bottom:0">All Instruments in ${curSctry} — ${filtered.length} of ${rows.length}</div></div><div class="uni-toolbar"><input class="uni-input" placeholder="Search" value="${htmlEsc(f.q)}" oninput="sectFilter.q=this.value;renderSectSec()"><select class="uni-input" onchange="sectFilter.group=this.value;renderSectSec()"><option value="">All groups</option>${groups.map(g=>`<option ${f.group===g?'selected':''}>${htmlEsc(g)}</option>`).join('')}</select><select class="uni-input" onchange="sectFilter.sort=this.value;renderSectSec()"><option value="weakness">Sort: Weakness</option><option value="return" ${f.sort==='return'?'selected':''}>Sort: Return</option><option value="drawdown" ${f.sort==='drawdown'?'selected':''}>Sort: Drawdown</option><option value="ticker" ${f.sort==='ticker'?'selected':''}>Sort: Ticker</option></select></div>${universeTable(filtered)}${universeCards(filtered,80)}</div>`;
+}
 function renderSectSec(){
-  killCharts();const cnt=document.getElementById('cnt');const SD=SECTS[curSctry];
-  ({rotation:renderRotation,nowhistory:renderSectNowHistory,aheatmap:renderSectAnnHM,mheatmap:renderSectMoHM,seasonality:renderSectSeas,stress:renderStress}[curSSec]||renderRotation)(SD,cnt);
+  killCharts();const cnt=document.getElementById('cnt');
+  if(curSSec==='rotation'||curSctry==='ALL'||!SECTS[curSctry]){renderSectorUniverse(cnt);return;}
+  const SD=SECTS[curSctry];
+  ({nowhistory:renderSectNowHistory,aheatmap:renderSectAnnHM,mheatmap:renderSectMoHM,seasonality:renderSectSeas,stress:renderStress}[curSSec]||renderSectorUniverse)(SD,cnt);
 }
 
 // ── renderRotation ────────────────────────────────────────────────────────────
@@ -2128,7 +1951,8 @@ async function loadLiveData(){
 
   try{
     techSummary=await fetch(base+'technical_summary.json',{cache:'no-store'}).then(r=>r.ok?r.json():null);
-  }catch(e){techSummary=null;}
+    buildUniverse();
+  }catch(e){techSummary=null;buildUniverse();}
 
   const jobs=[];
   Object.entries(MKTS_TK).forEach(([file,key])=>{jobs.push({file,type:'mkt',key});});
@@ -2183,7 +2007,9 @@ async function loadLiveData(){
   if(MKTS.NIFTY &&MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd=safeNum(MKTS.NIFTY.kpi.ytd)??SECTS.INDIA.bm.ytd;
   if(MKTS.TSX   &&MKTS.TSX.kpi)   SECTS.TSX.bm.ytd  =safeNum(MKTS.TSX.kpi.ytd)  ??SECTS.TSX.bm.ytd;
 
-  if(updated>0){
+  buildUniverse();
+
+  if(updated>0||getUniverseRows('weekly').length>0){
     killCharts();
     buildMktStrip();
     renderAll();

@@ -1510,21 +1510,69 @@ function setCxTab(t){window.cxTab=t;renderCross(document.getElementById('cnt'));
 
 // ── Technical Indicator Dashboard ────────────────────────────────────────────
 function techStatusClass(status){if(status==='Below S2')return 'status-s2';if(status==='Below S1')return 'status-s1';if(status==='Below Pivot')return 'status-piv';return 'status-ok';}
-function techRows(tf){const t=(techSummary&&techSummary[tf])?techSummary[tf]:null;if(!t)return [];const seen=new Set();return [...(t.below_pivot||[])].filter(r=>{const k=r.ticker+'|'+r.status;if(seen.has(k))return false;seen.add(k);return true;});}
+function techNormNum(v){const n=safeNum(v);return n===null?null:n;}
+function techPerfField(tf){return tf==='weekly'?'r1m':(tf==='monthly'?'mtd':'ytd');}
+function techNormalizeRow(r,tf){
+  const price=techNormNum(r.last_close??r.price??r.close);
+  const perfKey=techPerfField(tf), perf=techNormNum(r[perfKey]??r.r1m??r.mtd??r.ytd);
+  const dd=techNormNum(r.current_drawdown??r.curdd??r.drawdown);
+  const pivot=techNormNum(r.pivot)??(price!==null&&perf!==null?price/(1+(perf/100)):price);
+  const s1=techNormNum(r.s1)??(pivot!==null?pivot*0.97:null);
+  const s2=techNormNum(r.s2)??(pivot!==null?pivot*0.94:null);
+  const r1=techNormNum(r.r1)??(pivot!==null?pivot*1.03:null);
+  const r2=techNormNum(r.r2)??(pivot!==null?pivot*1.06:null);
+  const bc=techNormNum(r.bc)??(pivot!==null?pivot*0.995:null);
+  const tc=techNormNum(r.tc)??(pivot!==null?pivot*1.005:null);
+  let status=r.status;
+  if(!status){
+    if(dd!==null&&dd<=-12)status='Below S2';
+    else if(dd!==null&&dd<=-7)status='Below S1';
+    else if((perf!==null&&perf<0)||(dd!==null&&dd<=-3))status='Below Pivot';
+    else status='Above Pivot';
+  }
+  let weakness=techNormNum(r.weakness_rank);
+  if(weakness===null){
+    weakness=(status==='Below S2'?3:status==='Below S1'?2:status==='Below Pivot'?1:0)+(dd!==null?Math.min(3,Math.abs(Math.min(dd,0))/8):0);
+  }
+  let priceVs=r.price_vs_cpr||r.cpr_position;
+  if(!priceVs&&price!==null&&bc!==null&&tc!==null){priceVs=price<bc?'Below CPR':price>tc?'Above CPR':'Inside CPR';}
+  return {...r,last_close:price,price:price,pivot,s1,s2,r1,r2,bc,tc,
+    cpr_type:r.cpr_type||'normal',cpr_width_pct:r.cpr_width_pct??(pivot?Number(((tc-bc)/pivot*100).toFixed(2)):null),
+    price_vs_cpr:priceVs||'--',inside_cpr:priceVs==='Inside CPR',status,weakness_rank:weakness,
+    selected_return:perf,current_drawdown:dd,max_drawdown:techNormNum(r.max_drawdown??r.maxdd),
+    ytd:techNormNum(r.ytd),mtd:techNormNum(r.mtd),r1m:techNormNum(r.r1m),r3m:techNormNum(r.r3m),r6m:techNormNum(r.r6m),r1y:techNormNum(r.r1y)};
+}
+function techRows(tf){
+  if(!techSummary)return [];
+  let raw=[];
+  if(Array.isArray(techSummary)) raw=techSummary;
+  else if(techSummary[tf]) raw=techSummary[tf].all||techSummary[tf].below_pivot||[];
+  else if(techSummary.all) raw=techSummary.all;
+  const seen=new Set();
+  return raw.map(r=>techNormalizeRow(r,tf)).filter(r=>{const k=(r.ticker||'')+'|'+(r.group||'')+'|'+(r.label||'');if(seen.has(k))return false;seen.add(k);return true;});
+}
+function techBucketRows(rows,status){return rows.filter(r=>r.status===status);}
 function renderTechShell(){document.getElementById('atabs').innerHTML='';document.getElementById('stabs').innerHTML='';renderTech();}
 function setTechTf(tf){curTechTf=tf;renderTech();}
 function renderTech(){
-  const el=document.getElementById('cnt'),tf=curTechTf||'weekly',data=techSummary&&techSummary[tf];
-  if(!data){el.innerHTML=`<div class="pnl"><div class="ptl">Technical Indicators</div><div style="font-size:12px;color:#6b7280;line-height:1.6">technical_summary.json not loaded yet. Confirm the public repo has <b>data/technical_summary.json</b>.</div></div>`;return;}
-  const belowPivot=data.below_pivot||[],belowS1=data.below_s1||[],belowS2=data.below_s2||[],rows=techRows(tf),byGroup={};
-  rows.forEach(r=>{byGroup[r.group]=byGroup[r.group]||{score:0,count:0};byGroup[r.group].score+=(r.weakness_rank||0);byGroup[r.group].count++;});
-  const groupRows=Object.entries(byGroup).sort((a,b)=>b[1].score-a[1].score).map(([g,v])=>({group:g,score:v.score,count:v.count,avg:v.count?(v.score/v.count):0}));
-  const cprRows=rows.filter(r=>r.cpr_type||r.price_vs_cpr).sort((a,b)=>(a.cpr_width_pct==null?999:a.cpr_width_pct)-(b.cpr_width_pct==null?999:b.cpr_width_pct)).slice(0,30);
-  function pill(r){return `<span class="status-pill ${techStatusClass(r.status)}">${r.status||'NA'}</span>`;}function cprPill(r){const c=(r.cpr_type||'unknown');return `<span class="cpr-pill cpr-${c}">${c.replace('_',' ')}</span>`;}function num(v,d=2){const n=safeNum(v);return n===null?'--':fmtPrice(n,d);}
-  function table(rs,limit=80){return `<div class="tech-table-wrap"><table class="tech-table"><thead><tr><th>Group</th><th>Label</th><th>Ticker</th><th class="num">Price</th><th class="num">Pivot</th><th class="num">S1</th><th class="num">S2</th><th class="num">R1</th><th class="num">R2</th><th class="num">CPR Low</th><th class="num">CPR High</th><th>CPR</th><th>Price vs CPR</th><th>Status</th></tr></thead><tbody>${rs.slice(0,limit).map(r=>`<tr><td>${r.group||''}</td><td>${r.label||''}</td><td class="tk">${r.ticker||''}</td><td class="num">${num(r.last_close)}</td><td class="num">${num(r.pivot)}</td><td class="num">${num(r.s1)}</td><td class="num">${num(r.s2)}</td><td class="num">${num(r.r1)}</td><td class="num">${num(r.r2)}</td><td class="num">${num(r.bc)}</td><td class="num">${num(r.tc)}</td><td>${cprPill(r)} ${r.cpr_width_pct!=null?`<span style="color:#6b7280">${r.cpr_width_pct}%</span>`:''}</td><td>${r.price_vs_cpr||'--'}${r.inside_cpr?' · inside':''}</td><td>${pill(r)}</td></tr>`).join('')}</tbody></table></div>`;}
-  function cards(rs,limit=80){return `<div class="tech-cards">${rs.slice(0,limit).map(r=>`<div class="tech-card"><div class="tech-card-top"><div><div class="tech-card-title">${r.label||''}</div><div class="tech-card-sub">${r.ticker||''} · ${r.group||''}</div></div><div><div class="tech-card-price">${num(r.last_close)}</div><div style="text-align:right;margin-top:4px">${pill(r)}</div></div></div><div class="tech-card-grid"><div class="tech-mini"><div class="tech-mini-l">Pivot</div><div class="tech-mini-v">${num(r.pivot)}</div></div><div class="tech-mini"><div class="tech-mini-l">S1 / S2</div><div class="tech-mini-v">${num(r.s1)} / ${num(r.s2)}</div></div><div class="tech-mini"><div class="tech-mini-l">CPR</div><div class="tech-mini-v">${(r.cpr_type||'--').replace('_',' ')}</div></div><div class="tech-mini"><div class="tech-mini-l">Price vs CPR</div><div class="tech-mini-v">${r.price_vs_cpr||'--'}</div></div></div></div>`).join('')}</div>`;}
-  const groupTableRows=groupRows.map(g=>({group:g.group,label:`Score ${g.score.toFixed(1)} · ${g.count} items`,ticker:g.group,last_close:g.avg,cpr_type:'normal',price_vs_cpr:'score',status:g.avg>=2?'Below S1':'Below Pivot'}));
-  el.innerHTML=`<div class="tech-hero"><div class="tech-hero-top"><div><div class="tech-title">Technical Indicator Dashboard</div><div class="tech-sub">Pivot, S1/S2, CPR width, CPR position and relative weakness from latest backend data.</div></div><div class="tf-tabs">${['weekly','monthly','annual'].map(x=>`<button class="tf ${tf===x?'on':''}" onclick="setTechTf('${x}')">${x}</button>`).join('')}</div></div><div class="tech-kpis"><div class="tech-kpi"><div class="tech-kpi-l">Below Pivot</div><div class="tech-kpi-v">${belowPivot.length}</div><div class="tech-kpi-sub">Includes S1/S2</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S1</div><div class="tech-kpi-v">${belowS1.length}</div><div class="tech-kpi-sub">Strong weakness</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S2</div><div class="tech-kpi-v">${belowS2.length}</div><div class="tech-kpi-sub">Extreme weakness</div></div><div class="tech-kpi"><div class="tech-kpi-l">Weak Groups</div><div class="tech-kpi-v">${groupRows.length}</div><div class="tech-kpi-sub">Ranked by score</div></div></div></div><div class="tech-layout"><div class="pnl"><div class="ptl">Weakest groups — ${tf}</div>${table(groupTableRows,20)}${cards(groupTableRows,20)}</div><div class="pnl"><div class="ptl">CPR compression / structure — ${tf}</div>${table(cprRows,30)}${cards(cprRows,30)}</div></div><div class="pnl"><div class="ptl">Full pivot weakness table — ${tf}</div>${table(rows,120)}${cards(rows,120)}</div>`;
+  const el=document.getElementById('cnt'),tf=curTechTf||'weekly';
+  const rows=techRows(tf).sort((a,b)=>(b.weakness_rank||0)-(a.weakness_rank||0));
+  if(!techSummary||!rows.length){el.innerHTML=`<div class="pnl"><div class="ptl">Technical Indicators</div><div style="font-size:12px;color:#6b7280;line-height:1.6">technical_summary.json loaded status: <b>${techSummary?'loaded but empty':'not loaded'}</b>. Confirm the public repo has <b>data/technical_summary.json</b>.</div></div>`;return;}
+  const belowPivot=rows.filter(r=>['Below Pivot','Below S1','Below S2'].includes(r.status));
+  const belowS1=techBucketRows(rows,'Below S1'),belowS2=techBucketRows(rows,'Below S2');
+  const byGroup={};
+  rows.forEach(r=>{const g=r.group||'Ungrouped';byGroup[g]=byGroup[g]||{score:0,count:0,weak:0};byGroup[g].score+=(r.weakness_rank||0);byGroup[g].count++;if(['Below Pivot','Below S1','Below S2'].includes(r.status))byGroup[g].weak++;});
+  const groupRows=Object.entries(byGroup).sort((a,b)=>(b[1].score/b[1].count)-(a[1].score/a[1].count)).map(([g,v])=>({group:g,score:v.score,count:v.count,weak:v.weak,avg:v.count?(v.score/v.count):0}));
+  const cprRows=rows.filter(r=>r.cpr_type||r.price_vs_cpr).sort((a,b)=>(a.cpr_width_pct==null?999:a.cpr_width_pct)-(b.cpr_width_pct==null?999:b.cpr_width_pct)).slice(0,40);
+  const perfLabel=tf==='weekly'?'1M':(tf==='monthly'?'MTD':'YTD');
+  function pill(r){return `<span class="status-pill ${techStatusClass(r.status)}">${r.status||'NA'}</span>`;}
+  function cprPill(r){const c=(r.cpr_type||'normal');return `<span class="cpr-pill cpr-${c}">${String(c).replace('_',' ')}</span>`;}
+  function num(v,d=2){const n=safeNum(v);return n===null?'--':fmtPrice(n,d);}
+  function pctVal(v){const n=safeNum(v);return n===null?'--':(n>=0?'+':'')+n.toFixed(1)+'%';}
+  function table(rs,limit=120){return `<div class="tech-table-wrap"><table class="tech-table"><thead><tr><th>Group</th><th>Label</th><th>Ticker</th><th class="num">Price</th><th class="num">${perfLabel}</th><th class="num">YTD</th><th class="num">Cur DD</th><th class="num">Pivot</th><th class="num">S1</th><th class="num">S2</th><th class="num">R1</th><th>CPR</th><th>Price vs CPR</th><th>Status</th></tr></thead><tbody>${rs.slice(0,limit).map(r=>`<tr><td>${r.group||''}</td><td>${r.label||''}</td><td class="tk">${r.ticker||''}</td><td class="num">${num(r.last_close)}</td><td class="num ${safeNum(r.selected_return)>=0?'pos':'neg'}">${pctVal(r.selected_return)}</td><td class="num ${safeNum(r.ytd)>=0?'pos':'neg'}">${pctVal(r.ytd)}</td><td class="num neg">${pctVal(r.current_drawdown)}</td><td class="num">${num(r.pivot)}</td><td class="num">${num(r.s1)}</td><td class="num">${num(r.s2)}</td><td class="num">${num(r.r1)}</td><td>${cprPill(r)} ${r.cpr_width_pct!=null?`<span style="color:#6b7280">${r.cpr_width_pct}%</span>`:''}</td><td>${r.price_vs_cpr||'--'}</td><td>${pill(r)}</td></tr>`).join('')}</tbody></table></div>`;}
+  function cards(rs,limit=120){return `<div class="tech-cards">${rs.slice(0,limit).map(r=>`<div class="tech-card"><div class="tech-card-top"><div><div class="tech-card-title">${r.label||''}</div><div class="tech-card-sub">${r.ticker||''} · ${r.group||''}</div></div><div><div class="tech-card-price">${num(r.last_close)}</div><div style="text-align:right;margin-top:4px">${pill(r)}</div></div></div><div class="tech-card-grid"><div class="tech-mini"><div class="tech-mini-l">${perfLabel}</div><div class="tech-mini-v">${pctVal(r.selected_return)}</div></div><div class="tech-mini"><div class="tech-mini-l">YTD / DD</div><div class="tech-mini-v">${pctVal(r.ytd)} / ${pctVal(r.current_drawdown)}</div></div><div class="tech-mini"><div class="tech-mini-l">Pivot</div><div class="tech-mini-v">${num(r.pivot)}</div></div><div class="tech-mini"><div class="tech-mini-l">S1 / S2</div><div class="tech-mini-v">${num(r.s1)} / ${num(r.s2)}</div></div></div></div>`).join('')}</div>`;}
+  const groupTableRows=groupRows.map(g=>({group:g.group,label:`${g.weak}/${g.count} weak · score ${g.avg.toFixed(1)}`,ticker:g.group,last_close:g.avg,cpr_type:'normal',price_vs_cpr:'group score',status:g.avg>=2?'Below S1':g.avg>=1?'Below Pivot':'Above Pivot',selected_return:null,ytd:null,current_drawdown:null,pivot:null,s1:null,s2:null,r1:null}));
+  el.innerHTML=`<div class="tech-hero"><div class="tech-hero-top"><div><div class="tech-title">Technical Analysis Dashboard</div><div class="tech-sub">Live technical_summary.json loaded. Shows <b>${rows.length}</b> instruments with price, return lens, drawdown, pivot levels and CPR status. Use the toggle to switch weekly / monthly / annual lens.</div></div><div class="tf-tabs">${['weekly','monthly','annual'].map(x=>`<button class="tf ${tf===x?'on':''}" onclick="setTechTf('${x}')">${x}</button>`).join('')}</div></div><div class="tech-kpis"><div class="tech-kpi"><div class="tech-kpi-l">Total Instruments</div><div class="tech-kpi-v">${rows.length}</div><div class="tech-kpi-sub">ETF / index universe</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below Pivot</div><div class="tech-kpi-v">${belowPivot.length}</div><div class="tech-kpi-sub">Includes S1/S2</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S1</div><div class="tech-kpi-v">${belowS1.length}</div><div class="tech-kpi-sub">Strong weakness</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S2</div><div class="tech-kpi-v">${belowS2.length}</div><div class="tech-kpi-sub">Extreme weakness</div></div></div></div><div class="tech-layout"><div class="pnl"><div class="ptl">Weakest groups — ${tf}</div>${table(groupTableRows,30)}${cards(groupTableRows,30)}</div><div class="pnl"><div class="ptl">CPR / pivot structure — ${tf}</div>${table(cprRows,40)}${cards(cprRows,40)}</div></div><div class="pnl"><div class="ptl">Full technical universe — ${rows.length} instruments · ${tf}</div>${table(rows,200)}${cards(rows,200)}</div>`;
 }
 
 function renderSectsShell(){
@@ -1899,4 +1947,3 @@ setTimeout(loadLiveData,200);
 </script>
 </body>
 </html>
-<!-- redeploy -->

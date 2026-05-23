@@ -1,26 +1,20 @@
+# MarketPulse Frontend v2 Schema Fixed
 
-# MarketPulse Frontend
+This frontend is aligned with the MarketPulse backend v4 JSON schema.
 
-Frontend dashboard for MarketPulse backend v4.
-
-## Features
-
-- 10 market groups
-- 163 instruments
-- Benchmark highlighting
-- Weekly / Monthly / Annual toggle
-- Returns view
-- CPR / Pivot ready backend
-- Technical Analysis tab
-- Mobile responsive layout
-
-## Data Source
-
-Main source:
+Main data file:
 data/market_pulse_combined.json
 
-## Run Locally
+Expected backend fields:
+- group.market_group
+- group.display_name
+- group.benchmark_symbol
+- group.group_signals.weekly/monthly/annual
+- item.last_close
+- item.price_source = close
+- item.returns.daily/weekly/monthly/annual/mtd/ytd/r1m/r3m/r6m/r1y
+- item.technicals.weekly/monthly/annual
+- item.signals.weekly/monthly/annual.combined_signal
 
-Use any static server:
-
+Run locally:
 python -m http.server 8080

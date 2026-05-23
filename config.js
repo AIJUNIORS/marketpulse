@@ -1,0 +1,1 @@
+window.CONFIG = { dataPath: "data/market_pulse_combined.json" };

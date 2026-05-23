@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarketPulse</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 .d{background:#f0f2f5;color:#111827;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px}
@@ -9,7 +14,8 @@
 .ms{padding:0 10px;border-left:1px solid #1e293b;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:background .12s;text-align:center}
 .ms:hover{background:#1e293b}
 .ms-n{font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.6px;font-weight:700;margin-bottom:1px}
-.ms-v{font-size:12px;font-weight:800;font-family:'Courier New',monospace}
+.ms-p{font-size:11px;font-weight:800;font-family:'Courier New',monospace;color:#e2e8f0;letter-spacing:-.3px}
+.ms-v{font-size:10px;font-weight:700;font-family:'Courier New',monospace}
 .ms-v.p{color:#4ade80}.ms-v.n{color:#f87171}
 .upd{font-size:10px;color:#9ca3af;background:#1f2937;padding:3px 9px;border-radius:4px;font-family:'Courier New',monospace}
 .modetabs{display:flex;gap:0;background:#111827;padding:0 16px;border-bottom:1px solid #1f2937}
@@ -133,9 +139,62 @@ table.hm tr:hover td{filter:brightness(.96)}
 .tile-tk{font-size:9px;color:#6b7280;font-family:'Courier New',monospace;margin-top:1px}
 .tile-ret{font-size:15px;font-weight:800;font-family:'Courier New',monospace;margin-top:3px;line-height:1}
 .tile-dd{font-size:9px;margin-top:2px;opacity:.7}
-</style>
+/* ── PRICE LAYER CSS ─────────────────────────────────────── */
+.tile-price{font-size:11px;font-weight:800;font-family:'Courier New',monospace;color:#111827;margin-top:2px;letter-spacing:-.2px}
+.tile-chg{font-size:9px;font-weight:700;font-family:'Courier New',monospace;margin-top:1px}
+.tile-chg.p{color:#4ade80}.tile-chg.n{color:#f87171}
+.zone-badge{display:inline-block;padding:1px 5px;border-radius:3px;font-size:8px;font-weight:800;letter-spacing:.3px;margin-top:2px}
+.zone-badge.watch{background:#fef3c7;color:#92400e}
+.zone-badge.good{background:#dbeafe;color:#1e40af}
+.zone-badge.better{background:#dcfce7;color:#166534}
+.zone-badge.best{background:#d1fae5;color:#065f46}
+.zone-badge.above{background:#f3f4f6;color:#6b7280}
+.price-banner{background:#0f172a;border-radius:8px;padding:14px 16px;margin-bottom:10px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid #1e293b}
+.pb-main{display:flex;flex-direction:column;min-width:120px}
+.pb-price{font-size:28px;font-weight:800;font-family:'Courier New',monospace;color:#f1f5f9;line-height:1;letter-spacing:-1px}
+.pb-chg{font-size:12px;font-weight:700;font-family:'Courier New',monospace;margin-top:3px}
+.pb-chg.p{color:#4ade80}.pb-chg.n{color:#f87171}
+.pb-div{width:1px;height:50px;background:#1e293b;flex-shrink:0}
+.pb-stat{text-align:center;min-width:70px}
+.pb-stat-label{font-size:8px;color:#475569;text-transform:uppercase;letter-spacing:.8px;font-weight:700;margin-bottom:3px}
+.pb-stat-val{font-size:13px;font-weight:800;font-family:'Courier New',monospace;color:#94a3b8}
+.pb-stat-val.hi{color:#4ade80}.pb-stat-val.lo{color:#f87171}.pb-stat-val.ma{color:#60a5fa}
+.zone-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:12px;margin-bottom:10px}
+.zone-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+.zone-item{border-radius:6px;padding:8px 10px;border:1.5px solid transparent;position:relative;overflow:hidden}
+.zone-item.watch{background:#fffbeb;border-color:#fde68a}
+.zone-item.good{background:#eff6ff;border-color:#bfdbfe}
+.zone-item.better{background:#f0fdf4;border-color:#bbf7d0}
+.zone-item.best{background:#ecfdf5;border-color:#6ee7b7}
+.zone-item.active{box-shadow:0 0 0 2px #3b82f6}
+.zone-label{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.zone-item.watch .zone-label{color:#92400e}
+.zone-item.good .zone-label{color:#1e40af}
+.zone-item.better .zone-label{color:#166534}
+.zone-item.best .zone-label{color:#065f46}
+.zone-price{font-size:14px;font-weight:800;font-family:'Courier New',monospace;margin-bottom:2px}
+.zone-item.watch .zone-price{color:#78350f}
+.zone-item.good .zone-price{color:#1d4ed8}
+.zone-item.better .zone-price{color:#15803d}
+.zone-item.best .zone-price{color:#047857}
+.zone-desc{font-size:8px;color:#6b7280;line-height:1.3}
+.zone-progress{height:4px;background:#e5e7eb;border-radius:2px;margin-top:5px;overflow:hidden}
+.zone-progress-fill{height:100%;border-radius:2px;transition:width .3s}
+.ma-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:12px;margin-bottom:10px}
+.range-bar{height:12px;background:#f3f4f6;border-radius:6px;position:relative;margin:10px 0 16px;border:1px solid #e5e7eb}
+.range-fill{height:100%;background:linear-gradient(90deg,#fee2e2,#fef3c7,#dcfce7);border-radius:6px;position:absolute;left:0;top:0}
+.ma-marker{position:absolute;top:-14px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.ma-marker-line{width:2px;height:28px;border-radius:1px;margin-top:2px}
+.ma-marker-label{font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.3px;white-space:nowrap;background:#fff;border:1px solid #e5e7eb;border-radius:2px;padding:0 3px;line-height:14px}
+.price-marker{position:absolute;top:-4px;width:4px;height:20px;border-radius:2px;transform:translateX(-50%);background:#111827;box-shadow:0 0 0 2px #fff,0 0 0 3px #111827}
+/* ─────────────────────────────────────────────────────────── */
 
-<div class="d">
+/* ── TECHNICAL INDICATOR TAB + MOBILE UX ───────────────────────── */
+.tech-hero{background:#0f172a;border:1px solid #1e293b;border-radius:10px;padding:14px 16px;margin-bottom:12px;color:#e2e8f0}.tech-hero-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}.tech-title{font-size:13px;font-weight:900;letter-spacing:.4px;text-transform:uppercase;color:#fff}.tech-sub{font-size:10px;color:#94a3b8;margin-top:3px;line-height:1.4}.tf-tabs{display:flex;gap:5px;flex-wrap:wrap}.tf{border:1px solid #334155;background:#111827;color:#94a3b8;border-radius:6px;padding:6px 11px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;cursor:pointer}.tf.on{background:#2563eb;border-color:#60a5fa;color:#fff}.tech-kpis{display:grid;grid-template-columns:repeat(4,minmax(100px,1fr));gap:8px;margin-top:8px}.tech-kpi{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:10px 12px}.tech-kpi-l{font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.8px;font-weight:800;margin-bottom:4px}.tech-kpi-v{font-size:20px;font-family:'Courier New',monospace;font-weight:900;color:#fff;line-height:1}.tech-kpi-sub{font-size:9px;color:#94a3b8;margin-top:4px}.tech-layout{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}.tech-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid #e5e7eb;background:#fff}.tech-table{width:100%;border-collapse:collapse;font-size:10px;min-width:920px}.tech-table th{background:#f9fafb;color:#6b7280;font-size:9px;text-transform:uppercase;letter-spacing:.5px;padding:7px 8px;text-align:left;border-bottom:1px solid #e5e7eb;white-space:nowrap}.tech-table td{padding:7px 8px;border-bottom:1px solid #f3f4f6;font-weight:600;white-space:nowrap}.tech-table tr:hover td{background:#f9fafb}.tech-table .num{text-align:right;font-family:'Courier New',monospace;font-weight:800}.tech-table .tk{font-family:'Courier New',monospace;color:#475569;font-weight:800}.status-pill{display:inline-block;border-radius:999px;padding:2px 7px;font-size:9px;font-weight:900;letter-spacing:.3px}.status-s2{background:#7f1d1d;color:#fee2e2}.status-s1{background:#fee2e2;color:#991b1b}.status-piv{background:#ffedd5;color:#9a3412}.status-ok{background:#dcfce7;color:#166534}.cpr-pill{display:inline-block;border-radius:4px;padding:2px 6px;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.3px}.cpr-ultra_narrow{background:#dbeafe;color:#1e40af}.cpr-narrow{background:#ede9fe;color:#5b21b6}.cpr-normal{background:#f3f4f6;color:#374151}.cpr-wide{background:#fef3c7;color:#92400e}.tech-cards{display:none;gap:8px;flex-direction:column}.tech-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:10px 12px}.tech-card-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:7px}.tech-card-title{font-weight:900;color:#111827;font-size:12px;line-height:1.25}.tech-card-sub{font-family:'Courier New',monospace;color:#6b7280;font-size:10px;margin-top:2px}.tech-card-price{font-family:'Courier New',monospace;font-weight:900;font-size:14px;color:#111827;text-align:right}.tech-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}.tech-mini{background:#f9fafb;border-radius:6px;padding:6px 7px}.tech-mini-l{font-size:8px;color:#9ca3af;text-transform:uppercase;font-weight:800;letter-spacing:.5px;margin-bottom:2px}.tech-mini-v{font-size:11px;font-weight:900;font-family:'Courier New',monospace;color:#111827}@media(max-width:760px){.topbar{height:auto;min-height:46px;align-items:flex-start;padding:8px 10px;gap:8px;flex-wrap:wrap}.logo{height:28px}.mkt-strip{order:3;flex-basis:100%;margin:4px 0 0;overflow-x:auto}.ms{min-width:92px}.upd{font-size:9px;margin-top:3px}.modetabs,.atabs,.stabs{overflow-x:auto;flex-wrap:nowrap;padding-left:10px;padding-right:10px}.mt,.at,.st{white-space:nowrap;padding-left:12px;padding-right:12px}.cnt{padding:10px}.g2,.pulse-groups,.tech-layout,.intel-row{grid-template-columns:1fr}.krow{grid-template-columns:repeat(2,1fr)}.pulse-group{padding:8px}.tile-grid{grid-template-columns:repeat(2,1fr)!important}.zone-grid{grid-template-columns:repeat(2,1fr)}.price-banner{gap:10px}.pb-price{font-size:23px}.tech-kpis{grid-template-columns:repeat(2,1fr)}.tech-table-wrap{display:none}.tech-cards{display:flex}.tech-hero{padding:12px}.tech-title{font-size:12px}}
+
+</style>
+</head>
+<body class="d">
 <div class="topbar">
   <div class="logo">Market<em>Pulse</em></div>
   <div class="mkt-strip" id="mktStrip"></div>
@@ -145,11 +204,11 @@ table.hm tr:hover td{filter:brightness(.96)}
   <div class="mt" onclick="setMode('pulse',this)">Pulse</div>
   <div class="mt on" onclick="setMode('markets',this)">Markets</div>
   <div class="mt" onclick="setMode('sectors',this)">Sectors</div>
+  <div class="mt" onclick="setMode('technical',this)">Technical Analysis</div>
 </div>
 <div class="atabs" id="atabs"></div>
 <div class="stabs" id="stabs"></div>
 <div class="cnt" id="cnt"></div>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
@@ -160,6 +219,8 @@ const MO_NAME=MONTHS[TODAY_MO],MO_NEXT=MONTHS[(TODAY_MO+1)%12];
 
 const MKTS={
   SP:{label:'S&P 500',regime:'Compounder',rc:'c',color:'#7c3aed',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'+1.8',ytd:'+5.2',r1m:'+2.9',r3m:'+7.8',r6m:'+11.4',r1y:'+14.8',maxdd:'-56.8',curdd:'-1.8'},
     annual:{2005:4.9,2006:15.8,2007:5.5,2008:-37.0,2009:26.5,2010:15.1,2011:2.1,2012:16.0,2013:32.4,2014:13.7,2015:1.4,2016:12.0,2017:21.8,2018:-4.4,2019:31.5,2020:18.4,2021:28.7,2022:-18.1,2023:26.3,2024:23.3,2025:8.2,2026:5.2},
     monthly:{
@@ -188,6 +249,8 @@ const MKTS={
     consistPct:{mo:60,qtr:66,yr:75},
     recovery:[{yr:2008,dd:-56,months:49},{yr:2020,dd:-34,months:6},{yr:2022,dd:-27,months:18}]},
   NQ:{label:'Nasdaq',regime:'Compounder',rc:'c',color:'#16a34a',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'+2.1',ytd:'+6.8',r1m:'+3.4',r3m:'+9.1',r6m:'+14.2',r1y:'+18.2',maxdd:'-82.9',curdd:'-2.1'},
     annual:{2005:1.4,2006:9.5,2007:9.8,2008:-40.5,2009:43.9,2010:16.9,2011:-1.8,2012:15.9,2013:38.3,2014:13.4,2015:5.7,2016:7.5,2017:28.2,2018:-3.9,2019:35.2,2020:43.6,2021:21.4,2022:-33.1,2023:43.4,2024:29.6,2025:10.4,2026:6.8},
     monthly:{
@@ -215,6 +278,8 @@ const MKTS={
     consistPct:{mo:62,qtr:68,yr:77},
     recovery:[{yr:2000,dd:-82,months:180},{yr:2008,dd:-54,months:40},{yr:2022,dd:-33,months:22}]},
   TSX:{label:'TSX',regime:'Compounder',rc:'c',color:'#2563eb',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'+1.2',ytd:'+4.1',r1m:'+2.8',r3m:'+6.4',r6m:'+9.2',r1y:'+11.3',maxdd:'-37.2',curdd:'-3.1'},
     annual:{2005:21.9,2006:14.5,2007:7.2,2008:-35.0,2009:30.7,2010:14.4,2011:-11.1,2012:4.0,2013:9.6,2014:7.4,2015:-11.1,2016:21.1,2017:9.1,2018:-8.9,2019:22.9,2020:5.6,2021:21.7,2022:-5.8,2023:11.8,2024:18.0,2025:9.2,2026:4.1},
     monthly:{
@@ -242,6 +307,8 @@ const MKTS={
     consistPct:{mo:58,qtr:64,yr:73},
     recovery:[{yr:2008,dd:-35,months:48},{yr:2015,dd:-11,months:14},{yr:2020,dd:-37,months:8}]},
   NIFTY:{label:'Nifty',regime:'High Beta EM',rc:'h',color:'#d97706',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'-0.8',ytd:'+2.3',r1m:'-1.4',r3m:'+4.2',r6m:'+7.1',r1y:'+8.9',maxdd:'-59.9',curdd:'-8.2'},
     annual:{2005:36.3,2006:39.8,2007:54.8,2008:-52.4,2009:75.8,2010:17.9,2011:-24.6,2012:27.7,2013:6.8,2014:31.4,2015:-4.1,2016:3.0,2017:28.6,2018:3.2,2019:12.0,2020:14.9,2021:24.1,2022:4.3,2023:19.4,2024:8.8,2025:5.5,2026:2.3},
     monthly:{
@@ -269,6 +336,8 @@ const MKTS={
     consistPct:{mo:55,qtr:60,yr:68},
     recovery:[{yr:2008,dd:-59,months:36},{yr:2011,dd:-24,months:18},{yr:2020,dd:-38,months:10}]},
   GOLD:{label:'Gold',regime:'Slow Hedge',rc:'d',color:'#b45309',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'+3.4',ytd:'+12.1',r1m:'+4.8',r3m:'+9.2',r6m:'+16.4',r1y:'+21.3',maxdd:'-44.8',curdd:'0.0'},
     annual:{2005:9.0,2006:22.8,2007:31.4,2008:5.8,2009:23.9,2010:29.5,2011:10.2,2012:7.1,2013:-28.3,2014:-1.5,2015:-10.4,2016:8.1,2017:13.5,2018:-1.9,2019:18.4,2020:25.1,2021:-3.6,2022:-0.3,2023:13.1,2024:27.2,2025:26.5,2026:12.1},
     monthly:{
@@ -296,6 +365,8 @@ const MKTS={
     consistPct:{mo:52,qtr:58,yr:62},
     recovery:[{yr:2013,dd:-28,months:84},{yr:2020,dd:-12,months:5},{yr:2022,dd:-20,months:14}]},
   CRUDE:{label:'Crude',regime:'Cyclical',rc:'cy',color:'#dc2626',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'-2.8',ytd:'-8.4',r1m:'-4.1',r3m:'-6.8',r6m:'-11.2',r1y:'-14.2',maxdd:'-82.4',curdd:'-22.4'},
     annual:{2005:40.5,2006:0.2,2007:57.2,2008:-53.5,2009:77.9,2010:15.1,2011:8.2,2012:-7.1,2013:7.2,2014:-45.9,2015:-30.5,2016:45.0,2017:12.5,2018:-24.8,2019:34.5,2020:-21.5,2021:55.0,2022:6.7,2023:-10.7,2024:-3.1,2025:-4.2,2026:-8.4},
     monthly:{
@@ -323,6 +394,8 @@ const MKTS={
     consistPct:{mo:48,qtr:52,yr:55},
     recovery:[{yr:2008,dd:-78,months:36},{yr:2014,dd:-76,months:60},{yr:2020,dd:-82,months:24}]},
   NATGAS:{label:'Nat Gas',regime:'Volatile',rc:'v',color:'#059669',
+    price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,
+    buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
     kpi:{mtd:'-4.1',ytd:'+18.2',r1m:'-5.8',r3m:'+22.4',r6m:'+14.8',r1y:'+32.4',maxdd:'-77.4',curdd:'-12.4'},
     annual:{2005:33.2,2006:-46.6,2007:16.3,2008:-32.0,2009:-26.8,2010:-21.2,2011:-32.2,2012:-30.3,2013:26.5,2014:-41.9,2015:-33.6,2016:59.3,2017:-18.1,2018:45.5,2019:-25.5,2020:40.6,2021:46.5,2022:-51.8,2023:11.3,2024:-5.1,2025:22.8,2026:18.2},
     monthly:{
@@ -352,261 +425,373 @@ const MKTS={
 };
 
 const SECTS={
-  US:{label:'US Sectors',bm:{label:'S&P 500',ytd:5.2},phase:'',
-    note:'',
+  US:{label:'US Sectors',bm:{label:'S&P 500',ytd:5.2},phase:'',note:'',
     sectors:[
       {name:'Technology',tk:'XLK',type:'c',ytd:8.4,r1m:3.2,r3m:11.2,r1y:18.4,maxdd:-55,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[3.1,0.8,1.4,-1.2,1.8,2.1,3.4,0.6,-2.1,2.8,2.4,3.2],posRate:[68,58,62,45,62,65,72,55,38,65,70,74],wkAvg:[0.78,0.20,0.35,-0.30,0.45,0.52,0.85,0.15,-0.52,0.70,0.60,0.80],wkPos:[66,56,60,43,60,63,70,53,36,63,68,72]},
         annual:{2016:13.8,2017:36.3,2018:-1.6,2019:48.6,2020:43.9,2021:33.5,2022:-28.2,2023:56.4,2024:19.8,2025:12.1,2026:8.4},
         monthly:{2019:[6.6,7.3,7.8,6.7,-7.6,8.5,4.0,-1.4,-1.6,4.0,5.0,4.8],2020:[-2.0,-7.6,-10.2,14.8,8.8,5.2,6.8,11.0,-5.8,5.0,11.2,4.2],2021:[0.8,1.4,0.2,8.8,-1.0,6.8,2.8,5.8,-5.8,7.8,-1.2,2.2],2022:[-8.2,-4.1,3.8,-13.0,-11.8,-9.1,12.0,-5.0,-11.2,3.8,3.9,-9.2],2023:[10.1,-1.0,5.8,0.4,-5.1,6.8,3.8,2.0,-5.4,6.8,11.2,-0.8],2024:[1.2,5.8,1.4,-4.0,6.8,5.8,1.2,0.4,2.4,-0.8,5.0,0.2],2025:[1.2,-3.8,-8.2,0.8,-0.4,5.8,0.4,0.2,-1.2,2.0,4.0,1.8],2026:[2.0,0.8,0.2,3.0,0,0,0,0,0,0,0,0]}},
       {name:'Financials',tk:'XLF',type:'c',ytd:12.1,r1m:4.8,r3m:14.2,r1y:22.4,maxdd:-83,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,-0.4,1.8,0.4,-0.8,1.2,2.4,0.2,-1.4,1.8,2.1,1.8],posRate:[60,48,65,55,48,58,68,52,42,62,65,70],wkAvg:[0.20,-0.10,0.45,0.10,-0.20,0.30,0.60,0.05,-0.35,0.45,0.52,0.45],wkPos:[58,46,63,53,46,56,66,50,40,60,63,68]},
         annual:{2016:22.8,2017:22.2,2018:-13.0,2019:32.1,2020:-1.7,2021:35.0,2022:-10.5,2023:12.2,2024:30.1,2025:8.4,2026:12.1},
         monthly:{2019:[8.8,5.2,6.2,5.8,-6.8,7.2,2.2,-2.4,-2.2,2.8,4.2,3.4],2020:[-1.2,-8.8,-14.8,14.2,7.4,2.8,5.4,4.8,-4.2,-2.8,14.8,4.8],2021:[4.8,4.4,5.8,5.0,3.2,2.2,4.2,5.2,-2.8,8.8,1.2,4.2],2022:[-0.4,-2.8,4.0,-5.2,-0.2,-8.8,6.0,-1.8,-4.0,4.4,-4.2,5.2],2023:[-1.2,3.0,2.0,2.2,-4.2,1.0,3.4,-0.2,-3.2,0.4,7.0,-1.6],2024:[-1.8,1.0,2.0,1.8,0.6,2.0,5.2,0.2,-3.8,0.8,6.0,2.2],2025:[2.0,-0.6,3.0,1.6,0.2,1.8,-1.0,0.4,1.0,2.2,-1.2,-1.0],2026:[1.6,-2.2,0.8,-0.6,0,0,0,0,0,0,0,0]}},
       {name:'Energy',tk:'XLE',type:'c',ytd:-4.2,r1m:-2.8,r3m:-6.4,r1y:-8.1,maxdd:-77,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[3.8,2.1,4.2,-1.2,-2.4,-3.1,2.4,0.8,-2.4,-3.2,-4.1,2.8],posRate:[65,62,70,45,40,38,60,52,40,38,32,58],wkAvg:[0.95,0.52,1.05,-0.30,-0.60,-0.78,0.60,0.20,-0.60,-0.80,-1.02,0.70],wkPos:[63,60,68,43,38,36,58,50,38,36,30,56]},
         annual:{2016:27.4,2017:-1.0,2018:-18.2,2019:11.8,2020:-33.7,2021:54.6,2022:65.7,2023:-4.8,2024:5.7,2025:-8.2,2026:-4.2},
         monthly:{2019:[5.4,2.8,7.8,5.4,-12.4,-3.4,3.8,-0.8,-3.8,0.8,4.2,2.8],2020:[-12.8,-8.8,-41.8,-6.8,27.8,10.2,4.2,-2.8,-8.8,5.4,27.8,7.8],2021:[12.2,18.8,4.8,6.8,4.2,0.2,0.8,9.2,4.8,9.8,-12.8,9.8],2022:[17.0,8.4,24.0,-12.4,9.2,-7.8,-7.2,-11.4,-12.2,-12.8,10.6,-7.8],2023:[3.0,2.4,-2.0,1.6,-11.4,-3.6,-1.2,-0.6,-5.0,-11.4,-6.2,0.0],2024:[-1.6,2.6,-4.2,-1.6,-6.2,-6.6,-4.2,0.8,3.8,-6.6,-3.8,0.0],2025:[-3.2,0.8,2.4,-4.2,-3.0,-5.2,3.2,-2.2,0.6,0.4,-1.6,4.6],2026:[-3.0,-1.6,-3.2,-1.0,0,0,0,0,0,0,0,0]}},
       {name:'Healthcare',tk:'XLV',type:'d',ytd:2.1,r1m:0.8,r3m:3.4,r1y:8.2,maxdd:-28,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,0.2,0.8,0.6,0.2,0.8,1.2,0.4,-0.8,1.2,1.4,1.8],posRate:[65,55,62,58,55,60,65,58,45,62,65,70],wkAvg:[0.35,0.05,0.20,0.15,0.05,0.20,0.30,0.10,-0.20,0.30,0.35,0.45],wkPos:[63,53,60,56,53,58,63,56,43,60,63,68]},
         annual:{2016:-2.7,2017:22.1,2018:14.5,2019:20.8,2020:13.5,2021:26.1,2022:-2.2,2023:-2.1,2024:2.6,2025:5.8,2026:2.1},
         monthly:{2019:[4.2,3.8,5.2,4.2,-4.2,5.8,2.2,-1.8,-1.2,2.2,4.2,1.8],2020:[2.8,-4.2,-7.8,11.8,4.8,1.2,2.8,4.2,-3.8,-1.8,8.8,2.8],2021:[0.2,2.8,5.2,4.2,3.8,2.2,2.8,3.2,-4.2,5.8,-0.2,3.8],2022:[-5.0,-2.8,3.4,-8.6,-8.6,-8.2,9.0,-4.0,-9.2,7.8,5.2,-5.8],2023:[6.0,-2.4,3.6,1.4,-0.4,6.4,3.2,-1.6,-4.8,-0.2,8.8,4.4],2024:[1.6,5.2,3.0,-4.0,4.8,3.4,1.0,2.2,-1.6,-0.8,5.8,-2.4],2025:[2.2,-1.2,-5.4,-0.6,0.6,3.0,0.2,0.0,-0.6,1.4,3.0,0.6],2026:[1.6,0.4,-0.2,3.2,0,0,0,0,0,0,0,0]}},
       {name:'Utilities',tk:'XLU',type:'d',ytd:5.8,r1m:2.4,r3m:7.1,r1y:12.4,maxdd:-44,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,-0.2,0.8,0.4,0.8,1.2,2.4,1.2,-0.8,0.8,1.4,1.8],posRate:[58,48,58,55,58,62,70,62,45,58,62,68],wkAvg:[0.10,-0.05,0.20,0.10,0.20,0.30,0.60,0.30,-0.20,0.20,0.35,0.45],wkPos:[56,46,56,53,56,60,68,60,43,56,60,66]},
         annual:{2016:16.3,2017:12.1,2018:-0.4,2019:26.4,2020:0.5,2021:17.7,2022:-1.4,2023:-7.1,2024:23.4,2025:14.2,2026:5.8},
         monthly:{2019:[5.8,3.2,4.8,2.8,-0.8,3.2,5.2,2.8,-2.2,2.8,4.8,1.8],2020:[-2.8,-4.8,-20.8,7.8,3.2,0.8,3.2,5.8,-2.8,-1.8,10.8,3.8],2021:[0.8,1.8,4.2,2.8,2.2,-0.2,2.8,1.2,-3.2,5.8,-1.2,4.8],2022:[-0.8,-2.8,3.4,-5.2,-1.2,-8.4,5.4,-2.2,-4.4,4.2,-4.8,4.0],2023:[-1.0,3.0,2.0,2.2,-4.4,1.0,3.4,-0.6,-3.6,0.4,7.2,-1.8],2024:[-1.8,1.2,2.0,2.0,0.6,2.2,5.0,0.4,-3.6,1.0,6.2,2.4],2025:[2.0,-0.6,3.0,1.8,0.4,1.8,-0.8,0.4,1.0,2.4,-1.2,-0.8],2026:[1.8,-2.0,0.8,-0.2,0,0,0,0,0,0,0,0]}},
       {name:'Cons Disc',tk:'XLY',type:'c',ytd:7.2,r1m:2.8,r3m:9.4,r1y:16.8,maxdd:-56,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,0.4,1.2,-0.8,1.4,1.8,3.2,0.8,-1.2,2.4,2.1,2.8],posRate:[62,55,60,48,58,62,68,55,40,62,65,70],wkAvg:[0.45,0.10,0.30,-0.20,0.35,0.45,0.80,0.20,-0.30,0.60,0.52,0.70],wkPos:[60,53,58,46,56,60,66,53,38,60,63,68]},
         annual:{2016:6.0,2017:23.0,2018:-3.3,2019:27.9,2020:33.0,2021:24.4,2022:-37.0,2023:41.4,2024:30.4,2025:6.8,2026:7.2},
         monthly:{2019:[6.8,3.2,4.8,4.2,-5.8,6.8,3.2,-2.2,2.8,-3.2,3.8,2.8],2020:[-2.8,-6.8,-13.8,12.8,6.8,3.8,5.8,8.8,-4.8,3.8,14.8,6.8],2021:[1.8,3.8,5.8,4.8,2.8,0.8,3.8,2.8,-4.8,7.8,-2.8,4.8],2022:[-8.8,-5.8,4.8,-9.8,-7.8,-8.8,11.8,-6.8,-11.8,3.8,2.8,-8.8],2023:[9.8,-2.8,4.8,0.8,-4.8,6.8,4.8,2.8,-5.8,5.8,11.8,-0.8],2024:[1.8,6.8,3.8,-4.8,6.8,5.8,1.8,1.8,-1.8,-0.8,6.8,-2.8],2025:[2.8,-2.8,-7.8,0.8,0.8,5.8,0.8,0.8,-1.8,2.8,4.8,1.8],2026:[2.8,0.8,-0.8,2.8,0,0,0,0,0,0,0,0]}},
       {name:'Industrials',tk:'XLI',type:'c',ytd:6.8,r1m:2.4,r3m:8.1,r1y:14.2,maxdd:-45,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,0.4,1.8,0.8,-0.4,0.8,2.1,0.4,-1.2,1.4,1.8,2.1],posRate:[62,55,65,58,50,58,68,55,42,62,65,70],wkAvg:[0.30,0.10,0.45,0.20,-0.10,0.20,0.52,0.10,-0.30,0.35,0.45,0.52],wkPos:[60,53,63,56,48,56,66,53,40,60,63,68]},
         annual:{2016:18.9,2017:21.0,2018:-13.3,2019:29.4,2020:11.4,2021:21.1,2022:-5.5,2023:18.1,2024:17.0,2025:7.4,2026:6.8},
         monthly:{2019:[5.2,3.2,5.8,4.8,-4.8,5.8,3.8,-2.2,3.8,-3.8,3.8,2.2],2020:[-2.4,-4.4,-20.4,11.4,4.4,2.4,4.4,3.4,-3.4,-3.4,11.4,3.4],2021:[0.4,2.4,4.4,3.4,2.4,-0.4,3.4,1.4,-3.4,6.4,-1.4,5.4],2022:[-0.6,-3.0,3.8,-5.4,-0.6,-8.6,5.8,-2.0,-4.0,4.4,-4.6,4.6],2023:[-0.8,3.2,2.2,2.4,-4.0,1.0,3.6,-0.4,-3.4,0.4,7.2,-1.8],2024:[-1.6,1.2,2.2,1.8,0.8,2.0,5.0,0.2,-3.6,0.8,6.4,2.4],2025:[2.2,-0.8,3.2,1.6,0.4,1.8,-0.8,0.4,1.0,2.2,-1.2,-1.0],2026:[1.6,-2.0,0.8,-0.6,0,0,0,0,0,0,0,0]}},
       {name:'Materials',tk:'XLB',type:'c',ytd:3.1,r1m:1.2,r3m:4.2,r1y:8.4,maxdd:-48,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,0.4,2.1,0.8,-0.8,0.4,1.8,0.2,-1.8,1.2,1.4,2.1],posRate:[62,55,68,58,48,55,65,52,40,60,62,68],wkAvg:[0.35,0.10,0.52,0.20,-0.20,0.10,0.45,0.05,-0.45,0.30,0.35,0.52],wkPos:[60,53,66,56,46,53,63,50,38,58,60,66]},
         annual:{2016:16.7,2017:18.7,2018:-14.7,2019:24.6,2020:20.7,2021:27.4,2022:-12.3,2023:11.8,2024:11.5,2025:4.8,2026:3.1},
         monthly:{2019:[5.4,2.8,6.4,4.4,-4.4,4.4,2.4,-1.4,2.4,-2.4,3.4,2.4],2020:[-1.4,-4.4,-19.4,11.4,5.4,2.4,4.4,3.4,-3.4,-2.4,10.4,3.4],2021:[1.4,2.4,4.4,3.4,2.4,-0.4,2.4,1.4,-3.4,5.4,-1.4,4.4],2022:[-0.6,-3.2,3.6,-5.4,-0.8,-8.4,5.4,-2.2,-4.2,4.2,-4.8,4.4],2023:[-0.8,3.2,2.2,2.4,-4.2,1.0,3.6,-0.4,-3.6,0.2,7.2,-1.8],2024:[-1.8,1.2,2.2,1.8,0.8,2.0,5.0,0.2,-3.8,0.8,6.2,2.4],2025:[2.2,-0.8,3.0,1.6,0.4,1.8,-0.8,0.4,1.0,2.2,-1.4,-1.0],2026:[1.6,-2.2,0.8,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Cons Staples',tk:'XLP',type:'d',ytd:1.4,r1m:0.4,r3m:2.1,r1y:6.4,maxdd:-29,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,0.2,0.4,0.2,0.4,0.6,1.2,0.4,-0.4,0.8,1.2,1.4],posRate:[62,55,58,55,58,60,68,58,48,60,65,70],wkAvg:[0.20,0.05,0.10,0.05,0.10,0.15,0.30,0.10,-0.10,0.20,0.30,0.35],wkPos:[60,53,56,53,56,58,66,56,46,58,63,68]},
         annual:{2016:3.5,2017:13.7,2018:-8.4,2019:27.1,2020:10.7,2021:17.9,2022:-3.3,2023:0.6,2024:14.3,2025:4.2,2026:1.4},
         monthly:{2019:[5.4,2.8,5.4,3.4,-2.4,4.4,2.4,-1.4,-1.4,2.4,3.4,1.4],2020:[-0.4,-4.4,-12.4,9.4,3.4,1.4,3.4,5.4,-3.4,-2.4,8.4,2.4],2021:[0.4,1.4,3.4,3.4,1.4,-0.4,2.4,1.4,-3.4,5.4,-1.4,4.4],2022:[-0.4,-2.4,3.4,-5.4,-1.4,-8.4,5.4,-2.4,-4.4,4.4,-4.4,4.4],2023:[-1.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,1.4,0.4,2.4,5.4,0.4,-3.4,0.4,6.4,2.4],2025:[2.4,-0.4,3.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Real Estate',tk:'XLRE',type:'d',ytd:2.8,r1m:1.4,r3m:3.8,r1y:7.2,maxdd:-42,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,0.2,1.2,0.4,0.2,0.8,1.8,0.6,-1.2,1.0,1.4,1.8],posRate:[58,52,62,55,52,58,65,55,42,58,62,68],wkAvg:[0.20,0.05,0.30,0.10,0.05,0.20,0.45,0.15,-0.30,0.25,0.35,0.45],wkPos:[56,50,60,53,50,56,63,53,40,56,60,66]},
         annual:{2020:-4.7,2021:46.2,2022:-26.2,2023:12.5,2024:5.2,2025:8.4,2026:2.8},
         monthly:{2022:[-1.4,-3.4,3.4,-6.4,-2.4,-9.4,5.4,-2.4,-5.4,4.4,-5.4,4.4],2023:[-0.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,2.4,0.4,2.4,5.4,0.4,-3.4,0.4,6.4,2.4],2025:[2.4,-0.4,3.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Comm Services',tk:'XLC',type:'c',ytd:6.2,r1m:2.8,r3m:8.4,r1y:14.2,maxdd:-42,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.4,0.4,1.2,-0.8,1.2,1.8,3.2,0.8,-1.4,2.1,2.4,2.8],posRate:[64,55,60,46,58,62,70,55,40,63,66,70],wkAvg:[0.60,0.10,0.30,-0.20,0.30,0.45,0.80,0.20,-0.35,0.52,0.60,0.70],wkPos:[62,53,58,44,56,60,68,53,38,61,64,68]},
         annual:{2018:-15.7,2019:32.7,2020:27.1,2021:21.6,2022:-39.9,2023:55.1,2024:40.1,2025:8.4,2026:6.2},
         monthly:{2019:[8.2,4.8,5.2,4.4,-7.8,8.2,3.4,-1.8,-1.4,3.8,4.8,3.2],2020:[-2.4,-7.8,-11.2,14.2,8.2,4.8,5.8,10.2,-5.2,4.4,10.8,4.2],2021:[1.2,2.4,1.2,7.8,-0.8,5.8,2.4,5.2,-5.2,6.8,-1.2,2.2],2022:[-8.8,-4.2,3.8,-13.8,-12.2,-9.2,11.8,-5.2,-11.8,3.8,3.8,-9.8],2023:[9.8,-1.2,6.2,0.8,-5.2,7.2,4.2,2.2,-5.8,7.2,11.2,-0.8],2024:[1.4,5.8,2.2,-4.2,6.8,6.2,1.4,0.8,2.8,-0.8,5.8,0.4],2025:[1.4,-4.2,-8.4,0.8,-0.4,6.2,0.4,0.2,-1.2,2.2,4.2,1.8],2026:[2.2,0.8,0.2,2.8,0,0,0,0,0,0,0,0]}},
       {name:'Semiconductors',tk:'SOXX',type:'c',ytd:9.8,r1m:4.2,r3m:14.8,r1y:24.1,maxdd:-65,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[4.2,1.2,2.4,-1.8,2.4,2.8,4.8,1.2,-2.8,3.4,3.2,4.1],posRate:[70,60,65,45,65,68,74,58,38,68,72,76],wkAvg:[1.05,0.30,0.60,-0.45,0.60,0.70,1.20,0.30,-0.70,0.85,0.80,1.02],wkPos:[68,58,63,43,63,66,72,56,36,66,70,74]},
         annual:{2019:68.4,2020:51.5,2021:41.1,2022:-35.6,2023:65.4,2024:18.7,2025:14.2,2026:9.8},
         monthly:{2022:[-9.4,-4.4,4.4,-14.4,-12.4,-9.4,13.4,-5.4,-12.4,4.4,4.4,-9.4],2023:[11.4,-1.4,7.4,0.4,-6.4,7.4,4.4,2.4,-6.4,7.4,11.4,-0.4],2024:[1.4,6.4,2.4,-4.4,7.4,6.4,2.4,0.4,3.4,-0.4,5.4,0.4],2025:[1.4,-4.4,-8.4,1.4,-0.4,6.4,0.4,0.4,-1.4,2.4,4.4,2.4],2026:[2.4,1.4,0.4,3.4,0,0,0,0,0,0,0,0]}},
       {name:'Gold Miners',tk:'GDX',type:'d',ytd:18.4,r1m:6.8,r3m:22.4,r1y:28.4,maxdd:-72,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[4.8,1.2,-0.8,0.8,-2.4,-1.8,-2.8,4.2,-1.2,1.4,0.4,2.8],posRate:[72,58,45,55,38,42,40,68,48,55,52,65],wkAvg:[1.20,0.30,-0.20,0.20,-0.60,-0.45,-0.70,1.05,-0.30,0.35,0.10,0.70],wkPos:[70,56,43,53,36,40,38,66,46,53,50,63]},
         annual:{2019:33.8,2020:24.8,2021:-9.1,2022:-9.9,2023:10.2,2024:11.2,2025:38.4,2026:18.4},
         monthly:{2022:[0.4,6.4,3.4,-2.4,-2.4,-2.4,-3.4,-3.4,-3.4,-2.4,-0.4,-3.4],2023:[6.4,-5.4,8.4,1.4,-1.4,2.4,2.4,-1.4,4.4,-4.4,2.4,1.4],2024:[0.4,0.4,-1.4,3.4,2.4,1.4,5.4,-2.4,5.4,-3.4,3.4,2.4],2025:[6.4,3.4,5.4,4.4,-0.4,1.4,1.4,0.4,1.4,2.4,-2.4,0.4],2026:[3.4,4.4,1.4,2.4,0,0,0,0,0,0,0,0]}},
       {name:'20yr Treasury',tk:'TLT',type:'m',ytd:-2.4,r1m:1.2,r3m:-1.8,r1y:-4.2,maxdd:-48,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[-0.4,0.8,0.4,-0.2,0.6,0.8,-0.2,1.2,0.4,-0.8,1.4,1.8],posRate:[45,55,52,48,55,58,48,62,52,42,62,68],wkAvg:[-0.10,0.20,0.10,-0.05,0.15,0.20,-0.05,0.30,0.10,-0.20,0.35,0.45],wkPos:[43,53,50,46,53,56,46,60,50,40,60,66]},
         annual:{2019:14.2,2020:18.2,2021:-4.8,2022:-31.4,2023:-3.4,2024:-8.4,2025:-2.4,2026:-2.4},
         monthly:{2022:[-3.4,3.4,-4.4,-5.4,-9.4,-4.4,5.4,-3.4,-4.4,3.4,5.4,-3.4],2023:[3.4,-2.4,3.4,0.4,-1.4,1.4,-1.4,1.4,-4.4,-4.4,8.4,4.4],2024:[-2.4,1.4,-1.4,-2.4,-0.4,1.4,-0.4,2.4,-0.4,-3.4,2.4,-3.4],2025:[2.4,-1.4,-0.4,-0.4,0.4,1.4,0.4,-0.4,-0.4,0.4,1.4,0.4],2026:[1.4,0.4,0.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'High Yield',tk:'HYG',type:'m',ytd:2.4,r1m:0.8,r3m:2.4,r1y:6.8,maxdd:-22,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,0.4,0.8,0.4,-0.2,0.8,1.4,0.2,-0.6,0.8,1.2,1.4],posRate:[65,55,60,55,48,58,68,52,42,58,65,70],wkAvg:[0.30,0.10,0.20,0.10,-0.05,0.20,0.35,0.05,-0.15,0.20,0.30,0.35],wkPos:[63,53,58,53,46,56,66,50,40,56,63,68]},
         annual:{2019:14.4,2020:7.4,2021:5.4,2022:-11.4,2023:13.4,2024:8.4,2025:4.4,2026:2.4},
         monthly:{2022:[-1.4,-0.4,1.4,-3.4,-2.4,-3.4,3.4,-1.4,-2.4,2.4,2.4,-1.4],2023:[3.4,-0.4,1.4,0.4,-1.4,1.4,1.4,-0.4,-1.4,0.4,4.4,2.4],2024:[0.4,1.4,1.4,-0.4,1.4,1.4,0.4,1.4,-0.4,-0.4,2.4,-0.4],2025:[1.4,-0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,1.4,0.4],2026:[0.4,0.4,0.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'US Dollar',tk:'UUP',type:'m',ytd:-4.2,r1m:-0.8,r3m:-2.4,r1y:-6.4,maxdd:-18,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,0.4,-0.2,-0.4,0.4,0.2,-0.8,0.2,0.4,-0.2,0.4,0.6],posRate:[58,52,46,44,54,52,42,50,54,46,54,56],wkAvg:[0.20,0.10,-0.05,-0.10,0.10,0.05,-0.20,0.05,0.10,-0.05,0.10,0.15],wkPos:[56,50,44,42,52,50,40,48,52,44,52,54]},
         annual:{2018:4.8,2019:-1.4,2020:-6.4,2021:6.4,2022:14.4,2023:-2.4,2024:6.4,2025:-4.4,2026:-4.2},
         monthly:{2022:[1.4,0.4,1.4,2.4,2.4,2.4,-1.4,2.4,3.4,-4.4,-3.4,-2.4],2023:[-1.4,0.4,-0.4,0.4,-0.4,-0.4,1.4,0.4,2.4,-2.4,-2.4,-0.4],2024:[2.4,-0.4,1.4,1.4,1.4,-0.4,1.4,-2.4,0.4,-0.4,2.4,-1.4],2025:[-0.4,-0.4,-1.4,-1.4,0.4,-0.4,-0.4,0.4,0.4,0.4,0.4,0.4],2026:[-0.4,-0.4,-1.4,-1.4,0,0,0,0,0,0,0,0]}},
       {name:'Short Treasury',tk:'SHY',type:'m',ytd:1.8,r1m:0.4,r3m:1.2,r1y:4.8,maxdd:-6,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,0.2,0.1,0.1,0.3,0.2,0.1,0.3,0.2,0.1,0.3,0.4],posRate:[72,68,65,62,70,65,60,68,65,62,68,75],wkAvg:[0.10,0.05,0.02,0.02,0.07,0.05,0.02,0.07,0.05,0.02,0.07,0.10],wkPos:[70,66,63,60,68,63,58,66,63,60,66,73]},
         annual:{2018:1.8,2019:3.4,2020:3.1,2021:-0.4,2022:-3.4,2023:4.4,2024:5.1,2025:5.2,2026:1.8},
         monthly:{2022:[-0.2,-0.1,0.3,-0.8,-1.0,-0.8,0.5,-0.4,-0.6,0.4,0.5,-0.3],2023:[0.5,-0.2,0.5,0.2,-0.2,0.4,-0.1,0.4,-0.4,-0.4,0.8,0.8],2024:[-0.2,0.4,-0.2,-0.3,0.1,0.4,0.1,0.5,0.0,-0.3,0.5,-0.4],2025:[0.5,-0.2,0.0,0.0,0.2,0.5,0.1,0.1,0.1,0.2,0.4,0.2],2026:[0.4,0.2,0.2,0.4,0,0,0,0,0,0,0,0]}},
       {name:'Corp Bond',tk:'LQD',type:'m',ytd:-1.2,r1m:0.8,r3m:-0.8,r1y:-2.8,maxdd:-26,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[-0.2,0.6,0.3,-0.1,0.5,0.6,-0.1,0.9,0.3,-0.6,1.1,1.4],posRate:[47,58,55,50,58,60,48,62,54,44,62,68],wkAvg:[-0.05,0.15,0.07,-0.02,0.12,0.15,-0.02,0.22,0.07,-0.15,0.27,0.35],wkPos:[45,56,53,48,56,58,46,60,52,42,60,66]},
         annual:{2019:17.4,2020:9.8,2021:-1.4,2022:-17.8,2023:8.4,2024:1.4,2025:-1.8,2026:-1.2},
         monthly:{2022:[-2.8,2.8,-4.0,-5.0,-9.4,-4.4,5.0,-3.0,-4.2,3.0,5.0,-3.2],2023:[3.4,-2.2,3.0,0.2,-1.2,1.2,-1.0,1.0,-4.0,-4.0,7.8,4.2],2024:[-2.2,1.2,-1.2,-2.2,-0.2,1.2,-0.2,2.2,-0.2,-3.2,2.2,-3.2],2025:[2.2,-1.2,-0.2,-0.2,0.4,1.2,0.4,-0.2,-0.2,0.2,1.2,0.4],2026:[0.8,0.4,0.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'Commodities',tk:'PDBC',type:'m',ytd:-4.8,r1m:-1.8,r3m:-3.8,r1y:-8.4,maxdd:-42,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.1,1.2,2.4,-0.4,-0.8,-1.2,0.8,0.2,-0.8,-1.2,-1.8,0.8],posRate:[60,58,65,46,44,40,55,50,42,40,36,52],wkAvg:[0.52,0.30,0.60,-0.10,-0.20,-0.30,0.20,0.05,-0.20,-0.30,-0.45,0.20],wkPos:[58,56,63,44,42,38,53,48,40,38,34,50]},
         annual:{2019:14.4,2020:-8.4,2021:41.4,2022:21.4,2023:-6.4,2024:-1.4,2025:-4.4,2026:-4.8},
         monthly:{2021:[5.4,9.4,2.4,3.4,2.4,-0.2,0.2,4.4,2.4,5.4,-8.4,4.4],2022:[8.4,4.4,12.4,-6.4,4.4,-3.4,-3.4,-5.4,-6.4,-6.4,5.4,-3.4],2023:[1.4,1.4,-1.4,0.8,-5.4,-1.4,-0.4,-0.2,-2.4,-5.4,-3.4,0.2],2024:[-0.8,1.4,-2.4,-0.8,-3.4,-3.4,-2.4,0.4,1.8,-3.4,-1.8,0.2],2025:[-1.4,0.4,1.2,-2.4,-1.4,-2.4,1.4,-1.2,0.4,0.2,-0.8,2.4],2026:[-1.4,-0.8,-1.4,-0.8,0,0,0,0,0,0,0,0]}}
     ]},
-  INDIA:{label:'India Sectors',bm:{label:'Nifty 50',ytd:2.3},phase:'',
-    note:'',
+  INDIA:{label:'India Sectors',bm:{label:'Nifty 50',ytd:2.3},phase:'',note:'',
     sectors:[
       {name:'Bank Nifty',tk:'^NSEBANK',type:'c',ytd:4.8,r1m:1.8,r3m:6.4,r1y:12.4,maxdd:-58,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,-0.8,1.8,1.4,0.4,0.8,2.4,-0.8,0.8,2.1,2.8,1.4],posRate:[62,45,65,62,52,55,68,45,55,65,70,62],wkAvg:[0.30,-0.20,0.45,0.35,0.10,0.20,0.60,-0.20,0.20,0.52,0.70,0.35],wkPos:[60,43,63,60,50,53,66,43,53,63,68,60]},
         annual:{2018:6.2,2019:25.4,2020:-7.4,2021:18.2,2022:20.4,2023:14.8,2024:4.2,2025:6.8,2026:4.8},
         monthly:{2019:[5.2,1.8,7.8,3.2,-3.2,5.2,5.2,-2.2,4.8,-5.2,2.8,1.4],2020:[2.8,-8.2,-26.8,16.2,1.8,7.8,12.2,3.2,-2.2,4.8,12.2,8.2],2021:[2.8,7.2,-1.8,2.8,7.2,1.8,0.8,9.2,-0.8,0.2,-4.2,2.8],2022:[-0.2,-3.2,4.2,0.2,1.0,-4.8,4.6,3.4,-4.2,5.2,-0.4,4.2],2023:[1.6,-0.2,0.6,3.6,2.2,3.4,2.6,-2.6,1.8,3.4,5.4,-2.2],2024:[-2.0,0.8,1.4,1.0,2.6,5.4,4.2,-1.2,2.2,-6.4,0.4,1.0],2025:[0.4,-5.6,6.0,3.4,-1.0,4.0,-2.2,0.8,-0.6,1.0,-2.0,0.4],2026:[-1.0,1.0,-2.6,0.8,0,0,0,0,0,0,0,0]}},
       {name:'Nifty IT',tk:'^CNXIT',type:'c',ytd:-2.4,r1m:-1.2,r3m:-3.8,r1y:4.2,maxdd:-44,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.8,0.4,1.2,-0.8,0.8,1.4,2.8,0.4,-1.8,2.1,2.4,3.2],posRate:[68,55,62,45,58,62,70,55,40,65,68,72],wkAvg:[0.70,0.10,0.30,-0.20,0.20,0.35,0.70,0.10,-0.45,0.52,0.60,0.80],wkPos:[66,53,60,43,56,60,68,53,38,63,66,70]},
         annual:{2018:-24.0,2019:16.4,2020:58.4,2021:62.8,2022:-25.8,2023:24.8,2024:26.4,2025:-4.8,2026:-2.4},
         monthly:{2019:[3.2,1.4,5.8,2.8,-1.8,4.8,8.2,-1.8,4.2,-2.8,3.8,2.8],2020:[2.8,-6.8,-12.8,20.2,4.8,5.8,8.8,5.8,-4.8,4.8,8.8,5.8],2021:[3.8,7.8,-2.8,3.8,7.8,2.8,2.8,10.2,-1.8,1.8,-4.8,3.8],2022:[-0.2,-3.2,4.0,0.2,1.0,-4.8,4.6,3.2,-4.0,5.2,-0.4,4.0],2023:[1.6,-0.2,0.6,3.4,2.0,3.2,2.6,-2.6,1.8,3.2,5.2,-2.2],2024:[-2.0,0.8,1.4,1.0,2.6,5.2,4.0,-1.2,2.0,-6.4,0.2,1.0],2025:[0.4,-5.6,5.8,3.2,-1.0,3.8,-2.2,0.8,-0.6,1.0,-2.0,0.4],2026:[-1.0,1.0,-2.6,0.8,0,0,0,0,0,0,0,0]}},
       {name:'PSU Bank',tk:'^NIFTYPSUBNK',type:'c',ytd:6.8,r1m:2.8,r3m:8.4,r1y:14.8,maxdd:-72,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,-1.2,2.4,1.2,0.4,0.8,2.8,-1.2,0.8,2.4,3.2,1.8],posRate:[62,42,65,60,52,55,68,42,55,65,70,62],wkAvg:[0.45,-0.30,0.60,0.30,0.10,0.20,0.70,-0.30,0.20,0.60,0.80,0.45],wkPos:[60,40,63,58,50,53,66,40,53,63,68,60]},
         annual:{2019:-14.8,2020:-28.4,2021:48.4,2022:64.8,2023:24.8,2024:14.2,2025:8.4,2026:6.8},
         monthly:{2019:[-4.8,-2.8,9.8,3.2,-8.2,4.2,8.2,-4.8,5.2,-8.2,3.8,0.8],2020:[3.8,-9.8,-34.8,18.8,1.8,8.8,14.8,4.8,-3.8,5.8,14.8,9.8],2021:[3.8,8.8,-2.8,3.8,8.8,2.8,3.8,11.2,-2.8,2.8,-5.8,4.8],2022:[-0.2,-3.4,4.4,0.4,1.2,-5.0,4.8,3.6,-4.4,5.4,-0.2,4.4],2023:[1.8,-0.2,0.8,3.8,2.4,3.6,2.8,-2.4,2.0,3.6,5.6,-2.0],2024:[-1.8,1.0,1.6,1.2,2.8,5.6,4.4,-1.0,2.4,-6.0,0.6,1.2],2025:[0.6,-5.4,6.2,3.6,-0.8,4.2,-2.0,1.0,-0.4,1.2,-1.8,0.6],2026:[-0.8,1.2,-2.2,1.0,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Pharma',tk:'^CNXPHARMA',type:'d',ytd:6.4,r1m:2.4,r3m:8.1,r1y:14.8,maxdd:-38,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,0.4,1.4,0.8,0.4,0.8,2.1,0.6,-0.8,1.4,2.1,1.8],posRate:[65,55,62,58,55,60,68,58,45,62,68,68],wkAvg:[0.45,0.10,0.35,0.20,0.10,0.20,0.52,0.15,-0.20,0.35,0.52,0.45],wkPos:[63,53,60,56,53,58,66,56,43,60,66,66]},
         annual:{2019:4.2,2020:58.2,2021:4.8,2022:-5.2,2023:28.4,2024:42.8,2025:14.2,2026:6.4},
         monthly:{2019:[1.8,2.8,3.8,2.8,-2.8,3.8,4.8,-1.8,4.8,-2.8,2.8,1.8],2020:[3.8,-5.8,-8.8,18.8,7.8,4.8,6.8,5.8,-3.8,2.8,9.8,3.8],2021:[1.8,6.8,-1.8,2.8,6.8,1.8,1.8,8.8,-1.8,1.8,-3.8,2.8],2022:[-0.2,-3.0,4.0,0.2,1.0,-4.6,4.4,3.2,-4.0,5.0,-0.4,4.0],2023:[1.6,-0.2,0.6,3.4,2.0,3.2,2.4,-2.6,1.8,3.2,5.2,-2.2],2024:[-1.8,0.8,1.4,1.0,2.6,5.2,4.0,-1.2,2.0,-6.2,0.4,1.0],2025:[0.4,-5.4,5.8,3.2,-0.8,4.0,-2.0,0.8,-0.6,1.0,-2.0,0.4],2026:[-0.8,1.0,-2.4,0.8,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Metal',tk:'^CNXMETAL',type:'c',ytd:8.4,r1m:3.8,r3m:11.2,r1y:18.4,maxdd:-68,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.4,0.8,3.2,1.2,-1.2,0.4,2.1,0.2,-2.4,1.4,1.8,2.8],posRate:[62,55,68,58,42,52,65,50,38,60,62,68],wkAvg:[0.60,0.20,0.80,0.30,-0.30,0.10,0.52,0.05,-0.60,0.35,0.45,0.70],wkPos:[60,53,66,56,40,50,63,48,36,58,60,66]},
         annual:{2019:-22.4,2020:16.4,2021:118.4,2022:-14.8,2023:18.4,2024:14.2,2025:-4.8,2026:8.4},
         monthly:{2020:[3.4,-8.4,-22.4,15.4,4.4,7.4,12.4,3.4,-2.4,5.4,12.4,8.4],2021:[2.4,7.4,-1.4,2.4,7.4,1.4,0.4,9.4,-0.4,0.4,-4.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Auto',tk:'^CNXAUTO',type:'c',ytd:3.2,r1m:1.4,r3m:4.8,r1y:10.4,maxdd:-52,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,0.4,2.1,0.8,-0.4,0.8,2.4,0.4,-1.4,1.8,2.4,2.1],posRate:[62,55,68,55,48,55,68,52,42,62,68,68],wkAvg:[0.35,0.10,0.52,0.20,-0.10,0.20,0.60,0.10,-0.35,0.45,0.60,0.52],wkPos:[60,53,66,53,46,53,66,50,40,60,66,66]},
         annual:{2019:-18.4,2020:16.4,2021:48.4,2022:11.8,2023:38.4,2024:24.8,2025:8.4,2026:3.2},
         monthly:{2020:[3.4,-8.4,-20.4,14.4,3.4,6.4,11.4,2.4,-1.4,4.4,11.4,7.4],2021:[2.4,6.4,-1.4,2.4,6.4,1.4,0.4,8.4,-0.4,0.4,-3.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty FMCG',tk:'^CNXFMCG',type:'d',ytd:1.8,r1m:0.8,r3m:2.4,r1y:7.4,maxdd:-28,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,0.2,1.2,0.4,0.4,0.8,1.8,0.4,-0.8,1.2,1.8,1.8],posRate:[62,55,65,58,55,60,68,58,45,62,68,70],wkAvg:[0.20,0.05,0.30,0.10,0.10,0.20,0.45,0.10,-0.20,0.30,0.45,0.45],wkPos:[60,53,63,56,53,58,66,56,43,60,66,68]},
         annual:{2019:8.4,2020:14.2,2021:14.8,2022:18.4,2023:-7.8,2024:14.8,2025:4.2,2026:1.8},
         monthly:{2021:[0.8,1.8,4.2,2.8,2.2,-0.2,2.8,1.2,-3.2,5.8,-1.2,4.8],2022:[-0.4,-2.4,3.4,-5.4,-1.4,-8.4,5.4,-2.4,-4.4,4.4,-4.4,4.4],2023:[-1.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,1.4,0.4,2.4,5.4,0.4,-3.4,0.4,6.4,2.4],2025:[2.4,-0.4,3.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Infra',tk:'^CNXINFRA',type:'c',ytd:7.2,r1m:3.2,r3m:9.8,r1y:16.4,maxdd:-62,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,0.4,2.4,1.2,-0.4,0.8,2.8,0.4,-1.8,2.1,2.4,2.8],posRate:[62,55,68,58,48,55,68,52,40,62,68,70],wkAvg:[0.45,0.10,0.60,0.30,-0.10,0.20,0.70,0.10,-0.45,0.52,0.60,0.70],wkPos:[60,53,66,56,46,53,66,50,38,60,66,68]},
         annual:{2019:4.8,2020:16.4,2021:28.4,2022:14.8,2023:48.4,2024:24.8,2025:8.4,2026:7.2},
         monthly:{2021:[0.4,2.4,4.4,3.4,2.4,-0.4,3.4,1.4,-3.4,6.4,-1.4,5.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Realty',tk:'^CNXREALTY',type:'c',ytd:4.8,r1m:1.8,r3m:6.4,r1y:12.4,maxdd:-74,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.4,-0.8,3.2,1.8,-0.8,0.4,3.2,-0.8,0.8,2.8,3.4,2.4],posRate:[62,42,68,60,45,52,68,42,55,65,70,62],wkAvg:[0.60,-0.20,0.80,0.45,-0.20,0.10,0.80,-0.20,0.20,0.70,0.85,0.60],wkPos:[60,40,66,58,43,50,66,40,53,63,68,60]},
         annual:{2020:-18.4,2021:58.4,2022:68.4,2023:78.4,2024:4.8,2025:-8.4,2026:4.8},
         monthly:{2021:[3.4,8.4,-2.4,3.4,8.4,2.4,1.4,10.4,-1.4,1.4,-5.4,3.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[2.4,-0.4,0.4,4.4,2.4,3.4,2.4,-3.4,1.4,4.4,6.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,5.4,3.4,-0.4,3.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Energy',tk:'^CNXENERGY',type:'c',ytd:-2.4,r1m:-1.2,r3m:-3.8,r1y:4.8,maxdd:-62,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,-0.4,2.4,0.8,-0.8,-0.4,1.8,0.4,-1.4,0.8,1.2,2.4],posRate:[62,45,65,55,45,48,62,52,42,58,60,65],wkAvg:[0.45,-0.10,0.60,0.20,-0.20,-0.10,0.45,0.10,-0.35,0.20,0.30,0.60],wkPos:[60,43,63,53,43,46,60,50,40,56,58,63]},
         annual:{2019:8.4,2020:-4.8,2021:28.4,2022:58.4,2023:18.4,2024:-8.4,2025:4.8,2026:-2.4},
         monthly:{2020:[2.4,-4.4,-22.4,11.4,2.4,5.4,8.4,2.4,-1.4,3.4,10.4,6.4],2021:[1.4,6.4,-1.4,2.4,6.4,1.4,0.4,9.4,-0.4,0.4,-3.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Pvt Bank',tk:'^NIFTYPVTBNK',type:'c',ytd:3.8,r1m:1.4,r3m:4.8,r1y:10.4,maxdd:-54,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,-0.6,1.8,1.2,0.4,0.8,2.4,-0.6,0.8,2.1,2.8,1.4],posRate:[62,45,65,62,52,55,68,45,55,65,70,62],wkAvg:[0.35,-0.15,0.45,0.30,0.10,0.20,0.60,-0.15,0.20,0.52,0.70,0.35],wkPos:[60,43,63,60,50,53,66,43,53,63,68,60]},
         annual:{2019:28.4,2020:-14.8,2021:14.8,2022:18.4,2023:12.4,2024:2.4,2025:4.8,2026:3.8},
         monthly:{2020:[2.4,-8.4,-26.4,14.4,1.4,6.4,10.4,2.4,-1.4,3.4,10.4,7.4],2021:[2.4,6.4,-1.4,2.4,7.4,1.4,0.4,8.4,-0.4,0.4,-4.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-4.4,4.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'Con Durables',tk:'^CNXCONDUR',type:'c',ytd:2.8,r1m:1.2,r3m:3.8,r1y:8.4,maxdd:-48,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,0.4,2.1,0.8,-0.4,0.8,2.4,0.4,-1.4,1.8,2.4,2.1],posRate:[60,52,65,55,48,55,65,52,40,60,65,68],wkAvg:[0.30,0.10,0.52,0.20,-0.10,0.20,0.60,0.10,-0.35,0.45,0.60,0.52],wkPos:[58,50,63,53,46,53,63,50,38,58,63,66]},
         annual:{2020:8.4,2021:38.4,2022:-8.4,2023:28.4,2024:12.4,2025:4.8,2026:2.8},
         monthly:{2021:[1.4,5.4,-1.4,2.4,5.4,1.4,0.4,7.4,-0.4,0.4,-3.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,6.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,1.4,-2.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'Oil & Gas',tk:'^CNXOILGAS',type:'c',ytd:-1.8,r1m:-0.8,r3m:-2.4,r1y:4.8,maxdd:-58,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.4,0.4,2.8,0.8,-0.8,-0.4,2.4,0.4,-1.8,0.8,1.4,2.4],posRate:[62,50,65,55,45,48,62,52,40,55,60,65],wkAvg:[0.60,0.10,0.70,0.20,-0.20,-0.10,0.60,0.10,-0.45,0.20,0.35,0.60],wkPos:[60,48,63,53,43,46,60,50,38,53,58,63]},
         annual:{2019:4.8,2020:-12.4,2021:22.4,2022:48.4,2023:8.4,2024:-4.8,2025:2.4,2026:-1.8},
         monthly:{2021:[1.4,5.4,-1.4,2.4,5.4,0.4,0.4,8.4,-0.4,0.4,-3.4,2.4],2022:[-0.4,-3.4,4.4,0.4,1.4,-5.4,5.4,3.4,-4.4,5.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,2.4,2.4,-2.4,1.4,2.4,4.4,-2.4],2024:[-2.4,0.4,1.4,0.4,2.4,4.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,5.4,3.4,-0.4,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,0.4,-2.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Health',tk:'^CNXHEALTH',type:'d',ytd:5.8,r1m:2.4,r3m:7.4,r1y:14.4,maxdd:-38,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.6,0.4,1.4,0.8,0.4,0.8,2.1,0.6,-0.8,1.4,2.1,1.8],posRate:[65,55,62,58,55,60,68,58,45,62,68,68],wkAvg:[0.40,0.10,0.35,0.20,0.10,0.20,0.52,0.15,-0.20,0.35,0.52,0.45],wkPos:[63,53,60,56,53,58,66,56,43,60,66,66]},
         annual:{2020:48.4,2021:4.8,2022:-4.8,2023:34.8,2024:38.4,2025:12.4,2026:5.8},
         monthly:{2021:[1.4,6.4,-1.4,2.4,6.4,1.4,1.4,8.4,-1.4,1.4,-3.4,2.4],2022:[-0.4,-3.4,3.4,0.4,0.4,-4.4,4.4,3.4,-4.4,4.4,-0.4,4.4],2023:[1.4,-0.4,0.4,3.4,2.4,3.4,2.4,-2.4,1.4,3.4,5.4,-2.4],2024:[-1.4,0.4,1.4,0.4,2.4,5.4,4.4,-1.4,2.4,-6.4,0.4,0.4],2025:[0.4,-5.4,5.4,3.4,-0.8,4.4,-2.4,0.4,-0.4,0.4,-2.4,0.4],2026:[-0.4,0.4,-2.4,0.8,0,0,0,0,0,0,0,0]}},
       {name:'India VIX',tk:'^INDIAVIX',type:'m',ytd:-8.4,r1m:-4.2,r3m:-8.4,r1y:-12.4,maxdd:280,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[-2.4,1.2,-1.8,0.4,2.4,1.8,-1.2,0.8,2.4,-1.8,-2.4,1.2],posRate:[38,58,42,50,62,58,42,52,62,38,38,54],wkAvg:[-0.60,0.30,-0.45,0.10,0.60,0.45,-0.30,0.20,0.60,-0.45,-0.60,0.30],wkPos:[36,56,40,48,60,56,40,50,60,36,36,52]},
         annual:{2020:58.4,2021:-28.4,2022:14.4,2023:-22.4,2024:-8.4,2025:4.4,2026:-8.4},
         monthly:{2022:[4.4,-2.4,-4.4,2.4,4.4,4.4,-2.4,2.4,4.4,-4.4,-4.4,-2.4],2023:[-4.4,2.4,-4.4,1.4,-2.4,-2.4,2.4,-1.4,-2.4,4.4,-6.4,-2.4],2024:[2.4,-2.4,1.4,1.4,-1.4,-1.4,-1.4,-2.4,1.4,2.4,-2.4,1.4],2025:[-1.4,1.4,2.4,-1.4,1.4,-1.4,1.4,-1.4,-1.4,1.4,1.4,-1.4],2026:[1.4,-1.4,2.4,-1.4,0,0,0,0,0,0,0,0]}},
       {name:'USD/INR',tk:'USDINR=X',type:'m',ytd:-1.8,r1m:-0.4,r3m:-1.2,r1y:-2.4,maxdd:28,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,-0.2,0.2,-0.2,0.4,0.6,-0.2,0.4,0.8,-0.4,-0.2,0.2],posRate:[55,45,52,48,55,58,45,52,60,42,45,52],wkAvg:[0.10,-0.05,0.05,-0.05,0.10,0.15,-0.05,0.10,0.20,-0.10,-0.05,0.05],wkPos:[53,43,50,46,53,56,43,50,58,40,43,50]},
         annual:{2019:-2.4,2020:-0.8,2021:-2.8,2022:11.4,2023:-1.8,2024:2.4,2025:-1.8,2026:-1.8},
         monthly:{2022:[0.4,0.4,0.8,1.2,1.8,1.8,-0.4,1.4,2.4,-1.4,-1.2,-0.8],2023:[-0.4,0.2,-0.2,0.2,-0.2,-0.2,0.4,0.2,0.8,-0.8,-0.8,-0.2],2024:[0.8,-0.2,0.4,0.4,0.4,-0.2,0.4,-0.8,0.2,-0.2,0.8,-0.4],2025:[-0.2,-0.2,-0.4,-0.4,0.2,-0.2,-0.2,0.2,0.2,0.2,0.2,0.2],2026:[-0.2,-0.2,-0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Media',tk:'^CNXMEDIA',type:'c',ytd:-4.8,r1m:-2.4,r3m:-6.4,r1y:-8.4,maxdd:-78,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,-1.2,0.8,-0.4,-1.8,-2.4,0.8,-0.8,-0.4,-1.2,-1.8,1.2],posRate:[55,40,55,45,38,35,55,42,45,40,35,58],wkAvg:[0.30,-0.30,0.20,-0.10,-0.45,-0.60,0.20,-0.20,-0.10,-0.30,-0.45,0.30],wkPos:[53,38,53,43,36,33,53,40,43,38,33,56]},
         annual:{2019:-14.8,2020:8.4,2021:18.4,2022:-24.8,2023:4.8,2024:-14.8,2025:-8.4,2026:-4.8},
         monthly:{2021:[0.4,4.4,-1.4,1.4,4.4,0.4,-0.4,6.4,-1.4,-0.4,-4.4,1.4],2022:[-1.4,-3.4,2.4,-1.4,0.4,-5.4,3.4,1.4,-4.4,3.4,-1.4,2.4],2023:[0.4,-0.4,-0.4,2.4,1.4,1.4,1.4,-2.4,0.4,1.4,3.4,-2.4],2024:[-2.4,-0.4,0.4,-0.4,1.4,3.4,2.4,-1.4,1.4,-6.4,-0.4,-0.4],2025:[-0.4,-4.4,4.4,2.4,-1.4,2.4,-2.4,-0.4,-0.4,-0.4,-1.4,-0.4],2026:[-0.4,0.4,-2.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Midcap50',tk:'^NSMIDCP50',type:'b',ytd:1.8,r1m:0.8,r3m:2.8,r1y:6.4,maxdd:-64,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,-0.8,1.8,1.8,0.4,1.2,2.8,-0.8,0.4,2.4,2.8,1.8],posRate:[60,45,65,62,52,58,68,45,55,65,70,62],wkAvg:[0.30,-0.20,0.45,0.45,0.10,0.30,0.70,-0.20,0.10,0.60,0.70,0.45],wkPos:[58,43,63,60,50,56,66,43,53,63,68,60]},
         annual:{2019:0.4,2020:24.4,2021:48.4,2022:8.4,2023:44.4,2024:24.4,2025:4.4,2026:1.8},
         monthly:{2020:[1.8,-7.8,-26.8,16.8,2.8,8.8,13.8,4.8,-2.8,5.8,13.8,9.8],2021:[2.8,7.8,-1.8,2.8,7.8,2.8,1.8,10.8,-1.8,1.8,-4.8,3.8],2022:[-0.4,-3.4,4.4,0.4,1.4,-4.8,4.8,3.6,-4.4,5.4,-0.4,4.4],2023:[1.8,-0.4,0.8,4.4,2.8,4.4,3.4,-3.4,2.4,4.4,6.4,-2.4],2024:[-2.4,0.8,1.8,0.8,3.4,6.4,5.4,-2.4,3.4,-7.4,0.8,1.4],2025:[0.8,-6.4,7.4,4.4,-1.4,4.8,-3.4,1.4,-0.8,1.4,-2.8,0.8],2026:[-1.4,1.4,-3.4,1.4,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Midcap150',tk:'^NSMIDCP150',type:'b',ytd:2.4,r1m:1.2,r3m:3.4,r1y:7.8,maxdd:-62,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,-0.6,2.0,1.6,0.6,1.0,2.6,-0.6,0.6,2.2,2.6,1.6],posRate:[62,46,66,62,53,57,67,46,55,65,70,62],wkAvg:[0.35,-0.15,0.50,0.40,0.15,0.25,0.65,-0.15,0.15,0.55,0.65,0.40],wkPos:[60,44,64,60,51,55,65,44,53,63,68,60]},
         annual:{2019:2.4,2020:22.4,2021:52.4,2022:6.4,2023:42.4,2024:26.4,2025:4.8,2026:2.4},
         monthly:{2021:[2.8,7.4,-1.8,2.8,7.4,2.4,1.8,10.4,-1.8,1.8,-4.4,3.4],2022:[-0.4,-3.2,4.2,0.4,1.2,-4.6,4.6,3.4,-4.2,5.2,-0.4,4.2],2023:[1.6,-0.4,0.6,4.0,2.4,3.8,2.8,-2.8,2.0,3.8,5.8,-2.0],2024:[-2.2,0.6,1.6,0.6,3.0,5.8,4.8,-2.0,2.8,-7.0,0.6,1.2],2025:[0.6,-6.0,6.8,3.8,-1.0,4.4,-2.8,1.0,-0.6,1.2,-2.4,0.6],2026:[-1.0,1.2,-3.0,1.2,0,0,0,0,0,0,0,0]}},
       {name:'Nifty Smallcap',tk:'^NSMICAP250',type:'b',ytd:-1.4,r1m:-0.8,r3m:-1.8,r1y:4.8,maxdd:-68,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,-1.2,2.4,1.4,0.4,0.8,3.2,-1.2,0.4,2.8,3.4,2.4],posRate:[62,42,65,60,52,55,68,42,55,65,70,62],wkAvg:[0.45,-0.30,0.60,0.35,0.10,0.20,0.80,-0.30,0.10,0.70,0.85,0.60],wkPos:[60,40,63,58,50,53,66,40,53,63,68,60]},
         annual:{2019:-10.4,2020:28.4,2021:64.4,2022:0.4,2023:54.4,2024:18.4,2025:-4.4,2026:-1.4},
         monthly:{2021:[2.4,8.4,-2.4,3.4,8.4,2.4,2.4,11.4,-2.4,2.4,-5.4,4.4],2022:[-0.4,-3.8,4.8,0.8,1.8,-5.8,5.8,3.8,-4.8,5.8,-0.8,4.8],2023:[2.4,-0.4,1.4,4.8,3.4,4.4,3.4,-3.4,2.4,4.4,6.4,-2.4],2024:[-2.8,0.4,1.8,0.4,3.4,7.4,5.4,-2.8,3.4,-8.4,0.4,1.4],2025:[0.4,-7.4,8.4,4.8,-1.8,5.4,-3.8,1.4,-1.4,1.4,-3.4,0.8],2026:[-1.4,1.4,-3.8,1.4,0,0,0,0,0,0,0,0]}},
       {name:'India Composite',tk:'^CRSLDX',type:'b',ytd:2.8,r1m:1.2,r3m:3.8,r1y:7.8,maxdd:-58,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.0,-0.6,1.4,1.2,0.2,0.8,2.2,-0.6,0.4,1.8,2.2,1.4],posRate:[60,45,62,60,52,55,66,45,54,64,68,62],wkAvg:[0.25,-0.15,0.35,0.30,0.05,0.20,0.55,-0.15,0.10,0.45,0.55,0.35],wkPos:[58,43,60,58,50,53,64,43,52,62,66,60]},
         annual:{2019:12.4,2020:14.4,2021:24.4,2022:4.4,2023:18.4,2024:8.4,2025:4.8,2026:2.8},
         monthly:{2020:[1.4,-6.4,-23.4,14.4,0.4,7.4,11.4,2.8,-1.4,4.4,11.4,7.4],2021:[2.0,6.4,-1.0,2.0,6.4,1.2,0.4,8.4,-0.2,0.2,-3.8,2.4],2022:[-0.2,-3.0,4.2,0.4,1.0,-4.8,4.6,3.4,-4.0,5.2,-0.4,4.2],2023:[1.6,-0.2,0.8,3.6,2.2,3.4,2.6,-2.4,2.0,3.4,5.4,-2.0],2024:[-1.8,0.8,1.4,1.0,2.6,5.4,4.2,-1.2,2.2,-6.2,0.4,1.0],2025:[0.4,-5.4,6.0,3.4,-0.8,4.2,-2.2,0.8,-0.4,1.0,-2.0,0.4],2026:[-0.8,1.2,-2.4,0.8,0,0,0,0,0,0,0,0]}}
     ]},
-  TSX:{label:'TSX Sectors',bm:{label:'TSX Composite',ytd:4.1},phase:'',
-    note:'',
+  TSX:{label:'TSX Sectors',bm:{label:'TSX Composite',ytd:4.1},phase:'',note:'',
     sectors:[
       {name:'TSX Financials',tk:'XFN.TO',type:'c',ytd:8.4,r1m:3.2,r3m:10.4,r1y:16.8,maxdd:-52,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,-0.4,2.1,0.8,-0.4,1.2,2.4,0.4,-1.4,1.8,2.4,2.1],posRate:[62,48,68,58,48,58,68,52,42,62,68,70],wkAvg:[0.30,-0.10,0.52,0.20,-0.10,0.30,0.60,0.10,-0.35,0.45,0.60,0.52],wkPos:[60,46,66,56,46,56,66,50,40,60,66,68]},
         annual:{2018:-14.8,2019:22.4,2020:-11.4,2021:35.4,2022:-4.8,2023:4.8,2024:28.4,2025:8.4,2026:8.4},
         monthly:{2019:[5.8,3.2,5.8,4.8,-4.8,5.8,3.8,-2.2,3.8,-3.8,3.8,2.2],2020:[-2.2,-3.8,-18.8,11.8,4.8,2.8,4.8,3.8,-3.2,-3.8,10.8,3.2],2021:[0.8,2.2,4.8,3.8,2.8,-0.2,3.2,1.8,-3.2,6.2,-1.2,5.2],2022:[-0.4,-2.8,4.0,-5.0,-0.2,-8.6,5.8,-1.8,-4.0,4.4,-4.4,4.8],2023:[-0.8,3.2,2.2,2.4,-3.8,1.2,3.6,-0.4,-3.4,0.4,7.2,-1.8],2024:[-1.6,1.2,2.2,1.8,0.8,2.2,5.0,0.4,-3.6,0.8,6.4,2.4],2025:[2.0,-0.8,3.2,1.8,0.4,1.8,-0.8,0.6,1.0,2.4,-1.2,-1.0],2026:[1.8,-2.0,0.8,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Energy',tk:'XEG.TO',type:'c',ytd:-6.8,r1m:-3.2,r3m:-8.4,r1y:-12.4,maxdd:-78,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[3.2,1.8,4.8,-1.2,-2.4,-3.8,2.1,0.8,-2.8,-3.4,-4.8,2.4],posRate:[62,60,70,42,38,35,58,52,38,35,28,55],wkAvg:[0.80,0.45,1.20,-0.30,-0.60,-0.95,0.52,0.20,-0.70,-0.85,-1.20,0.60],wkPos:[60,58,68,40,36,33,56,50,36,33,26,53]},
         annual:{2018:-32.8,2019:14.8,2020:-38.4,2021:68.4,2022:38.4,2023:-8.4,2024:4.2,2025:-12.4,2026:-6.8},
         monthly:{2019:[7.8,3.8,9.8,6.8,-11.8,2.8,4.8,-1.8,2.8,-2.8,4.8,3.8],2020:[-13.8,-9.8,-41.8,-7.8,68.8,8.8,3.8,-7.8,-6.8,7.8,19.8,7.8],2021:[8.8,22.8,5.8,8.8,5.8,-0.2,1.2,11.2,6.2,12.2,-16.2,9.8],2022:[17.2,8.4,24.0,-12.2,9.4,-7.8,-7.0,-11.2,-12.2,-12.6,10.6,-7.8],2023:[3.0,2.4,-2.0,1.6,-11.4,-3.6,-1.2,-0.6,-5.0,-11.4,-6.2,0.0],2024:[-1.6,2.6,-4.2,-1.6,-6.2,-6.6,-4.2,0.8,3.8,-6.6,-3.8,0.0],2025:[-3.2,0.8,2.4,-4.2,-2.8,-5.2,3.2,-2.2,0.6,0.4,-1.6,4.6],2026:[-2.8,-1.4,-3.2,-1.0,0,0,0,0,0,0,0,0]}},
       {name:'TSX Materials',tk:'XMA.TO',type:'c',ytd:12.4,r1m:5.2,r3m:16.4,r1y:24.8,maxdd:-58,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[4.2,1.4,-0.8,0.8,-2.4,-1.8,-2.4,3.8,-1.4,1.2,0.4,2.4],posRate:[70,60,45,55,38,40,42,65,45,55,52,62],wkAvg:[1.05,0.35,-0.20,0.20,-0.60,-0.45,-0.60,0.95,-0.35,0.30,0.10,0.60],wkPos:[68,58,43,53,36,38,40,63,43,53,50,60]},
         annual:{2018:-17.8,2019:12.4,2020:18.4,2021:14.4,2022:-9.8,2023:8.4,2024:12.4,2025:28.4,2026:12.4},
         monthly:{2019:[6.8,2.8,-1.8,2.8,-4.8,0.8,-0.8,5.8,-2.8,2.8,0.8,3.8],2020:[5.8,-3.8,-18.8,10.8,7.8,4.8,6.8,4.8,-3.8,-1.8,11.8,4.8],2021:[2.8,3.8,3.8,5.8,2.8,-1.8,0.8,4.8,-2.8,5.8,-0.8,3.8],2022:[0.0,-3.0,2.8,-5.0,-1.0,-8.2,5.2,-2.4,-4.4,4.0,-5.0,3.8],2023:[-1.0,3.0,2.0,2.2,-4.4,1.0,3.4,-0.6,-3.6,0.2,7.0,-2.0],2024:[-2.0,1.0,2.0,1.8,0.6,2.0,4.8,0.2,-3.8,0.6,6.0,2.2],2025:[2.0,-0.8,3.0,1.6,0.2,1.8,-1.0,0.4,0.8,2.2,-1.4,-0.8],2026:[1.6,-2.2,0.6,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Utilities',tk:'XUT.TO',type:'d',ytd:4.8,r1m:2.1,r3m:6.4,r1y:11.4,maxdd:-38,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,-0.2,0.8,0.4,0.8,1.2,2.4,1.2,-0.8,0.8,1.4,1.8],posRate:[58,48,58,55,58,62,70,62,45,58,62,68],wkAvg:[0.10,-0.05,0.20,0.10,0.20,0.30,0.60,0.30,-0.20,0.20,0.35,0.45],wkPos:[56,46,56,53,56,60,68,60,43,56,60,66]},
         annual:{2019:22.4,2020:4.8,2021:14.8,2022:-8.4,2023:-4.8,2024:18.4,2025:12.4,2026:4.8},
         monthly:{2021:[0.8,1.8,4.2,2.8,2.2,-0.2,2.8,1.2,-3.2,5.8,-1.2,4.8],2022:[-0.8,-2.8,3.4,-5.2,-1.2,-8.4,5.4,-2.2,-4.4,4.2,-4.8,4.0],2023:[-1.0,3.0,2.0,2.2,-4.4,1.0,3.4,-0.6,-3.6,0.4,7.2,-1.8],2024:[-1.8,1.2,2.0,2.0,0.6,2.2,5.0,0.4,-3.6,1.0,6.2,2.4],2025:[2.0,-0.6,3.0,1.8,0.4,1.8,-0.8,0.4,1.0,2.4,-1.2,-0.8],2026:[1.8,-2.0,0.8,-0.2,0,0,0,0,0,0,0,0]}},
       {name:'TSX Real Estate',tk:'XRE.TO',type:'d',ytd:3.2,r1m:1.4,r3m:4.8,r1y:8.4,maxdd:-44,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,0.2,1.2,0.4,0.2,0.8,1.8,0.6,-1.4,1.2,1.8,2.1],posRate:[58,52,62,55,52,58,65,55,40,60,65,68],wkAvg:[0.20,0.05,0.30,0.10,0.05,0.20,0.45,0.15,-0.35,0.30,0.45,0.52],wkPos:[56,50,60,53,50,56,63,53,38,58,63,66]},
         annual:{2019:24.8,2020:-24.8,2021:44.8,2022:-24.8,2023:8.4,2024:18.4,2025:8.4,2026:3.2},
         monthly:{2021:[0.8,1.8,4.2,2.8,2.2,-0.2,2.8,1.2,-3.2,5.8,-1.2,4.8],2022:[-1.4,-3.4,3.4,-6.4,-2.4,-9.4,5.4,-2.4,-5.4,4.4,-5.4,4.4],2023:[-0.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,2.4,0.4,2.4,5.4,0.4,-3.4,0.4,6.4,2.4],2025:[2.4,-0.4,3.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Technology',tk:'XIT.TO',type:'c',ytd:6.4,r1m:2.8,r3m:8.4,r1y:14.8,maxdd:-62,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[2.8,0.8,1.8,-0.8,1.2,1.8,3.4,0.8,-2.4,2.4,2.8,3.2],posRate:[65,58,62,45,58,62,70,55,38,65,68,72],wkAvg:[0.70,0.20,0.45,-0.20,0.30,0.45,0.85,0.20,-0.60,0.60,0.70,0.80],wkPos:[63,56,60,43,56,60,68,53,36,63,66,70]},
         annual:{2019:58.4,2020:84.8,2021:28.4,2022:-52.4,2023:38.4,2024:18.4,2025:8.4,2026:6.4},
         monthly:{2021:[1.8,2.8,4.8,5.8,2.8,-0.8,3.8,2.8,-4.8,7.8,-2.8,3.8],2022:[-8.4,-4.4,4.4,-13.4,-12.4,-9.4,12.4,-5.4,-11.4,3.4,3.4,-8.4],2023:[10.4,-1.4,6.4,0.4,-5.4,6.4,4.4,2.4,-5.4,6.4,11.4,-0.4],2024:[1.4,5.4,1.4,-4.4,6.4,5.4,1.4,0.4,2.4,-0.4,5.4,0.4],2025:[1.4,-3.4,-7.4,0.4,-0.4,5.4,0.4,0.4,-1.4,2.4,4.4,1.4],2026:[1.4,0.4,0.4,3.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Healthcare',tk:'XHC.TO',type:'d',ytd:3.8,r1m:1.4,r3m:4.8,r1y:9.4,maxdd:-44,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,0.2,0.8,0.4,0.2,0.8,1.2,0.4,-0.8,1.2,1.4,1.8],posRate:[62,52,58,55,52,58,62,55,42,60,62,68],wkAvg:[0.30,0.05,0.20,0.10,0.05,0.20,0.30,0.10,-0.20,0.30,0.35,0.45],wkPos:[60,50,56,53,50,56,60,53,40,58,60,66]},
         annual:{2019:18.4,2020:24.8,2021:8.4,2022:-12.4,2023:4.8,2024:8.4,2025:4.8,2026:3.8},
         monthly:{2020:[2.4,-3.4,-12.4,8.4,4.4,1.4,2.4,4.4,-3.4,-1.4,8.4,2.4],2021:[0.4,1.4,3.4,2.4,2.4,-0.4,2.4,1.4,-2.4,4.4,-0.4,3.4],2022:[-0.8,-2.4,3.4,-5.4,-1.4,-8.4,5.4,-2.4,-4.4,4.4,-4.4,4.4],2023:[-0.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,1.4,0.4,2.4,4.4,0.4,-3.4,0.4,5.4,2.4],2025:[2.4,-0.4,2.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Cons Disc',tk:'XCD.TO',type:'c',ytd:5.4,r1m:2.4,r3m:6.8,r1y:12.4,maxdd:-52,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.4,0.4,1.8,0.6,-0.4,1.2,2.4,0.4,-1.4,1.8,2.4,2.1],posRate:[60,52,65,55,48,55,65,52,40,60,65,68],wkAvg:[0.35,0.10,0.45,0.15,-0.10,0.30,0.60,0.10,-0.35,0.45,0.60,0.52],wkPos:[58,50,63,53,46,53,63,50,38,58,63,66]},
         annual:{2019:22.4,2020:8.4,2021:24.4,2022:-28.4,2023:28.4,2024:14.4,2025:4.8,2026:5.4},
         monthly:{2020:[-2.4,-4.4,-16.4,10.4,5.4,2.4,4.4,3.4,-3.4,-2.4,10.4,3.4],2021:[1.4,2.4,4.4,3.4,2.4,-0.4,3.4,1.4,-3.4,5.4,-1.4,4.4],2022:[-1.4,-3.4,3.4,-5.4,-0.4,-8.4,5.4,-2.4,-4.4,4.4,-4.4,4.4],2023:[-0.4,3.4,2.4,2.4,-4.4,1.4,3.4,-0.4,-3.4,0.4,7.4,-1.4],2024:[-1.4,1.4,2.4,1.4,0.4,2.4,4.4,0.4,-3.4,0.4,5.4,2.4],2025:[2.4,-0.4,2.4,1.4,0.4,1.4,-0.4,0.4,1.4,2.4,-1.4,-0.4],2026:[1.4,-2.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Staples',tk:'XST.TO',type:'d',ytd:2.4,r1m:0.8,r3m:2.8,r1y:7.4,maxdd:-28,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.6,0.2,0.4,0.2,0.4,0.6,1.2,0.4,-0.4,0.8,1.2,1.4],posRate:[60,52,55,52,55,58,65,55,45,58,62,68],wkAvg:[0.15,0.05,0.10,0.05,0.10,0.15,0.30,0.10,-0.10,0.20,0.30,0.35],wkPos:[58,50,53,50,53,56,63,53,43,56,60,66]},
         annual:{2019:14.4,2020:6.4,2021:12.4,2022:-4.4,2023:2.4,2024:12.4,2025:4.4,2026:2.4},
         monthly:{2020:[-0.4,-3.4,-10.4,7.4,2.4,0.4,2.4,4.4,-2.4,-1.4,7.4,1.4],2021:[0.4,1.4,3.4,2.4,1.4,-0.4,1.4,1.4,-2.4,4.4,-0.4,3.4],2022:[-0.4,-2.4,3.4,-4.4,-1.4,-7.4,4.4,-2.4,-4.4,3.4,-4.4,4.4],2023:[-1.4,2.4,1.4,1.4,-4.4,0.4,2.4,-0.4,-2.4,0.4,6.4,-1.4],2024:[-1.4,0.4,1.4,1.4,0.4,1.4,4.4,0.4,-2.4,0.4,5.4,1.4],2025:[1.4,-0.4,2.4,1.4,0.4,1.4,-0.4,0.4,0.4,1.4,-0.4,-0.4],2026:[0.4,-1.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Industrials',tk:'XSI.TO',type:'c',ytd:6.8,r1m:2.8,r3m:8.4,r1y:14.4,maxdd:-42,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.2,0.4,1.8,0.8,-0.4,0.8,2.1,0.4,-1.2,1.4,1.8,2.1],posRate:[62,55,65,58,50,58,68,55,42,62,65,70],wkAvg:[0.30,0.10,0.45,0.20,-0.10,0.20,0.52,0.10,-0.30,0.35,0.45,0.52],wkPos:[60,53,63,56,48,56,66,53,40,60,63,68]},
         annual:{2019:22.4,2020:4.4,2021:18.4,2022:-8.4,2023:14.4,2024:14.4,2025:6.8,2026:6.8},
         monthly:{2020:[-2.4,-3.4,-18.4,9.4,3.4,1.4,3.4,2.4,-2.4,-2.4,9.4,2.4],2021:[0.4,1.4,4.4,2.4,2.4,-0.4,2.4,1.4,-2.4,5.4,-0.4,4.4],2022:[-0.4,-2.4,3.4,-5.4,-0.4,-8.4,5.4,-1.4,-4.4,4.4,-4.4,4.4],2023:[-0.4,2.4,1.4,1.4,-3.4,0.4,2.4,-0.4,-2.4,0.4,6.4,-1.4],2024:[-1.4,0.4,1.4,1.4,0.4,1.4,4.4,0.4,-2.4,0.4,5.4,1.4],2025:[1.4,-0.4,2.4,1.4,0.4,1.4,-0.4,0.4,0.4,1.4,-0.4,-0.4],2026:[1.4,-1.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Telecom',tk:'RING.TO',type:'d',ytd:1.8,r1m:0.8,r3m:2.4,r1y:6.4,maxdd:-38,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,0.2,0.4,0.2,0.4,0.4,0.8,0.4,-0.4,0.6,0.8,1.2],posRate:[58,52,55,52,55,55,60,55,42,58,60,65],wkAvg:[0.10,0.05,0.10,0.05,0.10,0.10,0.20,0.10,-0.10,0.15,0.20,0.30],wkPos:[56,50,53,50,53,53,58,53,40,56,58,63]},
         annual:{2019:8.4,2020:-4.4,2021:14.4,2022:-18.4,2023:4.4,2024:8.4,2025:4.4,2026:1.8},
         monthly:{2020:[-0.4,-2.4,-12.4,7.4,2.4,0.4,1.4,3.4,-1.4,-0.4,6.4,1.4],2021:[0.4,0.4,2.4,1.4,1.4,-0.4,1.4,0.4,-1.4,3.4,-0.4,2.4],2022:[-0.4,-1.4,2.4,-4.4,-0.4,-6.4,4.4,-1.4,-3.4,2.4,-3.4,3.4],2023:[-0.4,2.4,1.4,0.4,-3.4,0.4,1.4,-0.4,-2.4,0.4,4.4,-1.4],2024:[-0.4,0.4,1.4,0.4,0.4,1.4,3.4,0.4,-1.4,0.4,4.4,1.4],2025:[0.4,-0.4,1.4,0.4,0.4,0.4,-0.4,0.4,0.4,0.4,-0.4,-0.4],2026:[0.4,-1.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Cleantech',tk:'XCLN.TO',type:'d',ytd:4.8,r1m:1.8,r3m:5.8,r1y:10.8,maxdd:-62,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[1.8,-0.4,0.8,0.4,0.4,0.8,2.4,0.8,-1.2,0.8,1.4,2.4],posRate:[62,45,55,52,52,55,65,55,42,55,58,65],wkAvg:[0.45,-0.10,0.20,0.10,0.10,0.20,0.60,0.20,-0.30,0.20,0.35,0.60],wkPos:[60,43,53,50,50,53,63,53,40,53,56,63]},
         annual:{2020:84.4,2021:8.4,2022:-38.4,2023:14.4,2024:18.4,2025:8.4,2026:4.8},
         monthly:{2021:[0.4,1.4,2.4,2.4,1.4,-0.4,2.4,0.4,-2.4,4.4,-0.4,2.4],2022:[-1.4,-2.4,2.4,-5.4,-1.4,-8.4,5.4,-2.4,-4.4,3.4,-4.4,3.4],2023:[-0.4,2.4,1.4,0.4,-3.4,0.4,2.4,-0.4,-2.4,0.4,5.4,-1.4],2024:[-1.4,0.4,1.4,0.4,0.4,1.4,4.4,0.4,-2.4,0.4,5.4,1.4],2025:[1.4,-0.4,2.4,1.4,0.4,1.4,-0.4,0.4,0.4,1.4,-0.4,-0.4],2026:[0.4,-1.4,0.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'CAD/USD',tk:'CAD=X',type:'m',ytd:3.2,r1m:0.8,r3m:2.4,r1y:4.8,maxdd:-24,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,-0.2,0.4,0.2,-0.2,0.2,-0.4,0.4,0.8,-0.4,-0.2,0.2],posRate:[55,45,55,52,45,52,42,55,60,42,45,52],wkAvg:[0.10,-0.05,0.10,0.05,-0.05,0.05,-0.10,0.10,0.20,-0.10,-0.05,0.05],wkPos:[53,43,53,50,43,50,40,53,58,40,43,50]},
         annual:{2019:4.8,2020:-2.4,2021:0.8,2022:7.4,2023:-2.4,2024:-4.8,2025:-2.4,2026:3.2},
         monthly:{2022:[0.4,0.4,0.8,1.2,1.8,0.8,-0.4,0.8,1.4,-2.4,-1.2,-0.8],2023:[-0.4,0.2,-0.2,0.2,-0.2,-0.2,0.4,0.2,0.8,-0.8,-0.8,-0.2],2024:[0.8,-0.2,0.4,0.4,0.4,-0.2,0.4,-0.8,0.2,-0.2,0.8,-0.4],2025:[-0.2,-0.2,-0.4,-0.4,0.2,-0.2,-0.2,0.2,0.2,0.2,0.2,0.2],2026:[-0.2,0.4,0.4,0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Gold',tk:'XGD.TO',type:'d',ytd:22.4,r1m:8.4,r3m:28.4,r1y:38.4,maxdd:-68,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[5.2,1.4,-1.2,1.2,-3.2,-2.4,-3.4,4.8,-1.8,1.8,0.4,3.2],posRate:[72,58,42,55,36,40,38,68,44,55,50,62],wkAvg:[1.30,0.35,-0.30,0.30,-0.80,-0.60,-0.85,1.20,-0.45,0.45,0.10,0.80],wkPos:[70,56,40,53,34,38,36,66,42,53,48,60]},
         annual:{2019:38.4,2020:28.4,2021:-12.4,2022:-14.4,2023:14.8,2024:24.8,2025:42.4,2026:22.4},
         monthly:{2022:[0.4,8.4,4.4,-2.4,-2.4,-2.4,-3.4,-3.4,-3.4,-2.4,-0.4,-3.4],2023:[7.4,-5.4,9.4,1.4,-1.4,2.4,2.4,-1.4,4.4,-4.4,2.4,1.4],2024:[0.4,0.4,-1.4,3.4,2.4,1.4,5.4,-2.4,5.4,-3.4,3.4,2.4],2025:[7.4,3.4,6.4,5.4,-0.4,1.4,1.4,0.4,1.4,2.4,-2.4,0.4],2026:[4.4,5.4,1.4,3.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX 60',tk:'XIU.TO',type:'b',ytd:4.4,r1m:1.8,r3m:6.2,r1y:10.8,maxdd:-36,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.4,-0.2,1.2,0.8,-0.2,0.2,1.4,0.2,-0.8,1.2,0.6,1.8],posRate:[60,52,68,58,48,52,65,55,45,62,58,72],wkAvg:[0.10,-0.05,0.30,0.20,-0.05,0.05,0.35,0.05,-0.20,0.30,0.15,0.45],wkPos:[58,50,66,56,46,50,63,53,43,60,56,70]},
         annual:{2019:22.2,2020:4.8,2021:21.2,2022:-5.4,2023:11.4,2024:17.8,2025:9.0,2026:4.4},
         monthly:{2020:[-2.0,-2.4,-16.8,10.4,3.0,1.8,3.8,2.2,-2.4,-2.8,8.8,2.8],2021:[0.4,1.4,3.8,3.0,2.4,-0.2,2.6,1.2,-2.8,5.4,-1.2,4.6],2022:[-0.4,-2.8,4.0,-4.4,-0.4,-8.6,5.8,-1.8,-4.0,4.4,-4.4,4.8],2023:[-0.8,3.2,2.2,2.4,-3.8,1.2,3.6,-0.4,-3.2,0.4,7.2,-1.8],2024:[-1.4,1.2,2.2,1.8,0.8,2.2,5.0,0.4,-3.4,0.8,6.2,2.4],2025:[2.0,-0.8,3.0,1.8,0.4,1.8,-0.8,0.6,1.0,2.4,-1.2,-1.0],2026:[1.8,-2.0,0.8,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX SmallCap',tk:'XCS.TO',type:'b',ytd:2.8,r1m:1.4,r3m:3.8,r1y:8.4,maxdd:-54,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.8,-0.4,1.8,1.2,-0.8,0.4,1.8,0.4,-1.2,1.4,0.8,2.2],posRate:[58,48,65,58,42,52,62,52,40,60,56,68],wkAvg:[0.20,-0.10,0.45,0.30,-0.20,0.10,0.45,0.10,-0.30,0.35,0.20,0.55],wkPos:[56,46,63,56,40,50,60,50,38,58,54,66]},
         annual:{2019:18.4,2020:-4.4,2021:28.4,2022:-12.4,2023:8.4,2024:12.4,2025:4.4,2026:2.8},
         monthly:{2020:[-3.4,-3.4,-22.4,11.4,4.4,2.4,4.4,3.4,-3.4,-3.4,10.4,3.4],2021:[0.4,1.4,4.4,3.4,2.4,-0.4,2.6,1.2,-2.8,5.4,-1.4,4.8],2022:[-0.8,-3.4,4.4,-5.4,-1.4,-9.4,6.4,-2.4,-4.4,4.8,-5.4,5.4],2023:[-1.4,3.4,2.4,2.8,-4.4,1.4,3.8,-0.8,-3.8,0.8,7.8,-2.4],2024:[-2.4,1.4,2.4,2.4,0.8,2.4,5.4,0.8,-3.8,1.2,6.8,2.8],2025:[2.4,-1.4,3.4,2.0,0.8,2.0,-1.0,0.8,1.4,2.8,-1.8,-1.4],2026:[1.4,-2.4,1.4,-0.4,0,0,0,0,0,0,0,0]}},
       {name:'TSX Composite',tk:'XIC.TO',type:'b',ytd:3.8,r1m:1.6,r3m:5.8,r1y:10.2,maxdd:-38,
+        price:null,daily_change:null,daily_change_pct:null,ma50:null,ma200:null,week52_high:null,week52_low:null,buy_zones:{watch:null,good:null,better:null,best:null},zone:null,
         seas:{avg:[0.6,-0.2,1.2,0.8,-0.4,0.2,1.6,0.2,-0.8,1.2,0.6,1.8],posRate:[60,52,66,58,48,52,64,54,44,62,58,70],wkAvg:[0.15,-0.05,0.30,0.20,-0.10,0.05,0.40,0.05,-0.20,0.30,0.15,0.45],wkPos:[58,50,64,56,46,50,62,52,42,60,56,68]},
         annual:{2019:22.6,2020:5.2,2021:21.4,2022:-5.6,2023:11.6,2024:17.8,2025:9.0,2026:3.8},
         monthly:{2020:[-2.0,-2.6,-16.8,10.4,3.0,1.8,3.8,2.2,-2.4,-2.8,8.8,2.8],2021:[0.4,1.4,3.8,3.0,2.4,-0.2,2.6,1.2,-2.8,5.4,-1.2,4.6],2022:[-0.4,-2.8,4.0,-4.6,-0.4,-8.8,5.8,-2.0,-4.2,4.4,-4.4,4.8],2023:[-0.8,3.4,2.2,2.4,-4.0,1.2,3.8,-0.4,-3.2,0.6,7.2,-1.8],2024:[-1.6,1.2,2.2,1.8,0.8,2.2,5.0,0.4,-3.4,0.8,6.2,2.4],2025:[2.2,-0.8,3.0,1.8,0.4,1.8,-0.8,0.6,1.0,2.4,-1.0,-0.8],2026:[1.8,-2.0,0.8,-0.4,0,0,0,0,0,0,0,0]}}
     ]}
 };
 
-let mode='markets',curA='SP',curSec='overview',curSctry='US',curSSec='rotation',curSect=0,curPeriod='ytd',charts={};
-
-// Ticker → MKTS key map (for loadLiveData)
+// ── Ticker → MKTS key map ────────────────────────────────────────────────────
 const MKTS_TK={'returns_GSPC':'SP','returns_IXIC':'NQ','returns_GSPTSE':'TSX',
   'returns_NSEI':'NIFTY','returns_GCF':'GOLD','returns_CLF':'CRUDE','returns_NGF':'NATGAS'};
 
-// Safe filename from ticker (mirrors fetch_data.py _safe() function)
 function safeTk(t){return t.replace(/\^/g,'').replace(/=/g,'').replace(/\./g,'_');}
 
-function pct(v){return(parseFloat(v)>=0?'+':'')+parseFloat(v).toFixed(1)+'%'}
-function pc(v){return parseFloat(v)>=0?'pos':'neg'}
-function lc(v){const n=parseFloat(v);return n>=0?'lp':n<0?'ln':'lg'}
+// ── JS HELPERS ───────────────────────────────────────────────────────────────
+function safeNum(v){const n=parseFloat(v);return isNaN(n)?null:n;}
 
+function fmtPrice(v,decimals){
+  const n=safeNum(v);
+  if(n===null)return'—';
+  const d=decimals!==undefined?decimals:(n>500?0:n>50?2:n>1?2:4);
+  return n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+}
+
+function fmtChg(chg,pct){
+  const c=safeNum(chg),p=safeNum(pct);
+  if(c===null&&p===null)return{txt:'—',cls:''};
+  const sign=c>=0?'+':'';
+  const cStr=c!==null?`${sign}${fmtPrice(c)}`:'';
+  const pStr=p!==null?`(${p>=0?'+':''}${p.toFixed(2)}%)`:'';
+  return{txt:`${cStr} ${pStr}`.trim(),cls:c>=0?'p':'n'};
+}
+
+function zoneColour(zone){
+  const map={watch:'watch',good:'good',better:'better',best:'best',above:'above'};
+  return map[zone]||'above';
+}
+
+
+function firstSafeNum(...vals){
+  for(const v of vals){
+    const n=safeNum(v);
+    if(n!==null) return n;
+  }
+  return null;
+}
+
+function firstDefined(...vals){
+  for(const v of vals){
+    if(v!==undefined&&v!==null&&v!=='') return v;
+  }
+  return null;
+}
+
+function mergePriceLayer(target,d){
+  const k=d.kpi||{};
+  const price=firstSafeNum(d.price,d.last_close,d.close,d.current_price,d.current,d.nav,k.price,k.last_close,k.close,k.current_price,k.current,k.nav);
+  if(price!==null) target.price=price;
+  const dailyChange=firstSafeNum(d.daily_change,d.change,d.price_change,d.day_change,k.daily_change,k.change,k.price_change,k.day_change);
+  if(dailyChange!==null) target.daily_change=dailyChange;
+  const dailyPct=firstSafeNum(d.daily_change_pct,d.change_pct,d.percent_change,d.day_change_pct,k.daily_change_pct,k.change_pct,k.percent_change,k.day_change_pct);
+  if(dailyPct!==null) target.daily_change_pct=dailyPct;
+  const ma50=firstSafeNum(d.ma50,d.sma50,d.ma_50,d.moving_average_50,k.ma50,k.sma50,k.ma_50,k.moving_average_50);
+  if(ma50!==null) target.ma50=ma50;
+  const ma200=firstSafeNum(d.ma200,d.sma200,d.ma_200,d.moving_average_200,k.ma200,k.sma200,k.ma_200,k.moving_average_200);
+  if(ma200!==null) target.ma200=ma200;
+  const high52=firstSafeNum(d.week52_high,d.high52,d.fifty_two_week_high,d['52w_high'],k.week52_high,k.high52,k.fifty_two_week_high,k['52w_high']);
+  if(high52!==null) target.week52_high=high52;
+  const low52=firstSafeNum(d.week52_low,d.low52,d.fifty_two_week_low,d['52w_low'],k.week52_low,k.low52,k.fifty_two_week_low,k['52w_low']);
+  if(low52!==null) target.week52_low=low52;
+  const bz=firstDefined(d.buy_zones,d.buyZones,d.zones,k.buy_zones,k.buyZones,k.zones);
+  if(bz) target.buy_zones=bz;
+  const zone=firstDefined(d.zone,d.current_zone,d.buy_zone,k.zone,k.current_zone,k.buy_zone);
+  if(zone) target.zone=String(zone).toLowerCase();
+}
+
+function pct(v){return(parseFloat(v)>=0?'+':'')+parseFloat(v).toFixed(1)+'%';}
+function pc(v){return parseFloat(v)>=0?'pos':'neg';}
+function lc(v){const n=parseFloat(v);return n>=0?'lp':n<0?'ln':'lg';}
 function hc(v){
   if(v===0)return{bg:'#f9fafb',tc:'#9ca3af'};
   const i=Math.min(Math.abs(v)/12,1);
@@ -614,22 +799,151 @@ function hc(v){
             :{bg:`rgba(220,38,38,${.07+i*.42})`,tc:i>0.6?'#7f1d1d':'#991b1b'};
 }
 
+// ── UI COMPONENTS ────────────────────────────────────────────────────────────
+function priceBanner(item){
+  const p=item.price,chg=item.daily_change,pct_=item.daily_change_pct;
+  const ma50=item.ma50,ma200=item.ma200;
+  const hi=item.week52_high,lo=item.week52_low;
+  if(!p)return'';
+  const{txt:chgTxt,cls:chgCls}=fmtChg(chg,pct_);
+  const ma50Rel=ma50?((p-ma50)/ma50*100).toFixed(1):null;
+  const ma200Rel=ma200?((p-ma200)/ma200*100).toFixed(1):null;
+  return`<div class="price-banner">
+    <div class="pb-main">
+      <div class="pb-price">${fmtPrice(p)}</div>
+      <div class="pb-chg ${chgCls}">${chgTxt||'—'}</div>
+    </div>
+    <div class="pb-div"></div>
+    ${ma50?`<div class="pb-stat">
+      <div class="pb-stat-label">MA 50</div>
+      <div class="pb-stat-val ma">${fmtPrice(ma50)}</div>
+      <div style="font-size:8px;color:${parseFloat(ma50Rel)>=0?'#4ade80':'#f87171'};font-weight:700;margin-top:2px">${parseFloat(ma50Rel)>=0?'+':''}${ma50Rel}%</div>
+    </div>`:''}
+    ${ma50&&ma200?'<div class="pb-div"></div>':''}
+    ${ma200?`<div class="pb-stat">
+      <div class="pb-stat-label">MA 200</div>
+      <div class="pb-stat-val ma">${fmtPrice(ma200)}</div>
+      <div style="font-size:8px;color:${parseFloat(ma200Rel)>=0?'#4ade80':'#f87171'};font-weight:700;margin-top:2px">${parseFloat(ma200Rel)>=0?'+':''}${ma200Rel}%</div>
+    </div>`:''}
+    ${(ma50||ma200)&&(hi||lo)?'<div class="pb-div"></div>':''}
+    ${hi?`<div class="pb-stat">
+      <div class="pb-stat-label">52W High</div>
+      <div class="pb-stat-val hi">${fmtPrice(hi)}</div>
+      <div style="font-size:8px;color:#6b7280;font-weight:700;margin-top:2px">${((p-hi)/hi*100).toFixed(1)}%</div>
+    </div>`:''}
+    ${lo?`<div class="pb-stat">
+      <div class="pb-stat-label">52W Low</div>
+      <div class="pb-stat-val lo">${fmtPrice(lo)}</div>
+      <div style="font-size:8px;color:#6b7280;font-weight:700;margin-top:2px">+${((p-lo)/lo*100).toFixed(1)}%</div>
+    </div>`:''}
+  </div>`;
+}
+
+function buyZoneCard(item){
+  const bz=item.buy_zones,p=item.price,z=item.zone;
+  if(!bz||(!bz.watch&&!bz.good&&!bz.better&&!bz.best))return'';
+  const zones=[
+    {key:'watch',label:'Watch',desc:'Near support — start watching'},
+    {key:'good', label:'Good', desc:'First entry — partial position'},
+    {key:'better',label:'Better',desc:'Add on dip — better risk/reward'},
+    {key:'best', label:'Best', desc:'Strong support — full position'},
+  ];
+  const activeZone=zoneColour(z);
+  const prices=zones.map(zn=>safeNum(bz[zn.key])).filter(v=>v!==null);
+  const minZ=prices.length?Math.min(...prices):null;
+  const maxZ=prices.length?Math.max(...prices):null;
+  return`<div class="zone-card">
+    <div class="ptl">Buy Zone Framework${p?` · Current: <span style="font-family:'Courier New',monospace;color:#111827">${fmtPrice(p)}</span>`:''}${z?` · <span style="text-transform:capitalize;color:${z==='best'?'#047857':z==='better'?'#15803d':z==='good'?'#1d4ed8':z==='watch'?'#92400e':'#6b7280'}">${z} zone</span>`:''}</div>
+    <div class="zone-grid">
+      ${zones.map(zn=>{
+        const zp=safeNum(bz[zn.key]);
+        const isActive=z===zn.key;
+        const pct_=zp&&p?((p-zp)/zp*100).toFixed(1):null;
+        const prog=zp&&minZ&&maxZ&&maxZ>minZ?Math.round((zp-minZ)/(maxZ-minZ)*100):50;
+        return`<div class="zone-item ${zn.key}${isActive?' active':''}">
+          <div class="zone-label">${zn.label}${isActive?' ←':''}</div>
+          <div class="zone-price">${zp?fmtPrice(zp):'—'}</div>
+          <div class="zone-desc">${zn.desc}</div>
+          ${pct_!==null?`<div style="font-size:8px;font-weight:700;margin-top:3px;color:${parseFloat(pct_)>=0?'#6b7280':'#dc2626'}">${parseFloat(pct_)>=0?'+':''}${pct_}% from here</div>`:''}
+          <div class="zone-progress"><div class="zone-progress-fill" style="width:${prog}%;background:${zn.key==='best'?'#10b981':zn.key==='better'?'#22c55e':zn.key==='good'?'#3b82f6':'#f59e0b'}"></div></div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+}
+
+function maCard(item){
+  const p=item.price,ma50=item.ma50,ma200=item.ma200;
+  const hi=item.week52_high,lo=item.week52_low;
+  if(!p||(!hi&&!lo&&!ma50&&!ma200))return'';
+  const rangeMin=lo||Math.min(...[p,ma50,ma200].filter(Boolean))*0.92;
+  const rangeMax=hi||Math.max(...[p,ma50,ma200].filter(Boolean))*1.08;
+  const span=rangeMax-rangeMin||1;
+  function pos(v){return Math.max(2,Math.min(98,((v-rangeMin)/span*100)));}
+  const pPos=pos(p);
+  const ma50Pos=ma50?pos(ma50):null;
+  const ma200Pos=ma200?pos(ma200):null;
+  const aboveMa50=ma50&&p>ma50,aboveMa200=ma200&&p>ma200;
+  return`<div class="ma-card">
+    <div class="ptl">52-Week Range & Moving Averages</div>
+    <div style="display:flex;justify-content:space-between;font-size:9px;color:#9ca3af;margin-top:6px">
+      <span>${lo?fmtPrice(lo):'—'} 52W Lo</span>
+      <span style="font-weight:700;color:#111827">${fmtPrice(p)} now</span>
+      <span>${hi?fmtPrice(hi):'—'} 52W Hi</span>
+    </div>
+    <div class="range-bar" style="margin-top:6px;margin-bottom:28px">
+      <div class="range-fill" style="width:100%"></div>
+      ${ma200Pos!==null?`<div class="ma-marker" style="left:${ma200Pos}%">
+        <div class="ma-marker-label" style="color:#7c3aed;border-color:#7c3aed">MA200</div>
+        <div class="ma-marker-line" style="background:#7c3aed"></div>
+      </div>`:''}
+      ${ma50Pos!==null?`<div class="ma-marker" style="left:${ma50Pos}%">
+        <div class="ma-marker-label" style="color:#2563eb;border-color:#2563eb">MA50</div>
+        <div class="ma-marker-line" style="background:#2563eb"></div>
+      </div>`:''}
+      <div class="price-marker" style="left:${pPos}%"></div>
+    </div>
+    <div class="chips" style="margin-top:4px">
+      ${ma50?`<div class="chip" style="border-left:2px solid #2563eb">
+        <span class="cl">vs MA50</span>
+        <b style="color:${aboveMa50?'#15803d':'#991b1b'}">${aboveMa50?'Above':'Below'} ${Math.abs((p-ma50)/ma50*100).toFixed(1)}%</b>
+      </div>`:''}
+      ${ma200?`<div class="chip" style="border-left:2px solid #7c3aed">
+        <span class="cl">vs MA200</span>
+        <b style="color:${aboveMa200?'#15803d':'#991b1b'}">${aboveMa200?'Above':'Below'} ${Math.abs((p-ma200)/ma200*100).toFixed(1)}%</b>
+      </div>`:''}
+      ${hi?`<div class="chip"><span class="cl">From 52W Hi</span><b class="neg">${((p-hi)/hi*100).toFixed(1)}%</b></div>`:''}
+      ${lo?`<div class="chip"><span class="cl">From 52W Lo</span><b class="pos">+${((p-lo)/lo*100).toFixed(1)}%</b></div>`:''}
+    </div>
+  </div>`;
+}
+
+// ── CORE APP ─────────────────────────────────────────────────────────────────
+let mode='markets',curA='SP',curSec='overview',curSect=0,curSctry='US',curSSec='rotation',curPeriod='ytd',curTechTf='weekly',techSummary=null,charts={};
+
 function killCharts(){Object.values(charts).forEach(c=>{try{c.destroy();}catch(e){}});charts={};}
 function setMode(m,el){mode=m;document.querySelectorAll('.mt').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderAll();}
 
 function buildMktStrip(){
   document.getElementById('mktStrip').innerHTML=Object.keys(MKTS).map(k=>{
-    const D=MKTS[k];const v=parseFloat(D.kpi.ytd);
+    const D=MKTS[k];
+    const ytdV=parseFloat(D.kpi.ytd);
+    const hasPrice=D.price!==null&&D.price!==undefined;
+    const{txt:chgTxt,cls:chgCls}=hasPrice?fmtChg(D.daily_change,D.daily_change_pct):{txt:'',cls:''};
     return`<div class="ms" onclick="swA('${k}');if(mode!=='markets'){setMode('markets',document.querySelectorAll('.mt')[1])}else{renderMktsShell()}">
       <span class="ms-n">${D.label}</span>
-      <span class="ms-v ${v>=0?'p':'n'}">${D.kpi.ytd}%</span>
+      ${hasPrice?`<span class="ms-p">${fmtPrice(D.price)}</span>`:''}
+      <span class="ms-v ${ytdV>=0?'p':'n'}">${D.kpi.ytd}% YTD</span>
+      ${hasPrice&&chgTxt?`<span class="ms-v ${chgCls}" style="font-size:9px">${chgTxt}</span>`:''}
     </div>`;
   }).join('');
 }
+
 function renderAll(){
   killCharts();
   if(mode==='pulse'){renderPulse();}
   else if(mode==='markets'){renderMktsShell();}
+  else if(mode==='technical'){renderTechShell();}
   else{renderSectsShell();}
 }
 
@@ -671,15 +985,21 @@ function renderPulse(){
     const tiles=g.items.map(item=>{
       const v=gv(item,p);const{bg,tc}=hc(v);const rc=item.rc||item.type||'m';
       const rcB={c:'bc',d:'bd',h:'bh',cy:'bcy',v:'bv',m:'bm'}[rc]||'bm';
+      const hasPrice=item.price!==null&&item.price!==undefined;
+      const{txt:chgTxt,cls:chgCls}=hasPrice?fmtChg(item.daily_change,item.daily_change_pct):{txt:'',cls:''};
+      const zBadge=item.zone?`<span class="zone-badge ${zoneColour(item.zone)}">${item.zone}</span>`:'';
       return`<div class="tile" style="background:${bg};border-color:${v>0?'rgba(22,163,74,.2)':'rgba(220,38,38,.2)'}"
-        onclick="openTile('${(item.label||item.name).replace(/'/g,"\'")}')">
+        onclick="openTile('${(item.label||item.name).replace(/'/g,"\\'")}')">
         <div style="display:flex;justify-content:space-between;align-items:flex-start">
           <div><div class="tile-nm" style="color:${tc}">${item.label||item.name}</div>
           <div class="tile-tk">${item.tk||''}</div></div>
           <span class="badge ${rcB}" style="font-size:8px">${rc.toUpperCase().slice(0,3)}</span>
         </div>
+        ${hasPrice?`<div class="tile-price">${fmtPrice(item.price)}</div>`:''}
+        ${hasPrice&&chgTxt?`<div class="tile-chg ${chgCls}">${chgTxt}</div>`:''}
         <div class="tile-ret" style="color:${tc}">${v>=0?'+':''}${v.toFixed(1)}%</div>
         <div class="tile-dd" style="color:${tc}">DD ${item.kpi?item.kpi.curdd||item.kpi.maxdd:item.maxdd||0}%</div>
+        ${zBadge}
       </div>`;
     }).join('');
     return`<div class="pulse-group" id="pg${gi}">
@@ -701,12 +1021,7 @@ function renderPulse(){
     <div class="pulse-groups">${groups.map((g,gi)=>buildGroup(g,gi)).join('')}</div>
   </div>`;
 }
-function setGrpPeriod(gi,p){
-  if(!window.grpPeriod) window.grpPeriod={0:'ytd',1:'ytd',2:'ytd',3:'ytd'};
-  window.grpPeriod[gi]=p;
-  renderPulse();
-}
-function setPulPeriod(p,el){curPeriod=p;document.querySelectorAll('.pp').forEach(e=>e.classList.remove('on'));el.classList.add('on');renderPulse();}
+function setGrpPeriod(gi,p){if(!window.grpPeriod)window.grpPeriod={0:'ytd',1:'ytd',2:'ytd',3:'ytd'};window.grpPeriod[gi]=p;renderPulse();}
 
 function openTile(name){
   const mkKey=Object.keys(MKTS).find(k=>MKTS[k].label===name);
@@ -723,7 +1038,6 @@ function renderMktsShell(){
   const ks=Object.keys(MKTS);
   document.getElementById('atabs').innerHTML=ks.map(k=>`<div class="at ${k===curA?'on':''}" onclick="swA('${k}')">${MKTS[k].label}</div>`).join('')+
     `<div class="at ${curA==='_x'?'on':''}" onclick="swX()">Cross-Asset</div>`;
-  // Hide section tabs when on cross-asset view — they don't apply
   if(curA==='_x'){
     document.getElementById('stabs').innerHTML='';
   } else {
@@ -733,11 +1047,9 @@ function renderMktsShell(){
   }
   renderMktSec();
 }
-
 function swA(k){curA=k;renderMktsShell();}
 function swX(){curA='_x';renderMktsShell();}
 function swSec(s,el){curSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderMktSec();}
-
 function renderMktSec(){
   killCharts();const cnt=document.getElementById('cnt');
   if(curA==='_x'){renderCross(cnt);return;}
@@ -745,23 +1057,7 @@ function renderMktSec(){
   ({overview:renderOverview,position:renderPosition,calendar:renderCalendar,monthly:renderMonthly,seasonality:renderSeasonality,drawdown:renderDrawdown}[curSec]||renderOverview)(D,cnt);
 }
 
-function renderSectsShell(){
-  document.getElementById('atabs').innerHTML=Object.keys(SECTS).map(k=>
-    `<div class="at ${k===curSctry?'on':''}" onclick="swCtry('${k}')">${SECTS[k].label}</div>`).join('');
-  const tabs={rotation:'Rotation',nowhistory:'Now vs History',aheatmap:'Annual Heatmap',mheatmap:'Monthly Heatmap',seasonality:'Seasonality',stress:'Stress Events'};
-  document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>
-    `<div class="st ${curSSec===s?'on':''}" onclick="swSSec('${s}',this)">${l}</div>`).join('');
-  renderSectSec();
-}
-
-function swCtry(k){curSctry=k;curSect=0;renderSectsShell();}
-function swSSec(s,el){curSSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderSectSec();}
-
-function renderSectSec(){
-  killCharts();const cnt=document.getElementById('cnt');const SD=SECTS[curSctry];
-  ({rotation:renderRotation,nowhistory:renderSectNowHistory,aheatmap:renderSectAnnHM,mheatmap:renderSectMoHM,seasonality:renderSectSeas,stress:renderStress}[curSSec]||renderRotation)(SD,cnt);
-}
-
+// ── buildHM ──────────────────────────────────────────────────────────────────
 function buildHM(monthly,years){
   let h=`<table class="hm"><thead><tr><th class="yl">Year</th>${MO.map(m=>`<th>${m}</th>`).join('')}<th style="background:#f3f4f6">Total</th></tr></thead><tbody>`;
   years.forEach(yr=>{
@@ -778,6 +1074,7 @@ function buildHM(monthly,years){
   return h+`</tbody></table>`;
 }
 
+// ── nowBanner ─────────────────────────────────────────────────────────────────
 function nowBanner(D){
   const ytd=parseFloat(D.kpi.ytd),mtd=parseFloat(D.kpi.mtd);
   const seasMo=D.seas.avg[TODAY_MO],seasWk=D.seas.wkAvg[TODAY_MO];
@@ -785,23 +1082,22 @@ function nowBanner(D){
   const allVals=Object.values(D.annual);
   const rank=Math.round(allVals.filter(v=>v<ytd).length/allVals.length*100);
   const moVals=Object.keys(D.monthly).filter(y=>parseInt(y)<TODAY_YR).map(y=>D.monthly[y][TODAY_MO]).filter(v=>Math.abs(v)>0);
-  const moRank=Math.round(moVals.filter(v=>v<mtd).length/moVals.length*100);
-  const moPos=Math.max(0,Math.min(100,(ytd-Math.min(...allVals))/(Math.max(...allVals)-Math.min(...allVals))*100));
   const moAbove=mtd>seasMo5;const wkAbove=seasWk5>=0;
   const seasNext=D.seas.avg[(TODAY_MO+1)%12];
   const seasNext5=(D.seas.avg5||D.seas.avg)[(TODAY_MO+1)%12];
+  const moPos=Math.max(0,Math.min(100,(ytd-Math.min(...allVals))/(Math.max(...allVals)-Math.min(...allVals))*100));
   const verdictParts=[];
   if(rank>65)verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — top-tercile year, <b>${rank}th percentile</b> historically at this calendar point`);
   else if(rank<35)verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — below-average year, <b>${rank}th percentile</b> historically`);
   else verdictParts.push(`<b>${D.label}</b> YTD ${D.kpi.ytd}% — tracking near historical average`);
-  if(moAbove)verdictParts.push(`${MO_NAME} running <b>above seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of Aprils)`);
+  if(moAbove)verdictParts.push(`${MO_NAME} running <b>above seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`);
   else verdictParts.push(`${MO_NAME} running <b>below seasonal norm</b> (MTD ${D.kpi.mtd}% vs 5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`);
-  if(seasNext5<-0.5)verdictParts.push(`seasonal <b>headwind</b> in May (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
-  else if(seasNext5>0.5)verdictParts.push(`seasonal <b>tailwind</b> in May (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
+  if(seasNext5<-0.5)verdictParts.push(`seasonal <b>headwind</b> in ${MO_NEXT} (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
+  else if(seasNext5>0.5)verdictParts.push(`seasonal <b>tailwind</b> in ${MO_NEXT} (5yr ${pct(seasNext5)} · 20yr ${pct(seasNext)})`);
   const curDD=parseFloat(D.kpi.curdd);
   if(curDD<-10)verdictParts.push(`<b>${Math.abs(curDD).toFixed(1)}% below peak</b>`);
   else if(curDD>=0)verdictParts.push(`<b>at or near all-time high</b>`);
-  return`<div class="verdict-card"><div class="verdict-label">Intelligence · ${D.label} · Apr 28 2026</div>
+  return`<div class="verdict-card"><div class="verdict-label">Intelligence · ${D.label} · ${MO_NAME} ${TODAY_YR}</div>
     <div class="verdict-text">${verdictParts.join(' · ')}</div></div>
   <div class="now-banner">
     <div class="now-metric"><div class="now-label">YTD</div><div class="now-val" style="color:${ytd>=0?'#60a5fa':'#f87171'}">${D.kpi.ytd}%</div><div class="now-sub" style="color:#6b7280">${rank}th pctl</div></div>
@@ -817,6 +1113,7 @@ function nowBanner(D){
   </div>`;
 }
 
+// ── renderOverview ────────────────────────────────────────────────────────────
 function renderOverview(D,el){
   const yrs=Object.keys(D.annual).map(Number),vals=Object.values(D.annual);
   const posYrs=vals.filter(v=>v>0).length;
@@ -824,41 +1121,23 @@ function renderOverview(D,el){
   const bestY=yrs[vals.indexOf(best)],worstY=yrs[vals.indexOf(worst)];
   const cum=[];let c=100;yrs.forEach((y,i)=>{c*=(1+vals[i]/100);cum.push(parseFloat(c.toFixed(1)));});
   const moYrs=Object.keys(D.monthly).map(Number).sort();
-
-  // Consistency score — computed from monthly data
   const allMoRets=moYrs.flatMap(y=>D.monthly[y].filter(v=>v!==0));
   const allQtrRets=moYrs.flatMap(y=>[0,3,6,9].map(s=>D.monthly[y].slice(s,s+3).reduce((a,v)=>a+v,0)).filter(v=>v!==0));
   const allYrRets=Object.values(D.annual);
   const consistPct={
-    mo: allMoRets.length?Math.round(allMoRets.filter(v=>v>0).length/allMoRets.length*100):0,
+    mo:allMoRets.length?Math.round(allMoRets.filter(v=>v>0).length/allMoRets.length*100):0,
     qtr:allQtrRets.length?Math.round(allQtrRets.filter(v=>v>0).length/allQtrRets.length*100):0,
-    yr: allYrRets.length?Math.round(allYrRets.filter(v=>v>0).length/allYrRets.length*100):0
+    yr:allYrRets.length?Math.round(allYrRets.filter(v=>v>0).length/allYrRets.length*100):0
   };
-
-  // Best/worst streak — consecutive positive/negative months
   let curStreak=0,bestStreak=0,worstStreak=0,streakDir=0;
-  allMoRets.forEach(v=>{
-    const d=v>0?1:-1;
-    if(d===streakDir){curStreak++;}else{curStreak=1;streakDir=d;}
-    if(streakDir===1&&curStreak>bestStreak)bestStreak=curStreak;
-    if(streakDir===-1&&curStreak>worstStreak)worstStreak=curStreak;
-  });
-  // Current streak from end of series
-  const moFlat=[...allMoRets];
-  let curStk=0,curStkDir=moFlat.length?(moFlat[moFlat.length-1]>0?1:-1):0;
-  for(let i=moFlat.length-1;i>=0;i--){
-    if((moFlat[i]>0?1:-1)===curStkDir)curStk++;else break;
-  }
-
-  // Avg monthly move (volatility proxy)
+  allMoRets.forEach(v=>{const d=v>0?1:-1;if(d===streakDir){curStreak++;}else{curStreak=1;streakDir=d;}if(streakDir===1&&curStreak>bestStreak)bestStreak=curStreak;if(streakDir===-1&&curStreak>worstStreak)worstStreak=curStreak;});
+  const moFlat=[...allMoRets];let curStk=0,curStkDir=moFlat.length?(moFlat[moFlat.length-1]>0?1:-1):0;
+  for(let i=moFlat.length-1;i>=0;i--){if((moFlat[i]>0?1:-1)===curStkDir)curStk++;else break;}
   const avgMove=allMoRets.length?parseFloat((allMoRets.reduce((a,v)=>a+Math.abs(v),0)/allMoRets.length).toFixed(1)):0;
   const maxSingleMo=allMoRets.length?parseFloat(Math.max(...allMoRets.map(Math.abs)).toFixed(1)):0;
-
-  // Seasonal dual window for overview (fallback: avg5->avg for embedded data)
   const seasMo=D.seas?(D.seas.avg||[])[TODAY_MO]||0:0;
   const seasMo5=D.seas?((D.seas.avg5||D.seas.avg)||[])[TODAY_MO]||0:0;
-
-  el.innerHTML=nowBanner(D)+`
+  el.innerHTML=priceBanner(D)+buyZoneCard(D)+maCard(D)+nowBanner(D)+`
   <div class="krow">
     <div class="kpi ${lc(D.kpi.mtd)}"><div class="kl">MTD</div><div class="kv ${pc(D.kpi.mtd)}">${D.kpi.mtd}%</div></div>
     <div class="kpi ${lc(D.kpi.ytd)}"><div class="kl">YTD</div><div class="kv ${pc(D.kpi.ytd)}">${D.kpi.ytd}%</div></div>
@@ -879,9 +1158,9 @@ function renderOverview(D,el){
       <div class="chips">
         <div class="chip"><span class="cl">Best</span><span class="pos">${bestY} ${pct(best)}</span></div>
         <div class="chip"><span class="cl">Worst</span><span class="neg">${worstY} ${pct(worst)}</span></div>
-        <div class="chip"><span class="cl">Mo +ve</span><span class="${consistPct.mo>=60?'pos':consistPct.mo>=40?'':'neg'}">${consistPct.mo}%</span></div>
-        <div class="chip"><span class="cl">Qtr +ve</span><span class="${consistPct.qtr>=60?'pos':consistPct.qtr>=40?'':'neg'}">${consistPct.qtr}%</span></div>
-        <div class="chip"><span class="cl">Yr +ve</span><span class="${consistPct.yr>=60?'pos':consistPct.yr>=40?'':'neg'}">${consistPct.yr}%</span></div>
+        <div class="chip"><span class="cl">Mo +ve</span><span class="${consistPct.mo>=60?'pos':''}">${consistPct.mo}%</span></div>
+        <div class="chip"><span class="cl">Qtr +ve</span><span class="${consistPct.qtr>=60?'pos':''}">${consistPct.qtr}%</span></div>
+        <div class="chip"><span class="cl">Yr +ve</span><span class="${consistPct.yr>=60?'pos':''}">${consistPct.yr}%</span></div>
       </div>
       <div style="font-size:9px;color:#9ca3af;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">Annual record</div>
       <div class="dots">${yrs.map((y,i)=>`<div class="dot2 ${vals[i]>=0?'p':'n'}" title="${y}: ${pct(vals[i])}"></div>`).join('')}</div>
@@ -898,15 +1177,11 @@ function renderOverview(D,el){
       </div>
     </div>
     <div class="pnl"><div class="ptl">Cumulative growth (base 100)</div>
-      <div style="position:relative;height:110px;margin-top:4px">
-        <canvas id="ck1" role="img" aria-label="Cumulative return">Cumulative return</canvas>
-      </div>
+      <div style="position:relative;height:110px;margin-top:4px"><canvas id="ck1"></canvas></div>
     </div>
   </div>
   <div class="pnl"><div class="ptl">Annual returns — all years</div>
-    <div style="position:relative;height:130px;margin-top:6px">
-      <canvas id="ck2" role="img" aria-label="Annual returns">Annual returns chart</canvas>
-    </div>
+    <div style="position:relative;height:130px;margin-top:6px"><canvas id="ck2"></canvas></div>
   </div>
   <div class="pnl"><div class="ptl">Monthly heatmap — last 4 years</div>
     <div style="overflow-x:auto;margin-top:6px">${buildHM(D.monthly,moYrs.slice(-4))}</div>
@@ -917,6 +1192,7 @@ function renderOverview(D,el){
   },60);
 }
 
+// ── renderPosition ────────────────────────────────────────────────────────────
 function renderPosition(D,el){
   const vals=Object.values(D.annual),yrs=Object.keys(D.annual).map(Number);
   const ytd=parseFloat(D.kpi.ytd),mtd=parseFloat(D.kpi.mtd);
@@ -933,24 +1209,24 @@ function renderPosition(D,el){
   const moWorst=Math.min(...moVals),moBest=Math.max(...moVals);
   const moPos=Math.max(0,Math.min(100,(mtd-moWorst)/(moBest-moWorst)*100));
   const moRank=Math.round(moVals.filter(v=>v<mtd).length/moVals.length*100);
-  const wkVals=D.seas.wkAvg;
-  const thisWkVsNorm=parseFloat((mtd/4-wkAvg).toFixed(2));
   const flags=[];
   if(rank>66)flags.push({c:'g',t:`YTD ${D.kpi.ytd}% — top tercile across all years (${rank}th percentile)`});
   else if(rank<33)flags.push({c:'r',t:`YTD ${D.kpi.ytd}% — bottom tercile historically (${rank}th percentile)`});
   else flags.push({c:'y',t:`YTD ${D.kpi.ytd}% — mid-range year (${rank}th percentile)`});
   if(mtd>seasMo5+0.5)flags.push({c:'g',t:`${MO_NAME} MTD ${D.kpi.mtd}% — outpacing seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
   else if(mtd<seasMo5-0.5)flags.push({c:'r',t:`${MO_NAME} MTD ${D.kpi.mtd}% — lagging seasonal norm (5yr avg ${pct(seasMo5)} · 20yr ${pct(seasMo)}, +ve ${D.seas.posRate[TODAY_MO]}% of years)`});
-  else flags.push({c:'y',t:`April MTD ${D.kpi.mtd}% — tracking seasonal norm (5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`});
+  else flags.push({c:'y',t:`${MO_NAME} MTD ${D.kpi.mtd}% — tracking seasonal norm (5yr ${pct(seasMo5)} · 20yr ${pct(seasMo)})`});
   if(wkAvg5>0.1)flags.push({c:'g',t:`Wk ${TODAY_WK} historically positive — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
   else if(wkAvg5<-0.1)flags.push({c:'r',t:`Wk ${TODAY_WK} historically negative — 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)}, +ve ${wkPos5}% of years`});
-  if(seasNext5>0.5)flags.push({c:'g',t:`${MO_NEXT} ahead — historically strong (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
-  else if(seasNext5<-0.5)flags.push({c:'r',t:`${MO_NEXT} ahead — historically weak (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays`});
+  if(seasNext5>0.5)flags.push({c:'g',t:`${MO_NEXT} ahead — historically strong (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of years`});
+  else if(seasNext5<-0.5)flags.push({c:'r',t:`${MO_NEXT} ahead — historically weak (5yr avg ${pct(seasNext5)} · 20yr ${pct(seasNext)}), +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of years`});
   if(curDD<-10)flags.push({c:'r',t:`${Math.abs(curDD).toFixed(1)}% below peak — in meaningful drawdown`});
   else if(curDD>=0)flags.push({c:'g',t:`At or near all-time high — ${Math.abs(curDD).toFixed(1)}% from peak`});
   else flags.push({c:'y',t:`${Math.abs(curDD).toFixed(1)}% below peak — mild pullback`});
+  if(D.price&&D.zone)flags.push({c:D.zone==='best'||D.zone==='better'?'g':D.zone==='watch'?'y':'g',t:`Price ${fmtPrice(D.price)} — currently in <b>${D.zone}</b> buy zone`});
+  if(D.price&&D.ma200){const rel=((D.price-D.ma200)/D.ma200*100).toFixed(1);flags.push({c:parseFloat(rel)>0?'g':'r',t:`${parseFloat(rel)>0?'Above':'Below'} MA200 by ${Math.abs(rel)}% (MA200: ${fmtPrice(D.ma200)})`});}
   if(r3m>parseFloat(avg)*0.8)flags.push({c:'y',t:`3M return ${D.kpi.r3m}% — running extended vs avg ${avg}%/yr`});
-  el.innerHTML=nowBanner(D)+`
+  el.innerHTML=priceBanner(D)+buyZoneCard(D)+maCard(D)+nowBanner(D)+`
   <div class="g2">
     <div class="pnl">
       <div class="ptl">Annual lens — YTD position vs all prior years</div>
@@ -965,34 +1241,36 @@ function renderPosition(D,el){
         <div class="chip"><span class="cl">Avg annual</span><b>${avg}%</b></div>
         <div class="chip"><span class="cl">3M</span><b class="${pc(r3m)}">${D.kpi.r3m}%</b></div>
         <div class="chip"><span class="cl">Cur DD</span><b class="${curDD<-5?'neg':curDD<0?'warn':'pos'}">${D.kpi.curdd}%</b></div>
+        ${D.price?`<div class="chip"><span class="cl">Price</span><b>${fmtPrice(D.price)}</b></div>`:''}
+        ${D.zone?`<div class="chip" style="border-left:2px solid ${D.zone==='best'?'#10b981':D.zone==='better'?'#22c55e':D.zone==='good'?'#3b82f6':'#f59e0b'}"><span class="cl">Zone</span><b style="text-transform:capitalize">${D.zone}</b></div>`:''}
       </div>
     </div>
     <div class="pnl">
       <div class="ptl">Monthly lens — ${MO_NAME} MTD vs all prior ${MO_NAME}s</div>
-      <div style="font-size:10px;color:#6b7280;margin-bottom:5px;font-weight:500">Worst Apr ${moWorst.toFixed(1)}% ← → Best ${moBest.toFixed(1)}%</div>
+      <div style="font-size:10px;color:#6b7280;margin-bottom:5px;font-weight:500">Worst ${moWorst.toFixed(1)}% ← → Best ${moBest.toFixed(1)}%</div>
       <div class="ytd-track">
         <div class="ytd-fill" style="width:${moPos}%;background:${mtd>=0?'#16a34a':'#dc2626'}"></div>
         <div class="ytd-mkr" style="left:${moPos}%;background:${mtd>=0?'#14532d':'#7f1d1d'}"></div>
       </div>
-      <div style="text-align:center;font-size:11px;font-weight:800;margin-top:5px;color:${mtd>=0?'#15803d':'#991b1b'};font-family:'Courier New',monospace">${D.kpi.mtd}% · ${moRank}th percentile of all Aprils</div>
+      <div style="text-align:center;font-size:11px;font-weight:800;margin-top:5px;color:${mtd>=0?'#15803d':'#991b1b'};font-family:'Courier New',monospace">${D.kpi.mtd}% · ${moRank}th percentile of all ${MO_NAME}s</div>
       <div class="divl"></div>
-      <div class="ptl" style="margin-top:8px">Weekly lens — Week 17</div>
+      <div class="ptl" style="margin-top:8px">Weekly lens — Week ${TODAY_WK}</div>
       <div class="wk-box">
-        <div class="wk-title">Week 17 historical pattern (20yr avg)</div>
+        <div class="wk-title">Week ${TODAY_WK} historical pattern</div>
         <div class="chips" style="margin:0;gap:6px">
           <div class="chip" style="background:#374151;border-color:#4b5563;color:#e5e7eb"><span style="color:#6b7280;margin-right:3px">5yr</span><b style="font-family:'Courier New',monospace;color:${wkAvg5>=0?'#34d399':'#f87171'}">${pct(wkAvg5)}</b></div>
           <div class="chip" style="background:#374151;border-color:#4b5563;color:#e5e7eb"><span style="color:#6b7280;margin-right:3px">20yr</span><b style="font-family:'Courier New',monospace;color:${wkAvg>=0?'#34d399':'#f87171'}">${pct(wkAvg)}</b></div>
           <div class="chip" style="background:#374151;border-color:#4b5563;color:#e5e7eb"><span style="color:#6b7280;margin-right:3px">+ve 5yr</span><b style="color:#e5e7eb">${wkPos5}%</b></div>
-          <div class="chip" style="background:#374151;border-color:#4b5563;color:${wkAvg>=0?'#34d399':'#f87171'}"><b>${wkAvg>=0?'Seasonally positive':'Seasonally negative'}</b></div>
+          <div class="chip" style="background:#374151;border-color:#4b5563;color:${wkAvg5>=0?'#34d399':'#f87171'}"><b>${wkAvg5>=0?'Seasonally positive':'Seasonally negative'}</b></div>
         </div>
       </div>
       <div class="divl"></div>
-      <div class="ptl">Next month — May</div>
+      <div class="ptl">Next month — ${MO_NEXT}</div>
       <div class="chips">
-        <div class="chip"><span class="cl">May 5yr</span><b class="${seasNext5>=0?'pos':'neg'}">${pct(seasNext5)}</b></div>
-        <div class="chip"><span class="cl">May 20yr</span><b class="${seasNext>=0?'pos':'neg'}">${pct(seasNext)}</b></div>
+        <div class="chip"><span class="cl">${MO_NEXT} 5yr</span><b class="${seasNext5>=0?'pos':'neg'}">${pct(seasNext5)}</b></div>
+        <div class="chip"><span class="cl">${MO_NEXT} 20yr</span><b class="${seasNext>=0?'pos':'neg'}">${pct(seasNext)}</b></div>
         <div class="chip"><span class="cl">+ve</span><b>${D.seas.posRate[(TODAY_MO+1)%12]}%</b></div>
-        <div class="chip" style="background:${seasNext<-0.5?'#fef2f2':seasNext>0.5?'#f0fdf4':'#f9fafb'};border-color:${seasNext<-0.5?'#fecaca':seasNext>0.5?'#bbf7d0':'#e5e7eb'}"><b style="color:${seasNext<-0.5?'#991b1b':seasNext>0.5?'#15803d':'#6b7280'}">${seasNext<-0.5?'Headwind ahead':seasNext>0.5?'Tailwind ahead':'Neutral'}</b></div>
+        <div class="chip" style="background:${seasNext5<-0.5?'#fef2f2':seasNext5>0.5?'#f0fdf4':'#f9fafb'};border-color:${seasNext5<-0.5?'#fecaca':seasNext5>0.5?'#bbf7d0':'#e5e7eb'}"><b style="color:${seasNext5<-0.5?'#991b1b':seasNext5>0.5?'#15803d':'#6b7280'}">${seasNext5<-0.5?'Headwind ahead':seasNext5>0.5?'Tailwind ahead':'Neutral'}</b></div>
       </div>
     </div>
   </div>
@@ -1001,9 +1279,11 @@ function renderPosition(D,el){
   </div>`;
 }
 
+// ── renderCalendar ────────────────────────────────────────────────────────────
 function renderCalendar(D,el){
-  const yrs=Object.keys(D.annual).map(Number),vals=Object.values(D.annual);
-  el.innerHTML=nowBanner(D)+`
+  const yrs=Object.keys(D.annual).map(Number).sort((a,b)=>b-a);
+  const vals=yrs.map(y=>D.annual[y]);
+  el.innerHTML=priceBanner(D)+nowBanner(D)+`
   <div class="pnl"><div class="ptl">Calendar year returns — all years</div>
     <div style="overflow-x:auto;margin-top:6px">
     <table style="width:100%;border-collapse:collapse;font-size:10px">
@@ -1012,18 +1292,18 @@ function renderCalendar(D,el){
     </table></div>
   </div>
   <div class="pnl"><div class="ptl">Annual return chart</div>
-    <div style="position:relative;height:180px;margin-top:8px">
-      <canvas id="ckCal" role="img" aria-label="Calendar year returns">Annual returns</canvas>
-    </div>
+    <div style="position:relative;height:180px;margin-top:8px"><canvas id="ckCal"></canvas></div>
   </div>`;
   setTimeout(()=>{charts.cal=new Chart(document.getElementById('ckCal'),{type:'bar',data:{labels:yrs,datasets:[{data:vals,backgroundColor:vals.map(v=>v>=0?'rgba(22,163,74,.18)':'rgba(220,38,38,.18)'),borderColor:vals.map(v=>v>=0?'#16a34a':'#dc2626'),borderWidth:1.5,borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#9ca3af',font:{size:9},autoSkip:true,maxRotation:45},grid:{color:'#f9fafb'}},y:{ticks:{color:'#9ca3af',font:{size:9},callback:v=>v+'%'},grid:{color:'#f3f4f6'}}}}});},60);
 }
 
+// ── renderMonthly ─────────────────────────────────────────────────────────────
 function renderMonthly(D,el){
-  const years=Object.keys(D.monthly).map(Number).sort();
-  el.innerHTML=nowBanner(D)+`<div class="pnl"><div class="ptl">Monthly returns heatmap — all available years (${years[0]}–${years[years.length-1]})</div><div style="overflow-x:auto;margin-top:6px">${buildHM(D.monthly,years)}</div></div>`;
+  const years=Object.keys(D.monthly).map(Number).sort((a,b)=>b-a);
+  el.innerHTML=priceBanner(D)+nowBanner(D)+`<div class="pnl"><div class="ptl">Monthly returns heatmap — all available years (${years[0]}–${years[years.length-1]})</div><div style="overflow-x:auto;margin-top:6px">${buildHM(D.monthly,years)}</div></div>`;
 }
 
+// ── renderSeasonality ─────────────────────────────────────────────────────────
 function renderSeasonality(D,el){
   const avg=D.seas.avg,wk=D.seas.wkAvg;
   const avg5=D.seas.avg5||D.seas.avg,wk5=D.seas.wkAvg5||D.seas.wkAvg;
@@ -1059,9 +1339,9 @@ function renderSeasonality(D,el){
     <div style="font-size:8px;color:#9ca3af;font-weight:700">${D.seas.wkPos[mi]}%</div></div>`;
   });
   wsg+=`</div>`;
-  el.innerHTML=`
+  el.innerHTML=priceBanner(D)+`
   <div class="curr-seas">
-    <div class="cs-title">Current month vs seasonal norm — April (Week 17) · * = current period</div>
+    <div class="cs-title">Current month vs seasonal norm — ${MO_NAME} (Week ${TODAY_WK}) · * = current period</div>
     <div class="cs-grid">
       <div class="cs-item">
         <div class="cs-label">${MO_NAME} MTD so far</div>
@@ -1070,9 +1350,9 @@ function renderSeasonality(D,el){
         <div class="cs-bar"><div class="cs-fill" style="width:${moPos}%;background:${mtd>=0?'#3b82f6':'#ef4444'}"></div></div>
       </div>
       <div class="cs-item">
-        <div class="cs-label">Apr historical avg</div>
+        <div class="cs-label">${MO_NAME} historical avg</div>
         <div class="cs-val" style="color:${seasMo5>=0?'#34d399':'#f87171'}">${pct(seasMo5)}<span style="font-size:10px;color:#6b7280"> 5yr</span></div>
-        <div class="cs-sub">20yr avg ${pct(seasMo)} · +ve ${D.seas.posRate[TODAY_MO]}% of all Aprils</div>
+        <div class="cs-sub">20yr avg ${pct(seasMo)} · +ve ${D.seas.posRate[TODAY_MO]}% of all ${MO_NAME}s</div>
       </div>
       <div class="cs-item">
         <div class="cs-label">Wk ${TODAY_WK} historical avg</div>
@@ -1080,16 +1360,14 @@ function renderSeasonality(D,el){
         <div class="cs-sub">20yr avg ${pct(seasWk)} · +ve ${D.seas.wkPos[TODAY_MO]}% of Wk ${TODAY_WK}s</div>
       </div>
       <div class="cs-item">
-        <div class="cs-label">May outlook</div>
+        <div class="cs-label">${MO_NEXT} outlook</div>
         <div class="cs-val" style="color:${avg5[(TODAY_MO+1)%12]>=0?'#34d399':'#f87171'}">${pct(avg5[(TODAY_MO+1)%12])}<span style="font-size:10px;color:#6b7280"> 5yr</span></div>
-        <div class="cs-sub">20yr avg ${pct(avg[(TODAY_MO+1)%12])} · +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% of Mays · ${avg5[(TODAY_MO+1)%12]>0.5?'Tailwind':'Headwind'}</div>
+        <div class="cs-sub">20yr avg ${pct(avg[(TODAY_MO+1)%12])} · +ve ${D.seas.posRate[(TODAY_MO+1)%12]}% · ${avg5[(TODAY_MO+1)%12]>0.5?'Tailwind':'Headwind'}</div>
       </div>
     </div>
   </div>
   <div class="pnl"><div class="ptl">Avg monthly return — 20yr · * = current month · bar = avg · % below = +ve rate</div>${sg}
-    <div style="position:relative;height:130px;margin-top:10px">
-      <canvas id="ckS" role="img" aria-label="Seasonality chart">Monthly seasonality</canvas>
-    </div>
+    <div style="position:relative;height:130px;margin-top:10px"><canvas id="ckS"></canvas></div>
   </div>
   <div class="pnl"><div class="ptl">Avg weekly return by month — 20yr · * = current month</div>${wsg}</div>
   <div class="krow" style="grid-template-columns:repeat(4,1fr)">
@@ -1098,18 +1376,17 @@ function renderSeasonality(D,el){
   setTimeout(()=>{charts.seas=new Chart(document.getElementById('ckS'),{type:'bar',data:{labels:MO,datasets:[{data:avg,backgroundColor:avg.map((v,i)=>i===TODAY_MO?'rgba(37,99,235,.3)':v>=0?'rgba(22,163,74,.18)':'rgba(220,38,38,.18)'),borderColor:avg.map((v,i)=>i===TODAY_MO?'#2563eb':v>=0?'#16a34a':'#dc2626'),borderWidth:avg.map((v,i)=>i===TODAY_MO?2.5:1.5),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#9ca3af',font:{size:10},autoSkip:false},grid:{color:'#f9fafb'}},y:{ticks:{color:'#9ca3af',font:{size:10},callback:v=>v+'%'},grid:{color:'#f3f4f6'}}}}});},60);
 }
 
+// ── renderDrawdown ────────────────────────────────────────────────────────────
 function renderDrawdown(D,el){
   const dd=D.drawdown,curDD=parseFloat(D.kpi.curdd);
-  el.innerHTML=nowBanner(D)+`
+  el.innerHTML=priceBanner(D)+nowBanner(D)+`
   <div class="krow" style="grid-template-columns:repeat(3,1fr)">
     <div class="kpi ln"><div class="kl">Max Drawdown</div><div class="kv neg">${D.kpi.maxdd}%</div></div>
     <div class="kpi ${curDD<-10?'ln':curDD<-3?'lw':'lp'}"><div class="kl">Current DD</div><div class="kv ${curDD<-10?'neg':curDD<-3?'warn':'pos'}">${D.kpi.curdd}%</div></div>
     <div class="kpi ${curDD>=0?'lp':'lw'}"><div class="kl">Status</div><div class="kv ${curDD>=0?'pos':'warn'}" style="font-size:12px">${curDD>=0?'At peak':'Recovering'}</div></div>
   </div>
   <div class="pnl"><div class="ptl">Underwater chart — distance from rolling all-time high</div>
-    <div style="position:relative;height:160px;margin-top:8px">
-      <canvas id="ckDD" role="img" aria-label="Drawdown chart">Drawdown from peak</canvas>
-    </div>
+    <div style="position:relative;height:160px;margin-top:8px"><canvas id="ckDD"></canvas></div>
   </div>
   <div class="pnl"><div class="ptl">Drawdown events — depth, recovery time and speed</div>
     <table style="width:100%;border-collapse:collapse;font-size:10px;margin-top:6px">
@@ -1125,18 +1402,17 @@ function renderDrawdown(D,el){
   setTimeout(()=>{charts.dd=new Chart(document.getElementById('ckDD'),{type:'line',data:{labels:dd.map((_,i)=>i),datasets:[{data:dd,borderColor:'#dc2626',borderWidth:2,pointRadius:0,fill:true,backgroundColor:'rgba(220,38,38,0.06)',tension:.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{display:false},y:{ticks:{color:'#9ca3af',font:{size:9},callback:v=>v+'%'},grid:{color:'#f3f4f6'},max:5}}}});},60);
 }
 
+// ── renderCross ───────────────────────────────────────────────────────────────
 function renderCross(el){
   const ks=Object.keys(MKTS);
-  // Sub-tabs state
   if(!window.cxTab) window.cxTab='ytd';
   const tabs=[{k:'ytd',l:'YTD Snapshot'},{k:'mtd',l:'MTD Snapshot'},{k:'wk',l:'Weekly Seasonal'}];
   const tabBar=`<div style="display:flex;gap:0;border-bottom:1px solid #e5e7eb;margin-bottom:12px">
     ${tabs.map(t=>`<div onclick="setCxTab('${t.k}')" style="padding:7px 14px;font-size:11px;font-weight:600;cursor:pointer;color:${window.cxTab===t.k?'#111827':'#6b7280'};border-bottom:2px solid ${window.cxTab===t.k?'#111827':'transparent'};transition:all .12s">${t.l}</div>`).join('')}
   </div>`;
-
   function mkBar(label,val,maxA,color,subLabel){
     const w=Math.round(Math.abs(val)/maxA*100);
-    const col=color||( val>=0?'#16a34a':'#dc2626');
+    const col=color||(val>=0?'#16a34a':'#dc2626');
     const bg=val>=0?'rgba(22,163,74,.12)':'rgba(220,38,38,.12)';
     return`<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <div style="width:68px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">${label}</div>
@@ -1147,7 +1423,6 @@ function renderCross(el){
       <div style="width:90px;font-size:9px;color:#9ca3af;text-align:right;flex-shrink:0">${subLabel}</div>
     </div>`;
   }
-
   let body='';
   if(window.cxTab==='ytd'){
     const sorted=[...ks].sort((a,b)=>parseFloat(MKTS[b].kpi.ytd)-parseFloat(MKTS[a].kpi.ytd));
@@ -1157,14 +1432,16 @@ function renderCross(el){
       <div class="ptl">YTD return — all 7 markets · sorted best to worst</div>
       <div style="margin-top:8px">${sorted.map(k=>mkBar(MKTS[k].label,parseFloat(MKTS[k].kpi.ytd),maxA,MKTS[k].color,MKTS[k].regime)).join('')}</div>
     </div>`;
-    // Annual table
     const yrs=Object.keys(MKTS.SP.annual).map(Number).sort();
     let h=`<div class="pnl"><div class="ptl">Annual returns — all markets · bold green = best that year</div>
       <div style="overflow-x:auto;margin-top:6px"><table class="rel-tbl">
-      <thead><tr><th class="al">Market</th>${yrs.map(y=>`<th>${y}</th>`).join('')}</tr></thead><tbody>`;
+      <thead><tr><th class="al">Market</th><th>Price</th><th>Daily Chg</th>${yrs.map(y=>`<th>${y}</th>`).join('')}</tr></thead><tbody>`;
     ks.forEach(k=>{
       const D=MKTS[k];
-      h+=`<tr><td class="al" style="color:${D.color}">${D.label}</td>`;
+      const{txt:chgTxt,cls:chgCls}=fmtChg(D.daily_change,D.daily_change_pct);
+      h+=`<tr><td class="al" style="color:${D.color}">${D.label}</td>
+        <td style="font-family:'Courier New',monospace;font-weight:700;color:#111827">${D.price?fmtPrice(D.price):'—'}</td>
+        <td style="font-family:'Courier New',monospace;font-weight:700;color:${chgCls==='p'?'#15803d':'#991b1b'}">${chgTxt||'—'}</td>`;
       yrs.forEach(y=>{
         const v=D.annual[y];
         if(v===undefined){h+=`<td style="color:#d1d5db;font-size:9px">·</td>`;return;}
@@ -1182,31 +1459,28 @@ function renderCross(el){
       <div class="ptl">MTD return — all 7 markets · sorted best to worst</div>
       <div style="margin-top:8px">${sorted.map(k=>mkBar(MKTS[k].label,parseFloat(MKTS[k].kpi.mtd),maxA,MKTS[k].color,MKTS[k].regime)).join('')}</div>
     </div>`;
-    // Rolling returns table
-    let h=`<div class="pnl"><div class="ptl">Rolling returns — 1M · 3M · 6M · 1Y comparison</div>
+    let h=`<div class="pnl"><div class="ptl">Rolling returns + price — 1M · 3M · 6M · 1Y comparison</div>
       <div style="overflow-x:auto;margin-top:6px"><table class="rel-tbl">
-      <thead><tr><th class="al">Market</th><th>MTD</th><th>Roll 1M</th><th>Roll 3M</th><th>Roll 6M</th><th>Roll 1Y</th><th>Cur DD</th></tr></thead><tbody>`;
+      <thead><tr><th class="al">Market</th><th>Price</th><th>Zone</th><th>MTD</th><th>Roll 1M</th><th>Roll 3M</th><th>Roll 6M</th><th>Roll 1Y</th><th>Cur DD</th></tr></thead><tbody>`;
     ks.forEach(k=>{
       const D=MKTS[k];
-      const cols=[D.kpi.mtd,D.kpi.r1m,D.kpi.r3m,D.kpi.r6m,D.kpi.r1y,D.kpi.curdd];
-      h+=`<tr><td class="al" style="color:${D.color}">${D.label}</td>`;
-      cols.forEach(v=>{
+      const zc=D.zone?zoneColour(D.zone):'above';
+      h+=`<tr><td class="al" style="color:${D.color}">${D.label}</td>
+        <td style="font-family:'Courier New',monospace;font-weight:700;color:#111827">${D.price?fmtPrice(D.price):'—'}</td>
+        <td>${D.zone?`<span class="zone-badge ${zc}">${D.zone}</span>`:'—'}</td>`;
+      [D.kpi.mtd,D.kpi.r1m,D.kpi.r3m,D.kpi.r6m,D.kpi.r1y,D.kpi.curdd].forEach(v=>{
         const n=parseFloat(v);
         h+=`<td style="color:${n>=0?'#15803d':'#991b1b'};font-weight:${Math.abs(n)>10?800:600};font-family:'Courier New',monospace">${n>=0?'+':''}${n.toFixed(1)}%</td>`;
       });
       h+=`</tr>`;
     });
     body+=h+`</tbody></table></div></div>`;
-    // Drawdown bars
     const ddP=[...ks].map(k=>({k,v:parseFloat(MKTS[k].kpi.curdd)})).sort((a,b)=>a.v-b.v);
     const mxA=Math.max(...ddP.map(d=>Math.abs(d.v)),1);
     let dd=`<div class="pnl"><div class="ptl">Current drawdown from peak</div><div style="margin-top:8px">`;
-    ddP.forEach(({k,v})=>{
-      dd+=mkBar(MKTS[k].label,v,mxA,Math.abs(v)>15?'#dc2626':Math.abs(v)>5?'#d97706':'#16a34a','From peak');
-    });
+    ddP.forEach(({k,v})=>{dd+=mkBar(MKTS[k].label,v,mxA,Math.abs(v)>15?'#dc2626':Math.abs(v)>5?'#d97706':'#16a34a','From peak');});
     body+=dd+`</div></div>`;
   } else {
-    // Weekly seasonal — avg weekly return by month, current week highlighted
     const sorted=[...ks].sort((a,b)=>MKTS[b].seas.wkAvg[TODAY_MO]-MKTS[a].seas.wkAvg[TODAY_MO]);
     const vals=sorted.map(k=>MKTS[k].seas.wkAvg[TODAY_MO]);
     const maxA=Math.max(...vals.map(Math.abs),0.1);
@@ -1214,11 +1488,9 @@ function renderCross(el){
       <div class="ptl">Week ${TODAY_WK} historical avg return — all markets · sorted strongest to weakest</div>
       <div style="margin-top:8px">${sorted.map(k=>mkBar(MKTS[k].label,MKTS[k].seas.wkAvg[TODAY_MO],maxA,MKTS[k].color,`${MKTS[k].seas.wkPos[TODAY_MO]}% +ve`)).join('')}</div>
     </div>`;
-    // Monthly seasonality grid
-    const MO2=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     let h=`<div class="pnl"><div class="ptl">Monthly seasonality — avg weekly return by month · all markets · * = current month</div>
       <div style="overflow-x:auto;margin-top:6px"><table class="rel-tbl">
-      <thead><tr><th class="al">Market</th>${MO2.map((m,i)=>`<th style="${i===TODAY_MO?'color:#1d4ed8;font-weight:800':''}">${m}${i===TODAY_MO?'*':''}</th>`).join('')}</tr></thead><tbody>`;
+      <thead><tr><th class="al">Market</th>${MO.map((m,i)=>`<th style="${i===TODAY_MO?'color:#1d4ed8;font-weight:800':''}">${m}${i===TODAY_MO?'*':''}</th>`).join('')}</tr></thead><tbody>`;
     ks.forEach(k=>{
       const D=MKTS[k];
       h+=`<tr><td class="al" style="color:${D.color}">${D.label}</td>`;
@@ -1232,8 +1504,45 @@ function renderCross(el){
   }
   el.innerHTML=tabBar+body;
 }
-function setCxTab(t){window.cxTab=t;renderCross(document.getElementById("cnt"));}
+function setCxTab(t){window.cxTab=t;renderCross(document.getElementById('cnt'));}
 
+// ── Sector shell ──────────────────────────────────────────────────────────────
+
+// ── Technical Indicator Dashboard ────────────────────────────────────────────
+function techStatusClass(status){if(status==='Below S2')return 'status-s2';if(status==='Below S1')return 'status-s1';if(status==='Below Pivot')return 'status-piv';return 'status-ok';}
+function techRows(tf){const t=(techSummary&&techSummary[tf])?techSummary[tf]:null;if(!t)return [];const seen=new Set();return [...(t.below_pivot||[])].filter(r=>{const k=r.ticker+'|'+r.status;if(seen.has(k))return false;seen.add(k);return true;});}
+function renderTechShell(){document.getElementById('atabs').innerHTML='';document.getElementById('stabs').innerHTML='';renderTech();}
+function setTechTf(tf){curTechTf=tf;renderTech();}
+function renderTech(){
+  const el=document.getElementById('cnt'),tf=curTechTf||'weekly',data=techSummary&&techSummary[tf];
+  if(!data){el.innerHTML=`<div class="pnl"><div class="ptl">Technical Indicators</div><div style="font-size:12px;color:#6b7280;line-height:1.6">technical_summary.json not loaded yet. Confirm the public repo has <b>data/technical_summary.json</b>.</div></div>`;return;}
+  const belowPivot=data.below_pivot||[],belowS1=data.below_s1||[],belowS2=data.below_s2||[],rows=techRows(tf),byGroup={};
+  rows.forEach(r=>{byGroup[r.group]=byGroup[r.group]||{score:0,count:0};byGroup[r.group].score+=(r.weakness_rank||0);byGroup[r.group].count++;});
+  const groupRows=Object.entries(byGroup).sort((a,b)=>b[1].score-a[1].score).map(([g,v])=>({group:g,score:v.score,count:v.count,avg:v.count?(v.score/v.count):0}));
+  const cprRows=rows.filter(r=>r.cpr_type||r.price_vs_cpr).sort((a,b)=>(a.cpr_width_pct==null?999:a.cpr_width_pct)-(b.cpr_width_pct==null?999:b.cpr_width_pct)).slice(0,30);
+  function pill(r){return `<span class="status-pill ${techStatusClass(r.status)}">${r.status||'NA'}</span>`;}function cprPill(r){const c=(r.cpr_type||'unknown');return `<span class="cpr-pill cpr-${c}">${c.replace('_',' ')}</span>`;}function num(v,d=2){const n=safeNum(v);return n===null?'--':fmtPrice(n,d);}
+  function table(rs,limit=80){return `<div class="tech-table-wrap"><table class="tech-table"><thead><tr><th>Group</th><th>Label</th><th>Ticker</th><th class="num">Price</th><th class="num">Pivot</th><th class="num">S1</th><th class="num">S2</th><th class="num">R1</th><th class="num">R2</th><th class="num">CPR Low</th><th class="num">CPR High</th><th>CPR</th><th>Price vs CPR</th><th>Status</th></tr></thead><tbody>${rs.slice(0,limit).map(r=>`<tr><td>${r.group||''}</td><td>${r.label||''}</td><td class="tk">${r.ticker||''}</td><td class="num">${num(r.last_close)}</td><td class="num">${num(r.pivot)}</td><td class="num">${num(r.s1)}</td><td class="num">${num(r.s2)}</td><td class="num">${num(r.r1)}</td><td class="num">${num(r.r2)}</td><td class="num">${num(r.bc)}</td><td class="num">${num(r.tc)}</td><td>${cprPill(r)} ${r.cpr_width_pct!=null?`<span style="color:#6b7280">${r.cpr_width_pct}%</span>`:''}</td><td>${r.price_vs_cpr||'--'}${r.inside_cpr?' · inside':''}</td><td>${pill(r)}</td></tr>`).join('')}</tbody></table></div>`;}
+  function cards(rs,limit=80){return `<div class="tech-cards">${rs.slice(0,limit).map(r=>`<div class="tech-card"><div class="tech-card-top"><div><div class="tech-card-title">${r.label||''}</div><div class="tech-card-sub">${r.ticker||''} · ${r.group||''}</div></div><div><div class="tech-card-price">${num(r.last_close)}</div><div style="text-align:right;margin-top:4px">${pill(r)}</div></div></div><div class="tech-card-grid"><div class="tech-mini"><div class="tech-mini-l">Pivot</div><div class="tech-mini-v">${num(r.pivot)}</div></div><div class="tech-mini"><div class="tech-mini-l">S1 / S2</div><div class="tech-mini-v">${num(r.s1)} / ${num(r.s2)}</div></div><div class="tech-mini"><div class="tech-mini-l">CPR</div><div class="tech-mini-v">${(r.cpr_type||'--').replace('_',' ')}</div></div><div class="tech-mini"><div class="tech-mini-l">Price vs CPR</div><div class="tech-mini-v">${r.price_vs_cpr||'--'}</div></div></div></div>`).join('')}</div>`;}
+  const groupTableRows=groupRows.map(g=>({group:g.group,label:`Score ${g.score.toFixed(1)} · ${g.count} items`,ticker:g.group,last_close:g.avg,cpr_type:'normal',price_vs_cpr:'score',status:g.avg>=2?'Below S1':'Below Pivot'}));
+  el.innerHTML=`<div class="tech-hero"><div class="tech-hero-top"><div><div class="tech-title">Technical Indicator Dashboard</div><div class="tech-sub">Pivot, S1/S2, CPR width, CPR position and relative weakness from latest backend data.</div></div><div class="tf-tabs">${['weekly','monthly','annual'].map(x=>`<button class="tf ${tf===x?'on':''}" onclick="setTechTf('${x}')">${x}</button>`).join('')}</div></div><div class="tech-kpis"><div class="tech-kpi"><div class="tech-kpi-l">Below Pivot</div><div class="tech-kpi-v">${belowPivot.length}</div><div class="tech-kpi-sub">Includes S1/S2</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S1</div><div class="tech-kpi-v">${belowS1.length}</div><div class="tech-kpi-sub">Strong weakness</div></div><div class="tech-kpi"><div class="tech-kpi-l">Below S2</div><div class="tech-kpi-v">${belowS2.length}</div><div class="tech-kpi-sub">Extreme weakness</div></div><div class="tech-kpi"><div class="tech-kpi-l">Weak Groups</div><div class="tech-kpi-v">${groupRows.length}</div><div class="tech-kpi-sub">Ranked by score</div></div></div></div><div class="tech-layout"><div class="pnl"><div class="ptl">Weakest groups — ${tf}</div>${table(groupTableRows,20)}${cards(groupTableRows,20)}</div><div class="pnl"><div class="ptl">CPR compression / structure — ${tf}</div>${table(cprRows,30)}${cards(cprRows,30)}</div></div><div class="pnl"><div class="ptl">Full pivot weakness table — ${tf}</div>${table(rows,120)}${cards(rows,120)}</div>`;
+}
+
+function renderSectsShell(){
+  document.getElementById('atabs').innerHTML=Object.keys(SECTS).map(k=>
+    `<div class="at ${k===curSctry?'on':''}" onclick="swCtry('${k}')">${SECTS[k].label}</div>`).join('');
+  const tabs={rotation:'Rotation',nowhistory:'Now vs History',aheatmap:'Annual Heatmap',mheatmap:'Monthly Heatmap',seasonality:'Seasonality',stress:'Stress Events'};
+  document.getElementById('stabs').innerHTML=Object.entries(tabs).map(([s,l])=>
+    `<div class="st ${curSSec===s?'on':''}" onclick="swSSec('${s}',this)">${l}</div>`).join('');
+  renderSectSec();
+}
+function swCtry(k){curSctry=k;curSect=0;renderSectsShell();}
+function swSSec(s,el){curSSec=s;document.querySelectorAll('#stabs .st').forEach(t=>t.classList.remove('on'));el.classList.add('on');renderSectSec();}
+function renderSectSec(){
+  killCharts();const cnt=document.getElementById('cnt');const SD=SECTS[curSctry];
+  ({rotation:renderRotation,nowhistory:renderSectNowHistory,aheatmap:renderSectAnnHM,mheatmap:renderSectMoHM,seasonality:renderSectSeas,stress:renderStress}[curSSec]||renderRotation)(SD,cnt);
+}
+
+// ── renderRotation ────────────────────────────────────────────────────────────
 function renderRotation(SD,el){
   const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   const bYtd=SD.bm.ytd;
@@ -1244,46 +1553,23 @@ function renderRotation(SD,el){
   const sorted=[...secs].sort((a,b)=>b.ytd-a.ytd);
   const maxAbs=Math.max(...secs.map(s=>Math.abs(s.ytd-bYtd)),1);
   const cycleMap={
-    US:[
-      {phase:'Early Cycle',secs:'Financials · Disc · Industrials',key:'early'},
-      {phase:'Mid Cycle',secs:'Tech · Semis · Materials',key:'mid'},
-      {phase:'Late Cycle',secs:'Energy · Healthcare · Staples',key:'late'},
-      {phase:'Recession',secs:'Utilities · Staples · Healthcare',key:'rec'}
-    ],
-    INDIA:[
-      {phase:'Early Cycle',secs:'PSU Bank · Infra · Auto',key:'early'},
-      {phase:'Mid Cycle',secs:'Metal · IT · Pvt Bank',key:'mid'},
-      {phase:'Late Cycle',secs:'Energy · Oil & Gas · FMCG',key:'late'},
-      {phase:'Recession',secs:'Pharma · Health · FMCG',key:'rec'}
-    ],
-    TSX:[
-      {phase:'Early Cycle',secs:'Financials · Industrials · Disc',key:'early'},
-      {phase:'Mid Cycle',secs:'Materials · Technology · Energy',key:'mid'},
-      {phase:'Late Cycle',secs:'Energy · Gold · Healthcare',key:'late'},
-      {phase:'Recession',secs:'Utilities · Staples · Telecom',key:'rec'}
-    ]
+    US:[{phase:'Early Cycle',secs:'Financials · Disc · Industrials',key:'early'},{phase:'Mid Cycle',secs:'Tech · Semis · Materials',key:'mid'},{phase:'Late Cycle',secs:'Energy · Healthcare · Staples',key:'late'},{phase:'Recession',secs:'Utilities · Staples · Healthcare',key:'rec'}],
+    INDIA:[{phase:'Early Cycle',secs:'PSU Bank · Infra · Auto',key:'early'},{phase:'Mid Cycle',secs:'Metal · IT · Pvt Bank',key:'mid'},{phase:'Late Cycle',secs:'Energy · Oil & Gas · FMCG',key:'late'},{phase:'Recession',secs:'Pharma · Health · FMCG',key:'rec'}],
+    TSX:[{phase:'Early Cycle',secs:'Financials · Industrials · Disc',key:'early'},{phase:'Mid Cycle',secs:'Materials · Technology · Energy',key:'mid'},{phase:'Late Cycle',secs:'Energy · Gold · Healthcare',key:'late'},{phase:'Recession',secs:'Utilities · Staples · Telecom',key:'rec'}]
   };
   const cycles=cycleMap[curSctry]||cycleMap.US;
-  // Compute phase from data — no hardcoded opinions
   const breadthPct=Math.round(aboveBm/secs.length*100);
   const cycLead=cycAvg>defAvg;
-  const bothPos=cycAvg>0&&defAvg>0;
-  const bothNeg=cycAvg<0&&defAvg<0;
-  const computedPhase=bothNeg?'Recession':
-    (!cycLead&&defAvg>0&&defAvg>cycAvg+1)?'Late Cycle':
-    (cycLead&&bothPos&&breadthPct>55)?'Mid Cycle':'Early/Mixed';
+  const bothPos=cycAvg>0&&defAvg>0,bothNeg=cycAvg<0&&defAvg<0;
+  const computedPhase=bothNeg?'Recession':(!cycLead&&defAvg>0&&defAvg>cycAvg+1)?'Late Cycle':(cycLead&&bothPos&&breadthPct>55)?'Mid Cycle':'Early/Mixed';
   const ap=computedPhase.toLowerCase();
-
-  // Best and worst sector from data
   const bestSec=secs.reduce((a,b)=>b.ytd>a.ytd?b:a);
   const worstSec=secs.reduce((a,b)=>b.ytd<a.ytd?b:a);
   const leadType=cycLead?'Cyclicals leading':'Defensives leading';
   const breadthSignal=breadthPct>60?'broad participation':'narrow breadth';
-
   const computedNote=`${leadType} — cyclicals avg <b>${pct(cycAvg)}</b> vs defensives <b>${pct(defAvg)}</b>. `+
     `<b>${aboveBm}/${secs.length}</b> sectors above ${SD.bm.label} benchmark (${breadthSignal}). `+
     `Top: <b>${bestSec.name} ${pct(bestSec.ytd)}</b> · Laggard: <b>${worstSec.name} ${pct(worstSec.ytd)}</b>.`;
-
   el.innerHTML=`
   <div class="verdict-card" style="margin-bottom:10px">
     <div class="verdict-label">Rotation intelligence — ${SD.label} · computed phase: ${computedPhase}</div>
@@ -1306,13 +1592,7 @@ function renderRotation(SD,el){
       <div class="breadth-bar"><div class="breadth-fill" style="width:${aboveBm/secs.length*100}%"></div></div>
       <div style="font-size:10px;color:#374151;margin-bottom:8px"><b>${aboveBm} of ${secs.length}</b> sectors above benchmark</div>
       <div class="cycle-grid">
-        ${cycles.map(c=>{
-          const isActive=ap.includes(c.key)||SD.phase===c.phase;
-          return`<div class="phase-card ${isActive?'active':''}">
-            <div class="phase-nm ${isActive?'on':''}">${c.phase}${isActive?' ←':''}</div>
-            <div class="phase-ss ${isActive?'on':''}">${c.secs}</div>
-          </div>`;
-        }).join('')}
+        ${cycles.map(c=>{const isActive=ap.includes(c.key)||SD.phase===c.phase;return`<div class="phase-card ${isActive?'active':''}"><div class="phase-nm ${isActive?'on':''}">${c.phase}${isActive?' ←':''}</div><div class="phase-ss ${isActive?'on':''}">${c.secs}</div></div>`;}).join('')}
       </div>
     </div>
     <div class="pnl">
@@ -1331,9 +1611,9 @@ function renderRotation(SD,el){
       }).join('')}
     </div>
   </div>
-  <div class="pnl"><div class="ptl">Momentum cascade — MTD · YTD · 1M · 3M · 1Y · Signal = 1M vs 3M/3 trend</div>
+  <div class="pnl"><div class="ptl">Momentum cascade — MTD · YTD · 1M · 3M · 1Y · Price · Zone · Signal</div>
     <div style="overflow-x:auto"><table class="rel-tbl">
-      <thead><tr><th class="al">Sector</th><th>Type</th><th>MTD</th><th>YTD</th><th>vs Bmk</th><th>1M</th><th>3M</th><th>1Y</th><th>Signal</th></tr></thead>
+      <thead><tr><th class="al">Sector</th><th>Type</th><th>Price</th><th>Zone</th><th>MTD</th><th>YTD</th><th>vs Bmk</th><th>1M</th><th>3M</th><th>1Y</th><th>Signal</th></tr></thead>
       <tbody>${sorted.map(s=>{
         const rel=parseFloat((s.ytd-bYtd).toFixed(1));
         const m1=s.r1m,m3q=s.r3m/3;
@@ -1341,9 +1621,12 @@ function renderRotation(SD,el){
         if(m1>m3q&&m1>0&&s.r3m>0){sig='Accel ↑';sc='#16a34a';}
         else if(m1>0&&m1<=m3q){sig='Slowing ↓';sc='#d97706';}
         else if(m1<0&&s.r3m<0){sig='Weak ↓↓';sc='#dc2626';}
+        const zc=s.zone?zoneColour(s.zone):'above';
         return`<tr>
           <td class="al">${s.name}</td>
           <td><span class="badge ${s.type==='c'?'bc':s.type==='d'?'bd':'bm'}" style="font-size:8px">${s.type==='c'?'C':s.type==='d'?'D':'M'}</span></td>
+          <td style="font-family:'Courier New',monospace;font-weight:700;color:#111827">${s.price?fmtPrice(s.price):'—'}</td>
+          <td>${s.zone?`<span class="zone-badge ${zc}">${s.zone}</span>`:'—'}</td>
           <td style="color:${(s.mtd||s.r1m)>=0?'#15803d':'#991b1b'}">${pct(s.mtd||s.r1m)}</td>
           <td style="color:${s.ytd>=0?'#15803d':'#991b1b'};font-weight:800">${pct(s.ytd)}</td>
           <td style="color:${rel>=0?'#15803d':'#991b1b'};background:${rel>=0?'#f0fdf4':'#fef2f2'};font-weight:800">${rel>=0?'+':''}${rel}%</td>
@@ -1356,13 +1639,14 @@ function renderRotation(SD,el){
     </table></div>
   </div>`;
 }
+
+// ── renderSectNowHistory ──────────────────────────────────────────────────────
 function renderSectNowHistory(SD,el){
   const bYtd=SD.bm.ytd,curMo=TODAY_MO;
-  // Only rotation-eligible sectors (exclude macro and broad indices)
   const rotSecs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   let html=`<div class="pnl" style="margin-bottom:10px;background:#f8fafc;border-color:#e2e8f0">
     <div style="font-size:11px;font-weight:700;color:#374151">Now vs History — per-sector deep dive · ${rotSecs.length} sectors · benchmark: ${SD.bm.label} (${pct(bYtd)} YTD)</div>
-    <div style="font-size:9px;color:#9ca3af;margin-top:2px">Each card: YTD rank vs all prior years · MTD vs 5yr/20yr seasonal avg · Week ${TODAY_WK} signal</div>
+    <div style="font-size:9px;color:#9ca3af;margin-top:2px">Each card: YTD rank vs all prior years · MTD vs 5yr/20yr seasonal avg · Week ${TODAY_WK} signal · price + zone where available</div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">`;
   rotSecs.forEach(s=>{
@@ -1373,12 +1657,9 @@ function renderSectNowHistory(SD,el){
     const rel=parseFloat((s.ytd-bYtd).toFixed(1));
     const seasMo=s.seas.avg[curMo],seasNext=s.seas.avg[(curMo+1)%12];
     const seasMo5=(s.seas.avg5||s.seas.avg)[curMo],seasNext5=(s.seas.avg5||s.seas.avg)[(curMo+1)%12];
-    const wkAvg=s.seas.wkAvg[curMo],wkPos=s.seas.wkPos[curMo];
+    const wkAvg=s.seas.wkAvg[curMo];
     const wkAvg5=(s.seas.wkAvg5||s.seas.wkAvg)[curMo],wkPos5=(s.seas.wkPos5||s.seas.wkPos)[curMo];
     const moVals=Object.keys(s.monthly||{}).filter(y=>parseInt(y)<TODAY_YR).map(y=>s.monthly[y][curMo]).filter(v=>v!==undefined);
-    const moWorst=moVals.length?Math.min(...moVals):-10,moBest=moVals.length?Math.max(...moVals):10;
-    const mtdProxy=s.r1m;
-    const moPos=Math.max(0,Math.min(100,(mtdProxy-moWorst)/(moBest-moWorst)*100));
     const flags=[];
     if(rank>66)flags.push({c:'g',t:`Top tercile — ${rank}th pctl`});
     else if(rank<33)flags.push({c:'r',t:`Bottom tercile — ${rank}th pctl`});
@@ -1387,18 +1668,25 @@ function renderSectNowHistory(SD,el){
     else if(rel<-2)flags.push({c:'r',t:`${rel}% vs index`});
     if(wkAvg5>0.1)flags.push({c:'g',t:`Wk ${TODAY_WK} 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)} · +ve ${wkPos5}%`});
     else if(wkAvg5<-0.1)flags.push({c:'r',t:`Wk ${TODAY_WK} 5yr avg ${pct(wkAvg5)} · 20yr ${pct(wkAvg)} · +ve ${wkPos5}%`});
-    if(seasNext>0.5)flags.push({c:'g',t:`May seasonal ${pct(seasNext)}`});
-    else if(seasNext<-0.5)flags.push({c:'r',t:`May seasonal ${pct(seasNext)}`});
+    if(seasNext5>0.5)flags.push({c:'g',t:`${MO_NEXT} seasonal ${pct(seasNext5)}`});
+    else if(seasNext5<-0.5)flags.push({c:'r',t:`${MO_NEXT} seasonal ${pct(seasNext5)}`});
+    if(s.price&&s.zone)flags.push({c:s.zone==='best'||s.zone==='better'?'g':'y',t:`Price ${fmtPrice(s.price)} — ${s.zone} zone`});
+    if(s.price&&s.ma200){const rel200=((s.price-s.ma200)/s.ma200*100).toFixed(1);flags.push({c:parseFloat(rel200)>0?'g':'r',t:`${parseFloat(rel200)>0?'Above':'Below'} MA200 by ${Math.abs(rel200)}%`});}
+    const zc=s.zone?zoneColour(s.zone):'above';
     html+=`<div class="pnl" style="margin-bottom:0">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:5px">
         <div style="font-size:11px;font-weight:800;color:#111827">${s.name}</div>
         <span class="badge ${s.type==='c'?'bc':'bd'}">${s.type==='c'?'Cyclical':'Defensive'}</span>
       </div>
+      ${s.price?`<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:4px">
+        <span style="font-size:18px;font-weight:800;font-family:'Courier New',monospace;color:#111827">${fmtPrice(s.price)}</span>
+        ${s.zone?`<span class="zone-badge ${zc}">${s.zone}</span>`:''}
+      </div>`:''}
       <div style="font-size:20px;font-weight:800;color:${s.ytd>=0?'#15803d':'#991b1b'};margin-bottom:5px;font-family:'Courier New',monospace">${pct(s.ytd)}</div>
       <div class="ptl" style="margin-bottom:3px">Annual lens</div>
       <div class="ytd-track"><div class="ytd-fill" style="width:${pos}%;background:${s.ytd>=0?'#16a34a':'#dc2626'}"></div><div class="ytd-mkr" style="left:${pos}%"></div></div>
       <div style="display:flex;justify-content:space-between;font-size:9px;color:#9ca3af;margin-bottom:6px"><span>${worst.toFixed(1)}%</span><span style="color:#111827;font-weight:800">${rank}th pctl</span><span>${best.toFixed(1)}%</span></div>
-      <div class="ptl" style="margin-bottom:3px">Monthly lens (Apr)</div>
+      <div class="ptl" style="margin-bottom:3px">Monthly lens (${MO_NAME})</div>
       <div class="chips" style="margin-bottom:4px">
         <div class="chip" style="font-size:9px"><span class="cl">5yr</span><b class="${seasMo5>=0?'pos':'neg'}">${pct(seasMo5)}</b></div>
         <div class="chip" style="font-size:9px"><span class="cl">20yr</span><b class="${seasMo>=0?'pos':'neg'}">${pct(seasMo)}</b></div>
@@ -1416,9 +1704,10 @@ function renderSectNowHistory(SD,el){
   el.innerHTML=html+`</div>`;
 }
 
+// ── renderSectAnnHM ───────────────────────────────────────────────────────────
 function renderSectAnnHM(SD,el){
   const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
-  const allYrs=[...new Set(secs.flatMap(s=>Object.keys(s.annual).map(Number)))].sort();
+  const allYrs=[...new Set(secs.flatMap(s=>Object.keys(s.annual).map(Number)))].sort((a,b)=>b-a);
   let h=`<div class="pnl"><div class="ptl">Annual returns — all sectors × all years</div><div style="overflow-x:auto;margin-top:8px">
     <table class="hm"><thead><tr><th class="yl" style="min-width:120px">Sector</th>${allYrs.map(y=>`<th>${y}</th>`).join('')}<th>Avg</th></tr></thead><tbody>`;
   secs.forEach(s=>{
@@ -1436,29 +1725,31 @@ function renderSectAnnHM(SD,el){
   el.innerHTML=h+`</tbody></table></div></div>`;
 }
 
+// ── renderSectMoHM ────────────────────────────────────────────────────────────
 function renderSectMoHM(SD,el){
   const secs=SD.sectors;
   const picker=`<div class="sec-picker">${secs.map((s,i)=>`<div class="sp ${i===curSect?'on':''}" onclick="pickSect(${i})">${s.name}</div>`).join('')}</div>`;
   const s=secs[curSect];
-  const years=Object.keys(s.monthly||{}).map(Number).sort();
+  const years=Object.keys(s.monthly||{}).map(Number).sort((a,b)=>b-a);
   el.innerHTML=picker+(years.length?`<div class="pnl"><div class="ptl">${s.name} — monthly returns heatmap · all available years (${years[0]}–${years[years.length-1]})</div><div style="overflow-x:auto;margin-top:6px">${buildHM(s.monthly,years)}</div></div>`:`<div class="pnl" style="color:#9ca3af;font-size:12px">Monthly data not available for ${s.name}</div>`);
 }
-
 function pickSect(i){curSect=i;renderSectMoHM(SECTS[curSctry],document.getElementById('cnt'));}
 
+// ── renderSectSeas ────────────────────────────────────────────────────────────
 function renderSectSeas(SD,el){
   const rotSecs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   let html=`<div class="curr-seas" style="margin-bottom:10px">
-    <div class="cs-title">Current period vs seasonal norm — rotation sectors · April (Wk ${TODAY_WK})</div>
+    <div class="cs-title">Current period vs seasonal norm — rotation sectors · ${MO_NAME} (Wk ${TODAY_WK})</div>
     <div class="cs-grid">`;
   rotSecs.forEach(s=>{
     const seasMo=s.seas.avg[TODAY_MO],wkAvg=s.seas.wkAvg[TODAY_MO];
     const seasMo5=(s.seas.avg5||s.seas.avg)[TODAY_MO],wkAvg5=(s.seas.wkAvg5||s.seas.wkAvg)[TODAY_MO];
     html+=`<div class="cs-item">
       <div class="cs-label">${s.name}</div>
+      ${s.price?`<div style="font-size:11px;font-weight:800;font-family:'Courier New',monospace;color:#e2e8f0;margin-bottom:3px">${fmtPrice(s.price)}${s.zone?` <span class="zone-badge ${zoneColour(s.zone)}" style="vertical-align:middle">${s.zone}</span>`:''}</div>`:''}
       <div style="display:flex;gap:8px;margin-top:4px">
-        <div><div style="font-size:8px;color:#6b7280;font-weight:700;text-transform:uppercase">Apr 5yr</div><div style="font-size:14px;font-weight:800;font-family:'Courier New',monospace;color:${seasMo5>=0?'#34d399':'#f87171'}">${pct(seasMo5)}</div><div style="font-size:9px;color:#9ca3af">20yr ${pct(seasMo)}</div></div>
-        <div><div style="font-size:8px;color:#6b7280;font-weight:700;text-transform:uppercase">Wk17 avg</div><div style="font-size:14px;font-weight:800;font-family:'Courier New',monospace;color:${wkAvg>=0?'#34d399':'#f87171'}">${pct(wkAvg)}</div></div>
+        <div><div style="font-size:8px;color:#6b7280;font-weight:700;text-transform:uppercase">${MO_NAME} 5yr</div><div style="font-size:14px;font-weight:800;font-family:'Courier New',monospace;color:${seasMo5>=0?'#34d399':'#f87171'}">${pct(seasMo5)}</div><div style="font-size:9px;color:#9ca3af">20yr ${pct(seasMo)}</div></div>
+        <div><div style="font-size:8px;color:#6b7280;font-weight:700;text-transform:uppercase">Wk${TODAY_WK} avg</div><div style="font-size:14px;font-weight:800;font-family:'Courier New',monospace;color:${wkAvg>=0?'#34d399':'#f87171'}">${pct(wkAvg)}</div></div>
         <div><div style="font-size:8px;color:#6b7280;font-weight:700;text-transform:uppercase">+ve rate</div><div style="font-size:14px;font-weight:800;color:#e5e7eb">${s.seas.posRate[TODAY_MO]}%</div></div>
       </div>
     </div>`;
@@ -1468,32 +1759,34 @@ function renderSectSeas(SD,el){
     const avg=s.seas.avg,avg5_=s.seas.avg5||s.seas.avg,maxA=Math.max(...avg5_.map(Math.abs),...avg.map(Math.abs),.1);
     let sg=`<div class="seas-grid">`;
     MO.forEach((m,mi)=>{
-      const v=avg5_[mi],v20=avg[mi],p=Math.abs(v)/maxA,h=Math.round(p*36),h20=Math.round(Math.abs(v20)/maxA*36);
+      const v=avg5_[mi],p=Math.abs(v)/maxA,h=Math.round(p*36);
       const col=v>=0?'#16a34a':'#dc2626',bg=v>=0?'rgba(22,163,74,.15)':'rgba(220,38,38,.15)';
       const isCur=mi===TODAY_MO;
       sg+=`<div class="sc" style="${isCur?'outline:2px solid #2563eb;border-radius:3px;':''}"><div class="sm" style="${isCur?'color:#1e40af':''}">${m}${isCur?'*':''}</div><div class="sbw">
         ${v>=0?`<div style="height:${h}px;width:70%;background:${bg};border-top:2px solid ${col};border-radius:3px 3px 0 0"></div>`
               :`<div style="position:absolute;bottom:0;width:70%;height:${h}px;background:${bg};border-bottom:2px solid ${col};border-radius:0 0 3px 3px"></div>`}
       </div><div class="sv" style="color:${col};font-size:9px">${v>=0?'+':''}${v.toFixed(1)}</div>
-      <div style="font-size:8px;color:#9ca3af;font-weight:600">${(s.seas.posRate5||s.seas.posRate)[mi]}% <span style="color:#6b7280;font-size:7px">5yr</span></div></div>`;
+      <div style="font-size:8px;color:#9ca3af;font-weight:600">${(s.seas.posRate5||s.seas.posRate)[mi]}%</div></div>`;
     });
     html+=`<div class="pnl" style="margin-bottom:0">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
-        <div style="font-size:11px;font-weight:800;color:#111827">${s.name} <span style="color:#9ca3af;font-weight:400;font-size:10px">${s.tk}</span></div>
+        <div style="font-size:11px;font-weight:800;color:#111827">${s.name} <span style="color:#9ca3af;font-weight:400;font-size:10px">${s.tk}</span>${s.price?` <span style="font-family:'Courier New',monospace;font-weight:700;color:#374151;font-size:11px">${fmtPrice(s.price)}</span>`:''}</div>
         <span class="badge ${s.type==='c'?'bc':'bd'}">${s.type==='c'?'Cyclical':'Defensive'}</span>
       </div>${sg}</div>`;
   });
   el.innerHTML=html+`</div>`;
 }
 
+// ── renderStress ──────────────────────────────────────────────────────────────
 function renderStress(SD,el){
   const secs=SD.sectors.filter(s=>s.type!=='m'&&s.type!=='b');
   const events=[{yr:2020,label:'COVID 2020'},{yr:2022,label:'Rate Hike 2022'},{yr:2021,label:'Bull 2021'}];
   let h=`<div class="pnl"><div class="ptl">Annual returns by stress event — who held up?</div>
     <div style="overflow-x:auto;margin-top:8px"><table class="rel-tbl">
-    <thead><tr><th class="al">Sector</th><th>Type</th><th>Max DD</th>${events.map(e=>`<th>${e.label}</th>`).join('')}</tr></thead><tbody>`;
+    <thead><tr><th class="al">Sector</th><th>Type</th><th>Price</th><th>Max DD</th>${events.map(e=>`<th>${e.label}</th>`).join('')}</tr></thead><tbody>`;
   secs.forEach(s=>{
     h+=`<tr><td class="al">${s.name}</td><td><span class="badge ${s.type==='c'?'bc':s.type==='d'?'bd':'bm'}">${s.type==='c'?'Cyc':s.type==='d'?'Def':'Mac'}</span></td>
+      <td style="font-family:'Courier New',monospace;font-weight:700;color:#111827">${s.price?fmtPrice(s.price):'—'}</td>
       <td style="background:#fef2f2;color:#991b1b;font-weight:800;font-family:'Courier New',monospace">${s.maxdd}%</td>`;
     events.forEach(e=>{
       const v=s.annual[e.yr];
@@ -1519,15 +1812,9 @@ function renderStress(SD,el){
   el.innerHTML=h+`</div>`;
 }
 
-buildMktStrip();
-renderAll();
-
-// ── Live data loader ─────────────────────────────────────────────────────────
-// Fetches data/*.json from GitHub Pages, merges into MKTS/SECTS, re-renders.
-// Embedded data shows immediately as fallback — live data overlays when ready.
+// ── loadLiveData ──────────────────────────────────────────────────────────────
 async function loadLiveData(){
   const base=window.location.pathname.replace(/\/[^\/]*$/,'')+'/data/';
-  // 1. Check metadata for last update time
   try{
     const meta=await fetch(base+'metadata.json',{cache:'no-store'}).then(r=>r.ok?r.json():null);
     if(meta&&meta.generated_at){
@@ -1538,68 +1825,63 @@ async function loadLiveData(){
     }
   }catch(e){}
 
-  // 2. Build full fetch list: MKTS (7) + all SECTS sectors
+  try{
+    techSummary=await fetch(base+'technical_summary.json',{cache:'no-store'}).then(r=>r.ok?r.json():null);
+  }catch(e){techSummary=null;}
+
   const jobs=[];
-  // Markets
-  Object.entries(MKTS_TK).forEach(([file,key])=>{
-    jobs.push({file,type:'mkt',key});
-  });
-  // Sectors — all three regions
+  Object.entries(MKTS_TK).forEach(([file,key])=>{jobs.push({file,type:'mkt',key});});
   ['US','INDIA','TSX'].forEach(ctry=>{
     SECTS[ctry].sectors.forEach((s,idx)=>{
-      const file='returns_'+safeTk(s.tk);
-      jobs.push({file,type:'sect',ctry,idx});
+      jobs.push({file:'returns_'+safeTk(s.tk),type:'sect',ctry,idx});
     });
   });
 
-  // 3. Fetch in batches of 8 — don't hammer GitHub CDN
   const BATCH=8;
   let updated=0,failed=0;
   for(let i=0;i<jobs.length;i+=BATCH){
     const batch=jobs.slice(i,i+BATCH);
     await Promise.allSettled(batch.map(async job=>{
       try{
-        const url=base+job.file+'.json';
-        const r=await fetch(url,{cache:'no-store'});
+        const r=await fetch(base+job.file+'.json',{cache:'no-store'});
         if(!r.ok)throw new Error(r.status);
         const d=await r.json();
         if(job.type==='mkt'){
-          // Merge live fields into existing MKTS object (preserve color/regime/seas/drawdown)
           const M=MKTS[job.key];
-          if(d.kpi)    M.kpi=d.kpi;
-          if(d.annual) M.annual=d.annual;
-          if(d.monthly)M.monthly=d.monthly;
-          if(d.seas)   M.seas=d.seas;
+          if(d.kpi)     M.kpi=d.kpi;
+          if(d.annual)  M.annual=d.annual;
+          if(d.monthly) M.monthly=d.monthly;
+          if(d.seas)    M.seas=d.seas;
+          // ── price layer merge: supports top-level fields and kpi.* fields ──
+          mergePriceLayer(M,d);
         } else {
-          // Merge into SECTS sector
           const s=SECTS[job.ctry].sectors[job.idx];
           if(d.kpi){
-            s.ytd  =parseFloat(d.kpi.ytd)  ||s.ytd;
-            s.mtd  =parseFloat(d.kpi.mtd)  ||s.mtd||0;
-            s.r1m  =parseFloat(d.kpi.r1m)  ||s.r1m;
-            s.r3m  =parseFloat(d.kpi.r3m)  ||s.r3m;
-            s.r6m  =parseFloat(d.kpi.r6m)  ||s.r6m||0;
-            s.r1y  =parseFloat(d.kpi.r1y)  ||s.r1y;
-            s.maxdd=parseFloat(d.kpi.maxdd) ||s.maxdd;
-            s.curdd=parseFloat(d.kpi.curdd) ||s.curdd||0;
+            s.ytd  =safeNum(d.kpi.ytd)  ??s.ytd;
+            s.mtd   = safeNum(d.kpi.mtd)   ?? (s.mtd || 0);
+            s.r1m  =safeNum(d.kpi.r1m)  ??s.r1m;
+            s.r3m  =safeNum(d.kpi.r3m)  ??s.r3m;
+            s.r6m   = safeNum(d.kpi.r6m)   ?? (s.r6m || 0);
+            s.r1y  =safeNum(d.kpi.r1y)  ??s.r1y;
+            s.maxdd=safeNum(d.kpi.maxdd) ??s.maxdd;
+            s.curdd = safeNum(d.kpi.curdd) ?? (s.curdd || 0);
           }
-          if(d.annual) s.annual=d.annual;
-          if(d.monthly)s.monthly=d.monthly;
-          if(d.seas)   s.seas=d.seas;
+          if(d.annual)  s.annual=d.annual;
+          if(d.monthly) s.monthly=d.monthly;
+          if(d.seas)    s.seas=d.seas;
+          // ── price layer merge: supports top-level fields and kpi.* fields ──
+          mergePriceLayer(s,d);
         }
         updated++;
       }catch(e){failed++;}
     }));
   }
 
-  // 4. Sync benchmark YTD from live MKTS into SECTS (keeps rotation comparison fresh)
-  if(MKTS.SP    && MKTS.SP.kpi)    SECTS.US.bm.ytd    = parseFloat(MKTS.SP.kpi.ytd);
-  if(MKTS.NIFTY && MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd = parseFloat(MKTS.NIFTY.kpi.ytd);
-  if(MKTS.TSX   && MKTS.TSX.kpi)   SECTS.TSX.bm.ytd   = parseFloat(MKTS.TSX.kpi.ytd);
+  // Sync benchmark YTD from live MKTS into SECTS
+  if(MKTS.SP    &&MKTS.SP.kpi)    SECTS.US.bm.ytd   =safeNum(MKTS.SP.kpi.ytd)   ??SECTS.US.bm.ytd;
+  if(MKTS.NIFTY &&MKTS.NIFTY.kpi) SECTS.INDIA.bm.ytd=safeNum(MKTS.NIFTY.kpi.ytd)??SECTS.INDIA.bm.ytd;
+  if(MKTS.TSX   &&MKTS.TSX.kpi)   SECTS.TSX.bm.ytd  =safeNum(MKTS.TSX.kpi.ytd)  ??SECTS.TSX.bm.ytd;
 
-
-
-  // 6. Re-render with live data
   if(updated>0){
     killCharts();
     buildMktStrip();
@@ -1610,6 +1892,10 @@ async function loadLiveData(){
   }
 }
 
-// Fire live load after page renders — don't block initial display
-setTimeout(loadLiveData, 200);
+// ── Boot ──────────────────────────────────────────────────────────────────────
+buildMktStrip();
+renderAll();
+setTimeout(loadLiveData,200);
 </script>
+</body>
+</html>

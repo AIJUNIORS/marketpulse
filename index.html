@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarketPulse Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="logo">Market<span>Pulse</span></div>
+      <div class="subtitle">Returns + CPR + Pivot Dashboard</div>
+    </div>
+    <div id="statusBar" class="status-bar">Loading...</div>
+  </header>
+  <section class="summary-strip" id="summaryStrip"></section>
+  <section class="controls">
+    <select id="groupSelect"><option value="all">All Groups</option></select>
+    <select id="sectorSelect"><option value="all">All Sectors</option></select>
+    <select id="signalSelect">
+      <option value="all">All Signals</option>
+      <option value="Risk On">Risk On</option>
+      <option value="Watch">Watch</option>
+      <option value="Good Buy">Good Buy</option>
+      <option value="Better Buy">Better Buy</option>
+      <option value="Best Buy">Best Buy</option>
+      <option value="Risk Off">Risk Off</option>
+    </select>
+    <input type="text" id="searchBox" placeholder="Search symbol, name, sector..." />
+    <div class="timeframe-toggle">
+      <button data-tf="weekly">Weekly</button>
+      <button data-tf="monthly" class="active">Monthly</button>
+      <button data-tf="annual">Annual</button>
+    </div>
+  </section>
+  <nav class="tabs">
+    <button data-tab="market-pulse" class="active">Market Pulse</button>
+    <button data-tab="returns">Returns</button>
+    <button data-tab="support-zones">Support Zones</button>
+    <button data-tab="group-comparison">Group Comparison</button>
+    <button data-tab="data-health">Data Health</button>
+    <button data-tab="technical-analysis">Technical Analysis</button>
+  </nav>
+  <main id="app" class="app"></main>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/state.js"></script>
+  <script src="assets/js/formatters.js"></script>
+  <script src="assets/js/signals.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

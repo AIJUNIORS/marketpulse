@@ -1,13 +1,5 @@
 {
-  "schema_version": 1,
   "generated_at": "2026-05-24T21:20:07+00:00",
-  "source_files": {
-    "east_generated_at": "2026-05-23T21:50:41+00:00",
-    "west_generated_at": "2026-05-24T21:20:07+00:00"
-  },
-  "universe_count": 163,
-  "group_count": 10,
-  "missing_groups": [],
   "groups": [
     {
       "market_group": "US",
@@ -21898,40 +21890,5 @@
         }
       ]
     }
-  ],
-  "ui_contract": {
-    "benchmark_role": "benchmark",
-    "benchmark_row_style": "blue",
-    "timeframes": [
-      "weekly",
-      "monthly",
-      "annual"
-    ],
-    "canonical_price_source": "close",
-    "price_label": "Close",
-    "returns_basis": "close_to_close",
-    "technical_price_basis": "ohlc_close_for_pivot_cpr",
-    "technical_tab_position": "end",
-    "frontend_should_reclassify": false
-  },
-  "failed": {
-    "east": {
-      "returns": [
-        {
-          "symbol": "^CNXSC",
-          "reason": "raw csv missing"
-        }
-      ],
-      "technicals": [
-        {
-          "symbol": "^CNXSC",
-          "reason": "raw csv missing"
-        }
-      ]
-    },
-    "west": {
-      "returns": [],
-      "technicals": []
-    }
-  }
+  ]
 }

@@ -1,20 +1,22 @@
-# MarketPulse Frontend v2 Schema Fixed
+# MarketPulse Frontend v3 — Old UI JSON Connected
 
-This frontend is aligned with the MarketPulse backend v4 JSON schema.
+This restores the old compact MarketPulse visual foundation while removing hardcoded MKTS/SECTS data.
 
-Main data file:
-data/market_pulse_combined.json
+Data source expected:
 
-Expected backend fields:
-- group.market_group
-- group.display_name
-- group.benchmark_symbol
-- group.group_signals.weekly/monthly/annual
-- item.last_close
-- item.price_source = close
-- item.returns.daily/weekly/monthly/annual/mtd/ytd/r1m/r3m/r6m/r1y
-- item.technicals.weekly/monthly/annual
-- item.signals.weekly/monthly/annual.combined_signal
+    data/market_pulse_combined.json
 
-Run locally:
-python -m http.server 8080
+Included:
+- Top market strip
+- Pulse tab
+- Combined return heatmap
+- Drawdown analysis tab
+- Support Zones / CPR / Pivot tab
+- Group comparison tab
+- Technical Analysis tab at the end
+- Sortable table headers
+- Search, sector filter, group tabs, timeframe toggle
+- Mobile-friendly technical cards
+- Calendar monthly fallback message
+
+Current backend supports Annual, YTD, 6M, 3M, 1M, MTD, Weekly, Daily returns. True Jan-Dec calendar monthly history needs backend calendar_returns later.

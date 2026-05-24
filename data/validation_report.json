@@ -1,12 +1,24 @@
 {
-  "generated_at": "2026-05-24T21:20:08+00:00",
+  "generated_at": "2026-05-24T22:56:32+00:00",
   "status": "pass",
-  "strict": false,
-  "output_group_count": 10,
-  "output_symbol_count": 163,
-  "benchmark_count": 10,
+  "schema_version": 5,
+  "instrument_count": 40,
+  "market_group_count": 1,
+  "benchmark_count": 1,
+  "benchmark_symbols": [
+    "^NSEI"
+  ],
+  "missing_groups": [
+    "US",
+    "Canada",
+    "Global",
+    "Gold",
+    "SilverMetals",
+    "CrudeOil",
+    "NaturalGas",
+    "Bonds",
+    "Crypto"
+  ],
   "errors": [],
-  "warnings": [
-    "^CNXSC missing last_close"
-  ]
+  "warnings": []
 }

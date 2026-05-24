@@ -2318,5 +2318,7139 @@
       "monthly": "Watch",
       "annual": "Watch"
     }
+  },
+  {
+    "symbol": "TLT",
+    "name": "iShares 20+ Year Treasury Bond ETF",
+    "market_group": "Bonds",
+    "sector_group": "Benchmark",
+    "subsector": "Long Treasury",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "TLT",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "TLT",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Bonds",
+    "group_benchmark_symbol": "TLT",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "AGG",
+    "name": "iShares Core US Aggregate Bond ETF",
+    "market_group": "Bonds",
+    "sector_group": "Aggregate Bond ETF",
+    "subsector": "Aggregate Bonds",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "TLT",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "TLT",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Bonds",
+    "group_benchmark_symbol": "TLT",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IEF",
+    "name": "iShares 7-10 Year Treasury Bond ETF",
+    "market_group": "Bonds",
+    "sector_group": "Treasury ETF",
+    "subsector": "Intermediate Treasury",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "TLT",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "TLT",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Bonds",
+    "group_benchmark_symbol": "TLT",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SHY",
+    "name": "iShares 1-3 Year Treasury Bond ETF",
+    "market_group": "Bonds",
+    "sector_group": "Treasury ETF",
+    "subsector": "Short Treasury",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "TLT",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "TLT",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Bonds",
+    "group_benchmark_symbol": "TLT",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XIC.TO",
+    "name": "iShares Core S&P/TSX Capped Composite ETF",
+    "market_group": "Canada",
+    "sector_group": "Benchmark",
+    "subsector": "Canadian Equity",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "benchmark",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "HXT.TO",
+    "name": "Global X S&P/TSX 60 Index Corporate Class ETF",
+    "market_group": "Canada",
+    "sector_group": "Broad Market",
+    "subsector": "Large Cap",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VCN.TO",
+    "name": "Vanguard FTSE Canada All Cap ETF",
+    "market_group": "Canada",
+    "sector_group": "Broad Market",
+    "subsector": "Canadian Equity",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XIU.TO",
+    "name": "iShares S&P/TSX 60 ETF",
+    "market_group": "Canada",
+    "sector_group": "Broad Market",
+    "subsector": "Large Cap",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ZCN.TO",
+    "name": "BMO S&P/TSX Capped Composite ETF",
+    "market_group": "Canada",
+    "sector_group": "Broad Market",
+    "subsector": "Canadian Equity",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "CDZ.TO",
+    "name": "iShares S&P/TSX Canadian Dividend Aristocrats ETF",
+    "market_group": "Canada",
+    "sector_group": "Dividend",
+    "subsector": "Dividend",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XDIV.TO",
+    "name": "iShares Core MSCI Canadian Quality Dividend ETF",
+    "market_group": "Canada",
+    "sector_group": "Dividend",
+    "subsector": "Dividend",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XBB.TO",
+    "name": "iShares Core Canadian Universe Bond ETF",
+    "market_group": "Canada",
+    "sector_group": "Fixed Income",
+    "subsector": "Aggregate Bonds",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XGB.TO",
+    "name": "iShares Core Canadian Government Bond ETF",
+    "market_group": "Canada",
+    "sector_group": "Fixed Income",
+    "subsector": "Government Bonds",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XSB.TO",
+    "name": "iShares Core Canadian Short Term Bond ETF",
+    "market_group": "Canada",
+    "sector_group": "Fixed Income",
+    "subsector": "Short Bonds",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ZAG.TO",
+    "name": "BMO Aggregate Bond Index ETF",
+    "market_group": "Canada",
+    "sector_group": "Fixed Income",
+    "subsector": "Aggregate Bonds",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XIN.TO",
+    "name": "iShares MSCI EAFE Index ETF CAD-Hedged",
+    "market_group": "Canada",
+    "sector_group": "International",
+    "subsector": "EAFE Hedged",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ZQQ.TO",
+    "name": "BMO Nasdaq 100 Equity Hedged to CAD ETF",
+    "market_group": "Canada",
+    "sector_group": "International",
+    "subsector": "US Technology",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ZSP.TO",
+    "name": "BMO S&P 500 Index ETF",
+    "market_group": "Canada",
+    "sector_group": "International",
+    "subsector": "US Equity",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XEG.TO",
+    "name": "iShares S&P/TSX Capped Energy ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Energy",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XFN.TO",
+    "name": "iShares S&P/TSX Capped Financials ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Financials",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XHC.TO",
+    "name": "iShares Global Healthcare Index ETF CAD-Hedged",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Health Care",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XIT.TO",
+    "name": "iShares S&P/TSX Capped Information Technology ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Technology",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XMA.TO",
+    "name": "iShares S&P/TSX Capped Materials ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Materials",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XRE.TO",
+    "name": "iShares S&P/TSX Capped REIT ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Real Estate",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XST.TO",
+    "name": "iShares S&P/TSX Capped Consumer Staples ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Consumer Staples",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XUT.TO",
+    "name": "iShares S&P/TSX Capped Utilities ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Utilities",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ZEB.TO",
+    "name": "BMO Equal Weight Banks ETF",
+    "market_group": "Canada",
+    "sector_group": "Sector",
+    "subsector": "Banks",
+    "geography_bucket": "west",
+    "currency": "CAD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "XIC.TO",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "XIC.TO",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Canada",
+    "group_benchmark_symbol": "XIC.TO",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "CL=F",
+    "name": "Crude Oil Futures",
+    "market_group": "CrudeOil",
+    "sector_group": "Benchmark",
+    "subsector": "WTI Crude",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "BNO",
+    "name": "United States Brent Oil Fund",
+    "market_group": "CrudeOil",
+    "sector_group": "Oil ETF",
+    "subsector": "Brent Crude",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "DBO",
+    "name": "Invesco DB Oil Fund",
+    "market_group": "CrudeOil",
+    "sector_group": "Oil ETF",
+    "subsector": "Oil Futures",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "OILK",
+    "name": "ProShares K-1 Free Crude Oil Strategy ETF",
+    "market_group": "CrudeOil",
+    "sector_group": "Oil ETF",
+    "subsector": "Oil Strategy",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "UCO",
+    "name": "ProShares Ultra Bloomberg Crude Oil",
+    "market_group": "CrudeOil",
+    "sector_group": "Oil ETF",
+    "subsector": "Leveraged Crude",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "USO",
+    "name": "United States Oil Fund",
+    "market_group": "CrudeOil",
+    "sector_group": "Oil ETF",
+    "subsector": "WTI Crude",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "CL=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "CL=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crude Oil",
+    "group_benchmark_symbol": "CL=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "BTC-USD",
+    "name": "Bitcoin USD",
+    "market_group": "Crypto",
+    "sector_group": "Benchmark",
+    "subsector": "Bitcoin",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "BTC-USD",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "BTC-USD",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crypto",
+    "group_benchmark_symbol": "BTC-USD",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ETH-USD",
+    "name": "Ethereum USD",
+    "market_group": "Crypto",
+    "sector_group": "Crypto",
+    "subsector": "Ethereum",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "BTC-USD",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "BTC-USD",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Crypto",
+    "group_benchmark_symbol": "BTC-USD",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ACWI",
+    "name": "iShares MSCI ACWI ETF",
+    "market_group": "Global",
+    "sector_group": "Benchmark",
+    "subsector": "Global Equity",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ARGT",
+    "name": "Global X MSCI Argentina ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Argentina",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ASHR",
+    "name": "Xtrackers Harvest CSI 300 China A-Shares ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "China A Shares",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EIDO",
+    "name": "iShares MSCI Indonesia ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Indonesia",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EPI",
+    "name": "WisdomTree India Earnings Fund",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "India",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EPOL",
+    "name": "iShares MSCI Poland ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Poland",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWA",
+    "name": "iShares MSCI Australia ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Australia",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWC",
+    "name": "iShares MSCI Canada ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Canada",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWG",
+    "name": "iShares MSCI Germany ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Germany",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWH",
+    "name": "iShares MSCI Hong Kong ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Hong Kong",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWJ",
+    "name": "iShares MSCI Japan ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Japan",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWQ",
+    "name": "iShares MSCI France ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "France",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWS",
+    "name": "iShares MSCI Singapore ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Singapore",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWT",
+    "name": "iShares MSCI Taiwan ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Taiwan",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWU",
+    "name": "iShares MSCI United Kingdom ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "United Kingdom",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWW",
+    "name": "iShares MSCI Mexico ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Mexico",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWY",
+    "name": "iShares MSCI South Korea ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "South Korea",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EWZ",
+    "name": "iShares MSCI Brazil ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Brazil",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EZA",
+    "name": "iShares MSCI South Africa ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "South Africa",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "FXI",
+    "name": "iShares China Large-Cap ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "China",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "INDA",
+    "name": "iShares MSCI India ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "India",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "MCHI",
+    "name": "iShares MSCI China ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "China",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "THD",
+    "name": "iShares MSCI Thailand ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Thailand",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VNM",
+    "name": "VanEck Vietnam ETF",
+    "market_group": "Global",
+    "sector_group": "Country",
+    "subsector": "Vietnam",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EFA",
+    "name": "iShares MSCI EAFE ETF",
+    "market_group": "Global",
+    "sector_group": "Developed Markets",
+    "subsector": "EAFE",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IEFA",
+    "name": "iShares Core MSCI EAFE ETF",
+    "market_group": "Global",
+    "sector_group": "Developed Markets",
+    "subsector": "EAFE",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VEA",
+    "name": "Vanguard FTSE Developed Markets ETF",
+    "market_group": "Global",
+    "sector_group": "Developed Markets",
+    "subsector": "Developed",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "EEM",
+    "name": "iShares MSCI Emerging Markets ETF",
+    "market_group": "Global",
+    "sector_group": "Emerging Markets",
+    "subsector": "Emerging",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IEMG",
+    "name": "iShares Core MSCI Emerging Markets ETF",
+    "market_group": "Global",
+    "sector_group": "Emerging Markets",
+    "subsector": "Emerging",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VWO",
+    "name": "Vanguard FTSE Emerging Markets ETF",
+    "market_group": "Global",
+    "sector_group": "Emerging Markets",
+    "subsector": "Emerging",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IXUS",
+    "name": "iShares Core MSCI Total International Stock ETF",
+    "market_group": "Global",
+    "sector_group": "Global Equity",
+    "subsector": "Ex-US",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "URTH",
+    "name": "iShares MSCI World ETF",
+    "market_group": "Global",
+    "sector_group": "Global Equity",
+    "subsector": "Developed World",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VEU",
+    "name": "Vanguard FTSE All-World ex-US ETF",
+    "market_group": "Global",
+    "sector_group": "Global Equity",
+    "subsector": "Ex-US",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VT",
+    "name": "Vanguard Total World Stock ETF",
+    "market_group": "Global",
+    "sector_group": "Global Equity",
+    "subsector": "Total World",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "ACWI",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "ACWI",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Global",
+    "group_benchmark_symbol": "ACWI",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "GC=F",
+    "name": "Gold Futures",
+    "market_group": "Gold",
+    "sector_group": "Benchmark",
+    "subsector": "Gold",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "GC=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "GC=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Gold",
+    "group_benchmark_symbol": "GC=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares",
+    "market_group": "Gold",
+    "sector_group": "Gold ETF",
+    "subsector": "Gold",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "GC=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "GC=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Gold",
+    "group_benchmark_symbol": "GC=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "GLDM",
+    "name": "SPDR Gold MiniShares Trust",
+    "market_group": "Gold",
+    "sector_group": "Gold ETF",
+    "subsector": "Gold",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "GC=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "GC=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Gold",
+    "group_benchmark_symbol": "GC=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IAU",
+    "name": "iShares Gold Trust",
+    "market_group": "Gold",
+    "sector_group": "Gold ETF",
+    "subsector": "Gold",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "GC=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "GC=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Gold",
+    "group_benchmark_symbol": "GC=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SGOL",
+    "name": "abrdn Physical Gold Shares ETF",
+    "market_group": "Gold",
+    "sector_group": "Gold ETF",
+    "subsector": "Gold",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "GC=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "GC=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Gold",
+    "group_benchmark_symbol": "GC=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "NG=F",
+    "name": "Natural Gas Futures",
+    "market_group": "NaturalGas",
+    "sector_group": "Benchmark",
+    "subsector": "Natural Gas",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "NG=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "NG=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Natural Gas",
+    "group_benchmark_symbol": "NG=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "UNG",
+    "name": "United States Natural Gas Fund",
+    "market_group": "NaturalGas",
+    "sector_group": "Natural Gas ETF",
+    "subsector": "Natural Gas",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "NG=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "NG=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Natural Gas",
+    "group_benchmark_symbol": "NG=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SI=F",
+    "name": "Silver Futures",
+    "market_group": "SilverMetals",
+    "sector_group": "Benchmark",
+    "subsector": "Silver",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "SI=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SI=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Silver & Metals",
+    "group_benchmark_symbol": "SI=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "COPX",
+    "name": "Global X Copper Miners ETF",
+    "market_group": "SilverMetals",
+    "sector_group": "Metals ETF",
+    "subsector": "Copper Miners",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SI=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SI=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Silver & Metals",
+    "group_benchmark_symbol": "SI=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SIL",
+    "name": "Global X Silver Miners ETF",
+    "market_group": "SilverMetals",
+    "sector_group": "Metals ETF",
+    "subsector": "Silver Miners",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SI=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SI=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Silver & Metals",
+    "group_benchmark_symbol": "SI=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SILJ",
+    "name": "Amplify Junior Silver Miners ETF",
+    "market_group": "SilverMetals",
+    "sector_group": "Metals ETF",
+    "subsector": "Junior Silver Miners",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SI=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SI=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Silver & Metals",
+    "group_benchmark_symbol": "SI=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SLV",
+    "name": "iShares Silver Trust",
+    "market_group": "SilverMetals",
+    "sector_group": "Silver ETF",
+    "subsector": "Silver",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SI=F",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SI=F",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "Silver & Metals",
+    "group_benchmark_symbol": "SI=F",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SPY",
+    "name": "SPDR S&P 500 ETF Trust",
+    "market_group": "US",
+    "sector_group": "Benchmark",
+    "subsector": "S&P 500",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "benchmark",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "DIA",
+    "name": "SPDR Dow Jones Industrial Average ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Dow 30",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IJR",
+    "name": "iShares Core S&P Small-Cap ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Small Cap",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IWM",
+    "name": "iShares Russell 2000 ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Small Cap",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "MDY",
+    "name": "SPDR S&P MidCap 400 ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Mid Cap",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Nasdaq 100",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "RSP",
+    "name": "Invesco S&P 500 Equal Weight ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Equal Weight",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VOO",
+    "name": "Vanguard S&P 500 ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "S&P 500",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VTI",
+    "name": "Vanguard Total Stock Market ETF",
+    "market_group": "US",
+    "sector_group": "Broad Market",
+    "subsector": "Total Market",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "DGRO",
+    "name": "iShares Core Dividend Growth ETF",
+    "market_group": "US",
+    "sector_group": "Dividend",
+    "subsector": "Dividend Growth",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SCHD",
+    "name": "Schwab US Dividend Equity ETF",
+    "market_group": "US",
+    "sector_group": "Dividend",
+    "subsector": "Dividend",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VIG",
+    "name": "Vanguard Dividend Appreciation ETF",
+    "market_group": "US",
+    "sector_group": "Dividend",
+    "subsector": "Dividend Growth",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "MTUM",
+    "name": "iShares MSCI USA Momentum Factor ETF",
+    "market_group": "US",
+    "sector_group": "Factor",
+    "subsector": "Momentum",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "QUAL",
+    "name": "iShares MSCI USA Quality Factor ETF",
+    "market_group": "US",
+    "sector_group": "Factor",
+    "subsector": "Quality",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SPLV",
+    "name": "Invesco S&P 500 Low Volatility ETF",
+    "market_group": "US",
+    "sector_group": "Factor",
+    "subsector": "Low Volatility",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "USMV",
+    "name": "iShares MSCI USA Min Vol Factor ETF",
+    "market_group": "US",
+    "sector_group": "Factor",
+    "subsector": "Minimum Volatility",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VLUE",
+    "name": "iShares MSCI USA Value Factor ETF",
+    "market_group": "US",
+    "sector_group": "Factor",
+    "subsector": "Value",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IBB",
+    "name": "iShares Biotechnology ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Biotechnology",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ITB",
+    "name": "iShares US Home Construction ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Homebuilders",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IYR",
+    "name": "iShares US Real Estate ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Real Estate",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "IYT",
+    "name": "iShares US Transportation ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Transportation",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "KBE",
+    "name": "SPDR S&P Bank ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Banks",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "KRE",
+    "name": "SPDR S&P Regional Banking ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Regional Banks",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SMH",
+    "name": "VanEck Semiconductor ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Semiconductors",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SOXX",
+    "name": "iShares Semiconductor ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Semiconductors",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "VNQ",
+    "name": "Vanguard Real Estate ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Real Estate",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XBI",
+    "name": "SPDR S&P Biotech ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Biotechnology",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XHB",
+    "name": "SPDR S&P Homebuilders ETF",
+    "market_group": "US",
+    "sector_group": "Industry",
+    "subsector": "Homebuilders",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLB",
+    "name": "Materials Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Materials",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLC",
+    "name": "Communication Services Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Communication Services",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLE",
+    "name": "Energy Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Energy",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLF",
+    "name": "Financial Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Financials",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLI",
+    "name": "Industrial Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Industrials",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLK",
+    "name": "Technology Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Technology",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLP",
+    "name": "Consumer Staples Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Consumer Staples",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLRE",
+    "name": "Real Estate Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Real Estate",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLU",
+    "name": "Utilities Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Utilities",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLV",
+    "name": "Health Care Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Health Care",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "XLY",
+    "name": "Consumer Discretionary Select Sector SPDR",
+    "market_group": "US",
+    "sector_group": "Sector",
+    "subsector": "Consumer Discretionary",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SPYG",
+    "name": "SPDR Portfolio S&P 500 Growth ETF",
+    "market_group": "US",
+    "sector_group": "Style",
+    "subsector": "Growth",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "SPYV",
+    "name": "SPDR Portfolio S&P 500 Value ETF",
+    "market_group": "US",
+    "sector_group": "Style",
+    "subsector": "Value",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
+  },
+  {
+    "symbol": "ARKK",
+    "name": "ARK Innovation ETF",
+    "market_group": "US",
+    "sector_group": "Theme",
+    "subsector": "Innovation",
+    "geography_bucket": "west",
+    "currency": "USD",
+    "role": "sub_instrument",
+    "benchmark_symbol": "SPY",
+    "last_close": null,
+    "previous_close": null,
+    "last_date": null,
+    "price_source": "close",
+    "price_label": "Close",
+    "data_status": "missing",
+    "rows": null,
+    "returns": {},
+    "drawdown": {},
+    "drawdown_recovery": {},
+    "monthly_returns_by_year": {},
+    "annual_returns_by_year": {},
+    "annual_return_stats": {},
+    "seasonality": {},
+    "technicals": {},
+    "signals": {
+      "weekly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "monthly": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      },
+      "annual": {
+        "technical_signal": "Watch",
+        "return_pct": null,
+        "combined_signal": "Watch"
+      }
+    },
+    "relative_strength": {
+      "benchmark_symbol": "SPY",
+      "mtd_vs_benchmark": 0.0,
+      "ytd_vs_benchmark": 0.0,
+      "r1m_vs_benchmark": 0.0,
+      "r3m_vs_benchmark": 0.0,
+      "r1y_vs_benchmark": 0.0
+    },
+    "group_display_name": "US",
+    "group_benchmark_symbol": "SPY",
+    "group_signals": {
+      "weekly": "Watch",
+      "monthly": "Watch",
+      "annual": "Watch"
+    }
   }
 ]

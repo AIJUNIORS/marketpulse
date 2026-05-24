@@ -1,24 +1,23 @@
 {
-  "generated_at": "2026-05-24T22:56:32+00:00",
+  "generated_at": "2026-05-24T23:00:04+00:00",
   "status": "pass",
   "schema_version": 5,
-  "instrument_count": 40,
-  "market_group_count": 1,
-  "benchmark_count": 1,
+  "instrument_count": 163,
+  "market_group_count": 10,
+  "benchmark_count": 10,
   "benchmark_symbols": [
-    "^NSEI"
+    "^NSEI",
+    "TLT",
+    "XIC.TO",
+    "CL=F",
+    "BTC-USD",
+    "ACWI",
+    "GC=F",
+    "NG=F",
+    "SI=F",
+    "SPY"
   ],
-  "missing_groups": [
-    "US",
-    "Canada",
-    "Global",
-    "Gold",
-    "SilverMetals",
-    "CrudeOil",
-    "NaturalGas",
-    "Bonds",
-    "Crypto"
-  ],
+  "missing_groups": [],
   "errors": [],
   "warnings": []
 }

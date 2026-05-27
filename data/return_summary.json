@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-27T07:48:23+00:00",
+  "generated_at": "2026-05-27T14:37:13+00:00",
   "price_source": "close",
   "items": {
     "^NSEI": {
       "symbol": "^NSEI",
       "market_group": "India Markets",
-      "last_close": 23913.6992,
+      "last_close": 23907.1504,
       "returns": {
-        "daily": -0.491,
-        "mtd": -0.8524,
-        "ytd": -8.5398,
-        "r1m": 0.0659,
-        "r3m": -7.3807,
-        "r6m": -7.7049,
-        "r1y": -4.136,
-        "weekly": 1.252,
-        "monthly": 0.0659,
-        "annual": -4.136
+        "daily": -0.0274,
+        "mtd": -0.8796,
+        "ytd": -8.5648,
+        "r1m": -0.7701,
+        "r3m": -6.0783,
+        "r6m": -8.2352,
+        "r1y": -3.1468,
+        "weekly": 1.0489,
+        "monthly": -0.7701,
+        "annual": -3.1468
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.5851,
+        "current_month_avg_return": 1.5837,
         "current_month_positive_rate": 57.8947,
         "monthly_avg_returns": {
           "Jan": -1.7012,
           "Feb": -1.2813,
           "Mar": 0.5406,
           "Apr": 2.9916,
-          "May": 1.5851,
+          "May": 1.5837,
           "Jun": 0.412,
           "Jul": 2.3936,
           "Aug": -0.1381,
@@ -52,7 +52,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.3116,
+        "average": 11.3104,
         "median": 11.4007,
         "best": 70.7081,
         "worst": -51.8395,
@@ -60,7 +60,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": -8.5398,
+        "2026": -8.5648,
         "2025": 10.0523,
         "2024": 8.7522,
         "2023": 19.42,
@@ -87,7 +87,7 @@
           "Feb": 0.3597,
           "Mar": -10.1919,
           "Apr": 5.8121,
-          "May": -0.8524
+          "May": -0.8796
         },
         "2025": {
           "Jan": -0.9877,
@@ -349,41 +349,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.172,
+        "current_drawdown_pct": -9.1969,
         "max_drawdown_pct": -59.8559,
         "peak_date": "2026-01-02",
         "peak_close": 26328.5508,
-        "days_since_peak": 144,
-        "recovery_needed_pct": 10.0982,
+        "days_since_peak": 145,
+        "recovery_needed_pct": 10.1284,
         "drawdown_bucket": "moderate"
       }
     },
     "LIQUIDBEES.NS": {
       "symbol": "LIQUIDBEES.NS",
       "market_group": "India Markets",
-      "last_close": 1000.0,
+      "last_close": 999.99,
       "returns": {
-        "daily": 0.001,
-        "mtd": 0.001,
-        "ytd": 0.0,
-        "r1m": 0.001,
-        "r3m": 0.0,
-        "r6m": 0.0,
-        "r1y": 0.001,
-        "weekly": 0.001,
-        "monthly": 0.001,
-        "annual": 0.001
+        "daily": -0.001,
+        "mtd": 0.0,
+        "ytd": -0.001,
+        "r1m": -0.001,
+        "r3m": -0.001,
+        "r6m": -0.001,
+        "r1y": -0.001,
+        "weekly": 0.0,
+        "monthly": -0.001,
+        "annual": -0.001
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.0002,
-        "current_month_positive_rate": 27.7778,
+        "current_month_avg_return": 0.0001,
+        "current_month_positive_rate": 22.2222,
         "monthly_avg_returns": {
           "Jan": 0.0002,
           "Feb": -0.0007,
           "Mar": 0.0006,
           "Apr": 0.0001,
-          "May": 0.0002,
+          "May": 0.0001,
           "Jun": 0.0001,
           "Jul": -0.0001,
           "Aug": 0.0001,
@@ -397,7 +397,7 @@
           "Feb": 38.8889,
           "Mar": 55.5556,
           "Apr": 22.2222,
-          "May": 27.7778,
+          "May": 22.2222,
           "Jun": 17.6471,
           "Jul": 11.7647,
           "Aug": 17.6471,
@@ -408,7 +408,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 0.0004,
+        "average": 0.0003,
         "median": 0.0005,
         "best": 0.002,
         "worst": -0.001,
@@ -416,7 +416,7 @@
         "years_count": 18
       },
       "annual_returns_by_year": {
-        "2026": 0.0,
+        "2026": -0.001,
         "2025": -0.001,
         "2024": 0.0,
         "2023": 0.0,
@@ -441,7 +441,7 @@
           "Feb": 0.0,
           "Mar": 0.001,
           "Apr": -0.001,
-          "May": 0.001
+          "May": 0.0
         },
         "2025": {
           "Jan": 0.0,
@@ -683,41 +683,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.0879,
+        "current_drawdown_pct": -0.0889,
         "max_drawdown_pct": -0.1039,
         "peak_date": "2017-10-19",
         "peak_close": 1000.88,
-        "days_since_peak": 3141,
-        "recovery_needed_pct": 0.088,
+        "days_since_peak": 3142,
+        "recovery_needed_pct": 0.089,
         "drawdown_bucket": "mild"
       }
     },
     "CONSUMBEES.NS": {
       "symbol": "CONSUMBEES.NS",
       "market_group": "India Markets",
-      "last_close": 126.35,
+      "last_close": 127.24,
       "returns": {
-        "daily": -0.1817,
-        "mtd": -0.4961,
-        "ytd": -7.0204,
-        "r1m": 0.23,
-        "r3m": -4.4323,
-        "r6m": -8.4686,
-        "r1y": -1.5429,
-        "weekly": 0.5651,
-        "monthly": 0.23,
-        "annual": -1.5429
+        "daily": 0.7044,
+        "mtd": 0.2048,
+        "ytd": -6.3654,
+        "r1m": 0.1101,
+        "r3m": -2.01,
+        "r6m": -8.037,
+        "r1y": 0.8321,
+        "weekly": 1.4188,
+        "monthly": 0.1101,
+        "annual": 0.8321
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.8154,
-        "current_month_positive_rate": 69.2308,
+        "current_month_avg_return": 0.8693,
+        "current_month_positive_rate": 76.9231,
         "monthly_avg_returns": {
           "Jan": -0.8267,
           "Feb": -2.7646,
           "Mar": -0.8497,
           "Apr": 0.4596,
-          "May": 0.8154,
+          "May": 0.8693,
           "Jun": 1.8826,
           "Jul": 2.8217,
           "Aug": 2.707,
@@ -731,7 +731,7 @@
           "Feb": 25.0,
           "Mar": 50.0,
           "Apr": 69.2308,
-          "May": 69.2308,
+          "May": 76.9231,
           "Jun": 66.6667,
           "Jul": 83.3333,
           "Aug": 83.3333,
@@ -742,15 +742,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.4733,
+        "average": 11.5237,
         "median": 7.8385,
         "best": 45.8515,
-        "worst": -7.0204,
+        "worst": -6.3654,
         "positive_rate": 84.6154,
         "years_count": 13
       },
       "annual_returns_by_year": {
-        "2026": -7.0204,
+        "2026": -6.3654,
         "2025": 7.8385,
         "2024": 19.6796,
         "2023": 27.3765,
@@ -770,7 +770,7 @@
           "Feb": 1.6198,
           "Mar": -9.3567,
           "Apr": 8.503,
-          "May": -0.4961
+          "May": 0.2048
         },
         "2025": {
           "Jan": -2.7633,
@@ -939,41 +939,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -12.2387,
+        "current_drawdown_pct": -11.6205,
         "max_drawdown_pct": -27.2977,
         "peak_date": "2024-09-26",
         "peak_close": 143.97,
-        "days_since_peak": 607,
-        "recovery_needed_pct": 13.9454,
+        "days_since_peak": 608,
+        "recovery_needed_pct": 13.1484,
         "drawdown_bucket": "moderate"
       }
     },
     "PHARMABEES.NS": {
       "symbol": "PHARMABEES.NS",
       "market_group": "India Markets",
-      "last_close": 25.31,
+      "last_close": 25.32,
       "returns": {
-        "daily": -0.079,
-        "mtd": 5.2391,
-        "ytd": 9.0948,
-        "r1m": 9.0478,
-        "r3m": 9.6145,
-        "r6m": 8.8134,
-        "r1y": 13.7017,
-        "weekly": -0.9006,
-        "monthly": 9.0478,
-        "annual": 13.7017
+        "daily": 0.0395,
+        "mtd": 5.2807,
+        "ytd": 9.1379,
+        "r1m": 6.476,
+        "r3m": 10.2307,
+        "r6m": 8.7629,
+        "r1y": 15.4056,
+        "weekly": -0.7059,
+        "monthly": 6.476,
+        "annual": 15.4056
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": -0.4263,
+        "current_month_avg_return": -0.418,
         "current_month_positive_rate": 40.0,
         "monthly_avg_returns": {
           "Jan": -2.8428,
           "Feb": -0.2102,
           "Mar": 2.4972,
           "Apr": 2.9045,
-          "May": -0.4263,
+          "May": -0.418,
           "Jun": 3.0072,
           "Jul": 5.3912,
           "Aug": 1.0404,
@@ -998,15 +998,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.4645,
-        "median": 3.6502,
+        "average": 11.4717,
+        "median": 3.6718,
         "best": 39.0899,
         "worst": -10.1623,
         "positive_rate": 50.0,
         "years_count": 6
       },
       "annual_returns_by_year": {
-        "2026": 9.0948,
+        "2026": 9.1379,
         "2025": -2.2204,
         "2024": 39.0899,
         "2023": 34.7792,
@@ -1019,7 +1019,7 @@
           "Feb": 6.8388,
           "Mar": -3.3898,
           "Apr": 7.2678,
-          "May": 5.2391
+          "May": 5.2807
         },
         "2025": {
           "Jan": -8.2949,
@@ -1087,41 +1087,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.9006,
+        "current_drawdown_pct": -0.8614,
         "max_drawdown_pct": -21.1022,
         "peak_date": "2026-05-19",
         "peak_close": 25.54,
-        "days_since_peak": 7,
-        "recovery_needed_pct": 0.9087,
+        "days_since_peak": 8,
+        "recovery_needed_pct": 0.8689,
         "drawdown_bucket": "mild"
       }
     },
     "TNIDETF.NS": {
       "symbol": "TNIDETF.NS",
       "market_group": "India Markets",
-      "last_close": 81.83,
+      "last_close": 82.02,
       "returns": {
-        "daily": 0.5036,
-        "mtd": 1.3375,
-        "ytd": -17.2348,
-        "r1m": 1.0372,
-        "r3m": -5.8343,
-        "r6m": -16.9239,
-        "r1y": -7.138,
-        "weekly": 0.553,
-        "monthly": 1.0372,
-        "annual": -7.138
+        "daily": 0.2322,
+        "mtd": 1.5728,
+        "ytd": -17.0426,
+        "r1m": 1.8376,
+        "r3m": -5.1243,
+        "r6m": -15.8165,
+        "r1y": -8.4496,
+        "weekly": 0.5147,
+        "monthly": 1.8376,
+        "annual": -8.4496
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.551,
+        "current_month_avg_return": 0.5981,
         "current_month_positive_rate": 60.0,
         "monthly_avg_returns": {
           "Jan": -0.8199,
           "Feb": -5.1926,
           "Mar": -2.3427,
           "Apr": 0.3481,
-          "May": 0.551,
+          "May": 0.5981,
           "Jun": 3.5223,
           "Jul": 2.6926,
           "Aug": 2.9672,
@@ -1146,15 +1146,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.3093,
+        "average": 8.3477,
         "median": -1.7737,
         "best": 42.5613,
-        "worst": -17.2348,
+        "worst": -17.0426,
         "positive_rate": 40.0,
         "years_count": 5
       },
       "annual_returns_by_year": {
-        "2026": -17.2348,
+        "2026": -17.0426,
         "2025": -1.7737,
         "2024": 32.9474,
         "2023": 42.5613,
@@ -1166,7 +1166,7 @@
           "Feb": -11.8943,
           "Mar": -7.2745,
           "Apr": 2.8269,
-          "May": 1.3375
+          "May": 1.5728
         },
         "2025": {
           "Jan": -6.4335,
@@ -1224,41 +1224,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -21.2264,
+        "current_drawdown_pct": -21.0435,
         "max_drawdown_pct": -27.8494,
         "peak_date": "2024-12-16",
         "peak_close": 103.88,
-        "days_since_peak": 526,
-        "recovery_needed_pct": 26.9461,
+        "days_since_peak": 527,
+        "recovery_needed_pct": 26.652,
         "drawdown_bucket": "deep"
       }
     },
     "ALPHA.NS": {
       "symbol": "ALPHA.NS",
       "market_group": "India Markets",
-      "last_close": 50.85,
+      "last_close": 51.31,
       "returns": {
-        "daily": 0.0787,
-        "mtd": 3.3957,
-        "ytd": 5.4979,
-        "r1m": 4.5436,
-        "r3m": 3.5009,
-        "r6m": 2.3963,
-        "r1y": 5.2141,
-        "weekly": 2.7065,
-        "monthly": 4.5436,
-        "annual": 5.2141
+        "daily": 0.9046,
+        "mtd": 4.331,
+        "ytd": 6.4523,
+        "r1m": 4.6716,
+        "r3m": 5.6413,
+        "r6m": 2.9081,
+        "r1y": 7.5231,
+        "weekly": 2.8875,
+        "monthly": 4.6716,
+        "annual": 7.5231
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 5.4608,
+        "current_month_avg_return": 5.7725,
         "current_month_positive_rate": 100.0,
         "monthly_avg_returns": {
           "Jan": -7.5324,
           "Feb": -3.8294,
           "Mar": 0.0142,
           "Apr": 6.8399,
-          "May": 5.4608,
+          "May": 5.7725,
           "Jun": 2.6815,
           "Jul": 1.8048,
           "Aug": -1.648,
@@ -1283,15 +1283,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 5.3239,
-        "median": 5.4979,
+        "average": 5.642,
+        "median": 6.4523,
         "best": 22.027,
         "worst": -11.5533,
         "positive_rate": 66.6667,
         "years_count": 3
       },
       "annual_returns_by_year": {
-        "2026": 5.4979,
+        "2026": 6.4523,
         "2025": -11.5533,
         "2024": 22.027
       },
@@ -1301,7 +1301,7 @@
           "Feb": 6.2965,
           "Mar": -11.2453,
           "Apr": 10.8237,
-          "May": 3.3957
+          "May": 4.331
         },
         "2025": {
           "Jan": -11.8283,
@@ -1331,41 +1331,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -14.6526,
+        "current_drawdown_pct": -13.8805,
         "max_drawdown_pct": -31.6885,
         "peak_date": "2024-09-24",
         "peak_close": 59.58,
-        "days_since_peak": 609,
-        "recovery_needed_pct": 17.1681,
+        "days_since_peak": 610,
+        "recovery_needed_pct": 16.1177,
         "drawdown_bucket": "moderate"
       }
     },
     "DIVOPPBEES.NS": {
       "symbol": "DIVOPPBEES.NS",
       "market_group": "India Markets",
-      "last_close": 78.28,
+      "last_close": 78.76,
       "returns": {
-        "daily": -0.1276,
-        "mtd": -2.1622,
-        "ytd": -6.0715,
-        "r1m": -1.4974,
-        "r3m": -6.4979,
-        "r6m": -3.37,
-        "r1y": -0.2803,
-        "weekly": 0.7205,
-        "monthly": -1.4974,
-        "annual": -0.2803
+        "daily": 0.6132,
+        "mtd": -1.5623,
+        "ytd": -5.4956,
+        "r1m": -1.7955,
+        "r3m": -4.9252,
+        "r6m": -3.4449,
+        "r1y": 1.26,
+        "weekly": 1.078,
+        "monthly": -1.7955,
+        "annual": 1.26
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.8381,
+        "current_month_avg_return": 0.9131,
         "current_month_positive_rate": 62.5,
         "monthly_avg_returns": {
           "Jan": 0.6836,
           "Feb": -2.3821,
           "Mar": -1.4012,
           "Apr": 2.484,
-          "May": 0.8381,
+          "May": 0.9131,
           "Jun": 1.0249,
           "Jul": 2.0443,
           "Aug": 2.0069,
@@ -1390,15 +1390,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.6733,
+        "average": 12.7373,
         "median": 4.246,
         "best": 42.5674,
-        "worst": -6.0715,
+        "worst": -5.4956,
         "positive_rate": 77.7778,
         "years_count": 9
       },
       "annual_returns_by_year": {
-        "2026": -6.0715,
+        "2026": -5.4956,
         "2025": 3.4423,
         "2024": 17.6874,
         "2023": 42.5674,
@@ -1414,7 +1414,7 @@
           "Feb": 0.4357,
           "Mar": -9.4827,
           "Apr": 5.8607,
-          "May": -2.1622
+          "May": -1.5623
         },
         "2025": {
           "Jan": -2.1174,
@@ -1522,41 +1522,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -12.0845,
+        "current_drawdown_pct": -11.5454,
         "max_drawdown_pct": -31.967,
         "peak_date": "2024-09-27",
         "peak_close": 89.04,
-        "days_since_peak": 606,
-        "recovery_needed_pct": 13.7455,
+        "days_since_peak": 607,
+        "recovery_needed_pct": 13.0523,
         "drawdown_bucket": "moderate"
       }
     },
     "ESG.NS": {
       "symbol": "ESG.NS",
       "market_group": "India Markets",
-      "last_close": 40.87,
+      "last_close": 40.83,
       "returns": {
-        "daily": -0.4142,
-        "mtd": -0.7287,
-        "ytd": -8.2604,
-        "r1m": 0.3684,
-        "r3m": -6.1323,
-        "r6m": -7.3453,
-        "r1y": -3.5175,
-        "weekly": 1.5909,
-        "monthly": 0.3684,
-        "annual": -3.5175
+        "daily": -0.0979,
+        "mtd": -0.8258,
+        "ytd": -8.3502,
+        "r1m": -0.6569,
+        "r3m": -4.6919,
+        "r6m": -7.833,
+        "r1y": -2.4839,
+        "weekly": 1.2147,
+        "monthly": -0.6569,
+        "annual": -2.4839
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.3385,
+        "current_month_avg_return": 0.3062,
         "current_month_positive_rate": 33.3333,
         "monthly_avg_returns": {
           "Jan": -1.5841,
           "Feb": -1.4858,
           "Mar": -0.8113,
           "Apr": 4.0781,
-          "May": 0.3385,
+          "May": 0.3062,
           "Jun": 3.6436,
           "Jul": 0.6022,
           "Aug": 0.3614,
@@ -1581,15 +1581,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 6.8009,
+        "average": 6.7785,
         "median": 11.0485,
         "best": 13.3671,
-        "worst": -8.2604,
+        "worst": -8.3502,
         "positive_rate": 75.0,
         "years_count": 4
       },
       "annual_returns_by_year": {
-        "2026": -8.2604,
+        "2026": -8.3502,
         "2025": 10.3586,
         "2024": 11.7384,
         "2023": 13.3671
@@ -1600,7 +1600,7 @@
           "Feb": -0.7485,
           "Mar": -9.5124,
           "Apr": 6.5676,
-          "May": -0.7287
+          "May": -0.8258
         },
         "2025": {
           "Jan": -1.9671,
@@ -1639,41 +1639,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.0768,
+        "current_drawdown_pct": -9.1657,
         "max_drawdown_pct": -16.434,
         "peak_date": "2026-01-02",
         "peak_close": 44.95,
-        "days_since_peak": 144,
-        "recovery_needed_pct": 9.9829,
+        "days_since_peak": 145,
+        "recovery_needed_pct": 10.0906,
         "drawdown_bucket": "moderate"
       }
     },
     "HDFCQUAL.NS": {
       "symbol": "HDFCQUAL.NS",
       "market_group": "India Markets",
-      "last_close": 57.69,
+      "last_close": 57.92,
       "returns": {
-        "daily": 0.5227,
-        "mtd": -0.2593,
-        "ytd": -4.1854,
-        "r1m": 1.3706,
-        "r3m": -1.6368,
-        "r6m": -3.1722,
-        "r1y": 0.3479,
-        "weekly": 1.0864,
-        "monthly": 1.3706,
-        "annual": 0.3479
+        "daily": 0.3987,
+        "mtd": 0.1383,
+        "ytd": -3.8034,
+        "r1m": 1.188,
+        "r3m": 0.0518,
+        "r6m": -3.2732,
+        "r1y": 2.0617,
+        "weekly": 1.5072,
+        "monthly": 1.188,
+        "annual": 2.0617
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.8004,
-        "current_month_positive_rate": 50.0,
+        "current_month_avg_return": 1.9992,
+        "current_month_positive_rate": 100.0,
         "monthly_avg_returns": {
           "Jan": -0.4723,
           "Feb": -4.8355,
           "Mar": -1.751,
           "Apr": 5.9413,
-          "May": 1.8004,
+          "May": 1.9992,
           "Jun": 1.157,
           "Jul": 1.5438,
           "Aug": 1.5281,
@@ -1687,7 +1687,7 @@
           "Feb": 0.0,
           "Mar": 50.0,
           "Apr": 100.0,
-          "May": 50.0,
+          "May": 100.0,
           "Jun": 100.0,
           "Jul": 50.0,
           "Aug": 100.0,
@@ -1698,15 +1698,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 0.4836,
+        "average": 0.6109,
         "median": -0.9634,
         "best": 6.5996,
-        "worst": -4.1854,
+        "worst": -3.8034,
         "positive_rate": 33.3333,
         "years_count": 3
       },
       "annual_returns_by_year": {
-        "2026": -4.1854,
+        "2026": -3.8034,
         "2025": 6.5996,
         "2024": -0.9634
       },
@@ -1716,7 +1716,7 @@
           "Feb": -2.5042,
           "Mar": -8.8904,
           "Apr": 7.8631,
-          "May": -0.2593
+          "May": 0.1383
         },
         "2025": {
           "Jan": -0.8117,
@@ -1743,41 +1743,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.986,
+        "current_drawdown_pct": -9.6271,
         "max_drawdown_pct": -20.6584,
         "peak_date": "2024-10-03",
         "peak_close": 64.09,
-        "days_since_peak": 600,
-        "recovery_needed_pct": 11.0938,
+        "days_since_peak": 601,
+        "recovery_needed_pct": 10.6526,
         "drawdown_bucket": "moderate"
       }
     },
     "LOWVOL.NS": {
       "symbol": "LOWVOL.NS",
       "market_group": "India Markets",
-      "last_close": 202.23,
+      "last_close": 201.68,
       "returns": {
-        "daily": -0.5263,
-        "mtd": 0.2479,
-        "ytd": -6.3923,
-        "r1m": 0.3473,
-        "r3m": -5.2343,
-        "r6m": -5.4868,
-        "r1y": -0.0889,
-        "weekly": 0.6921,
-        "monthly": 0.3473,
-        "annual": -0.0889
+        "daily": -0.272,
+        "mtd": -0.0248,
+        "ytd": -6.6469,
+        "r1m": 0.5434,
+        "r3m": -4.3717,
+        "r6m": -6.0774,
+        "r1y": -0.104,
+        "weekly": 0.5233,
+        "monthly": 0.5434,
+        "annual": -0.104
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.1497,
-        "current_month_positive_rate": 66.6667,
+        "current_month_avg_return": 0.0588,
+        "current_month_positive_rate": 33.3333,
         "monthly_avg_returns": {
           "Jan": -0.8695,
           "Feb": -0.8378,
           "Mar": -1.6693,
           "Apr": 3.6166,
-          "May": 0.1497,
+          "May": 0.0588,
           "Jun": 4.0784,
           "Jul": 2.5905,
           "Aug": 2.3174,
@@ -1791,7 +1791,7 @@
           "Feb": 66.6667,
           "Mar": 33.3333,
           "Apr": 66.6667,
-          "May": 66.6667,
+          "May": 33.3333,
           "Jun": 100.0,
           "Jul": 50.0,
           "Aug": 100.0,
@@ -1802,15 +1802,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.2724,
+        "average": 8.2088,
         "median": 11.2204,
         "best": 17.0413,
-        "worst": -6.3923,
+        "worst": -6.6469,
         "positive_rate": 75.0,
         "years_count": 4
       },
       "annual_returns_by_year": {
-        "2026": -6.3923,
+        "2026": -6.6469,
         "2025": 10.4482,
         "2024": 11.9926,
         "2023": 17.0413
@@ -1821,7 +1821,7 @@
           "Feb": 1.0377,
           "Mar": -9.6553,
           "Apr": 6.8768,
-          "May": 0.2479
+          "May": -0.0248
         },
         "2025": {
           "Jan": 0.1382,
@@ -1859,41 +1859,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -7.935,
+        "current_drawdown_pct": -8.1854,
         "max_drawdown_pct": -18.0779,
         "peak_date": "2024-09-27",
         "peak_close": 219.66,
-        "days_since_peak": 606,
-        "recovery_needed_pct": 8.6189,
+        "days_since_peak": 607,
+        "recovery_needed_pct": 8.9151,
         "drawdown_bucket": "moderate"
       }
     },
     "MOM100.NS": {
       "symbol": "MOM100.NS",
       "market_group": "India Markets",
-      "last_close": 67.0,
+      "last_close": 67.34,
       "returns": {
-        "daily": 0.4799,
-        "mtd": 4.1181,
-        "ytd": 2.4465,
-        "r1m": 3.3472,
-        "r3m": 5.0157,
-        "r6m": 2.103,
-        "r1y": 11.3142,
-        "weekly": 2.103,
-        "monthly": 3.3472,
-        "annual": 11.3142
+        "daily": 0.5075,
+        "mtd": 4.6465,
+        "ytd": 2.9664,
+        "r1m": 3.6159,
+        "r3m": 4.9891,
+        "r6m": 3.7596,
+        "r1y": 11.0122,
+        "weekly": 2.0303,
+        "monthly": 3.6159,
+        "annual": 11.0122
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.6985,
+        "current_month_avg_return": 1.7315,
         "current_month_positive_rate": 56.25,
         "monthly_avg_returns": {
           "Jan": 0.4268,
           "Feb": -1.9744,
           "Mar": 0.214,
           "Apr": 2.2108,
-          "May": 1.6985,
+          "May": 1.7315,
           "Jun": 1.5056,
           "Jul": 1.2464,
           "Aug": -0.1394,
@@ -1918,7 +1918,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 15.0873,
+        "average": 15.1198,
         "median": 6.1768,
         "best": 55.4217,
         "worst": -39.5,
@@ -1926,7 +1926,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 2.4465,
+        "2026": 2.9664,
         "2025": 5.912,
         "2024": 23.7778,
         "2023": 45.7803,
@@ -1949,7 +1949,7 @@
           "Feb": 2.624,
           "Mar": -9.4866,
           "Apr": 9.7748,
-          "May": 4.1181
+          "May": 4.6465
         },
         "2025": {
           "Jan": -6.4967,
@@ -2165,8 +2165,8 @@
       "drawdown": {
         "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -48.4153,
-        "peak_date": "2026-05-26",
-        "peak_close": 67.0,
+        "peak_date": "2026-05-27",
+        "peak_close": 67.34,
         "days_since_peak": 0,
         "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
@@ -2175,29 +2175,29 @@
     "NV20BEES.NS": {
       "symbol": "NV20BEES.NS",
       "market_group": "India Markets",
-      "last_close": 142.2,
+      "last_close": 142.27,
       "returns": {
-        "daily": -0.5942,
-        "mtd": -0.8645,
-        "ytd": -8.0504,
-        "r1m": -1.904,
-        "r3m": -7.9075,
-        "r6m": -6.2994,
-        "r1y": -5.4207,
-        "weekly": 1.1668,
-        "monthly": -1.904,
-        "annual": -5.4207
+        "daily": 0.0492,
+        "mtd": -0.8157,
+        "ytd": -8.0052,
+        "r1m": -1.9233,
+        "r3m": -6.7938,
+        "r6m": -7.1284,
+        "r1y": -4.504,
+        "weekly": 0.7649,
+        "monthly": -1.9233,
+        "annual": -4.504
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.3126,
+        "current_month_avg_return": 1.3187,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": -0.1716,
           "Feb": -2.4325,
           "Mar": -2.1461,
           "Apr": 1.8635,
-          "May": 1.3126,
+          "May": 1.3187,
           "Jun": 1.3742,
           "Jul": 3.2523,
           "Aug": 2.2888,
@@ -2222,15 +2222,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.8909,
+        "average": 12.8959,
         "median": 9.6841,
         "best": 36.4054,
-        "worst": -8.0504,
+        "worst": -8.0052,
         "positive_rate": 77.7778,
         "years_count": 9
       },
       "annual_returns_by_year": {
-        "2026": -8.0504,
+        "2026": -8.0052,
         "2025": -0.0837,
         "2024": 17.0259,
         "2023": 28.6578,
@@ -2246,7 +2246,7 @@
           "Feb": -1.0566,
           "Mar": -10.2422,
           "Apr": 2.709,
-          "May": -0.8645
+          "May": -0.8157
         },
         "2025": {
           "Jan": -1.4867,
@@ -2354,41 +2354,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -16.2051,
+        "current_drawdown_pct": -16.1638,
         "max_drawdown_pct": -29.1137,
         "peak_date": "2024-10-04",
         "peak_close": 169.7,
-        "days_since_peak": 599,
-        "recovery_needed_pct": 19.339,
+        "days_since_peak": 600,
+        "recovery_needed_pct": 19.2802,
         "drawdown_bucket": "deep"
       }
     },
     "USDINR=X": {
       "symbol": "USDINR=X",
       "market_group": "India Markets",
-      "last_close": 95.67,
+      "last_close": 95.65,
       "returns": {
-        "daily": -0.0517,
-        "mtd": 0.9613,
-        "ytd": 6.345,
-        "r1m": 1.5063,
-        "r3m": 5.1885,
-        "r6m": 7.2979,
-        "r1y": 11.6221,
-        "weekly": -0.6235,
-        "monthly": 1.5063,
-        "annual": 11.6221
+        "daily": 0.417,
+        "mtd": 0.9402,
+        "ytd": 6.3228,
+        "r1m": 1.4763,
+        "r3m": 5.1013,
+        "r6m": 7.0332,
+        "r1y": 11.345,
+        "weekly": -0.9484,
+        "monthly": 1.4763,
+        "annual": 11.345
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.1763,
+        "current_month_avg_return": 1.1754,
         "current_month_positive_rate": 78.2609,
         "monthly_avg_returns": {
           "Jan": 0.0503,
           "Feb": 0.3246,
           "Mar": -0.4641,
           "Apr": 0.2387,
-          "May": 1.1763,
+          "May": 1.1754,
           "Jun": 0.7874,
           "Jul": 0.1313,
           "Aug": 1.3601,
@@ -2413,7 +2413,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 3.327,
+        "average": 3.3261,
         "median": 2.6179,
         "best": 22.4742,
         "worst": -11.2405,
@@ -2421,7 +2421,7 @@
         "years_count": 24
       },
       "annual_returns_by_year": {
-        "2026": 6.345,
+        "2026": 6.3228,
         "2025": 4.6438,
         "2024": 3.0487,
         "2023": -0.5411,
@@ -2452,7 +2452,7 @@
           "Feb": -0.7412,
           "Mar": 3.5972,
           "Apr": 1.5321,
-          "May": 0.9613
+          "May": 0.9402
         },
         "2025": {
           "Jan": 1.004,
@@ -2767,41 +2767,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.9277,
+        "current_drawdown_pct": -0.9484,
         "max_drawdown_pct": -16.656,
         "peak_date": "2026-05-20",
         "peak_close": 96.5658,
-        "days_since_peak": 6,
-        "recovery_needed_pct": 0.9363,
+        "days_since_peak": 7,
+        "recovery_needed_pct": 0.9575,
         "drawdown_bucket": "mild"
       }
     },
     "^INDIAVIX": {
       "symbol": "^INDIAVIX",
       "market_group": "India Markets",
-      "last_close": 16.1325,
+      "last_close": 14.9825,
       "returns": {
-        "daily": -3.3982,
-        "mtd": -11.8443,
-        "ytd": 70.7143,
-        "r1m": -18.1507,
-        "r3m": 32.0172,
-        "r6m": 36.8321,
-        "r1y": -2.5227,
-        "weekly": -13.6376,
-        "monthly": -18.1507,
-        "annual": -2.5227
+        "daily": -7.1285,
+        "mtd": -18.1284,
+        "ytd": 58.545,
+        "r1m": -18.4848,
+        "r3m": 11.3113,
+        "r6m": 23.8223,
+        "r1y": -13.6953,
+        "weekly": -18.75,
+        "monthly": -18.4848,
+        "annual": -13.6953
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": -2.6022,
+        "current_month_avg_return": -2.9329,
         "current_month_positive_rate": 47.3684,
         "monthly_avg_returns": {
           "Jan": 18.6858,
           "Feb": 6.23,
           "Mar": 7.5337,
           "Apr": 2.35,
-          "May": -2.6022,
+          "May": -2.9329,
           "Jun": -7.0645,
           "Jul": -5.5876,
           "Aug": 6.8563,
@@ -2826,7 +2826,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 2.0324,
+        "average": 1.392,
         "median": -2.9525,
         "best": 83.638,
         "worst": -45.6956,
@@ -2834,7 +2834,7 @@
         "years_count": 19
       },
       "annual_returns_by_year": {
-        "2026": 70.7143,
+        "2026": 58.545,
         "2025": -31.0044,
         "2024": -0.8916,
         "2023": -1.2934,
@@ -2860,7 +2860,7 @@
           "Feb": -1.2257,
           "Mar": 62.8138,
           "Apr": -26.1895,
-          "May": -11.8443
+          "May": -18.1284
         },
         "2025": {
           "Jan": 18.2678,
@@ -3114,41 +3114,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -81.0496,
+        "current_drawdown_pct": -82.4004,
         "max_drawdown_pct": -89.2517,
         "peak_date": "2008-11-17",
         "peak_close": 85.13,
-        "days_since_peak": 6399,
-        "recovery_needed_pct": 427.6925,
+        "days_since_peak": 6400,
+        "recovery_needed_pct": 468.1962,
         "drawdown_bucket": "severe"
       }
     },
     "GROWWDEFNC.NS": {
       "symbol": "GROWWDEFNC.NS",
       "market_group": "India Markets",
-      "last_close": 92.4,
+      "last_close": 92.61,
       "returns": {
-        "daily": 0.4785,
-        "mtd": 2.5413,
-        "ytd": 19.5807,
-        "r1m": 4.2536,
-        "r3m": 13.3325,
-        "r6m": 12.4772,
-        "r1y": 12.1768,
-        "weekly": 3.5874,
-        "monthly": 4.2536,
-        "annual": 12.1768
+        "daily": 0.2273,
+        "mtd": 2.7744,
+        "ytd": 19.8525,
+        "r1m": 3.8694,
+        "r3m": 15.4882,
+        "r6m": 12.3499,
+        "r1y": 15.7046,
+        "weekly": 3.0145,
+        "monthly": 3.8694,
+        "annual": 15.7046
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 13.1159,
+        "current_month_avg_return": 13.2325,
         "current_month_positive_rate": 100.0,
         "monthly_avg_returns": {
           "Jan": 1.9482,
           "Feb": -5.7389,
           "Mar": 5.3479,
           "Apr": 14.8151,
-          "May": 13.1159,
+          "May": 13.2325,
           "Jun": 1.607,
           "Jul": -12.8039,
           "Aug": -2.6633,
@@ -3173,15 +3173,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.2858,
+        "average": 11.3764,
         "median": 17.9863,
-        "best": 19.5807,
+        "best": 19.8525,
         "worst": -3.7097,
         "positive_rate": 66.6667,
         "years_count": 3
       },
       "annual_returns_by_year": {
-        "2026": 19.5807,
+        "2026": 19.8525,
         "2025": 17.9863,
         "2024": -3.7097
       },
@@ -3191,7 +3191,7 @@
           "Feb": 3.6436,
           "Mar": -11.9766,
           "Apr": 16.756,
-          "May": 2.5413
+          "May": 2.7744
         },
         "2025": {
           "Jan": -2.2121,
@@ -3214,41 +3214,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -1.8379,
+        "current_drawdown_pct": -1.6148,
         "max_drawdown_pct": -26.9444,
         "peak_date": "2026-05-08",
         "peak_close": 94.13,
-        "days_since_peak": 18,
-        "recovery_needed_pct": 1.8723,
+        "days_since_peak": 19,
+        "recovery_needed_pct": 1.6413,
         "drawdown_bucket": "mild"
       }
     },
     "MAKEINDIA.NS": {
       "symbol": "MAKEINDIA.NS",
       "market_group": "India Markets",
-      "last_close": 161.53,
+      "last_close": 163.84,
       "returns": {
-        "daily": -0.0681,
-        "mtd": 1.3744,
-        "ytd": 2.9378,
-        "r1m": 3.598,
-        "r3m": 1.1079,
-        "r6m": 3.9982,
-        "r1y": 11.9792,
-        "weekly": 2.0598,
-        "monthly": 3.598,
-        "annual": 11.9792
+        "daily": 1.4301,
+        "mtd": 2.8241,
+        "ytd": 4.4099,
+        "r1m": 3.2583,
+        "r3m": 4.1974,
+        "r6m": 5.4244,
+        "r1y": 15.5023,
+        "weekly": 2.7146,
+        "monthly": 3.2583,
+        "annual": 15.5023
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 3.8387,
+        "current_month_avg_return": 4.3219,
         "current_month_positive_rate": 100.0,
         "monthly_avg_returns": {
           "Jan": -1.5863,
           "Feb": 0.5747,
           "Mar": -0.1033,
           "Apr": 6.1593,
-          "May": 3.8387,
+          "May": 4.3219,
           "Jun": 3.1838,
           "Jul": 0.3888,
           "Aug": 0.8998,
@@ -3273,15 +3273,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 13.324,
+        "average": 13.6921,
         "median": 12.613,
         "best": 25.1322,
-        "worst": 2.9378,
+        "worst": 4.4099,
         "positive_rate": 100.0,
         "years_count": 4
       },
       "annual_returns_by_year": {
-        "2026": 2.9378,
+        "2026": 4.4099,
         "2025": 11.1679,
         "2024": 25.1322,
         "2023": 14.0582
@@ -3292,7 +3292,7 @@
           "Feb": 5.7207,
           "Mar": -10.0044,
           "Apr": 9.2772,
-          "May": 1.3744
+          "May": 2.8241
         },
         "2025": {
           "Jan": -4.2555,
@@ -3331,41 +3331,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -1.3135,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -22.9683,
-        "peak_date": "2026-05-07",
-        "peak_close": 163.68,
-        "days_since_peak": 19,
-        "recovery_needed_pct": 1.331,
+        "peak_date": "2026-05-27",
+        "peak_close": 163.84,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
     "NIFTY_FIN_SERVICE.NS": {
       "symbol": "NIFTY_FIN_SERVICE.NS",
       "market_group": "India Markets",
-      "last_close": 25932.25,
+      "last_close": 25752.1992,
       "returns": {
-        "daily": -0.6509,
-        "mtd": 0.4565,
-        "ytd": -7.05,
-        "r1m": -0.8014,
-        "r3m": -8.8922,
-        "r6m": -6.1996,
-        "r1y": -2.0486,
-        "weekly": 2.5663,
-        "monthly": -0.8014,
-        "annual": -2.0486
+        "daily": -0.6943,
+        "mtd": -0.241,
+        "ytd": -7.6954,
+        "r1m": -1.5764,
+        "r3m": -8.2556,
+        "r6m": -6.5146,
+        "r1y": -2.8505,
+        "weekly": 1.8091,
+        "monthly": -1.5764,
+        "annual": -2.8505
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 2.253,
-        "current_month_positive_rate": 66.6667,
+        "current_month_avg_return": 2.2065,
+        "current_month_positive_rate": 60.0,
         "monthly_avg_returns": {
           "Jan": 0.4272,
           "Feb": -1.3228,
           "Mar": -0.3403,
           "Apr": 3.1277,
-          "May": 2.253,
+          "May": 2.2065,
           "Jun": 1.3273,
           "Jul": 1.0161,
           "Aug": 0.0895,
@@ -3379,7 +3379,7 @@
           "Feb": 33.3333,
           "Mar": 53.3333,
           "Apr": 73.3333,
-          "May": 66.6667,
+          "May": 60.0,
           "Jun": 57.1429,
           "Jul": 64.2857,
           "Aug": 50.0,
@@ -3390,7 +3390,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 13.7349,
+        "average": 13.6946,
         "median": 10.9177,
         "best": 57.5207,
         "worst": -16.0324,
@@ -3398,7 +3398,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": -7.05,
+        "2026": -7.6954,
         "2025": 15.0233,
         "2024": 10.1501,
         "2023": 12.6504,
@@ -3421,7 +3421,7 @@
           "Feb": 3.9955,
           "Mar": -14.6651,
           "Apr": 6.9868,
-          "May": 0.4565
+          "May": -0.241
         },
         "2025": {
           "Jan": -3.2747,
@@ -3627,41 +3627,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.8922,
+        "current_drawdown_pct": -9.5247,
         "max_drawdown_pct": -43.538,
         "peak_date": "2026-02-18",
         "peak_close": 28463.25,
-        "days_since_peak": 97,
-        "recovery_needed_pct": 9.76,
+        "days_since_peak": 98,
+        "recovery_needed_pct": 10.5275,
         "drawdown_bucket": "moderate"
       }
     },
     "NIFTY_PVT_BANK.NS": {
       "symbol": "NIFTY_PVT_BANK.NS",
       "market_group": "India Markets",
-      "last_close": 26760.8008,
+      "last_close": 26638.8008,
       "returns": {
-        "daily": -0.6176,
-        "mtd": 1.9564,
-        "ytd": -7.4114,
-        "r1m": 0.1628,
-        "r3m": -8.3156,
-        "r6m": -5.8255,
-        "r1y": -3.2916,
-        "weekly": 3.0629,
-        "monthly": 0.1628,
-        "annual": -3.2916
+        "daily": -0.4559,
+        "mtd": 1.4916,
+        "ytd": -7.8335,
+        "r1m": -0.3307,
+        "r3m": -7.377,
+        "r6m": -6.2267,
+        "r1y": -3.6254,
+        "weekly": 2.3408,
+        "monthly": -0.3307,
+        "annual": -3.6254
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 2.6363,
+        "current_month_avg_return": 2.5941,
         "current_month_positive_rate": 72.7273,
         "monthly_avg_returns": {
           "Jan": -0.13,
           "Feb": -1.2334,
           "Mar": -2.8102,
           "Apr": 4.6589,
-          "May": 2.6363,
+          "May": 2.5941,
           "Jun": 0.5604,
           "Jul": 1.4354,
           "Aug": 2.1132,
@@ -3686,15 +3686,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.2038,
+        "average": 11.1654,
         "median": 13.0737,
         "best": 42.1156,
-        "worst": -7.4114,
+        "worst": -7.8335,
         "positive_rate": 81.8182,
         "years_count": 11
       },
       "annual_returns_by_year": {
-        "2026": -7.4114,
+        "2026": -7.8335,
         "2025": 13.773,
         "2024": 0.8736,
         "2023": 13.0737,
@@ -3712,7 +3712,7 @@
           "Feb": 1.4603,
           "Mar": -14.8569,
           "Apr": 6.9677,
-          "May": 1.9564
+          "May": 1.4916
         },
         "2025": {
           "Jan": -3.3998,
@@ -3854,41 +3854,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.3156,
+        "current_drawdown_pct": -8.7336,
         "max_drawdown_pct": -49.9025,
         "peak_date": "2026-02-18",
         "peak_close": 29187.9492,
-        "days_since_peak": 97,
-        "recovery_needed_pct": 9.0698,
+        "days_since_peak": 98,
+        "recovery_needed_pct": 9.5693,
         "drawdown_bucket": "moderate"
       }
     },
     "^CNXAUTO": {
       "symbol": "^CNXAUTO",
       "market_group": "India Markets",
-      "last_close": 26480.5,
+      "last_close": 26864.1992,
       "returns": {
-        "daily": 0.0659,
-        "mtd": 1.7397,
-        "ytd": -8.0655,
-        "r1m": 3.2263,
-        "r3m": -6.5205,
-        "r6m": -3.6114,
-        "r1y": 10.5512,
-        "weekly": 3.0418,
-        "monthly": 3.2263,
-        "annual": 10.5512
+        "daily": 1.449,
+        "mtd": 3.2139,
+        "ytd": -6.7334,
+        "r1m": 3.1131,
+        "r3m": -3.1362,
+        "r6m": -1.8417,
+        "r1y": 11.6894,
+        "weekly": 3.6653,
+        "monthly": 3.1131,
+        "annual": 11.6894
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 3.2646,
+        "current_month_avg_return": 3.3629,
         "current_month_positive_rate": 80.0,
         "monthly_avg_returns": {
           "Jan": 0.1246,
           "Feb": -2.0312,
           "Mar": -2.7259,
           "Apr": 4.7567,
-          "May": 3.2646,
+          "May": 3.3629,
           "Jun": 1.3599,
           "Jul": 0.5214,
           "Aug": 1.0416,
@@ -3913,7 +3913,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 14.2323,
+        "average": 14.3156,
         "median": 12.7241,
         "best": 56.466,
         "worst": -22.3283,
@@ -3921,7 +3921,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": -8.0655,
+        "2026": -6.7334,
         "2025": 17.3774,
         "2024": 24.5082,
         "2023": 46.9732,
@@ -3944,7 +3944,7 @@
           "Feb": 5.2701,
           "Mar": -13.6909,
           "Apr": 6.9259,
-          "May": 1.7397
+          "May": 3.2139
         },
         "2025": {
           "Jan": -4.7826,
@@ -4152,41 +4152,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.4428,
+        "current_drawdown_pct": -7.1161,
         "max_drawdown_pct": -62.3825,
         "peak_date": "2026-01-06",
         "peak_close": 28922.3496,
-        "days_since_peak": 140,
-        "recovery_needed_pct": 9.2213,
+        "days_since_peak": 141,
+        "recovery_needed_pct": 7.6613,
         "drawdown_bucket": "moderate"
       }
     },
     "^CNXENERGY": {
       "symbol": "^CNXENERGY",
       "market_group": "India Markets",
-      "last_close": 40814.6016,
+      "last_close": 41535.75,
       "returns": {
-        "daily": 0.5811,
-        "mtd": -0.3794,
-        "ytd": 12.5124,
-        "r1m": 2.2826,
-        "r3m": 11.7685,
-        "r6m": 11.9993,
-        "r1y": 14.4394,
-        "weekly": 3.1477,
-        "monthly": 2.2826,
-        "annual": 14.4394
+        "daily": 1.7669,
+        "mtd": 1.3808,
+        "ytd": 14.5004,
+        "r1m": 2.5658,
+        "r3m": 15.0957,
+        "r6m": 14.6644,
+        "r1y": 16.3765,
+        "weekly": 3.4387,
+        "monthly": 2.5658,
+        "annual": 16.3765
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.2193,
-        "current_month_positive_rate": 31.25,
+        "current_month_avg_return": 0.3293,
+        "current_month_positive_rate": 37.5,
         "monthly_avg_returns": {
           "Jan": 0.8305,
           "Feb": -0.6702,
           "Mar": 0.7421,
           "Apr": 3.7728,
-          "May": 0.2193,
+          "May": 0.3293,
           "Jun": 1.3456,
           "Jul": 1.7048,
           "Aug": -0.2877,
@@ -4200,7 +4200,7 @@
           "Feb": 37.5,
           "Mar": 50.0,
           "Apr": 68.75,
-          "May": 31.25,
+          "May": 37.5,
           "Jun": 53.3333,
           "Jul": 53.3333,
           "Aug": 53.3333,
@@ -4211,7 +4211,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 10.3711,
+        "average": 10.4954,
         "median": 9.9077,
         "best": 38.24,
         "worst": -20.7089,
@@ -4219,7 +4219,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 12.5124,
+        "2026": 14.5004,
         "2025": -1.0927,
         "2024": 4.4047,
         "2023": 28.57,
@@ -4242,7 +4242,7 @@
           "Feb": 7.0259,
           "Mar": -4.3993,
           "Apr": 15.1656,
-          "May": -0.3794
+          "May": 1.3808
         },
         "2025": {
           "Jan": -5.0966,
@@ -4456,41 +4456,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.209,
+        "current_drawdown_pct": -7.6048,
         "max_drawdown_pct": -41.2267,
         "peak_date": "2024-08-01",
         "peak_close": 44954.4492,
-        "days_since_peak": 663,
-        "recovery_needed_pct": 10.1431,
+        "days_since_peak": 664,
+        "recovery_needed_pct": 8.2307,
         "drawdown_bucket": "moderate"
       }
     },
     "^CNXFMCG": {
       "symbol": "^CNXFMCG",
       "market_group": "India Markets",
-      "last_close": 50227.3516,
+      "last_close": 50141.8984,
       "returns": {
-        "daily": 0.1388,
-        "mtd": -2.026,
-        "ytd": -5.3721,
-        "r1m": -1.0615,
-        "r3m": -4.1582,
-        "r6m": -9.7882,
-        "r1y": -11.9773,
-        "weekly": -1.2892,
-        "monthly": -1.0615,
-        "annual": -11.9773
+        "daily": -0.1701,
+        "mtd": -2.1927,
+        "ytd": -5.5331,
+        "r1m": -1.7721,
+        "r3m": -2.6061,
+        "r6m": -9.4314,
+        "r1y": -11.9633,
+        "weekly": -0.7495,
+        "monthly": -1.7721,
+        "annual": -11.9633
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.8114,
+        "current_month_avg_return": 1.8009,
         "current_month_positive_rate": 62.5,
         "monthly_avg_returns": {
           "Jan": -0.4664,
           "Feb": -1.8095,
           "Mar": 1.674,
           "Apr": 3.327,
-          "May": 1.8114,
+          "May": 1.8009,
           "Jun": 1.23,
           "Jul": 2.7238,
           "Aug": 0.9473,
@@ -4515,15 +4515,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.7021,
+        "average": 12.6921,
         "median": 12.2439,
         "best": 50.1913,
-        "worst": -5.3721,
+        "worst": -5.5331,
         "positive_rate": 75.0,
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": -5.3721,
+        "2026": -5.5331,
         "2025": -3.8073,
         "2024": -0.7164,
         "2023": 28.9512,
@@ -4546,7 +4546,7 @@
           "Feb": 1.0252,
           "Mar": -10.2716,
           "Apr": 10.6991,
-          "May": -2.026
+          "May": -2.1927
         },
         "2025": {
           "Jan": -1.6982,
@@ -4760,41 +4760,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -24.2483,
+        "current_drawdown_pct": -24.3771,
         "max_drawdown_pct": -31.3196,
         "peak_date": "2024-09-23",
         "peak_close": 66305.2031,
-        "days_since_peak": 610,
-        "recovery_needed_pct": 32.0102,
+        "days_since_peak": 611,
+        "recovery_needed_pct": 32.2351,
         "drawdown_bucket": "deep"
       }
     },
     "^CNXINFRA": {
       "symbol": "^CNXINFRA",
       "market_group": "India Markets",
-      "last_close": 9418.2998,
+      "last_close": 9499.0,
       "returns": {
-        "daily": -0.4429,
-        "mtd": -0.5559,
-        "ytd": -3.5578,
-        "r1m": 1.9076,
-        "r3m": -3.2378,
-        "r6m": -2.4122,
-        "r1y": 4.0277,
-        "weekly": 1.5269,
-        "monthly": 1.9076,
-        "annual": 4.0277
+        "daily": 0.8568,
+        "mtd": 0.2962,
+        "ytd": -2.7315,
+        "r1m": 1.3016,
+        "r3m": -0.6282,
+        "r6m": -1.2578,
+        "r1y": 5.0751,
+        "weekly": 1.5344,
+        "monthly": 1.3016,
+        "annual": 5.0751
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.5856,
-        "current_month_positive_rate": 56.25,
+        "current_month_avg_return": 1.6388,
+        "current_month_positive_rate": 62.5,
         "monthly_avg_returns": {
           "Jan": -1.0623,
           "Feb": -1.5639,
           "Mar": 0.7442,
           "Apr": 2.4797,
-          "May": 1.5856,
+          "May": 1.6388,
           "Jun": 1.4781,
           "Jul": 0.0763,
           "Aug": -1.9486,
@@ -4808,7 +4808,7 @@
           "Feb": 50.0,
           "Mar": 56.25,
           "Apr": 62.5,
-          "May": 56.25,
+          "May": 62.5,
           "Jun": 66.6667,
           "Jul": 50.0,
           "Aug": 31.25,
@@ -4819,7 +4819,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.0537,
+        "average": 7.1023,
         "median": 4.8261,
         "best": 37.9666,
         "worst": -38.9318,
@@ -4827,7 +4827,7 @@
         "years_count": 17
       },
       "annual_returns_by_year": {
-        "2026": -3.5578,
+        "2026": -2.7315,
         "2025": 11.5262,
         "2024": 16.2792,
         "2023": 37.9666,
@@ -4851,7 +4851,7 @@
           "Feb": 4.4645,
           "Mar": -8.1453,
           "Apr": 8.6543,
-          "May": -0.5559
+          "May": 0.2962
         },
         "2025": {
           "Jan": -3.1777,
@@ -5073,41 +5073,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -3.5578,
+        "current_drawdown_pct": -2.7315,
         "max_drawdown_pct": -50.4501,
         "peak_date": "2026-01-02",
         "peak_close": 9765.75,
-        "days_since_peak": 144,
-        "recovery_needed_pct": 3.6891,
+        "days_since_peak": 145,
+        "recovery_needed_pct": 2.8082,
         "drawdown_bucket": "mild"
       }
     },
     "^CNXIT": {
       "symbol": "^CNXIT",
       "market_group": "India Markets",
-      "last_close": 28978.5,
+      "last_close": 28906.6992,
       "returns": {
-        "daily": -0.0047,
-        "mtd": -0.3358,
-        "ytd": -24.0834,
-        "r1m": 1.5699,
-        "r3m": -11.2947,
-        "r6m": -19.4487,
-        "r1y": -22.6782,
-        "weekly": -1.1243,
-        "monthly": 1.5699,
-        "annual": -22.6782
+        "daily": -0.2478,
+        "mtd": -0.5828,
+        "ytd": -24.2715,
+        "r1m": -0.8658,
+        "r3m": -10.5593,
+        "r6m": -21.9679,
+        "r1y": -22.4678,
+        "weekly": -0.9541,
+        "monthly": -0.8658,
+        "annual": -22.4678
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.3278,
+        "current_month_avg_return": 1.3148,
         "current_month_positive_rate": 52.6316,
         "monthly_avg_returns": {
           "Jan": 0.0913,
           "Feb": -1.3583,
           "Mar": -0.9058,
           "Apr": -0.1162,
-          "May": 1.3278,
+          "May": 1.3148,
           "Jun": 1.3818,
           "Jul": 4.4016,
           "Aug": 1.9588,
@@ -5132,7 +5132,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 16.1817,
+        "average": 16.1723,
         "median": 10.4208,
         "best": 157.1327,
         "worst": -53.9404,
@@ -5140,7 +5140,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": -24.0834,
+        "2026": -24.2715,
         "2025": -12.6554,
         "2024": 21.4083,
         "2023": 23.585,
@@ -5167,7 +5167,7 @@
           "Feb": -19.6204,
           "Mar": -3.9981,
           "Apr": -1.0622,
-          "May": -0.3358
+          "May": -0.5828
         },
         "2025": {
           "Jan": -1.6378,
@@ -5429,41 +5429,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -36.9975,
+        "current_drawdown_pct": -37.1536,
         "max_drawdown_pct": -61.2886,
         "peak_date": "2024-12-13",
         "peak_close": 45995.8008,
-        "days_since_peak": 529,
-        "recovery_needed_pct": 58.7239,
+        "days_since_peak": 530,
+        "recovery_needed_pct": 59.1181,
         "drawdown_bucket": "severe"
       }
     },
     "^CNXMEDIA": {
       "symbol": "^CNXMEDIA",
       "market_group": "India Markets",
-      "last_close": 1375.15,
+      "last_close": 1417.15,
       "returns": {
-        "daily": -0.2394,
-        "mtd": -5.0376,
-        "ytd": -5.9984,
-        "r1m": -4.4172,
-        "r3m": -6.0305,
-        "r6m": -7.4378,
-        "r1y": -18.2164,
-        "weekly": -3.1993,
-        "monthly": -4.4172,
-        "annual": -18.2164
+        "daily": 3.0542,
+        "mtd": -2.1373,
+        "ytd": -3.1273,
+        "r1m": -3.7099,
+        "r3m": -0.9505,
+        "r6m": -4.392,
+        "r1y": -15.2219,
+        "weekly": 1.2214,
+        "monthly": -3.7099,
+        "annual": -15.2219
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.1106,
+        "current_month_avg_return": 1.304,
         "current_month_positive_rate": 46.6667,
         "monthly_avg_returns": {
           "Jan": -3.0349,
           "Feb": -3.38,
           "Mar": -2.4669,
           "Apr": 0.5649,
-          "May": 1.1106,
+          "May": 1.304,
           "Jun": 1.6175,
           "Jul": 1.6548,
           "Aug": -0.4575,
@@ -5488,15 +5488,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 2.5482,
-        "median": -3.317,
+        "average": 2.7276,
+        "median": -1.8815,
         "best": 59.3771,
         "worst": -29.9342,
         "positive_rate": 43.75,
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": -5.9984,
+        "2026": -3.1273,
         "2025": -21.0805,
         "2024": -25.5742,
         "2023": 18.498,
@@ -5519,7 +5519,7 @@
           "Feb": 4.0254,
           "Mar": -9.2423,
           "Apr": 11.281,
-          "May": -5.0376
+          "May": -2.1373
         },
         "2025": {
           "Jan": -13.6758,
@@ -5726,41 +5726,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -62.2492,
+        "current_drawdown_pct": -61.0962,
         "max_drawdown_pct": -72.8992,
         "peak_date": "2018-01-15",
         "peak_close": 3642.7,
-        "days_since_peak": 3053,
-        "recovery_needed_pct": 164.8947,
+        "days_since_peak": 3054,
+        "recovery_needed_pct": 157.0441,
         "drawdown_bucket": "severe"
       }
     },
     "^CNXMETAL": {
       "symbol": "^CNXMETAL",
       "market_group": "India Markets",
-      "last_close": 13492.5498,
+      "last_close": 13718.2998,
       "returns": {
-        "daily": 1.1007,
-        "mtd": 4.0073,
-        "ytd": 18.1293,
-        "r1m": 5.8517,
-        "r3m": 12.5716,
-        "r6m": 28.5513,
-        "r1y": 46.6287,
-        "weekly": 2.4978,
-        "monthly": 5.8517,
-        "annual": 46.6287
+        "daily": 1.6731,
+        "mtd": 5.7475,
+        "ytd": 20.1058,
+        "r1m": 5.6811,
+        "r3m": 15.8405,
+        "r6m": 32.1138,
+        "r1y": 48.9379,
+        "weekly": 4.0329,
+        "monthly": 5.6811,
+        "annual": 48.9379
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.0431,
+        "current_month_avg_return": 1.1591,
         "current_month_positive_rate": 46.6667,
         "monthly_avg_returns": {
           "Jan": -1.6879,
           "Feb": -0.6005,
           "Mar": -1.5474,
           "Apr": 4.0898,
-          "May": 1.0431,
+          "May": 1.1591,
           "Jun": 0.4596,
           "Jul": 0.8076,
           "Aug": -0.1497,
@@ -5785,7 +5785,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 10.4398,
+        "average": 10.5633,
         "median": 16.0425,
         "best": 61.2378,
         "worst": -35.072,
@@ -5793,7 +5793,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 18.1293,
+        "2026": 20.1058,
         "2025": 28.0202,
         "2024": 7.8017,
         "2023": 15.8473,
@@ -5816,7 +5816,7 @@
           "Feb": 5.8738,
           "Mar": -9.221,
           "Apr": 12.4518,
-          "May": 4.0073
+          "May": 5.7475
         },
         "2025": {
           "Jan": -3.7102,
@@ -6024,41 +6024,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.5139,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -64.3341,
-        "peak_date": "2026-05-14",
-        "peak_close": 13562.25,
-        "days_since_peak": 12,
-        "recovery_needed_pct": 0.5166,
+        "peak_date": "2026-05-27",
+        "peak_close": 13718.2998,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
     "^CNXMNC": {
       "symbol": "^CNXMNC",
       "market_group": "India Markets",
-      "last_close": 32169.8008,
+      "last_close": 32818.3516,
       "returns": {
-        "daily": 0.3481,
-        "mtd": -0.2386,
-        "ytd": 4.1932,
-        "r1m": 1.5543,
-        "r3m": 2.6068,
-        "r6m": 5.9943,
-        "r1y": 14.2521,
-        "weekly": 1.5557,
-        "monthly": 1.5543,
-        "annual": 14.2521
+        "daily": 2.016,
+        "mtd": 1.7726,
+        "ytd": 6.2937,
+        "r1m": 2.6038,
+        "r3m": 6.3592,
+        "r6m": 8.7637,
+        "r1y": 16.2016,
+        "weekly": 2.9521,
+        "monthly": 2.6038,
+        "annual": 16.2016
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 2.786,
-        "current_month_positive_rate": 75.0,
+        "current_month_avg_return": 2.9117,
+        "current_month_positive_rate": 81.25,
         "monthly_avg_returns": {
           "Jan": -0.7566,
           "Feb": -1.5373,
           "Mar": -0.1883,
           "Apr": 3.4621,
-          "May": 2.786,
+          "May": 2.9117,
           "Jun": 1.9123,
           "Jul": 1.8031,
           "Aug": 0.7388,
@@ -6072,7 +6072,7 @@
           "Feb": 31.25,
           "Mar": 50.0,
           "Apr": 68.75,
-          "May": 75.0,
+          "May": 81.25,
           "Jun": 66.6667,
           "Jul": 73.3333,
           "Aug": 73.3333,
@@ -6083,7 +6083,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 13.1303,
+        "average": 13.2616,
         "median": 7.1404,
         "best": 51.225,
         "worst": -7.2526,
@@ -6091,7 +6091,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 4.1932,
+        "2026": 6.2937,
         "2025": 6.9875,
         "2024": 15.6419,
         "2023": 22.757,
@@ -6114,7 +6114,7 @@
           "Feb": 5.0523,
           "Mar": -11.3084,
           "Apr": 12.7905,
-          "May": -0.2386
+          "May": 1.7726
         },
         "2025": {
           "Jan": -3.8788,
@@ -6328,41 +6328,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -1.8058,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -35.9773,
-        "peak_date": "2024-10-01",
-        "peak_close": 32761.4004,
-        "days_since_peak": 602,
-        "recovery_needed_pct": 1.839,
+        "peak_date": "2026-05-27",
+        "peak_close": 32818.3516,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
     "^CNXPHARMA": {
       "symbol": "^CNXPHARMA",
       "market_group": "India Markets",
-      "last_close": 24659.1992,
+      "last_close": 24716.0,
       "returns": {
-        "daily": -0.0628,
-        "mtd": 5.042,
-        "ytd": 8.1976,
-        "r1m": 9.2077,
-        "r3m": 9.3925,
-        "r6m": 7.8347,
-        "r1y": 13.9878,
-        "weekly": -0.8372,
-        "monthly": 9.2077,
-        "annual": 13.9878
+        "daily": 0.2303,
+        "mtd": 5.284,
+        "ytd": 8.4468,
+        "r1m": 6.6639,
+        "r3m": 10.1961,
+        "r6m": 8.8156,
+        "r1y": 13.6867,
+        "weekly": -0.5118,
+        "monthly": 6.6639,
+        "annual": 13.6867
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": -1.6372,
+        "current_month_avg_return": -1.622,
         "current_month_positive_rate": 43.75,
         "monthly_avg_returns": {
           "Jan": -0.8565,
           "Feb": -1.2245,
           "Mar": 0.6164,
           "Apr": 4.4773,
-          "May": -1.6372,
+          "May": -1.622,
           "Jun": 3.2344,
           "Jul": 4.0283,
           "Aug": 1.3751,
@@ -6387,15 +6387,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.9224,
-        "median": 8.7944,
+        "average": 12.938,
+        "median": 8.919,
         "best": 60.5038,
         "worst": -14.2978,
         "positive_rate": 56.25,
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 8.1976,
+        "2026": 8.4468,
         "2025": -3.1377,
         "2024": 38.873,
         "2023": 34.103,
@@ -6418,7 +6418,7 @@
           "Feb": 6.5096,
           "Mar": -3.1557,
           "Apr": 5.7065,
-          "May": 5.042
+          "May": 5.284
         },
         "2025": {
           "Jan": -8.6154,
@@ -6632,41 +6632,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.9309,
+        "current_drawdown_pct": -0.7027,
         "max_drawdown_pct": -53.4941,
         "peak_date": "2026-05-21",
         "peak_close": 24890.9004,
-        "days_since_peak": 5,
-        "recovery_needed_pct": 0.9396,
+        "days_since_peak": 6,
+        "recovery_needed_pct": 0.7076,
         "drawdown_bucket": "mild"
       }
     },
     "^CNXPSUBANK": {
       "symbol": "^CNXPSUBANK",
       "market_group": "India Markets",
-      "last_close": 8200.2002,
+      "last_close": 8225.4502,
       "returns": {
-        "daily": -0.4601,
-        "mtd": -3.0228,
-        "ytd": -5.7437,
-        "r1m": -6.9344,
-        "r3m": -14.8089,
-        "r6m": -3.4322,
-        "r1y": 23.7094,
-        "weekly": 3.3239,
-        "monthly": -6.9344,
-        "annual": 23.7094
+        "daily": 0.3079,
+        "mtd": -2.7242,
+        "ytd": -5.4535,
+        "r1m": -7.0959,
+        "r3m": -13.4705,
+        "r6m": -2.976,
+        "r1y": 22.3061,
+        "weekly": 3.1935,
+        "monthly": -7.0959,
+        "annual": 22.3061
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 0.7625,
+        "current_month_avg_return": 0.7811,
         "current_month_positive_rate": 37.5,
         "monthly_avg_returns": {
           "Jan": -0.2648,
           "Feb": -1.7254,
           "Mar": 0.3783,
           "Apr": 1.5103,
-          "May": 0.7625,
+          "May": 0.7811,
           "Jun": 0.0506,
           "Jul": -0.5687,
           "Aug": -3.4288,
@@ -6691,7 +6691,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.8011,
+        "average": 8.8193,
         "median": 8.2888,
         "best": 67.0813,
         "worst": -37.3474,
@@ -6699,7 +6699,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": -5.7437,
+        "2026": -5.4535,
         "2025": 29.3195,
         "2024": 14.0488,
         "2023": 31.3784,
@@ -6722,7 +6722,7 @@
           "Feb": 14.3016,
           "Mar": -18.3197,
           "Apr": 3.8923,
-          "May": -3.0228
+          "May": -2.7242
         },
         "2025": {
           "Jan": -4.2616,
@@ -6936,41 +6936,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -17.0008,
+        "current_drawdown_pct": -16.7452,
         "max_drawdown_pct": -76.428,
         "peak_date": "2026-02-26",
         "peak_close": 9879.8496,
-        "days_since_peak": 89,
-        "recovery_needed_pct": 20.483,
+        "days_since_peak": 90,
+        "recovery_needed_pct": 20.1132,
         "drawdown_bucket": "deep"
       }
     },
     "^CNXREALTY": {
       "symbol": "^CNXREALTY",
       "market_group": "India Markets",
-      "last_close": 782.0,
+      "last_close": 784.55,
       "returns": {
-        "daily": -0.5152,
-        "mtd": -3.7775,
-        "ytd": -12.9951,
-        "r1m": 0.5141,
-        "r3m": -6.8271,
-        "r6m": -17.2793,
-        "r1y": -14.3061,
-        "weekly": 2.5305,
-        "monthly": 0.5141,
-        "annual": -14.3061
+        "daily": 0.3261,
+        "mtd": -3.4638,
+        "ytd": -12.7114,
+        "r1m": -1.5806,
+        "r3m": -4.0716,
+        "r6m": -15.3942,
+        "r1y": -15.9291,
+        "weekly": 2.2815,
+        "monthly": -1.5806,
+        "annual": -15.9291
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 2.1946,
+        "current_month_avg_return": 2.2142,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": -1.5674,
           "Feb": -2.6494,
           "Mar": -0.7236,
           "Apr": 2.5847,
-          "May": 2.1946,
+          "May": 2.2142,
           "Jun": 0.7656,
           "Jul": -0.2031,
           "Aug": -3.0433,
@@ -6995,7 +6995,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 9.4866,
+        "average": 9.5033,
         "median": -5.971,
         "best": 100.9849,
         "worst": -51.6979,
@@ -7003,7 +7003,7 @@
         "years_count": 17
       },
       "annual_returns_by_year": {
-        "2026": -12.9951,
+        "2026": -12.7114,
         "2025": -16.5169,
         "2024": 35.1853,
         "2023": 79.5574,
@@ -7027,7 +7027,7 @@
           "Feb": 0.3342,
           "Mar": -15.2204,
           "Apr": 19.3308,
-          "May": -3.7775
+          "May": -3.4638
         },
         "2025": {
           "Jan": -12.3901,
@@ -7249,41 +7249,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -32.0177,
+        "current_drawdown_pct": -31.7961,
         "max_drawdown_pct": -75.8724,
         "peak_date": "2024-06-18",
         "peak_close": 1150.3,
-        "days_since_peak": 707,
-        "recovery_needed_pct": 47.0972,
+        "days_since_peak": 708,
+        "recovery_needed_pct": 46.6191,
         "drawdown_bucket": "severe"
       }
     },
     "^NSEBANK": {
       "symbol": "^NSEBANK",
       "market_group": "India Markets",
-      "last_close": 55092.8984,
+      "last_close": 54853.8516,
       "returns": {
-        "daily": -0.3631,
-        "mtd": 0.3907,
-        "ytd": -7.7349,
-        "r1m": -1.7772,
-        "r3m": -10.492,
-        "r6m": -6.4625,
-        "r1y": -0.5915,
-        "weekly": 3.1525,
-        "monthly": -1.7772,
-        "annual": -0.5915
+        "daily": -0.4339,
+        "mtd": -0.0449,
+        "ytd": -8.1353,
+        "r1m": -2.5068,
+        "r3m": -9.6901,
+        "r6m": -7.3666,
+        "r1y": -0.0428,
+        "weekly": 2.4115,
+        "monthly": -2.5068,
+        "annual": -0.0428
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 2.5699,
-        "current_month_positive_rate": 57.8947,
+        "current_month_avg_return": 2.547,
+        "current_month_positive_rate": 52.6316,
         "monthly_avg_returns": {
           "Jan": -1.2645,
           "Feb": -1.7915,
           "Mar": -0.2652,
           "Apr": 5.1659,
-          "May": 2.5699,
+          "May": 2.547,
           "Jun": -0.3409,
           "Jul": 1.727,
           "Aug": -0.8367,
@@ -7297,7 +7297,7 @@
           "Feb": 31.5789,
           "Mar": 47.3684,
           "Apr": 68.4211,
-          "May": 57.8947,
+          "May": 52.6316,
           "Jun": 44.4444,
           "Jul": 50.0,
           "Aug": 44.4444,
@@ -7308,7 +7308,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 14.6722,
+        "average": 14.6522,
         "median": 12.7045,
         "best": 73.808,
         "worst": -49.5061,
@@ -7316,7 +7316,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": -7.7349,
+        "2026": -8.1353,
         "2025": 16.6885,
         "2024": 5.444,
         "2023": 11.7796,
@@ -7343,7 +7343,7 @@
           "Feb": 3.2583,
           "Mar": -15.9832,
           "Apr": 6.6371,
-          "May": 0.3907
+          "May": -0.0449
         },
         "2025": {
           "Jan": -2.8856,
@@ -7605,41 +7605,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -10.492,
+        "current_drawdown_pct": -10.8804,
         "max_drawdown_pct": -68.783,
         "peak_date": "2026-02-18",
         "peak_close": 61550.8008,
-        "days_since_peak": 97,
-        "recovery_needed_pct": 11.7218,
+        "days_since_peak": 98,
+        "recovery_needed_pct": 12.2087,
         "drawdown_bucket": "moderate"
       }
     },
     "HDFCSML250.NS": {
       "symbol": "HDFCSML250.NS",
       "market_group": "India Markets",
-      "last_close": 171.75,
+      "last_close": 171.88,
       "returns": {
-        "daily": 0.3799,
-        "mtd": 1.8442,
-        "ytd": 2.519,
-        "r1m": 1.9772,
-        "r3m": 5.3035,
-        "r6m": 0.3271,
-        "r1y": 4.3819,
-        "weekly": 2.4334,
-        "monthly": 1.9772,
-        "annual": 4.3819
+        "daily": 0.0757,
+        "mtd": 1.9213,
+        "ytd": 2.5966,
+        "r1m": 2.0483,
+        "r3m": 6.7644,
+        "r6m": 0.7326,
+        "r1y": 3.6296,
+        "weekly": 2.2,
+        "monthly": 2.0483,
+        "annual": 3.6296
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 3.6793,
+        "current_month_avg_return": 3.6986,
         "current_month_positive_rate": 75.0,
         "monthly_avg_returns": {
           "Jan": -3.3764,
           "Feb": -3.709,
           "Mar": -1.1337,
           "Apr": 6.9638,
-          "May": 3.6793,
+          "May": 3.6986,
           "Jun": 5.9131,
           "Jul": 2.2687,
           "Aug": 1.9935,
@@ -7664,15 +7664,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 17.9359,
-        "median": 14.1812,
+        "average": 17.9553,
+        "median": 14.22,
         "best": 50.3744,
         "worst": -6.9931,
         "positive_rate": 75.0,
         "years_count": 4
       },
       "annual_returns_by_year": {
-        "2026": 2.519,
+        "2026": 2.5966,
         "2025": -6.9931,
         "2024": 25.8435,
         "2023": 50.3744
@@ -7683,7 +7683,7 @@
           "Feb": 2.4163,
           "Mar": -8.3821,
           "Apr": 13.0825,
-          "May": 1.8442
+          "May": 1.9213
         },
         "2025": {
           "Jan": -11.3299,
@@ -7728,41 +7728,41 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.0715,
+        "current_drawdown_pct": -8.0019,
         "max_drawdown_pct": -25.9006,
         "peak_date": "2024-09-16",
         "peak_close": 186.83,
-        "days_since_peak": 617,
-        "recovery_needed_pct": 8.7802,
+        "days_since_peak": 618,
+        "recovery_needed_pct": 8.6979,
         "drawdown_bucket": "moderate"
       }
     },
     "NIFTY_MIDCAP_100.NS": {
       "symbol": "NIFTY_MIDCAP_100.NS",
       "market_group": "India Markets",
-      "last_close": 62298.8984,
+      "last_close": 62558.8516,
       "returns": {
-        "daily": 0.5363,
-        "mtd": 3.5558,
-        "ytd": 1.5204,
-        "r1m": 4.9248,
-        "r3m": 3.5154,
-        "r6m": 1.828,
-        "r1y": 9.1804,
-        "weekly": 2.0925,
-        "monthly": 4.9248,
-        "annual": 9.1804
+        "daily": 0.4173,
+        "mtd": 3.9879,
+        "ytd": 1.944,
+        "r1m": 3.835,
+        "r3m": 5.6244,
+        "r6m": 2.8556,
+        "r1y": 9.5497,
+        "weekly": 2.0148,
+        "monthly": 3.835,
+        "annual": 9.5497
       },
       "seasonality": {
         "current_month": "May",
-        "current_month_avg_return": 1.6784,
+        "current_month_avg_return": 1.6989,
         "current_month_positive_rate": 57.1429,
         "monthly_avg_returns": {
           "Jan": -2.5083,
           "Feb": -1.8604,
           "Mar": 0.2791,
           "Apr": 4.603,
-          "May": 1.6784,
+          "May": 1.6989,
           "Jun": 0.4761,
           "Jul": 2.1427,
           "Aug": 1.2348,
@@ -7787,7 +7787,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 17.9565,
+        "average": 17.9758,
         "median": 12.2136,
         "best": 90.8832,
         "worst": -60.2329,
@@ -7795,7 +7795,7 @@
         "years_count": 22
       },
       "annual_returns_by_year": {
-        "2026": 1.5204,
+        "2026": 1.944,
         "2025": 4.0894,
         "2024": 23.3022,
         "2023": 45.2872,
@@ -7824,7 +7824,7 @@
           "Feb": 2.5109,
           "Mar": -9.5058,
           "Apr": 11.0847,
-          "May": 3.5558
+          "May": 3.9879
         },
         "2025": {
           "Jan": -7.5652,
@@ -8116,8 +8116,8 @@
       "drawdown": {
         "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -69.5768,
-        "peak_date": "2026-05-26",
-        "peak_close": 62298.8984,
+        "peak_date": "2026-05-27",
+        "peak_close": 62558.8516,
         "days_since_peak": 0,
         "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T14:13:27+00:00",
+  "generated_at": "2026-06-05T07:51:49+00:00",
   "price_source": "close",
   "items": {
     "^NSEI": {
@@ -8158,30 +8158,30 @@
     "XQQ.TO": {
       "symbol": "XQQ.TO",
       "market_group": "US Markets",
-      "last_close": 74.63,
+      "last_close": 74.23,
       "returns": {
-        "daily": -0.2673,
-        "mtd": 0.2014,
-        "ytd": 20.1191,
-        "r1m": 10.5793,
-        "r3m": 20.9955,
-        "r6m": 16.39,
-        "r1y": 36.2227,
-        "weekly": 1.9954,
-        "monthly": 10.5793,
-        "annual": 36.2227
+        "daily": -0.536,
+        "mtd": -0.3357,
+        "ytd": 19.4753,
+        "r1m": 8.6187,
+        "r3m": 20.7581,
+        "r6m": 14.8868,
+        "r1y": 34.3641,
+        "weekly": 0.6236,
+        "monthly": 8.6187,
+        "annual": 34.3641
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 1.476,
-        "current_month_positive_rate": 56.25,
+        "current_month_avg_return": 1.4424,
+        "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": 2.0599,
           "Feb": 0.2715,
           "Mar": -0.0625,
           "Apr": 1.831,
           "May": 2.4567,
-          "Jun": 1.476,
+          "Jun": 1.4424,
           "Jul": 3.267,
           "Aug": 1.2768,
           "Sep": -0.6339,
@@ -8195,7 +8195,7 @@
           "Mar": 46.6667,
           "Apr": 66.6667,
           "May": 68.75,
-          "Jun": 56.25,
+          "Jun": 50.0,
           "Jul": 80.0,
           "Aug": 60.0,
           "Sep": 53.3333,
@@ -8205,15 +8205,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 17.7257,
-        "median": 19.5656,
+        "average": 17.6855,
+        "median": 19.2437,
         "best": 52.8518,
         "worst": -33.8178,
         "positive_rate": 81.25,
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 20.1191,
+        "2026": 19.4753,
         "2025": 15.7288,
         "2024": 25.969,
         "2023": 52.8518,
@@ -8237,7 +8237,7 @@
           "Mar": -5.1449,
           "Apr": 13.6842,
           "May": 9.5576,
-          "Jun": 0.2014
+          "Jun": -0.3357
         },
         "2025": {
           "Jan": 2.2226,
@@ -8447,34 +8447,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.2673,
+        "current_drawdown_pct": -0.8018,
         "max_drawdown_pct": -38.6944,
         "peak_date": "2026-06-02",
         "peak_close": 74.83,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 0.268,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 0.8083,
         "drawdown_bucket": "mild"
       }
     },
     "^GSPC": {
       "symbol": "^GSPC",
       "market_group": "US Markets",
-      "last_close": 7553.6802,
+      "last_close": 7584.3101,
       "returns": {
-        "daily": -0.7372,
-        "mtd": -0.6089,
-        "ytd": 10.1365,
-        "r1m": 4.9013,
-        "r3m": 9.9597,
-        "r6m": 10.8776,
-        "r1y": 27.2533,
-        "weekly": 0.4431,
-        "monthly": 4.9013,
-        "annual": 27.2533
+        "daily": 0.4055,
+        "mtd": -0.2059,
+        "ytd": 10.5831,
+        "r1m": 4.4783,
+        "r3m": 11.0325,
+        "r6m": 11.0543,
+        "r1y": 27.0325,
+        "weekly": 0.2734,
+        "monthly": 4.4783,
+        "annual": 27.0325
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.7575,
+        "current_month_avg_return": 0.7616,
         "current_month_positive_rate": 51.5152,
         "monthly_avg_returns": {
           "Jan": 1.1468,
@@ -8482,7 +8482,7 @@
           "Mar": 0.246,
           "Apr": 1.1715,
           "May": -0.0659,
-          "Jun": 0.7575,
+          "Jun": 0.7616,
           "Jul": 1.2726,
           "Aug": 0.5865,
           "Sep": -1.0198,
@@ -8506,7 +8506,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.9448,
+        "average": 7.9492,
         "median": 11.1197,
         "best": 45.9737,
         "worst": -48.7697,
@@ -8514,7 +8514,7 @@
         "years_count": 100
       },
       "annual_returns_by_year": {
-        "2026": 10.1365,
+        "2026": 10.5831,
         "2025": 16.6472,
         "2024": 24.011,
         "2023": 24.7295,
@@ -8622,7 +8622,7 @@
           "Mar": -5.1311,
           "Apr": 9.6374,
           "May": 4.84,
-          "Jun": -0.6089
+          "Jun": -0.2059
         },
         "2025": {
           "Jan": 2.9305,
@@ -10001,34 +10001,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.7372,
+        "current_drawdown_pct": -0.3347,
         "max_drawdown_pct": -86.1896,
         "peak_date": "2026-06-02",
         "peak_close": 7609.7798,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 0.7427,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 0.3358,
         "drawdown_bucket": "mild"
       }
     },
     "EQL.TO": {
       "symbol": "EQL.TO",
       "market_group": "US Markets",
-      "last_close": 44.09,
+      "last_close": 44.47,
       "returns": {
-        "daily": 0.0227,
-        "mtd": 0.4099,
-        "ytd": 9.7312,
-        "r1m": 5.9601,
-        "r3m": 4.9262,
-        "r6m": 9.0257,
-        "r1y": 20.0708,
-        "weekly": 1.2865,
-        "monthly": 5.9601,
-        "annual": 20.0708
+        "daily": 0.8619,
+        "mtd": 1.2753,
+        "ytd": 10.677,
+        "r1m": 5.881,
+        "r3m": 6.822,
+        "r6m": 10.1288,
+        "r1y": 19.8652,
+        "weekly": 2.1125,
+        "monthly": 5.881,
+        "annual": 19.8652
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.5161,
+        "current_month_avg_return": 0.6122,
         "current_month_positive_rate": 66.6667,
         "monthly_avg_returns": {
           "Jan": 1.6401,
@@ -10036,7 +10036,7 @@
           "Mar": -2.249,
           "Apr": 1.8454,
           "May": 0.5741,
-          "Jun": 0.5161,
+          "Jun": 0.6122,
           "Jul": 2.9816,
           "Aug": 0.8784,
           "Sep": -1.3045,
@@ -10060,7 +10060,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 9.0874,
+        "average": 9.1925,
         "median": 8.4157,
         "best": 28.888,
         "worst": -8.8729,
@@ -10068,7 +10068,7 @@
         "years_count": 9
       },
       "annual_returns_by_year": {
-        "2026": 9.7312,
+        "2026": 10.677,
         "2025": 4.5836,
         "2024": 19.5435,
         "2023": 8.4157,
@@ -10085,7 +10085,7 @@
           "Mar": -4.6386,
           "Apr": 3.2767,
           "May": 4.4466,
-          "Jun": 0.4099
+          "Jun": 1.2753
         },
         "2025": {
           "Jan": 4.6883,
@@ -10196,12 +10196,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.4516,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -33.0843,
-        "peak_date": "2026-05-25",
-        "peak_close": 44.29,
-        "days_since_peak": 9,
-        "recovery_needed_pct": 0.4536,
+        "peak_date": "2026-06-04",
+        "peak_close": 44.47,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
@@ -10312,22 +10312,22 @@
     "FCUQ.TO": {
       "symbol": "FCUQ.TO",
       "market_group": "US Markets",
-      "last_close": 73.52,
+      "last_close": 73.72,
       "returns": {
-        "daily": -0.4671,
-        "mtd": -0.3794,
-        "ytd": 7.943,
-        "r1m": 8.677,
-        "r3m": 8.3088,
-        "r6m": 3.6861,
-        "r1y": 14.0727,
-        "weekly": 1.8141,
-        "monthly": 8.677,
-        "annual": 14.0727
+        "daily": 0.272,
+        "mtd": -0.1084,
+        "ytd": 8.2367,
+        "r1m": 7.9277,
+        "r3m": 9.021,
+        "r6m": 3.8638,
+        "r1y": 13.4865,
+        "weekly": 1.8091,
+        "monthly": 7.9277,
+        "annual": 13.4865
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 2.0572,
+        "current_month_avg_return": 2.0911,
         "current_month_positive_rate": 75.0,
         "monthly_avg_returns": {
           "Jan": 0.6027,
@@ -10335,7 +10335,7 @@
           "Mar": -1.3097,
           "Apr": 1.5334,
           "May": 1.4093,
-          "Jun": 2.0572,
+          "Jun": 2.0911,
           "Jul": 3.6364,
           "Aug": 1.0683,
           "Sep": -1.3141,
@@ -10359,7 +10359,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 14.8041,
+        "average": 14.8409,
         "median": 16.1757,
         "best": 31.9483,
         "worst": -12.5558,
@@ -10367,7 +10367,7 @@
         "years_count": 8
       },
       "annual_returns_by_year": {
-        "2026": 7.943,
+        "2026": 8.2367,
         "2025": 3.6674,
         "2024": 31.9223,
         "2023": 19.5068,
@@ -10383,7 +10383,7 @@
           "Mar": -6.1364,
           "Apr": 4.9777,
           "May": 6.9334,
-          "Jun": -0.3794
+          "Jun": -0.1084
         },
         "2025": {
           "Jan": 2.5982,
@@ -10485,34 +10485,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.4671,
+        "current_drawdown_pct": -0.1963,
         "max_drawdown_pct": -25.3603,
         "peak_date": "2026-06-02",
         "peak_close": 73.865,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 0.4693,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 0.1967,
         "drawdown_bucket": "mild"
       }
     },
     "FCUV.TO": {
       "symbol": "FCUV.TO",
       "market_group": "US Markets",
-      "last_close": 27.08,
+      "last_close": 27.015,
       "returns": {
-        "daily": 0.3335,
-        "mtd": -1.1679,
-        "ytd": 13.686,
-        "r1m": 8.5806,
-        "r3m": 11.6241,
-        "r6m": 12.5509,
-        "r1y": 34.2499,
-        "weekly": 2.0731,
-        "monthly": 8.5806,
-        "annual": 34.2499
+        "daily": -0.24,
+        "mtd": -1.4051,
+        "ytd": 13.4131,
+        "r1m": 7.3088,
+        "r3m": 11.8634,
+        "r6m": 12.5236,
+        "r1y": 32.7319,
+        "weekly": 1.5983,
+        "monthly": 7.3088,
+        "annual": 32.7319
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.5038,
+        "current_month_avg_return": -0.5377,
         "current_month_positive_rate": 57.1429,
         "monthly_avg_returns": {
           "Jan": 2.4893,
@@ -10520,7 +10520,7 @@
           "Mar": 0.9329,
           "Apr": -0.8032,
           "May": 2.374,
-          "Jun": -0.5038,
+          "Jun": -0.5377,
           "Jul": 2.8554,
           "Aug": 2.5596,
           "Sep": -0.7729,
@@ -10544,15 +10544,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 17.4018,
-        "median": 13.686,
+        "average": 17.3628,
+        "median": 13.5791,
         "best": 36.4324,
         "worst": -2.4749,
         "positive_rate": 85.7143,
         "years_count": 7
       },
       "annual_returns_by_year": {
-        "2026": 13.686,
+        "2026": 13.4131,
         "2025": 13.5791,
         "2024": 33.7567,
         "2023": 17.3228,
@@ -10567,7 +10567,7 @@
           "Mar": -2.3389,
           "Apr": 4.5075,
           "May": 6.4992,
-          "Jun": -1.1679
+          "Jun": -1.4051
         },
         "2025": {
           "Jan": 6.0561,
@@ -10650,34 +10650,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -1.1679,
+        "current_drawdown_pct": -1.4051,
         "max_drawdown_pct": -16.7292,
         "peak_date": "2026-06-01",
         "peak_close": 27.4,
-        "days_since_peak": 2,
-        "recovery_needed_pct": 1.1817,
+        "days_since_peak": 3,
+        "recovery_needed_pct": 1.4251,
         "drawdown_bucket": "mild"
       }
     },
     "JGRO.TO": {
       "symbol": "JGRO.TO",
       "market_group": "US Markets",
-      "last_close": 31.53,
+      "last_close": 31.57,
       "returns": {
-        "daily": 0.7027,
-        "mtd": 0.7027,
-        "ytd": 6.9539,
-        "r1m": 7.5009,
-        "r3m": 9.2894,
-        "r6m": 7.2449,
+        "daily": 0.1269,
+        "mtd": 0.8304,
+        "ytd": 7.0896,
+        "r1m": 8.0424,
+        "r3m": 12.9921,
+        "r6m": 7.9316,
         "r1y": null,
-        "weekly": 1.5459,
-        "monthly": 7.5009,
+        "weekly": 1.6747,
+        "monthly": 8.0424,
         "annual": null
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 2.6364,
+        "current_month_avg_return": 2.7003,
         "current_month_positive_rate": 100.0,
         "monthly_avg_returns": {
           "Jan": -3.3921,
@@ -10685,7 +10685,7 @@
           "Mar": -4.0424,
           "Apr": 0.161,
           "May": 3.8046,
-          "Jun": 2.6364,
+          "Jun": 2.7003,
           "Jul": 5.5185,
           "Aug": 2.0349,
           "Sep": 6.9261,
@@ -10709,15 +10709,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 10.7398,
-        "median": 10.7398,
+        "average": 10.8076,
+        "median": 10.8076,
         "best": 14.5256,
-        "worst": 6.9539,
+        "worst": 7.0896,
         "positive_rate": 100.0,
         "years_count": 2
       },
       "annual_returns_by_year": {
-        "2026": 6.9539,
+        "2026": 7.0896,
         "2025": 14.5256
       },
       "monthly_returns_by_year": {
@@ -10727,7 +10727,7 @@
           "Mar": -3.0477,
           "Apr": 6.4445,
           "May": 5.956,
-          "Jun": 0.7027
+          "Jun": 0.8304
         },
         "2025": {
           "Mar": -5.0371,
@@ -10745,8 +10745,8 @@
       "drawdown": {
         "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -17.7665,
-        "peak_date": "2026-06-03",
-        "peak_close": 31.53,
+        "peak_date": "2026-06-04",
+        "peak_close": 31.57,
         "days_since_peak": 0,
         "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
@@ -10755,22 +10755,22 @@
     "XSUS.TO": {
       "symbol": "XSUS.TO",
       "market_group": "US Markets",
-      "last_close": 55.54,
+      "last_close": 55.76,
       "returns": {
-        "daily": -0.2335,
-        "mtd": 0.036,
-        "ytd": 12.0662,
-        "r1m": 7.8866,
-        "r3m": 12.8862,
-        "r6m": 8.6532,
-        "r1y": 27.2994,
-        "weekly": 1.3874,
-        "monthly": 7.8866,
-        "annual": 27.2994
+        "daily": 0.3961,
+        "mtd": 0.4323,
+        "ytd": 12.5101,
+        "r1m": 7.2514,
+        "r3m": 13.9122,
+        "r6m": 8.9538,
+        "r1y": 26.8443,
+        "weekly": 1.5295,
+        "monthly": 7.2514,
+        "annual": 26.8443
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 1.7341,
+        "current_month_avg_return": 1.7836,
         "current_month_positive_rate": 87.5,
         "monthly_avg_returns": {
           "Jan": 1.3741,
@@ -10778,7 +10778,7 @@
           "Mar": -1.3884,
           "Apr": 2.1181,
           "May": 1.3469,
-          "Jun": 1.7341,
+          "Jun": 1.7836,
           "Jul": 3.4852,
           "Aug": 0.8784,
           "Sep": -0.3932,
@@ -10802,7 +10802,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 14.0105,
+        "average": 14.066,
         "median": 15.0255,
         "best": 31.1436,
         "worst": -16.3604,
@@ -10810,7 +10810,7 @@
         "years_count": 8
       },
       "annual_returns_by_year": {
-        "2026": 12.0662,
+        "2026": 12.5101,
         "2025": 8.6927,
         "2024": 31.1436,
         "2023": 20.4324,
@@ -10826,7 +10826,7 @@
           "Mar": -3.604,
           "Apr": 7.2993,
           "May": 6.3529,
-          "Jun": 0.036
+          "Jun": 0.4323
         },
         "2025": {
           "Jan": 3.8805,
@@ -10926,34 +10926,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.2335,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -28.323,
-        "peak_date": "2026-06-02",
-        "peak_close": 55.67,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 0.2341,
+        "peak_date": "2026-06-04",
+        "peak_close": 55.76,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
     "ZLU.TO": {
       "symbol": "ZLU.TO",
       "market_group": "US Markets",
-      "last_close": 62.34,
+      "last_close": 62.93,
       "returns": {
-        "daily": -0.1442,
-        "mtd": 0.4512,
-        "ytd": 8.8718,
-        "r1m": 4.1778,
-        "r3m": -1.2357,
-        "r6m": 1.6021,
-        "r1y": 8.2111,
-        "weekly": -0.5742,
-        "monthly": 4.1778,
-        "annual": 8.2111
+        "daily": 0.9464,
+        "mtd": 1.4019,
+        "ytd": 9.9022,
+        "r1m": 4.7088,
+        "r3m": 0.8817,
+        "r6m": 3.4259,
+        "r1y": 9.018,
+        "weekly": 0.9626,
+        "monthly": 4.7088,
+        "annual": 9.018
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.1422,
+        "current_month_avg_return": -0.0743,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": 1.8388,
@@ -10961,7 +10961,7 @@
           "Mar": 0.0885,
           "Apr": 0.4558,
           "May": 0.7694,
-          "Jun": -0.1422,
+          "Jun": -0.0743,
           "Jul": 2.6078,
           "Aug": 0.199,
           "Sep": -0.806,
@@ -10985,15 +10985,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.0065,
-        "median": 7.8803,
+        "average": 11.0801,
+        "median": 8.3955,
         "best": 36.3427,
         "worst": -6.5067,
         "positive_rate": 92.8571,
         "years_count": 14
       },
       "annual_returns_by_year": {
-        "2026": 8.8718,
+        "2026": 9.9022,
         "2025": 0.2668,
         "2024": 16.7804,
         "2023": -6.5067,
@@ -11015,7 +11015,7 @@
           "Mar": -4.5526,
           "Apr": -1.8791,
           "May": 3.9206,
-          "Jun": 0.4512
+          "Jun": 1.4019
         },
         "2025": {
           "Jan": 3.8947,
@@ -11198,34 +11198,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -2.4718,
+        "current_drawdown_pct": -1.5488,
         "max_drawdown_pct": -25.486,
         "peak_date": "2026-03-02",
         "peak_close": 63.92,
-        "days_since_peak": 93,
-        "recovery_needed_pct": 2.5345,
+        "days_since_peak": 94,
+        "recovery_needed_pct": 1.5732,
         "drawdown_bucket": "mild"
       }
     },
     "UUP": {
       "symbol": "UUP",
       "market_group": "US Markets",
-      "last_close": 27.86,
+      "last_close": 27.84,
       "returns": {
-        "daily": 0.3602,
-        "mtd": 0.3602,
-        "ytd": 2.7665,
-        "r1m": 1.3828,
-        "r3m": 1.6417,
-        "r6m": -1.2057,
-        "r1y": 2.201,
-        "weekly": 0.3964,
-        "monthly": 1.3828,
-        "annual": 2.201
+        "daily": -0.0718,
+        "mtd": 0.2882,
+        "ytd": 2.6927,
+        "r1m": 1.2364,
+        "r3m": 1.31,
+        "r6m": -1.2416,
+        "r1y": 1.4577,
+        "weekly": 0.5054,
+        "monthly": 1.2364,
+        "annual": 1.4577
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.1267,
+        "current_month_avg_return": -0.1303,
         "current_month_positive_rate": 45.0,
         "monthly_avg_returns": {
           "Jan": 0.0272,
@@ -11233,7 +11233,7 @@
           "Mar": -0.236,
           "Apr": -0.699,
           "May": 0.6844,
-          "Jun": -0.1267,
+          "Jun": -0.1303,
           "Jul": -0.3641,
           "Aug": 0.4355,
           "Sep": 0.2265,
@@ -11257,7 +11257,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 0.4235,
+        "average": 0.4199,
         "median": 0.1854,
         "best": 10.7159,
         "worst": -10.0,
@@ -11265,7 +11265,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": 2.7665,
+        "2026": 2.6927,
         "2025": -8.8979,
         "2024": 7.6867,
         "2023": -3.6286,
@@ -11293,7 +11293,7 @@
           "Mar": 1.6465,
           "Apr": -1.3343,
           "May": 0.9121,
-          "Jun": 0.3602
+          "Jun": 0.2882
         },
         "2025": {
           "Jan": -0.5393,
@@ -11561,34 +11561,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.162,
+        "current_drawdown_pct": -9.2273,
         "max_drawdown_pct": -22.7105,
         "peak_date": "2022-09-27",
         "peak_close": 30.67,
-        "days_since_peak": 1345,
-        "recovery_needed_pct": 10.0861,
+        "days_since_peak": 1346,
+        "recovery_needed_pct": 10.1652,
         "drawdown_bucket": "moderate"
       }
     },
     "SOXX": {
       "symbol": "SOXX",
       "market_group": "US Markets",
-      "last_close": 615.68,
+      "last_close": 602.72,
       "returns": {
-        "daily": 1.7619,
-        "mtd": 7.6495,
-        "ytd": 96.2702,
-        "r1m": 33.2468,
-        "r3m": 80.2658,
-        "r6m": 107.3555,
-        "r1y": 195.9573,
-        "weekly": 9.167,
-        "monthly": 33.2468,
-        "annual": 195.9573
+        "daily": -2.105,
+        "mtd": 5.3835,
+        "ytd": 92.1387,
+        "r1m": 24.8565,
+        "r3m": 78.4462,
+        "r6m": 99.0226,
+        "r1y": 182.1459,
+        "weekly": 5.8388,
+        "monthly": 24.8565,
+        "annual": 182.1459
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.8051,
+        "current_month_avg_return": -0.8958,
         "current_month_positive_rate": 40.0,
         "monthly_avg_returns": {
           "Jan": 0.3313,
@@ -11596,7 +11596,7 @@
           "Mar": 0.249,
           "Apr": 1.2644,
           "May": 4.6651,
-          "Jun": -0.8051,
+          "Jun": -0.8958,
           "Jul": 1.8876,
           "Aug": -0.0436,
           "Sep": -1.7138,
@@ -11620,15 +11620,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 18.653,
+        "average": 18.4941,
         "median": 15.8315,
-        "best": 96.2702,
+        "best": 92.1387,
         "worst": -50.9339,
         "positive_rate": 61.5385,
         "years_count": 26
       },
       "annual_returns_by_year": {
-        "2026": 96.2702,
+        "2026": 92.1387,
         "2025": 38.894,
         "2024": 16.4077,
         "2023": 67.1842,
@@ -11662,7 +11662,7 @@
           "Mar": -6.6439,
           "Apr": 36.3029,
           "May": 22.1857,
-          "Jun": 7.6495
+          "Jun": 5.3835
         },
         "2025": {
           "Jan": 0.6042,
@@ -12010,34 +12010,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": 0.0,
+        "current_drawdown_pct": -2.105,
         "max_drawdown_pct": -70.4984,
         "peak_date": "2026-06-03",
         "peak_close": 615.68,
-        "days_since_peak": 0,
-        "recovery_needed_pct": 0.0,
+        "days_since_peak": 1,
+        "recovery_needed_pct": 2.1503,
         "drawdown_bucket": "mild"
       }
     },
     "XLB": {
       "symbol": "XLB",
       "market_group": "US Markets",
-      "last_close": 51.63,
+      "last_close": 51.62,
       "returns": {
-        "daily": 0.2135,
-        "mtd": 1.3943,
-        "ytd": 11.9471,
-        "r1m": 1.9348,
-        "r3m": -0.5585,
-        "r6m": 15.7883,
-        "r1y": 18.8947,
-        "weekly": 0.8793,
-        "monthly": 1.9348,
-        "annual": 18.8947
+        "daily": -0.0194,
+        "mtd": 1.3747,
+        "ytd": 11.9254,
+        "r1m": 0.1747,
+        "r3m": 1.5542,
+        "r6m": 16.827,
+        "r1y": 17.6658,
+        "weekly": 0.5062,
+        "monthly": 0.1747,
+        "annual": 17.6658
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.4817,
+        "current_month_avg_return": -1.4824,
         "current_month_positive_rate": 39.2857,
         "monthly_avg_returns": {
           "Jan": -1.122,
@@ -12045,7 +12045,7 @@
           "Mar": 0.8515,
           "Apr": 2.3426,
           "May": 0.2031,
-          "Jun": -1.4817,
+          "Jun": -1.4824,
           "Jul": 1.2272,
           "Aug": -0.0309,
           "Sep": -2.7455,
@@ -12069,7 +12069,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.0727,
+        "average": 7.072,
         "median": 10.232,
         "best": 39.9661,
         "worst": -44.9395,
@@ -12077,7 +12077,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 11.9471,
+        "2026": 11.9254,
         "2025": 9.0013,
         "2024": -1.4639,
         "2023": 10.232,
@@ -12114,7 +12114,7 @@
           "Mar": -6.1596,
           "Apr": 2.0016,
           "May": -0.3895,
-          "Jun": 1.3943
+          "Jun": 1.3747
         },
         "2025": {
           "Jan": 6.7059,
@@ -12499,34 +12499,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -3.7113,
+        "current_drawdown_pct": -3.73,
         "max_drawdown_pct": -60.7213,
         "peak_date": "2026-02-11",
         "peak_close": 53.62,
-        "days_since_peak": 112,
-        "recovery_needed_pct": 3.8543,
+        "days_since_peak": 113,
+        "recovery_needed_pct": 3.8745,
         "drawdown_bucket": "mild"
       }
     },
     "XLC": {
       "symbol": "XLC",
       "market_group": "US Markets",
-      "last_close": 112.08,
+      "last_close": 113.11,
       "returns": {
-        "daily": -1.312,
-        "mtd": -3.0534,
-        "ytd": -4.1232,
-        "r1m": -3.4625,
-        "r3m": -5.6486,
-        "r6m": -2.4118,
-        "r1y": 9.9902,
-        "weekly": -3.5954,
-        "monthly": -3.4625,
-        "annual": 9.9902
+        "daily": 0.919,
+        "mtd": -2.1624,
+        "ytd": -3.2421,
+        "r1m": -2.1794,
+        "r3m": -4.5002,
+        "r6m": -1.8398,
+        "r1y": 11.3178,
+        "weekly": -3.0513,
+        "monthly": -2.1794,
+        "annual": 11.3178
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.9981,
+        "current_month_avg_return": 1.0971,
         "current_month_positive_rate": 55.5556,
         "monthly_avg_returns": {
           "Jan": 3.8843,
@@ -12534,7 +12534,7 @@
           "Mar": -1.5308,
           "Apr": 1.8567,
           "May": 2.3543,
-          "Jun": 0.9981,
+          "Jun": 1.0971,
           "Jul": 1.7467,
           "Aug": 1.7898,
           "Sep": -1.877,
@@ -12558,7 +12558,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.6396,
+        "average": 12.7375,
         "median": 21.0115,
         "best": 49.4754,
         "worst": -38.6474,
@@ -12566,7 +12566,7 @@
         "years_count": 9
       },
       "annual_returns_by_year": {
-        "2026": -4.1232,
+        "2026": -3.2421,
         "2025": 21.0115,
         "2024": 33.9931,
         "2023": 49.4754,
@@ -12583,7 +12583,7 @@
           "Mar": -5.9472,
           "Apr": 4.7375,
           "May": -0.8825,
-          "Jun": -3.0534
+          "Jun": -2.1624
         },
         "2025": {
           "Jan": 5.2426,
@@ -12694,34 +12694,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -6.6622,
+        "current_drawdown_pct": -5.8045,
         "max_drawdown_pct": -47.2284,
         "peak_date": "2026-01-30",
         "peak_close": 120.08,
-        "days_since_peak": 124,
-        "recovery_needed_pct": 7.1378,
+        "days_since_peak": 125,
+        "recovery_needed_pct": 6.1621,
         "drawdown_bucket": "moderate"
       }
     },
     "XLE": {
       "symbol": "XLE",
       "market_group": "US Markets",
-      "last_close": 58.71,
+      "last_close": 58.75,
       "returns": {
-        "daily": 1.294,
-        "mtd": 2.4607,
-        "ytd": 28.609,
-        "r1m": -1.145,
-        "r3m": 4.4848,
-        "r6m": 28.5808,
-        "r1y": 42.155,
-        "weekly": 3.0181,
-        "monthly": -1.145,
-        "annual": 42.155
+        "daily": 0.0681,
+        "mtd": 2.5305,
+        "ytd": 28.6966,
+        "r1m": -1.1775,
+        "r3m": 4.0191,
+        "r6m": 30.3528,
+        "r1y": 40.5839,
+        "weekly": 3.1607,
+        "monthly": -1.1775,
+        "annual": 40.5839
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.578,
+        "current_month_avg_return": -0.5755,
         "current_month_positive_rate": 53.5714,
         "monthly_avg_returns": {
           "Jan": 0.4146,
@@ -12729,7 +12729,7 @@
           "Mar": 1.1633,
           "Apr": 2.9029,
           "May": 0.3237,
-          "Jun": -0.578,
+          "Jun": -0.5755,
           "Jul": -0.2585,
           "Aug": 0.2203,
           "Sep": -1.1657,
@@ -12753,7 +12753,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.8294,
+        "average": 7.8325,
         "median": 3.1849,
         "best": 52.8661,
         "worst": -39.9119,
@@ -12761,7 +12761,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 28.609,
+        "2026": 28.6966,
         "2025": 3.1849,
         "2024": 1.0857,
         "2023": -0.6635,
@@ -12798,7 +12798,7 @@
           "Mar": 7.3983,
           "Apr": 1.1531,
           "May": -4.35,
-          "Jun": 2.4607
+          "Jun": 2.5305
         },
         "2025": {
           "Jan": 1.1309,
@@ -13183,42 +13183,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -6.1541,
+        "current_drawdown_pct": -6.0902,
         "max_drawdown_pct": -76.7302,
         "peak_date": "2026-03-27",
         "peak_close": 62.56,
-        "days_since_peak": 68,
-        "recovery_needed_pct": 6.5577,
+        "days_since_peak": 69,
+        "recovery_needed_pct": 6.4851,
         "drawdown_bucket": "moderate"
       }
     },
     "XLF": {
       "symbol": "XLF",
       "market_group": "US Markets",
-      "last_close": 50.87,
+      "last_close": 52.19,
       "returns": {
-        "daily": -1.1465,
-        "mtd": -1.0889,
-        "ytd": -7.3912,
-        "r1m": -1.3765,
-        "r3m": -1.2233,
-        "r6m": -3.8192,
-        "r1y": -0.2158,
-        "weekly": -1.0696,
-        "monthly": -1.3765,
-        "annual": -0.2158
+        "daily": 2.5948,
+        "mtd": 1.4777,
+        "ytd": -4.9882,
+        "r1m": 1.163,
+        "r3m": 1.8739,
+        "r6m": -1.2301,
+        "r1y": 2.1731,
+        "weekly": 1.7944,
+        "monthly": 1.163,
+        "annual": 2.1731
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.3534,
-        "current_month_positive_rate": 32.1429,
+        "current_month_avg_return": -1.2617,
+        "current_month_positive_rate": 35.7143,
         "monthly_avg_returns": {
           "Jan": -0.4821,
           "Feb": -1.4229,
           "Mar": 0.3283,
           "Apr": 2.1515,
           "May": 0.2631,
-          "Jun": -1.3534,
+          "Jun": -1.2617,
           "Jul": 1.3786,
           "Aug": 0.3741,
           "Sep": -1.2681,
@@ -13232,7 +13232,7 @@
           "Mar": 42.8571,
           "Apr": 60.7143,
           "May": 57.1429,
-          "Jun": 32.1429,
+          "Jun": 35.7143,
           "Jul": 62.963,
           "Aug": 55.5556,
           "Sep": 40.7407,
@@ -13242,7 +13242,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 5.4428,
+        "average": 5.5257,
         "median": 8.6864,
         "best": 34.2847,
         "worst": -55.8533,
@@ -13250,7 +13250,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": -7.3912,
+        "2026": -4.9882,
         "2025": 13.6071,
         "2024": 27.9926,
         "2023": 9.5571,
@@ -13287,7 +13287,7 @@
           "Mar": -3.7622,
           "Apr": 5.4409,
           "May": -0.6548,
-          "Jun": -1.0889
+          "Jun": 1.4777
         },
         "2025": {
           "Jan": 6.7621,
@@ -13672,34 +13672,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -9.805,
+        "current_drawdown_pct": -7.4645,
         "max_drawdown_pct": -83.7454,
         "peak_date": "2026-01-06",
         "peak_close": 56.4,
-        "days_since_peak": 148,
-        "recovery_needed_pct": 10.8709,
+        "days_since_peak": 149,
+        "recovery_needed_pct": 8.0667,
         "drawdown_bucket": "moderate"
       }
     },
     "XLI": {
       "symbol": "XLI",
       "market_group": "US Markets",
-      "last_close": 174.05,
+      "last_close": 176.16,
       "returns": {
-        "daily": -0.0804,
-        "mtd": 0.9571,
-        "ytd": 10.1722,
-        "r1m": 1.7955,
-        "r3m": -1.0911,
-        "r6m": 14.93,
-        "r1y": 22.0205,
-        "weekly": -0.1434,
-        "monthly": 1.7955,
-        "annual": 22.0205
+        "daily": 1.2123,
+        "mtd": 2.181,
+        "ytd": 11.5078,
+        "r1m": 2.175,
+        "r3m": 2.3829,
+        "r6m": 15.3182,
+        "r1y": 22.5546,
+        "weekly": 1.3579,
+        "monthly": 2.175,
+        "annual": 22.5546
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.753,
+        "current_month_avg_return": -0.7093,
         "current_month_positive_rate": 42.8571,
         "monthly_avg_returns": {
           "Jan": -0.4851,
@@ -13707,7 +13707,7 @@
           "Mar": 0.5485,
           "Apr": 2.4936,
           "May": 0.4176,
-          "Jun": -0.753,
+          "Jun": -0.7093,
           "Jul": 1.4526,
           "Aug": 0.4043,
           "Sep": -1.2844,
@@ -13731,15 +13731,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.5014,
-        "median": 10.6861,
+        "average": 8.5475,
+        "median": 11.1553,
         "best": 34.656,
         "worst": -39.1846,
         "positive_rate": 75.8621,
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 10.1722,
+        "2026": 11.5078,
         "2025": 18.1417,
         "2024": 16.7671,
         "2023": 15.82,
@@ -13776,7 +13776,7 @@
           "Mar": -9.5975,
           "Apr": 6.1728,
           "May": 0.0983,
-          "Jun": 0.9571
+          "Jun": 2.181
         },
         "2025": {
           "Jan": 5.3694,
@@ -14161,42 +14161,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -2.711,
+        "current_drawdown_pct": -1.5316,
         "max_drawdown_pct": -63.3413,
         "peak_date": "2026-03-02",
         "peak_close": 178.9,
-        "days_since_peak": 93,
-        "recovery_needed_pct": 2.7866,
+        "days_since_peak": 94,
+        "recovery_needed_pct": 1.5554,
         "drawdown_bucket": "mild"
       }
     },
     "XLK": {
       "symbol": "XLK",
       "market_group": "US Markets",
-      "last_close": 196.23,
+      "last_close": 193.17,
       "returns": {
-        "daily": -0.9989,
-        "mtd": 0.2401,
-        "ytd": 35.9875,
-        "r1m": 21.0923,
-        "r3m": 40.3247,
-        "r6m": 37.056,
-        "r1y": 68.4739,
-        "weekly": 6.3981,
-        "monthly": 21.0923,
-        "annual": 68.4739
+        "daily": -1.5594,
+        "mtd": -1.323,
+        "ytd": 33.8669,
+        "r1m": 16.6274,
+        "r3m": 37.8014,
+        "r6m": 33.543,
+        "r1y": 63.3918,
+        "weekly": 3.3824,
+        "monthly": 16.6274,
+        "annual": 63.3918
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.7421,
-        "current_month_positive_rate": 53.5714,
+        "current_month_avg_return": 0.6863,
+        "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": 0.6312,
           "Feb": -1.5646,
           "Mar": 0.5044,
           "Apr": 1.7314,
           "May": 1.6124,
-          "Jun": 0.7421,
+          "Jun": 0.6863,
           "Jul": 1.4366,
           "Aug": 0.9397,
           "Sep": -1.8042,
@@ -14210,7 +14210,7 @@
           "Mar": 60.7143,
           "Apr": 60.7143,
           "May": 60.7143,
-          "Jun": 53.5714,
+          "Jun": 50.0,
           "Jul": 62.963,
           "Aug": 62.963,
           "Sep": 55.5556,
@@ -14220,7 +14220,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 12.3563,
+        "average": 12.2832,
         "median": 14.2735,
         "best": 63.2576,
         "worst": -43.5175,
@@ -14228,7 +14228,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 35.9875,
+        "2026": 33.8669,
         "2025": 24.1281,
         "2024": 24.0504,
         "2023": 56.1577,
@@ -14265,7 +14265,7 @@
           "Mar": -4.7585,
           "Apr": 18.227,
           "May": 18.0083,
-          "Jun": 0.2401
+          "Jun": -1.323
         },
         "2025": {
           "Jan": -0.5001,
@@ -14650,34 +14650,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.9989,
+        "current_drawdown_pct": -2.5428,
         "max_drawdown_pct": -82.0465,
         "peak_date": "2026-06-02",
         "peak_close": 198.21,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 1.009,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 2.6091,
         "drawdown_bucket": "mild"
       }
     },
     "XLP": {
       "symbol": "XLP",
       "market_group": "US Markets",
-      "last_close": 82.16,
+      "last_close": 82.04,
       "returns": {
-        "daily": 0.4033,
-        "mtd": 0.1585,
-        "ytd": 5.7536,
-        "r1m": -1.6519,
-        "r3m": -5.7366,
-        "r6m": 3.6196,
-        "r1y": -0.8687,
-        "weekly": -2.8612,
-        "monthly": -1.6519,
-        "annual": -0.8687
+        "daily": -0.1461,
+        "mtd": 0.0122,
+        "ytd": 5.5992,
+        "r1m": -2.403,
+        "r3m": -3.9457,
+        "r6m": 4.1513,
+        "r1y": -0.9179,
+        "weekly": -2.8307,
+        "monthly": -2.403,
+        "annual": -0.9179
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.8863,
+        "current_month_avg_return": -0.8915,
         "current_month_positive_rate": 39.2857,
         "monthly_avg_returns": {
           "Jan": -0.4002,
@@ -14685,7 +14685,7 @@
           "Mar": 0.4368,
           "Apr": 1.1495,
           "May": 0.2522,
-          "Jun": -0.8863,
+          "Jun": -0.8915,
           "Jul": 0.6895,
           "Aug": 0.324,
           "Sep": -1.3555,
@@ -14709,7 +14709,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 4.7207,
+        "average": 4.7154,
         "median": 7.2491,
         "best": 25.5495,
         "worst": -21.2169,
@@ -14717,7 +14717,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 5.7536,
+        "2026": 5.5992,
         "2025": -0.8804,
         "2024": 7.9215,
         "2023": -3.016,
@@ -14754,7 +14754,7 @@
           "Mar": -7.5865,
           "Apr": 3.4986,
           "May": -1.497,
-          "Jun": 0.1585
+          "Jun": 0.0122
         },
         "2025": {
           "Jan": 0.7784,
@@ -15139,34 +15139,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.7213,
+        "current_drawdown_pct": -8.8546,
         "max_drawdown_pct": -37.8146,
         "peak_date": "2026-02-27",
         "peak_close": 90.01,
-        "days_since_peak": 96,
-        "recovery_needed_pct": 9.5545,
+        "days_since_peak": 97,
+        "recovery_needed_pct": 9.7148,
         "drawdown_bucket": "moderate"
       }
     },
     "XLRE": {
       "symbol": "XLRE",
       "market_group": "US Markets",
-      "last_close": 43.51,
+      "last_close": 44.4,
       "returns": {
-        "daily": 0.046,
-        "mtd": 0.5547,
-        "ytd": 7.7514,
-        "r1m": -1.2931,
-        "r3m": -0.5713,
-        "r6m": 5.8895,
-        "r1y": 4.1158,
-        "weekly": -2.5095,
-        "monthly": -1.2931,
-        "annual": 4.1158
+        "daily": 2.0455,
+        "mtd": 2.6115,
+        "ytd": 9.9554,
+        "r1m": 0.5207,
+        "r3m": 2.4458,
+        "r6m": 8.3191,
+        "r1y": 6.6282,
+        "weekly": -0.0225,
+        "monthly": 0.5207,
+        "annual": 6.6282
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.7455,
+        "current_month_avg_return": 0.9325,
         "current_month_positive_rate": 72.7273,
         "monthly_avg_returns": {
           "Jan": 1.3957,
@@ -15174,7 +15174,7 @@
           "Mar": -0.3936,
           "Apr": 1.6011,
           "May": 0.8521,
-          "Jun": 0.7455,
+          "Jun": 0.9325,
           "Jul": 2.7465,
           "Aug": 0.6127,
           "Sep": -3.7185,
@@ -15198,7 +15198,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 5.3229,
+        "average": 5.5065,
         "median": 2.0881,
         "best": 46.4387,
         "worst": -28.0538,
@@ -15206,7 +15206,7 @@
         "years_count": 12
       },
       "annual_returns_by_year": {
-        "2026": 7.7514,
+        "2026": 9.9554,
         "2025": 0.1489,
         "2024": 0.5936,
         "2023": 8.0658,
@@ -15226,7 +15226,7 @@
           "Mar": -7.0355,
           "Apr": 8.4249,
           "May": -0.7446,
-          "Jun": 0.5547
+          "Jun": 2.6115
         },
         "2025": {
           "Jan": 2.8047,
@@ -15375,34 +15375,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -16.0201,
+        "current_drawdown_pct": -14.3023,
         "max_drawdown_pct": -39.2798,
         "peak_date": "2021-12-31",
         "peak_close": 51.81,
-        "days_since_peak": 1615,
-        "recovery_needed_pct": 19.0761,
-        "drawdown_bucket": "deep"
+        "days_since_peak": 1616,
+        "recovery_needed_pct": 16.6892,
+        "drawdown_bucket": "moderate"
       }
     },
     "XLU": {
       "symbol": "XLU",
       "market_group": "US Markets",
-      "last_close": 43.71,
+      "last_close": 43.94,
       "returns": {
-        "daily": -0.4328,
-        "mtd": 1.4153,
-        "ytd": 1.2274,
-        "r1m": -5.7365,
-        "r3m": -7.5312,
-        "r6m": -1.2315,
-        "r1y": 6.3762,
-        "weekly": -3.1679,
-        "monthly": -5.7365,
-        "annual": 6.3762
+        "daily": 0.5262,
+        "mtd": 1.949,
+        "ytd": 1.7601,
+        "r1m": -5.2405,
+        "r3m": -6.3113,
+        "r6m": 0.0,
+        "r1y": 6.6505,
+        "weekly": -1.5461,
+        "monthly": -5.2405,
+        "annual": 6.6505
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.7619,
+        "current_month_avg_return": -0.7429,
         "current_month_positive_rate": 46.4286,
         "monthly_avg_returns": {
           "Jan": -0.0503,
@@ -15410,7 +15410,7 @@
           "Mar": 1.3277,
           "Apr": 2.1274,
           "May": 0.5737,
-          "Jun": -0.7619,
+          "Jun": -0.7429,
           "Jul": 0.6848,
           "Aug": 0.0198,
           "Sep": -0.8712,
@@ -15434,7 +15434,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 5.0509,
+        "average": 5.0692,
         "median": 6.7773,
         "best": 26.2905,
         "worst": -32.6416,
@@ -15442,7 +15442,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": 1.2274,
+        "2026": 1.7601,
         "2025": 11.9444,
         "2024": 17.8055,
         "2023": -10.1702,
@@ -15479,7 +15479,7 @@
           "Mar": -3.1243,
           "Apr": 1.6049,
           "May": -4.5757,
-          "Jun": 1.4153
+          "Jun": 1.949
         },
         "2025": {
           "Jan": 2.1109,
@@ -15864,42 +15864,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -8.4224,
+        "current_drawdown_pct": -7.9405,
         "max_drawdown_pct": -55.6744,
         "peak_date": "2026-02-27",
         "peak_close": 47.73,
-        "days_since_peak": 96,
-        "recovery_needed_pct": 9.197,
+        "days_since_peak": 97,
+        "recovery_needed_pct": 8.6254,
         "drawdown_bucket": "moderate"
       }
     },
     "XLV": {
       "symbol": "XLV",
       "market_group": "US Markets",
-      "last_close": 147.55,
+      "last_close": 152.08,
       "returns": {
-        "daily": 0.7855,
-        "mtd": -0.1962,
-        "ytd": -5.1186,
-        "r1m": 1.9485,
-        "r3m": -6.049,
-        "r6m": -4.9842,
-        "r1y": 11.1739,
-        "weekly": -0.8334,
-        "monthly": 1.9485,
-        "annual": 11.1739
+        "daily": 3.0701,
+        "mtd": 2.868,
+        "ytd": -2.2056,
+        "r1m": 4.6662,
+        "r3m": -1.189,
+        "r6m": -1.4771,
+        "r1y": 14.3201,
+        "weekly": 0.7953,
+        "monthly": 4.6662,
+        "annual": 14.3201
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.4352,
-        "current_month_positive_rate": 50.0,
+        "current_month_avg_return": 0.5446,
+        "current_month_positive_rate": 53.5714,
         "monthly_avg_returns": {
           "Jan": 0.8071,
           "Feb": -0.7391,
           "Mar": 0.2986,
           "Apr": 1.4105,
           "May": 0.2613,
-          "Jun": 0.4352,
+          "Jun": 0.5446,
           "Jul": 0.9689,
           "Aug": 0.1721,
           "Sep": -1.4508,
@@ -15913,7 +15913,7 @@
           "Mar": 53.5714,
           "Apr": 53.5714,
           "May": 64.2857,
-          "Jun": 50.0,
+          "Jun": 53.5714,
           "Jul": 62.963,
           "Aug": 55.5556,
           "Sep": 40.7407,
@@ -15923,7 +15923,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 6.817,
+        "average": 6.9174,
         "median": 4.9541,
         "best": 36.3167,
         "worst": -24.0126,
@@ -15931,7 +15931,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": -5.1186,
+        "2026": -2.2056,
         "2025": 12.4918,
         "2024": -0.8719,
         "2023": 0.6792,
@@ -15968,7 +15968,7 @@
           "Mar": -7.5191,
           "Apr": -1.1778,
           "May": 2.9691,
-          "Jun": -0.1962
+          "Jun": 2.868
         },
         "2025": {
           "Jan": 6.7292,
@@ -16353,34 +16353,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -7.8964,
+        "current_drawdown_pct": -5.0687,
         "max_drawdown_pct": -40.5758,
         "peak_date": "2026-02-27",
         "peak_close": 160.2,
-        "days_since_peak": 96,
-        "recovery_needed_pct": 8.5734,
+        "days_since_peak": 97,
+        "recovery_needed_pct": 5.3393,
         "drawdown_bucket": "moderate"
       }
     },
     "XLY": {
       "symbol": "XLY",
       "market_group": "US Markets",
-      "last_close": 116.73,
+      "last_close": 117.26,
       "returns": {
-        "daily": -0.7313,
-        "mtd": -1.2353,
-        "ytd": -1.3688,
-        "r1m": -0.841,
-        "r3m": 0.2921,
-        "r6m": -1.3271,
-        "r1y": 8.9407,
-        "weekly": -3.9654,
-        "monthly": -0.841,
-        "annual": 8.9407
+        "daily": 0.454,
+        "mtd": -0.7869,
+        "ytd": -0.921,
+        "r1m": -0.686,
+        "r3m": 0.6092,
+        "r6m": -0.812,
+        "r1y": 8.8563,
+        "weekly": -3.9325,
+        "monthly": -0.686,
+        "annual": 8.8563
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.3035,
+        "current_month_avg_return": -0.2875,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": 0.3556,
@@ -16388,7 +16388,7 @@
           "Mar": 1.0874,
           "Apr": 2.3704,
           "May": -0.1372,
-          "Jun": -0.3035,
+          "Jun": -0.2875,
           "Jul": 1.3157,
           "Aug": 0.3454,
           "Sep": -1.0265,
@@ -16412,7 +16412,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 9.6691,
+        "average": 9.6845,
         "median": 11.9511,
         "best": 39.271,
         "worst": -38.5859,
@@ -16420,7 +16420,7 @@
         "years_count": 29
       },
       "annual_returns_by_year": {
-        "2026": -1.3688,
+        "2026": -0.921,
         "2025": 7.8681,
         "2024": 26.6441,
         "2023": 39.271,
@@ -16457,7 +16457,7 @@
           "Mar": -5.5796,
           "Apr": 7.7869,
           "May": 1.8882,
-          "Jun": -1.2353
+          "Jun": -0.7869
         },
         "2025": {
           "Jan": 4.8645,
@@ -16842,34 +16842,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -6.256,
+        "current_drawdown_pct": -5.8304,
         "max_drawdown_pct": -60.1336,
         "peak_date": "2026-01-12",
         "peak_close": 124.52,
-        "days_since_peak": 142,
-        "recovery_needed_pct": 6.6735,
+        "days_since_peak": 143,
+        "recovery_needed_pct": 6.1914,
         "drawdown_bucket": "moderate"
       }
     },
     "TQSM.TO": {
       "symbol": "TQSM.TO",
       "market_group": "US Markets",
-      "last_close": 28.37,
+      "last_close": 28.59,
       "returns": {
-        "daily": 0.1766,
-        "mtd": 0.6742,
-        "ytd": 12.0016,
-        "r1m": 4.6477,
-        "r3m": 8.739,
-        "r6m": 10.8203,
-        "r1y": 22.4428,
-        "weekly": 0.9968,
-        "monthly": 4.6477,
-        "annual": 22.4428
+        "daily": 0.7755,
+        "mtd": 1.4549,
+        "ytd": 12.8701,
+        "r1m": 3.6997,
+        "r3m": 10.814,
+        "r6m": 11.767,
+        "r1y": 21.971,
+        "weekly": 2.3997,
+        "monthly": 3.6997,
+        "annual": 21.971
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.0035,
+        "current_month_avg_return": 0.115,
         "current_month_positive_rate": 42.8571,
         "monthly_avg_returns": {
           "Jan": 0.548,
@@ -16877,7 +16877,7 @@
           "Mar": -1.6571,
           "Apr": 0.6327,
           "May": 1.6532,
-          "Jun": 0.0035,
+          "Jun": 0.115,
           "Jul": 4.5213,
           "Aug": 1.4237,
           "Sep": -1.6916,
@@ -16901,15 +16901,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.4077,
-        "median": 6.2009,
+        "average": 8.5163,
+        "median": 6.6352,
         "best": 24.6367,
         "worst": -3.4574,
         "positive_rate": 62.5,
         "years_count": 8
       },
       "annual_returns_by_year": {
-        "2026": 12.0016,
+        "2026": 12.8701,
         "2025": 0.4003,
         "2024": 18.8688,
         "2023": 16.7038,
@@ -16925,7 +16925,7 @@
           "Mar": -2.5855,
           "Apr": 5.6333,
           "May": 2.4605,
-          "Jun": 0.6742
+          "Jun": 1.4549
         },
         "2025": {
           "Jan": 3.803,
@@ -17019,8 +17019,8 @@
       "drawdown": {
         "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -33.0293,
-        "peak_date": "2026-06-03",
-        "peak_close": 28.37,
+        "peak_date": "2026-06-04",
+        "peak_close": 28.59,
         "days_since_peak": 0,
         "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
@@ -17029,30 +17029,30 @@
     "XSU.TO": {
       "symbol": "XSU.TO",
       "market_group": "US Markets",
-      "last_close": 54.05,
+      "last_close": 54.9,
       "returns": {
-        "daily": -1.3686,
-        "mtd": -0.4237,
-        "ytd": 14.6098,
-        "r1m": 3.5441,
-        "r3m": 9.2581,
-        "r6m": 15.615,
-        "r1y": 36.8701,
-        "weekly": -0.8984,
-        "monthly": 3.5441,
-        "annual": 36.8701
+        "daily": 1.5726,
+        "mtd": 1.1422,
+        "ytd": 16.4122,
+        "r1m": 3.3315,
+        "r3m": 13.1725,
+        "r6m": 17.6597,
+        "r1y": 36.7372,
+        "weekly": 0.0182,
+        "monthly": 3.3315,
+        "annual": 36.7372
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.2432,
-        "current_month_positive_rate": 50.0,
+        "current_month_avg_return": 0.3215,
+        "current_month_positive_rate": 55.0,
         "monthly_avg_returns": {
           "Jan": -0.4225,
           "Feb": -0.2326,
           "Mar": -0.0523,
           "Apr": 1.7812,
           "May": 0.985,
-          "Jun": 0.2432,
+          "Jun": 0.3215,
           "Jul": 2.0486,
           "Aug": 0.444,
           "Sep": -0.4289,
@@ -17066,7 +17066,7 @@
           "Mar": 63.1579,
           "Apr": 63.1579,
           "May": 60.0,
-          "Jun": 50.0,
+          "Jun": 55.0,
           "Jul": 57.8947,
           "Aug": 57.8947,
           "Sep": 52.6316,
@@ -17076,7 +17076,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 6.5868,
+        "average": 6.6769,
         "median": 12.302,
         "best": 33.6544,
         "worst": -37.3407,
@@ -17084,7 +17084,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": 14.6098,
+        "2026": 16.4122,
         "2025": 9.4534,
         "2024": 9.5397,
         "2023": 14.0448,
@@ -17112,7 +17112,7 @@
           "Mar": -6.1421,
           "Apr": 10.8848,
           "May": 3.8278,
-          "Jun": -0.4237
+          "Jun": 1.1422
         },
         "2025": {
           "Jan": 2.2988,
@@ -17378,34 +17378,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -1.5303,
+        "current_drawdown_pct": 0.0,
         "max_drawdown_pct": -63.4708,
-        "peak_date": "2026-05-28",
-        "peak_close": 54.89,
-        "days_since_peak": 6,
-        "recovery_needed_pct": 1.5541,
+        "peak_date": "2026-06-04",
+        "peak_close": 54.9,
+        "days_since_peak": 0,
+        "recovery_needed_pct": 0.0,
         "drawdown_bucket": "mild"
       }
     },
     "CIAI.TO": {
       "symbol": "CIAI.TO",
       "market_group": "US Markets",
-      "last_close": 42.24,
+      "last_close": 41.88,
       "returns": {
-        "daily": -0.8683,
-        "mtd": -0.189,
-        "ytd": 30.4509,
-        "r1m": 16.1078,
-        "r3m": 34.3511,
-        "r6m": 27.8838,
-        "r1y": 65.3876,
-        "weekly": 6.9367,
-        "monthly": 16.1078,
-        "annual": 65.3876
+        "daily": -0.8523,
+        "mtd": -1.0397,
+        "ytd": 29.3391,
+        "r1m": 13.4959,
+        "r3m": 33.0791,
+        "r6m": 25.4268,
+        "r1y": 62.5776,
+        "weekly": 3.6377,
+        "monthly": 13.4959,
+        "annual": 62.5776
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 6.0316,
+        "current_month_avg_return": 5.748,
         "current_month_positive_rate": 66.6667,
         "monthly_avg_returns": {
           "Jan": 1.4932,
@@ -17413,7 +17413,7 @@
           "Mar": -6.602,
           "Apr": 6.7689,
           "May": 7.6626,
-          "Jun": 6.0316,
+          "Jun": 5.748,
           "Jul": 2.3322,
           "Aug": 1.5679,
           "Sep": 8.7744,
@@ -17437,15 +17437,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 26.099,
-        "median": 29.9182,
-        "best": 30.4509,
+        "average": 25.7284,
+        "median": 29.3391,
+        "best": 29.9182,
         "worst": 17.928,
         "positive_rate": 100.0,
         "years_count": 3
       },
       "annual_returns_by_year": {
-        "2026": 30.4509,
+        "2026": 29.3391,
         "2025": 17.928,
         "2024": 29.9182
       },
@@ -17456,7 +17456,7 @@
           "Mar": -4.3519,
           "Apr": 16.2655,
           "May": 13.0795,
-          "Jun": -0.189
+          "Jun": -1.0397
         },
         "2025": {
           "Jan": 2.4614,
@@ -17484,34 +17484,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.8683,
+        "current_drawdown_pct": -1.7132,
         "max_drawdown_pct": -31.2153,
         "peak_date": "2026-06-02",
         "peak_close": 42.61,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 0.8759,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 1.7431,
         "drawdown_bucket": "mild"
       }
     },
     "CIBR.TO": {
       "symbol": "CIBR.TO",
       "market_group": "US Markets",
-      "last_close": 73.8,
+      "last_close": 73.07,
       "returns": {
-        "daily": -2.3422,
-        "mtd": -2.2646,
-        "ytd": 30.9439,
-        "r1m": 34.0356,
-        "r3m": 44.197,
-        "r6m": 24.8731,
-        "r1y": 28.214,
-        "weekly": 11.9539,
-        "monthly": 34.0356,
-        "annual": 28.214
+        "daily": -0.9892,
+        "mtd": -3.2314,
+        "ytd": 29.6487,
+        "r1m": 30.4123,
+        "r3m": 40.3034,
+        "r6m": 22.848,
+        "r1y": 25.3775,
+        "weekly": 10.1281,
+        "monthly": 30.4123,
+        "annual": 25.3775
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.9676,
+        "current_month_avg_return": 0.8871,
         "current_month_positive_rate": 41.6667,
         "monthly_avg_returns": {
           "Jan": 1.1885,
@@ -17519,7 +17519,7 @@
           "Mar": -2.276,
           "Apr": -0.3176,
           "May": 3.6116,
-          "Jun": 0.9676,
+          "Jun": 0.8871,
           "Jul": 2.5023,
           "Aug": 2.3316,
           "Sep": -0.8609,
@@ -17543,7 +17543,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.711,
+        "average": 11.6114,
         "median": 7.3656,
         "best": 34.574,
         "worst": -19.2165,
@@ -17551,7 +17551,7 @@
         "years_count": 13
       },
       "annual_returns_by_year": {
-        "2026": 30.9439,
+        "2026": 29.6487,
         "2025": 7.3656,
         "2024": 30.7559,
         "2023": 34.574,
@@ -17572,7 +17572,7 @@
           "Mar": 0.7561,
           "Apr": 4.5213,
           "May": 30.8515,
-          "Jun": -2.2646
+          "Jun": -3.2314
         },
         "2025": {
           "Jan": 7.3844,
@@ -17733,34 +17733,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -2.3422,
+        "current_drawdown_pct": -3.3082,
         "max_drawdown_pct": -43.7609,
         "peak_date": "2026-06-02",
         "peak_close": 75.57,
-        "days_since_peak": 1,
-        "recovery_needed_pct": 2.3984,
+        "days_since_peak": 2,
+        "recovery_needed_pct": 3.4214,
         "drawdown_bucket": "mild"
       }
     },
     "DATA.TO": {
       "symbol": "DATA.TO",
       "market_group": "US Markets",
-      "last_close": 35.92,
+      "last_close": 35.86,
       "returns": {
-        "daily": -2.072,
-        "mtd": -4.1622,
-        "ytd": 25.3752,
-        "r1m": 24.3337,
-        "r3m": 41.4173,
-        "r6m": 22.5939,
-        "r1y": 28.1484,
-        "weekly": 9.1462,
-        "monthly": 24.3337,
-        "annual": 28.1484
+        "daily": -0.167,
+        "mtd": -4.3223,
+        "ytd": 25.1658,
+        "r1m": 19.6929,
+        "r3m": 37.7641,
+        "r6m": 21.026,
+        "r1y": 27.7976,
+        "weekly": 5.938,
+        "monthly": 19.6929,
+        "annual": 27.7976
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 2.6755,
+        "current_month_avg_return": 2.6488,
         "current_month_positive_rate": 66.6667,
         "monthly_avg_returns": {
           "Jan": 1.942,
@@ -17768,7 +17768,7 @@
           "Mar": -1.2476,
           "Apr": 0.7181,
           "May": 5.4831,
-          "Jun": 2.6755,
+          "Jun": 2.6488,
           "Jul": 2.1848,
           "Aug": 0.5483,
           "Sep": -1.2454,
@@ -17792,15 +17792,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 15.8195,
-        "median": 22.275,
+        "average": 15.7846,
+        "median": 22.1703,
         "best": 49.2978,
         "worst": -40.2707,
         "positive_rate": 83.3333,
         "years_count": 6
       },
       "annual_returns_by_year": {
-        "2026": 25.3752,
+        "2026": 25.1658,
         "2025": 7.5885,
         "2024": 33.7512,
         "2023": 49.2978,
@@ -17814,7 +17814,7 @@
           "Mar": -3.4331,
           "Apr": 13.9772,
           "May": 22.5627,
-          "Jun": -4.1622
+          "Jun": -4.3223
         },
         "2025": {
           "Jan": 5.2536,
@@ -17888,34 +17888,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -4.1622,
+        "current_drawdown_pct": -4.3223,
         "max_drawdown_pct": -49.8152,
         "peak_date": "2026-06-01",
         "peak_close": 37.48,
-        "days_since_peak": 2,
-        "recovery_needed_pct": 4.343,
+        "days_since_peak": 3,
+        "recovery_needed_pct": 4.5176,
         "drawdown_bucket": "mild"
       }
     },
     "HERO.TO": {
       "symbol": "HERO.TO",
       "market_group": "US Markets",
-      "last_close": 36.25,
+      "last_close": 36.2,
       "returns": {
-        "daily": -1.4946,
-        "mtd": -0.3025,
-        "ytd": -18.3375,
-        "r1m": -3.4106,
-        "r3m": -7.8546,
-        "r6m": -22.1936,
-        "r1y": -13.5464,
-        "weekly": -0.8479,
-        "monthly": -3.4106,
-        "annual": -13.5464
+        "daily": -0.1379,
+        "mtd": -0.44,
+        "ytd": -18.4501,
+        "r1m": -2.6882,
+        "r3m": -5.557,
+        "r6m": -21.6281,
+        "r1y": -14.5824,
+        "weekly": 0.1383,
+        "monthly": -2.6882,
+        "annual": -14.5824
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 2.7326,
+        "current_month_avg_return": 2.7154,
         "current_month_positive_rate": 62.5,
         "monthly_avg_returns": {
           "Jan": 0.8145,
@@ -17923,7 +17923,7 @@
           "Mar": -1.2008,
           "Apr": 0.2424,
           "May": 3.658,
-          "Jun": 2.7326,
+          "Jun": 2.7154,
           "Jul": 0.48,
           "Aug": 0.0354,
           "Sep": -1.5256,
@@ -17947,7 +17947,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.3399,
+        "average": 11.3258,
         "median": 15.2844,
         "best": 64.3582,
         "worst": -28.7053,
@@ -17955,7 +17955,7 @@
         "years_count": 8
       },
       "annual_returns_by_year": {
-        "2026": -18.3375,
+        "2026": -18.4501,
         "2025": 26.2948,
         "2024": 22.486,
         "2023": 18.408,
@@ -17971,7 +17971,7 @@
           "Mar": -3.4439,
           "Apr": -1.6108,
           "May": -2.2617,
-          "Jun": -0.3025
+          "Jun": -0.44
         },
         "2025": {
           "Jan": 3.4434,
@@ -18068,12 +18068,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -26.5451,
+        "current_drawdown_pct": -26.6464,
         "max_drawdown_pct": -46.0762,
         "peak_date": "2025-09-30",
         "peak_close": 49.35,
-        "days_since_peak": 246,
-        "recovery_needed_pct": 36.1379,
+        "days_since_peak": 247,
+        "recovery_needed_pct": 36.326,
         "drawdown_bucket": "deep"
       }
     },
@@ -24565,22 +24565,22 @@
     "FCIM.TO": {
       "symbol": "FCIM.TO",
       "market_group": "Global / International",
-      "last_close": 20.81,
+      "last_close": 20.87,
       "returns": {
-        "daily": -0.7156,
-        "mtd": 0.0481,
-        "ytd": 18.1044,
-        "r1m": 7.2128,
-        "r3m": 6.6632,
-        "r6m": 21.2704,
-        "r1y": 36.0131,
-        "weekly": 0.6773,
-        "monthly": 7.2128,
-        "annual": 36.0131
+        "daily": 0.2883,
+        "mtd": 0.3365,
+        "ytd": 18.4449,
+        "r1m": 6.1007,
+        "r3m": 9.6689,
+        "r6m": 22.1182,
+        "r1y": 36.8525,
+        "weekly": 1.3107,
+        "monthly": 6.1007,
+        "annual": 36.8525
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.1893,
+        "current_month_avg_return": 0.2854,
         "current_month_positive_rate": 66.6667,
         "monthly_avg_returns": {
           "Jan": 7.0126,
@@ -24588,7 +24588,7 @@
           "Mar": -1.727,
           "Apr": 0.8026,
           "May": 5.1137,
-          "Jun": 0.1893,
+          "Jun": 0.2854,
           "Jul": 1.6265,
           "Aug": 3.1915,
           "Sep": 2.5421,
@@ -24612,15 +24612,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 20.0834,
-        "median": 18.1044,
+        "average": 20.1969,
+        "median": 18.4449,
         "best": 35.3125,
         "worst": 6.8333,
         "positive_rate": 100.0,
         "years_count": 3
       },
       "annual_returns_by_year": {
-        "2026": 18.1044,
+        "2026": 18.4449,
         "2025": 35.3125,
         "2024": 6.8333
       },
@@ -24631,7 +24631,7 @@
           "Mar": -6.3253,
           "Apr": 3.0366,
           "May": 5.0761,
-          "Jun": 0.0481
+          "Jun": 0.3365
         },
         "2025": {
           "Jan": 6.25,
@@ -24661,12 +24661,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -0.8103,
+        "current_drawdown_pct": -0.5243,
         "max_drawdown_pct": -13.1244,
         "peak_date": "2026-05-25",
         "peak_close": 20.98,
-        "days_since_peak": 9,
-        "recovery_needed_pct": 0.8169,
+        "days_since_peak": 10,
+        "recovery_needed_pct": 0.5271,
         "drawdown_bucket": "mild"
       }
     },
@@ -29993,22 +29993,22 @@
     "HYG": {
       "symbol": "HYG",
       "market_group": "Bonds Universe",
-      "last_close": 79.68,
+      "last_close": 79.83,
       "returns": {
-        "daily": -0.2753,
-        "mtd": -0.2004,
-        "ytd": -1.2272,
-        "r1m": -0.1504,
-        "r3m": -0.8955,
-        "r6m": -0.9817,
-        "r1y": 0.6315,
-        "weekly": -0.5616,
-        "monthly": -0.1504,
-        "annual": 0.6315
+        "daily": 0.1883,
+        "mtd": -0.0125,
+        "ytd": -1.0413,
+        "r1m": -0.1126,
+        "r3m": -0.3122,
+        "r6m": -0.9799,
+        "r1y": 0.6303,
+        "weekly": -0.4986,
+        "monthly": -0.1126,
+        "annual": 0.6303
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.0138,
+        "current_month_avg_return": -0.0044,
         "current_month_positive_rate": 55.0,
         "monthly_avg_returns": {
           "Jan": 0.2937,
@@ -30016,7 +30016,7 @@
           "Mar": -0.1403,
           "Apr": 1.7945,
           "May": 0.0093,
-          "Jun": -0.0138,
+          "Jun": -0.0044,
           "Jul": 1.3463,
           "Aug": 0.2076,
           "Sep": -0.4794,
@@ -30040,7 +30040,7 @@
         }
       },
       "annual_return_stats": {
-        "average": -1.0072,
+        "average": -0.998,
         "median": -0.5777,
         "best": 15.9298,
         "worst": -23.608,
@@ -30048,7 +30048,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": -1.2272,
+        "2026": -1.0413,
         "2025": 2.2704,
         "2024": 1.9707,
         "2023": 4.9071,
@@ -30076,7 +30076,7 @@
           "Mar": -0.8969,
           "Apr": 1.2725,
           "May": 0.3123,
-          "Jun": -0.2004
+          "Jun": -0.0125
         },
         "2025": {
           "Jan": 1.1162,
@@ -30343,34 +30343,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -24.894,
+        "current_drawdown_pct": -24.7526,
         "max_drawdown_pct": -41.8984,
         "peak_date": "2007-09-19",
         "peak_close": 106.09,
-        "days_since_peak": 6832,
-        "recovery_needed_pct": 33.1451,
+        "days_since_peak": 6833,
+        "recovery_needed_pct": 32.8949,
         "drawdown_bucket": "deep"
       }
     },
     "LQD": {
       "symbol": "LQD",
       "market_group": "Bonds Universe",
-      "last_close": 108.62,
+      "last_close": 108.85,
       "returns": {
-        "daily": -0.2754,
-        "mtd": -0.2846,
-        "ytd": -1.398,
-        "r1m": 0.3418,
-        "r3m": -2.1177,
-        "r6m": -2.0117,
-        "r1y": 1.4477,
-        "weekly": -0.2846,
-        "monthly": 0.3418,
-        "annual": 1.4477
+        "daily": 0.2117,
+        "mtd": -0.0734,
+        "ytd": -1.1892,
+        "r1m": 0.1841,
+        "r3m": -1.5199,
+        "r6m": -1.8662,
+        "r1y": 1.615,
+        "weekly": -0.3753,
+        "monthly": 0.1841,
+        "annual": 1.615
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.4383,
+        "current_month_avg_return": 0.4471,
         "current_month_positive_rate": 58.3333,
         "monthly_avg_returns": {
           "Jan": 0.6931,
@@ -30378,7 +30378,7 @@
           "Mar": -0.1403,
           "Apr": 0.4016,
           "May": 0.4816,
-          "Jun": 0.4383,
+          "Jun": 0.4471,
           "Jul": 1.063,
           "Aug": 0.7283,
           "Sep": -0.2453,
@@ -30402,7 +30402,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 0.5608,
+        "average": 0.5691,
         "median": 2.8346,
         "best": 13.0688,
         "worst": -19.5866,
@@ -30410,7 +30410,7 @@
         "years_count": 25
       },
       "annual_returns_by_year": {
-        "2026": -1.398,
+        "2026": -1.1892,
         "2025": 3.1259,
         "2024": -2.7932,
         "2023": 4.2389,
@@ -30443,7 +30443,7 @@
           "Mar": -1.74,
           "Apr": 0.1749,
           "May": 0.6998,
-          "Jun": -0.2846
+          "Jun": -0.0734
         },
         "2025": {
           "Jan": 0.5709,
@@ -30777,42 +30777,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -21.9403,
+        "current_drawdown_pct": -21.7751,
         "max_drawdown_pct": -30.4563,
         "peak_date": "2020-08-06",
         "peak_close": 139.15,
-        "days_since_peak": 2127,
-        "recovery_needed_pct": 28.1072,
+        "days_since_peak": 2128,
+        "recovery_needed_pct": 27.8365,
         "drawdown_bucket": "deep"
       }
     },
     "SHY": {
       "symbol": "SHY",
       "market_group": "Bonds Universe",
-      "last_close": 81.97,
+      "last_close": 82.03,
       "returns": {
-        "daily": -0.0488,
-        "mtd": -0.0488,
-        "ytd": -1.0741,
-        "r1m": -0.2191,
-        "r3m": -0.9426,
-        "r6m": -0.9546,
-        "r1y": -0.4131,
-        "weekly": -0.3041,
-        "monthly": -0.2191,
-        "annual": -0.4131
+        "daily": 0.0732,
+        "mtd": 0.0244,
+        "ytd": -1.0017,
+        "r1m": -0.1947,
+        "r3m": -0.7982,
+        "r6m": -0.9419,
+        "r1y": -0.316,
+        "weekly": -0.2796,
+        "monthly": -0.1947,
+        "annual": -0.316
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.0891,
-        "current_month_positive_rate": 58.3333,
+        "current_month_avg_return": 0.0922,
+        "current_month_positive_rate": 62.5,
         "monthly_avg_returns": {
           "Jan": 0.2629,
           "Feb": 0.1142,
           "Mar": 0.172,
           "Apr": 0.0779,
           "May": 0.1809,
-          "Jun": 0.0891,
+          "Jun": 0.0922,
           "Jul": 0.2146,
           "Aug": 0.2746,
           "Sep": 0.1131,
@@ -30826,7 +30826,7 @@
           "Mar": 70.8333,
           "Apr": 70.8333,
           "May": 70.8333,
-          "Jun": 58.3333,
+          "Jun": 62.5,
           "Jul": 75.0,
           "Aug": 75.0,
           "Sep": 62.5,
@@ -30836,7 +30836,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 0.0829,
+        "average": 0.0858,
         "median": -0.0237,
         "best": 2.8176,
         "worst": -4.9977,
@@ -30844,7 +30844,7 @@
         "years_count": 25
       },
       "annual_returns_by_year": {
-        "2026": -1.0741,
+        "2026": -1.0017,
         "2025": 1.0493,
         "2024": 0.0488,
         "2023": 0.9847,
@@ -30877,7 +30877,7 @@
           "Mar": -0.2898,
           "Apr": 0.1944,
           "May": 0.0608,
-          "Jun": -0.0488
+          "Jun": 0.0244
         },
         "2025": {
           "Jan": 0.4026,
@@ -31211,42 +31211,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -5.5645,
+        "current_drawdown_pct": -5.4954,
         "max_drawdown_pct": -7.2465,
         "peak_date": "2020-04-30",
         "peak_close": 86.8,
-        "days_since_peak": 2225,
-        "recovery_needed_pct": 5.8924,
+        "days_since_peak": 2226,
+        "recovery_needed_pct": 5.815,
         "drawdown_bucket": "moderate"
       }
     },
     "TLT": {
       "symbol": "TLT",
       "market_group": "Bonds Universe",
-      "last_close": 85.31,
+      "last_close": 85.5,
       "returns": {
-        "daily": -0.397,
-        "mtd": -0.1872,
-        "ytd": -1.9763,
-        "r1m": 0.412,
-        "r3m": -4.3074,
-        "r6m": -3.8977,
-        "r1y": 0.1761,
-        "weekly": 0.0117,
-        "monthly": 0.412,
-        "annual": 0.1761
+        "daily": 0.2227,
+        "mtd": 0.0351,
+        "ytd": -1.758,
+        "r1m": 0.0819,
+        "r3m": -3.7054,
+        "r6m": -3.7271,
+        "r1y": 0.5764,
+        "weekly": -0.2799,
+        "monthly": 0.0819,
+        "annual": 0.5764
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.6591,
-        "current_month_positive_rate": 62.5,
+        "current_month_avg_return": 0.6683,
+        "current_month_positive_rate": 66.6667,
         "monthly_avg_returns": {
           "Jan": 0.772,
           "Feb": 0.1888,
           "Mar": 0.1882,
           "Apr": -0.8371,
           "May": 0.9303,
-          "Jun": 0.6591,
+          "Jun": 0.6683,
           "Jul": 0.7971,
           "Aug": 1.8993,
           "Sep": 0.1744,
@@ -31260,7 +31260,7 @@
           "Mar": 50.0,
           "Apr": 41.6667,
           "May": 54.1667,
-          "Jun": 62.5,
+          "Jun": 66.6667,
           "Jul": 62.5,
           "Aug": 70.8333,
           "Sep": 50.0,
@@ -31270,7 +31270,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 1.3503,
+        "average": 1.359,
         "median": -0.4682,
         "best": 29.8041,
         "worst": -31.0049,
@@ -31278,7 +31278,7 @@
         "years_count": 25
       },
       "annual_returns_by_year": {
-        "2026": -1.9763,
+        "2026": -1.758,
         "2025": -0.4682,
         "2024": -11.1687,
         "2023": -2.5429,
@@ -31311,7 +31311,7 @@
           "Mar": -3.2586,
           "Apr": -0.7419,
           "May": 0.1752,
-          "Jun": -0.1872
+          "Jun": 0.0351
         },
         "2025": {
           "Jan": 0.217,
@@ -31645,34 +31645,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -50.2769,
+        "current_drawdown_pct": -50.1661,
         "max_drawdown_pct": -51.7573,
         "peak_date": "2020-08-04",
         "peak_close": 171.57,
-        "days_since_peak": 2129,
-        "recovery_needed_pct": 101.1136,
+        "days_since_peak": 2130,
+        "recovery_needed_pct": 100.6667,
         "drawdown_bucket": "severe"
       }
     },
     "ENCC.TO": {
       "symbol": "ENCC.TO",
       "market_group": "Crude Oil & Commodities",
-      "last_close": 12.98,
+      "last_close": 13.08,
       "returns": {
-        "daily": 0.9331,
-        "mtd": 2.3659,
-        "ytd": 21.1951,
-        "r1m": 1.4062,
-        "r3m": 8.8013,
-        "r6m": 18.4307,
-        "r1y": 26.1419,
-        "weekly": 1.1691,
-        "monthly": 1.4062,
-        "annual": 26.1419
+        "daily": 0.7704,
+        "mtd": 3.1546,
+        "ytd": 22.1289,
+        "r1m": 2.0281,
+        "r3m": 9.4561,
+        "r6m": 20.6642,
+        "r1y": 25.5278,
+        "weekly": 2.5882,
+        "monthly": 2.0281,
+        "annual": 25.5278
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.2363,
+        "current_month_avg_return": -1.187,
         "current_month_positive_rate": 56.25,
         "monthly_avg_returns": {
           "Jan": -1.1061,
@@ -31680,7 +31680,7 @@
           "Mar": -2.2383,
           "Apr": 3.7793,
           "May": -0.3406,
-          "Jun": -1.2363,
+          "Jun": -1.187,
           "Jul": -1.8437,
           "Aug": -0.5325,
           "Sep": -0.871,
@@ -31704,7 +31704,7 @@
         }
       },
       "annual_return_stats": {
-        "average": -4.7493,
+        "average": -4.6909,
         "median": -3.8237,
         "best": 72.3164,
         "worst": -40.9091,
@@ -31712,7 +31712,7 @@
         "years_count": 16
       },
       "annual_returns_by_year": {
-        "2026": 21.1951,
+        "2026": 22.1289,
         "2025": -2.4908,
         "2024": 1.518,
         "2023": -4.4627,
@@ -31736,7 +31736,7 @@
           "Mar": 5.9614,
           "Apr": 3.8242,
           "May": -1.6548,
-          "Jun": 2.3659
+          "Jun": 3.1546
         },
         "2025": {
           "Jan": -2.1218,
@@ -31947,12 +31947,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -73.7247,
+        "current_drawdown_pct": -73.5223,
         "max_drawdown_pct": -95.2632,
         "peak_date": "2011-04-29",
         "peak_close": 49.4,
-        "days_since_peak": 5514,
-        "recovery_needed_pct": 280.5855,
+        "days_since_peak": 5515,
+        "recovery_needed_pct": 277.6759,
         "drawdown_bucket": "severe"
       }
     },
@@ -32209,22 +32209,22 @@
     "CL=F": {
       "symbol": "CL=F",
       "market_group": "Crude Oil & Commodities",
-      "last_close": 95.51,
+      "last_close": 92.35,
       "returns": {
-        "daily": -0.5311,
-        "mtd": 3.635,
-        "ytd": 66.626,
-        "r1m": 0.7383,
-        "r3m": 0.7808,
-        "r6m": 60.0637,
-        "r1y": 47.8941,
-        "weekly": 7.4353,
-        "monthly": 0.7383,
-        "annual": 47.8941
+        "daily": -0.7416,
+        "mtd": 0.2062,
+        "ytd": 61.113,
+        "r1m": -3.2174,
+        "r3m": 10.6651,
+        "r6m": 53.7117,
+        "r1y": 41.4459,
+        "weekly": 5.712,
+        "monthly": -3.2174,
+        "annual": 41.4459
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 2.6025,
+        "current_month_avg_return": 2.4706,
         "current_month_positive_rate": 69.2308,
         "monthly_avg_returns": {
           "Jan": 1.2656,
@@ -32232,7 +32232,7 @@
           "Mar": 2.1023,
           "Apr": 2.3104,
           "May": 2.7041,
-          "Jun": 2.6025,
+          "Jun": 2.4706,
           "Jul": 0.1555,
           "Aug": 0.0221,
           "Sep": -0.1184,
@@ -32256,7 +32256,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 8.9862,
+        "average": 8.782,
         "median": 5.4942,
         "best": 71.2559,
         "worst": -55.2299,
@@ -32264,7 +32264,7 @@
         "years_count": 27
       },
       "annual_returns_by_year": {
-        "2026": 66.626,
+        "2026": 61.113,
         "2025": -21.4823,
         "2024": 1.904,
         "2023": -6.8634,
@@ -32299,7 +32299,7 @@
           "Mar": 42.3277,
           "Apr": 4.9441,
           "May": -14.3025,
-          "Jun": 3.635
+          "Jun": 0.2062
         },
         "2025": {
           "Jan": -0.8205,
@@ -32660,34 +32660,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -34.2625,
+        "current_drawdown_pct": -36.4375,
         "max_drawdown_pct": -125.8999,
         "peak_date": "2008-07-03",
         "peak_close": 145.29,
-        "days_since_peak": 6545,
-        "recovery_needed_pct": 52.1202,
+        "days_since_peak": 6546,
+        "recovery_needed_pct": 57.3254,
         "drawdown_bucket": "severe"
       }
     },
     "COW.TO": {
       "symbol": "COW.TO",
       "market_group": "Crude Oil & Commodities",
-      "last_close": 72.55,
+      "last_close": 72.44,
       "returns": {
-        "daily": 0.4013,
-        "mtd": 1.3835,
-        "ytd": 14.0365,
-        "r1m": -2.0124,
-        "r3m": -0.8202,
-        "r6m": 7.5187,
-        "r1y": 3.6275,
-        "weekly": 0.5405,
-        "monthly": -2.0124,
-        "annual": 3.6275
+        "daily": -0.1516,
+        "mtd": 1.2297,
+        "ytd": 13.8636,
+        "r1m": -2.8173,
+        "r3m": -0.1654,
+        "r6m": 8.0876,
+        "r1y": 3.1949,
+        "weekly": 0.8914,
+        "monthly": -2.8173,
+        "annual": 3.1949
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.1659,
+        "current_month_avg_return": -1.174,
         "current_month_positive_rate": 31.5789,
         "monthly_avg_returns": {
           "Jan": 0.7856,
@@ -32695,7 +32695,7 @@
           "Mar": 0.9501,
           "Apr": 0.4333,
           "May": -0.4231,
-          "Jun": -1.1659,
+          "Jun": -1.174,
           "Jul": 2.179,
           "Aug": 0.8771,
           "Sep": -1.5564,
@@ -32719,7 +32719,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 6.2806,
+        "average": 6.272,
         "median": 11.7011,
         "best": 24.7126,
         "worst": -28.3784,
@@ -32727,7 +32727,7 @@
         "years_count": 20
       },
       "annual_returns_by_year": {
-        "2026": 14.0365,
+        "2026": 13.8636,
         "2025": -6.5499,
         "2024": 3.2165,
         "2023": -9.6779,
@@ -32755,7 +32755,7 @@
           "Mar": 0.0664,
           "Apr": -1.9259,
           "May": -3.6504,
-          "Jun": 1.3835
+          "Jun": 1.2297
         },
         "2025": {
           "Jan": 5.8104,
@@ -33014,34 +33014,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -17.1324,
+        "current_drawdown_pct": -17.2581,
         "max_drawdown_pct": -55.0018,
         "peak_date": "2022-04-19",
         "peak_close": 87.5493,
-        "days_since_peak": 1506,
-        "recovery_needed_pct": 20.6745,
+        "days_since_peak": 1507,
+        "recovery_needed_pct": 20.8577,
         "drawdown_bucket": "deep"
       }
     },
     "BTC-USD": {
       "symbol": "BTC-USD",
       "market_group": "Crypto",
-      "last_close": 63724.6719,
+      "last_close": 62805.7891,
       "returns": {
-        "daily": -0.4525,
-        "mtd": -10.6494,
-        "ytd": -28.183,
-        "r1m": -21.3773,
-        "r3m": -4.7301,
-        "r6m": -24.6411,
-        "r1y": -41.5634,
-        "weekly": -13.5993,
-        "monthly": -21.3773,
-        "annual": -41.5634
+        "daily": -1.5608,
+        "mtd": -11.9378,
+        "ytd": -29.2185,
+        "r1m": -20.565,
+        "r3m": -6.1635,
+        "r6m": -25.3455,
+        "r1y": -42.7544,
+        "weekly": -14.6425,
+        "monthly": -20.565,
+        "annual": -42.7544
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.5354,
+        "current_month_avg_return": 0.4281,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": -2.3276,
@@ -33049,7 +33049,7 @@
           "Mar": -1.8037,
           "Apr": 9.5149,
           "May": 7.3122,
-          "Jun": 0.5354,
+          "Jun": 0.4281,
           "Jul": 10.3057,
           "Aug": 0.9991,
           "Sep": -3.6579,
@@ -33073,7 +33073,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 152.8379,
+        "average": 152.7582,
         "median": 57.6435,
         "best": 1318.0152,
         "worst": -72.5954,
@@ -33081,7 +33081,7 @@
         "years_count": 13
       },
       "annual_returns_by_year": {
-        "2026": -28.183,
+        "2026": -29.2185,
         "2025": -7.3194,
         "2024": 111.5346,
         "2023": 154.2255,
@@ -33102,7 +33102,7 @@
           "Mar": 3.7957,
           "Apr": 12.0828,
           "May": -5.8831,
-          "Jun": -10.6494
+          "Jun": -11.9378
         },
         "2025": {
           "Jan": 8.4572,
@@ -33266,34 +33266,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -48.9191,
+        "current_drawdown_pct": -49.6557,
         "max_drawdown_pct": -83.399,
         "peak_date": "2025-10-06",
         "peak_close": 124752.5312,
-        "days_since_peak": 241,
-        "recovery_needed_pct": 95.768,
+        "days_since_peak": 242,
+        "recovery_needed_pct": 98.6322,
         "drawdown_bucket": "severe"
       }
     },
     "ETH-USD": {
       "symbol": "ETH-USD",
       "market_group": "Crypto",
-      "last_close": 1776.9,
+      "last_close": 1673.7,
       "returns": {
-        "daily": -5.331,
-        "mtd": -11.2979,
-        "ytd": -40.7778,
-        "r1m": -22.0977,
-        "r3m": -13.6107,
-        "r6m": -36.9498,
-        "r1y": -54.0655,
-        "weekly": -12.0111,
-        "monthly": -22.0977,
-        "annual": -54.0655
+        "daily": -5.8079,
+        "mtd": -16.4496,
+        "ytd": -44.2173,
+        "r1m": -24.721,
+        "r3m": -18.4907,
+        "r6m": -38.0656,
+        "r1y": -58.5296,
+        "weekly": -16.4963,
+        "monthly": -24.721,
+        "annual": -58.5296
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -10.5432,
+        "current_month_avg_return": -11.1156,
         "current_month_positive_rate": 22.2222,
         "monthly_avg_returns": {
           "Jan": 13.2046,
@@ -33301,7 +33301,7 @@
           "Mar": -5.5869,
           "Apr": 16.9252,
           "May": 8.3216,
-          "Jun": -10.5432,
+          "Jun": -11.1156,
           "Jul": 17.7818,
           "Aug": -2.4107,
           "Sep": -9.1227,
@@ -33325,7 +33325,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 92.4491,
+        "average": 92.1052,
         "median": 16.855,
         "best": 464.0612,
         "worst": -82.7387,
@@ -33333,7 +33333,7 @@
         "years_count": 10
       },
       "annual_returns_by_year": {
-        "2026": -40.7778,
+        "2026": -44.2173,
         "2025": -11.5243,
         "2024": 41.6695,
         "2023": 89.9699,
@@ -33351,7 +33351,7 @@
           "Mar": 8.5423,
           "Apr": 5.4946,
           "May": -12.6684,
-          "Jun": -11.2979
+          "Jun": -16.4496
         },
         "2025": {
           "Jan": -1.6472,
@@ -33471,34 +33471,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -63.2214,
+        "current_drawdown_pct": -65.3575,
         "max_drawdown_pct": -93.9625,
         "peak_date": "2025-08-22",
         "peak_close": 4831.3486,
-        "days_since_peak": 286,
-        "recovery_needed_pct": 171.8976,
+        "days_since_peak": 287,
+        "recovery_needed_pct": 188.6628,
         "drawdown_bucket": "severe"
       }
     },
     "GC=F": {
       "symbol": "GC=F",
       "market_group": "Gold",
-      "last_close": 4488.7998,
+      "last_close": 4487.1001,
       "returns": {
-        "daily": 1.1743,
-        "mtd": 0.3039,
-        "ytd": 4.0423,
-        "r1m": -4.4896,
-        "r3m": -11.8374,
-        "r6m": 6.5768,
-        "r1y": 35.0949,
-        "weekly": -0.2334,
-        "monthly": -4.4896,
-        "annual": 35.0949
+        "daily": 0.2525,
+        "mtd": 0.2659,
+        "ytd": 4.0029,
+        "r1m": -4.9424,
+        "r3m": -14.1997,
+        "r6m": 6.5086,
+        "r1y": 34.6628,
+        "weekly": -1.6095,
+        "monthly": -4.9424,
+        "annual": 34.6628
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.8731,
+        "current_month_avg_return": -0.8746,
         "current_month_positive_rate": 34.6154,
         "monthly_avg_returns": {
           "Jan": 2.3241,
@@ -33506,7 +33506,7 @@
           "Mar": -0.0928,
           "Apr": 1.0836,
           "May": 0.6617,
-          "Jun": -0.8731,
+          "Jun": -0.8746,
           "Jul": 0.9012,
           "Aug": 1.9749,
           "Sep": 0.6916,
@@ -33530,7 +33530,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 11.5016,
+        "average": 11.5002,
         "median": 10.0661,
         "best": 62.6838,
         "worst": -28.7932,
@@ -33538,7 +33538,7 @@
         "years_count": 27
       },
       "annual_returns_by_year": {
-        "2026": 4.0423,
+        "2026": 4.0029,
         "2025": 62.6838,
         "2024": 27.359,
         "2023": 12.1052,
@@ -33573,7 +33573,7 @@
           "Mar": -12.2167,
           "Apr": -3.5227,
           "May": -1.499,
-          "Jun": 0.3039
+          "Jun": 0.2659
         },
         "2025": {
           "Jan": 5.7768,
@@ -33934,42 +33934,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -15.5987,
+        "current_drawdown_pct": -15.6306,
         "max_drawdown_pct": -44.3638,
         "peak_date": "2026-01-29",
         "peak_close": 5318.3999,
-        "days_since_peak": 126,
-        "recovery_needed_pct": 18.4816,
+        "days_since_peak": 127,
+        "recovery_needed_pct": 18.5264,
         "drawdown_bucket": "deep"
       }
     },
     "CGL.TO": {
       "symbol": "CGL.TO",
       "market_group": "Gold",
-      "last_close": 33.92,
+      "last_close": 34.19,
       "returns": {
-        "daily": -0.8187,
-        "mtd": -0.6444,
-        "ytd": 1.5569,
-        "r1m": -1.8519,
-        "r3m": -13.9086,
-        "r6m": 3.5093,
-        "r1y": 28.339,
-        "weekly": -0.294,
-        "monthly": -1.8519,
-        "annual": 28.339
+        "daily": 0.796,
+        "mtd": 0.1465,
+        "ytd": 2.3653,
+        "r1m": -1.8938,
+        "r3m": -12.1757,
+        "r6m": 5.0707,
+        "r1y": 30.4962,
+        "weekly": -0.5237,
+        "monthly": -1.8938,
+        "annual": 30.4962
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.9656,
-        "current_month_positive_rate": 25.0,
+        "current_month_avg_return": -0.9161,
+        "current_month_positive_rate": 31.25,
         "monthly_avg_returns": {
           "Jan": 2.8539,
           "Feb": 0.8864,
           "Mar": -0.0195,
           "Apr": 1.0422,
           "May": -0.5735,
-          "Jun": -0.9656,
+          "Jun": -0.9161,
           "Jul": 1.3693,
           "Aug": 1.8549,
           "Sep": -1.8155,
@@ -33983,7 +33983,7 @@
           "Mar": 37.5,
           "Apr": 56.25,
           "May": 43.75,
-          "Jun": 25.0,
+          "Jun": 31.25,
           "Jul": 60.0,
           "Aug": 60.0,
           "Sep": 26.6667,
@@ -33993,7 +33993,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.2532,
+        "average": 7.3008,
         "median": 6.8783,
         "best": 57.8697,
         "worst": -29.2247,
@@ -34001,7 +34001,7 @@
         "years_count": 17
       },
       "annual_returns_by_year": {
-        "2026": 1.5569,
+        "2026": 2.3653,
         "2025": 57.8697,
         "2024": 26.0024,
         "2023": 10.4418,
@@ -34026,7 +34026,7 @@
           "Mar": -12.3963,
           "Apr": -1.0959,
           "May": -1.5616,
-          "Jun": -0.6444
+          "Jun": 0.1465
         },
         "2025": {
           "Jan": 5.088,
@@ -34245,34 +34245,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -18.2059,
+        "current_drawdown_pct": -17.5549,
         "max_drawdown_pct": -45.9602,
         "peak_date": "2026-01-29",
         "peak_close": 41.47,
-        "days_since_peak": 125,
-        "recovery_needed_pct": 22.2583,
+        "days_since_peak": 126,
+        "recovery_needed_pct": 21.2928,
         "drawdown_bucket": "deep"
       }
     },
     "GOLDBEES.NS": {
       "symbol": "GOLDBEES.NS",
       "market_group": "Gold",
-      "last_close": 128.25,
+      "last_close": 127.63,
       "returns": {
-        "daily": 0.4779,
-        "mtd": 0.5961,
-        "ytd": 16.0423,
-        "r1m": 3.4107,
-        "r3m": -7.2802,
-        "r6m": 20.1743,
-        "r1y": 62.1365,
-        "weekly": -0.6122,
-        "monthly": 3.4107,
-        "annual": 62.1365
+        "daily": -0.677,
+        "mtd": 0.1098,
+        "ytd": 15.4814,
+        "r1m": 2.5388,
+        "r3m": -4.7253,
+        "r6m": 20.8274,
+        "r1y": 60.5611,
+        "weekly": -0.7928,
+        "monthly": 2.5388,
+        "annual": 60.5611
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -0.1693,
+        "current_month_avg_return": -0.1963,
         "current_month_positive_rate": 50.0,
         "monthly_avg_returns": {
           "Jan": 2.9526,
@@ -34280,7 +34280,7 @@
           "Mar": -0.831,
           "Apr": 2.1726,
           "May": 0.3555,
-          "Jun": -0.1693,
+          "Jun": -0.1963,
           "Jul": 1.0866,
           "Aug": 3.4878,
           "Sep": -0.316,
@@ -34304,7 +34304,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 14.4209,
+        "average": 14.3897,
         "median": 13.1156,
         "best": 71.1111,
         "worst": -9.5492,
@@ -34312,7 +34312,7 @@
         "years_count": 18
       },
       "annual_returns_by_year": {
-        "2026": 16.0423,
+        "2026": 15.4814,
         "2025": 71.1111,
         "2024": 19.2594,
         "2023": 13.7587,
@@ -34338,7 +34338,7 @@
           "Mar": -12.3843,
           "Apr": 0.0486,
           "May": 4.2291,
-          "Jun": 0.5961
+          "Jun": 0.1098
         },
         "2025": {
           "Jan": 7.3504,
@@ -34580,42 +34580,42 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -12.4753,
+        "current_drawdown_pct": -12.8984,
         "max_drawdown_pct": -99.0297,
         "peak_date": "2026-01-29",
         "peak_close": 146.53,
-        "days_since_peak": 126,
-        "recovery_needed_pct": 14.2534,
+        "days_since_peak": 127,
+        "recovery_needed_pct": 14.8084,
         "drawdown_bucket": "moderate"
       }
     },
     "XGD.TO": {
       "symbol": "XGD.TO",
       "market_group": "Gold",
-      "last_close": 52.83,
+      "last_close": 53.94,
       "returns": {
-        "daily": -2.7967,
-        "mtd": -1.8212,
-        "ytd": 3.1836,
-        "r1m": 1.6157,
-        "r3m": -16.6193,
-        "r6m": 5.1762,
-        "r1y": 65.5594,
-        "weekly": -0.3019,
-        "monthly": 1.6157,
-        "annual": 65.5594
+        "daily": 2.1011,
+        "mtd": 0.2416,
+        "ytd": 5.3516,
+        "r1m": 3.671,
+        "r3m": -11.8339,
+        "r6m": 9.7233,
+        "r1y": 69.9433,
+        "weekly": 0.3162,
+        "monthly": 3.671,
+        "annual": 69.9433
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.7051,
-        "current_month_positive_rate": 34.6154,
+        "current_month_avg_return": -1.6258,
+        "current_month_positive_rate": 38.4615,
         "monthly_avg_returns": {
           "Jan": 1.9141,
           "Feb": 0.3612,
           "Mar": 0.7812,
           "Apr": -0.2483,
           "May": 1.9811,
-          "Jun": -1.7051,
+          "Jun": -1.6258,
           "Jul": -0.6628,
           "Aug": 3.1558,
           "Sep": 0.3127,
@@ -34629,7 +34629,7 @@
           "Mar": 53.8462,
           "Apr": 50.0,
           "May": 61.5385,
-          "Jun": 34.6154,
+          "Jun": 38.4615,
           "Jul": 56.0,
           "Aug": 64.0,
           "Sep": 52.0,
@@ -34639,15 +34639,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 10.7982,
-        "median": 0.5461,
+        "average": 10.8816,
+        "median": 1.6301,
         "best": 132.5751,
         "worst": -48.7395,
         "positive_rate": 50.0,
         "years_count": 26
       },
       "annual_returns_by_year": {
-        "2026": 3.1836,
+        "2026": 5.3516,
         "2025": 132.5751,
         "2024": 19.3658,
         "2023": -2.0914,
@@ -34681,7 +34681,7 @@
           "Mar": -17.7681,
           "Apr": -9.4883,
           "May": 4.8841,
-          "Jun": -1.8212
+          "Jun": 0.2416
         },
         "2025": {
           "Jan": 11.5105,
@@ -35033,34 +35033,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -23.4902,
+        "current_drawdown_pct": -21.8827,
         "max_drawdown_pct": -73.6711,
         "peak_date": "2026-02-27",
         "peak_close": 69.05,
-        "days_since_peak": 96,
-        "recovery_needed_pct": 30.7023,
+        "days_since_peak": 97,
+        "recovery_needed_pct": 28.0126,
         "drawdown_bucket": "deep"
       }
     },
     "HNU.TO": {
       "symbol": "HNU.TO",
       "market_group": "Natural Gas",
-      "last_close": 11.02,
+      "last_close": 11.77,
       "returns": {
-        "daily": 4.2573,
-        "mtd": 3.087,
-        "ytd": -30.2532,
-        "r1m": 6.3707,
-        "r3m": -12.8854,
-        "r6m": -56.8689,
-        "r1y": -67.7684,
-        "weekly": 9.001,
-        "monthly": 6.3707,
-        "annual": -67.7684
+        "daily": 6.8058,
+        "mtd": 10.1029,
+        "ytd": -25.5063,
+        "r1m": 20.102,
+        "r3m": -10.7657,
+        "r6m": -52.3096,
+        "r1y": -65.9236,
+        "weekly": 3.2456,
+        "monthly": 20.102,
+        "annual": -65.9236
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": 0.3982,
+        "current_month_avg_return": 0.7675,
         "current_month_positive_rate": 42.1053,
         "monthly_avg_returns": {
           "Jan": -2.3673,
@@ -35068,7 +35068,7 @@
           "Mar": -4.7575,
           "Apr": 4.3074,
           "May": -1.4298,
-          "Jun": 0.3982,
+          "Jun": 0.7675,
           "Jul": -3.4298,
           "Aug": -1.7275,
           "Sep": 0.7953,
@@ -35092,7 +35092,7 @@
         }
       },
       "annual_return_stats": {
-        "average": -50.5062,
+        "average": -50.2564,
         "median": -59.2105,
         "best": 27.5076,
         "worst": -90.1046,
@@ -35100,7 +35100,7 @@
         "years_count": 19
       },
       "annual_returns_by_year": {
-        "2026": -30.2532,
+        "2026": -25.5063,
         "2025": -58.0222,
         "2024": -54.2569,
         "2023": -90.1046,
@@ -35127,7 +35127,7 @@
           "Mar": -9.2565,
           "Apr": -13.7688,
           "May": 15.1057,
-          "Jun": 3.087
+          "Jun": 10.1029
         },
         "2025": {
           "Jan": -11.8723,
@@ -35387,30 +35387,30 @@
         "max_drawdown_pct": -100.0,
         "peak_date": "2008-07-03",
         "peak_close": 1380960000.0,
-        "days_since_peak": 6544,
-        "recovery_needed_pct": 12531396838.619,
+        "days_since_peak": 6545,
+        "recovery_needed_pct": 11732879647.5883,
         "drawdown_bucket": "severe"
       }
     },
     "NG=F": {
       "symbol": "NG=F",
       "market_group": "Natural Gas",
-      "last_close": 3.222,
+      "last_close": 3.33,
       "returns": {
-        "daily": 0.2489,
-        "mtd": 1.3526,
-        "ytd": -10.9453,
-        "r1m": 16.3597,
-        "r3m": 3.2692,
-        "r6m": -36.3618,
-        "r1y": -14.852,
-        "weekly": -1.9178,
-        "monthly": 16.3597,
-        "annual": -14.852
+        "daily": -0.1799,
+        "mtd": 4.7499,
+        "ytd": -7.9602,
+        "r1m": 20.7835,
+        "r3m": 10.2649,
+        "r6m": -37.0391,
+        "r1y": -8.3906,
+        "weekly": 1.2158,
+        "monthly": 20.7835,
+        "annual": -8.3906
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.0008,
+        "current_month_avg_return": -0.8701,
         "current_month_positive_rate": 42.3077,
         "monthly_avg_returns": {
           "Jan": -5.3518,
@@ -35418,7 +35418,7 @@
           "Mar": 1.3597,
           "Apr": 3.9615,
           "May": 2.3891,
-          "Jun": -1.0008,
+          "Jun": -0.8701,
           "Jul": -0.0169,
           "Aug": 0.0203,
           "Sep": 9.5441,
@@ -35442,7 +35442,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 7.1905,
+        "average": 7.301,
         "median": -3.7958,
         "best": 103.4339,
         "worst": -69.2731,
@@ -35450,7 +35450,7 @@
         "years_count": 27
       },
       "annual_returns_by_year": {
-        "2026": -10.9453,
+        "2026": -7.9602,
         "2025": 0.7104,
         "2024": 41.472,
         "2023": -36.9609,
@@ -35485,7 +35485,7 @@
           "Mar": -2.5676,
           "Apr": -1.8446,
           "May": 18.3453,
-          "Jun": 1.3526
+          "Jun": 4.7499
         },
         "2025": {
           "Jan": -16.8306,
@@ -35846,12 +35846,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -79.048,
+        "current_drawdown_pct": -78.3457,
         "max_drawdown_pct": -90.3629,
         "peak_date": "2005-12-13",
         "peak_close": 15.378,
-        "days_since_peak": 7478,
-        "recovery_needed_pct": 377.2812,
+        "days_since_peak": 7479,
+        "recovery_needed_pct": 361.8018,
         "drawdown_bucket": "severe"
       }
     },
@@ -36325,22 +36325,22 @@
     "SVR.TO": {
       "symbol": "SVR.TO",
       "market_group": "Silver & Other Metals",
-      "last_close": 33.86,
+      "last_close": 34.12,
       "returns": {
-        "daily": -2.6732,
-        "mtd": -2.477,
-        "ytd": -0.2063,
-        "r1m": 0.3854,
-        "r3m": -12.9339,
-        "r6m": 24.2113,
-        "r1y": 102.512,
-        "weekly": -1.9687,
-        "monthly": 0.3854,
-        "annual": 102.512
+        "daily": 0.7679,
+        "mtd": -1.7281,
+        "ytd": 0.56,
+        "r1m": 1.5476,
+        "r3m": -11.0995,
+        "r6m": 24.2987,
+        "r1y": 105.4184,
+        "weekly": -2.7366,
+        "monthly": 1.5476,
+        "annual": 105.4184
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -1.27,
+        "current_month_avg_return": -1.226,
         "current_month_positive_rate": 23.5294,
         "monthly_avg_returns": {
           "Jan": 1.6482,
@@ -36348,7 +36348,7 @@
           "Mar": -0.7085,
           "Apr": 0.8589,
           "May": -0.5103,
-          "Jun": -1.27,
+          "Jun": -1.226,
           "Jul": 3.4101,
           "Aug": 2.5191,
           "Sep": -2.7136,
@@ -36372,15 +36372,15 @@
         }
       },
       "annual_return_stats": {
-        "average": 10.5734,
+        "average": 10.616,
         "median": 1.5129,
         "best": 135.6232,
         "worst": -37.7358,
-        "positive_rate": 55.5556,
+        "positive_rate": 61.1111,
         "years_count": 18
       },
       "annual_returns_by_year": {
-        "2026": -0.2063,
+        "2026": 0.56,
         "2025": 135.6232,
         "2024": 18.9166,
         "2023": -2.1008,
@@ -36406,7 +36406,7 @@
           "Mar": -16.7979,
           "Apr": -2.6097,
           "May": 0.5737,
-          "Jun": -2.477
+          "Jun": -1.7281
         },
         "2025": {
           "Jan": 6.2323,
@@ -36639,34 +36639,34 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -37.6427,
+        "current_drawdown_pct": -37.1639,
         "max_drawdown_pct": -77.8516,
         "peak_date": "2026-01-28",
         "peak_close": 54.3,
-        "days_since_peak": 126,
-        "recovery_needed_pct": 60.3662,
+        "days_since_peak": 127,
+        "recovery_needed_pct": 59.1442,
         "drawdown_bucket": "severe"
       }
     },
     "SI=F": {
       "symbol": "SI=F",
       "market_group": "Silver & Other Metals",
-      "last_close": 73.39,
+      "last_close": 72.62,
       "returns": {
-        "daily": -0.117,
-        "mtd": -2.1558,
-        "ytd": 4.0167,
-        "r1m": -7.9183,
-        "r3m": -12.6642,
-        "r6m": 29.1009,
-        "r1y": 103.7196,
-        "weekly": -2.981,
-        "monthly": -7.9183,
-        "annual": 103.7196
+        "daily": -1.5709,
+        "mtd": -3.1824,
+        "ytd": 2.9253,
+        "r1m": -9.671,
+        "r3m": -18.4805,
+        "r6m": 24.3025,
+        "r1y": 97.9394,
+        "weekly": -3.9621,
+        "monthly": -9.671,
+        "annual": 97.9394
       },
       "seasonality": {
         "current_month": "Jun",
-        "current_month_avg_return": -2.7644,
+        "current_month_avg_return": -2.8038,
         "current_month_positive_rate": 26.9231,
         "monthly_avg_returns": {
           "Jan": 2.5391,
@@ -36674,7 +36674,7 @@
           "Mar": 0.1673,
           "Apr": 0.2105,
           "May": 1.3443,
-          "Jun": -2.7644,
+          "Jun": -2.8038,
           "Jul": 3.9069,
           "Aug": 1.2244,
           "Sep": -0.6655,
@@ -36698,7 +36698,7 @@
         }
       },
       "annual_return_stats": {
-        "average": 13.559,
+        "average": 13.5186,
         "median": 4.7038,
         "best": 136.7632,
         "worst": -37.5194,
@@ -36706,7 +36706,7 @@
         "years_count": 27
       },
       "annual_returns_by_year": {
-        "2026": 4.0167,
+        "2026": 2.9253,
         "2025": 136.7632,
         "2024": 21.9399,
         "2023": -0.8562,
@@ -36741,7 +36741,7 @@
           "Mar": -15.398,
           "Apr": -3.0751,
           "May": -0.4411,
-          "Jun": -2.1558
+          "Jun": -3.1824
         },
         "2025": {
           "Jan": 8.4599,
@@ -37102,12 +37102,12 @@
         }
       },
       "drawdown": {
-        "current_drawdown_pct": -36.227,
+        "current_drawdown_pct": -36.8961,
         "max_drawdown_pct": -75.846,
         "peak_date": "2026-01-26",
         "peak_close": 115.08,
-        "days_since_peak": 129,
-        "recovery_needed_pct": 56.8061,
+        "days_since_peak": 130,
+        "recovery_needed_pct": 58.4687,
         "drawdown_bucket": "severe"
       }
     }

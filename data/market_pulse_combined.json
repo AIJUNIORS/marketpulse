@@ -1,8 +1,8 @@
 {
   "schema_version": 5,
-  "generated_at": "2026-10-20T08:47:23+00:00",
+  "generated_at": "2026-10-20T15:43:15+00:00",
   "source_files": {
-    "market_pulse_east.json": "2026-10-19T17:37:14+00:00",
+    "market_pulse_east.json": "2026-10-20T15:43:13+00:00",
     "market_pulse_west_us.json": "2026-10-20T01:57:22+00:00",
     "market_pulse_west_canada_global.json": "2026-10-20T06:25:49+00:00",
     "market_pulse_west_others.json": "2026-10-20T08:47:22+00:00"
@@ -5746,30 +5746,30 @@
           "group_order": 3,
           "benchmark_symbol": null,
           "last_close": 94.915,
-          "previous_close": 94.5248,
-          "last_date": "2026-10-19",
+          "previous_close": 94.9777,
+          "last_date": "2026-10-20",
           "price_source": "close",
           "price_label": "Close",
           "data_status": "ok",
-          "rows": 5934,
+          "rows": 5935,
           "returns": {
-            "daily": 0.4128,
+            "daily": -0.066,
             "mtd": -1.0551,
             "ytd": 5.5058,
-            "r1m": -0.923,
-            "r3m": -1.4801,
-            "r6m": 0.8523,
-            "r1y": 7.5864,
-            "weekly": -1.9223,
-            "monthly": -0.923,
-            "annual": 7.5864
+            "r1m": -1.1437,
+            "r3m": -1.7006,
+            "r6m": 0.7053,
+            "r1y": 7.5823,
+            "weekly": -0.8989,
+            "monthly": -1.1437,
+            "annual": 7.5823
           },
           "drawdown": {
             "current_drawdown_pct": -2.0251,
             "max_drawdown_pct": -16.656,
             "peak_date": "2026-07-24",
             "peak_close": 96.8769,
-            "days_since_peak": 87,
+            "days_since_peak": 88,
             "recovery_needed_pct": 2.067,
             "drawdown_bucket": "mild"
           },
@@ -5778,7 +5778,7 @@
             "max_drawdown_pct": -16.656,
             "peak_date": "2026-07-24",
             "peak_close": 96.8769,
-            "days_since_peak": 87,
+            "days_since_peak": 88,
             "recovery_needed_pct": 2.067,
             "drawdown_bucket": "mild"
           },
@@ -6178,18 +6178,18 @@
             "weekly": {
               "timeframe": "weekly",
               "source_period_end": "2026-10-23",
-              "pivot": 94.8733,
-              "bc": 94.8525,
-              "tc": 94.8942,
-              "s1": 94.7817,
-              "s2": 94.6483,
-              "r1": 95.0067,
-              "r2": 95.0983,
-              "distance_to_pivot_pct": 0.0439,
-              "distance_to_s1_pct": 0.1405,
-              "distance_to_s2_pct": 0.281,
-              "distance_to_r1_pct": -0.0966,
-              "distance_to_r2_pct": -0.1932,
+              "pivot": 94.6915,
+              "bc": 94.5798,
+              "tc": 94.8033,
+              "s1": 94.3764,
+              "s2": 93.8378,
+              "r1": 95.2301,
+              "r2": 95.5452,
+              "distance_to_pivot_pct": 0.2355,
+              "distance_to_s1_pct": 0.5675,
+              "distance_to_s2_pct": 1.1349,
+              "distance_to_r1_pct": -0.332,
+              "distance_to_r2_pct": -0.664,
               "price_position": {
                 "above_pivot": true,
                 "below_pivot": false,
@@ -6203,18 +6203,18 @@
             "monthly": {
               "timeframe": "monthly",
               "source_period_end": "2026-10-31",
-              "pivot": 95.443,
-              "bc": 95.179,
-              "tc": 95.7071,
-              "s1": 93.995,
-              "s2": 93.0749,
-              "r1": 96.3631,
-              "r2": 97.8111,
-              "distance_to_pivot_pct": -0.5563,
-              "distance_to_s1_pct": 0.9693,
-              "distance_to_s2_pct": 1.9386,
-              "distance_to_r1_pct": -1.5256,
-              "distance_to_r2_pct": -3.0513,
+              "pivot": 95.3197,
+              "bc": 95.1173,
+              "tc": 95.522,
+              "s1": 93.7482,
+              "s2": 92.5815,
+              "r1": 96.4864,
+              "r2": 98.0579,
+              "distance_to_pivot_pct": -0.4263,
+              "distance_to_s1_pct": 1.2293,
+              "distance_to_s2_pct": 2.4585,
+              "distance_to_r1_pct": -1.6556,
+              "distance_to_r2_pct": -3.3112,
               "price_position": {
                 "above_pivot": false,
                 "below_pivot": true,
@@ -6222,8 +6222,8 @@
                 "above_cpr": false,
                 "below_cpr": true
               },
-              "technical_signal": "Better Buy",
-              "signal": "Better Buy"
+              "technical_signal": "Good Buy",
+              "signal": "Good Buy"
             },
             "annual": {
               "timeframe": "annual",
@@ -6254,17 +6254,17 @@
           "signals": {
             "weekly": {
               "technical_signal": "Better Buy",
-              "return_pct": -1.9223,
+              "return_pct": -0.8989,
               "combined_signal": "Better Buy"
             },
             "monthly": {
-              "technical_signal": "Better Buy",
-              "return_pct": -0.923,
-              "combined_signal": "Better Buy"
+              "technical_signal": "Good Buy",
+              "return_pct": -1.1437,
+              "combined_signal": "Good Buy"
             },
             "annual": {
               "technical_signal": "Risk On",
-              "return_pct": 7.5864,
+              "return_pct": 7.5823,
               "combined_signal": "Risk On"
             }
           }
@@ -6285,41 +6285,41 @@
           "benchmark_ticker": "^NSEI",
           "group_order": 3,
           "benchmark_symbol": null,
-          "last_close": 14.7725,
-          "previous_close": 14.025,
+          "last_close": 14.77,
+          "previous_close": 14.06,
           "last_date": "2026-10-19",
           "price_source": "close",
           "price_label": "Close",
           "data_status": "ok",
           "rows": 4564,
           "returns": {
-            "daily": 5.3298,
-            "mtd": 2.1611,
-            "ytd": 56.3228,
-            "r1m": 20.1993,
-            "r3m": 13.8097,
-            "r6m": -14.1633,
-            "r1y": 43.2832,
-            "weekly": -3.1311,
-            "monthly": 20.1993,
-            "annual": 43.2832
+            "daily": 5.0498,
+            "mtd": 2.1438,
+            "ytd": 56.2963,
+            "r1m": 20.179,
+            "r3m": 13.7905,
+            "r6m": -14.1778,
+            "r1y": 43.259,
+            "weekly": -3.1475,
+            "monthly": 20.179,
+            "annual": 43.259
           },
           "drawdown": {
-            "current_drawdown_pct": -82.6471,
+            "current_drawdown_pct": -82.6501,
             "max_drawdown_pct": -89.2517,
             "peak_date": "2008-11-17",
             "peak_close": 85.13,
             "days_since_peak": 6545,
-            "recovery_needed_pct": 476.2735,
+            "recovery_needed_pct": 476.371,
             "drawdown_bucket": "severe"
           },
           "drawdown_recovery": {
-            "current_drawdown_pct": -82.6471,
+            "current_drawdown_pct": -82.6501,
             "max_drawdown_pct": -89.2517,
             "peak_date": "2008-11-17",
             "peak_close": 85.13,
             "days_since_peak": 6545,
-            "recovery_needed_pct": 476.2735,
+            "recovery_needed_pct": 476.371,
             "drawdown_bucket": "severe"
           },
           "monthly_returns_by_year": {
@@ -6333,7 +6333,7 @@
               "Jul": -11.1782,
               "Aug": -6.2029,
               "Sep": 17.4064,
-              "Oct": 2.1611
+              "Oct": 2.1438
             },
             "2025": {
               "Jan": 18.2678,
@@ -6587,7 +6587,7 @@
             }
           },
           "annual_returns_by_year": {
-            "2026": 56.3228,
+            "2026": 56.2963,
             "2025": -31.0044,
             "2024": -0.8916,
             "2023": -1.2934,
@@ -6608,7 +6608,7 @@
             "2008": 20.4978
           },
           "annual_return_stats": {
-            "average": 1.275,
+            "average": 1.2736,
             "median": -2.9525,
             "best": 83.638,
             "worst": -45.6956,
@@ -6617,7 +6617,7 @@
           },
           "seasonality": {
             "current_month": "Oct",
-            "current_month_avg_return": 4.0692,
+            "current_month_avg_return": 4.0683,
             "current_month_positive_rate": 52.6316,
             "monthly_avg_returns": {
               "Jan": 18.6858,
@@ -6629,7 +6629,7 @@
               "Jul": -5.8818,
               "Aug": 6.169,
               "Sep": 4.2119,
-              "Oct": 4.0692,
+              "Oct": 4.0683,
               "Nov": -0.5985,
               "Dec": -7.0865
             },
@@ -6652,18 +6652,18 @@
             "weekly": {
               "timeframe": "weekly",
               "source_period_end": "2026-10-23",
-              "pivot": 14.3542,
+              "pivot": 14.3533,
               "bc": 14.145,
-              "tc": 14.5633,
-              "s1": 13.7358,
-              "s2": 12.6992,
-              "r1": 15.3908,
-              "r2": 16.0092,
-              "distance_to_pivot_pct": 2.8318,
-              "distance_to_s1_pct": 7.0175,
-              "distance_to_s2_pct": 14.0351,
-              "distance_to_r1_pct": -4.1857,
-              "distance_to_r2_pct": -8.3714,
+              "tc": 14.5617,
+              "s1": 13.7367,
+              "s2": 12.7033,
+              "r1": 15.3867,
+              "r2": 16.0033,
+              "distance_to_pivot_pct": 2.821,
+              "distance_to_s1_pct": 6.9962,
+              "distance_to_s2_pct": 13.9923,
+              "distance_to_r1_pct": -4.1751,
+              "distance_to_r2_pct": -8.3503,
               "price_position": {
                 "above_pivot": true,
                 "below_pivot": false,
@@ -6677,18 +6677,18 @@
             "monthly": {
               "timeframe": "monthly",
               "source_period_end": "2026-10-31",
-              "pivot": 14.1442,
+              "pivot": 14.1433,
               "bc": 13.83,
-              "tc": 14.4583,
-              "s1": 12.5983,
-              "s2": 10.4242,
-              "r1": 16.3183,
-              "r2": 17.8642,
-              "distance_to_pivot_pct": 4.2534,
-              "distance_to_s1_pct": 14.7177,
-              "distance_to_s2_pct": 29.4353,
-              "distance_to_r1_pct": -10.4643,
-              "distance_to_r2_pct": -20.9285,
+              "tc": 14.4567,
+              "s1": 12.5967,
+              "s2": 10.4233,
+              "r1": 16.3167,
+              "r2": 17.8633,
+              "distance_to_pivot_pct": 4.2428,
+              "distance_to_s1_pct": 14.7145,
+              "distance_to_s2_pct": 29.429,
+              "distance_to_r1_pct": -10.4717,
+              "distance_to_r2_pct": -20.9433,
               "price_position": {
                 "above_pivot": true,
                 "below_pivot": false,
@@ -6702,18 +6702,18 @@
             "annual": {
               "timeframe": "annual",
               "source_period_end": "2026-12-31",
-              "pivot": 17.5508,
-              "bc": 16.1617,
+              "pivot": 17.55,
+              "bc": 16.16,
               "tc": 18.94,
-              "s1": 6.1917,
-              "s2": -2.3892,
-              "r1": 26.1317,
-              "r2": 37.4908,
-              "distance_to_pivot_pct": -18.8075,
-              "distance_to_s1_pct": 58.0865,
-              "distance_to_s2_pct": 116.1731,
-              "distance_to_r1_pct": -76.894,
-              "distance_to_r2_pct": -153.788,
+              "s1": 6.19,
+              "s2": -2.39,
+              "r1": 26.13,
+              "r2": 37.49,
+              "distance_to_pivot_pct": -18.8219,
+              "distance_to_s1_pct": 58.0907,
+              "distance_to_s2_pct": 116.1814,
+              "distance_to_r1_pct": -76.9127,
+              "distance_to_r2_pct": -153.8253,
               "price_position": {
                 "above_pivot": false,
                 "below_pivot": true,
@@ -6728,17 +6728,17 @@
           "signals": {
             "weekly": {
               "technical_signal": "Risk On",
-              "return_pct": -3.1311,
+              "return_pct": -3.1475,
               "combined_signal": "Risk On"
             },
             "monthly": {
               "technical_signal": "Risk On",
-              "return_pct": 20.1993,
+              "return_pct": 20.179,
               "combined_signal": "Risk On"
             },
             "annual": {
               "technical_signal": "Watch",
-              "return_pct": 43.2832,
+              "return_pct": 43.259,
               "combined_signal": "Watch"
             }
           }

@@ -1,7 +1,106 @@
 {
-  "generated_at": "2026-10-31T09:52:43+00:00",
+  "generated_at": "2026-10-31T14:17:49+00:00",
   "price_source": "close",
   "items": {
+    "^NSEI": {
+      "symbol": "^NSEI",
+      "market_group": "India Markets",
+      "last_close": 23053.0996,
+      "technicals": {
+        "weekly": {
+          "timeframe": "weekly",
+          "source_period_end": "2026-10-30",
+          "pivot": 22852.8496,
+          "bc": 22752.7246,
+          "tc": 22952.9746,
+          "s1": 22587.5996,
+          "s2": 22122.0996,
+          "r1": 23318.3496,
+          "r2": 23583.5996,
+          "distance_to_pivot_pct": 0.8686,
+          "distance_to_s1_pct": 2.0193,
+          "distance_to_s2_pct": 4.0385,
+          "distance_to_r1_pct": -1.1506,
+          "distance_to_r2_pct": -2.3012,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Good Buy",
+          "signal": "Good Buy"
+        },
+        "monthly": {
+          "timeframe": "monthly",
+          "source_period_end": "2026-10-31",
+          "pivot": 22802.75,
+          "bc": 22677.5752,
+          "tc": 22927.9248,
+          "s1": 22430.25,
+          "s2": 21807.4004,
+          "r1": 23425.5996,
+          "r2": 23798.0996,
+          "distance_to_pivot_pct": 1.086,
+          "distance_to_s1_pct": 2.7018,
+          "distance_to_s2_pct": 5.4036,
+          "distance_to_r1_pct": -1.6158,
+          "distance_to_r2_pct": -3.2317,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Good Buy",
+          "signal": "Good Buy"
+        },
+        "annual": {
+          "timeframe": "annual",
+          "source_period_end": "2026-12-31",
+          "pivot": 23868.7331,
+          "bc": 23460.9163,
+          "tc": 24276.5498,
+          "s1": 21364.2669,
+          "s2": 19675.4342,
+          "r1": 25557.5658,
+          "r2": 28062.0319,
+          "distance_to_pivot_pct": -3.5381,
+          "distance_to_s1_pct": 7.3258,
+          "distance_to_s2_pct": 14.6517,
+          "distance_to_r1_pct": -10.8639,
+          "distance_to_r2_pct": -21.7278,
+          "price_position": {
+            "above_pivot": false,
+            "below_pivot": true,
+            "inside_cpr": false,
+            "above_cpr": false,
+            "below_cpr": true
+          },
+          "technical_signal": "Watch",
+          "signal": "Watch"
+        }
+      },
+      "signals": {
+        "weekly": {
+          "technical_signal": "Good Buy",
+          "return_pct": 2.0049,
+          "combined_signal": "Good Buy"
+        },
+        "monthly": {
+          "technical_signal": "Good Buy",
+          "return_pct": 1.4831,
+          "combined_signal": "Good Buy"
+        },
+        "annual": {
+          "technical_signal": "Watch",
+          "return_pct": -10.8839,
+          "combined_signal": "Risk Off"
+        }
+      }
+    },
     "HDFCBSE500.NS": {
       "symbol": "HDFCBSE500.NS",
       "market_group": "India Markets",
@@ -296,105 +395,6 @@
           "technical_signal": "Watch",
           "return_pct": -4.0791,
           "combined_signal": "Watch"
-        }
-      }
-    },
-    "^NSEI": {
-      "symbol": "^NSEI",
-      "market_group": "India Markets",
-      "last_close": 23053.0996,
-      "technicals": {
-        "weekly": {
-          "timeframe": "weekly",
-          "source_period_end": "2026-10-30",
-          "pivot": 22852.8496,
-          "bc": 22752.7246,
-          "tc": 22952.9746,
-          "s1": 22587.5996,
-          "s2": 22122.0996,
-          "r1": 23318.3496,
-          "r2": 23583.5996,
-          "distance_to_pivot_pct": 0.8686,
-          "distance_to_s1_pct": 2.0193,
-          "distance_to_s2_pct": 4.0385,
-          "distance_to_r1_pct": -1.1506,
-          "distance_to_r2_pct": -2.3012,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Good Buy",
-          "signal": "Good Buy"
-        },
-        "monthly": {
-          "timeframe": "monthly",
-          "source_period_end": "2026-10-31",
-          "pivot": 22802.75,
-          "bc": 22677.5752,
-          "tc": 22927.9248,
-          "s1": 22430.25,
-          "s2": 21807.4004,
-          "r1": 23425.5996,
-          "r2": 23798.0996,
-          "distance_to_pivot_pct": 1.086,
-          "distance_to_s1_pct": 2.7018,
-          "distance_to_s2_pct": 5.4036,
-          "distance_to_r1_pct": -1.6158,
-          "distance_to_r2_pct": -3.2317,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Good Buy",
-          "signal": "Good Buy"
-        },
-        "annual": {
-          "timeframe": "annual",
-          "source_period_end": "2026-12-31",
-          "pivot": 23868.7331,
-          "bc": 23460.9163,
-          "tc": 24276.5498,
-          "s1": 21364.2669,
-          "s2": 19675.4342,
-          "r1": 25557.5658,
-          "r2": 28062.0319,
-          "distance_to_pivot_pct": -3.5381,
-          "distance_to_s1_pct": 7.3258,
-          "distance_to_s2_pct": 14.6517,
-          "distance_to_r1_pct": -10.8639,
-          "distance_to_r2_pct": -21.7278,
-          "price_position": {
-            "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
-            "above_cpr": false,
-            "below_cpr": true
-          },
-          "technical_signal": "Watch",
-          "signal": "Watch"
-        }
-      },
-      "signals": {
-        "weekly": {
-          "technical_signal": "Good Buy",
-          "return_pct": 2.0049,
-          "combined_signal": "Good Buy"
-        },
-        "monthly": {
-          "technical_signal": "Good Buy",
-          "return_pct": 1.4831,
-          "combined_signal": "Good Buy"
-        },
-        "annual": {
-          "technical_signal": "Watch",
-          "return_pct": -10.8839,
-          "combined_signal": "Risk Off"
         }
       }
     },
@@ -1688,48 +1688,48 @@
     "USDINR=X": {
       "symbol": "USDINR=X",
       "market_group": "India Markets",
-      "last_close": 94.94,
+      "last_close": 94.95,
       "technicals": {
         "weekly": {
           "timeframe": "weekly",
-          "source_period_end": "2026-10-30",
-          "pivot": 94.9741,
-          "bc": 94.957,
-          "tc": 94.9911,
-          "s1": 94.5851,
-          "s2": 94.2303,
-          "r1": 95.3289,
-          "r2": 95.7179,
-          "distance_to_pivot_pct": -0.0359,
-          "distance_to_s1_pct": 0.3738,
-          "distance_to_s2_pct": 0.7476,
-          "distance_to_r1_pct": -0.4097,
-          "distance_to_r2_pct": -0.8193,
+          "source_period_end": "2026-11-06",
+          "pivot": 94.95,
+          "bc": 94.95,
+          "tc": 94.95,
+          "s1": 94.95,
+          "s2": 94.95,
+          "r1": 94.95,
+          "r2": 94.95,
+          "distance_to_pivot_pct": 0.0,
+          "distance_to_s1_pct": 0.0,
+          "distance_to_s2_pct": 0.0,
+          "distance_to_r1_pct": 0.0,
+          "distance_to_r2_pct": 0.0,
           "price_position": {
             "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
+            "below_pivot": false,
+            "inside_cpr": true,
             "above_cpr": false,
-            "below_cpr": true
+            "below_cpr": false
           },
-          "technical_signal": "Better Buy",
-          "signal": "Better Buy"
+          "technical_signal": "Best Buy",
+          "signal": "Best Buy"
         },
         "monthly": {
           "timeframe": "monthly",
           "source_period_end": "2026-10-31",
-          "pivot": 95.328,
-          "bc": 95.134,
+          "pivot": 95.3313,
+          "bc": 95.1407,
           "tc": 95.522,
-          "s1": 93.7649,
-          "s2": 92.5898,
-          "r1": 96.5031,
-          "r2": 98.0662,
-          "distance_to_pivot_pct": -0.4087,
-          "distance_to_s1_pct": 1.2377,
-          "distance_to_s2_pct": 2.4755,
-          "distance_to_r1_pct": -1.6464,
-          "distance_to_r2_pct": -3.2928,
+          "s1": 93.7716,
+          "s2": 92.5931,
+          "r1": 96.5098,
+          "r2": 98.0695,
+          "distance_to_pivot_pct": -0.4016,
+          "distance_to_s1_pct": 1.2411,
+          "distance_to_s2_pct": 2.4822,
+          "distance_to_r1_pct": -1.6427,
+          "distance_to_r2_pct": -3.2854,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -1743,18 +1743,18 @@
         "annual": {
           "timeframe": "annual",
           "source_period_end": "2026-12-31",
-          "pivot": 92.619,
+          "pivot": 92.6223,
           "bc": 91.4585,
-          "tc": 93.7795,
-          "s1": 88.1839,
-          "s2": 81.4278,
-          "r1": 99.3751,
-          "r2": 103.8102,
-          "distance_to_pivot_pct": 2.4447,
-          "distance_to_s1_pct": 7.1162,
-          "distance_to_s2_pct": 14.2324,
-          "distance_to_r1_pct": -4.6715,
-          "distance_to_r2_pct": -9.343,
+          "tc": 93.7862,
+          "s1": 88.1906,
+          "s2": 81.4311,
+          "r1": 99.3818,
+          "r2": 103.8135,
+          "distance_to_pivot_pct": 2.4515,
+          "distance_to_s1_pct": 7.1189,
+          "distance_to_s2_pct": 14.2379,
+          "distance_to_r1_pct": -4.6675,
+          "distance_to_r2_pct": -9.335,
           "price_position": {
             "above_pivot": true,
             "below_pivot": false,
@@ -1768,18 +1768,18 @@
       },
       "signals": {
         "weekly": {
-          "technical_signal": "Better Buy",
-          "return_pct": 0.2415,
-          "combined_signal": "Better Buy"
+          "technical_signal": "Best Buy",
+          "return_pct": 0.0126,
+          "combined_signal": "Best Buy"
         },
         "monthly": {
           "technical_signal": "Good Buy",
-          "return_pct": -1.029,
+          "return_pct": -1.3248,
           "combined_signal": "Good Buy"
         },
         "annual": {
           "technical_signal": "Risk On",
-          "return_pct": 7.0857,
+          "return_pct": 7.0377,
           "combined_signal": "Risk On"
         }
       }
@@ -1787,23 +1787,23 @@
     "^INDIAVIX": {
       "symbol": "^INDIAVIX",
       "market_group": "India Markets",
-      "last_close": 15.3025,
+      "last_close": 15.3,
       "technicals": {
         "weekly": {
           "timeframe": "weekly",
           "source_period_end": "2026-10-30",
-          "pivot": 15.9242,
-          "bc": 15.6133,
+          "pivot": 15.9233,
+          "bc": 15.6117,
           "tc": 16.235,
-          "s1": 13.8483,
-          "s2": 12.3942,
-          "r1": 17.3783,
-          "r2": 19.4542,
-          "distance_to_pivot_pct": -4.0625,
-          "distance_to_s1_pct": 9.5028,
-          "distance_to_s2_pct": 19.0056,
-          "distance_to_r1_pct": -13.5653,
-          "distance_to_r2_pct": -27.1306,
+          "s1": 13.8467,
+          "s2": 12.3933,
+          "r1": 17.3767,
+          "r2": 19.4533,
+          "distance_to_pivot_pct": -4.0741,
+          "distance_to_s1_pct": 9.4989,
+          "distance_to_s2_pct": 18.9978,
+          "distance_to_r1_pct": -13.573,
+          "distance_to_r2_pct": -27.146,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -1817,18 +1817,18 @@
         "monthly": {
           "timeframe": "monthly",
           "source_period_end": "2026-10-31",
-          "pivot": 15.0908,
+          "pivot": 15.09,
           "bc": 14.985,
-          "tc": 15.1967,
-          "s1": 12.1817,
-          "s2": 9.0608,
-          "r1": 18.2117,
-          "r2": 21.1208,
-          "distance_to_pivot_pct": 1.3832,
-          "distance_to_s1_pct": 20.3943,
-          "distance_to_s2_pct": 40.7885,
-          "distance_to_r1_pct": -19.0111,
-          "distance_to_r2_pct": -38.0221,
+          "tc": 15.195,
+          "s1": 12.18,
+          "s2": 9.06,
+          "r1": 18.21,
+          "r2": 21.12,
+          "distance_to_pivot_pct": 1.3725,
+          "distance_to_s1_pct": 20.3922,
+          "distance_to_s2_pct": 40.7843,
+          "distance_to_r1_pct": -19.0196,
+          "distance_to_r2_pct": -38.0392,
           "price_position": {
             "above_pivot": true,
             "below_pivot": false,
@@ -1842,18 +1842,18 @@
         "annual": {
           "timeframe": "annual",
           "source_period_end": "2026-12-31",
-          "pivot": 17.7275,
-          "bc": 16.515,
+          "pivot": 17.7267,
+          "bc": 16.5133,
           "tc": 18.94,
-          "s1": 6.545,
-          "s2": -2.2125,
-          "r1": 26.485,
-          "r2": 37.6675,
-          "distance_to_pivot_pct": -15.8471,
-          "distance_to_s1_pct": 57.2292,
-          "distance_to_s2_pct": 114.4584,
-          "distance_to_r1_pct": -73.0763,
-          "distance_to_r2_pct": -146.1526,
+          "s1": 6.5433,
+          "s2": -2.2133,
+          "r1": 26.4833,
+          "r2": 37.6667,
+          "distance_to_pivot_pct": -15.8606,
+          "distance_to_s1_pct": 57.2331,
+          "distance_to_s2_pct": 114.4662,
+          "distance_to_r1_pct": -73.0937,
+          "distance_to_r2_pct": -146.1874,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -1868,17 +1868,17 @@
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
-          "return_pct": -9.2378,
+          "return_pct": -9.2527,
           "combined_signal": "Watch"
         },
         "monthly": {
           "technical_signal": "Risk On",
-          "return_pct": 14.1126,
+          "return_pct": 14.094,
           "combined_signal": "Risk On"
         },
         "annual": {
           "technical_signal": "Watch",
-          "return_pct": 34.7051,
+          "return_pct": 34.6831,
           "combined_signal": "Watch"
         }
       }
@@ -4160,6 +4160,105 @@
         }
       }
     },
+    "^GSPC": {
+      "symbol": "^GSPC",
+      "market_group": "US Markets",
+      "last_close": 7580.0698,
+      "technicals": {
+        "weekly": {
+          "timeframe": "weekly",
+          "source_period_end": "2026-10-30",
+          "pivot": 7622.02,
+          "bc": 7601.0449,
+          "tc": 7642.9951,
+          "s1": 7485.6099,
+          "s2": 7391.1499,
+          "r1": 7716.48,
+          "r2": 7852.8901,
+          "distance_to_pivot_pct": -0.5534,
+          "distance_to_s1_pct": 1.2462,
+          "distance_to_s2_pct": 2.4923,
+          "distance_to_r1_pct": -1.7996,
+          "distance_to_r2_pct": -3.5992,
+          "price_position": {
+            "above_pivot": false,
+            "below_pivot": true,
+            "inside_cpr": false,
+            "above_cpr": false,
+            "below_cpr": true
+          },
+          "technical_signal": "Good Buy",
+          "signal": "Good Buy"
+        },
+        "monthly": {
+          "timeframe": "monthly",
+          "source_period_end": "2026-10-31",
+          "pivot": 7650.7166,
+          "bc": 7615.3932,
+          "tc": 7686.04,
+          "s1": 7456.9132,
+          "s2": 7333.7567,
+          "r1": 7773.8732,
+          "r2": 7967.6766,
+          "distance_to_pivot_pct": -0.932,
+          "distance_to_s1_pct": 1.6247,
+          "distance_to_s2_pct": 3.2495,
+          "distance_to_r1_pct": -2.5567,
+          "distance_to_r2_pct": -5.1135,
+          "price_position": {
+            "above_pivot": false,
+            "below_pivot": true,
+            "inside_cpr": false,
+            "above_cpr": false,
+            "below_cpr": true
+          },
+          "technical_signal": "Good Buy",
+          "signal": "Good Buy"
+        },
+        "annual": {
+          "timeframe": "annual",
+          "source_period_end": "2026-12-31",
+          "pivot": 7247.1667,
+          "bc": 7080.7151,
+          "tc": 7413.6182,
+          "s1": 6649.8133,
+          "s2": 5719.5568,
+          "r1": 8177.4232,
+          "r2": 8774.7765,
+          "distance_to_pivot_pct": 4.3918,
+          "distance_to_s1_pct": 12.2724,
+          "distance_to_s2_pct": 24.5448,
+          "distance_to_r1_pct": -7.8806,
+          "distance_to_r2_pct": -15.7612,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Risk On",
+          "signal": "Risk On"
+        }
+      },
+      "signals": {
+        "weekly": {
+          "technical_signal": "Good Buy",
+          "return_pct": -0.572,
+          "combined_signal": "Good Buy"
+        },
+        "monthly": {
+          "technical_signal": "Good Buy",
+          "return_pct": -1.1267,
+          "combined_signal": "Good Buy"
+        },
+        "annual": {
+          "technical_signal": "Risk On",
+          "return_pct": 10.0061,
+          "combined_signal": "Risk On"
+        }
+      }
+    },
     "XQQ.TO": {
       "symbol": "XQQ.TO",
       "market_group": "US Markets",
@@ -4453,105 +4552,6 @@
         "annual": {
           "technical_signal": "Risk On",
           "return_pct": 9.1083,
-          "combined_signal": "Risk On"
-        }
-      }
-    },
-    "^GSPC": {
-      "symbol": "^GSPC",
-      "market_group": "US Markets",
-      "last_close": 7580.0698,
-      "technicals": {
-        "weekly": {
-          "timeframe": "weekly",
-          "source_period_end": "2026-10-30",
-          "pivot": 7622.02,
-          "bc": 7601.0449,
-          "tc": 7642.9951,
-          "s1": 7485.6099,
-          "s2": 7391.1499,
-          "r1": 7716.48,
-          "r2": 7852.8901,
-          "distance_to_pivot_pct": -0.5534,
-          "distance_to_s1_pct": 1.2462,
-          "distance_to_s2_pct": 2.4923,
-          "distance_to_r1_pct": -1.7996,
-          "distance_to_r2_pct": -3.5992,
-          "price_position": {
-            "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
-            "above_cpr": false,
-            "below_cpr": true
-          },
-          "technical_signal": "Good Buy",
-          "signal": "Good Buy"
-        },
-        "monthly": {
-          "timeframe": "monthly",
-          "source_period_end": "2026-10-31",
-          "pivot": 7650.7166,
-          "bc": 7615.3932,
-          "tc": 7686.04,
-          "s1": 7456.9132,
-          "s2": 7333.7567,
-          "r1": 7773.8732,
-          "r2": 7967.6766,
-          "distance_to_pivot_pct": -0.932,
-          "distance_to_s1_pct": 1.6247,
-          "distance_to_s2_pct": 3.2495,
-          "distance_to_r1_pct": -2.5567,
-          "distance_to_r2_pct": -5.1135,
-          "price_position": {
-            "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
-            "above_cpr": false,
-            "below_cpr": true
-          },
-          "technical_signal": "Good Buy",
-          "signal": "Good Buy"
-        },
-        "annual": {
-          "timeframe": "annual",
-          "source_period_end": "2026-12-31",
-          "pivot": 7247.1667,
-          "bc": 7080.7151,
-          "tc": 7413.6182,
-          "s1": 6649.8133,
-          "s2": 5719.5568,
-          "r1": 8177.4232,
-          "r2": 8774.7765,
-          "distance_to_pivot_pct": 4.3918,
-          "distance_to_s1_pct": 12.2724,
-          "distance_to_s2_pct": 24.5448,
-          "distance_to_r1_pct": -7.8806,
-          "distance_to_r2_pct": -15.7612,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Risk On",
-          "signal": "Risk On"
-        }
-      },
-      "signals": {
-        "weekly": {
-          "technical_signal": "Good Buy",
-          "return_pct": -0.572,
-          "combined_signal": "Good Buy"
-        },
-        "monthly": {
-          "technical_signal": "Good Buy",
-          "return_pct": -1.1267,
-          "combined_signal": "Good Buy"
-        },
-        "annual": {
-          "technical_signal": "Risk On",
-          "return_pct": 10.0061,
           "combined_signal": "Risk On"
         }
       }
@@ -10100,105 +10100,6 @@
         }
       }
     },
-    "PZW.TO": {
-      "symbol": "PZW.TO",
-      "market_group": "Global / International",
-      "last_close": 47.63,
-      "technicals": {
-        "weekly": {
-          "timeframe": "weekly",
-          "source_period_end": "2026-10-30",
-          "pivot": 47.4633,
-          "bc": 47.38,
-          "tc": 47.5467,
-          "s1": 47.2967,
-          "s2": 46.9633,
-          "r1": 47.7967,
-          "r2": 47.9633,
-          "distance_to_pivot_pct": 0.3499,
-          "distance_to_s1_pct": 0.6998,
-          "distance_to_s2_pct": 1.3997,
-          "distance_to_r1_pct": -0.3499,
-          "distance_to_r2_pct": -0.6998,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Better Buy",
-          "signal": "Better Buy"
-        },
-        "monthly": {
-          "timeframe": "monthly",
-          "source_period_end": "2026-10-31",
-          "pivot": 47.7767,
-          "bc": 47.7033,
-          "tc": 47.85,
-          "s1": 46.8633,
-          "s2": 46.0967,
-          "r1": 48.5433,
-          "r2": 49.4567,
-          "distance_to_pivot_pct": -0.3079,
-          "distance_to_s1_pct": 1.6096,
-          "distance_to_s2_pct": 3.2193,
-          "distance_to_r1_pct": -1.9176,
-          "distance_to_r2_pct": -3.8351,
-          "price_position": {
-            "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
-            "above_cpr": false,
-            "below_cpr": true
-          },
-          "technical_signal": "Good Buy",
-          "signal": "Good Buy"
-        },
-        "annual": {
-          "timeframe": "annual",
-          "source_period_end": "2026-12-31",
-          "pivot": 46.1267,
-          "bc": 45.375,
-          "tc": 46.8783,
-          "s1": 42.6933,
-          "s2": 37.7567,
-          "r1": 51.0633,
-          "r2": 54.4967,
-          "distance_to_pivot_pct": 3.1563,
-          "distance_to_s1_pct": 10.3646,
-          "distance_to_s2_pct": 20.7292,
-          "distance_to_r1_pct": -7.2083,
-          "distance_to_r2_pct": -14.4167,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Risk On",
-          "signal": "Risk On"
-        }
-      },
-      "signals": {
-        "weekly": {
-          "technical_signal": "Better Buy",
-          "return_pct": 1.3189,
-          "combined_signal": "Better Buy"
-        },
-        "monthly": {
-          "technical_signal": "Good Buy",
-          "return_pct": -0.3765,
-          "combined_signal": "Good Buy"
-        },
-        "annual": {
-          "technical_signal": "Risk On",
-          "return_pct": 14.8264,
-          "combined_signal": "Risk On"
-        }
-      }
-    },
     "XEF.TO": {
       "symbol": "XEF.TO",
       "market_group": "Global / International",
@@ -10294,6 +10195,105 @@
         "annual": {
           "technical_signal": "Risk On",
           "return_pct": 8.712,
+          "combined_signal": "Risk On"
+        }
+      }
+    },
+    "PZW.TO": {
+      "symbol": "PZW.TO",
+      "market_group": "Global / International",
+      "last_close": 47.63,
+      "technicals": {
+        "weekly": {
+          "timeframe": "weekly",
+          "source_period_end": "2026-10-30",
+          "pivot": 47.4633,
+          "bc": 47.38,
+          "tc": 47.5467,
+          "s1": 47.2967,
+          "s2": 46.9633,
+          "r1": 47.7967,
+          "r2": 47.9633,
+          "distance_to_pivot_pct": 0.3499,
+          "distance_to_s1_pct": 0.6998,
+          "distance_to_s2_pct": 1.3997,
+          "distance_to_r1_pct": -0.3499,
+          "distance_to_r2_pct": -0.6998,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Better Buy",
+          "signal": "Better Buy"
+        },
+        "monthly": {
+          "timeframe": "monthly",
+          "source_period_end": "2026-10-31",
+          "pivot": 47.7767,
+          "bc": 47.7033,
+          "tc": 47.85,
+          "s1": 46.8633,
+          "s2": 46.0967,
+          "r1": 48.5433,
+          "r2": 49.4567,
+          "distance_to_pivot_pct": -0.3079,
+          "distance_to_s1_pct": 1.6096,
+          "distance_to_s2_pct": 3.2193,
+          "distance_to_r1_pct": -1.9176,
+          "distance_to_r2_pct": -3.8351,
+          "price_position": {
+            "above_pivot": false,
+            "below_pivot": true,
+            "inside_cpr": false,
+            "above_cpr": false,
+            "below_cpr": true
+          },
+          "technical_signal": "Good Buy",
+          "signal": "Good Buy"
+        },
+        "annual": {
+          "timeframe": "annual",
+          "source_period_end": "2026-12-31",
+          "pivot": 46.1267,
+          "bc": 45.375,
+          "tc": 46.8783,
+          "s1": 42.6933,
+          "s2": 37.7567,
+          "r1": 51.0633,
+          "r2": 54.4967,
+          "distance_to_pivot_pct": 3.1563,
+          "distance_to_s1_pct": 10.3646,
+          "distance_to_s2_pct": 20.7292,
+          "distance_to_r1_pct": -7.2083,
+          "distance_to_r2_pct": -14.4167,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Risk On",
+          "signal": "Risk On"
+        }
+      },
+      "signals": {
+        "weekly": {
+          "technical_signal": "Better Buy",
+          "return_pct": 1.3189,
+          "combined_signal": "Better Buy"
+        },
+        "monthly": {
+          "technical_signal": "Good Buy",
+          "return_pct": -0.3765,
+          "combined_signal": "Good Buy"
+        },
+        "annual": {
+          "technical_signal": "Risk On",
+          "return_pct": 14.8264,
           "combined_signal": "Risk On"
         }
       }
@@ -12971,6 +12971,105 @@
         }
       }
     },
+    "TLT": {
+      "symbol": "TLT",
+      "market_group": "Bonds Universe",
+      "last_close": 81.84,
+      "technicals": {
+        "weekly": {
+          "timeframe": "weekly",
+          "source_period_end": "2026-10-30",
+          "pivot": 81.5333,
+          "bc": 81.38,
+          "tc": 81.6867,
+          "s1": 81.0367,
+          "s2": 80.2333,
+          "r1": 82.3367,
+          "r2": 82.8333,
+          "distance_to_pivot_pct": 0.3747,
+          "distance_to_s1_pct": 0.9816,
+          "distance_to_s2_pct": 1.9632,
+          "distance_to_r1_pct": -0.6069,
+          "distance_to_r2_pct": -1.2137,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Better Buy",
+          "signal": "Better Buy"
+        },
+        "monthly": {
+          "timeframe": "monthly",
+          "source_period_end": "2026-10-31",
+          "pivot": 80.1,
+          "bc": 79.23,
+          "tc": 80.97,
+          "s1": 78.17,
+          "s2": 74.5,
+          "r1": 83.77,
+          "r2": 85.7,
+          "distance_to_pivot_pct": 2.1261,
+          "distance_to_s1_pct": 4.4844,
+          "distance_to_s2_pct": 8.9687,
+          "distance_to_r1_pct": -2.3583,
+          "distance_to_r2_pct": -4.7165,
+          "price_position": {
+            "above_pivot": true,
+            "below_pivot": false,
+            "inside_cpr": false,
+            "above_cpr": true,
+            "below_cpr": false
+          },
+          "technical_signal": "Risk On",
+          "signal": "Risk On"
+        },
+        "annual": {
+          "timeframe": "annual",
+          "source_period_end": "2026-12-31",
+          "pivot": 83.0433,
+          "bc": 82.4417,
+          "tc": 83.645,
+          "s1": 75.2267,
+          "s2": 68.6133,
+          "r1": 89.6567,
+          "r2": 97.4733,
+          "distance_to_pivot_pct": -1.4704,
+          "distance_to_s1_pct": 8.0808,
+          "distance_to_s2_pct": 16.1616,
+          "distance_to_r1_pct": -9.5512,
+          "distance_to_r2_pct": -19.1023,
+          "price_position": {
+            "above_pivot": false,
+            "below_pivot": true,
+            "inside_cpr": false,
+            "above_cpr": false,
+            "below_cpr": true
+          },
+          "technical_signal": "Watch",
+          "signal": "Watch"
+        }
+      },
+      "signals": {
+        "weekly": {
+          "technical_signal": "Better Buy",
+          "return_pct": 0.6147,
+          "combined_signal": "Better Buy"
+        },
+        "monthly": {
+          "technical_signal": "Risk On",
+          "return_pct": 5.3146,
+          "combined_signal": "Risk On"
+        },
+        "annual": {
+          "technical_signal": "Watch",
+          "return_pct": -10.1548,
+          "combined_signal": "Risk Off"
+        }
+      }
+    },
     "HYG": {
       "symbol": "HYG",
       "market_group": "Bonds Universe",
@@ -13265,105 +13364,6 @@
           "technical_signal": "Good Buy",
           "return_pct": -1.4951,
           "combined_signal": "Good Buy"
-        }
-      }
-    },
-    "TLT": {
-      "symbol": "TLT",
-      "market_group": "Bonds Universe",
-      "last_close": 81.84,
-      "technicals": {
-        "weekly": {
-          "timeframe": "weekly",
-          "source_period_end": "2026-10-30",
-          "pivot": 81.5333,
-          "bc": 81.38,
-          "tc": 81.6867,
-          "s1": 81.0367,
-          "s2": 80.2333,
-          "r1": 82.3367,
-          "r2": 82.8333,
-          "distance_to_pivot_pct": 0.3747,
-          "distance_to_s1_pct": 0.9816,
-          "distance_to_s2_pct": 1.9632,
-          "distance_to_r1_pct": -0.6069,
-          "distance_to_r2_pct": -1.2137,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Better Buy",
-          "signal": "Better Buy"
-        },
-        "monthly": {
-          "timeframe": "monthly",
-          "source_period_end": "2026-10-31",
-          "pivot": 80.1,
-          "bc": 79.23,
-          "tc": 80.97,
-          "s1": 78.17,
-          "s2": 74.5,
-          "r1": 83.77,
-          "r2": 85.7,
-          "distance_to_pivot_pct": 2.1261,
-          "distance_to_s1_pct": 4.4844,
-          "distance_to_s2_pct": 8.9687,
-          "distance_to_r1_pct": -2.3583,
-          "distance_to_r2_pct": -4.7165,
-          "price_position": {
-            "above_pivot": true,
-            "below_pivot": false,
-            "inside_cpr": false,
-            "above_cpr": true,
-            "below_cpr": false
-          },
-          "technical_signal": "Risk On",
-          "signal": "Risk On"
-        },
-        "annual": {
-          "timeframe": "annual",
-          "source_period_end": "2026-12-31",
-          "pivot": 83.0433,
-          "bc": 82.4417,
-          "tc": 83.645,
-          "s1": 75.2267,
-          "s2": 68.6133,
-          "r1": 89.6567,
-          "r2": 97.4733,
-          "distance_to_pivot_pct": -1.4704,
-          "distance_to_s1_pct": 8.0808,
-          "distance_to_s2_pct": 16.1616,
-          "distance_to_r1_pct": -9.5512,
-          "distance_to_r2_pct": -19.1023,
-          "price_position": {
-            "above_pivot": false,
-            "below_pivot": true,
-            "inside_cpr": false,
-            "above_cpr": false,
-            "below_cpr": true
-          },
-          "technical_signal": "Watch",
-          "signal": "Watch"
-        }
-      },
-      "signals": {
-        "weekly": {
-          "technical_signal": "Better Buy",
-          "return_pct": 0.6147,
-          "combined_signal": "Better Buy"
-        },
-        "monthly": {
-          "technical_signal": "Risk On",
-          "return_pct": 5.3146,
-          "combined_signal": "Risk On"
-        },
-        "annual": {
-          "technical_signal": "Watch",
-          "return_pct": -10.1548,
-          "combined_signal": "Risk Off"
         }
       }
     },

@@ -1,11 +1,17 @@
 {
-  "generated_at": "2026-10-31T09:52:44+00:00",
+  "generated_at": "2026-10-31T14:17:50+00:00",
   "status": "pass",
   "schema_version": 5,
   "instrument_count": 150,
   "market_group_count": 6,
-  "benchmark_count": 0,
-  "benchmark_symbols": [],
+  "benchmark_count": 5,
+  "benchmark_symbols": [
+    "^NSEI",
+    "^GSPC",
+    "XIC.TO",
+    "XEF.TO",
+    "TLT"
+  ],
   "missing_groups": [],
   "errors": [],
   "warnings": []

@@ -309,9 +309,108 @@ function renderMA18Scanner(items){
   </div>`;
 }
 
-function renderTechnical(){const groups=['ALL',...STATE.groups.map(g=>g.market_group)];let base=STATE.techGroup==='ALL'?STATE.items:STATE.items.filter(i=>i.market_group===STATE.techGroup);const cov=coverageSummary(base,STATE.techTf);let items=base;if(STATE.techCoverage&&STATE.techCoverage!=='all')items=base.filter(i=>techCoverage(i,STATE.techTf)===STATE.techCoverage);const rows=items.map(i=>{const loc=priceVsLevels(i);return{Group:i.market_group,Symbol:i.symbol,Name:itemName(i),Close:close(i),MTD:mtd(i),YTD:ytd(i),CurrentDD:dd(i),MaxDD:maxdd(i),Signal:signal(i,STATE.techTf),'Price vs Levels':loc.label,'Level Detail':loc.detail,Pivot:level(i,'pivot'),S1:level(i,'s1'),S2:level(i,'s2'),R1:level(i,'r1'),R2:level(i,'r2'),CPR:cprText(i),Coverage:techCoverage(i,STATE.techTf),_item:i}});const blanks=['Pivot','S1','S2','R1','R2'].reduce((a,c)=>a+rows.filter(r=>r[c]===null).length,0);const total=rows.length*5;document.getElementById('app').innerHTML=`${renderMA18Scanner(base)}${blanks/Math.max(total,1)>.65?'<div class="datawarn"><b>Data check:</b> Many technical levels are blank. Frontend checks combined JSON and technical_summary.json fallbacks; remaining blanks likely mean backend export is missing those fields or uses a new field shape.</div>':''}<div class="pnl"><div class="ptl">Technical Analysis — one table, table-level filters <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending</span></div><div class="controls"><select class="select" onchange="STATE.techGroup=this.value;STATE.filter='';render()">${groups.map(g=>`<option value="${esc(g)}" ${STATE.techGroup===g?'selected':''}>${esc(g==='ALL'?'All Markets':g)}</option>`).join('')}</select><select class="select" onchange="STATE.techTf=this.value;render()"><option value="weekly" ${STATE.techTf==='weekly'?'selected':''}>Weekly</option><option value="monthly" ${STATE.techTf==='monthly'?'selected':''}>Monthly</option><option value="annual" ${STATE.techTf==='annual'?'selected':''}>Annual</option></select><select class="select" onchange="STATE.techCoverage=this.value;STATE.filter='';render()"><option value="complete" ${STATE.techCoverage==='complete'?'selected':''}>Complete technical rows</option><option value="partial" ${STATE.techCoverage==='partial'?'selected':''}>Partial / price rows</option><option value="pending" ${STATE.techCoverage==='pending'?'selected':''}>Data pending rows</option><option value="all" ${STATE.techCoverage==='all'?'selected':''}>All 150 instruments</option></select><input class="search" placeholder="Filter symbol/name…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()"></div>${sortableTable(rows,'technical')}</div>`}
+
+function technicalSignalRecord(i,key){
+  const r=techRec(i);
+  const t=r?.technicals||{};
+  return t[key]||null;
+}
+function compactPivot(rec){
+  if(!rec)return '—';
+  const vals=[rec.r2,rec.r1,rec.pivot,rec.s1,rec.s2];
+  if(vals.some(v=>v===null||v===undefined||!Number.isFinite(Number(v))))return '—';
+  return vals.map(v=>Number(v).toFixed(2)).join('-');
+}
+
+function renderTechnical(){
+  const groups=['ALL',...STATE.groups.map(g=>g.market_group)];
+  let base=STATE.techGroup==='ALL'
+    ?STATE.items
+    :STATE.items.filter(i=>i.market_group===STATE.techGroup);
+
+  const cov=coverageSummary(base,STATE.techTf);
+  let items=base;
+
+  if(STATE.techCoverage&&STATE.techCoverage!=='all'){
+    items=base.filter(i=>techCoverage(i,STATE.techTf)===STATE.techCoverage);
+  }
+
+  const rows=items.map(i=>{
+    const daily=technicalSignalRecord(i,'daily_signal');
+    const weekly=technicalSignalRecord(i,'weekly_signal');
+
+    return {
+      Group:i.market_group,
+      Symbol:i.symbol,
+      'Name ▲':itemName(i),
+      Close:close(i),
+      MTD:mtd(i),
+      YTD:ytd(i),
+      CurrentDD:dd(i),
+      MaxDD:maxdd(i),
+      'Daily Signal ▲':daily?.signal||'Watch',
+      'Daily Signal Levels':daily?.signal_level||'Unavailable',
+      'Weekly Signal ▲':weekly?.signal||'Watch',
+      'Weekly Signal Levels':weekly?.signal_level||'Unavailable',
+      'Daily Pivot':compactPivot(daily),
+      'Weekly Pivot':compactPivot(weekly),
+      Coverage:techCoverage(i,STATE.techTf),
+      _item:i
+    };
+  });
+
+  document.getElementById('app').innerHTML=`
+    ${renderMA18Scanner(base)}
+    <div class="pnl">
+      <div class="ptl">
+        Technical Analysis — one table, table-level filters
+        <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending</span>
+      </div>
+      <div class="controls">
+        <select class="select" onchange="STATE.techGroup=this.value;STATE.filter='';render()">
+          ${groups.map(g=>`<option value="${esc(g)}" ${STATE.techGroup===g?'selected':''}>${esc(g==='ALL'?'All Markets':g)}</option>`).join('')}
+        </select>
+        <select class="select" onchange="STATE.techTf=this.value;render()">
+          <option value="weekly" ${STATE.techTf==='weekly'?'selected':''}>Weekly</option>
+          <option value="monthly" ${STATE.techTf==='monthly'?'selected':''}>Monthly</option>
+          <option value="annual" ${STATE.techTf==='annual'?'selected':''}>Annual</option>
+        </select>
+        <select class="select" onchange="STATE.techCoverage=this.value;STATE.filter='';render()">
+          <option value="complete" ${STATE.techCoverage==='complete'?'selected':''}>Complete technical rows</option>
+          <option value="partial" ${STATE.techCoverage==='partial'?'selected':''}>Partial / price rows</option>
+          <option value="pending" ${STATE.techCoverage==='pending'?'selected':''}>Data pending rows</option>
+          <option value="all" ${STATE.techCoverage==='all'?'selected':''}>All 150 instruments</option>
+        </select>
+        <input class="search" placeholder="Filter symbol/name…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()">
+      </div>
+      ${sortableTable(rows,'technical')}
+    </div>`;
+}
 function sortableTable(rows,key){const f=(STATE.filter||'').toLowerCase();if(f)rows=rows.filter(r=>Object.values(r).some(v=>String(v??'').toLowerCase().includes(f)));const cols=Object.keys(rows[0]||{}).filter(c=>c!=='_item'),sort=STATE.sort[key]||{col:null,dir:1};if(sort.col)rows=[...rows].sort((a,b)=>{const av=a[sort.col],bv=b[sort.col],an=num(av),bn=num(bv);if(an!==null&&bn!==null)return(an-bn)*sort.dir;return String(av??'').localeCompare(String(bv??''))*sort.dir});return`<div class="table-wrap"><table><tr>${cols.map(c=>`<th onclick="sortTable('${key}','${esc(c)}')">${esc(c)} ${sort.col===c?(sort.dir>0?'▲':'▼'):''}</th>`).join('')}</tr>${rows.map(r=>`<tr>${cols.map(c=>cell(c,r[c])).join('')}</tr>`).join('')||'<tr><td>No rows</td></tr>'}</table></div>`}
-function cell(c,v){if(c==='Signal')return`<td>${zbadge(v)}</td>`;if(c==='Price vs Levels')return`<td>${zbadge(v)}</td>`;if(c==='Level Detail')return`<td class="small muted">${esc(v||'')}</td>`;if(['Close','Pivot','S1','S2','R1','R2'].includes(c))return`<td class="mono">${money(v)}</td>`;if(['MTD','YTD','MonthAvg','AvgAnnual','CurrentDD','MaxDD','DD','MTD vs Benchmark'].includes(c))return`<td class="${cls(v)} mono">${fmt(v)}</td>`;if(c==='Name'||c==='Symbol'||c==='Benchmark'||c==='Asset')return`<td class="sym ${c==='Name'||c==='Asset'?'':'mono'}">${esc(v)}</td>`;return`<td>${esc(v??'—')}</td>`}function sortTable(key,col){const s=STATE.sort[key]||{};STATE.sort[key]={col,dir:s.col===col?-(s.dir||1):-1};render()}window.sortTable=sortTable;
+function cell(c,v){
+  if(c==='Signal'||c==='Price vs Levels'||c==='Daily Signal ▲'||c==='Weekly Signal ▲')
+    return `<td>${zbadge(v)}</td>`;
+
+  if(c==='Daily Signal Levels'||c==='Weekly Signal Levels')
+    return `<td class="small muted">${esc(v||'Unavailable')}</td>`;
+
+  if(c==='Daily Pivot'||c==='Weekly Pivot')
+    return `<td class="mono">${esc(v??'—')}</td>`;
+
+  if(c==='Level Detail')
+    return `<td class="small muted">${esc(v||'')}</td>`;
+
+  if(['Close','Pivot','S1','S2','R1','R2'].includes(c))
+    return `<td class="mono">${money(v)}</td>`;
+
+  if(['MTD','YTD','MonthAvg','AvgAnnual','CurrentDD','MaxDD','DD','MTD vs Benchmark'].includes(c))
+    return `<td class="${cls(v)} mono">${fmt(v)}</td>`;
+
+  if(['Name','Name ▲','Symbol','Benchmark','Asset'].includes(c))
+    return `<td class="sym ${c.startsWith('Name')||c==='Asset'?'':'mono'}">${esc(v)}</td>`;
+
+  return `<td>${esc(v??'—')}</td>`;
+}function sortTable(key,col){const s=STATE.sort[key]||{};STATE.sort[key]={col,dir:s.col===col?-(s.dir||1):-1};render()}window.sortTable=sortTable;
 function drawdownTable(items){return sortableTable(items.map(i=>({Symbol:i.symbol,Name:itemName(i),Close:close(i),CurrentDD:dd(i),MaxDD:maxdd(i),MTD:mtd(i),YTD:ytd(i),_item:i})).sort((a,b)=>(a.CurrentDD??0)-(b.CurrentDD??0)).slice(0,30),'drawdown')}
 function supportTable(items){return sortableTable(items.map(i=>({Symbol:i.symbol,Close:close(i),Signal:signal(i),Pivot:level(i,'pivot'),S1:level(i,'s1'),S2:level(i,'s2'),R1:level(i,'r1'),R2:level(i,'r2'),CPR:cprText(i),_item:i})).slice(0,50),'support')}
 async function init(){try{const[data,last,tech]=await Promise.all([fetchFirst(DATA_PATHS),fetchFirst(LAST_PATHS,true),fetchFirst(TECH_PATHS,true)]);const n=norm(data);STATE.data=data;STATE.last=last;STATE.techRaw=tech;STATE.techMap=buildTechMap(tech);STATE.groups=n.groups;STATE.items=n.items;STATE.group=STATE.groups[0]?.market_group||'ALL';setUpdated();buildStrip();render()}catch(e){document.getElementById('app').innerHTML=`<div class="err"><b>Unable to load MarketPulse data.</b><br>${esc(e.message)}<br><br>Expected JSON paths: ${DATA_PATHS.join(', ')}</div>`}}init();

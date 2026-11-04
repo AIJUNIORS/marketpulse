@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarketPulse | Rotation Summary</title>
+<style>
+:root {
+  --bg:#0b1220; --panel:#121d30; --panel2:#17243a;
+  --text:#e8eef8; --muted:#91a1b8; --line:#293951;
+  --green:#22c58b; --blue:#54a8ff; --yellow:#f3c969; --red:#f07178;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px Arial,sans-serif}
+header{padding:22px 3%;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+h1{font-size:23px;margin:0 0 6px}
+.sub,.muted{color:var(--muted)}
+a{color:var(--blue);text-decoration:none}
+main{max-width:1600px;margin:auto;padding:22px 3%}
+.markets{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.market{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:10px 17px;border-radius:8px;cursor:pointer}
+.market.active{background:#23436a;border-color:var(--blue)}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:12px;margin-bottom:18px}
+.card,.chart-card,.table-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px;min-width:0}
+.metric-label{color:var(--muted);font-size:12px}
+.metric-value{font-size:23px;font-weight:700;margin-top:8px}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+h2{font-size:16px;margin:0 0 5px}
+.chart-note{font-size:12px;color:var(--muted);margin-bottom:8px}
+.chart{width:100%;height:auto;display:block}
+.chart text{font-family:Arial,sans-serif;fill:var(--muted);font-size:10px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input,select{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:10px;border-radius:7px}
+input{min-width:220px;flex:1}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:12px}
+th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:right}
+th{color:var(--muted);font-weight:600;position:sticky;top:0;background:var(--panel)}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+.quad{font-weight:700}
+.leading{color:var(--green)} .improving{color:var(--blue)}
+.weakening{color:var(--yellow)} .lagging{color:var(--red)}
+.status{margin:12px 0;color:var(--muted);font-size:12px}
+.warning{color:var(--yellow)}
+footer{color:var(--muted);font-size:11px;padding:20px 0}
+@media(max-width:850px){.charts{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){main{padding:15px 3%}.metrics{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Market Rotation Summary</h1>
+    <div class="sub">Return strength · Volume participation · Weekly trend context</div>
+  </div>
+  <a href="index.html">← Back to MarketPulse</a>
+</header>
+
+<main>
+  <div class="markets" id="markets">
+    <button class="market active" data-market="india">India</button>
+    <button class="market" data-market="us">United States</button>
+    <button class="market" data-market="canada">Canada</button>
+    <button class="market" data-market="global">Global</button>
+    <button class="market" data-market="commodities">Commodities</button>
+  </div>
+
+  <div class="metrics">
+    <div class="card"><div class="metric-label">Benchmark</div><div class="metric-value" id="benchmark">—</div></div>
+    <div class="card"><div class="metric-label">Constituents</div><div class="metric-value" id="count">—</div></div>
+    <div class="card"><div class="metric-label">Return RRG available</div><div class="metric-value" id="returnCount">—</div></div>
+    <div class="card"><div class="metric-label">Volume RRG available</div><div class="metric-value" id="volumeCount">—</div></div>
+  </div>
+
+  <div class="charts">
+    <section class="chart-card">
+      <h2>Return RRG</h2>
+      <div class="chart-note">Relative strength vs. relative momentum · 100 is the benchmark centre</div>
+      <div id="returnChart"></div>
+    </section>
+    <section class="chart-card">
+      <h2>Volume RRG</h2>
+      <div class="chart-note">Relative volume participation · display values capped at 200</div>
+      <div id="volumeChart"></div>
+    </section>
+  </div>
+
+  <div class="status" id="status">Loading market data…</div>
+
+  <div class="filters">
+    <input id="search" type="search" placeholder="Search sector, ETF or symbol…">
+    <select id="metricFilter">
+      <option value="all">All classifications</option>
+      <option value="return">Return RRG available</option>
+      <option value="volume">Volume RRG available</option>
+    </select>
+    <select id="quadrantFilter">
+      <option value="all">All quadrants</option>
+      <option value="leading">Leading</option>
+      <option value="improving">Improving</option>
+      <option value="weakening">Weakening</option>
+      <option value="lagging">Lagging</option>
+    </select>
+  </div>
+
+  <section class="table-card">
+    <h2>Constituent Rotation Table</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Sector / ETF</th><th>Symbol</th><th>Weekly Close</th>
+          <th>Weekly MA18</th><th>Weekly Pivot</th>
+          <th>Return RRG</th><th>Volume RRG</th><th>History</th>
+        </tr></thead>
+        <tbody id="rows"><tr><td colspan="8">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    RRG-style calculations use the project's custom relative-strength and momentum methodology.
+    They are not represented as official JdK RRG indicators. Volume chart values are visually capped;
+    underlying values and quadrant classifications are not changed by that display cap.
+  </footer>
+</main>
+
+<script>
+const files = {
+  india:"data/rotation/india.json",
+  us:"data/rotation/us.json",
+  canada:"data/rotation/canada.json",
+  global:"data/rotation/global.json",
+  commodities:"data/rotation/commodities.json"
+};
+
+let currentMarket = "india";
+let currentData = null;
+
+const $ = id => document.getElementById(id);
+const num = value => Number.isFinite(Number(value)) ? Number(value) : null;
+const fmt = value => {
+  const n = num(value);
+  return n === null ? "—" : n.toFixed(2);
+};
+const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+}[c]));
+
+function getItems(data) {
+  return Array.isArray(data?.items) ? data.items : [];
+}
+function getReturn(item) {
+  return item.return_rrg || item.returnRrg || null;
+}
+function getVolume(item) {
+  return item.volume_rrg || item.volumeRrg || null;
+}
+function getRatio(obj) {
+  return num(obj?.rs_ratio ?? obj?.rsRatio);
+}
+function getMomentum(obj) {
+  return num(obj?.rs_momentum ?? obj?.rsMomentum);
+}
+function getQuadrant(obj) {
+  return String(obj?.quadrant || "unavailable").toLowerCase();
+}
+function getTrail(item, type) {
+  const obj = type === "return" ? getReturn(item) : getVolume(item);
+  return Array.isArray(obj?.trail) ? obj.trail : [];
+}
+function getName(item) {
+  return item.name || item.sector || item.description || item.symbol || "—";
+}
+function getClose(item) {
+  return item.last_week?.close ?? item.weekly_close ?? item.close;
+}
+function getMA(item) {
+  return item.weekly_ma18 ?? item.weekly_MA18 ?? item.ma18;
+}
+function getPivot(item) {
+  return item.weekly_pivot?.pivot ?? item.weekly_pivot ?? item.pivot;
+}
+
+async function loadMarket(market) {
+  currentMarket = market;
+  document.querySelectorAll(".market").forEach(button =>
+    button.classList.toggle("active", button.dataset.market === market)
+  );
+  $("status").textContent = "Loading " + market + " data…";
+  try {
+    const response = await fetch(files[market] + "?v=" + Date.now(), {cache:"no-store"});
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    currentData = await response.json();
+    render();
+  } catch (error) {
+    currentData = null;
+    $("status").textContent = "Unable to load " + market + " data: " + error.message;
+    $("rows").innerHTML = '<tr><td colspan="8">Data could not be loaded.</td></tr>';
+  }
+}
+
+function render() {
+  const items = getItems(currentData);
+  const benchmark = currentData.benchmark || currentData.benchmark_symbol || "—";
+  const returnAvailable = items.filter(i => getRatio(getReturn(i)) !== null).length;
+  const volumeAvailable = items.filter(i => getRatio(getVolume(i)) !== null).length;
+
+  $("benchmark").textContent = benchmark;
+  $("count").textContent = items.length;
+  $("returnCount").textContent = returnAvailable + " / " + items.length;
+  $("volumeCount").textContent = volumeAvailable + " / " + items.length;
+
+  const week = currentData.benchmark_latest_week || currentData.latest_completed_week || currentData.as_of || "";
+  $("status").textContent = "Market: " + currentMarket.toUpperCase() +
+    (week ? " · Latest completed week: " + week : "") +
+    " · Select a chart point's trail or use the table filters below.";
+  renderChart("returnChart", "return");
+  renderChart("volumeChart", "volume");
+  renderTable();
+}
+
+function renderChart(targetId, type) {
+  const items = getItems(currentData);
+  const isVolume = type === "volume";
+  const min = isVolume ? 0 : 80;
+  const max = isVolume ? 200 : 120;
+  const W = 620, H = 430, L = 55, R = 18, T = 22, B = 48;
+  const plotW = W-L-R, plotH = H-T-B;
+  const x = v => L + (Math.max(min,Math.min(max,v))-min)/(max-min)*plotW;
+  const y = v => T + plotH - (Math.max(min,Math.min(max,v))-min)/(max-min)*plotH;
+  const mid = 100;
+  let svg = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${type} relative rotation chart">`;
+
+  // Quadrants: upper-right leading, upper-left improving,
+  // lower-left lagging, lower-right weakening.
+  const mx=x(mid), my=y(mid);
+  svg += `<rect x="${L}" y="${T}" width="${mx-L}" height="${my-T}" fill="#54a8ff" opacity=".12"/>`;
+  svg += `<rect x="${mx}" y="${T}" width="${L+plotW-mx}" height="${my-T}" fill="#22c58b" opacity=".12"/>`;
+  svg += `<rect x="${L}" y="${my}" width="${mx-L}" height="${T+plotH-my}" fill="#f07178" opacity=".12"/>`;
+  svg += `<rect x="${mx}" y="${my}" width="${L+plotW-mx}" height="${T+plotH-my}" fill="#f3c969" opacity=".12"/>`;
+  svg += `<line x1="${mx}" y1="${T}" x2="${mx}" y2="${T+plotH}" stroke="#71839d" stroke-dasharray="5 4"/>`;
+  svg += `<line x1="${L}" y1="${my}" x2="${L+plotW}" y2="${my}" stroke="#71839d" stroke-dasharray="5 4"/>`;
+  svg += `<text x="${L+8}" y="${T+15}">IMPROVING</text>`;
+  svg += `<text x="${mx+8}" y="${T+15}">LEADING</text>`;
+  svg += `<text x="${L+8}" y="${T+plotH-8}">LAGGING</text>`;
+  svg += `<text x="${mx+8}" y="${T+plotH-8}">WEAKENING</text>`;
+
+  for (let tick=min; tick<=max; tick+=isVolume?50:10) {
+    svg += `<text x="${x(tick)}" y="${T+plotH+18}" text-anchor="middle">${tick}</text>`;
+    svg += `<text x="${L-9}" y="${y(tick)+3}" text-anchor="end">${tick}</text>`;
+  }
+
+  for (const item of items) {
+    const trail = getTrail(item,type);
+    const latest = isVolume ? getVolume(item) : getReturn(item);
+    if (!trail.length && getRatio(latest) !== null) {
+      trail.push({rs_ratio:getRatio(latest),rs_momentum:getMomentum(latest)});
+    }
+    const points = trail.map(p => ({
+      x:isVolume ? num(p.display_rs_ratio ?? p.rs_ratio) : getRatio(p),
+      y:isVolume ? num(p.display_rs_momentum ?? p.rs_momentum) : getMomentum(p),
+      rawX:getRatio(p), rawY:getMomentum(p),
+      capped:Boolean(p.display_capped)
+    })).filter(p => p.x !== null && p.y !== null);
+    if (!points.length) continue;
+
+    const color = ({
+      leading:"#22c58b", improving:"#54a8ff",
+      weakening:"#f3c969", lagging:"#f07178"
+    })[getQuadrant(latest)] || "#c2ccda";
+
+    const path = points.map((p,i) =>
+      (i ? "L" : "M") + x(p.x) + " " + y(p.y)
+    ).join(" ");
+    svg += `<path d="${path}" fill="none" stroke="${color}" stroke-width="1.7" opacity=".75"/>`;
+    const last = points[points.length-1];
+    const capped = isVolume && (last.capped || last.rawX>max || last.rawY>max);
+    svg += `<circle cx="${x(last.x)}" cy="${y(last.y)}" r="4.5" fill="${color}" stroke="#0b1220" stroke-width="1.2"><title>${esc(getName(item))}: ${fmt(last.rawX)}, ${fmt(last.rawY)}${capped?" (display capped at 200)":""}</title></circle>`;
+    if (capped) {
+      svg += `<text x="${Math.min(W-15,x(last.x)+8)}" y="${Math.max(T+12,y(last.y)-8)}" fill="${color}">↑</text>`;
+    }
+  }
+
+  svg += `<text x="${L+plotW/2}" y="${H-7}" text-anchor="middle">Relative Strength Ratio</text>`;
+  svg += `<text transform="translate(13 ${T+plotH/2}) rotate(-90)" text-anchor="middle">Relative Momentum</text>`;
+  svg += `</svg>`;
+  $(targetId).innerHTML = svg;
+}
+
+function renderTable() {
+  const items = getItems(currentData);
+  const query = $("search").value.trim().toLowerCase();
+  const metric = $("metricFilter").value;
+  const quadrant = $("quadrantFilter").value;
+
+  const filtered = items.filter(item => {
+    const searchable = [getName(item),item.symbol,item.sector].join(" ").toLowerCase();
+    if (query && !searchable.includes(query)) return false;
+    const ret = getReturn(item), vol = getVolume(item);
+    if (metric==="return" && getRatio(ret)===null) return false;
+    if (metric==="volume" && getRatio(vol)===null) return false;
+    if (quadrant!=="all" &&
+        getQuadrant(ret)!==quadrant && getQuadrant(vol)!==quadrant) return false;
+    return true;
+  });
+
+  if (!filtered.length) {
+    $("rows").innerHTML = '<tr><td colspan="8">No matching constituents.</td></tr>';
+    return;
+  }
+
+  $("rows").innerHTML = filtered.map(item => {
+    const ret=getReturn(item), vol=getVolume(item);
+    const rq=getQuadrant(ret), vq=getQuadrant(vol);
+    const history=item.history_mode || item.history_status || "—";
+    return `<tr>
+      <td>${esc(getName(item))}</td>
+      <td>${esc(item.symbol || "—")}</td>
+      <td>${fmt(getClose(item))}</td>
+      <td>${fmt(getMA(item))}</td>
+      <td>${fmt(getPivot(item))}</td>
+      <td><span class="quad ${esc(rq)}">${getRatio(ret)===null?"—":esc(rq)} · ${fmt(getRatio(ret))} / ${fmt(getMomentum(ret))}</span></td>
+      <td><span class="quad ${esc(vq)}">${getRatio(vol)===null?"—":esc(vq)} · ${fmt(getRatio(vol))} / ${fmt(getMomentum(vol))}</span></td>
+      <td>${esc(history)}</td>
+    </tr>`;
+  }).join("");
+}
+
+document.querySelectorAll(".market").forEach(button =>
+  button.addEventListener("click", () => loadMarket(button.dataset.market))
+);
+["search","metricFilter","quadrantFilter"].forEach(id =>
+  $(id).addEventListener("input",renderTable)
+);
+$("metricFilter").addEventListener("change",renderTable);
+$("quadrantFilter").addEventListener("change",renderTable);
+
+loadMarket("india");
+</script>
+</body>
+</html>

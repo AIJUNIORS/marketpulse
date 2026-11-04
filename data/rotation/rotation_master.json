@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-11-04T02:43:29.747961+00:00",
+  "latest_completed_week": "2026-10-30",
+  "methodology": {
+    "weekly_frequency": "W-FRI",
+    "exclude_incomplete_week": true,
+    "return_rs_window": 52,
+    "return_momentum_window": 13,
+    "volume_average_window": 52,
+    "volume_trail_weeks": 12,
+    "volume_display_ceiling": 200,
+    "minimum_history": {
+      "standard": 52,
+      "adaptive": 26,
+      "limited": 13,
+      "very_limited": 3,
+      "insufficient": 0
+    }
+  },
+  "markets": {
+    "india": {
+      "benchmark": "^NSEI",
+      "benchmark_status": "available",
+      "count": 41,
+      "file": "india.json"
+    },
+    "us": {
+      "benchmark": "^GSPC",
+      "benchmark_status": "available",
+      "count": 34,
+      "file": "us.json"
+    },
+    "canada": {
+      "benchmark": "XIC.TO",
+      "benchmark_status": "available",
+      "count": 24,
+      "file": "canada.json"
+    },
+    "global": {
+      "benchmark": "XEF.TO",
+      "benchmark_status": "available",
+      "count": 28,
+      "file": "global.json"
+    },
+    "commodities": {
+      "benchmark": "CCOM.TO",
+      "benchmark_status": "available",
+      "count": 9,
+      "file": "commodities.json"
+    }
+  }
+}

@@ -1,0 +1,6123 @@
+{
+  "market": "canada",
+  "market_group": "Canada",
+  "benchmark": "XIC.TO",
+  "benchmark_status": "available",
+  "benchmark_latest_week": "2026-10-30",
+  "generated_at": "2026-11-04T02:43:29.747961+00:00",
+  "methodology": {
+    "weekly_frequency": "W-FRI",
+    "exclude_incomplete_week": true,
+    "return_rs_window": 52,
+    "return_momentum_window": 13,
+    "volume_average_window": 52,
+    "volume_trail_weeks": 12,
+    "volume_display_ceiling": 200,
+    "minimum_history": {
+      "standard": 52,
+      "adaptive": 26,
+      "limited": 13,
+      "very_limited": 3,
+      "insufficient": 0
+    }
+  },
+  "count": 24,
+  "items": [
+    {
+      "symbol": "XIU.TO",
+      "name": "Large Cap",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 101.9341,
+        "rs_momentum": 100.9644,
+        "quadrant": "leading",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 100.6098,
+            "rs_momentum": 101.669,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 100.0437,
+            "rs_momentum": 100.4505,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 100.2052,
+            "rs_momentum": 101.056,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 100.3988,
+            "rs_momentum": 100.5236,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 100.3303,
+            "rs_momentum": 100.2762,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 100.3096,
+            "rs_momentum": 100.3283,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 100.3482,
+            "rs_momentum": 99.9884,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 100.5434,
+            "rs_momentum": 100.5074,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 100.5813,
+            "rs_momentum": 99.8579,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 101.1758,
+            "rs_momentum": 100.1033,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 101.7249,
+            "rs_momentum": 101.089,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 101.9341,
+            "rs_momentum": 100.9644,
+            "quadrant": "leading"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 118.8821,
+        "rs_momentum": 132.7655,
+        "quadrant": "leading",
+        "display_rs_ratio": 118.88213094756385,
+        "display_rs_momentum": 132.76548556543997,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 84.3286,
+            "rs_momentum": 93.3648,
+            "quadrant": "lagging",
+            "display_rs_ratio": 84.32855397427144,
+            "display_rs_momentum": 93.36477197307389,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 88.5866,
+            "rs_momentum": 94.1719,
+            "quadrant": "lagging",
+            "display_rs_ratio": 88.58655215888457,
+            "display_rs_momentum": 94.17192543296996,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 129.1667,
+            "rs_momentum": 188.0722,
+            "quadrant": "leading",
+            "display_rs_ratio": 129.16667688448692,
+            "display_rs_momentum": 188.07217129573823,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 66.002,
+            "rs_momentum": 67.2759,
+            "quadrant": "lagging",
+            "display_rs_ratio": 66.00200604907546,
+            "display_rs_momentum": 67.27591060789786,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 107.2865,
+            "rs_momentum": 129.892,
+            "quadrant": "leading",
+            "display_rs_ratio": 107.28653006227506,
+            "display_rs_momentum": 129.89203622180116,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 130.6733,
+            "rs_momentum": 81.0262,
+            "quadrant": "weakening",
+            "display_rs_ratio": 130.67332164579682,
+            "display_rs_momentum": 81.02616484473717,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 79.3325,
+            "rs_momentum": 104.8971,
+            "quadrant": "improving",
+            "display_rs_ratio": 79.33249653592858,
+            "display_rs_momentum": 104.8970989972236,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 124.2482,
+            "rs_momentum": 136.845,
+            "quadrant": "leading",
+            "display_rs_ratio": 124.24824629175055,
+            "display_rs_momentum": 136.84495195418012,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 154.7628,
+            "rs_momentum": 179.1388,
+            "quadrant": "leading",
+            "display_rs_ratio": 154.7628139283933,
+            "display_rs_momentum": 179.13884681651152,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 195.9034,
+            "rs_momentum": 176.1404,
+            "quadrant": "leading",
+            "display_rs_ratio": 195.9034101329543,
+            "display_rs_momentum": 176.14041697308605,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 172.8948,
+            "rs_momentum": 137.6136,
+            "quadrant": "leading",
+            "display_rs_ratio": 172.8947635807351,
+            "display_rs_momentum": 137.61357965022566,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 118.8821,
+            "rs_momentum": 132.7655,
+            "quadrant": "leading",
+            "display_rs_ratio": 118.88213094756385,
+            "display_rs_momentum": 132.76548556543997,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 53.78,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 53.2944,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 54.0033,
+        "s1": 53.3367,
+        "s2": 52.7733,
+        "r1": 54.5667,
+        "r2": 55.2333
+      }
+    },
+    {
+      "symbol": "^GSPTSE",
+      "name": "TSX Composite BENCHMARK",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 98.9843,
+        "rs_momentum": 100.1178,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 98.9255,
+            "rs_momentum": 100.0113,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 98.9243,
+            "rs_momentum": 99.9485,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 98.972,
+            "rs_momentum": 99.7489,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 98.9723,
+            "rs_momentum": 100.0271,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 98.9004,
+            "rs_momentum": 100.0019,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 98.9856,
+            "rs_momentum": 99.695,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 98.9675,
+            "rs_momentum": 100.0185,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 98.9287,
+            "rs_momentum": 100.1373,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 98.8981,
+            "rs_momentum": 100.0057,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 98.9357,
+            "rs_momentum": 100.0471,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 98.9597,
+            "rs_momentum": 100.0147,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 98.9843,
+            "rs_momentum": 100.1178,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 104.893,
+        "rs_momentum": 113.1289,
+        "quadrant": "leading",
+        "display_rs_ratio": 104.89304051156458,
+        "display_rs_momentum": 113.12893754075839,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 88.1213,
+            "rs_momentum": 107.8972,
+            "quadrant": "improving",
+            "display_rs_ratio": 88.12133820591919,
+            "display_rs_momentum": 107.89717124814575,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 81.4958,
+            "rs_momentum": 111.7443,
+            "quadrant": "improving",
+            "display_rs_ratio": 81.49576238491764,
+            "display_rs_momentum": 111.74425711249114,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 109.825,
+            "rs_momentum": 118.7962,
+            "quadrant": "leading",
+            "display_rs_ratio": 109.82502838806106,
+            "display_rs_momentum": 118.79619382589132,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 70.3847,
+            "rs_momentum": 77.2725,
+            "quadrant": "lagging",
+            "display_rs_ratio": 70.38471393430129,
+            "display_rs_momentum": 77.27248704282967,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 86.0445,
+            "rs_momentum": 117.4643,
+            "quadrant": "improving",
+            "display_rs_ratio": 86.0445152461887,
+            "display_rs_momentum": 117.46426805783146,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 146.7416,
+            "rs_momentum": 153.8815,
+            "quadrant": "leading",
+            "display_rs_ratio": 146.74164160597854,
+            "display_rs_momentum": 153.88145705944382,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 70.8327,
+            "rs_momentum": 73.391,
+            "quadrant": "lagging",
+            "display_rs_ratio": 70.83266227765476,
+            "display_rs_momentum": 73.39097292202258,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 72.4579,
+            "rs_momentum": 98.1787,
+            "quadrant": "lagging",
+            "display_rs_ratio": 72.45789295469687,
+            "display_rs_momentum": 98.17872114111903,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 118.1952,
+            "rs_momentum": 173.3812,
+            "quadrant": "leading",
+            "display_rs_ratio": 118.19521558681663,
+            "display_rs_momentum": 173.38119776526355,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 131.1024,
+            "rs_momentum": 227.6986,
+            "quadrant": "leading",
+            "display_rs_ratio": 131.10238095446817,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 116.5075,
+            "rs_momentum": 135.5356,
+            "quadrant": "leading",
+            "display_rs_ratio": 116.50750871837536,
+            "display_rs_momentum": 135.53559888358765,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 104.893,
+            "rs_momentum": 113.1289,
+            "quadrant": "leading",
+            "display_rs_ratio": 104.89304051156458,
+            "display_rs_momentum": 113.12893754075839,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 35620.0,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 35848.2389,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 35902.8672,
+        "s1": 35376.9336,
+        "s2": 34965.668,
+        "r1": 36314.1328,
+        "r2": 36840.0664
+      }
+    },
+    {
+      "symbol": "FCCQ.TO",
+      "name": "Quality",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 97.7206,
+        "rs_momentum": 100.0482,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 98.2531,
+            "rs_momentum": 100.2617,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 98.9012,
+            "rs_momentum": 101.5942,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 98.5389,
+            "rs_momentum": 100.9718,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 98.2772,
+            "rs_momentum": 101.2169,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 97.9002,
+            "rs_momentum": 101.2471,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 97.7735,
+            "rs_momentum": 101.3448,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 98.3962,
+            "rs_momentum": 101.8065,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 98.19,
+            "rs_momentum": 101.0386,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 98.8553,
+            "rs_momentum": 102.5333,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 99.0085,
+            "rs_momentum": 103.0829,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 99.0169,
+            "rs_momentum": 103.3672,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 97.7206,
+            "rs_momentum": 100.0482,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 75.6294,
+        "rs_momentum": 63.5206,
+        "quadrant": "lagging",
+        "display_rs_ratio": 75.62935661430414,
+        "display_rs_momentum": 63.52055725062189,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 204.9907,
+            "rs_momentum": 416.9189,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 45.8194,
+            "rs_momentum": 109.8264,
+            "quadrant": "improving",
+            "display_rs_ratio": 45.81939196775242,
+            "display_rs_momentum": 109.82643055247169,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 55.7015,
+            "rs_momentum": 56.8632,
+            "quadrant": "lagging",
+            "display_rs_ratio": 55.701523243051746,
+            "display_rs_momentum": 56.86315311320328,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 40.6163,
+            "rs_momentum": 33.5961,
+            "quadrant": "lagging",
+            "display_rs_ratio": 40.61626914140196,
+            "display_rs_momentum": 33.5961408544161,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 50.0213,
+            "rs_momentum": 133.4054,
+            "quadrant": "improving",
+            "display_rs_ratio": 50.021339434565895,
+            "display_rs_momentum": 133.4054094093081,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 70.2681,
+            "rs_momentum": 111.4294,
+            "quadrant": "improving",
+            "display_rs_ratio": 70.26806542175915,
+            "display_rs_momentum": 111.42938202437564,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 32.4982,
+            "rs_momentum": 64.9525,
+            "quadrant": "lagging",
+            "display_rs_ratio": 32.498173858480115,
+            "display_rs_momentum": 64.95247953776956,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 89.9223,
+            "rs_momentum": 305.5083,
+            "quadrant": "improving",
+            "display_rs_ratio": 89.92231369393873,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 601.5543,
+            "rs_momentum": 2047.8744,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 362.9434,
+            "rs_momentum": 863.3868,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 220.3138,
+            "rs_momentum": 641.186,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 75.6294,
+            "rs_momentum": 63.5206,
+            "quadrant": "lagging",
+            "display_rs_ratio": 75.62935661430414,
+            "display_rs_momentum": 63.52055725062189,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 52.84,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 53.3206,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 54.09,
+        "s1": 53.28,
+        "s2": 52.74,
+        "r1": 54.63,
+        "r2": 55.44
+      }
+    },
+    {
+      "symbol": "HEB.TO",
+      "name": "Equal Weight",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 187,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 108.5176,
+        "rs_momentum": 93.2308,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 113.0448,
+            "rs_momentum": 101.888,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 106.3225,
+            "rs_momentum": 93.7957,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 107.6118,
+            "rs_momentum": 97.2795,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 108.9884,
+            "rs_momentum": 96.3395,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 109.5918,
+            "rs_momentum": 95.6122,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 109.9091,
+            "rs_momentum": 93.1508,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 109.562,
+            "rs_momentum": 92.9763,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 107.3702,
+            "rs_momentum": 92.1071,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 104.5596,
+            "rs_momentum": 87.9319,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 105.4508,
+            "rs_momentum": 87.9925,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 107.0523,
+            "rs_momentum": 92.3097,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 108.5176,
+            "rs_momentum": 93.2308,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 115.6278,
+        "rs_momentum": 107.6609,
+        "quadrant": "leading",
+        "display_rs_ratio": 115.62783208665057,
+        "display_rs_momentum": 107.66092152613278,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 74.3711,
+            "rs_momentum": 19.8833,
+            "quadrant": "lagging",
+            "display_rs_ratio": 74.37110910875298,
+            "display_rs_momentum": 19.883269508025457,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 218.1242,
+            "rs_momentum": 39.8447,
+            "quadrant": "weakening",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 39.84470994758013,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 203.6396,
+            "rs_momentum": 54.7276,
+            "quadrant": "weakening",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 54.72760206246148,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 56.2612,
+            "rs_momentum": 20.5609,
+            "quadrant": "lagging",
+            "display_rs_ratio": 56.26122849490714,
+            "display_rs_momentum": 20.56092112052908,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 79.4977,
+            "rs_momentum": 19.0835,
+            "quadrant": "lagging",
+            "display_rs_ratio": 79.49772689213046,
+            "display_rs_momentum": 19.08352090132531,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 117.7866,
+            "rs_momentum": 23.9955,
+            "quadrant": "weakening",
+            "display_rs_ratio": 117.78663738554589,
+            "display_rs_momentum": 23.995463613983375,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 137.0126,
+            "rs_momentum": 27.0514,
+            "quadrant": "weakening",
+            "display_rs_ratio": 137.01258308874662,
+            "display_rs_momentum": 27.051421001119692,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 111.6863,
+            "rs_momentum": 46.0554,
+            "quadrant": "weakening",
+            "display_rs_ratio": 111.68628931829325,
+            "display_rs_momentum": 46.05536810609184,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 120.5644,
+            "rs_momentum": 105.062,
+            "quadrant": "leading",
+            "display_rs_ratio": 120.5644168515575,
+            "display_rs_momentum": 105.06197490491319,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 257.4572,
+            "rs_momentum": 423.0537,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 201.6903,
+            "rs_momentum": 139.8385,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 139.83852123733175,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 115.6278,
+            "rs_momentum": 107.6609,
+            "quadrant": "leading",
+            "display_rs_ratio": 115.62783208665057,
+            "display_rs_momentum": 107.66092152613278,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 35.01,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 34.8419,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 34.4893,
+        "s1": 34.047,
+        "s2": 33.5215,
+        "r1": 35.0148,
+        "r2": 35.4572
+      }
+    },
+    {
+      "symbol": "MCLC.TO",
+      "name": "Multifactor",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 100.8148,
+        "rs_momentum": 98.8749,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 100.4747,
+            "rs_momentum": 97.7681,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 101.028,
+            "rs_momentum": 99.2572,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 100.8812,
+            "rs_momentum": 100.1208,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 101.0919,
+            "rs_momentum": 99.5841,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 101.4403,
+            "rs_momentum": 99.7294,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 101.9005,
+            "rs_momentum": 100.5761,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 100.9278,
+            "rs_momentum": 100.8529,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 100.1121,
+            "rs_momentum": 100.0376,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 99.544,
+            "rs_momentum": 99.0061,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 101.1935,
+            "rs_momentum": 100.6364,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 101.6688,
+            "rs_momentum": 100.7669,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 100.8148,
+            "rs_momentum": 98.8749,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 39.9385,
+        "rs_momentum": 116.2601,
+        "quadrant": "improving",
+        "display_rs_ratio": 39.93850824157034,
+        "display_rs_momentum": 116.26010533902284,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 115.91,
+            "rs_momentum": 217.0236,
+            "quadrant": "leading",
+            "display_rs_ratio": 115.91003668788231,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 15.6554,
+            "rs_momentum": 168.6548,
+            "quadrant": "improving",
+            "display_rs_ratio": 15.655358773015887,
+            "display_rs_momentum": 168.6548185858264,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 50.9127,
+            "rs_momentum": 42.2379,
+            "quadrant": "lagging",
+            "display_rs_ratio": 50.912689592266794,
+            "display_rs_momentum": 42.237932199797655,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 39.2915,
+            "rs_momentum": 43.6512,
+            "quadrant": "lagging",
+            "display_rs_ratio": 39.291487967035124,
+            "display_rs_momentum": 43.65123863416247,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 123.3837,
+            "rs_momentum": 326.7991,
+            "quadrant": "leading",
+            "display_rs_ratio": 123.38374134433919,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 38.8797,
+            "rs_momentum": 71.51,
+            "quadrant": "lagging",
+            "display_rs_ratio": 38.879697436632384,
+            "display_rs_momentum": 71.50998512183436,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 95.3746,
+            "rs_momentum": 161.7354,
+            "quadrant": "improving",
+            "display_rs_ratio": 95.37463870426521,
+            "display_rs_momentum": 161.7354130568133,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 573.9233,
+            "rs_momentum": 690.7508,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 24.5297,
+            "rs_momentum": 7.4256,
+            "quadrant": "lagging",
+            "display_rs_ratio": 24.52968425617891,
+            "display_rs_momentum": 7.425593014195177,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 211.7182,
+            "rs_momentum": 515.6844,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 2.7203,
+            "rs_momentum": 3.8722,
+            "quadrant": "lagging",
+            "display_rs_ratio": 2.720309757766645,
+            "display_rs_momentum": 3.8721538297859235,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 39.9385,
+            "rs_momentum": 116.2601,
+            "quadrant": "improving",
+            "display_rs_ratio": 39.93850824157034,
+            "display_rs_momentum": 116.26010533902284,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 60.75,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 60.7978,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 61.6567,
+        "s1": 61.3833,
+        "s2": 61.2467,
+        "r1": 61.7933,
+        "r2": 62.0667
+      }
+    },
+    {
+      "symbol": "VDY.TO",
+      "name": "Value",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 107.6265,
+        "rs_momentum": 96.8408,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 106.6174,
+            "rs_momentum": 97.6654,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 103.5674,
+            "rs_momentum": 93.9062,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 103.9493,
+            "rs_momentum": 97.2627,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 105.3065,
+            "rs_momentum": 96.058,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 105.9609,
+            "rs_momentum": 96.3388,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 106.291,
+            "rs_momentum": 96.5619,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 104.9549,
+            "rs_momentum": 95.6536,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 104.6308,
+            "rs_momentum": 96.356,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 103.3148,
+            "rs_momentum": 93.5636,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 105.0084,
+            "rs_momentum": 93.5276,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 106.3699,
+            "rs_momentum": 95.458,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 107.6265,
+            "rs_momentum": 96.8408,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 93.3467,
+        "rs_momentum": 78.8495,
+        "quadrant": "lagging",
+        "display_rs_ratio": 93.34668247620476,
+        "display_rs_momentum": 78.84952587583578,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 109.8761,
+            "rs_momentum": 81.9798,
+            "quadrant": "weakening",
+            "display_rs_ratio": 109.87614658746712,
+            "display_rs_momentum": 81.97984839289417,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 124.4327,
+            "rs_momentum": 105.4705,
+            "quadrant": "leading",
+            "display_rs_ratio": 124.43266673707372,
+            "display_rs_momentum": 105.47054724154779,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 104.4963,
+            "rs_momentum": 67.5905,
+            "quadrant": "weakening",
+            "display_rs_ratio": 104.49627476483523,
+            "display_rs_momentum": 67.59051786033659,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 68.7801,
+            "rs_momentum": 60.8723,
+            "quadrant": "lagging",
+            "display_rs_ratio": 68.7800908057645,
+            "display_rs_momentum": 60.87232074909713,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 73.5609,
+            "rs_momentum": 81.6489,
+            "quadrant": "lagging",
+            "display_rs_ratio": 73.56091657960371,
+            "display_rs_momentum": 81.64887803377964,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 93.978,
+            "rs_momentum": 61.8463,
+            "quadrant": "lagging",
+            "display_rs_ratio": 93.97795664508224,
+            "display_rs_momentum": 61.846326877957715,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 80.3953,
+            "rs_momentum": 70.5254,
+            "quadrant": "lagging",
+            "display_rs_ratio": 80.39527641381675,
+            "display_rs_momentum": 70.52537478659254,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 85.8353,
+            "rs_momentum": 62.4835,
+            "quadrant": "lagging",
+            "display_rs_ratio": 85.83529983657775,
+            "display_rs_momentum": 62.48347232261388,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 113.7789,
+            "rs_momentum": 119.3288,
+            "quadrant": "leading",
+            "display_rs_ratio": 113.77894682502097,
+            "display_rs_momentum": 119.32880118838771,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 134.0298,
+            "rs_momentum": 123.8974,
+            "quadrant": "leading",
+            "display_rs_ratio": 134.0298174531504,
+            "display_rs_momentum": 123.89743926795556,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 114.7692,
+            "rs_momentum": 93.277,
+            "quadrant": "weakening",
+            "display_rs_ratio": 114.76917906297943,
+            "display_rs_momentum": 93.27695061684219,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 93.3467,
+            "rs_momentum": 78.8495,
+            "quadrant": "lagging",
+            "display_rs_ratio": 93.34668247620476,
+            "display_rs_momentum": 78.84952587583578,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 78.9,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 76.981,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 77.83,
+        "s1": 77.11,
+        "s2": 76.12,
+        "r1": 78.82,
+        "r2": 79.54
+      }
+    },
+    {
+      "symbol": "WXM.TO",
+      "name": "Momentum",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 95.5511,
+        "rs_momentum": 96.1745,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 98.5831,
+            "rs_momentum": 92.3632,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 97.09,
+            "rs_momentum": 91.9575,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 96.2055,
+            "rs_momentum": 90.8669,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 96.5295,
+            "rs_momentum": 91.5788,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 98.4618,
+            "rs_momentum": 94.7166,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 97.7045,
+            "rs_momentum": 93.7077,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 97.8331,
+            "rs_momentum": 94.942,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 98.3615,
+            "rs_momentum": 95.3266,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 98.2624,
+            "rs_momentum": 95.1837,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 97.0931,
+            "rs_momentum": 96.8824,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 96.3571,
+            "rs_momentum": 96.0313,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 95.5511,
+            "rs_momentum": 96.1745,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 91.1735,
+        "rs_momentum": 14.4648,
+        "quadrant": "lagging",
+        "display_rs_ratio": 91.17346941089154,
+        "display_rs_momentum": 14.464793580276481,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 147.6837,
+            "rs_momentum": 146.1357,
+            "quadrant": "leading",
+            "display_rs_ratio": 147.6837031715825,
+            "display_rs_momentum": 146.13574050171994,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 105.163,
+            "rs_momentum": 72.7214,
+            "quadrant": "weakening",
+            "display_rs_ratio": 105.1629852747595,
+            "display_rs_momentum": 72.7213766135557,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 69.9482,
+            "rs_momentum": 57.1674,
+            "quadrant": "lagging",
+            "display_rs_ratio": 69.94824923714505,
+            "display_rs_momentum": 57.167430860284696,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 40.739,
+            "rs_momentum": 32.8489,
+            "quadrant": "lagging",
+            "display_rs_ratio": 40.73902989470023,
+            "display_rs_momentum": 32.84887631931498,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 47.9432,
+            "rs_momentum": 30.1401,
+            "quadrant": "lagging",
+            "display_rs_ratio": 47.9431884526801,
+            "display_rs_momentum": 30.1401386987147,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 120.8081,
+            "rs_momentum": 102.107,
+            "quadrant": "leading",
+            "display_rs_ratio": 120.80811527391835,
+            "display_rs_momentum": 102.10704758916035,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 78.5269,
+            "rs_momentum": 130.5733,
+            "quadrant": "improving",
+            "display_rs_ratio": 78.52688842748594,
+            "display_rs_momentum": 130.5733032068959,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 61.6097,
+            "rs_momentum": 59.6406,
+            "quadrant": "lagging",
+            "display_rs_ratio": 61.609672468198454,
+            "display_rs_momentum": 59.64061652284307,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 71.7745,
+            "rs_momentum": 122.6768,
+            "quadrant": "improving",
+            "display_rs_ratio": 71.77445579678313,
+            "display_rs_momentum": 122.67677011572147,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 43.5689,
+            "rs_momentum": 35.6484,
+            "quadrant": "lagging",
+            "display_rs_ratio": 43.568880605151875,
+            "display_rs_momentum": 35.64837725345862,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 79.9564,
+            "rs_momentum": 64.4838,
+            "quadrant": "lagging",
+            "display_rs_ratio": 79.95643520328298,
+            "display_rs_momentum": 64.48376451424166,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 91.1735,
+            "rs_momentum": 14.4648,
+            "quadrant": "lagging",
+            "display_rs_ratio": 91.17346941089154,
+            "display_rs_momentum": 14.464793580276481,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 48.5,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 49.9259,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 49.3667,
+        "s1": 48.6133,
+        "s2": 48.0967,
+        "r1": 49.8833,
+        "r2": 50.6367
+      }
+    },
+    {
+      "symbol": "XCG.TO",
+      "name": "Growth",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 90.9189,
+        "rs_momentum": 101.502,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 93.8389,
+            "rs_momentum": 104.853,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 96.6275,
+            "rs_momentum": 108.9453,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 96.212,
+            "rs_momentum": 105.3222,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 95.1064,
+            "rs_momentum": 105.9484,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 94.0551,
+            "rs_momentum": 105.655,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 93.4554,
+            "rs_momentum": 105.1633,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 95.048,
+            "rs_momentum": 106.5598,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 94.8766,
+            "rs_momentum": 105.7065,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 96.3463,
+            "rs_momentum": 107.81,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 94.3258,
+            "rs_momentum": 106.9298,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 93.2257,
+            "rs_momentum": 105.1348,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 90.9189,
+            "rs_momentum": 101.502,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 127.1075,
+        "rs_momentum": 275.9609,
+        "quadrant": "leading",
+        "display_rs_ratio": 127.10754817401518,
+        "display_rs_momentum": 200,
+        "display_capped": true,
+        "display_marker": "\u2191",
+        "display_warning": "Value exceeds visual chart ceiling; raw value retained",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 92.9075,
+            "rs_momentum": 136.8972,
+            "quadrant": "improving",
+            "display_rs_ratio": 92.90747199280071,
+            "display_rs_momentum": 136.89721550824956,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 47.8915,
+            "rs_momentum": 109.8294,
+            "quadrant": "improving",
+            "display_rs_ratio": 47.891518108752365,
+            "display_rs_momentum": 109.829422789956,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 57.5792,
+            "rs_momentum": 68.9082,
+            "quadrant": "lagging",
+            "display_rs_ratio": 57.579162875145414,
+            "display_rs_momentum": 68.90821058717832,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 47.6472,
+            "rs_momentum": 71.1103,
+            "quadrant": "lagging",
+            "display_rs_ratio": 47.647164622028974,
+            "display_rs_momentum": 71.1102638929045,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 70.2963,
+            "rs_momentum": 150.5445,
+            "quadrant": "improving",
+            "display_rs_ratio": 70.29633608460752,
+            "display_rs_momentum": 150.54446551659547,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 144.8984,
+            "rs_momentum": 227.1351,
+            "quadrant": "leading",
+            "display_rs_ratio": 144.8984254610059,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 63.9333,
+            "rs_momentum": 110.5235,
+            "quadrant": "improving",
+            "display_rs_ratio": 63.93334262353729,
+            "display_rs_momentum": 110.52350889964909,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 133.3755,
+            "rs_momentum": 252.2058,
+            "quadrant": "leading",
+            "display_rs_ratio": 133.37548168521326,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 60.1929,
+            "rs_momentum": 175.277,
+            "quadrant": "improving",
+            "display_rs_ratio": 60.192916447377144,
+            "display_rs_momentum": 175.27702101301733,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 133.6671,
+            "rs_momentum": 322.0731,
+            "quadrant": "leading",
+            "display_rs_ratio": 133.66710403692502,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 108.2844,
+            "rs_momentum": 210.2377,
+            "quadrant": "leading",
+            "display_rs_ratio": 108.28442357803839,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 127.1075,
+            "rs_momentum": 275.9609,
+            "quadrant": "leading",
+            "display_rs_ratio": 127.10754817401518,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 64.35,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 67.6817,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 66.9867,
+        "s1": 65.3833,
+        "s2": 64.2467,
+        "r1": 68.1233,
+        "r2": 69.7267
+      }
+    },
+    {
+      "symbol": "XESG.TO",
+      "name": "ESG",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 99.5113,
+        "rs_momentum": 99.276,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 99.9507,
+            "rs_momentum": 100.2833,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 99.7704,
+            "rs_momentum": 99.9906,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 99.9871,
+            "rs_momentum": 100.3218,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 100.2182,
+            "rs_momentum": 100.8754,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 100.3315,
+            "rs_momentum": 101.0717,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 100.5523,
+            "rs_momentum": 101.0138,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 100.365,
+            "rs_momentum": 101.1203,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 100.3453,
+            "rs_momentum": 100.7955,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 100.0553,
+            "rs_momentum": 100.7787,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 100.0542,
+            "rs_momentum": 100.3587,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 99.9369,
+            "rs_momentum": 100.1565,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 99.5113,
+            "rs_momentum": 99.276,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 69.5484,
+        "rs_momentum": 193.158,
+        "quadrant": "improving",
+        "display_rs_ratio": 69.5483608674282,
+        "display_rs_momentum": 193.1579978313529,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 66.072,
+            "rs_momentum": 214.441,
+            "quadrant": "improving",
+            "display_rs_ratio": 66.07199764678764,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 71.9812,
+            "rs_momentum": 178.1016,
+            "quadrant": "improving",
+            "display_rs_ratio": 71.98120576918684,
+            "display_rs_momentum": 178.10161384307722,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 54.8752,
+            "rs_momentum": 55.7894,
+            "quadrant": "lagging",
+            "display_rs_ratio": 54.87522890900014,
+            "display_rs_momentum": 55.7893732581276,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 54.4382,
+            "rs_momentum": 36.3628,
+            "quadrant": "lagging",
+            "display_rs_ratio": 54.438177125586826,
+            "display_rs_momentum": 36.36276526283545,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 35.8519,
+            "rs_momentum": 113.206,
+            "quadrant": "improving",
+            "display_rs_ratio": 35.85193912700609,
+            "display_rs_momentum": 113.20603198530415,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 29.9848,
+            "rs_momentum": 76.338,
+            "quadrant": "lagging",
+            "display_rs_ratio": 29.984794093199092,
+            "display_rs_momentum": 76.33799943356416,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 29.5855,
+            "rs_momentum": 72.9319,
+            "quadrant": "lagging",
+            "display_rs_ratio": 29.585512671611358,
+            "display_rs_momentum": 72.93188598337206,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 38.1861,
+            "rs_momentum": 27.363,
+            "quadrant": "lagging",
+            "display_rs_ratio": 38.186064324699835,
+            "display_rs_momentum": 27.362996544744956,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 72.9289,
+            "rs_momentum": 184.4461,
+            "quadrant": "improving",
+            "display_rs_ratio": 72.92891058792893,
+            "display_rs_momentum": 184.44609872062904,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 70.8754,
+            "rs_momentum": 217.7529,
+            "quadrant": "improving",
+            "display_rs_ratio": 70.87535142166269,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 102.1671,
+            "rs_momentum": 194.1258,
+            "quadrant": "leading",
+            "display_rs_ratio": 102.16710490213873,
+            "display_rs_momentum": 194.12582401330724,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 69.5484,
+            "rs_momentum": 193.158,
+            "quadrant": "improving",
+            "display_rs_ratio": 69.5483608674282,
+            "display_rs_momentum": 193.1579978313529,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 43.09,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 43.4728,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 43.72,
+        "s1": 43.16,
+        "s2": 42.84,
+        "r1": 44.04,
+        "r2": 44.6
+      }
+    },
+    {
+      "symbol": "ZLB.TO",
+      "name": "Low Vol",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 98.3179,
+        "rs_momentum": 101.4243,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 93.2976,
+            "rs_momentum": 100.2219,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 92.0519,
+            "rs_momentum": 98.0044,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 92.4878,
+            "rs_momentum": 99.0702,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 93.4195,
+            "rs_momentum": 98.327,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 93.5565,
+            "rs_momentum": 98.8549,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 93.9274,
+            "rs_momentum": 98.0992,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 93.935,
+            "rs_momentum": 96.6366,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 93.653,
+            "rs_momentum": 97.5857,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 93.14,
+            "rs_momentum": 96.9941,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 95.6371,
+            "rs_momentum": 98.2463,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 97.2907,
+            "rs_momentum": 100.7163,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 98.3179,
+            "rs_momentum": 101.4243,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 93.4415,
+        "rs_momentum": 118.0,
+        "quadrant": "improving",
+        "display_rs_ratio": 93.44154553811046,
+        "display_rs_momentum": 117.9999934574582,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 80.0057,
+            "rs_momentum": 134.6918,
+            "quadrant": "improving",
+            "display_rs_ratio": 80.00570472720948,
+            "display_rs_momentum": 134.69175852963278,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 69.8608,
+            "rs_momentum": 114.2702,
+            "quadrant": "improving",
+            "display_rs_ratio": 69.86076932386524,
+            "display_rs_momentum": 114.27016857943548,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 73.6989,
+            "rs_momentum": 148.8298,
+            "quadrant": "improving",
+            "display_rs_ratio": 73.69894850196384,
+            "display_rs_momentum": 148.8298425227794,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 52.8205,
+            "rs_momentum": 69.3423,
+            "quadrant": "lagging",
+            "display_rs_ratio": 52.82052713097153,
+            "display_rs_momentum": 69.34225812468429,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 57.1242,
+            "rs_momentum": 67.8199,
+            "quadrant": "lagging",
+            "display_rs_ratio": 57.12423106572264,
+            "display_rs_momentum": 67.81988087618335,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 101.1988,
+            "rs_momentum": 94.0315,
+            "quadrant": "weakening",
+            "display_rs_ratio": 101.19882678832408,
+            "display_rs_momentum": 94.03146612461408,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 103.1904,
+            "rs_momentum": 135.4112,
+            "quadrant": "leading",
+            "display_rs_ratio": 103.19037589245997,
+            "display_rs_momentum": 135.4111876586071,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 72.1851,
+            "rs_momentum": 110.3063,
+            "quadrant": "improving",
+            "display_rs_ratio": 72.1851079242772,
+            "display_rs_momentum": 110.30626708276476,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 98.2667,
+            "rs_momentum": 110.1867,
+            "quadrant": "improving",
+            "display_rs_ratio": 98.26674714907419,
+            "display_rs_momentum": 110.18668091986359,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 153.3765,
+            "rs_momentum": 262.0432,
+            "quadrant": "leading",
+            "display_rs_ratio": 153.3764590894865,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 104.899,
+            "rs_momentum": 89.1165,
+            "quadrant": "weakening",
+            "display_rs_ratio": 104.8989830554486,
+            "display_rs_momentum": 89.11653818945865,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 93.4415,
+            "rs_momentum": 118.0,
+            "quadrant": "improving",
+            "display_rs_ratio": 93.44154553811046,
+            "display_rs_momentum": 117.9999934574582,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 61.54,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 60.6661,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 61.11,
+        "s1": 60.26,
+        "s2": 59.27,
+        "r1": 62.1,
+        "r2": 62.95
+      }
+    },
+    {
+      "symbol": "ZVC.TO",
+      "name": "Value",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 104.0528,
+        "rs_momentum": 97.9166,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 102.8857,
+            "rs_momentum": 98.1783,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 103.2995,
+            "rs_momentum": 97.978,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 102.706,
+            "rs_momentum": 98.6868,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 103.6769,
+            "rs_momentum": 98.9755,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 104.5082,
+            "rs_momentum": 99.7052,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 104.7541,
+            "rs_momentum": 100.5718,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 103.8979,
+            "rs_momentum": 101.2573,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 103.5827,
+            "rs_momentum": 100.4216,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 102.5629,
+            "rs_momentum": 98.7769,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 103.7774,
+            "rs_momentum": 99.1937,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 104.3329,
+            "rs_momentum": 99.1996,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 104.0528,
+            "rs_momentum": 97.9166,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 47.9561,
+        "rs_momentum": 81.7863,
+        "quadrant": "lagging",
+        "display_rs_ratio": 47.95611205740041,
+        "display_rs_momentum": 81.78625921931103,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 150.7332,
+            "rs_momentum": 540.7579,
+            "quadrant": "leading",
+            "display_rs_ratio": 150.73318817598656,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 73.4414,
+            "rs_momentum": 221.173,
+            "quadrant": "improving",
+            "display_rs_ratio": 73.44140913028683,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 144.4269,
+            "rs_momentum": 117.1588,
+            "quadrant": "leading",
+            "display_rs_ratio": 144.426938389837,
+            "display_rs_momentum": 117.15876474390382,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 82.8664,
+            "rs_momentum": 51.1992,
+            "quadrant": "lagging",
+            "display_rs_ratio": 82.86642120602811,
+            "display_rs_momentum": 51.19922665000269,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 46.1795,
+            "rs_momentum": 32.9871,
+            "quadrant": "lagging",
+            "display_rs_ratio": 46.179493233716954,
+            "display_rs_momentum": 32.987112020289175,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 113.4984,
+            "rs_momentum": 56.8975,
+            "quadrant": "weakening",
+            "display_rs_ratio": 113.49836615814266,
+            "display_rs_momentum": 56.89747499899389,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 66.3259,
+            "rs_momentum": 106.5355,
+            "quadrant": "improving",
+            "display_rs_ratio": 66.3259466144521,
+            "display_rs_momentum": 106.53547742652935,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 33.6387,
+            "rs_momentum": 28.1298,
+            "quadrant": "lagging",
+            "display_rs_ratio": 33.638699547727455,
+            "display_rs_momentum": 28.129843837062403,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 49.3152,
+            "rs_momentum": 137.5649,
+            "quadrant": "improving",
+            "display_rs_ratio": 49.315194935200815,
+            "display_rs_momentum": 137.5649037606973,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 87.5268,
+            "rs_momentum": 101.6926,
+            "quadrant": "improving",
+            "display_rs_ratio": 87.52680354199462,
+            "display_rs_momentum": 101.69262954055323,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 73.1936,
+            "rs_momentum": 50.4064,
+            "quadrant": "lagging",
+            "display_rs_ratio": 73.19358666205713,
+            "display_rs_momentum": 50.40644479735504,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 47.9561,
+            "rs_momentum": 81.7863,
+            "quadrant": "lagging",
+            "display_rs_ratio": 47.95611205740041,
+            "display_rs_momentum": 81.78625921931103,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 45.35,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 44.8341,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 45.7367,
+        "s1": 45.3433,
+        "s2": 45.0867,
+        "r1": 45.9933,
+        "r2": 46.3867
+      }
+    },
+    {
+      "symbol": "MORE.TO",
+      "name": "Mining / Resources",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 112,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 102.21,
+        "rs_momentum": 100.0925,
+        "quadrant": "leading",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 102.978,
+            "rs_momentum": 89.8859,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 109.3494,
+            "rs_momentum": 97.675,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 107.7697,
+            "rs_momentum": 98.0924,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 107.1288,
+            "rs_momentum": 99.245,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 108.4579,
+            "rs_momentum": 101.576,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 107.9509,
+            "rs_momentum": 103.418,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 105.3655,
+            "rs_momentum": 105.4988,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 104.5435,
+            "rs_momentum": 103.8329,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 105.2789,
+            "rs_momentum": 106.0328,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 104.452,
+            "rs_momentum": 105.8364,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 102.8934,
+            "rs_momentum": 100.0762,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 102.21,
+            "rs_momentum": 100.0925,
+            "quadrant": "leading"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 72.0449,
+        "rs_momentum": 124.5306,
+        "quadrant": "improving",
+        "display_rs_ratio": 72.04492558564046,
+        "display_rs_momentum": 124.5305662816678,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 120.1811,
+            "rs_momentum": 81.3643,
+            "quadrant": "weakening",
+            "display_rs_ratio": 120.1810758137508,
+            "display_rs_momentum": 81.36429007222074,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 101.6086,
+            "rs_momentum": 128.4988,
+            "quadrant": "leading",
+            "display_rs_ratio": 101.60857842250314,
+            "display_rs_momentum": 128.4987700699264,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 132.8686,
+            "rs_momentum": 153.3509,
+            "quadrant": "leading",
+            "display_rs_ratio": 132.86863884844053,
+            "display_rs_momentum": 153.3508654119467,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 74.5448,
+            "rs_momentum": 58.3184,
+            "quadrant": "lagging",
+            "display_rs_ratio": 74.54483361686948,
+            "display_rs_momentum": 58.31841133361978,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 124.4523,
+            "rs_momentum": 75.6857,
+            "quadrant": "weakening",
+            "display_rs_ratio": 124.45231293946605,
+            "display_rs_momentum": 75.68573583686084,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 142.868,
+            "rs_momentum": 147.2269,
+            "quadrant": "leading",
+            "display_rs_ratio": 142.8679759412232,
+            "display_rs_momentum": 147.226858177172,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 81.5557,
+            "rs_momentum": 84.8383,
+            "quadrant": "lagging",
+            "display_rs_ratio": 81.55573958826304,
+            "display_rs_momentum": 84.83833536605955,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 107.552,
+            "rs_momentum": 98.6379,
+            "quadrant": "weakening",
+            "display_rs_ratio": 107.55195640253386,
+            "display_rs_momentum": 98.63785587132614,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 139.5602,
+            "rs_momentum": 172.6679,
+            "quadrant": "leading",
+            "display_rs_ratio": 139.56024955233474,
+            "display_rs_momentum": 172.66794090425316,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 146.8695,
+            "rs_momentum": 242.0442,
+            "quadrant": "leading",
+            "display_rs_ratio": 146.86948871391834,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 81.6849,
+            "rs_momentum": 70.7046,
+            "quadrant": "lagging",
+            "display_rs_ratio": 81.68492757585413,
+            "display_rs_momentum": 70.7045540533029,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 72.0449,
+            "rs_momentum": 124.5306,
+            "quadrant": "improving",
+            "display_rs_ratio": 72.04492558564046,
+            "display_rs_momentum": 124.5305662816678,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 39.09,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 38.8594,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 39.57,
+        "s1": 38.77,
+        "s2": 38.13,
+        "r1": 40.21,
+        "r2": 41.01
+      }
+    },
+    {
+      "symbol": "RING.TO",
+      "name": "Telecom",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 103,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 81.9984,
+        "rs_momentum": 103.4984,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 81.0329,
+            "rs_momentum": 94.3274,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 81.6805,
+            "rs_momentum": 93.3458,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 82.6339,
+            "rs_momentum": 92.5133,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 83.8304,
+            "rs_momentum": 94.0817,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 84.0232,
+            "rs_momentum": 94.3277,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 82.0854,
+            "rs_momentum": 94.0423,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 78.6396,
+            "rs_momentum": 93.2158,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 76.6424,
+            "rs_momentum": 98.6481,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 73.8947,
+            "rs_momentum": 93.1313,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 78.725,
+            "rs_momentum": 97.1805,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 81.0281,
+            "rs_momentum": 102.3244,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 81.9984,
+            "rs_momentum": 103.4984,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 177.7828,
+        "rs_momentum": 82.4961,
+        "quadrant": "weakening",
+        "display_rs_ratio": 177.78281556720358,
+        "display_rs_momentum": 82.49612461674491,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 107.729,
+            "rs_momentum": 128.0152,
+            "quadrant": "leading",
+            "display_rs_ratio": 107.72902488154563,
+            "display_rs_momentum": 128.01517756975323,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 71.6928,
+            "rs_momentum": 14.9169,
+            "quadrant": "lagging",
+            "display_rs_ratio": 71.69280244387039,
+            "display_rs_momentum": 14.91692112867254,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 45.5821,
+            "rs_momentum": 55.8688,
+            "quadrant": "lagging",
+            "display_rs_ratio": 45.582069328668126,
+            "display_rs_momentum": 55.86878834926646,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 56.5349,
+            "rs_momentum": 23.9713,
+            "quadrant": "lagging",
+            "display_rs_ratio": 56.53490472682653,
+            "display_rs_momentum": 23.971334373056226,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 70.6089,
+            "rs_momentum": 98.2173,
+            "quadrant": "lagging",
+            "display_rs_ratio": 70.60890145405475,
+            "display_rs_momentum": 98.21727263452397,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 140.227,
+            "rs_momentum": 173.4143,
+            "quadrant": "leading",
+            "display_rs_ratio": 140.227043830182,
+            "display_rs_momentum": 173.4142523882545,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 291.9949,
+            "rs_momentum": 198.4913,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 198.4913005349364,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 175.4801,
+            "rs_momentum": 106.9542,
+            "quadrant": "leading",
+            "display_rs_ratio": 175.48011978632601,
+            "display_rs_momentum": 106.95420254216113,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 269.756,
+            "rs_momentum": 237.2779,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 227.9228,
+            "rs_momentum": 295.1393,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 211.1971,
+            "rs_momentum": 118.4275,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 118.42746682991483,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 177.7828,
+            "rs_momentum": 82.4961,
+            "quadrant": "weakening",
+            "display_rs_ratio": 177.78281556720358,
+            "display_rs_momentum": 82.49612461674491,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 14.72,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 15.3987,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 14.6239,
+        "s1": 14.2954,
+        "s2": 13.8673,
+        "r1": 15.0519,
+        "r2": 15.3805
+      }
+    },
+    {
+      "symbol": "XEG.TO",
+      "name": "Energy",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 120.9492,
+        "rs_momentum": 104.8603,
+        "quadrant": "leading",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 109.1958,
+            "rs_momentum": 87.0605,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 113.8567,
+            "rs_momentum": 93.1952,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 110.344,
+            "rs_momentum": 98.1079,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 111.8644,
+            "rs_momentum": 97.1198,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 115.0721,
+            "rs_momentum": 102.2951,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 114.6563,
+            "rs_momentum": 109.4702,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 111.1106,
+            "rs_momentum": 108.9906,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 114.1695,
+            "rs_momentum": 112.2768,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 115.281,
+            "rs_momentum": 108.8996,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 119.8477,
+            "rs_momentum": 109.432,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 120.8805,
+            "rs_momentum": 105.592,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 120.9492,
+            "rs_momentum": 104.8603,
+            "quadrant": "leading"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 155.3993,
+        "rs_momentum": 139.0838,
+        "quadrant": "leading",
+        "display_rs_ratio": 155.39927432909124,
+        "display_rs_momentum": 139.08383123321565,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 76.9819,
+            "rs_momentum": 105.0779,
+            "quadrant": "improving",
+            "display_rs_ratio": 76.98186843178281,
+            "display_rs_momentum": 105.07788020457181,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 75.4922,
+            "rs_momentum": 82.6289,
+            "quadrant": "lagging",
+            "display_rs_ratio": 75.49216181722569,
+            "display_rs_momentum": 82.6288524493195,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 94.6544,
+            "rs_momentum": 114.4211,
+            "quadrant": "improving",
+            "display_rs_ratio": 94.65437398220223,
+            "display_rs_momentum": 114.42109153568185,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 55.9093,
+            "rs_momentum": 72.2812,
+            "quadrant": "lagging",
+            "display_rs_ratio": 55.909294303773436,
+            "display_rs_momentum": 72.2811948510757,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 67.7442,
+            "rs_momentum": 85.376,
+            "quadrant": "lagging",
+            "display_rs_ratio": 67.74421342690724,
+            "display_rs_momentum": 85.37601888960164,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 168.2519,
+            "rs_momentum": 117.8382,
+            "quadrant": "leading",
+            "display_rs_ratio": 168.25193622393184,
+            "display_rs_momentum": 117.83821098289262,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 110.3834,
+            "rs_momentum": 96.119,
+            "quadrant": "weakening",
+            "display_rs_ratio": 110.38343178931495,
+            "display_rs_momentum": 96.11901753796069,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 89.7336,
+            "rs_momentum": 163.5269,
+            "quadrant": "improving",
+            "display_rs_ratio": 89.73357796345495,
+            "display_rs_momentum": 163.52694372546517,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 125.7843,
+            "rs_momentum": 202.9617,
+            "quadrant": "leading",
+            "display_rs_ratio": 125.78431134316341,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 113.4983,
+            "rs_momentum": 152.253,
+            "quadrant": "leading",
+            "display_rs_ratio": 113.49831828264769,
+            "display_rs_momentum": 152.25298510635392,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 169.6288,
+            "rs_momentum": 156.7134,
+            "quadrant": "leading",
+            "display_rs_ratio": 169.62881177803007,
+            "display_rs_momentum": 156.71335865953705,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 155.3993,
+            "rs_momentum": 139.0838,
+            "quadrant": "leading",
+            "display_rs_ratio": 155.39927432909124,
+            "display_rs_momentum": 139.08383123321565,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 31.52,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 28.1172,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 31.1933,
+        "s1": 30.6667,
+        "s2": 29.9233,
+        "r1": 31.9367,
+        "r2": 32.4633
+      }
+    },
+    {
+      "symbol": "XFN.TO",
+      "name": "Banks",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 106.0177,
+        "rs_momentum": 95.5784,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 107.7982,
+            "rs_momentum": 103.02,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 102.0303,
+            "rs_momentum": 96.1607,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 103.6152,
+            "rs_momentum": 98.9907,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 104.7837,
+            "rs_momentum": 97.8717,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 105.1588,
+            "rs_momentum": 96.9255,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 105.5808,
+            "rs_momentum": 95.0697,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 105.1511,
+            "rs_momentum": 94.8848,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 103.8496,
+            "rs_momentum": 93.8127,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 101.6711,
+            "rs_momentum": 90.66,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 102.4385,
+            "rs_momentum": 90.5996,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 104.3185,
+            "rs_momentum": 94.4138,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 106.0177,
+            "rs_momentum": 95.5784,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 81.3472,
+        "rs_momentum": 123.7413,
+        "quadrant": "improving",
+        "display_rs_ratio": 81.3471837687209,
+        "display_rs_momentum": 123.7413204087829,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 90.4013,
+            "rs_momentum": 77.6262,
+            "quadrant": "lagging",
+            "display_rs_ratio": 90.40127084407902,
+            "display_rs_momentum": 77.62624679622289,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 96.5404,
+            "rs_momentum": 111.5204,
+            "quadrant": "improving",
+            "display_rs_ratio": 96.54036210231577,
+            "display_rs_momentum": 111.52036838535587,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 101.7466,
+            "rs_momentum": 135.8097,
+            "quadrant": "leading",
+            "display_rs_ratio": 101.74660582511419,
+            "display_rs_momentum": 135.8097328798832,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 47.6403,
+            "rs_momentum": 59.1646,
+            "quadrant": "lagging",
+            "display_rs_ratio": 47.64031456508701,
+            "display_rs_momentum": 59.16456749186511,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 71.3521,
+            "rs_momentum": 106.7415,
+            "quadrant": "improving",
+            "display_rs_ratio": 71.35210134158677,
+            "display_rs_momentum": 106.74149477933167,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 69.7395,
+            "rs_momentum": 107.0204,
+            "quadrant": "improving",
+            "display_rs_ratio": 69.73945267168071,
+            "display_rs_momentum": 107.02039225188355,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 160.6788,
+            "rs_momentum": 188.9472,
+            "quadrant": "leading",
+            "display_rs_ratio": 160.67878190016046,
+            "display_rs_momentum": 188.94715119448247,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 64.2222,
+            "rs_momentum": 81.3095,
+            "quadrant": "lagging",
+            "display_rs_ratio": 64.22222815434526,
+            "display_rs_momentum": 81.30951602210274,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 76.0074,
+            "rs_momentum": 167.0915,
+            "quadrant": "improving",
+            "display_rs_ratio": 76.00738013143359,
+            "display_rs_momentum": 167.09149671448645,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 98.3346,
+            "rs_momentum": 143.4319,
+            "quadrant": "improving",
+            "display_rs_ratio": 98.33463584302474,
+            "display_rs_momentum": 143.43189200988274,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 78.0932,
+            "rs_momentum": 82.7317,
+            "quadrant": "lagging",
+            "display_rs_ratio": 78.09316073480497,
+            "display_rs_momentum": 82.731655245207,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 81.3472,
+            "rs_momentum": 123.7413,
+            "quadrant": "improving",
+            "display_rs_ratio": 81.3471837687209,
+            "display_rs_momentum": 123.7413204087829,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 94.51,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 93.852,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 93.0198,
+        "s1": 91.7418,
+        "s2": 90.2542,
+        "r1": 94.5073,
+        "r2": 95.7853
+      }
+    },
+    {
+      "symbol": "XIT.TO",
+      "name": "Tech",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 103.7203,
+        "rs_momentum": 116.5004,
+        "quadrant": "leading",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 93.7105,
+            "rs_momentum": 118.7761,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 90.4431,
+            "rs_momentum": 111.264,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 93.6606,
+            "rs_momentum": 108.0296,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 91.7737,
+            "rs_momentum": 105.2804,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 91.8558,
+            "rs_momentum": 106.0635,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 91.8509,
+            "rs_momentum": 108.655,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 98.266,
+            "rs_momentum": 114.2373,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 104.6712,
+            "rs_momentum": 120.3376,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 106.9181,
+            "rs_momentum": 120.5518,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 103.5947,
+            "rs_momentum": 122.0255,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 105.4806,
+            "rs_momentum": 128.8043,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 103.7203,
+            "rs_momentum": 116.5004,
+            "quadrant": "leading"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 60.6031,
+        "rs_momentum": 86.7126,
+        "quadrant": "lagging",
+        "display_rs_ratio": 60.603099714775,
+        "display_rs_momentum": 86.71262316886641,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 83.0177,
+            "rs_momentum": 92.7396,
+            "quadrant": "lagging",
+            "display_rs_ratio": 83.01767483287948,
+            "display_rs_momentum": 92.73957269666701,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 59.7567,
+            "rs_momentum": 126.01,
+            "quadrant": "improving",
+            "display_rs_ratio": 59.75671041072772,
+            "display_rs_momentum": 126.0099937563048,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 62.3047,
+            "rs_momentum": 68.3313,
+            "quadrant": "lagging",
+            "display_rs_ratio": 62.30470987886802,
+            "display_rs_momentum": 68.33134601252652,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 81.6265,
+            "rs_momentum": 57.8603,
+            "quadrant": "lagging",
+            "display_rs_ratio": 81.6265084156122,
+            "display_rs_momentum": 57.860274872216245,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 53.7883,
+            "rs_momentum": 109.7276,
+            "quadrant": "improving",
+            "display_rs_ratio": 53.7882951384608,
+            "display_rs_momentum": 109.72755830622782,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 48.8405,
+            "rs_momentum": 117.1234,
+            "quadrant": "improving",
+            "display_rs_ratio": 48.84049049721253,
+            "display_rs_momentum": 117.12343362395433,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 44.4937,
+            "rs_momentum": 59.2482,
+            "quadrant": "lagging",
+            "display_rs_ratio": 44.49369408270273,
+            "display_rs_momentum": 59.24819067985461,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 66.2021,
+            "rs_momentum": 149.3707,
+            "quadrant": "improving",
+            "display_rs_ratio": 66.20211430293683,
+            "display_rs_momentum": 149.37072257011982,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 197.6001,
+            "rs_momentum": 459.6193,
+            "quadrant": "leading",
+            "display_rs_ratio": 197.6000659224877,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 131.8926,
+            "rs_momentum": 332.815,
+            "quadrant": "leading",
+            "display_rs_ratio": 131.89263876948698,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 82.3371,
+            "rs_momentum": 96.1777,
+            "quadrant": "lagging",
+            "display_rs_ratio": 82.33710705095575,
+            "display_rs_momentum": 96.17773059996993,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 60.6031,
+            "rs_momentum": 86.7126,
+            "quadrant": "lagging",
+            "display_rs_ratio": 60.603099714775,
+            "display_rs_momentum": 86.71262316886641,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 81.14,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 77.3656,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 83.86,
+        "s1": 81.96,
+        "s2": 80.53,
+        "r1": 85.29,
+        "r2": 87.19
+      }
+    },
+    {
+      "symbol": "XMA.TO",
+      "name": "Materials",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 84.0698,
+        "rs_momentum": 97.2988,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 95.7206,
+            "rs_momentum": 91.4093,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 106.5855,
+            "rs_momentum": 105.8941,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 104.9253,
+            "rs_momentum": 99.8913,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 103.168,
+            "rs_momentum": 107.8986,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 103.2522,
+            "rs_momentum": 108.2454,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 102.7432,
+            "rs_momentum": 106.9803,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 101.0623,
+            "rs_momentum": 111.005,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 97.5894,
+            "rs_momentum": 103.8338,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 97.8269,
+            "rs_momentum": 110.9766,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 93.7531,
+            "rs_momentum": 113.2039,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 86.7326,
+            "rs_momentum": 98.6416,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 84.0698,
+            "rs_momentum": 97.2988,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 66.2893,
+        "rs_momentum": 164.6463,
+        "quadrant": "improving",
+        "display_rs_ratio": 66.28929278959333,
+        "display_rs_momentum": 164.64630996319102,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 99.2078,
+            "rs_momentum": 54.7093,
+            "quadrant": "lagging",
+            "display_rs_ratio": 99.20775722355215,
+            "display_rs_momentum": 54.709282425049736,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 108.5382,
+            "rs_momentum": 49.4441,
+            "quadrant": "weakening",
+            "display_rs_ratio": 108.53817000056607,
+            "display_rs_momentum": 49.44413686444237,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 92.4966,
+            "rs_momentum": 39.2488,
+            "quadrant": "lagging",
+            "display_rs_ratio": 92.4966205024011,
+            "display_rs_momentum": 39.248765448796135,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 75.8767,
+            "rs_momentum": 26.4482,
+            "quadrant": "lagging",
+            "display_rs_ratio": 75.87670227461936,
+            "display_rs_momentum": 26.448183429741835,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 91.9417,
+            "rs_momentum": 46.8772,
+            "quadrant": "lagging",
+            "display_rs_ratio": 91.94171940225719,
+            "display_rs_momentum": 46.8771918221927,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 75.6421,
+            "rs_momentum": 52.4464,
+            "quadrant": "lagging",
+            "display_rs_ratio": 75.64214089938179,
+            "display_rs_momentum": 52.4463670297553,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 69.7232,
+            "rs_momentum": 46.7125,
+            "quadrant": "lagging",
+            "display_rs_ratio": 69.72320335174248,
+            "display_rs_momentum": 46.71245499849256,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 127.0561,
+            "rs_momentum": 79.527,
+            "quadrant": "weakening",
+            "display_rs_ratio": 127.05613173829013,
+            "display_rs_momentum": 79.52697477749736,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 65.8207,
+            "rs_momentum": 39.962,
+            "quadrant": "lagging",
+            "display_rs_ratio": 65.82065670900883,
+            "display_rs_momentum": 39.96201485466872,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 75.9604,
+            "rs_momentum": 106.9419,
+            "quadrant": "improving",
+            "display_rs_ratio": 75.96038836389558,
+            "display_rs_momentum": 106.9418842584383,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 72.4607,
+            "rs_momentum": 270.517,
+            "quadrant": "improving",
+            "display_rs_ratio": 72.46065548019133,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 66.2893,
+            "rs_momentum": 164.6463,
+            "quadrant": "improving",
+            "display_rs_ratio": 66.28929278959333,
+            "display_rs_momentum": 164.64630996319102,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 39.66,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 44.702,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 42.26,
+        "s1": 39.59,
+        "s2": 38.03,
+        "r1": 43.82,
+        "r2": 46.49
+      }
+    },
+    {
+      "symbol": "XRE.TO",
+      "name": "REITs",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 91.6883,
+        "rs_momentum": 94.3948,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 91.279,
+            "rs_momentum": 98.3675,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 90.6899,
+            "rs_momentum": 96.348,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 90.3995,
+            "rs_momentum": 95.9168,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 90.016,
+            "rs_momentum": 94.5189,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 90.4014,
+            "rs_momentum": 94.0209,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 89.1551,
+            "rs_momentum": 93.0439,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 90.3042,
+            "rs_momentum": 92.8985,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 90.8484,
+            "rs_momentum": 93.1842,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 90.4473,
+            "rs_momentum": 93.524,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 91.2068,
+            "rs_momentum": 92.8885,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 92.4319,
+            "rs_momentum": 94.9947,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 91.6883,
+            "rs_momentum": 94.3948,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 165.9525,
+        "rs_momentum": 246.1172,
+        "quadrant": "leading",
+        "display_rs_ratio": 165.95246407657044,
+        "display_rs_momentum": 200,
+        "display_capped": true,
+        "display_marker": "\u2191",
+        "display_warning": "Value exceeds visual chart ceiling; raw value retained",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 110.0207,
+            "rs_momentum": 279.1506,
+            "quadrant": "leading",
+            "display_rs_ratio": 110.02071059653828,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 77.5097,
+            "rs_momentum": 229.4812,
+            "quadrant": "improving",
+            "display_rs_ratio": 77.50968783931349,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 49.2181,
+            "rs_momentum": 127.5537,
+            "quadrant": "improving",
+            "display_rs_ratio": 49.21808404883172,
+            "display_rs_momentum": 127.55370112846403,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 60.5958,
+            "rs_momentum": 171.5773,
+            "quadrant": "improving",
+            "display_rs_ratio": 60.5958467684004,
+            "display_rs_momentum": 171.57733926144255,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 86.3035,
+            "rs_momentum": 222.3295,
+            "quadrant": "improving",
+            "display_rs_ratio": 86.30345592425101,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 125.7374,
+            "rs_momentum": 318.1718,
+            "quadrant": "leading",
+            "display_rs_ratio": 125.73739864667701,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 81.099,
+            "rs_momentum": 79.3142,
+            "quadrant": "lagging",
+            "display_rs_ratio": 81.09897082355954,
+            "display_rs_momentum": 79.31420636043836,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 68.6136,
+            "rs_momentum": 137.8857,
+            "quadrant": "improving",
+            "display_rs_ratio": 68.6136078349763,
+            "display_rs_momentum": 137.88565401074192,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 90.886,
+            "rs_momentum": 128.4941,
+            "quadrant": "improving",
+            "display_rs_ratio": 90.88600856190801,
+            "display_rs_momentum": 128.4941234917858,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 155.4564,
+            "rs_momentum": 269.5758,
+            "quadrant": "leading",
+            "display_rs_ratio": 155.4564075274967,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 162.4987,
+            "rs_momentum": 175.9213,
+            "quadrant": "leading",
+            "display_rs_ratio": 162.49865879893846,
+            "display_rs_momentum": 175.92133722391833,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 165.9525,
+            "rs_momentum": 246.1172,
+            "quadrant": "leading",
+            "display_rs_ratio": 165.95246407657044,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 15.4,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 16.12,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 15.6585,
+        "s1": 15.426,
+        "s2": 15.2102,
+        "r1": 15.8744,
+        "r2": 16.1068
+      }
+    },
+    {
+      "symbol": "XST.TO",
+      "name": "Staples",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 98.4314,
+        "rs_momentum": 101.1625,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 91.5614,
+            "rs_momentum": 101.9065,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 89.4184,
+            "rs_momentum": 99.6658,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 88.9344,
+            "rs_momentum": 99.1017,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 90.5579,
+            "rs_momentum": 95.3869,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 90.7639,
+            "rs_momentum": 96.6593,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 91.3165,
+            "rs_momentum": 97.8914,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 92.1222,
+            "rs_momentum": 94.1498,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 91.4841,
+            "rs_momentum": 97.4044,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 91.9908,
+            "rs_momentum": 96.23,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 98.0733,
+            "rs_momentum": 101.1325,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 98.1323,
+            "rs_momentum": 103.0407,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 98.4314,
+            "rs_momentum": 101.1625,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 152.2331,
+        "rs_momentum": 166.9176,
+        "quadrant": "leading",
+        "display_rs_ratio": 152.23312667775184,
+        "display_rs_momentum": 166.91763257929676,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 81.1189,
+            "rs_momentum": 83.7624,
+            "quadrant": "lagging",
+            "display_rs_ratio": 81.11894286735429,
+            "display_rs_momentum": 83.76240012986908,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 142.8141,
+            "rs_momentum": 187.5387,
+            "quadrant": "leading",
+            "display_rs_ratio": 142.81405165341846,
+            "display_rs_momentum": 187.53865466707697,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 129.5533,
+            "rs_momentum": 215.7847,
+            "quadrant": "leading",
+            "display_rs_ratio": 129.55332244267495,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 85.5379,
+            "rs_momentum": 120.9097,
+            "quadrant": "improving",
+            "display_rs_ratio": 85.53787609787157,
+            "display_rs_momentum": 120.90965845744192,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 82.5058,
+            "rs_momentum": 112.5386,
+            "quadrant": "improving",
+            "display_rs_ratio": 82.50578468184847,
+            "display_rs_momentum": 112.5386139772582,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 110.99,
+            "rs_momentum": 155.9886,
+            "quadrant": "leading",
+            "display_rs_ratio": 110.98995989410976,
+            "display_rs_momentum": 155.98858684576308,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 97.3676,
+            "rs_momentum": 86.7708,
+            "quadrant": "lagging",
+            "display_rs_ratio": 97.36762586875805,
+            "display_rs_momentum": 86.77080228145334,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 72.9195,
+            "rs_momentum": 80.672,
+            "quadrant": "lagging",
+            "display_rs_ratio": 72.91953015940035,
+            "display_rs_momentum": 80.67198585063294,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 109.1285,
+            "rs_momentum": 125.1421,
+            "quadrant": "leading",
+            "display_rs_ratio": 109.12854362171676,
+            "display_rs_momentum": 125.14214396499965,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 233.4922,
+            "rs_momentum": 364.1673,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 206.078,
+            "rs_momentum": 242.4278,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 152.2331,
+            "rs_momentum": 166.9176,
+            "quadrant": "leading",
+            "display_rs_ratio": 152.23312667775184,
+            "display_rs_momentum": 166.91763257929676,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 67.43,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 65.6443,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 68.1367,
+        "s1": 66.8333,
+        "s2": 66.0867,
+        "r1": 68.8833,
+        "r2": 70.1867
+      }
+    },
+    {
+      "symbol": "XUT.TO",
+      "name": "Utilities",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 98.1815,
+        "rs_momentum": 97.4188,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 94.7107,
+            "rs_momentum": 96.1679,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 91.8159,
+            "rs_momentum": 91.751,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 91.9879,
+            "rs_momentum": 92.8323,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 91.7255,
+            "rs_momentum": 91.0986,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 92.0683,
+            "rs_momentum": 92.4406,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 92.9598,
+            "rs_momentum": 93.3329,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 91.255,
+            "rs_momentum": 89.7577,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 93.9819,
+            "rs_momentum": 94.1619,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 94.6451,
+            "rs_momentum": 94.6611,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 94.9761,
+            "rs_momentum": 93.9167,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 96.3124,
+            "rs_momentum": 93.4653,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 98.1815,
+            "rs_momentum": 97.4188,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 120.8623,
+        "rs_momentum": 106.6754,
+        "quadrant": "leading",
+        "display_rs_ratio": 120.8622663747686,
+        "display_rs_momentum": 106.67542200505171,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 182.5868,
+            "rs_momentum": 200.6954,
+            "quadrant": "leading",
+            "display_rs_ratio": 182.58681291252012,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 148.4196,
+            "rs_momentum": 103.6543,
+            "quadrant": "leading",
+            "display_rs_ratio": 148.41956002270894,
+            "display_rs_momentum": 103.65427429484527,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 137.6075,
+            "rs_momentum": 94.8094,
+            "quadrant": "weakening",
+            "display_rs_ratio": 137.60750001244597,
+            "display_rs_momentum": 94.80941420631393,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 108.4955,
+            "rs_momentum": 57.5074,
+            "quadrant": "weakening",
+            "display_rs_ratio": 108.4955011241583,
+            "display_rs_momentum": 57.50743412207675,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 217.8105,
+            "rs_momentum": 161.8172,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 161.817155734445,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 203.0999,
+            "rs_momentum": 204.3914,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 153.5458,
+            "rs_momentum": 199.0913,
+            "quadrant": "leading",
+            "display_rs_ratio": 153.54575697514346,
+            "display_rs_momentum": 199.0913283746863,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 119.5064,
+            "rs_momentum": 197.2791,
+            "quadrant": "leading",
+            "display_rs_ratio": 119.50636056444444,
+            "display_rs_momentum": 197.27907649949245,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 233.3112,
+            "rs_momentum": 312.0423,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 244.791,
+            "rs_momentum": 255.1916,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 356.688,
+            "rs_momentum": 262.2563,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 120.8623,
+            "rs_momentum": 106.6754,
+            "quadrant": "leading",
+            "display_rs_ratio": 120.8622663747686,
+            "display_rs_momentum": 106.67542200505171,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 35.54,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 35.2977,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 34.9135,
+        "s1": 34.5546,
+        "s2": 34.0361,
+        "r1": 35.4319,
+        "r2": 35.7908
+      }
+    },
+    {
+      "symbol": "ZWB.TO",
+      "name": "Banks Covered Call",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 106.7298,
+        "rs_momentum": 94.4752,
+        "quadrant": "weakening",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 110.4479,
+            "rs_momentum": 102.4603,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 103.833,
+            "rs_momentum": 94.7231,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 105.2908,
+            "rs_momentum": 98.2657,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 106.6222,
+            "rs_momentum": 97.2463,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 107.3313,
+            "rs_momentum": 96.6632,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 107.7647,
+            "rs_momentum": 94.4782,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 107.4556,
+            "rs_momentum": 94.3371,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 105.5028,
+            "rs_momentum": 93.3675,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 102.8253,
+            "rs_momentum": 89.3156,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 103.6481,
+            "rs_momentum": 89.3055,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 105.2861,
+            "rs_momentum": 93.3547,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 106.7298,
+            "rs_momentum": 94.4752,
+            "quadrant": "weakening"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 133.6331,
+        "rs_momentum": 75.7805,
+        "quadrant": "weakening",
+        "display_rs_ratio": 133.63310418943897,
+        "display_rs_momentum": 75.78050712031019,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 118.4994,
+            "rs_momentum": 136.8652,
+            "quadrant": "leading",
+            "display_rs_ratio": 118.49937795809333,
+            "display_rs_momentum": 136.86515036557887,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 174.5411,
+            "rs_momentum": 218.2889,
+            "quadrant": "leading",
+            "display_rs_ratio": 174.5410848542457,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 175.7174,
+            "rs_momentum": 147.4194,
+            "quadrant": "leading",
+            "display_rs_ratio": 175.717447785935,
+            "display_rs_momentum": 147.41936519625517,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 83.708,
+            "rs_momentum": 73.0397,
+            "quadrant": "lagging",
+            "display_rs_ratio": 83.70798597812501,
+            "display_rs_momentum": 73.03973281536463,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 99.7161,
+            "rs_momentum": 100.1914,
+            "quadrant": "improving",
+            "display_rs_ratio": 99.71610969989297,
+            "display_rs_momentum": 100.19136841532467,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 84.4069,
+            "rs_momentum": 87.2388,
+            "quadrant": "lagging",
+            "display_rs_ratio": 84.40688625264845,
+            "display_rs_momentum": 87.23879865684769,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 87.3707,
+            "rs_momentum": 120.9238,
+            "quadrant": "improving",
+            "display_rs_ratio": 87.37072676472255,
+            "display_rs_momentum": 120.92381684663842,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 72.9817,
+            "rs_momentum": 83.4176,
+            "quadrant": "lagging",
+            "display_rs_ratio": 72.98167475147895,
+            "display_rs_momentum": 83.41758328022347,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 129.8752,
+            "rs_momentum": 179.2475,
+            "quadrant": "leading",
+            "display_rs_ratio": 129.8752051124068,
+            "display_rs_momentum": 179.24745763452123,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 100.916,
+            "rs_momentum": 83.059,
+            "quadrant": "weakening",
+            "display_rs_ratio": 100.9160282838796,
+            "display_rs_momentum": 83.05898048561811,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 108.8902,
+            "rs_momentum": 44.2594,
+            "quadrant": "weakening",
+            "display_rs_ratio": 108.89016579574182,
+            "display_rs_momentum": 44.2594453287553,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 133.6331,
+            "rs_momentum": 75.7805,
+            "quadrant": "weakening",
+            "display_rs_ratio": 133.63310418943897,
+            "display_rs_momentum": 75.78050712031019,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 30.4,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 30.2917,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 29.951,
+        "s1": 29.5499,
+        "s2": 29.0559,
+        "r1": 30.4449,
+        "r2": 30.846
+      }
+    },
+    {
+      "symbol": "MCSM.TO",
+      "name": "Mid Cap",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 96.3447,
+        "rs_momentum": 98.9494,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 99.2835,
+            "rs_momentum": 93.8874,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 100.885,
+            "rs_momentum": 97.5604,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 99.9447,
+            "rs_momentum": 95.3168,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 99.0964,
+            "rs_momentum": 97.2152,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 99.3243,
+            "rs_momentum": 97.9702,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 99.0865,
+            "rs_momentum": 97.0999,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 99.0805,
+            "rs_momentum": 99.4808,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 98.5279,
+            "rs_momentum": 97.1002,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 99.4439,
+            "rs_momentum": 100.6473,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 97.6144,
+            "rs_momentum": 101.3837,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 96.6382,
+            "rs_momentum": 98.7425,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 96.3447,
+            "rs_momentum": 98.9494,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 47.6394,
+        "rs_momentum": 196.3851,
+        "quadrant": "improving",
+        "display_rs_ratio": 47.63940971845209,
+        "display_rs_momentum": 196.38507632785425,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-07",
+            "rs_ratio": 113.0682,
+            "rs_momentum": 633.0645,
+            "quadrant": "leading",
+            "display_rs_ratio": 113.06818664929767,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 45.9559,
+            "rs_momentum": 63.793,
+            "quadrant": "lagging",
+            "display_rs_ratio": 45.95585574171016,
+            "display_rs_momentum": 63.793028148416845,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 41.2021,
+            "rs_momentum": 94.6465,
+            "quadrant": "lagging",
+            "display_rs_ratio": 41.20207071955513,
+            "display_rs_momentum": 94.6465365246453,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 6.4114,
+            "rs_momentum": 10.89,
+            "quadrant": "lagging",
+            "display_rs_ratio": 6.411428040421422,
+            "display_rs_momentum": 10.890019987881406,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 33.9224,
+            "rs_momentum": 64.7356,
+            "quadrant": "lagging",
+            "display_rs_ratio": 33.92236343661508,
+            "display_rs_momentum": 64.73563483898347,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 95.0299,
+            "rs_momentum": 181.61,
+            "quadrant": "improving",
+            "display_rs_ratio": 95.02988417378418,
+            "display_rs_momentum": 181.6099742864867,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 14.3426,
+            "rs_momentum": 44.0584,
+            "quadrant": "lagging",
+            "display_rs_ratio": 14.342552935380276,
+            "display_rs_momentum": 44.05844401617446,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 46.3422,
+            "rs_momentum": 313.0015,
+            "quadrant": "improving",
+            "display_rs_ratio": 46.34217917224723,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 23.2041,
+            "rs_momentum": 104.8473,
+            "quadrant": "improving",
+            "display_rs_ratio": 23.204098725244354,
+            "display_rs_momentum": 104.84731783451369,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 62.1767,
+            "rs_momentum": 247.1984,
+            "quadrant": "improving",
+            "display_rs_ratio": 62.17665912204653,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 36.4605,
+            "rs_momentum": 296.3606,
+            "quadrant": "improving",
+            "display_rs_ratio": 36.46052853201331,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 47.6394,
+            "rs_momentum": 196.3851,
+            "quadrant": "improving",
+            "display_rs_ratio": 47.63940971845209,
+            "display_rs_momentum": 196.38507632785425,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 66.8,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 68.245,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 67.7533,
+        "s1": 66.8467,
+        "s2": 66.3933,
+        "r1": 68.2067,
+        "r2": 69.1133
+      }
+    },
+    {
+      "symbol": "XCS.TO",
+      "name": "Small Cap",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 95.2215,
+        "rs_momentum": 95.8414,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 100.93,
+            "rs_momentum": 89.8928,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 101.8958,
+            "rs_momentum": 92.8716,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 101.3499,
+            "rs_momentum": 91.6789,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 100.7983,
+            "rs_momentum": 94.2981,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 102.4388,
+            "rs_momentum": 96.2976,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 101.5045,
+            "rs_momentum": 96.3157,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 101.7256,
+            "rs_momentum": 98.8917,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 101.3601,
+            "rs_momentum": 96.76,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 100.4224,
+            "rs_momentum": 98.3728,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 97.4069,
+            "rs_momentum": 97.3288,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 95.9009,
+            "rs_momentum": 95.2224,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 95.2215,
+            "rs_momentum": 95.8414,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 33.9293,
+        "rs_momentum": 38.8371,
+        "quadrant": "lagging",
+        "display_rs_ratio": 33.929337103923814,
+        "display_rs_momentum": 38.83709975329121,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 23.8004,
+            "rs_momentum": 38.0219,
+            "quadrant": "lagging",
+            "display_rs_ratio": 23.80038304096565,
+            "display_rs_momentum": 38.02187928798031,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 37.7428,
+            "rs_momentum": 78.1725,
+            "quadrant": "lagging",
+            "display_rs_ratio": 37.74279027721512,
+            "display_rs_momentum": 78.17248525261384,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 30.3913,
+            "rs_momentum": 44.8178,
+            "quadrant": "lagging",
+            "display_rs_ratio": 30.391280440007996,
+            "display_rs_momentum": 44.817769235542016,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 30.7569,
+            "rs_momentum": 30.6963,
+            "quadrant": "lagging",
+            "display_rs_ratio": 30.756943970392808,
+            "display_rs_momentum": 30.696327485534976,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 9.9087,
+            "rs_momentum": 16.7771,
+            "quadrant": "lagging",
+            "display_rs_ratio": 9.908730379759552,
+            "display_rs_momentum": 16.77713099001019,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 32.0116,
+            "rs_momentum": 80.5835,
+            "quadrant": "lagging",
+            "display_rs_ratio": 32.011573210533534,
+            "display_rs_momentum": 80.5835124267848,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 15.7097,
+            "rs_momentum": 13.999,
+            "quadrant": "lagging",
+            "display_rs_ratio": 15.70966245551548,
+            "display_rs_momentum": 13.998985915473316,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 36.5485,
+            "rs_momentum": 27.3508,
+            "quadrant": "lagging",
+            "display_rs_ratio": 36.54853542958476,
+            "display_rs_momentum": 27.35083284289005,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 25.5195,
+            "rs_momentum": 53.3148,
+            "quadrant": "lagging",
+            "display_rs_ratio": 25.51946140838827,
+            "display_rs_momentum": 53.31483380308221,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 29.4449,
+            "rs_momentum": 61.828,
+            "quadrant": "lagging",
+            "display_rs_ratio": 29.444921029632802,
+            "display_rs_momentum": 61.82798513688804,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 43.4971,
+            "rs_momentum": 88.3386,
+            "quadrant": "lagging",
+            "display_rs_ratio": 43.49707766798233,
+            "display_rs_momentum": 88.33857543987934,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 33.9293,
+            "rs_momentum": 38.8371,
+            "quadrant": "lagging",
+            "display_rs_ratio": 33.929337103923814,
+            "display_rs_momentum": 38.83709975329121,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 34.61,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 36.1715,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 35.2833,
+        "s1": 34.6167,
+        "s2": 34.2333,
+        "r1": 35.6667,
+        "r2": 36.3333
+      }
+    },
+    {
+      "symbol": "XMD.TO",
+      "name": "Extended / Completion",
+      "benchmark": "XIC.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 261,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 92.1026,
+        "rs_momentum": 96.2623,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 97.0568,
+            "rs_momentum": 93.9501,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 99.3317,
+            "rs_momentum": 98.0472,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 98.6867,
+            "rs_momentum": 95.5314,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 97.9367,
+            "rs_momentum": 98.3894,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 97.9731,
+            "rs_momentum": 98.8696,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 98.3205,
+            "rs_momentum": 98.8002,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 98.0913,
+            "rs_momentum": 100.2352,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 97.3613,
+            "rs_momentum": 98.2852,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 97.1731,
+            "rs_momentum": 100.4095,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 94.7487,
+            "rs_momentum": 99.5432,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 92.7195,
+            "rs_momentum": 95.573,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 92.1026,
+            "rs_momentum": 96.2623,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 67.7758,
+        "rs_momentum": 81.7206,
+        "quadrant": "lagging",
+        "display_rs_ratio": 67.775808867042,
+        "display_rs_momentum": 81.72062388896019,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 72.8467,
+            "rs_momentum": 33.4405,
+            "quadrant": "lagging",
+            "display_rs_ratio": 72.84665103284524,
+            "display_rs_momentum": 33.44053894189736,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 83.8661,
+            "rs_momentum": 23.1231,
+            "quadrant": "lagging",
+            "display_rs_ratio": 83.86611758375454,
+            "display_rs_momentum": 23.123070542676935,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 87.6991,
+            "rs_momentum": 42.2582,
+            "quadrant": "lagging",
+            "display_rs_ratio": 87.69910486800832,
+            "display_rs_momentum": 42.25820126699521,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 51.0046,
+            "rs_momentum": 33.505,
+            "quadrant": "lagging",
+            "display_rs_ratio": 51.00460073585463,
+            "display_rs_momentum": 33.504961452813895,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 62.6373,
+            "rs_momentum": 58.3443,
+            "quadrant": "lagging",
+            "display_rs_ratio": 62.63732537429701,
+            "display_rs_momentum": 58.34428256820215,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 94.9329,
+            "rs_momentum": 92.0849,
+            "quadrant": "lagging",
+            "display_rs_ratio": 94.93286604816117,
+            "display_rs_momentum": 92.08488301034059,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 66.6361,
+            "rs_momentum": 53.1228,
+            "quadrant": "lagging",
+            "display_rs_ratio": 66.63612409415911,
+            "display_rs_momentum": 53.122836842176135,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 65.7252,
+            "rs_momentum": 62.4033,
+            "quadrant": "lagging",
+            "display_rs_ratio": 65.72519425702389,
+            "display_rs_momentum": 62.403260762106406,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 115.3452,
+            "rs_momentum": 137.7434,
+            "quadrant": "leading",
+            "display_rs_ratio": 115.34519759626842,
+            "display_rs_momentum": 137.743353357426,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 79.0975,
+            "rs_momentum": 128.3938,
+            "quadrant": "improving",
+            "display_rs_ratio": 79.09749852457708,
+            "display_rs_momentum": 128.39378805934422,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 70.697,
+            "rs_momentum": 61.7683,
+            "quadrant": "lagging",
+            "display_rs_ratio": 70.69699657324796,
+            "display_rs_momentum": 61.768319863155995,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 67.7758,
+            "rs_momentum": 81.7206,
+            "quadrant": "lagging",
+            "display_rs_ratio": 67.775808867042,
+            "display_rs_momentum": 81.72062388896019,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": false,
+      "volume_display_marker": "",
+      "volume_display_warning": "",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 55.73,
+        "benchmark_close": 56.89
+      },
+      "weekly_ma18": 58.8977,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 57.0467,
+        "s1": 55.5933,
+        "s2": 54.7567,
+        "r1": 57.8833,
+        "r2": 59.3367
+      }
+    }
+  ]
+}

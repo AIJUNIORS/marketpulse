@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "markets": {
+    "india": {
+      "name": "India",
+      "benchmark": "^NSEI",
+      "universe_source": "market_pulse_flat.json",
+      "geography_bucket": "india",
+      "exclude_benchmark": true
+    },
+    "us": {
+      "name": "United States",
+      "benchmark": "^GSPC",
+      "universe_source": "market_pulse_flat.json",
+      "market_group": "US Markets",
+      "exclude_benchmark": true
+    },
+    "canada": {
+      "name": "Canada",
+      "benchmark": "XIC.TO",
+      "universe_source": "market_pulse_flat.json",
+      "market_group": "Canada Markets",
+      "exclude_benchmark": true
+    },
+    "global": {
+      "name": "Global",
+      "benchmark": "XEF.TO",
+      "universe_source": "market_pulse_flat.json",
+      "market_group": "Global / International",
+      "exclude_benchmark": true
+    },
+    "commodities": {
+      "name": "Commodities",
+      "benchmark": "CCOM.TO",
+      "constituents": [
+        "CGL.TO",
+        "XGD.TO",
+        "GOLDBEES.NS",
+        "SVR.TO",
+        "COPP.TO",
+        "HLIT.TO",
+        "HURA.TO",
+        "PDBC",
+        "COW.TO"
+      ],
+      "exclude_benchmark": true,
+      "currency_warning_symbols": [
+        "GOLDBEES.NS"
+      ]
+    }
+  },
+  "methodology": {
+    "weekly_frequency": "W-FRI",
+    "exclude_incomplete_week": true,
+    "return_rs_window": 52,
+    "return_momentum_window": 13,
+    "volume_average_window": 52,
+    "volume_trail_weeks": 12,
+    "volume_display_ceiling": 200,
+    "minimum_history": {
+      "standard": 52,
+      "adaptive": 26,
+      "limited": 13,
+      "very_limited": 3,
+      "insufficient": 0
+    }
+  }
+}

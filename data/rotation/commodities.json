@@ -1,0 +1,2314 @@
+{
+  "market": "commodities",
+  "market_group": "Commodities",
+  "benchmark": "CCOM.TO",
+  "benchmark_status": "available",
+  "benchmark_latest_week": "2026-10-30",
+  "generated_at": "2026-11-04T02:43:29.747961+00:00",
+  "methodology": {
+    "weekly_frequency": "W-FRI",
+    "exclude_incomplete_week": true,
+    "return_rs_window": 52,
+    "return_momentum_window": 13,
+    "volume_average_window": 52,
+    "volume_trail_weeks": 12,
+    "volume_display_ceiling": 200,
+    "minimum_history": {
+      "standard": 52,
+      "adaptive": 26,
+      "limited": 13,
+      "very_limited": 3,
+      "insufficient": 0
+    }
+  },
+  "count": 9,
+  "items": [
+    {
+      "symbol": "CGL.TO",
+      "name": "Gold Bullion ETF",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 81.5057,
+        "rs_momentum": 95.4786,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 91.0386,
+            "rs_momentum": 95.5543,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 94.0288,
+            "rs_momentum": 99.7454,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 89.2729,
+            "rs_momentum": 93.3427,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 88.7098,
+            "rs_momentum": 95.4328,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 86.8308,
+            "rs_momentum": 94.8766,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 87.9301,
+            "rs_momentum": 97.9119,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 86.1337,
+            "rs_momentum": 97.1079,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 84.1302,
+            "rs_momentum": 93.5801,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 84.7887,
+            "rs_momentum": 97.0323,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 85.2975,
+            "rs_momentum": 101.1305,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 82.8595,
+            "rs_momentum": 98.5904,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 81.5057,
+            "rs_momentum": 95.4786,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 60.9452,
+        "rs_momentum": 31.4388,
+        "quadrant": "lagging",
+        "display_rs_ratio": 60.9451984313817,
+        "display_rs_momentum": 31.43875254352933,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 185.1073,
+            "rs_momentum": 765.7774,
+            "quadrant": "leading",
+            "display_rs_ratio": 185.10729580903345,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 116.3367,
+            "rs_momentum": 785.7505,
+            "quadrant": "leading",
+            "display_rs_ratio": 116.33671212846512,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 275.4335,
+            "rs_momentum": 1763.1096,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 71.6044,
+            "rs_momentum": 74.4114,
+            "quadrant": "lagging",
+            "display_rs_ratio": 71.60436215245205,
+            "display_rs_momentum": 74.41142365551725,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 133.1201,
+            "rs_momentum": 230.4191,
+            "quadrant": "leading",
+            "display_rs_ratio": 133.12008052731477,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 46.5095,
+            "rs_momentum": 163.4074,
+            "quadrant": "improving",
+            "display_rs_ratio": 46.50949363571091,
+            "display_rs_momentum": 163.40739009577223,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 110.4474,
+            "rs_momentum": 242.8244,
+            "quadrant": "leading",
+            "display_rs_ratio": 110.44738556972702,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 265.7442,
+            "rs_momentum": 2946.2582,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 77.0855,
+            "rs_momentum": 71.642,
+            "quadrant": "lagging",
+            "display_rs_ratio": 77.08547387859481,
+            "display_rs_momentum": 71.64200351224952,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 136.4706,
+            "rs_momentum": 504.7032,
+            "quadrant": "leading",
+            "display_rs_ratio": 136.47055356549467,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 184.699,
+            "rs_momentum": 395.2495,
+            "quadrant": "leading",
+            "display_rs_ratio": 184.69901956028326,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 60.9452,
+            "rs_momentum": 31.4388,
+            "quadrant": "lagging",
+            "display_rs_ratio": 60.9451984313817,
+            "display_rs_momentum": 31.43875254352933,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 29.28,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 32.0017,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 30.5433,
+        "s1": 29.6667,
+        "s2": 29.1333,
+        "r1": 31.0767,
+        "r2": 31.9533
+      }
+    },
+    {
+      "symbol": "XGD.TO",
+      "name": "Gold Miners Canada",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 84.2378,
+        "rs_momentum": 100.2141,
+        "quadrant": "improving",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 99.463,
+            "rs_momentum": 98.8098,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 110.2414,
+            "rs_momentum": 112.2937,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 105.7839,
+            "rs_momentum": 102.5205,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 104.1471,
+            "rs_momentum": 110.3898,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 101.8417,
+            "rs_momentum": 106.3991,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 101.5622,
+            "rs_momentum": 104.7201,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 99.4565,
+            "rs_momentum": 107.3053,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 95.1495,
+            "rs_momentum": 100.9192,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 95.8555,
+            "rs_momentum": 108.9608,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 94.8108,
+            "rs_momentum": 117.4498,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 86.9129,
+            "rs_momentum": 102.9745,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 84.2378,
+            "rs_momentum": 100.2141,
+            "quadrant": "improving"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 82.7358,
+        "rs_momentum": 20.1756,
+        "quadrant": "lagging",
+        "display_rs_ratio": 82.73579584674142,
+        "display_rs_momentum": 20.175591521764353,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 320.8197,
+            "rs_momentum": 866.7587,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 227.0175,
+            "rs_momentum": 1078.4673,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 275.4914,
+            "rs_momentum": 1381.7901,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 129.3065,
+            "rs_momentum": 161.1308,
+            "quadrant": "leading",
+            "display_rs_ratio": 129.30648880364552,
+            "display_rs_momentum": 161.13084596105793,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 206.4595,
+            "rs_momentum": 384.1501,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 103.5577,
+            "rs_momentum": 186.1391,
+            "quadrant": "leading",
+            "display_rs_ratio": 103.55765809945004,
+            "display_rs_momentum": 186.13910993151256,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 91.4427,
+            "rs_momentum": 152.4617,
+            "quadrant": "improving",
+            "display_rs_ratio": 91.44268975724391,
+            "display_rs_momentum": 152.4616692707082,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 231.8194,
+            "rs_momentum": 1620.3613,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 51.6938,
+            "rs_momentum": 20.7553,
+            "quadrant": "lagging",
+            "display_rs_ratio": 51.69378151090617,
+            "display_rs_momentum": 20.755343596802494,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 189.1966,
+            "rs_momentum": 418.8199,
+            "quadrant": "leading",
+            "display_rs_ratio": 189.19658033069794,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 277.4913,
+            "rs_momentum": 338.3712,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 82.7358,
+            "rs_momentum": 20.1756,
+            "quadrant": "lagging",
+            "display_rs_ratio": 82.73579584674142,
+            "display_rs_momentum": 20.175591521764353,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 48.22,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 54.2106,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 51.7233,
+        "s1": 47.9967,
+        "s2": 45.6733,
+        "r1": 54.0467,
+        "r2": 57.7733
+      }
+    },
+    {
+      "symbol": "GOLDBEES.NS",
+      "name": "Gold Bees India",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 90.6615,
+        "rs_momentum": 94.7454,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 100.4159,
+            "rs_momentum": 92.6298,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 102.8433,
+            "rs_momentum": 94.569,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 100.5998,
+            "rs_momentum": 93.3991,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 97.339,
+            "rs_momentum": 89.4021,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 95.4598,
+            "rs_momentum": 91.2872,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 96.7033,
+            "rs_momentum": 94.0394,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 94.9405,
+            "rs_momentum": 96.5392,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 93.4862,
+            "rs_momentum": 92.448,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 93.7915,
+            "rs_momentum": 95.4003,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 92.7639,
+            "rs_momentum": 97.7832,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 90.1917,
+            "rs_momentum": 94.864,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 90.6615,
+            "rs_momentum": 94.7454,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 41.1725,
+        "rs_momentum": 19.8886,
+        "quadrant": "lagging",
+        "display_rs_ratio": 41.17246990009214,
+        "display_rs_momentum": 19.88857194427055,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 187.3647,
+            "rs_momentum": 277.4208,
+            "quadrant": "leading",
+            "display_rs_ratio": 187.36471822099514,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 80.8546,
+            "rs_momentum": 534.179,
+            "quadrant": "improving",
+            "display_rs_ratio": 80.85461837334547,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 195.6116,
+            "rs_momentum": 2054.7238,
+            "quadrant": "leading",
+            "display_rs_ratio": 195.6115569588275,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 109.0098,
+            "rs_momentum": 169.2283,
+            "quadrant": "leading",
+            "display_rs_ratio": 109.00977700974343,
+            "display_rs_momentum": 169.22829673942803,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 150.0286,
+            "rs_momentum": 360.5784,
+            "quadrant": "leading",
+            "display_rs_ratio": 150.02855756992065,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 52.7669,
+            "rs_momentum": 151.3277,
+            "quadrant": "improving",
+            "display_rs_ratio": 52.766889621863925,
+            "display_rs_momentum": 151.32767404919235,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 69.0622,
+            "rs_momentum": 129.8564,
+            "quadrant": "improving",
+            "display_rs_ratio": 69.06220529652313,
+            "display_rs_momentum": 129.85638358034902,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 165.5433,
+            "rs_momentum": 923.0112,
+            "quadrant": "leading",
+            "display_rs_ratio": 165.5432797822945,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 43.2817,
+            "rs_momentum": 27.2297,
+            "quadrant": "lagging",
+            "display_rs_ratio": 43.28166147023724,
+            "display_rs_momentum": 27.229681443190934,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 115.5284,
+            "rs_momentum": 370.8954,
+            "quadrant": "leading",
+            "display_rs_ratio": 115.52835647350008,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 123.3706,
+            "rs_momentum": 202.8588,
+            "quadrant": "leading",
+            "display_rs_ratio": 123.37056553572663,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 41.1725,
+            "rs_momentum": 19.8886,
+            "quadrant": "lagging",
+            "display_rs_ratio": 41.17246990009214,
+            "display_rs_momentum": 19.88857194427055,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 115.23,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 122.1483,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 117.0667,
+        "s1": 113.8833,
+        "s2": 111.8667,
+        "r1": 119.0833,
+        "r2": 122.2667
+      },
+      "currency_note": "INR-denominated instrument; not FX-adjusted against the CAD-denominated commodity benchmark."
+    },
+    {
+      "symbol": "SVR.TO",
+      "name": "Silver ETF",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 67.0071,
+        "rs_momentum": 81.556,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 89.8943,
+            "rs_momentum": 78.7481,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 93.7302,
+            "rs_momentum": 83.8989,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 88.1938,
+            "rs_momentum": 78.8091,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 86.9029,
+            "rs_momentum": 84.7981,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 84.0897,
+            "rs_momentum": 82.5042,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 86.8176,
+            "rs_momentum": 88.5809,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 83.8553,
+            "rs_momentum": 95.6733,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 79.6204,
+            "rs_momentum": 87.1349,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 79.1238,
+            "rs_momentum": 92.182,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 75.4195,
+            "rs_momentum": 94.7225,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 72.0722,
+            "rs_momentum": 88.4885,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 67.0071,
+            "rs_momentum": 81.556,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 22.2709,
+        "rs_momentum": 24.8891,
+        "quadrant": "lagging",
+        "display_rs_ratio": 22.270906403259207,
+        "display_rs_momentum": 24.88906661616864,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 76.9526,
+            "rs_momentum": 163.6449,
+            "quadrant": "improving",
+            "display_rs_ratio": 76.95255770652004,
+            "display_rs_momentum": 163.64493768064864,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 34.6569,
+            "rs_momentum": 356.0062,
+            "quadrant": "improving",
+            "display_rs_ratio": 34.65690514730103,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 77.729,
+            "rs_momentum": 664.7115,
+            "quadrant": "improving",
+            "display_rs_ratio": 77.72901912942655,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 34.2191,
+            "rs_momentum": 44.9872,
+            "quadrant": "lagging",
+            "display_rs_ratio": 34.2191329908559,
+            "display_rs_momentum": 44.98723430663521,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 91.3001,
+            "rs_momentum": 319.8713,
+            "quadrant": "improving",
+            "display_rs_ratio": 91.30009738198117,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 21.8564,
+            "rs_momentum": 128.8821,
+            "quadrant": "improving",
+            "display_rs_ratio": 21.856430923996324,
+            "display_rs_momentum": 128.8821124091988,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 33.9531,
+            "rs_momentum": 52.2648,
+            "quadrant": "lagging",
+            "display_rs_ratio": 33.95311239241299,
+            "display_rs_momentum": 52.26480663540638,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 75.8144,
+            "rs_momentum": 1661.1809,
+            "quadrant": "improving",
+            "display_rs_ratio": 75.81437189598084,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 16.4556,
+            "rs_momentum": 25.203,
+            "quadrant": "lagging",
+            "display_rs_ratio": 16.455627690054346,
+            "display_rs_momentum": 25.20301189229545,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 78.348,
+            "rs_momentum": 609.6997,
+            "quadrant": "improving",
+            "display_rs_ratio": 78.34800693709742,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 94.6363,
+            "rs_momentum": 221.3165,
+            "quadrant": "improving",
+            "display_rs_ratio": 94.63630728629715,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 22.2709,
+            "rs_momentum": 24.8891,
+            "quadrant": "lagging",
+            "display_rs_ratio": 22.270906403259207,
+            "display_rs_momentum": 24.88906661616864,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 22.56,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 27.9517,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 25.12,
+        "s1": 23.64,
+        "s2": 22.7,
+        "r1": 26.06,
+        "r2": 27.54
+      }
+    },
+    {
+      "symbol": "COPP.TO",
+      "name": "Copper ETF",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 85.6336,
+        "rs_momentum": 85.5807,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 105.8542,
+            "rs_momentum": 96.0013,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 113.8134,
+            "rs_momentum": 104.0183,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 110.5624,
+            "rs_momentum": 92.4502,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 103.8291,
+            "rs_momentum": 93.4378,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 101.1267,
+            "rs_momentum": 85.062,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 100.4474,
+            "rs_momentum": 85.8921,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 102.1393,
+            "rs_momentum": 97.4876,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 101.9405,
+            "rs_momentum": 96.0639,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 99.9068,
+            "rs_momentum": 97.3755,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 93.1915,
+            "rs_momentum": 98.2099,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 86.1172,
+            "rs_momentum": 86.7113,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 85.6336,
+            "rs_momentum": 85.5807,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 36.6639,
+        "rs_momentum": 12.4829,
+        "quadrant": "lagging",
+        "display_rs_ratio": 36.66386534412564,
+        "display_rs_momentum": 12.482852475930517,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 160.276,
+            "rs_momentum": 209.0911,
+            "quadrant": "leading",
+            "display_rs_ratio": 160.2760275030821,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 84.3715,
+            "rs_momentum": 201.6243,
+            "quadrant": "improving",
+            "display_rs_ratio": 84.37151270499345,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 99.0291,
+            "rs_momentum": 422.4521,
+            "quadrant": "improving",
+            "display_rs_ratio": 99.02909612063674,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 34.3235,
+            "rs_momentum": 15.0721,
+            "quadrant": "lagging",
+            "display_rs_ratio": 34.32346747097632,
+            "display_rs_momentum": 15.072128589505809,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 323.9643,
+            "rs_momentum": 292.3117,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 74.5484,
+            "rs_momentum": 131.0052,
+            "quadrant": "improving",
+            "display_rs_ratio": 74.54836690346485,
+            "display_rs_momentum": 131.00516040522842,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 72.0793,
+            "rs_momentum": 104.9961,
+            "quadrant": "improving",
+            "display_rs_ratio": 72.07931375355393,
+            "display_rs_momentum": 104.99612226250335,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 317.0326,
+            "rs_momentum": 1551.6067,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 46.6074,
+            "rs_momentum": 18.9222,
+            "quadrant": "lagging",
+            "display_rs_ratio": 46.607381358668704,
+            "display_rs_momentum": 18.922225379503026,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 133.4795,
+            "rs_momentum": 408.5585,
+            "quadrant": "leading",
+            "display_rs_ratio": 133.47949591161222,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 163.6431,
+            "rs_momentum": 136.033,
+            "quadrant": "leading",
+            "display_rs_ratio": 163.64312630661243,
+            "display_rs_momentum": 136.03296425754257,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 36.6639,
+            "rs_momentum": 12.4829,
+            "quadrant": "lagging",
+            "display_rs_ratio": 36.66386534412564,
+            "display_rs_momentum": 12.482852475930517,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 51.3,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 59.4108,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 53.63,
+        "s1": 50.05,
+        "s2": 47.92,
+        "r1": 55.76,
+        "r2": 59.34
+      }
+    },
+    {
+      "symbol": "HLIT.TO",
+      "name": "Lithium ETF",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 67.8572,
+        "rs_momentum": 77.5889,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 96.5226,
+            "rs_momentum": 77.5693,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 96.7946,
+            "rs_momentum": 79.363,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 94.1499,
+            "rs_momentum": 75.5262,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 90.5689,
+            "rs_momentum": 79.5307,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 85.8946,
+            "rs_momentum": 71.2082,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 82.2885,
+            "rs_momentum": 71.0053,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 81.2371,
+            "rs_momentum": 78.0591,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 78.8834,
+            "rs_momentum": 76.609,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 77.8568,
+            "rs_momentum": 79.9296,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 71.1828,
+            "rs_momentum": 79.0886,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 67.9956,
+            "rs_momentum": 77.6802,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 67.8572,
+            "rs_momentum": 77.5889,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 19.4718,
+        "rs_momentum": 14.2502,
+        "quadrant": "lagging",
+        "display_rs_ratio": 19.471806025473022,
+        "display_rs_momentum": 14.25015371516514,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 107.6395,
+            "rs_momentum": 199.0995,
+            "quadrant": "leading",
+            "display_rs_ratio": 107.63946956065146,
+            "display_rs_momentum": 199.09954815335337,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 47.0777,
+            "rs_momentum": 494.7234,
+            "quadrant": "improving",
+            "display_rs_ratio": 47.07766490485296,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 15.9943,
+            "rs_momentum": 205.4888,
+            "quadrant": "improving",
+            "display_rs_ratio": 15.99430053433514,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 32.962,
+            "rs_momentum": 45.0966,
+            "quadrant": "lagging",
+            "display_rs_ratio": 32.96202526167807,
+            "display_rs_momentum": 45.09661919077671,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 50.6384,
+            "rs_momentum": 164.2781,
+            "quadrant": "improving",
+            "display_rs_ratio": 50.63841290217558,
+            "display_rs_momentum": 164.27807590332358,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 30.6311,
+            "rs_momentum": 53.6689,
+            "quadrant": "lagging",
+            "display_rs_ratio": 30.63105861874235,
+            "display_rs_momentum": 53.668942085992754,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 12.9551,
+            "rs_momentum": 22.304,
+            "quadrant": "lagging",
+            "display_rs_ratio": 12.955106351243995,
+            "display_rs_momentum": 22.30397481688385,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 182.0752,
+            "rs_momentum": 2544.2718,
+            "quadrant": "leading",
+            "display_rs_ratio": 182.07518201119817,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 20.0718,
+            "rs_momentum": 24.1085,
+            "quadrant": "lagging",
+            "display_rs_ratio": 20.07177053253121,
+            "display_rs_momentum": 24.108511220153787,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 378.755,
+            "rs_momentum": 1790.9591,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 73.062,
+            "rs_momentum": 79.8488,
+            "quadrant": "lagging",
+            "display_rs_ratio": 73.06202971466308,
+            "display_rs_momentum": 79.84875660338287,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 19.4718,
+            "rs_momentum": 14.2502,
+            "quadrant": "lagging",
+            "display_rs_ratio": 19.471806025473022,
+            "display_rs_momentum": 14.25015371516514,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 16.18,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 20.6639,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 16.74,
+        "s1": 16.06,
+        "s2": 15.67,
+        "r1": 17.13,
+        "r2": 17.81
+      }
+    },
+    {
+      "symbol": "HURA.TO",
+      "name": "Uranium ETF",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 70.8745,
+        "rs_momentum": 91.5169,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 84.7705,
+            "rs_momentum": 93.4641,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 84.6141,
+            "rs_momentum": 94.7957,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 84.2664,
+            "rs_momentum": 90.2003,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 83.6115,
+            "rs_momentum": 94.08,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 78.3822,
+            "rs_momentum": 89.7559,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 76.1982,
+            "rs_momentum": 81.5518,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 76.8662,
+            "rs_momentum": 88.5795,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 76.0427,
+            "rs_momentum": 87.798,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 75.5632,
+            "rs_momentum": 90.1293,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 70.9854,
+            "rs_momentum": 94.4326,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 68.3904,
+            "rs_momentum": 89.05,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 70.8745,
+            "rs_momentum": 91.5169,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 39.7872,
+        "rs_momentum": 18.1064,
+        "quadrant": "lagging",
+        "display_rs_ratio": 39.78722717442593,
+        "display_rs_momentum": 18.10641553351969,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 186.8541,
+            "rs_momentum": 304.5813,
+            "quadrant": "leading",
+            "display_rs_ratio": 186.85414811010858,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 47.0284,
+            "rs_momentum": 182.9971,
+            "quadrant": "improving",
+            "display_rs_ratio": 47.028409370870044,
+            "display_rs_momentum": 182.99708913099775,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 251.2228,
+            "rs_momentum": 1155.6288,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 54.6618,
+            "rs_momentum": 27.2975,
+            "quadrant": "lagging",
+            "display_rs_ratio": 54.66181599265627,
+            "display_rs_momentum": 27.29751929694905,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 180.2253,
+            "rs_momentum": 310.5414,
+            "quadrant": "leading",
+            "display_rs_ratio": 180.22526097421874,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 69.6148,
+            "rs_momentum": 170.2473,
+            "quadrant": "improving",
+            "display_rs_ratio": 69.61483361554603,
+            "display_rs_momentum": 170.2472712301153,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 96.6186,
+            "rs_momentum": 146.9319,
+            "quadrant": "improving",
+            "display_rs_ratio": 96.61859095656492,
+            "display_rs_momentum": 146.931867864081,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 110.6671,
+            "rs_momentum": 1439.9533,
+            "quadrant": "leading",
+            "display_rs_ratio": 110.66714390287906,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 92.2411,
+            "rs_momentum": 33.628,
+            "quadrant": "lagging",
+            "display_rs_ratio": 92.24112739600639,
+            "display_rs_momentum": 33.62797859262715,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 116.3322,
+            "rs_momentum": 335.7303,
+            "quadrant": "leading",
+            "display_rs_ratio": 116.33222447637802,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 103.0497,
+            "rs_momentum": 167.305,
+            "quadrant": "leading",
+            "display_rs_ratio": 103.04974424974817,
+            "display_rs_momentum": 167.305026890221,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 39.7872,
+            "rs_momentum": 18.1064,
+            "quadrant": "lagging",
+            "display_rs_ratio": 39.78722717442593,
+            "display_rs_momentum": 18.10641553351969,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 40.6,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 48.0567,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 40.73,
+        "s1": 38.82,
+        "s2": 37.57,
+        "r1": 41.98,
+        "r2": 43.89
+      }
+    },
+    {
+      "symbol": "PDBC",
+      "name": "Broad Commodities",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 115.2403,
+        "rs_momentum": 106.3408,
+        "quadrant": "leading",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 108.7134,
+            "rs_momentum": 94.0468,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 110.5931,
+            "rs_momentum": 98.1718,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 107.1502,
+            "rs_momentum": 97.6281,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 110.1461,
+            "rs_momentum": 99.32,
+            "quadrant": "weakening"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 114.003,
+            "rs_momentum": 104.3235,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 113.2371,
+            "rs_momentum": 106.7433,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 111.8042,
+            "rs_momentum": 109.7229,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 112.0452,
+            "rs_momentum": 111.5621,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 111.9403,
+            "rs_momentum": 108.4342,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 114.8652,
+            "rs_momentum": 107.625,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 116.4441,
+            "rs_momentum": 106.5438,
+            "quadrant": "leading"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 115.2403,
+            "rs_momentum": 106.3408,
+            "quadrant": "leading"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 87.1505,
+        "rs_momentum": 16.7891,
+        "quadrant": "lagging",
+        "display_rs_ratio": 87.15048193043516,
+        "display_rs_momentum": 16.78913366212795,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 256.5802,
+            "rs_momentum": 599.1235,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 74.5016,
+            "rs_momentum": 342.0417,
+            "quadrant": "improving",
+            "display_rs_ratio": 74.50159561240622,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 175.033,
+            "rs_momentum": 630.3142,
+            "quadrant": "leading",
+            "display_rs_ratio": 175.03298534945765,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 155.6622,
+            "rs_momentum": 130.907,
+            "quadrant": "leading",
+            "display_rs_ratio": 155.66220274369692,
+            "display_rs_momentum": 130.90701259158828,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 250.0727,
+            "rs_momentum": 497.3013,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 126.3652,
+            "rs_momentum": 202.6719,
+            "quadrant": "leading",
+            "display_rs_ratio": 126.36524315109882,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 159.3379,
+            "rs_momentum": 242.0124,
+            "quadrant": "leading",
+            "display_rs_ratio": 159.33787942185347,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 460.0011,
+            "rs_momentum": 1607.8408,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 95.4925,
+            "rs_momentum": 30.2498,
+            "quadrant": "lagging",
+            "display_rs_ratio": 95.49252829382853,
+            "display_rs_momentum": 30.249786312712274,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 141.1585,
+            "rs_momentum": 69.428,
+            "quadrant": "weakening",
+            "display_rs_ratio": 141.15845578838238,
+            "display_rs_momentum": 69.42797765384834,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 208.0026,
+            "rs_momentum": 162.3623,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 162.3622877336913,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 87.1505,
+            "rs_momentum": 16.7891,
+            "quadrant": "lagging",
+            "display_rs_ratio": 87.15048193043516,
+            "display_rs_momentum": 16.78913366212795,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 20.02,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 18.6,
+      "weekly_ma18_position": "Above MA18",
+      "weekly_pivot": {
+        "pivot": 20.1563,
+        "s1": 19.9477,
+        "s2": 19.5553,
+        "r1": 20.5487,
+        "r2": 20.7573
+      }
+    },
+    {
+      "symbol": "COW.TO",
+      "name": "Agriculture",
+      "benchmark": "CCOM.TO",
+      "data_status": "available",
+      "return_status": "standard",
+      "volume_status": "standard",
+      "history_weeks": 214,
+      "history_mode": "standard",
+      "history_caution": null,
+      "return_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 92.8936,
+        "rs_momentum": 99.1829,
+        "quadrant": "lagging",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 92.9166,
+            "rs_momentum": 101.6132,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 94.6407,
+            "rs_momentum": 103.8509,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 93.3078,
+            "rs_momentum": 101.7946,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 97.6758,
+            "rs_momentum": 102.873,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 95.8252,
+            "rs_momentum": 99.6186,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 95.3527,
+            "rs_momentum": 100.1194,
+            "quadrant": "improving"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 93.3284,
+            "rs_momentum": 96.0734,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 94.5883,
+            "rs_momentum": 97.6504,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 91.7163,
+            "rs_momentum": 94.7515,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 93.2157,
+            "rs_momentum": 96.2507,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 92.4422,
+            "rs_momentum": 95.5707,
+            "quadrant": "lagging"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 92.8936,
+            "rs_momentum": 99.1829,
+            "quadrant": "lagging"
+          }
+        ]
+      },
+      "volume_rrg": {
+        "date": "2026-10-30",
+        "rs_ratio": 135.2829,
+        "rs_momentum": 110.1332,
+        "quadrant": "leading",
+        "display_rs_ratio": 135.28289838788498,
+        "display_rs_momentum": 110.13321249715288,
+        "display_capped": false,
+        "display_marker": "",
+        "display_warning": "",
+        "trail": [
+          {
+            "date": "2026-08-14",
+            "rs_ratio": 59.8107,
+            "rs_momentum": 181.2099,
+            "quadrant": "improving",
+            "display_rs_ratio": 59.81072345722688,
+            "display_rs_momentum": 181.20990883817015,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-08-21",
+            "rs_ratio": 45.5664,
+            "rs_momentum": 467.3545,
+            "quadrant": "improving",
+            "display_rs_ratio": 45.5664201084713,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-08-28",
+            "rs_ratio": 891.4363,
+            "rs_momentum": 10462.3551,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-04",
+            "rs_ratio": 104.3117,
+            "rs_momentum": 96.7009,
+            "quadrant": "weakening",
+            "display_rs_ratio": 104.31169282344091,
+            "display_rs_momentum": 96.70092718870258,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-09-11",
+            "rs_ratio": 94.2912,
+            "rs_momentum": 732.5562,
+            "quadrant": "improving",
+            "display_rs_ratio": 94.29121988738287,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-18",
+            "rs_ratio": 96.6612,
+            "rs_momentum": 295.4011,
+            "quadrant": "improving",
+            "display_rs_ratio": 96.66115434070495,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-09-25",
+            "rs_ratio": 83.1584,
+            "rs_momentum": 176.1858,
+            "quadrant": "improving",
+            "display_rs_ratio": 83.15844932681404,
+            "display_rs_momentum": 176.18584148950555,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-02",
+            "rs_ratio": 490.4589,
+            "rs_momentum": 4163.3338,
+            "quadrant": "leading",
+            "display_rs_ratio": 200,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-09",
+            "rs_ratio": 63.8294,
+            "rs_momentum": 10.8638,
+            "quadrant": "lagging",
+            "display_rs_ratio": 63.82943296164423,
+            "display_rs_momentum": 10.86376134940462,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          },
+          {
+            "date": "2026-10-16",
+            "rs_ratio": 85.4325,
+            "rs_momentum": 224.3146,
+            "quadrant": "improving",
+            "display_rs_ratio": 85.43245197765688,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-23",
+            "rs_ratio": 146.9605,
+            "rs_momentum": 264.7354,
+            "quadrant": "leading",
+            "display_rs_ratio": 146.9605086387453,
+            "display_rs_momentum": 200,
+            "display_capped": true,
+            "display_marker": "\u2191",
+            "display_warning": "Value exceeds visual chart ceiling; raw value retained"
+          },
+          {
+            "date": "2026-10-30",
+            "rs_ratio": 135.2829,
+            "rs_momentum": 110.1332,
+            "quadrant": "leading",
+            "display_rs_ratio": 135.28289838788498,
+            "display_rs_momentum": 110.13321249715288,
+            "display_capped": false,
+            "display_marker": "",
+            "display_warning": ""
+          }
+        ]
+      },
+      "volume_display_ceiling": 200,
+      "volume_display_capped": true,
+      "volume_display_marker": "\u2191",
+      "volume_display_warning": "Visual ceiling only; raw values and quadrant are unchanged",
+      "last_week": {
+        "date": "2026-10-30",
+        "close": 68.86,
+        "benchmark_close": 20.03
+      },
+      "weekly_ma18": 71.8639,
+      "weekly_ma18_position": "Below MA18",
+      "weekly_pivot": {
+        "pivot": 69.3867,
+        "s1": 68.3833,
+        "s2": 67.4167,
+        "r1": 70.3533,
+        "r2": 71.3567
+      }
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-21T18:54:42+00:00",
+  "generated_at": "2026-11-21T19:38:08+00:00",
   "technical_source_files": {
     "technical_summary_east.json": "2026-11-21T16:16:38+00:00",
     "technical_summary_west_us.json": "2026-11-21T16:18:00+00:00",
     "technical_summary_west_canada_global.json": "2026-11-21T16:33:32+00:00",
-    "technical_summary_west_others.json": "2026-11-21T18:54:35+00:00"
+    "technical_summary_west_others.json": "2026-11-21T19:37:58+00:00"
   },
   "technical_coverage": {
     "pulse_universe": 206,
@@ -14,7 +14,7 @@
   },
   "price_source": "close",
   "rotation": {
-    "generated_at": "2026-11-21T18:54:41+00:00",
+    "generated_at": "2026-11-21T19:38:07+00:00",
     "latest_completed_week": "2026-11-20",
     "source": "existing_normalized_ohlcv",
     "methodology": {
@@ -335,7 +335,39 @@
           "TLT"
         ]
       }
-    }
+    },
+    "universe_instruments": 206,
+    "merged_instruments": 180,
+    "price_rrg_records": 178,
+    "volume_rrg_records": 178,
+    "without_rotation_record": [
+      "BATT",
+      "BTC-USD",
+      "CL=F",
+      "COPP.TO",
+      "COW.TO",
+      "DBA",
+      "GC=F",
+      "HLIT.TO",
+      "HURA.TO",
+      "HYDR",
+      "LIT",
+      "MOO",
+      "NG=F",
+      "NIKL",
+      "NLR",
+      "PALL",
+      "PDBC",
+      "PPLT",
+      "REMX",
+      "SETM",
+      "SI=F",
+      "TLT",
+      "XEF.TO",
+      "XIC.TO",
+      "^GSPC",
+      "^NSEI"
+    ]
   },
   "items": {
     "^NSEI": {
@@ -496,6 +528,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -927,6 +967,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -1360,6 +1408,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -1791,6 +1847,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -2224,6 +2288,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -2655,6 +2727,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -3088,6 +3168,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "lagging -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -3519,6 +3607,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -3952,6 +4048,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -4383,6 +4487,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -4816,6 +4928,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -5247,6 +5367,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -5680,6 +5808,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -6111,6 +6247,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -6544,6 +6688,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -6975,6 +7127,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -7408,6 +7568,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -7692,6 +7860,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Best Buy",
@@ -7975,6 +8151,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -8408,6 +8592,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -8839,6 +9031,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -9272,6 +9472,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -9704,6 +9912,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -10036,6 +10252,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -10469,6 +10693,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Risk On",
@@ -10900,6 +11132,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -11333,6 +11573,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -11764,6 +12012,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -12197,6 +12453,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -12628,6 +12892,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -13061,6 +13333,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -13492,6 +13772,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -13925,6 +14213,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -14356,6 +14652,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -14789,6 +15093,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -15220,6 +15532,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -15653,6 +15973,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -15985,6 +16313,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -16418,6 +16754,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -16849,6 +17193,14 @@
         },
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -17282,6 +17634,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -17632,6 +17992,14 @@
         "source_bucket": "east",
         "benchmark_source_bucket": "east"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Watch",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -17808,6 +18176,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -18239,6 +18615,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -18672,6 +19056,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -19103,6 +19495,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -19536,6 +19936,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -19967,6 +20375,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -20400,6 +20816,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -20831,6 +21255,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -21264,6 +21696,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "mixed",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -21695,6 +22135,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -22128,6 +22576,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -22559,6 +23015,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -22992,6 +23456,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -23423,6 +23895,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -23856,6 +24336,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -24287,6 +24775,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -24720,6 +25216,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -25151,6 +25655,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -25584,6 +26096,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -26015,6 +26535,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -26448,6 +26976,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -26879,6 +27415,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -27312,6 +27856,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -27743,6 +28295,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -28176,6 +28736,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -28607,6 +29175,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -29040,6 +29616,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -29471,6 +30055,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -29904,6 +30496,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -30335,6 +30935,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -30768,6 +31376,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -31199,6 +31815,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -31632,6 +32256,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -32063,6 +32695,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -32496,6 +33136,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -32927,6 +33575,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -33360,6 +34016,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -33791,6 +34455,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -34224,6 +34896,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -34655,6 +35335,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -35088,6 +35776,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -35519,6 +36215,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -35952,6 +36656,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -36383,6 +37095,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -36816,6 +37536,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -37247,6 +37975,14 @@
         },
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -37680,6 +38416,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -38112,6 +38856,14 @@
         "source_bucket": "west_us",
         "benchmark_source_bucket": "west_us"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -38288,6 +39040,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -38719,6 +39479,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -39152,6 +39920,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -39583,6 +40359,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -40016,6 +40800,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -40447,6 +41239,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -40880,6 +41680,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -41311,6 +42119,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -41744,6 +42560,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -42175,6 +42999,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "weakening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -42608,6 +43440,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -43039,6 +43879,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -43472,6 +44320,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -43903,6 +44759,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -44336,6 +45200,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -44767,6 +45639,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -45200,6 +46080,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "leading -> improving",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -45631,6 +46519,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -46064,6 +46960,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -46495,6 +47399,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -46928,6 +47840,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -47359,6 +48279,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -47792,6 +48720,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -48223,6 +49159,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -48656,6 +49600,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -49087,6 +50039,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -49520,6 +50480,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -49785,6 +50753,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Watch",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -49961,6 +50937,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -50392,6 +51376,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -50825,6 +51817,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -51256,6 +52256,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -51689,6 +52697,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -52120,6 +53136,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -52553,6 +53577,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -52984,6 +54016,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -53417,6 +54457,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -53848,6 +54896,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -54281,6 +55337,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -54712,6 +55776,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -55145,6 +56217,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -55576,6 +56656,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -56009,6 +57097,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -56440,6 +57536,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -56873,6 +57977,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -57304,6 +58416,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -57737,6 +58857,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -58168,6 +59296,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -58601,6 +59737,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -59032,6 +60176,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -59465,6 +60617,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -59896,6 +61056,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -60329,6 +61497,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -60760,6 +61936,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -61193,6 +62377,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -61624,6 +62816,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -62057,6 +63257,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "lagging -> improving",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -62488,6 +63696,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -62921,6 +64137,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -63352,6 +64576,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -63785,6 +65017,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "mixed",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -64216,6 +65456,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "weakening -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -64649,6 +65897,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -65080,6 +66336,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -65513,6 +66777,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "weakening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -65944,6 +67216,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -66377,6 +67657,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "strengthening",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -66808,6 +68096,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -67241,6 +68537,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -67672,6 +68976,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -68105,6 +69417,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -68536,6 +69856,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "leading",
+        "rotation_direction": "improving -> leading",
+        "interpretation": "Aligned strength · daily, weekly and relative trend",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -68969,6 +70297,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "mixed",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -69266,6 +70602,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Watch",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -69699,6 +71043,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -70130,6 +71482,14 @@
         },
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -70563,6 +71923,14 @@
         "source_bucket": "west_canada_global",
         "benchmark_source_bucket": "west_canada_global"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -70739,6 +72107,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -71170,6 +72546,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -71603,6 +72987,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -72034,6 +73426,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -72467,6 +73867,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -72898,6 +74306,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -73331,6 +74747,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -73762,6 +75186,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Best Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -74195,6 +75627,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Good Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -74626,6 +76066,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -75059,6 +76507,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -75490,6 +76946,14 @@
         },
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
+      },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
       },
       "signals": {
         "weekly": {
@@ -75923,6 +77387,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -75944,32 +77416,32 @@
     "ETH-USD": {
       "symbol": "ETH-USD",
       "market_group": "Commodities & Alternatives",
-      "last_close": 1679.77,
+      "last_close": 1683.28,
       "technicals": {
         "daily": {
           "timeframe": "daily",
           "source_period_end": "2026-11-21",
-          "close": 1679.77,
-          "ma18": 1972.6166,
+          "close": 1683.28,
+          "ma18": 1972.8116,
           "ma18_position": "Below MA18",
-          "distance_to_ma18_pct": -17.4337,
+          "distance_to_ma18_pct": -17.2004,
           "observations": 3300
         },
         "weekly": {
           "timeframe": "weekly",
           "source_period_end": "2026-11-27",
-          "pivot": 1642.7598,
+          "pivot": 1643.9298,
           "bc": 1624.2547,
-          "tc": 1661.2649,
-          "s1": 1579.1633,
-          "s2": 1478.5566,
-          "r1": 1743.3665,
-          "r2": 1806.9631,
-          "distance_to_pivot_pct": 2.2033,
-          "distance_to_s1_pct": 5.9893,
-          "distance_to_s2_pct": 11.9786,
-          "distance_to_r1_pct": -3.786,
-          "distance_to_r2_pct": -7.5721,
+          "tc": 1663.6049,
+          "s1": 1581.5033,
+          "s2": 1479.7266,
+          "r1": 1745.7065,
+          "r2": 1808.1331,
+          "distance_to_pivot_pct": 2.3377,
+          "distance_to_s1_pct": 6.0463,
+          "distance_to_s2_pct": 12.0927,
+          "distance_to_r1_pct": -3.7086,
+          "distance_to_r2_pct": -7.4172,
           "price_position": {
             "above_pivot": true,
             "below_pivot": false,
@@ -75979,27 +77451,27 @@
           },
           "technical_signal": "Risk On",
           "signal": "Risk On",
-          "close": 1679.77,
-          "ma18": 2252.5086,
+          "close": 1683.28,
+          "ma18": 2252.7036,
           "ma18_position": "Below MA18",
-          "distance_to_ma18_pct": -34.0963,
+          "distance_to_ma18_pct": -33.8282,
           "observations": 473
         },
         "monthly": {
           "timeframe": "monthly",
           "source_period_end": "2026-11-30",
-          "pivot": 1889.3236,
-          "bc": 1784.5468,
+          "pivot": 1890.4937,
+          "bc": 1786.8868,
           "tc": 1994.1005,
-          "s1": 1332.5994,
-          "s2": 985.4289,
-          "r1": 2236.4942,
-          "r2": 2793.2184,
-          "distance_to_pivot_pct": -12.4751,
-          "distance_to_s1_pct": 20.6677,
-          "distance_to_s2_pct": 41.3355,
-          "distance_to_r1_pct": -33.1429,
-          "distance_to_r2_pct": -66.2858,
+          "s1": 1334.9395,
+          "s2": 986.5989,
+          "r1": 2238.8342,
+          "r2": 2794.3884,
+          "distance_to_pivot_pct": -12.3101,
+          "distance_to_s1_pct": 20.6942,
+          "distance_to_s2_pct": 41.3883,
+          "distance_to_r1_pct": -33.0043,
+          "distance_to_r2_pct": -66.0085,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -76013,18 +77485,18 @@
         "annual": {
           "timeframe": "annual",
           "source_period_end": "2026-12-31",
-          "pivot": 2194.7245,
-          "bc": 1937.2473,
+          "pivot": 2195.8945,
+          "bc": 1939.5873,
           "tc": 2452.2017,
-          "s1": 991.5513,
-          "s2": 303.3325,
-          "r1": 2882.9432,
-          "r2": 4086.1165,
-          "distance_to_pivot_pct": -30.6562,
-          "distance_to_s1_pct": 40.971,
-          "distance_to_s2_pct": 81.942,
-          "distance_to_r1_pct": -71.6273,
-          "distance_to_r2_pct": -143.2545,
+          "s1": 993.8913,
+          "s2": 304.5025,
+          "r1": 2885.2832,
+          "r2": 4087.2865,
+          "distance_to_pivot_pct": -30.4533,
+          "distance_to_s1_pct": 40.9551,
+          "distance_to_s2_pct": 81.9102,
+          "distance_to_r1_pct": -71.4084,
+          "distance_to_r2_pct": -142.8168,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -76039,7 +77511,7 @@
           "timeframe": "daily_signal",
           "reference_timeframe": "monthly",
           "source_period_end": "2026-10-31",
-          "close": 1679.77,
+          "close": 1683.28,
           "reference_high": 2773.5249,
           "reference_low": 2173.3005,
           "reference_close": 2252.7478,
@@ -76053,11 +77525,11 @@
           "signal": "Best Buy",
           "technical_signal": "Best Buy",
           "signal_level": "Below S2",
-          "distance_to_pivot_pct": -42.8682,
-          "distance_to_s1_pct": -20.6231,
-          "distance_to_s2_pct": -7.1357,
-          "distance_to_r1_pct": -56.3556,
-          "distance_to_r2_pct": -78.6008,
+          "distance_to_pivot_pct": -42.5703,
+          "distance_to_s1_pct": -20.3716,
+          "distance_to_s2_pct": -6.9123,
+          "distance_to_r1_pct": -56.0296,
+          "distance_to_r2_pct": -78.2283,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -76070,7 +77542,7 @@
           "timeframe": "weekly_signal",
           "reference_timeframe": "annual",
           "source_period_end": "2025-12-31",
-          "close": 1679.77,
+          "close": 1683.28,
           "reference_high": 4953.7329,
           "reference_low": 1386.7993,
           "reference_close": 2967.0376,
@@ -76084,11 +77556,11 @@
           "signal": "Good Buy",
           "technical_signal": "Good Buy",
           "signal_level": "Between S1–Pivot",
-          "distance_to_pivot_pct": -84.6993,
-          "distance_to_s1_pct": 25.5068,
-          "distance_to_s2_pct": 127.6473,
-          "distance_to_r1_pct": -186.8397,
-          "distance_to_r2_pct": -297.0458,
+          "distance_to_pivot_pct": -84.3141,
+          "distance_to_s1_pct": 25.6622,
+          "distance_to_s2_pct": 127.5896,
+          "distance_to_r1_pct": -186.2416,
+          "distance_to_r2_pct": -296.2179,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -76355,20 +77827,28 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "weakening",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Risk On",
-          "return_pct": -7.6682,
+          "return_pct": -7.4753,
           "combined_signal": "Risk On"
         },
         "monthly": {
           "technical_signal": "Watch",
-          "return_pct": -25.4346,
+          "return_pct": -25.2788,
           "combined_signal": "Risk Off"
         },
         "annual": {
           "technical_signal": "Watch",
-          "return_pct": -19.8998,
+          "return_pct": -19.7325,
           "combined_signal": "Risk Off"
         }
       }
@@ -76531,6 +78011,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Better Buy",
@@ -76707,6 +78195,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -76883,6 +78379,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -77059,6 +78563,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -77235,6 +78747,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -77411,6 +78931,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -77843,6 +79371,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "improving",
+        "rotation_direction": "strengthening",
+        "interpretation": "Emerging strength · daily confirmation",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -78019,6 +79555,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -78451,6 +79995,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "strengthening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -78627,6 +80179,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -78803,6 +80363,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -78979,6 +80547,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -79411,6 +80987,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "lagging",
+        "rotation_direction": "improving -> lagging",
+        "interpretation": "Technical rebound · relative trend remains weak",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -79587,6 +81171,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -79763,6 +81355,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -79939,6 +81539,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Risk On",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Risk On",
@@ -80115,6 +81723,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -80136,32 +81752,32 @@
     "BTC-USD": {
       "symbol": "BTC-USD",
       "market_group": "Commodities & Alternatives",
-      "last_close": 60022.9883,
+      "last_close": 60242.1602,
       "technicals": {
         "daily": {
           "timeframe": "daily",
           "source_period_end": "2026-11-21",
-          "close": 60022.9883,
-          "ma18": 69323.3613,
+          "close": 60242.1602,
+          "ma18": 69335.5375,
           "ma18_position": "Below MA18",
-          "distance_to_ma18_pct": -15.4947,
+          "distance_to_ma18_pct": -15.0947,
           "observations": 4449
         },
         "weekly": {
           "timeframe": "weekly",
           "source_period_end": "2026-11-27",
-          "pivot": 58757.9154,
+          "pivot": 58830.9727,
           "bc": 58125.3789,
-          "tc": 59390.4518,
-          "s1": 56896.6471,
-          "s2": 53770.306,
-          "r1": 61884.2565,
-          "r2": 63745.5247,
-          "distance_to_pivot_pct": 2.1076,
-          "distance_to_s1_pct": 5.2086,
-          "distance_to_s2_pct": 10.4171,
-          "distance_to_r1_pct": -3.1009,
-          "distance_to_r2_pct": -6.2019,
+          "tc": 59536.5664,
+          "s1": 57042.7617,
+          "s2": 53843.3633,
+          "r1": 62030.3711,
+          "r2": 63818.582,
+          "distance_to_pivot_pct": 2.3425,
+          "distance_to_s1_pct": 5.3109,
+          "distance_to_s2_pct": 10.6218,
+          "distance_to_r1_pct": -2.9684,
+          "distance_to_r2_pct": -5.9367,
           "price_position": {
             "above_pivot": true,
             "below_pivot": false,
@@ -80171,27 +81787,27 @@
           },
           "technical_signal": "Risk On",
           "signal": "Risk On",
-          "close": 60022.9883,
-          "ma18": 74347.3368,
+          "close": 60242.1602,
+          "ma18": 74359.513,
           "ma18_position": "Below MA18",
-          "distance_to_ma18_pct": -23.8648,
+          "distance_to_ma18_pct": -23.4343,
           "observations": 637
         },
         "monthly": {
           "timeframe": "monthly",
           "source_period_end": "2026-11-30",
-          "pivot": 65578.1172,
-          "bc": 62800.5527,
+          "pivot": 65651.1745,
+          "bc": 62946.6673,
           "tc": 68355.6816,
-          "s1": 50076.4453,
-          "s2": 40129.9023,
-          "r1": 75524.6602,
-          "r2": 91026.332,
-          "distance_to_pivot_pct": -9.255,
-          "distance_to_s1_pct": 16.5712,
-          "distance_to_s2_pct": 33.1424,
-          "distance_to_r1_pct": -25.8262,
-          "distance_to_r2_pct": -51.6524,
+          "s1": 50222.5599,
+          "s2": 40202.9596,
+          "r1": 75670.7747,
+          "r2": 91099.3893,
+          "distance_to_pivot_pct": -8.9788,
+          "distance_to_s1_pct": 16.6322,
+          "distance_to_s2_pct": 33.2644,
+          "distance_to_r1_pct": -25.611,
+          "distance_to_r2_pct": -51.222,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -80205,18 +81821,18 @@
         "annual": {
           "timeframe": "annual",
           "source_period_end": "2026-12-31",
-          "pivot": 71171.7214,
-          "bc": 65597.3548,
+          "pivot": 71244.7786,
+          "bc": 65743.4694,
           "tc": 76746.0879,
-          "s1": 44482.8411,
-          "s2": 28942.694,
-          "r1": 86711.8685,
-          "r2": 113400.7487,
-          "distance_to_pivot_pct": -18.5741,
-          "distance_to_s1_pct": 25.8903,
-          "distance_to_s2_pct": 51.7807,
-          "distance_to_r1_pct": -44.4644,
-          "distance_to_r2_pct": -88.9289,
+          "s1": 44628.9557,
+          "s2": 29015.7513,
+          "r1": 86857.9831,
+          "r2": 113473.806,
+          "distance_to_pivot_pct": -18.264,
+          "distance_to_s1_pct": 25.9174,
+          "distance_to_s2_pct": 51.8348,
+          "distance_to_r1_pct": -44.1814,
+          "distance_to_r2_pct": -88.3628,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -80231,7 +81847,7 @@
           "timeframe": "daily_signal",
           "reference_timeframe": "monthly",
           "source_period_end": "2026-10-31",
-          "close": 60022.9883,
+          "close": 60242.1602,
           "reference_high": 87146.3516,
           "reference_low": 76189.8828,
           "reference_close": 77434.75,
@@ -80245,11 +81861,11 @@
           "signal": "Best Buy",
           "technical_signal": "Best Buy",
           "signal_level": "Below S2",
-          "distance_to_pivot_pct": -33.7104,
-          "distance_to_s1_pct": -22.2326,
-          "distance_to_s2_pct": -15.4566,
-          "distance_to_r1_pct": -40.4864,
-          "distance_to_r2_pct": -51.9642,
+          "distance_to_pivot_pct": -33.224,
+          "distance_to_s1_pct": -21.7879,
+          "distance_to_s2_pct": -15.0366,
+          "distance_to_r1_pct": -39.9752,
+          "distance_to_r2_pct": -51.4113,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -80262,7 +81878,7 @@
           "timeframe": "weekly_signal",
           "reference_timeframe": "annual",
           "source_period_end": "2025-12-31",
-          "close": 60022.9883,
+          "close": 60242.1602,
           "reference_high": 126198.0703,
           "reference_low": 74436.6797,
           "reference_close": 87508.8281,
@@ -80276,11 +81892,11 @@
           "signal": "Better Buy",
           "technical_signal": "Better Buy",
           "signal_level": "Between S2–S1",
-          "distance_to_pivot_pct": -60.0185,
-          "distance_to_s1_pct": -9.7874,
-          "distance_to_s2_pct": 26.2175,
-          "distance_to_r1_pct": -96.0233,
-          "distance_to_r2_pct": -146.2544,
+          "distance_to_pivot_pct": -59.4363,
+          "distance_to_s1_pct": -9.3879,
+          "distance_to_s2_pct": 26.4859,
+          "distance_to_r1_pct": -95.3101,
+          "distance_to_r2_pct": -145.3585,
           "price_position": {
             "above_pivot": false,
             "below_pivot": true,
@@ -80291,20 +81907,28 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Better Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Risk On",
-          "return_pct": -7.4517,
+          "return_pct": -7.1138,
           "combined_signal": "Risk On"
         },
         "monthly": {
           "technical_signal": "Watch",
-          "return_pct": -22.4857,
+          "return_pct": -22.2027,
           "combined_signal": "Risk Off"
         },
         "annual": {
           "technical_signal": "Watch",
-          "return_pct": -15.7154,
+          "return_pct": -15.4076,
           "combined_signal": "Risk Off"
         }
       }
@@ -80723,6 +82347,14 @@
         "source_bucket": "west_others",
         "benchmark_source_bucket": "west_others"
       },
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Risk On",
+        "rotation_quadrant": "weakening",
+        "rotation_direction": "leading -> weakening",
+        "interpretation": "Technical strength · relative momentum fading",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -80899,6 +82531,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -81075,6 +82715,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Good Buy",
@@ -81251,6 +82899,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -81427,6 +83083,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -81603,6 +83267,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Better Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",
@@ -81779,6 +83451,14 @@
         }
       },
       "rotation": null,
+      "combined_interpretation": {
+        "daily_signal": "Best Buy",
+        "weekly_signal": "Good Buy",
+        "rotation_quadrant": "unavailable",
+        "rotation_direction": "unavailable",
+        "interpretation": "Rotation unavailable",
+        "method": "rule_based_alignment_only_not_a_replacement_signal"
+      },
       "signals": {
         "weekly": {
           "technical_signal": "Watch",

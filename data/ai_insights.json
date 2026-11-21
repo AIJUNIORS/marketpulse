@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.0",
+  "prompt_version": "v1.0",
+  "generated_at": "2026-11-21T21:15:20+00:00",
+  "asof": "2026-11-21",
+  "insights": {
+    "pulse": {
+      "regime": "risk-on",
+      "thesis": "Broad market rotation toward risk‑on assets, led by India and Global groups, while US and commodities show weakness.",
+      "change_since_last_run": "Regime unchanged from prior run",
+      "confidence": {
+        "level": "medium",
+        "reasons": [
+          "India Markets weekly signal Good Buy (groups.India Markets.group_signals.weekly)",
+          "Global / International weekly Good Buy (groups.Global / International.group_signals.weekly)",
+          "Above weekly pivot count high in India Markets (28) (groups.India Markets.above_weekly_pivot_n)"
+        ]
+      },
+      "evidence_for": [
+        {
+          "claim": "India Markets weekly signal Good Buy",
+          "source_fields": [
+            "groups.India Markets.group_signals.weekly"
+          ]
+        },
+        {
+          "claim": "Global / International weekly Good Buy",
+          "source_fields": [
+            "groups.Global / International.group_signals.weekly"
+          ]
+        },
+        {
+          "claim": "Above weekly pivot count high in India Markets (28)",
+          "source_fields": [
+            "groups.India Markets.above_weekly_pivot_n"
+          ]
+        },
+        {
+          "claim": "Top3 MTD average strong in India Markets (17.71)",
+          "source_fields": [
+            "groups.India Markets.top3_mtd_avg"
+          ]
+        },
+        {
+          "claim": "Bonds Universe weekly Good Buy",
+          "source_fields": [
+            "groups.Bonds Universe.group_signals.weekly"
+          ]
+        }
+      ],
+      "evidence_against": [
+        {
+          "claim": "US Markets weekly Watch",
+          "source_fields": [
+            "groups.US Markets.group_signals.weekly"
+          ]
+        },
+        {
+          "claim": "US Markets MTD average negative (-6.35)",
+          "source_fields": [
+            "groups.US Markets.mtd_avg"
+          ]
+        },
+        {
+          "claim": "Commodities & Alternatives MTD average negative (-12.98)",
+          "source_fields": [
+            "groups.Commodities & Alternatives.mtd_avg"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "claim": "US Markets weekly Watch conflicts with high above‑weekly‑pivot count in India Markets",
+          "source_fields": [
+            "groups.US Markets.group_signals.weekly",
+            "groups.India Markets.above_weekly_pivot_n"
+          ]
+        },
+        {
+          "claim": "US RRG mix lagging (18) contrasts with India RRG mix leading (4)",
+          "source_fields": [
+            "groups.US Markets.rrg_mix.lagging",
+            "groups.India Markets.rrg_mix.leading"
+          ]
+        }
+      ],
+      "scenarios": [],
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "symbol": "NV20BEES.NS",
+          "reason": "India Markets top shortlist, pre_score 6, Good Buy weekly",
+          "source_fields": [
+            "shortlist.NV20BEES.NS"
+          ]
+        },
+        {
+          "rank": 2,
+          "symbol": "^NSEBANK",
+          "reason": "India Markets, strong MTD 17.51, leading RRG",
+          "source_fields": [
+            "shortlist.^NSEBANK"
+          ]
+        },
+        {
+          "rank": 3,
+          "symbol": "HUTS.TO",
+          "reason": "Global / International, leading RRG, Good Buy weekly",
+          "source_fields": [
+            "shortlist.HUTS.TO"
+          ]
+        },
+        {
+          "rank": 4,
+          "symbol": "UUP",
+          "reason": "US Markets, leading RRG, Better Buy weekly",
+          "source_fields": [
+            "shortlist.UUP"
+          ]
+        },
+        {
+          "rank": 5,
+          "symbol": "XST.TO",
+          "reason": "Canada Markets, leading RRG, Good Buy weekly",
+          "source_fields": [
+            "shortlist.XST.TO"
+          ]
+        },
+        {
+          "rank": 6,
+          "symbol": "RING.TO",
+          "reason": "Canada Markets, leading RRG, Risk On weekly",
+          "source_fields": [
+            "shortlist.RING.TO"
+          ]
+        }
+      ],
+      "risks": [
+        "Bonds Universe deep drawdown (-52.53%) may limit risk‑on flow",
+        "Commodities & Alternatives extreme MTD decline (-12.98%) could spill over",
+        "US Markets weekly Watch suggests broader market weakness"
+      ],
+      "what_would_change_my_view": [
+        "If US weekly signal turned Good Buy (groups.US Markets.group_signals.weekly)",
+        "If above_weekly_pivot_n rose above 20 in US (groups.US Markets.above_weekly_pivot_n)"
+      ],
+      "sample_size_flags": [
+        "snapshots_available:1",
+        "history_insufficient"
+      ],
+      "next_tab": {
+        "tab": "broad",
+        "target": "Group Rotation",
+        "why": "to drill into group‑level RRG and breadth details"
+      },
+      "key": "pulse",
+      "prior_call_review": [],
+      "generated_at": "2026-11-21T21:17:29+00:00",
+      "data_generated_at": "2026-11-21T19:38:08+00:00",
+      "asof": "2026-11-21",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1.0",
+      "schema_version": "1.0",
+      "payload_hash": "cd4556af88bd8ca5",
+      "history_snapshots": 1,
+      "validation_warnings": []
+    },
+    "broad": {
+      "regime": "broad",
+      "thesis": "Cross‑asset picture shows equity weakness, bond relative strength, safe‑haven stress and divergent crypto risk‑on pressure amid high volatility.",
+      "change_since_last_run": "No prior run data to compare.",
+      "confidence": {
+        "level": "low",
+        "reasons": [
+          "Evidence limited by single snapshot; meta.history_status indicates insufficient change‑over‑time data; signals mixed across asset classes."
+        ]
+      },
+      "evidence_for": [
+        {
+          "claim": "US equities (^GSPC) show negative mtd -8.37% and moderate drawdown bucket, indicating weakness.",
+          "source_fields": [
+            "assets.^GSPC.ret.mtd",
+            "assets.^GSPC.dd.bucket"
+          ]
+        },
+        {
+          "claim": "US Treasury (TLT) is above MA18 with Good Buy weekly signal, suggesting bond relative strength.",
+          "source_fields": [
+            "assets.TLT.ma18_daily_pos",
+            "assets.TLT.sig.weekly"
+          ]
+        },
+        {
+          "claim": "Gold (GC=F) deep drawdown pctile 89.7 and severe bucket, indicating stress in safe‑haven commodity.",
+          "source_fields": [
+            "assets.GC=F.dd.pctile",
+            "assets.GC=F.dd.bucket"
+          ]
+        },
+        {
+          "claim": "Bitcoin (BTC-USD) weekly Risk On and drawdown pctile 71.2, showing risk‑on pressure despite weakness.",
+          "source_fields": [
+            "assets.BTC-USD.sig.weekly",
+            "assets.BTC-USD.dd.pctile"
+          ]
+        },
+        {
+          "claim": "US Dollar Index (UUP) posts +2.28% mtd and Better Buy weekly, indicating USD strength.",
+          "source_fields": [
+            "assets.UUP.ret.mtd",
+            "assets.UUP.sig.weekly"
+          ]
+        }
+      ],
+      "evidence_against": [
+        {
+          "claim": "Indian equity (^NSEI) posts +10.07% mtd and Good Buy weekly, contradicting global equity weakness.",
+          "source_fields": [
+            "assets.^NSEI.ret.mtd",
+            "assets.^NSEI.sig.weekly"
+          ]
+        },
+        {
+          "claim": "Crude Oil (CL=F) shows +46.51% ytd despite overall risk‑on signals, offsetting commodity weakness.",
+          "source_fields": [
+            "assets.CL=F.ret.ytd",
+            "assets.CL=F.sig.weekly"
+          ]
+        },
+        {
+          "claim": "High Yield (HYG) weekly Better Buy despite bond market stress, indicating credit resilience.",
+          "source_fields": [
+            "assets.HYG.sig.weekly",
+            "assets.HYG.dd.bucket"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "claim": "Correlation US equity–US Treasury shifted from negative c60 (-0.06) to positive c250 (0.18), conflicting bond‑equity relationship.",
+          "source_fields": [
+            "corr.^GSPC~TLT.c60",
+            "corr.^GSPC~TLT.c250"
+          ]
+        },
+        {
+          "claim": "US equity–Gold correlation c60 0.46 vs c250 0.30, weakening safe‑haven link.",
+          "source_fields": [
+            "corr.^GSPC~GC=F.c60",
+            "corr.^GSPC~GC=F.c250"
+          ]
+        },
+        {
+          "claim": "Crypto–USD correlation c60 -0.19 vs c250 -0.17, divergent from equity‑USD patterns.",
+          "source_fields": [
+            "corr.BTC-USD~UUP.c60",
+            "corr.BTC-USD~UUP.c250"
+          ]
+        }
+      ],
+      "scenarios": [],
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "symbol": "^NSEI",
+          "reason": "Strong +10.07% mtd and Good Buy weekly signal.",
+          "source_fields": [
+            "assets.^NSEI.ret.mtd",
+            "assets.^NSEI.sig.weekly"
+          ]
+        },
+        {
+          "rank": 2,
+          "symbol": "TLT",
+          "reason": "Above MA18, Good Buy weekly, and positive stretch_z_ma18.",
+          "source_fields": [
+            "assets.TLT.ma18_daily_pos",
+            "assets.TLT.sig.weekly",
+            "assets.TLT.st.stretch_z_ma18"
+          ]
+        },
+        {
+          "rank": 3,
+          "symbol": "GC=F",
+          "reason": "Severe drawdown pctile 89.7 and Watch signals across horizons.",
+          "source_fields": [
+            "assets.GC=F.dd.pctile",
+            "assets.GC=F.sig.weekly"
+          ]
+        },
+        {
+          "rank": 4,
+          "symbol": "BTC-USD",
+          "reason": "Risk On weekly despite deep drawdown pctile 71.2.",
+          "source_fields": [
+            "assets.BTC-USD.sig.weekly",
+            "assets.BTC-USD.dd.pctile"
+          ]
+        },
+        {
+          "rank": 5,
+          "symbol": "UUP",
+          "reason": "Positive +2.28% mtd and Better Buy weekly, indicating USD strength.",
+          "source_fields": [
+            "assets.UUP.ret.mtd",
+            "assets.UUP.sig.weekly"
+          ]
+        },
+        {
+          "rank": 6,
+          "symbol": "^INDIAVIX",
+          "reason": "Weekly Risk On, high volatility could amplify market stress.",
+          "source_fields": [
+            "assets.^INDIAVIX.sig.weekly"
+          ]
+        }
+      ],
+      "risks": [
+        "Deep drawdowns in gold (pctile 89.7) and crypto (pctile 71.2) increase downside vulnerability.",
+        "Insufficient historical snapshots limit confidence in trend persistence.",
+        "India VIX weekly Risk On suggests potential volatility spikes.",
+        "Seasonal averages modest; reliance on seasonality may be weak."
+      ],
+      "what_would_change_my_view": [
+        "Converging c60 and c250 correlations would raise confidence in regime assessment.",
+        "Any asset crossing above its 18‑day MA18 with positive stretch would signal momentum shift.",
+        "Availability of additional snapshots enabling change‑over‑time analysis."
+      ],
+      "sample_size_flags": [
+        "snapshots_available:1",
+        "meta.history_status:insufficient",
+        "assets.^GSPC.st.n:2520",
+        "assets.^NSEI.season.n_years:20",
+        "assets.^NSEI.annual.years:20"
+      ],
+      "next_tab": {
+        "tab": "none",
+        "target": "",
+        "why": "Broad insight completed."
+      },
+      "key": "broad",
+      "prior_call_review": [],
+      "generated_at": "2026-11-21T21:18:33+00:00",
+      "data_generated_at": "2026-11-21T19:38:08+00:00",
+      "asof": "2026-11-21",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1.0",
+      "schema_version": "1.0",
+      "payload_hash": "beb16e7c0532be1b",
+      "history_snapshots": 1,
+      "validation_warnings": []
+    }
+  },
+  "failures": {
+    "technical": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:India Markets": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:US Markets": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:Canada Markets": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:Global / International": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:Bonds Universe": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ],
+    "detail:Commodities & Alternatives": [
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+    ]
+  },
+  "disclaimer": "Analysis of backend-computed indicators for the reader's own decision. Not trade advice. Generated by an AI model; verify against the data tabs.",
+  "models": [
+    "openai/gpt-oss-120b"
+  ]
+}

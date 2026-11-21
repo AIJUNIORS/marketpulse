@@ -16,6 +16,18 @@
 .pulse-summary .ps-main{min-width:220px;flex:1}.ps-label{font-size:9px;color:#60a5fa;text-transform:uppercase;letter-spacing:.8px;font-weight:900;margin-bottom:4px}.ps-text{font-size:12px;line-height:1.55;color:#e5e7eb}.ps-metrics{display:grid;grid-template-columns:repeat(4,minmax(82px,1fr));gap:8px;min-width:360px}.ps-box{background:#1f2937;border-radius:7px;padding:8px 10px;text-align:center}.ps-box-l{font-size:8px;color:#9ca3af;text-transform:uppercase;font-weight:900;letter-spacing:.6px}.ps-box-v{font-size:15px;font-weight:900;font-family:'Courier New',monospace;margin-top:3px}.pulse-only-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pulse-leader-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile-list{display:grid;grid-template-columns:1fr;gap:5px}.tile-list .tile{display:grid;grid-template-columns:minmax(0,1.2fr) auto;gap:3px 8px;align-items:center}.tile-list .tile-ret{text-align:right;margin-top:0}.tile-list .tile-price{grid-column:1 / -1}.pg-stats{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0 9px}.pg-stat{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:5px;padding:4px 7px;font-size:9px;font-weight:800;color:#374151}.pg-stat .mono{font-weight:900}.pg-benchmarks{font-size:9px;color:#6b7280;font-family:'Courier New',monospace;margin-top:2px;line-height:1.45}
 @media(max-width:1000px){.pulse-only-groups,.pulse-leader-wrap{grid-template-columns:1fr}.ps-metrics{grid-template-columns:repeat(2,minmax(82px,1fr));min-width:0;width:100%}}
 
+
+/* Technical Analysis index table: presentation-only layout improvements */
+.index-table-wrap{max-height:calc(100vh - 250px);min-height:320px;overflow:auto;overscroll-behavior:contain}
+.index-table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%}
+.index-table th{position:sticky;top:0;z-index:5;background:#f9fafb}
+.index-table th:first-child{position:sticky;left:0;top:0;z-index:8;background:#eef2f7;text-align:left;box-shadow:2px 0 0 #e5e7eb;min-width:112px}
+.index-table td:first-child{position:sticky;left:0;z-index:3;background:#fff;text-align:left;box-shadow:2px 0 0 #eef2f7;min-width:112px;font-family:'Courier New',monospace;font-weight:900}
+.index-table tr:hover td:first-child{background:#f9fafb}
+.index-table td{background:#fff}
+.index-table .sym{cursor:help}
+.index-table th:last-child,.index-table td:last-child{padding-left:12px;padding-right:12px}
+@media(max-width:1000px){.index-table-wrap{max-height:calc(100vh - 220px)}}
 </style>
 </head>
 <body>
@@ -204,8 +216,8 @@ function renderTechnical(){
     const volumeRrg=rrgPoint(rotation?.volume_rrg);
     const q=priceRrg?.quadrant||null;
     return {
-      Group:i.market_group,
       Symbol:i.symbol,
+      Group:i.market_group,
       'Name ▲':itemName(i),
       Close:close(i),
       MTD:mtd(i),
@@ -255,7 +267,7 @@ function renderTechnical(){
       ${sortableTable(rows,'technical')}
     </div>`;
 }
-function sortableTable(rows,key){const f=(STATE.filter||'').toLowerCase();if(f)rows=rows.filter(r=>Object.values(r).some(v=>String(v??'').toLowerCase().includes(f)));const cols=Object.keys(rows[0]||{}).filter(c=>c!=='_item'),sort=STATE.sort[key]||{col:null,dir:1};if(sort.col)rows=[...rows].sort((a,b)=>{const av=a[sort.col],bv=b[sort.col],an=num(av),bn=num(bv);if(an!==null&&bn!==null)return(an-bn)*sort.dir;return String(av??'').localeCompare(String(bv??''))*sort.dir});return`<div class="table-wrap"><table><tr>${cols.map(c=>`<th onclick="sortTable('${key}','${esc(c)}')">${esc(c)} ${sort.col===c?(sort.dir>0?'▲':'▼'):''}</th>`).join('')}</tr>${rows.map(r=>`<tr>${cols.map(c=>cell(c,r[c])).join('')}</tr>`).join('')||'<tr><td>No rows</td></tr>'}</table></div>`}
+function sortableTable(rows,key){const f=(STATE.filter||'').toLowerCase();if(f)rows=rows.filter(r=>Object.values(r).some(v=>String(v??'').toLowerCase().includes(f)));const cols=Object.keys(rows[0]||{}).filter(c=>c!=='_item'),sort=STATE.sort[key]||{col:null,dir:1};if(sort.col)rows=[...rows].sort((a,b)=>{const av=a[sort.col],bv=b[sort.col],an=num(av),bn=num(bv);if(an!==null&&bn!==null)return(an-bn)*sort.dir;return String(av??'').localeCompare(String(bv??''))*sort.dir});const indexTable=key==='technical';const tableClass=indexTable?' class="index-table"':'';const wrapClass=indexTable?'table-wrap index-table-wrap':'table-wrap';return`<div class="${wrapClass}"><table${tableClass}><tr>${cols.map(c=>`<th onclick="sortTable('${key}','${esc(c)}')">${esc(c)} ${sort.col===c?(sort.dir>0?'▲':'▼'):''}</th>`).join('')}</tr>${rows.map(r=>`<tr${indexTable&&r.Symbol?` title="Symbol: ${esc(r.Symbol)}"`:''}>${cols.map(c=>{const html=cell(c,r[c]);return indexTable&&(c==='Name ▲'||c==='Name')&&r.Symbol?html.replace('<td',`<td title="Symbol: ${esc(r.Symbol)}"`,1):html}).join('')}</tr>`).join('')||'<tr><td>No rows</td></tr>'}</table></div>`}
 function cell(c,v){
   if(c==='Signal'||c==='Price vs Levels'||c==='Daily Signal ▲'||c==='Weekly Signal ▲')
     return `<td>${zbadge(v)}</td>`;

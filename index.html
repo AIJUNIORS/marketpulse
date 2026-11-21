@@ -64,7 +64,45 @@ function annual(i,yr){return num(annualObj(i)[yr])}function monthly(i,yr,mi){con
 function heatColor(v){const n=num(v);if(n===null)return'background:#f3f4f6;color:#9ca3af';const a=Math.min(Math.abs(n),12)/12;return n>=0?`background:rgba(22,163,74,${.12+a*.55});color:#14532d`:`background:rgba(220,38,38,${.12+a*.55});color:#7f1d1d`}
 function zbadge(s){const x=String(s||'').toLowerCase();if(x.includes('best'))return'<span class="zone best">Best Buy</span>';if(x.includes('better'))return'<span class="zone better">Better Buy</span>';if(x.includes('good'))return'<span class="zone good">Good Buy</span>';if(x.includes('risk'))return'<span class="zone risk">Risk On</span>';if(x.includes('watch'))return'<span class="zone watch">Watch</span>';if(x.includes('below')||x.includes('weak'))return'<span class="zone bad">'+esc(s)+'</span>';return'<span class="zone neutral">'+esc(s||'—')+'</span>'}
 function norm(d){let groups=(d.groups||[]).map(g=>({...g,market_group:g.market_group||g.name||g.display_name}));if(!groups.length&&Array.isArray(d.items)){const by={};d.items.forEach(i=>{const mg=i.market_group||i.group||'Other';(by[mg]||(by[mg]={market_group:mg,display_name:mg,items:[]})).items.push(i)});groups=Object.values(by)}const items=[];groups.forEach(g=>(g.items||[]).forEach(it=>items.push({...it,market_group:canonicalGroupKey(it.market_group||g.market_group),sector_group:it.sector_group||it.category||it.type||g.sector_group,group_display_name:groupName(g),group_benchmark_symbol:groupBenchSymbol(g)})));groups=groups.map(g=>({...g,market_group:canonicalGroupKey(g.market_group),display_name:groupName(g),benchmark_symbol:groupBenchSymbol(g)}));return{groups,items}}
-function buildTechMap(raw){const map={};function add(o){if(!o||typeof o!=='object')return;const s=o.symbol||o.ticker||o.Symbol||o.Ticker;if(s){map[String(s).toUpperCase()]=o;map[safeSym(s)]=o}}function walk(x){if(Array.isArray(x))x.forEach(walk);else if(x&&typeof x==='object'){add(x);Object.values(x).forEach(v=>{if(v&&typeof v==='object')walk(v)})}}walk(raw);return map}
+function buildTechMap(raw){
+  const map={};
+
+  function add(record,fallbackSymbol){
+    if(!record||typeof record!=='object'||Array.isArray(record))return;
+
+    const symbol=record.symbol||record.ticker||record.Symbol||record.Ticker||fallbackSymbol;
+    if(!symbol)return;
+
+    // Only index the complete technical-summary record.
+    // Nested Rotation records can carry the same symbol but do not
+    // contain the technicals object. They must never overwrite it.
+    if(!record.technicals && !record.technical)return;
+
+    const key=String(symbol).toUpperCase();
+    map[key]=record;
+    map[safeSym(symbol)]=record;
+  }
+
+  if(raw&&raw.items&&typeof raw.items==='object'&&!Array.isArray(raw.items)){
+    Object.entries(raw.items).forEach(([symbol,record])=>add(record,symbol));
+    return map;
+  }
+
+  if(Array.isArray(raw)){
+    raw.forEach(record=>add(record));
+    return map;
+  }
+
+  if(raw&&typeof raw==='object'){
+    Object.entries(raw).forEach(([symbol,record])=>{
+      if(record&&typeof record==='object'&&!Array.isArray(record)){
+        add(record,symbol);
+      }
+    });
+  }
+
+  return map;
+}
 function techRec(i){return STATE.techMap[String(i.symbol||'').toUpperCase()]||STATE.techMap[safeSym(i.symbol)]||{}}
 function techVal(i,k,tf=STATE.techTf){const r=techRec(i);const paths=[`technical.${tf}.levels.${k}`,`technical.${tf}.${k}`,`technicals.${tf}.levels.${k}`,`technicals.${tf}.${k}`,`technical.levels.${k}`,`technical.${k}`,`technicals.levels.${k}`,`technicals.${k}`,`levels.${tf}.${k}`,`levels.${k}`,`pivot_points.${tf}.${k}`,`pivot_points.${k}`,`${tf}.${k}`,k,k.toUpperCase()];const v=get(i,paths,null);if(v!==null)return v;return get(r,paths,null)}
 function level(i,k,tf=STATE.techTf){return num(techVal(i,k,tf))}

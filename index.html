@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="topbar"><div class="logo">Market<em>Pulse</em></div><div class="mkt-strip" id="mktStrip"></div><div class="upd" id="updated">Loading…</div></div>
-<div class="tabs" id="tabs"><div class="tab on" data-view="pulse">Pulse</div><div class="tab" data-view="broad">Broad Markets</div><div class="tab" data-view="detail">Detailed Group Analysis</div><div class="tab" data-view="technical">Technical Analysis</div><a class="tab" href="rotation.html" onclick="event.stopPropagation()">Rotation Summary ↗</a></div>
+<div class="tabs" id="tabs"><div class="tab on" data-view="pulse">Pulse</div><div class="tab" data-view="broad">Broad Markets</div><div class="tab" data-view="detail">Detailed Group Analysis</div><div class="tab" data-view="technical">Technical Analysis</div></div>
 <div class="subbar" id="subbar"></div><div class="sectionbar" id="sectionbar"></div><div class="cnt" id="app"><div class="loading">Loading MarketPulse JSON…</div></div><div class="footer">MarketPulse · close-based returns · prices preserved · technical analysis at the end</div>
 <script>
 const DATA_PATHS=['data/market_pulse_combined.json','./data/market_pulse_combined.json','market_pulse_combined.json','./market_pulse_combined.json'];
@@ -66,41 +66,21 @@ function zbadge(s){const x=String(s||'').toLowerCase();if(x.includes('best'))ret
 function norm(d){let groups=(d.groups||[]).map(g=>({...g,market_group:g.market_group||g.name||g.display_name}));if(!groups.length&&Array.isArray(d.items)){const by={};d.items.forEach(i=>{const mg=i.market_group||i.group||'Other';(by[mg]||(by[mg]={market_group:mg,display_name:mg,items:[]})).items.push(i)});groups=Object.values(by)}const items=[];groups.forEach(g=>(g.items||[]).forEach(it=>items.push({...it,market_group:canonicalGroupKey(it.market_group||g.market_group),sector_group:it.sector_group||it.category||it.type||g.sector_group,group_display_name:groupName(g),group_benchmark_symbol:groupBenchSymbol(g)})));groups=groups.map(g=>({...g,market_group:canonicalGroupKey(g.market_group),display_name:groupName(g),benchmark_symbol:groupBenchSymbol(g)}));return{groups,items}}
 function buildTechMap(raw){
   const map={};
-
-  function add(record,fallbackSymbol){
+  const add=(record,fallbackSymbol)=>{
     if(!record||typeof record!=='object'||Array.isArray(record))return;
-
     const symbol=record.symbol||record.ticker||record.Symbol||record.Ticker||fallbackSymbol;
-    if(!symbol)return;
-
-    // Only index the complete technical-summary record.
-    // Nested Rotation records can carry the same symbol but do not
-    // contain the technicals object. They must never overwrite it.
-    if(!record.technicals && !record.technical)return;
-
-    const key=String(symbol).toUpperCase();
-    map[key]=record;
+    // Only index complete technical-summary records. Nested rotation objects
+    // may repeat the symbol but must never replace the parent technical record.
+    if(!symbol||!record.technicals)return;
+    map[String(symbol).toUpperCase()]=record;
     map[safeSym(symbol)]=record;
-  }
-
+  };
   if(raw&&raw.items&&typeof raw.items==='object'&&!Array.isArray(raw.items)){
     Object.entries(raw.items).forEach(([symbol,record])=>add(record,symbol));
     return map;
   }
-
-  if(Array.isArray(raw)){
-    raw.forEach(record=>add(record));
-    return map;
-  }
-
-  if(raw&&typeof raw==='object'){
-    Object.entries(raw).forEach(([symbol,record])=>{
-      if(record&&typeof record==='object'&&!Array.isArray(record)){
-        add(record,symbol);
-      }
-    });
-  }
-
+  if(Array.isArray(raw)){raw.forEach(record=>add(record));return map;}
+  if(raw&&typeof raw==='object')Object.entries(raw).forEach(([symbol,record])=>add(record,symbol));
   return map;
 }
 function techRec(i){return STATE.techMap[String(i.symbol||'').toUpperCase()]||STATE.techMap[safeSym(i.symbol)]||{}}
@@ -182,23 +162,47 @@ function compactPivot(rec){
   return vals.map(v=>Number(v).toFixed(2)).join('-');
 }
 
+function rotationRecord(i){return techRec(i)?.rotation||null}
+function rrgPoint(rrg){return rrg&&typeof rrg==='object'?rrg:null}
+function rotationDirection(rrg){
+  const trail=Array.isArray(rrg?.trail)?rrg.trail:[];
+  if(trail.length<2)return '—';
+  const a=trail[trail.length-2],b=trail[trail.length-1];
+  if(a.quadrant!==b.quadrant)return `${String(a.quadrant||'').replace('_',' ')} → ${String(b.quadrant||'').replace('_',' ')}`;
+  const dx=num(b.rs_ratio)-num(a.rs_ratio),dy=num(b.rs_momentum)-num(a.rs_momentum);
+  if(dx>0&&dy>0)return 'Strengthening';
+  if(dx<0&&dy<0)return 'Weakening';
+  if(dx>0&&dy<0)return 'Mixed · RS up';
+  if(dx<0&&dy>0)return 'Mixed · Momentum up';
+  return 'Stable';
+}
+function combinedInterpretation(daily,weekly,quadrant){
+  const bull=s=>['Risk On','Good Buy','Better Buy','Best Buy'].includes(String(s||''));
+  const bear=s=>['Risk Off'].includes(String(s||''));
+  const db=bull(daily),wb=bull(weekly),dw=bear(daily),ww=bear(weekly);
+  if(!quadrant)return 'Rotation unavailable';
+  if(quadrant==='leading'&&db&&wb)return 'Aligned strength · daily, weekly and relative trend';
+  if(quadrant==='improving'&&db)return 'Emerging strength · daily confirmation';
+  if(quadrant==='weakening'&&(db||wb))return 'Technical strength · relative momentum fading';
+  if(quadrant==='lagging'&&dw&&ww)return 'Aligned weakness · technical and relative trend';
+  if((quadrant==='leading'||quadrant==='improving')&&!(db&&wb))return 'Relative strength positive · technical confirmation pending';
+  if((quadrant==='lagging'||quadrant==='weakening')&&(db||wb))return 'Technical rebound · relative trend remains weak';
+  return 'Mixed signals · wait for confirmation';
+}
+function rrgQuadrantLabel(q){return q?String(q).replaceAll('_',' ').replace(/\b\w/g,c=>c.toUpperCase()):'Unavailable'}
 function renderTechnical(){
   const groups=['ALL',...STATE.groups.map(g=>g.market_group)];
-  let base=STATE.techGroup==='ALL'
-    ?STATE.items
-    :STATE.items.filter(i=>i.market_group===STATE.techGroup);
-
+  let base=STATE.techGroup==='ALL'?STATE.items:STATE.items.filter(i=>i.market_group===STATE.techGroup);
   const cov=coverageSummary(base,STATE.techTf);
   let items=base;
-
-  if(STATE.techCoverage&&STATE.techCoverage!=='all'){
-    items=base.filter(i=>techCoverage(i,STATE.techTf)===STATE.techCoverage);
-  }
-
+  if(STATE.techCoverage&&STATE.techCoverage!=='all')items=base.filter(i=>techCoverage(i,STATE.techTf)===STATE.techCoverage);
   const rows=items.map(i=>{
     const daily=technicalSignalRecord(i,'daily_signal');
     const weekly=technicalSignalRecord(i,'weekly_signal');
-
+    const rotation=rotationRecord(i);
+    const priceRrg=rrgPoint(rotation?.return_rrg);
+    const volumeRrg=rrgPoint(rotation?.volume_rrg);
+    const q=priceRrg?.quadrant||null;
     return {
       Group:i.market_group,
       Symbol:i.symbol,
@@ -215,15 +219,21 @@ function renderTechnical(){
       'Daily Pivot':compactPivot(daily),
       'Weekly Pivot':compactPivot(weekly),
       Coverage:techCoverage(i,STATE.techTf),
+      'Price RRG':rrgQuadrantLabel(q),
+      'RS-Ratio':priceRrg?.rs_ratio??null,
+      'RS-Momentum':priceRrg?.rs_momentum??null,
+      'Volume RRG':rrgQuadrantLabel(volumeRrg?.quadrant),
+      'Rotation Direction':techRec(i)?.combined_interpretation?.rotation_direction?.replaceAll('_',' ')||rotationDirection(priceRrg),
+      'Combined Interpretation':techRec(i)?.combined_interpretation?.interpretation||combinedInterpretation(daily?.signal,weekly?.signal,q),
       _item:i
     };
   });
-
+  const rotationCount=base.filter(i=>rotationRecord(i)?.return_rrg).length;
   document.getElementById('app').innerHTML=`
     <div class="pnl">
       <div class="ptl">
         Technical Analysis — one table, table-level filters
-        <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending</span>
+        <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending · ${rotationCount}/${base.length} with price Rotation</span>
       </div>
       <div class="controls">
         <select class="select" onchange="STATE.techGroup=this.value;STATE.filter='';render()">
@@ -238,9 +248,9 @@ function renderTechnical(){
           <option value="complete" ${STATE.techCoverage==='complete'?'selected':''}>Complete technical rows</option>
           <option value="partial" ${STATE.techCoverage==='partial'?'selected':''}>Partial / price rows</option>
           <option value="pending" ${STATE.techCoverage==='pending'?'selected':''}>Data pending rows</option>
-          <option value="all" ${STATE.techCoverage==='all'?'selected':''}>All 150 instruments</option>
+          <option value="all" ${STATE.techCoverage==='all'?'selected':''}>All ${base.length} instruments</option>
         </select>
-        <input class="search" placeholder="Filter symbol/name…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()">
+        <input class="search" placeholder="Filter symbol/name/rotation…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()">
       </div>
       ${sortableTable(rows,'technical')}
     </div>`;
@@ -255,6 +265,15 @@ function cell(c,v){
 
   if(c==='Daily Pivot'||c==='Weekly Pivot')
     return `<td class="mono">${esc(v??'—')}</td>`;
+
+  if(c==='RS-Ratio'||c==='RS-Momentum')
+    return `<td class="mono">${v===null||v===undefined?'—':num(v).toFixed(2)}</td>`;
+
+  if(c==='Price RRG'||c==='Volume RRG')
+    return `<td>${v==='Unavailable'?'—':`<span class="zone ${String(v).toLowerCase()==='leading'?'best':String(v).toLowerCase()==='improving'?'better':String(v).toLowerCase()==='weakening'?'watch':String(v).toLowerCase()==='lagging'?'bad':'neutral'}">${esc(v)}</span>`}</td>`;
+
+  if(c==='Rotation Direction'||c==='Combined Interpretation')
+    return `<td class="small" style="text-align:left;white-space:normal;min-width:170px;max-width:280px">${esc(v||'—')}</td>`;
 
   if(c==='Level Detail')
     return `<td class="small muted">${esc(v||'')}</td>`;

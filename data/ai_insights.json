@@ -1,260 +1,274 @@
 {
   "schema_version": "1.0",
   "prompt_version": "v1.0",
-  "generated_at": "2026-11-21T21:15:20+00:00",
-  "asof": "2026-11-21",
+  "generated_at": "2026-11-24T14:07:01+00:00",
+  "asof": "2026-11-24",
   "insights": {
-    "pulse": {
-      "regime": "risk-on",
-      "thesis": "Broad market rotation toward risk‑on assets, led by India and Global groups, while US and commodities show weakness.",
-      "change_since_last_run": "Regime unchanged from prior run",
+    "detail:India Markets": {
+      "regime": "India Markets",
+      "thesis": "A few high‑performing, benchmark‑outperforming instruments with leading RRG drive the group, while many lagging RRG names and laggards near weekly S1 dilute upside.",
+      "change_since_last_run": "No material change from prior run",
       "confidence": {
         "level": "medium",
         "reasons": [
-          "India Markets weekly signal Good Buy (groups.India Markets.group_signals.weekly)",
-          "Global / International weekly Good Buy (groups.Global / International.group_signals.weekly)",
-          "Above weekly pivot count high in India Markets (28) (groups.India Markets.above_weekly_pivot_n)"
+          "Concentration evident from top‑3 MTD avg",
+          "Leading RRG instruments offset laggards",
+          "Dispersion high but manageable"
         ]
       },
       "evidence_for": [
         {
-          "claim": "India Markets weekly signal Good Buy",
+          "claim": "Top‑3 MTD average 17.28% shows concentration",
           "source_fields": [
-            "groups.India Markets.group_signals.weekly"
+            "agg.top3_mtd_avg"
           ]
         },
         {
-          "claim": "Global / International weekly Good Buy",
+          "claim": "^CNXPSUBANK outperforms bench (+8.31%) and is leading RRG",
           "source_fields": [
-            "groups.Global / International.group_signals.weekly"
+            "instruments.^CNXPSUBANK.mtd_vs_bench",
+            "instruments.^CNXPSUBANK.rrg_q"
           ]
         },
         {
-          "claim": "Above weekly pivot count high in India Markets (28)",
+          "claim": "NIFTY_FIN_SERVICE.NS beats bench (+5.89%) with Good Buy weekly",
           "source_fields": [
-            "groups.India Markets.above_weekly_pivot_n"
+            "instruments.NIFTY_FIN_SERVICE.NS.mtd_vs_bench",
+            "instruments.NIFTY_FIN_SERVICE.NS.sig.weekly"
           ]
         },
         {
-          "claim": "Top3 MTD average strong in India Markets (17.71)",
+          "claim": "MTD standard deviation 5.92% indicates high dispersion",
           "source_fields": [
-            "groups.India Markets.top3_mtd_avg"
-          ]
-        },
-        {
-          "claim": "Bonds Universe weekly Good Buy",
-          "source_fields": [
-            "groups.Bonds Universe.group_signals.weekly"
+            "agg.mtd_std"
           ]
         }
       ],
       "evidence_against": [
         {
-          "claim": "US Markets weekly Watch",
+          "claim": "SILVERBEES.NS down –24.43% vs bench",
           "source_fields": [
-            "groups.US Markets.group_signals.weekly"
+            "instruments.SILVERBEES.NS.mtd_vs_bench"
           ]
         },
         {
-          "claim": "US Markets MTD average negative (-6.35)",
+          "claim": "26 of 39 instruments are lagging RRG",
           "source_fields": [
-            "groups.US Markets.mtd_avg"
-          ]
-        },
-        {
-          "claim": "Commodities & Alternatives MTD average negative (-12.98)",
-          "source_fields": [
-            "groups.Commodities & Alternatives.mtd_avg"
+            "agg.rrg_mix.lagging"
           ]
         }
       ],
       "conflicts": [
         {
-          "claim": "US Markets weekly Watch conflicts with high above‑weekly‑pivot count in India Markets",
+          "claim": "HDFCBSE500.NS weekly Good Buy but lagging RRG",
           "source_fields": [
-            "groups.US Markets.group_signals.weekly",
-            "groups.India Markets.above_weekly_pivot_n"
+            "instruments.HDFCBSE500.NS.sig.weekly",
+            "instruments.HDFCBSE500.NS.rrg_q"
           ]
         },
         {
-          "claim": "US RRG mix lagging (18) contrasts with India RRG mix leading (4)",
+          "claim": "^CNXIT weekly Good Buy yet –13.52% vs bench",
           "source_fields": [
-            "groups.US Markets.rrg_mix.lagging",
-            "groups.India Markets.rrg_mix.leading"
+            "instruments.^CNXIT.sig.weekly",
+            "instruments.^CNXIT.mtd_vs_bench"
           ]
         }
       ],
-      "scenarios": [],
+      "scenarios": [
+        {
+          "name": "Breakout of leading bank",
+          "symbol": "^CNXPSUBANK",
+          "trigger": "close above weekly pivot",
+          "confirmation": "RRG leading reinforces strength",
+          "invalidation": "price falls below weekly S1",
+          "trigger_level_field": "instruments.^CNXPSUBANK.wk.pivot",
+          "trigger_level": 9686.93,
+          "trigger_direction": "above",
+          "invalidation_level_field": "instruments.^CNXPSUBANK.wk.s1",
+          "invalidation_level": 9459.72,
+          "invalidation_direction": "below"
+        },
+        {
+          "name": "Weakness in lagging large‑cap",
+          "symbol": "HDFCBSE500.NS",
+          "trigger": "close below weekly S1",
+          "confirmation": "RRG lagging confirms downside",
+          "invalidation": "price rises above weekly pivot",
+          "trigger_level_field": "instruments.HDFCBSE500.NS.wk.s1",
+          "trigger_level": 38.03,
+          "trigger_direction": "below",
+          "invalidation_level_field": "instruments.HDFCBSE500.NS.wk.pivot",
+          "invalidation_level": 38.39,
+          "invalidation_direction": "above"
+        },
+        {
+          "name": "Potential reversal of laggard",
+          "symbol": "SILVERBEES.NS",
+          "trigger": "close above weekly pivot",
+          "confirmation": "Breakout could lift group",
+          "invalidation": "price drops below weekly S1",
+          "trigger_level_field": "instruments.SILVERBEES.NS.wk.pivot",
+          "trigger_level": 150.0,
+          "trigger_direction": "above",
+          "invalidation_level_field": "instruments.SILVERBEES.NS.wk.s1",
+          "invalidation_level": 137.03,
+          "invalidation_direction": "below"
+        }
+      ],
       "ranked_candidates": [
         {
           "rank": 1,
-          "symbol": "NV20BEES.NS",
-          "reason": "India Markets top shortlist, pre_score 6, Good Buy weekly",
+          "symbol": "^CNXPSUBANK",
+          "reason": "Highest mtd_vs_bench (+8.31%) and leading RRG",
           "source_fields": [
-            "shortlist.NV20BEES.NS"
+            "instruments.^CNXPSUBANK.mtd_vs_bench",
+            "instruments.^CNXPSUBANK.rrg_q"
           ]
         },
         {
           "rank": 2,
           "symbol": "^NSEBANK",
-          "reason": "India Markets, strong MTD 17.51, leading RRG",
+          "reason": "Strong mtd_vs_bench (+7.45%) and leading RRG",
           "source_fields": [
-            "shortlist.^NSEBANK"
+            "instruments.^NSEBANK.mtd_vs_bench",
+            "instruments.^NSEBANK.rrg_q"
           ]
         },
         {
           "rank": 3,
-          "symbol": "HUTS.TO",
-          "reason": "Global / International, leading RRG, Good Buy weekly",
+          "symbol": "NIFTY_FIN_SERVICE.NS",
+          "reason": "Bench outperformance (+5.89%) with Good Buy weekly",
           "source_fields": [
-            "shortlist.HUTS.TO"
+            "instruments.NIFTY_FIN_SERVICE.NS.mtd_vs_bench",
+            "instruments.NIFTY_FIN_SERVICE.NS.sig.weekly"
           ]
         },
         {
           "rank": 4,
-          "symbol": "UUP",
-          "reason": "US Markets, leading RRG, Better Buy weekly",
+          "symbol": "NIFTY_PVT_BANK.NS",
+          "reason": "Positive mtd_vs_bench (+3.42%) and leading RRG",
           "source_fields": [
-            "shortlist.UUP"
+            "instruments.NIFTY_PVT_BANK.NS.mtd_vs_bench",
+            "instruments.NIFTY_PVT_BANK.NS.rrg_q"
           ]
         },
         {
           "rank": 5,
-          "symbol": "XST.TO",
-          "reason": "Canada Markets, leading RRG, Good Buy weekly",
+          "symbol": "NV20BEES.NS",
+          "reason": "Improving RRG despite modest bench lag",
           "source_fields": [
-            "shortlist.XST.TO"
+            "instruments.NV20BEES.NS.rrg_q"
           ]
         },
         {
           "rank": 6,
-          "symbol": "RING.TO",
-          "reason": "Canada Markets, leading RRG, Risk On weekly",
+          "symbol": "ECAPINSURE.NS",
+          "reason": "Slight positive bench gap (+0.5444%)",
           "source_fields": [
-            "shortlist.RING.TO"
+            "instruments.ECAPINSURE.NS.mtd_vs_bench"
           ]
         }
       ],
       "risks": [
-        "Bonds Universe deep drawdown (-52.53%) may limit risk‑on flow",
-        "Commodities & Alternatives extreme MTD decline (-12.98%) could spill over",
-        "US Markets weekly Watch suggests broader market weakness"
+        "High dispersion (MTD std 5.92%) may cause volatility",
+        "Majority lagging RRG could reverse trend",
+        "Lagging instruments near weekly S1 cap upside"
       ],
       "what_would_change_my_view": [
-        "If US weekly signal turned Good Buy (groups.US Markets.group_signals.weekly)",
-        "If above_weekly_pivot_n rose above 20 in US (groups.US Markets.above_weekly_pivot_n)"
+        "Lagging names break above weekly S1",
+        "RRG mix shifts to more leading/improving",
+        "MTD std drops indicating less dispersion"
       ],
       "sample_size_flags": [
-        "snapshots_available:1",
-        "history_insufficient"
+        "snapshots_available=2"
       ],
       "next_tab": {
-        "tab": "broad",
-        "target": "Group Rotation",
-        "why": "to drill into group‑level RRG and breadth details"
+        "tab": "none",
+        "target": "",
+        "why": "Insight complete"
       },
-      "key": "pulse",
+      "key": "detail:India Markets",
       "prior_call_review": [],
-      "generated_at": "2026-11-21T21:17:29+00:00",
-      "data_generated_at": "2026-11-21T19:38:08+00:00",
-      "asof": "2026-11-21",
+      "generated_at": "2026-11-24T14:12:19+00:00",
+      "data_generated_at": "2026-11-24T14:06:10+00:00",
+      "asof": "2026-11-24",
       "model": "openai/gpt-oss-120b",
       "prompt_version": "v1.0",
       "schema_version": "1.0",
-      "payload_hash": "cd4556af88bd8ca5",
-      "history_snapshots": 1,
+      "payload_hash": "90221a7866fb6dc6",
+      "history_snapshots": 2,
       "validation_warnings": []
     },
-    "broad": {
-      "regime": "broad",
-      "thesis": "Cross‑asset picture shows equity weakness, bond relative strength, safe‑haven stress and divergent crypto risk‑on pressure amid high volatility.",
-      "change_since_last_run": "No prior run data to compare.",
+    "detail:Global / International": {
+      "regime": "neutral",
+      "thesis": "Group MTD average is negative but a few instruments generate strong positive dispersion; RRG rotation suggests many names are lagging while top performers remain leading",
+      "change_since_last_run": "No new data since last run",
       "confidence": {
-        "level": "low",
+        "level": "medium",
         "reasons": [
-          "Evidence limited by single snapshot; meta.history_status indicates insufficient change‑over‑time data; signals mixed across asset classes."
+          "Mixed MTD outperformance versus many laggards",
+          "RRG mix shows majority lagging despite some leading instruments"
         ]
       },
       "evidence_for": [
         {
-          "claim": "US equities (^GSPC) show negative mtd -8.37% and moderate drawdown bucket, indicating weakness.",
+          "claim": "HUTS.TO outperforms benchmark MTD by 8.18%",
           "source_fields": [
-            "assets.^GSPC.ret.mtd",
-            "assets.^GSPC.dd.bucket"
+            "instruments.HUTS.TO.mtd_vs_bench"
           ]
         },
         {
-          "claim": "US Treasury (TLT) is above MA18 with Good Buy weekly signal, suggesting bond relative strength.",
+          "claim": "COMM.TO leads benchmark MTD by 4.54%",
           "source_fields": [
-            "assets.TLT.ma18_daily_pos",
-            "assets.TLT.sig.weekly"
+            "instruments.COMM.TO.mtd_vs_bench"
           ]
         },
         {
-          "claim": "Gold (GC=F) deep drawdown pctile 89.7 and severe bucket, indicating stress in safe‑haven commodity.",
+          "claim": "DBMF beats benchmark MTD by 0.9526%",
           "source_fields": [
-            "assets.GC=F.dd.pctile",
-            "assets.GC=F.dd.bucket"
+            "instruments.DBMF.mtd_vs_bench"
           ]
         },
         {
-          "claim": "Bitcoin (BTC-USD) weekly Risk On and drawdown pctile 71.2, showing risk‑on pressure despite weakness.",
+          "claim": "WSRI.TO exceeds benchmark MTD by 2.47%",
           "source_fields": [
-            "assets.BTC-USD.sig.weekly",
-            "assets.BTC-USD.dd.pctile"
-          ]
-        },
-        {
-          "claim": "US Dollar Index (UUP) posts +2.28% mtd and Better Buy weekly, indicating USD strength.",
-          "source_fields": [
-            "assets.UUP.ret.mtd",
-            "assets.UUP.sig.weekly"
+            "instruments.WSRI.TO.mtd_vs_bench"
           ]
         }
       ],
       "evidence_against": [
         {
-          "claim": "Indian equity (^NSEI) posts +10.07% mtd and Good Buy weekly, contradicting global equity weakness.",
+          "claim": "EWT underperforms benchmark MTD by -10.07%",
           "source_fields": [
-            "assets.^NSEI.ret.mtd",
-            "assets.^NSEI.sig.weekly"
+            "instruments.EWT.mtd_vs_bench"
           ]
         },
         {
-          "claim": "Crude Oil (CL=F) shows +46.51% ytd despite overall risk‑on signals, offsetting commodity weakness.",
+          "claim": "ARKF lags benchmark YTD by -27.57%",
           "source_fields": [
-            "assets.CL=F.ret.ytd",
-            "assets.CL=F.sig.weekly"
+            "instruments.ARKF.ytd_vs_bench"
           ]
         },
         {
-          "claim": "High Yield (HYG) weekly Better Buy despite bond market stress, indicating credit resilience.",
+          "claim": "SHLD trails benchmark MTD by -8.07%",
           "source_fields": [
-            "assets.HYG.sig.weekly",
-            "assets.HYG.dd.bucket"
+            "instruments.SHLD.mtd_vs_bench"
           ]
         }
       ],
       "conflicts": [
         {
-          "claim": "Correlation US equity–US Treasury shifted from negative c60 (-0.06) to positive c250 (0.18), conflicting bond‑equity relationship.",
+          "claim": "Group weekly signal Better Buy but PZW.TO shows Best Buy weekly",
           "source_fields": [
-            "corr.^GSPC~TLT.c60",
-            "corr.^GSPC~TLT.c250"
+            "agg.group_signals.weekly",
+            "instruments.PZW.TO.sig.weekly"
           ]
         },
         {
-          "claim": "US equity–Gold correlation c60 0.46 vs c250 0.30, weakening safe‑haven link.",
+          "claim": "RRG mix shows many lagging (25) yet top performers have leading RRG",
           "source_fields": [
-            "corr.^GSPC~GC=F.c60",
-            "corr.^GSPC~GC=F.c250"
-          ]
-        },
-        {
-          "claim": "Crypto–USD correlation c60 -0.19 vs c250 -0.17, divergent from equity‑USD patterns.",
-          "source_fields": [
-            "corr.BTC-USD~UUP.c60",
-            "corr.BTC-USD~UUP.c250"
+            "agg.rrg_mix.lagging",
+            "instruments.HUTS.TO.rrg_q"
           ]
         }
       ],
@@ -262,92 +276,81 @@
       "ranked_candidates": [
         {
           "rank": 1,
-          "symbol": "^NSEI",
-          "reason": "Strong +10.07% mtd and Good Buy weekly signal.",
+          "symbol": "HUTS.TO",
+          "reason": "MTD outperformance 8.18%",
           "source_fields": [
-            "assets.^NSEI.ret.mtd",
-            "assets.^NSEI.sig.weekly"
+            "instruments.HUTS.TO.mtd_vs_bench"
           ]
         },
         {
           "rank": 2,
-          "symbol": "TLT",
-          "reason": "Above MA18, Good Buy weekly, and positive stretch_z_ma18.",
+          "symbol": "COMM.TO",
+          "reason": "MTD outperformance 4.54%",
           "source_fields": [
-            "assets.TLT.ma18_daily_pos",
-            "assets.TLT.sig.weekly",
-            "assets.TLT.st.stretch_z_ma18"
+            "instruments.COMM.TO.mtd_vs_bench"
           ]
         },
         {
           "rank": 3,
-          "symbol": "GC=F",
-          "reason": "Severe drawdown pctile 89.7 and Watch signals across horizons.",
+          "symbol": "DBMF",
+          "reason": "MTD outperformance 0.9526%",
           "source_fields": [
-            "assets.GC=F.dd.pctile",
-            "assets.GC=F.sig.weekly"
+            "instruments.DBMF.mtd_vs_bench"
           ]
         },
         {
           "rank": 4,
-          "symbol": "BTC-USD",
-          "reason": "Risk On weekly despite deep drawdown pctile 71.2.",
+          "symbol": "WSRI.TO",
+          "reason": "MTD outperformance 2.47%",
           "source_fields": [
-            "assets.BTC-USD.sig.weekly",
-            "assets.BTC-USD.dd.pctile"
+            "instruments.WSRI.TO.mtd_vs_bench"
           ]
         },
         {
           "rank": 5,
-          "symbol": "UUP",
-          "reason": "Positive +2.28% mtd and Better Buy weekly, indicating USD strength.",
+          "symbol": "CGDV.TO",
+          "reason": "MTD outperformance 1.21%",
           "source_fields": [
-            "assets.UUP.ret.mtd",
-            "assets.UUP.sig.weekly"
+            "instruments.CGDV.TO.mtd_vs_bench"
           ]
         },
         {
           "rank": 6,
-          "symbol": "^INDIAVIX",
-          "reason": "Weekly Risk On, high volatility could amplify market stress.",
+          "symbol": "DRFD.TO",
+          "reason": "MTD outperformance 1.18%",
           "source_fields": [
-            "assets.^INDIAVIX.sig.weekly"
+            "instruments.DRFD.TO.mtd_vs_bench"
           ]
         }
       ],
       "risks": [
-        "Deep drawdowns in gold (pctile 89.7) and crypto (pctile 71.2) increase downside vulnerability.",
-        "Insufficient historical snapshots limit confidence in trend persistence.",
-        "India VIX weekly Risk On suggests potential volatility spikes.",
-        "Seasonal averages modest; reliance on seasonality may be weak."
+        "High drawdowns in laggards like SHLD (-26.98%)",
+        "Concentration on few outperformance drivers",
+        "Group MTD average is negative (-4.0%)"
       ],
       "what_would_change_my_view": [
-        "Converging c60 and c250 correlations would raise confidence in regime assessment.",
-        "Any asset crossing above its 18‑day MA18 with positive stretch would signal momentum shift.",
-        "Availability of additional snapshots enabling change‑over‑time analysis."
+        "If weekly signals turn to Best Buy for top performers",
+        "If lagging RRG count drops below leading count"
       ],
       "sample_size_flags": [
-        "snapshots_available:1",
-        "meta.history_status:insufficient",
-        "assets.^GSPC.st.n:2520",
-        "assets.^NSEI.season.n_years:20",
-        "assets.^NSEI.annual.years:20"
+        "snapshots_available:2",
+        "history_status:ok"
       ],
       "next_tab": {
-        "tab": "none",
-        "target": "",
-        "why": "Broad insight completed."
+        "tab": "pulse",
+        "target": "Global / International",
+        "why": "To watch signal shifts"
       },
-      "key": "broad",
+      "key": "detail:Global / International",
       "prior_call_review": [],
-      "generated_at": "2026-11-21T21:18:33+00:00",
-      "data_generated_at": "2026-11-21T19:38:08+00:00",
-      "asof": "2026-11-21",
+      "generated_at": "2026-11-24T14:15:54+00:00",
+      "data_generated_at": "2026-11-24T14:06:10+00:00",
+      "asof": "2026-11-24",
       "model": "openai/gpt-oss-120b",
       "prompt_version": "v1.0",
       "schema_version": "1.0",
-      "payload_hash": "beb16e7c0532be1b",
-      "history_snapshots": 1,
+      "payload_hash": "c58a11891cafac67",
+      "history_snapshots": 2,
       "validation_warnings": []
     }
   },
@@ -355,20 +358,22 @@
     "technical": [
       "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
     ],
-    "detail:India Markets": [
+    "pulse": [
       "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
     ],
+    "broad": [
+      "confidence.reasons: trade instruction wording ('short')",
+      "evidence_for[3]: trade instruction wording ('short')",
+      "next_tab.why: trade instruction wording ('short')"
+    ],
     "detail:US Markets": [
-      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_com"
     ],
     "detail:Canada Markets": [
       "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
     ],
-    "detail:Global / International": [
-      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
-    ],
     "detail:Bonds Universe": [
-      "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"
+      "call/parse error: HTTP 400: {\"error\":{\"message\":\"max completion tokens reached before generating a valid document: the output was truncated to fit max_completion_tokens and is missing required content. Increase max_com"
     ],
     "detail:Commodities & Alternatives": [
       "call/parse error: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_gener"

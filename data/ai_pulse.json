@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "prompt_version": "ai-pulse-v1.2-independent-batches",
-  "generated_at": "2026-11-25T20:19:44+00:00",
-  "data_generated_at": "2026-11-25T17:48:39+00:00",
+  "prompt_version": "ai-pulse-v2.0-independent-batches-executive",
+  "generated_at": "2026-11-25T21:43:07+00:00",
+  "data_generated_at": "2026-11-25T20:32:16+00:00",
   "asof": "2026-11-25",
-  "model": "openai/gpt-oss-120b",
+  "model": "openai/gpt-oss-20b,openai/gpt-oss-120b,fallback",
   "meta": {
-    "data_generated_at": "2026-11-25T17:48:39+00:00",
+    "data_generated_at": "2026-11-25T20:32:16+00:00",
     "asof": "2026-11-25",
     "universe_count": 206,
     "full_data_count": 180,
@@ -18,465 +18,517 @@
     "rotation_instruments": 180,
     "instruments_with_vsa": 206
   },
-  "market_overview": "The technical landscape is mixed. Canadian equities and several US ETFs show bullish weekly signals and leading RRG quadrants, indicating risk‑on bias, while many symbols sit below their 18‑day MA and a number of lagging instruments (e.g., RBOT, XMA.TO) temper optimism. Bonds display a blend of above‑MA strength with weakening RRG, and commodities/alternatives are largely risk‑off, below MA and flagged Watch. Overall the market leans neutral with pockets of upside in select equities and bonds and defensive pressure in commodities.",
-  "market_regime": "Mixed/Neutral with pockets of risk‑on in leading equities/bonds and risk‑off in commodities",
+  "market_overview": "Partial AI review: 9 batch(es) completed and 0 batch(es) failed. This is not a complete-universe conclusion.",
+  "market_regime": "Mixed / incomplete AI coverage",
+  "executive_conclusion": "AI synthesis was unavailable; rely on deterministic evidence and coverage status only.",
+  "group_analysis": [],
   "full_data_analysis": [
     {
-      "symbol": "NIF100BEES.NS",
-      "priority": "high",
-      "view": "Strong bullish bias with weekly Good Buy, above MA18, RS momentum 97.0 and VSA buying pressure.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; rs_momentum 97.0314; vsa_weekly Buying Pressure"
-    },
-    {
-      "symbol": "CONSUMBEES.NS",
-      "priority": "high",
-      "view": "Robust buy setup; weekly Good Buy, above MA18, RS momentum 96.5 and VSA buying pressure on both daily and weekly.",
-      "evidence": "weekly Good Buy; daily MA18 Above; rs_momentum 96.5472; vsa_daily Buying Pressure; vsa_weekly Buying Pressure"
-    },
-    {
-      "symbol": "ESG.NS",
-      "priority": "high",
-      "view": "Consistently bullish with weekly Good Buy, above MA18 and RS momentum 98.4; VSA neutral.",
-      "evidence": "weekly Good Buy; daily MA18 Above; rs_momentum 98.4286; vsa_daily Neutral"
-    },
-    {
       "symbol": "NV20BEES.NS",
-      "priority": "high",
-      "view": "Improving momentum (RS 100.6), weekly Good Buy, above MA18; VSA upthrust daily suggests potential upside.",
-      "evidence": "weekly Good Buy; daily MA18 Above; rs_momentum 100.6258; vsa_daily Upthrust"
+      "priority": "Tier 1",
+      "view": "Strong bullish momentum – RRG improving and VSA daily Upthrust support a continuation of the uptrend.",
+      "evidence": "Weekly Good Buy, RRG quadrant improving, VSA daily Upthrust, above MA18"
     },
     {
-      "symbol": "NIFTY_FIN_SERVICE.NS",
-      "priority": "high",
-      "view": "Leading RRG quadrant, RS 102.5, weekly Good Buy, above MA18; VSA strength coming in weekly.",
-      "evidence": "rrg quadrant leading; rs_momentum 102.474; weekly Good Buy; daily MA18 Above; vsa_weekly Strength Coming In"
-    },
-    {
-      "symbol": "NIFTY_PVT_BANK.NS",
-      "priority": "high",
-      "view": "Leading RRG, RS 105.6, weekly Good Buy, above MA18; no VSA data but price action is strong.",
-      "evidence": "rrg quadrant leading; rs_momentum 105.5669; weekly Good Buy; daily MA18 Above"
-    },
-    {
-      "symbol": "ALPHA.NS",
-      "priority": "medium",
-      "view": "Watch‑list level; weekly Good Buy but below MA18 and lagging RRG with RS 85.3; VSA neutral.",
-      "evidence": "weekly Good Buy; daily MA18 Below; rs_momentum 85.2673; rrg quadrant lagging"
-    },
-    {
-      "symbol": "HNGSNGBEES.NS",
-      "priority": "medium",
-      "view": "Mixed picture; weekly Good Buy below MA18, RRG lagging with RS 83.6 and annual Risk Off signal.",
-      "evidence": "weekly Good Buy; daily MA18 Below; rs_momentum 83.5615; annual_signal Risk Off"
+      "symbol": "HDFCQUAL.NS",
+      "priority": "Tier 1",
+      "view": "Positive trend – RRG lagging but VSA daily Strength Coming In indicates potential acceleration.",
+      "evidence": "Weekly Good Buy, RRG lagging, VSA daily Strength Coming In, above MA18"
     },
     {
       "symbol": "MAKEINDIA.NS",
-      "priority": "medium",
-      "view": "Weekly Good Buy above MA18; VSA upthrust daily indicates possible short‑term pullback.",
-      "evidence": "weekly Good Buy; daily MA18 Above; vsa_daily Upthrust"
+      "priority": "Tier 1",
+      "view": "Bullish signal – RRG lagging, VSA daily Upthrust and weekly Good Buy suggest a short‑term rally.",
+      "evidence": "Weekly Good Buy, RRG lagging, VSA daily Upthrust, above MA18"
     },
     {
-      "symbol": "ECAPINSURE.NS",
-      "priority": "medium",
-      "view": "Weekly Good Buy, above MA18, lagging RRG with RS 93.4; VSA neutral on both timeframes.",
-      "evidence": "weekly Good Buy; daily MA18 Above; rs_momentum 93.4158; vsa_daily Neutral"
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "priority": "Tier 1",
+      "view": "Leading RRG and weekly Strength Coming In point to a robust sectoral move.",
+      "evidence": "Weekly Good Buy, RRG leading, VSA weekly Strength Coming In, above MA18"
     },
     {
-      "symbol": "TNIDETF.NS",
-      "priority": "medium",
-      "view": "Weekly Good Buy, marginally above MA18, RS 92.8; VSA neutral, indicating modest bullishness.",
-      "evidence": "weekly Good Buy; daily MA18 Above; rs_momentum 92.8451; vsa_daily Neutral"
+      "symbol": "NIFTY_PVT_BANK.NS",
+      "priority": "Tier 1",
+      "view": "Leading RRG and Good Buy signal indicate a solid banking sector outlook.",
+      "evidence": "Weekly Good Buy, RRG leading, above MA18"
+    },
+    {
+      "symbol": "SILVERBEES.NS",
+      "priority": "Tier 3",
+      "view": "Weakness flagged – RRG lagging, VSA daily Selling Pressure and weekly Supply Coming In suggest a potential pullback.",
+      "evidence": "Weekly Good Buy, RRG lagging, VSA daily Selling Pressure, VSA weekly Supply Coming In"
+    },
+    {
+      "symbol": "^CNXENERGY",
+      "priority": "Tier 3",
+      "view": "Caution – RRG lagging, VSA weekly Stopping Volume indicates possible consolidation.",
+      "evidence": "Weekly Good Buy, RRG lagging, VSA weekly Stopping Volume"
+    },
+    {
+      "symbol": "PHARMABEES.NS",
+      "priority": "Tier 3",
+      "view": "Mixed signals – RRG weakening, VSA weekly Stopping Volume, weekly Risk On suggests volatility.",
+      "evidence": "Weekly Risk On, RRG weakening, VSA weekly Stopping Volume"
+    },
+    {
+      "symbol": "^CNXFMCG",
+      "priority": "High",
+      "view": "Strong bullish alignment across daily, weekly and monthly frames.",
+      "evidence": "Daily MA18 above (+6.65%); weekly Good Buy (+7.41% above MA18); monthly/annual Risk On; RRG lagging with rs_momentum 99.40; VSA weekly Buying Pressure."
     },
     {
       "symbol": "^CNXPSUBANK",
       "priority": "High",
-      "view": "Strong bullish bias with Good Buy weekly, leading RRG quadrant, RS momentum 103.4 and price well above MA18.",
-      "evidence": "weekly signal Good Buy; ma18_position Above MA18; distance_to_ma18_pct 10.60%; rrg quadrant leading; rs_momentum 103.43; vsa_weekly Strength Coming In."
+      "view": "Leading RRG with very high momentum supports a robust buy signal.",
+      "evidence": "Daily MA18 above (+5.98%); weekly Good Buy (+10.60% above MA18); RRG leading, rs_momentum 103.43; VSA weekly Strength Coming In."
     },
     {
       "symbol": "^NSEBANK",
       "priority": "High",
-      "view": "Similar to PSUBANK – Good Buy, leading quadrant, RS momentum 103.1 and robust above‑MA positioning.",
-      "evidence": "weekly Good Buy; ma18_position Above MA18; distance_to_ma18_pct 9.59%; rrg leading; rs_momentum 103.10; vsa_weekly Neutral."
-    },
-    {
-      "symbol": "XUU.TO",
-      "priority": "High",
-      "view": "US market leader with Good Buy, leading RRG, RS momentum 103.8 and price well below MA18 suggesting upside.",
-      "evidence": "weekly Good Buy; ma18_position Below MA18; distance_to_ma18_pct -5.39%; rrg leading; rs_momentum 103.77; vsa_weekly Supply Coming In."
-    },
-    {
-      "symbol": "COWZ",
-      "priority": "High",
-      "view": "Leading quadrant, Good Buy, RS momentum 100.3; price modestly below MA18 but close to pivot.",
-      "evidence": "weekly Good Buy; ma18_position Below MA18; distance_to_ma18_pct -1.76%; rrg leading; rs_momentum 100.29; vsa_weekly Neutral."
-    },
-    {
-      "symbol": "EQL.TO",
-      "priority": "High",
-      "view": "Strong bullish with Good Buy, leading quadrant, RS momentum 107.9 and Strength Coming In volume.",
-      "evidence": "weekly Good Buy; ma18_position Above MA18; distance_to_ma18_pct 0.58%; rrg leading; rs_momentum 107.92; vsa_daily Strength Coming In."
-    },
-    {
-      "symbol": "FCUQ.TO",
-      "priority": "High",
-      "view": "Leading quadrant, Good Buy, RS momentum 104.95; price below MA18 indicating room to rise.",
-      "evidence": "weekly Good Buy; ma18_position Below MA18; distance_to_ma18_pct -5.81%; rrg leading; rs_momentum 104.95; vsa_weekly Supply Coming In."
-    },
-    {
-      "symbol": "^CNXFMCG",
-      "priority": "Medium",
-      "view": "India index with Good Buy, lagging quadrant but high RS momentum (99.4) and price 6.7% above MA18.",
-      "evidence": "weekly Good Buy; ma18_position Above MA18; distance_to_ma18_pct 7.41%; rrg lagging; rs_momentum 99.40; vsa_weekly Buying Pressure."
-    },
-    {
-      "symbol": "^CNXINFRA",
-      "priority": "Medium",
-      "view": "Better Buy weekly, lagging quadrant, RS momentum 96.3 and modest 2.1% above MA18.",
-      "evidence": "weekly Better Buy; ma18_position Above MA18; distance_to_ma18_pct 4.66%; rrg lagging; rs_momentum 96.26; vsa_weekly Buying Pressure."
-    },
-    {
-      "symbol": "^CNXPHARMA",
-      "priority": "Medium",
-      "view": "Good Buy weekly, weakening quadrant, RS momentum 94.7, price 3.25% above MA18.",
-      "evidence": "weekly Good Buy; ma18_position Above MA18; distance_to_ma18_pct 7.17%; rrg weakening; rs_momentum 94.74; vsa_weekly Neutral."
-    },
-    {
-      "symbol": "^CNXREALTY",
-      "priority": "Medium",
-      "view": "Better Buy weekly, weakening quadrant, RS momentum 96.4, price 5% above MA18.",
-      "evidence": "weekly Better Buy; ma18_position Above MA18; distance_to_ma18_pct 7.20%; rrg weakening; rs_momentum 96.44; vsa_weekly Buying Pressure."
-    },
-    {
-      "symbol": "^CNXMNC",
-      "priority": "Medium",
-      "view": "Better Buy weekly, lagging quadrant, RS momentum 85.6, mixed MA18 positioning (above daily, below weekly).",
-      "evidence": "weekly Better Buy; daily ma18_position Above MA18; weekly ma18_position Below MA18; rrg lagging; rs_momentum 85.64; vsa_weekly Buying Pressure."
-    },
-    {
-      "symbol": "^CNXMETAL",
-      "priority": "Low",
-      "view": "Good Buy weekly but price 6.4% below MA18, lagging quadrant, low RS momentum (81.8) and stopping volume.",
-      "evidence": "weekly Good Buy; ma18_position Below MA18; distance_to_ma18_pct -8.94%; rrg lagging; rs_momentum 81.80; vsa_weekly Stopping Volume."
-    },
-    {
-      "symbol": "GROWWRAIL.NS",
-      "priority": "Low",
-      "view": "Good Buy weekly, price 4.5% below MA18, lagging quadrant, RS momentum 91.1, annual signal Risk Off.",
-      "evidence": "weekly Good Buy; ma18_position Below MA18; distance_to_ma18_pct -4.54%; rrg lagging; rs_momentum 91.07; vsa_daily No Supply."
-    },
-    {
-      "symbol": "SPHB",
-      "priority": "Lagging/Caution",
-      "view": "Weekly watch, below MA18, lagging quadrant, RS momentum 84, risk‑off monthly signal.",
-      "evidence": "weekly signal Watch; daily MA18 Below; RRG lagging; rs_momentum 84.17; vsa_daily Neutral"
-    },
-    {
-      "symbol": "USMV",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 109.5, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Below but weekly MA18 Above; RRG leading; rs_momentum 109.50; vsa_weekly Neutral"
-    },
-    {
-      "symbol": "VIG",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 107.8, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Below; RRG leading; rs_momentum 107.80; vsa_weekly Neutral"
-    },
-    {
-      "symbol": "ZLU.TO",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 117.5, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; RRG leading; rs_momentum 117.48; vsa_weekly Neutral"
+      "view": "Leading RRG and strong weekly buy reinforce bullish stance.",
+      "evidence": "Daily MA18 above (+6.17%); weekly Good Buy (+9.59% above MA18); RRG leading, rs_momentum 103.10; VSA weekly Neutral."
     },
     {
       "symbol": "UUP",
-      "priority": "Leading Bullish",
-      "view": "Weekly Better Buy, above MA18, leading quadrant, RS momentum 120.8, neutral VSA.",
-      "evidence": "weekly signal Better Buy; daily MA18 Above; RRG leading; rs_momentum 120.80; vsa_weekly Neutral"
+      "priority": "high",
+      "view": "Strong bullish bias",
+      "evidence": "Above MA18 (+0.81% daily, +3.07% weekly), leading quadrant, RS momentum 120.8, weekly \"Better Buy\", VSA neutral"
     },
     {
-      "symbol": "IHI",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 116.96, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; RRG leading; rs_momentum 116.96; vsa_weekly Neutral"
-    },
-    {
-      "symbol": "PEJ",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 106.6, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; RRG leading; rs_momentum 106.56; vsa_weekly Neutral"
-    },
-    {
-      "symbol": "KIE",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 114.0, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; RRG leading; rs_momentum 114.04; vsa_weekly Neutral"
+      "symbol": "ZLU.TO",
+      "priority": "high",
+      "view": "Strong bullish bias",
+      "evidence": "Above MA18 (+0.34% daily, +4.34% weekly), leading quadrant, RS momentum 117.48, weekly \"Good Buy\", VSA neutral"
     },
     {
       "symbol": "XLU",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 115.6, neutral VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Above; RRG leading; rs_momentum 115.60; vsa_weekly Neutral"
+      "priority": "high",
+      "view": "Strong bullish bias",
+      "evidence": "Above MA18 (+0.33% daily, +2.45% weekly), leading quadrant, RS momentum 115.6, weekly \"Good Buy\", VSA daily No Demand"
     },
     {
-      "symbol": "XLV",
-      "priority": "Leading Bullish",
-      "view": "Weekly Good Buy, above MA18, leading quadrant, RS momentum 110.7, supply coming in VSA.",
-      "evidence": "weekly signal Good Buy; daily MA18 Below but weekly MA18 Above; RRG leading; rs_momentum 110.71; vsa_weekly Supply Coming In"
+      "symbol": "XLP",
+      "priority": "high",
+      "view": "Strong bullish bias",
+      "evidence": "Above MA18 (+1.82% daily, +6.91% weekly), leading quadrant, RS momentum 117.99, weekly \"Good Buy\", VSA daily No Demand"
+    },
+    {
+      "symbol": "KIE",
+      "priority": "high",
+      "view": "Strong bullish bias",
+      "evidence": "Above MA18 (+1.63% daily, +4.59% weekly), leading quadrant, RS momentum 114.04, weekly \"Good Buy\", VSA neutral"
+    },
+    {
+      "symbol": "SPHB",
+      "priority": "low",
+      "view": "Weak/negative bias",
+      "evidence": "Below MA18 (-9.92% daily, -20.28% weekly), lagging quadrant, RS momentum 84.17, weekly \"Watch\", VSA neutral"
+    },
+    {
+      "symbol": "SOXX",
+      "priority": "low",
+      "view": "Weak/negative bias",
+      "evidence": "Well below MA18 (-15.11% daily, -241.80% weekly), lagging quadrant, RS momentum 24.96, weekly \"Watch\", VSA daily No Demand, weekly Selling Pressure"
+    },
+    {
+      "symbol": "XLK",
+      "priority": "low",
+      "view": "Weak/negative bias",
+      "evidence": "Below MA18 (-8.69% daily, -18.82% weekly), lagging quadrant, RS momentum 87.34, weekly \"Watch\", VSA weekly Supply Coming In"
+    },
+    {
+      "symbol": "XBI",
+      "priority": "medium",
+      "view": "Mixed bias",
+      "evidence": "Above MA18 (+2.28% daily, +0.07% weekly), weakening quadrant, RS momentum 88.29, weekly \"Risk On\", VSA neutral"
+    },
+    {
+      "symbol": "XLE",
+      "priority": "medium",
+      "view": "Mixed bias",
+      "evidence": "Below MA18 (-2.86% daily, -4.31% weekly), weakening quadrant, RS momentum 99.42, weekly \"Good Buy\", VSA neutral"
     },
     {
       "symbol": "HERO.TO",
-      "priority": "High",
-      "view": "Strong bullish bias with price above MA18 and leading quadrant.",
-      "evidence": "Weekly Good Buy, MA18 above, RS momentum 124.64, VSA Buying Pressure daily"
+      "priority": "high",
+      "view": "Strong bullish bias; above MA18, leading quadrant, RS 124.6, buying‑pressure VSA and Good Buy weekly.",
+      "evidence": "Above MA18 (1.58% daily), leading RRG, RS 124.64, VSA daily buying pressure, weekly Good Buy."
     },
     {
       "symbol": "ZLB.TO",
-      "priority": "High",
-      "view": "Bullish with price above MA18 and leading quadrant.",
-      "evidence": "Weekly Better Buy, MA18 above, RS momentum 116.78, annual Risk On"
+      "priority": "high",
+      "view": "Bullish with above‑MA18 price, leading quadrant, RS 116.8 and Better Buy weekly.",
+      "evidence": "Above MA18 (0.30% daily), leading RRG, RS 116.78, weekly Better Buy, monthly Good Buy."
     },
     {
       "symbol": "TQSM.TO",
-      "priority": "High",
-      "view": "Leading quadrant and Good Buy weekly despite being below MA18.",
-      "evidence": "Weekly Good Buy, RS momentum 103.74, annual Risk On"
+      "priority": "high",
+      "view": "Bullish despite being below MA18; leading quadrant, RS 103.7 and Good Buy weekly.",
+      "evidence": "Below MA18 (-2.77% daily), leading RRG, RS 103.74, weekly Good Buy."
     },
     {
       "symbol": "XMC.TO",
-      "priority": "High",
-      "view": "Leading quadrant, Good Buy weekly, strong supply‑coming‑in VSA.",
-      "evidence": "Weekly Good Buy, RS momentum 103.71, VSA Supply Coming In weekly (vol ratio 1.908)"
+      "priority": "medium",
+      "view": "Bullish; below MA18 but leading quadrant, RS 103.7 and Good Buy weekly, supply‑coming‑in VSA weekly.",
+      "evidence": "Below MA18 (-1.88% daily), leading RRG, RS 103.71, weekly Good Buy, VSA weekly supply."
     },
     {
       "symbol": "CIBR.TO",
-      "priority": "Medium",
-      "view": "Leading quadrant but price below MA18 and supply pressure.",
-      "evidence": "Weekly Good Buy, RS momentum 106.83, VSA Supply Coming In weekly (vol ratio 3.923)"
-    },
-    {
-      "symbol": "XDNA.TO",
-      "priority": "Medium",
-      "view": "Weakening quadrant with mixed signals; weekly Good Buy but MA18 above.",
-      "evidence": "Weekly Good Buy, quadrant weakening, RS momentum 95.96, VSA Neutral"
-    },
-    {
-      "symbol": "XESG.TO",
-      "priority": "Medium",
-      "view": "Improving quadrant, Better Buy weekly, supply pressure.",
-      "evidence": "Weekly Better Buy, RS momentum 100.41, VSA Supply Coming In weekly (vol ratio 2.431)"
+      "priority": "medium",
+      "view": "Bullish; below MA18, leading quadrant, RS 106.8, Good Buy weekly, high weekly volume supply.",
+      "evidence": "Below MA18 (-2.03% daily), leading RRG, RS 106.83, weekly Good Buy, VSA weekly supply (vol 3.92)."
     },
     {
       "symbol": "AIPO",
-      "priority": "Low",
-      "view": "Lagging quadrant, deep below MA18, risk‑off monthly.",
-      "evidence": "Weekly Watch, RS momentum 78.22, annual Watch, VSA Neutral"
+      "priority": "high",
+      "view": "Strong bearish pressure; far below MA18, lagging quadrant, RS 78.2 and risk‑off signals.",
+      "evidence": "Below MA18 (-10.65% daily, -29.52% weekly), lagging RRG, RS 78.22, annual Risk Off."
     },
     {
       "symbol": "CIAI.TO",
-      "priority": "Low",
-      "view": "Lagging quadrant, strong below MA18, supply pressure.",
-      "evidence": "Weekly Watch, RS momentum 86.36, VSA Supply Coming In weekly (vol ratio 1.942)"
+      "priority": "high",
+      "view": "Bearish; deep discount to MA18, lagging quadrant, RS 86.4 and risk‑off monthly.",
+      "evidence": "Below MA18 (-11.55% daily, -24.79% weekly), lagging RRG, RS 86.36, monthly Risk Off."
+    },
+    {
+      "symbol": "ZJG.TO",
+      "priority": "high",
+      "view": "Bearish; large distance below MA18, lagging quadrant, RS 70.5 and risk‑off signals.",
+      "evidence": "Below MA18 (-16.40% daily, -31.24% weekly), lagging RRG, RS 70.48, annual Risk Off."
+    },
+    {
+      "symbol": "MORE.TO",
+      "priority": "medium",
+      "view": "Lagging with risk‑off tilt; below MA18, lagging quadrant, RS 88.4 and No Demand VSA daily.",
+      "evidence": "Below MA18 (-7.79% daily, -13.64% weekly), lagging RRG, RS 88.43, VSA daily No Demand."
+    },
+    {
+      "symbol": "RBOT.TO",
+      "priority": "medium",
+      "view": "Lagging; deep below MA18, lagging quadrant, RS 88.4 and risk‑off annual.",
+      "evidence": "Below MA18 (-8.51% daily, -20.33% weekly), lagging RRG, RS 88.35, annual Risk Off."
     },
     {
       "symbol": "RING.TO",
-      "priority": "high",
-      "view": "Strong bullish case: above MA18, Good Buy weekly, leading RRG, and VSA shows no demand but volume ratio low, suggesting room for upside.",
-      "evidence": "daily_ma18 Above MA18; weekly signal Good Buy; rrg quadrant leading; rs_momentum 127.8; vsa_weekly Strength Coming In"
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Daily price 8% above MA18, weekly Good Buy, RRG leading, VSA weekly Strength Coming In (vol ratio 2.90) despite daily No Demand."
     },
     {
       "symbol": "XST.TO",
-      "priority": "high",
-      "view": "Robust upside potential: above MA18, Good Buy weekly, leading RRG, and high weekly volume ratio indicating strong buying pressure.",
-      "evidence": "daily_ma18 Above MA18; weekly signal Good Buy; rrg quadrant leading; rs_momentum 122.2; vsa_weekly Stopping Volume vol_ratio 4.294"
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Above MA18 (+2.2% daily), weekly Good Buy (+6.6% to MA18), RRG leading, VSA weekly Stopping Volume (vol ratio 4.29) indicating possible near‑term exhaustion."
     },
     {
       "symbol": "XUT.TO",
-      "priority": "high",
-      "view": "Bullish alignment: above MA18, Better Buy weekly, leading RRG, and weekly VSA shows buying pressure.",
-      "evidence": "daily_ma18 Above MA18; weekly signal Better Buy; rrg quadrant leading; rs_momentum 122.4; vsa_weekly Buying Pressure vol_ratio 1.541"
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Above MA18 (+1.9% daily), weekly Better Buy (+6.1% to MA18), RRG leading, VSA weekly Buying Pressure (vol ratio 1.54)."
     },
     {
       "symbol": "CGDV.TO",
-      "priority": "high",
-      "view": "Positive outlook: above MA18, Better Buy weekly, leading RRG and neutral VSA with modest volume, supporting a risk‑on stance.",
-      "evidence": "daily_ma18 Above MA18; weekly signal Better Buy; rrg quadrant leading; rs_momentum 111.8; vsa_daily Neutral vol_ratio 0.764"
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Above MA18 (+0.2% daily), weekly Better Buy (+3.4% to MA18), RRG leading, VSA neutral with modest volume."
     },
     {
       "symbol": "DBMF",
-      "priority": "medium",
-      "view": "Generally bullish: below MA18 but close, Better Buy weekly, leading RRG, and neutral VSA; price may test MA18 soon.",
-      "evidence": "daily_ma18 Below MA18 (-1.03%); weekly signal Better Buy; rrg quadrant leading; rs_momentum 107.5; vsa_daily Neutral vol_ratio 0.319"
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Below MA18 (-1.0% daily) but weekly Better Buy (-1.6% to MA18), RRG leading, VSA neutral."
     },
     {
-      "symbol": "WSRI.TO",
-      "priority": "medium",
-      "view": "Mixed signals: weekly above MA18 with Better Buy, leading RRG, but daily price still below MA18; VSA unavailable daily.",
-      "evidence": "daily_ma18 Below MA18 (-1.36%); weekly signal Better Buy; rrg quadrant leading; rs_momentum 109.0; vsa_weekly Supply Coming In vol_ratio 1.756"
-    },
-    {
-      "symbol": "RBOT",
-      "priority": "low",
-      "view": "Extreme bearish: far below MA18, lagging RRG, very low rs_momentum, and VSA indicating no supply, suggesting deep weakness.",
-      "evidence": "daily_ma18 Below MA18 (-744%); weekly signal Watch; rrg quadrant lagging; rs_momentum 7.37; vsa_daily No Supply vol_ratio 0.504"
+      "symbol": "ZWB.TO",
+      "priority": "High",
+      "view": "Bullish",
+      "evidence": "Below MA18 (-5.8% daily), weekly Good Buy (-6.5% to MA18), RRG leading, VSA daily No Demand (vol ratio 0.49) but weekly neutral."
     },
     {
       "symbol": "XMA.TO",
-      "priority": "low",
-      "view": "Weakness evident: well below MA18, lagging RRG, risk‑off monthly signal and neutral VSA, indicating limited upside.",
-      "evidence": "daily_ma18 Below MA18 (-11.39%); weekly signal Risk On but below MA18; rrg quadrant lagging; rs_momentum 76.3; vsa_daily Neutral vol_ratio 0.481"
+      "priority": "Medium",
+      "view": "Bearish",
+      "evidence": "Strongly below MA18 (-11.4% daily, -21.8% weekly), RRG lagging, weekly Risk On signal but price far from pivot, VSA neutral."
     },
     {
-      "symbol": "HUTS.TO",
-      "priority": "High",
-      "view": "Strong bullish bias",
-      "evidence": "Daily MA18 above (+3.68%); weekly MA18 above (+6.32%); weekly Good Buy; RRG leading, RS momentum 115.99; volume neutral"
+      "symbol": "DRFD.TO",
+      "priority": "Medium",
+      "view": "Mixed",
+      "evidence": "Below MA18 (-4.3% daily, -6.2% weekly), RRG weakening, VSA daily Supply Coming In (vol ratio 2.06) suggesting selling pressure."
     },
     {
-      "symbol": "HHL.TO",
+      "symbol": "KSA",
       "priority": "High",
-      "view": "Bullish with leading momentum",
-      "evidence": "Daily MA18 below but weekly MA18 above (+2.82%); weekly Good Buy; RRG leading, RS momentum 107.99; volume neutral"
+      "view": "Strong buy signal with improving RRG momentum (103.6) and weekly Better Buy rating.",
+      "evidence": [
+        "weekly signal: Better Buy",
+        "RRG quadrant: improving",
+        "rs_momentum: 103.6",
+        "distance_to_ma18_pct: -5.13"
+      ]
+    },
+    {
+      "symbol": "XEU.TO",
+      "priority": "High",
+      "view": "Leading RRG momentum (100.9) and weekly Better Buy support.",
+      "evidence": [
+        "weekly signal: Better Buy",
+        "RRG quadrant: leading",
+        "rs_momentum: 100.9",
+        "distance_to_ma18_pct: -4.67"
+      ]
     },
     {
       "symbol": "CGR.TO",
       "priority": "High",
-      "view": "Bullish breakout potential",
-      "evidence": "Weekly MA18 above (+1.67%); weekly Good Buy; RRG leading, RS momentum 108.90; monthly Good Buy"
+      "view": "Leading RRG momentum (108.9) with weekly Good Buy and MA18 above.",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "ma18_position: Above MA18",
+        "RRG quadrant: leading",
+        "rs_momentum: 108.9"
+      ]
     },
     {
-      "symbol": "COMM.TO",
+      "symbol": "HHL.TO",
       "priority": "High",
-      "view": "Positive trend with leading RRG",
-      "evidence": "Daily MA18 above (+0.06%); weekly Better Buy; RRG leading, RS momentum 106.05; monthly Good Buy"
+      "view": "Leading RRG momentum (108.0) and weekly Good Buy with MA18 above.",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "ma18_position: Above MA18",
+        "RRG quadrant: leading",
+        "rs_momentum: 107.99"
+      ]
     },
     {
-      "symbol": "KSA",
-      "priority": "Medium",
-      "view": "Improving momentum",
-      "evidence": "Daily MA18 below (-1.56%); weekly Better Buy; RRG improving, RS momentum 103.64; monthly Good Buy"
+      "symbol": "HUTS.TO",
+      "priority": "High",
+      "view": "Leading RRG momentum (116.0) and weekly Good Buy with MA18 above.",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "ma18_position: Above MA18",
+        "RRG quadrant: leading",
+        "rs_momentum: 115.99"
+      ]
     },
     {
-      "symbol": "XEU.TO",
+      "symbol": "ZXM.TO",
       "priority": "Medium",
-      "view": "Leading with solid momentum",
-      "evidence": "Daily MA18 below (-4.09%); weekly Better Buy; RRG leading, RS momentum 100.95; monthly Good Buy"
+      "view": "Good Buy signal but lagging RRG momentum (94.7).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 94.7",
+        "distance_to_ma18_pct: -6.69"
+      ]
     },
     {
       "symbol": "AFK",
       "priority": "Medium",
-      "view": "Oversold but still bullish",
-      "evidence": "Daily MA18 below (-8.04%); weekly Good Buy with -15.76% distance; RRG lagging, RS momentum 83.92; VSA neutral (vol ratio 0.40)"
+      "view": "Good Buy signal with lagging RRG momentum (83.9).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 83.9",
+        "distance_to_ma18_pct: -15.76"
+      ]
     },
     {
-      "symbol": "EWT",
-      "priority": "Low",
-      "view": "Risk‑off, deep lagging",
-      "evidence": "Daily MA18 below (-11.56%); weekly Watch with -26.32% distance; RRG lagging, RS momentum 70.50; monthly Risk Off"
+      "symbol": "ASEA",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (90.8).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 90.8",
+        "distance_to_ma18_pct: -10.87"
+      ]
     },
     {
-      "symbol": "EWY",
-      "priority": "Low",
-      "view": "Risk‑off, weakening",
-      "evidence": "Daily MA18 below (-10.13%); weekly Watch with -30.22% distance; RRG lagging, RS momentum 66.37; monthly Risk Off"
+      "symbol": "ASHR",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (94.6).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 94.6",
+        "distance_to_ma18_pct: -10.71"
+      ]
     },
     {
-      "symbol": "ARKF",
-      "priority": "Low",
-      "view": "Mixed signals, risk‑on weekly but lagging overall",
-      "evidence": "Daily MA18 below (-8.19%); weekly Risk On with -16.88% distance; RRG lagging, RS momentum 92.57; monthly Risk Off"
+      "symbol": "BBJP",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (95.2).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 95.2",
+        "distance_to_ma18_pct: -8.23"
+      ]
+    },
+    {
+      "symbol": "EWA",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (96.9).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 96.9",
+        "distance_to_ma18_pct: -6.84"
+      ]
+    },
+    {
+      "symbol": "EWU",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (98.9).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 98.9",
+        "distance_to_ma18_pct: -3.39"
+      ]
+    },
+    {
+      "symbol": "EWZ",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (86.8).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 86.8",
+        "distance_to_ma18_pct: -19.78"
+      ]
+    },
+    {
+      "symbol": "VEE.TO",
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (95.2).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 95.2",
+        "distance_to_ma18_pct: -10.31"
+      ]
+    },
+    {
+      "symbol": "XAW.TO",
+      "priority": "Medium",
+      "view": "Good Buy signal with weakening RRG momentum (99.3).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: weakening",
+        "rs_momentum: 99.3",
+        "distance_to_ma18_pct: -6.08"
+      ]
     },
     {
       "symbol": "BASE.TO",
-      "priority": "Low",
-      "view": "Lagging with high supply volume",
-      "evidence": "Daily MA18 below (-6.85%); weekly Good Buy; RRG lagging, RS momentum 79.77; VSA weekly supply coming (vol ratio 5.44)"
+      "priority": "Medium",
+      "view": "Good Buy signal with lagging RRG momentum (79.8).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: lagging",
+        "rs_momentum: 79.8",
+        "distance_to_ma18_pct: -16.23"
+      ]
+    },
+    {
+      "symbol": "CIF.TO",
+      "priority": "Medium",
+      "view": "Good Buy signal with improving RRG momentum (102.9).",
+      "evidence": [
+        "weekly signal: Good Buy",
+        "RRG quadrant: improving",
+        "rs_momentum: 102.9",
+        "distance_to_ma18_pct: -3.66"
+      ]
     },
     {
       "symbol": "STPL.TO",
-      "priority": "High",
-      "view": "Strong bullish setup.",
-      "evidence": "Weekly signal Good Buy, MA18 above, +4.99% distance, RRG quadrant leading, RS momentum 115, VSA buying pressure, volume ratio 1.51."
+      "priority": "high",
+      "view": "Leading equity above the 18‑day MA with strong buying pressure and high RRG momentum.",
+      "evidence": "daily_ma18: Above MA18 (+0.47%); weekly signal: Good Buy; weekly ma18_position: Above MA18 (+5.0%); rrg quadrant: leading (RS momentum 114.97); vsa_daily: Buying Pressure (vol ratio 1.508)."
     },
     {
       "symbol": "CWW.TO",
-      "priority": "High",
-      "view": "Bullish with leading momentum.",
-      "evidence": "Weekly signal Good Buy, MA18 above, +0.51% distance, RRG quadrant leading, RS momentum 112.4, volume ratios neutral."
-    },
-    {
-      "symbol": "LQD",
-      "priority": "High",
-      "view": "Bond strength with upside potential.",
-      "evidence": "Daily MA18 above (+0.64%), weekly Better Buy, RRG quadrant weakening, RS momentum 97.7, VSA No Demand, volume ratio 0.60."
-    },
-    {
-      "symbol": "BNDX",
-      "priority": "High",
-      "view": "Favorable foreign bond outlook.",
-      "evidence": "Daily MA18 above (+0.45%), weekly Better Buy, RRG quadrant weakening, RS momentum 98.8, VSA Buying Pressure weekly, volume ratio 2.09."
+      "priority": "high",
+      "view": "Equity above the 18‑day MA, weekly Good Buy, and leading RRG quadrant suggest continued upside.",
+      "evidence": "daily_ma18: Below MA18 (-0.92%) but weekly ma18_position: Above MA18 (+0.51%); weekly signal: Good Buy; rrg quadrant: leading (RS momentum 112.39); monthly_signal: Good Buy; annual_signal: Risk On."
     },
     {
       "symbol": "IPAY",
-      "priority": "Medium",
-      "view": "Potential rebound but still below MA18.",
-      "evidence": "Daily MA18 below (-2.67%), weekly Good Buy, RRG quadrant improving, RS momentum 100.9, VSA neutral, volume ratio 0.18."
-    },
-    {
-      "symbol": "SHLD",
-      "priority": "Medium",
-      "view": "Oversold with supply pressure.",
-      "evidence": "Daily MA18 below (-2.28%), weekly Good Buy, RRG quadrant lagging, RS momentum 93.5, VSA weekly Supply Coming In, volume ratio 2.30."
+      "priority": "medium",
+      "view": "Improving RRG quadrant with weekly Good Buy despite being below the 18‑day MA.",
+      "evidence": "daily_ma18: Below MA18 (-2.67%); weekly signal: Good Buy; rrg quadrant: improving (RS momentum 100.92); vsa_daily: Neutral (vol ratio 0.181)."
     },
     {
       "symbol": "BOTZ",
-      "priority": "Medium",
-      "view": "Deeply discounted, lagging momentum.",
-      "evidence": "Daily MA18 below (-6.25%), weekly Good Buy, RRG quadrant lagging, RS momentum 85.5, VSA neutral, volume ratio 0.79."
+      "priority": "medium",
+      "view": "Strong weekly Good Buy but deep below MA18 and lagging RRG suggest risk‑off pressure.",
+      "evidence": "daily_ma18: Below MA18 (-6.25%); weekly signal: Good Buy; weekly ma18_distance: -18.07%; rrg quadrant: lagging (RS momentum 85.53); annual_signal: Risk Off."
     },
     {
       "symbol": "HYG",
-      "priority": "Medium",
-      "view": "High‑yield bond with modest upside.",
-      "evidence": "Daily MA18 below (-0.55%), weekly Better Buy, RRG quadrant lagging, RS momentum 95.0, VSA neutral, volume ratio 0.71."
+      "priority": "high",
+      "view": "Bond with Better Buy weekly, modestly below MA18 and lagging RRG, but annual Good Buy indicates relative strength.",
+      "evidence": "daily_ma18: Below MA18 (-0.55%); weekly signal: Better Buy; rrg quadrant: lagging (RS momentum 94.98); monthly_signal: Better Buy; annual_signal: Good Buy."
     },
     {
-      "symbol": "ETH-USD",
-      "priority": "Low",
-      "view": "Neutral‑to‑bearish; below MA18, weekly Watch, risk‑off monthly/annual, lagging RRG.",
-      "evidence": "daily_ma18 Below MA18; weekly signal Watch; monthly/annual Risk Off; RRG quadrant lagging; VSA neutral."
+      "symbol": "LQD",
+      "priority": "high",
+      "view": "Bond above MA18, weakening RRG quadrant but weekly Better Buy and No Demand VSA suggest price support.",
+      "evidence": "daily_ma18: Above MA18 (+0.64%); weekly signal: Better Buy; rrg quadrant: weakening (RS momentum 97.72); vsa_daily: No Demand (vol ratio 0.599)."
     },
     {
-      "symbol": "CGL.TO",
-      "priority": "Low",
-      "view": "Neutral; below MA18, weekly Watch, supply‑coming‑in weekly VSA, risk‑off backdrop.",
-      "evidence": "daily_ma18 Below MA18; weekly signal Watch; monthly/annual Risk Off; RRG improving; VSA weekly Supply Coming In."
+      "symbol": "BNDX",
+      "priority": "medium",
+      "view": "Bond above MA18 with weekly Buying Pressure VSA and Better Buy signals across horizons.",
+      "evidence": "daily_ma18: Above MA18 (+0.45%); weekly signal: Better Buy; vsa_weekly: Buying Pressure (vol ratio 2.093); monthly_signal: Better Buy; annual_signal: Good Buy."
+    },
+    {
+      "symbol": "NASA",
+      "priority": "low",
+      "view": "Deeply below MA18, lagging RRG and Watch weekly signal indicate potential further downside.",
+      "evidence": "daily_ma18: Below MA18 (-14.58%); weekly signal: Watch; rrg quadrant: lagging (RS momentum 88.75); annual_signal: Watch."
     },
     {
       "symbol": "GOLDBEES.NS",
       "priority": "High",
-      "view": "Bullish weekly Good Buy despite risk‑off macro; below MA18 but strong supply‑coming‑in VSA.",
-      "evidence": "weekly Good Buy; monthly Risk Off, annual Watch; RRG weakening; VSA weekly Supply Coming In."
-    },
-    {
-      "symbol": "SVR.TO",
-      "priority": "Low",
-      "view": "Mixed; strength‑coming‑in daily VSA but overall Watch weekly and risk‑off signals.",
-      "evidence": "daily_ma18 Below MA18; weekly Watch; monthly/annual Risk Off; RRG lagging; VSA daily Strength Coming In."
+      "view": "Weekly Good Buy despite being below MA18; VSA shows strong supply pressure and volume ratios >3, suggesting bullish momentum.",
+      "evidence": "Weekly Good Buy, distance to MA‑18 -19.7%, VSA weekly Supply Coming In, volume_ratio_20 3.414"
     },
     {
       "symbol": "XGD.TO",
-      "priority": "High",
-      "view": "Bullish weekly Risk On; weakening RRG but neutral VSA, still below MA18.",
-      "evidence": "weekly Risk On; monthly Watch, annual Watch; RRG weakening; VSA neutral."
+      "priority": "Medium",
+      "view": "Weekly Risk On with positive pivot distance, but still below MA18; VSA neutral.",
+      "evidence": "Weekly Risk On, distance to MA‑18 -18.56%, pivot +0.48%"
+    },
+    {
+      "symbol": "SVR.TO",
+      "priority": "Medium",
+      "view": "Daily VSA Strength Coming In and high volume ratio, weekly Watch; RRG lagging.",
+      "evidence": "VSA daily Strength Coming In, volume_ratio_20 2.261; RRG lagging"
+    },
+    {
+      "symbol": "CGL.TO",
+      "priority": "Medium",
+      "view": "RRG improving with rs_momentum >100, weekly Watch; VSA weekly Supply Coming In with volume ratio >2.",
+      "evidence": "RRG improving, rs_momentum 100.21; VSA weekly Supply Coming In, volume_ratio_20 2.456"
+    },
+    {
+      "symbol": "ETH-USD",
+      "priority": "Low",
+      "view": "RRG lagging, VSA neutral, weekly Watch; all MA positions below.",
+      "evidence": "RRG lagging, rs_momentum 89.98; VSA daily Neutral, volume_ratio_20 0.925"
     }
   ],
   "limited_data_analysis": [
     {
       "symbol": "^NSEI",
-      "view": "Strong bullish bias; above MA18, weekly Good Buy, risk‑on monthly/annual.",
+      "view": "Above MA18 and weekly Good Buy; monthly/annual Risk On, VSA neutral.",
       "available_evidence": [
+        "close",
         "daily_ma18",
         "weekly",
         "monthly_signal",
@@ -485,13 +537,62 @@
         "vsa_weekly"
       ],
       "limitations": [
-        "RRG unavailable"
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "^GSPC",
+      "view": "Below MA18 but weekly Good Buy; monthly Watch, annual Risk On, VSA neutral.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "XIC.TO",
+      "view": "Below MA18, weekly Good Buy, VSA weekly Supply Coming In with volume ratio 2.04.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "XEF.TO",
+      "view": "Below MA18, weekly Good Buy, VSA neutral.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
       ]
     },
     {
       "symbol": "TLT",
-      "view": "Defensive rally; above MA18, weekly and monthly Good Buy, neutral VSA.",
+      "view": "Above MA18, weekly Good Buy, monthly Good Buy, VSA neutral.",
       "available_evidence": [
+        "close",
         "daily_ma18",
         "weekly",
         "monthly_signal",
@@ -500,13 +601,14 @@
         "vsa_weekly"
       ],
       "limitations": [
-        "RRG unavailable"
+        "RRG"
       ]
     },
     {
       "symbol": "DBA",
-      "view": "Commodity‑linked upside; daily above MA18, weekly Better Buy, monthly Good Buy.",
+      "view": "Above MA18 daily but weekly Below MA18; weekly Better Buy, VSA neutral.",
       "available_evidence": [
+        "close",
         "daily_ma18",
         "weekly",
         "monthly_signal",
@@ -515,12 +617,124 @@
         "vsa_weekly"
       ],
       "limitations": [
-        "RRG unavailable"
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "MOO",
+      "view": "Below MA18, weekly Good Buy, VSA neutral.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "NIKL",
+      "view": "Below MA18, weekly Watch, Risk Off signals, VSA neutral with low volume.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "PALL",
+      "view": "Below MA18, weekly Watch, Risk Off, VSA neutral with moderate volume.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "PPLT",
+      "view": "Below MA18, weekly Watch, Risk Off, VSA neutral.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "REMX",
+      "view": "Below MA18, weekly Watch, Risk Off, VSA weekly Selling Pressure.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "COPP.TO",
+      "view": "Below MA18, weekly Watch, Risk Off, VSA weekly Supply Coming In.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "HLIT.TO",
+      "view": "Below MA18, weekly Watch, Risk Off, VSA weekly Supply Coming In.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
       ]
     },
     {
       "symbol": "BATT",
-      "view": "Price is 12.8% below the daily MA18 and 31.4% below the weekly MA18; weekly signal is Watch and both monthly and annual signals are Risk Off, with neutral VSA readings.",
+      "view": "Price is far below the 18‑day MA and weekly signal is Watch; risk‑off monthly/annual signals and neutral VSA suggest a bearish bias.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -536,7 +750,7 @@
     },
     {
       "symbol": "COW.TO",
-      "view": "Despite being 4.1% below the daily MA18, the weekly signal is \"Good Buy\" and monthly/annual signals are Watch, suggesting potential upside amid overall bearish backdrop.",
+      "view": "Weekly signal is Good Buy despite being below the 18‑day MA; near pivot and neutral VSA indicate upside potential.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -552,7 +766,7 @@
     },
     {
       "symbol": "HYDR",
-      "view": "Trading 12.1% under the daily MA18 and 37.8% under the weekly MA18; weekly signal Watch, monthly/annual Risk Off, VSA daily neutral but weekly shows Selling Pressure.",
+      "view": "Weekly selling pressure (volume ratio 1.88) and risk‑off signals point to downside momentum.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -568,7 +782,7 @@
     },
     {
       "symbol": "LIT",
-      "view": "Price sits 11.3% below daily MA18 and 28.9% below weekly MA18; weekly Watch, monthly/annual Risk Off, VSA neutral on both timeframes.",
+      "view": "Below MA18 with Watch weekly signal and risk‑off backdrop; VSA neutral, no clear demand.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -584,7 +798,7 @@
     },
     {
       "symbol": "NLR",
-      "view": "Down 12.2% from daily MA18 and 34.0% from weekly MA18; weekly Watch, monthly/annual Risk Off, VSA daily indicates No Demand and weekly suggests Supply Coming In.",
+      "view": "VSA daily shows No Demand and weekly indicates Supply Coming In; combined with risk‑off signals suggests further weakness.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -600,7 +814,7 @@
     },
     {
       "symbol": "SETM",
-      "view": "Trading 15.4% below daily MA18 and 43.2% below weekly MA18; weekly Watch, monthly/annual Risk Off, VSA daily neutral but weekly shows Supply Coming In.",
+      "view": "Weekly VSA signals Supply Coming In with high volume ratio (2.12); price deep below MA18 and risk‑off signals reinforce bearish pressure.",
       "available_evidence": [
         "close",
         "daily_ma18",
@@ -615,205 +829,2352 @@
       ]
     }
   ],
-  "priority_tiers": [
+  "opportunity_radar": [
     {
-      "tier": "high",
-      "description": "Strong bullish alignment across multiple indicators",
-      "symbols": [
-        "RING.TO",
-        "XST.TO",
-        "XUT.TO",
-        "CGDV.TO",
-        "HUTS.TO",
-        "HHL.TO",
-        "CGR.TO",
-        "COMM.TO",
-        "STPL.TO",
-        "CWW.TO",
-        "LQD",
-        "BNDX"
-      ]
+      "symbol": "CONSUMBEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: improving",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": []
     },
     {
-      "tier": "medium",
-      "description": "Generally positive but with mixed daily/weekly positioning",
-      "symbols": [
-        "DBMF",
-        "WSRI.TO",
-        "KSA",
-        "XEU.TO",
-        "AFK",
-        "IPAY",
-        "SHLD",
-        "BOTZ",
-        "HYG"
-      ]
+      "symbol": "HERO.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": []
     },
     {
-      "tier": "low",
-      "description": "Bearish or lagging technical profile",
-      "symbols": [
-        "RBOT",
-        "XMA.TO",
-        "EWT",
-        "EWY",
-        "ARKF",
-        "BASE.TO"
-      ]
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": []
+    },
+    {
+      "symbol": "RING.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": []
+    },
+    {
+      "symbol": "STPL.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": []
+    },
+    {
+      "symbol": "XST.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Stopping Volume"
+      ],
+      "limitations": []
+    },
+    {
+      "symbol": "XUT.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": []
+    },
+    {
+      "symbol": "^CNXPSUBANK",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": []
     }
   ],
   "daily_picks": [
     {
-      "symbol": "RING.TO",
-      "rationale": "Above 18‑day MA and leading RRG suggest continued upside on daily timeframe."
+      "symbol": "CONSUMBEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: improving",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
-      "symbol": "XST.TO",
-      "rationale": "Daily price above MA18 with strong weekly volume supports a bullish daily bias."
-    },
-    {
-      "symbol": "XUT.TO",
-      "rationale": "Daily above MA18 and weekly buying pressure indicate daily strength."
-    },
-    {
-      "symbol": "CGDV.TO",
-      "rationale": "Daily above MA18 and leading RRG make it a daily bullish candidate."
-    },
-    {
-      "symbol": "HUTS.TO",
-      "rationale": "Daily price above MA18 and leading RRG suggest immediate upside."
-    },
-    {
-      "symbol": "HHL.TO",
-      "rationale": "Weekly MA18 crossover with leading momentum."
-    },
-    {
-      "symbol": "CGR.TO",
-      "rationale": "Weekly MA18 above and strong RS momentum."
-    },
-    {
-      "symbol": "COMM.TO",
-      "rationale": "Daily MA18 just above, leading RRG."
+      "symbol": "HERO.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
       "symbol": "STPL.TO",
-      "rationale": "Above MA18, leading RRG, strong buying pressure – top daily watch."
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
-      "symbol": "CWW.TO",
-      "rationale": "Above MA18 with leading momentum and Good Buy weekly signal."
+      "symbol": "CGDV.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "LQD",
-      "rationale": "Above MA18, weakening RRG but Better Buy weekly and no demand signal suggests upside."
+      "symbol": "COMM.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Good Buy",
+        "Daily price RRG: leading",
+        "Daily VSA: Unavailable"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "BNDX",
-      "rationale": "Above MA18, weekly Better Buy and buying pressure volume."
+      "symbol": "ECAPINSURE.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: improving",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "IPAY",
-      "rationale": "Improving RRG quadrant and Good Buy weekly despite being below MA18."
+      "symbol": "HUTS.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "COW.TO",
-      "rationale": "Weekly Good Buy signal and Watch monthly/annual outlook suggest short‑term upside despite price below daily MA18."
+      "symbol": "IHI",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "KIE",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NIFTY_PVT_BANK.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Unavailable"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "PEJ",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "UUP",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XBI",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLRE",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XST.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XUT.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "ZLU.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXAUTO",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: improving",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXFMCG",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: improving",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXPSUBANK",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXREALTY",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^NSEBANK",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "AGG",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: No Supply"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "EBNK.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": -1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Below MA18",
+        "Daily signal: Good Buy",
+        "Daily price RRG: improving",
+        "Daily VSA: Stopping Volume"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "EQL.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": -1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Below MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "FLOT",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Good Buy",
+        "Daily price RRG: lagging",
+        "Daily VSA: No Supply"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "HDFCQUAL.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "HDFCSML250.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: No Supply"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "INFRA.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "MOM100.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NIF100BEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "RING.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: No Demand"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "VGIT",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: lagging",
+        "Daily VSA: No Supply"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLP",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: No Demand"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLU",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: No Demand"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XRE.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily price RRG: leading",
+        "Daily VSA: No Demand"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "DBA",
+      "group": "Commodities & Alternatives",
+      "region": "Commodities & Alternatives",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Good Buy",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [
+        "daily price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NG=F",
+      "group": "Commodities & Alternatives",
+      "region": "Commodities & Alternatives",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [
+        "daily price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "TLT",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [
+        "daily price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^NSEI",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "daily",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Daily MA18: Above MA18",
+        "Daily signal: Risk On",
+        "Daily VSA: Neutral"
+      ],
+      "limitations": [
+        "daily price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
     }
   ],
   "weekly_picks": [
     {
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
+    },
+    {
       "symbol": "RING.TO",
-      "rationale": "Weekly Good Buy, leading quadrant and proximity to pivot suggest upside potential."
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
       "symbol": "XST.TO",
-      "rationale": "Weekly Good Buy with high volume ratio and leading RRG."
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Stopping Volume"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
       "symbol": "XUT.TO",
-      "rationale": "Weekly Better Buy and buying pressure VSA reinforce a weekly bullish view."
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
-      "symbol": "DBMF",
-      "rationale": "Weekly Better Buy and leading RRG despite slight daily lag."
+      "symbol": "^CNXPSUBANK",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 4,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": true,
+      "adverse_alignment": false
     },
     {
-      "symbol": "WSRI.TO",
-      "rationale": "Weekly Better Buy with weekly MA18 above price and leading RRG."
+      "symbol": "CGDV.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "KSA",
-      "rationale": "Weekly Better Buy with improving RRG and RS >103."
-    },
-    {
-      "symbol": "XEU.TO",
-      "rationale": "Weekly Better Buy, leading RRG, solid momentum."
-    },
-    {
-      "symbol": "HUTS.TO",
-      "rationale": "Weekly Good Buy with MA18 above."
-    },
-    {
-      "symbol": "HHL.TO",
-      "rationale": "Weekly Good Buy with MA18 above."
-    },
-    {
-      "symbol": "STPL.TO",
-      "rationale": "Leading quadrant and weekly Good Buy indicate multi‑week strength."
+      "symbol": "CGR.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
       "symbol": "CWW.TO",
-      "rationale": "Weekly Good Buy with above‑MA18 support."
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "LQD",
-      "rationale": "Weekly Better Buy and above‑MA18 suggest bond rally."
+      "symbol": "HERO.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "HHL.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "HUTS.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "IHI",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "KIE",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NIFTY_PVT_BANK.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Unavailable"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NV20BEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: improving",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "PEJ",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "STPL.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "USMV",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "UUP",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "VIG",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLRE",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLU",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLY",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XRE.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: improving",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "ZLB.TO",
+      "group": "Canada Markets",
+      "region": "Canada",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "ZLU.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^INDIAVIX",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Risk On",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Unavailable"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^NSEBANK",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 3,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
       "symbol": "BNDX",
-      "rationale": "Weekly Better Buy plus buying‑pressure volume."
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "HYG",
-      "rationale": "Better Buy weekly in high‑yield space, modest upside."
+      "symbol": "CONSUMBEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
     },
     {
-      "symbol": "COW.TO",
-      "rationale": "Only instrument with a bullish weekly signal; could lead sector‑wide recovery if risk sentiment improves."
+      "symbol": "EQL.TO",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Supply Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "ICICIB22.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: lagging",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NIF100BEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "PHARMABEES.NS",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Risk On",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Stopping Volume"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "VGIT",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "WSRI.TO",
+      "group": "Global / International",
+      "region": "Global / International",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Supply Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLP",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Supply Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "XLV",
+      "group": "US Markets",
+      "region": "United States",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": 1,
+        "volume_spread": -1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: leading",
+        "Weekly VSA: Supply Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXAUTO",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Strength Coming In"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXFMCG",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly price RRG: lagging",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXINFRA",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: lagging",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^CNXREALTY",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 4,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "relative_rotation": -1,
+        "volume_spread": 1
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Better Buy",
+        "Weekly price RRG: weakening",
+        "Weekly VSA: Buying Pressure"
+      ],
+      "limitations": [],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "NG=F",
+      "group": "Commodities & Alternatives",
+      "region": "Commodities & Alternatives",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Risk On",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [
+        "weekly price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "TLT",
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [
+        "weekly price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    },
+    {
+      "symbol": "^NSEI",
+      "group": "India Markets",
+      "region": "India",
+      "timeframe": "weekly",
+      "evidence_score": 2,
+      "available_dimensions": 3,
+      "dimensions": {
+        "trend": 1,
+        "technical_signal": 1,
+        "volume_spread": 0
+      },
+      "evidence": [
+        "Weekly MA18: Above MA18",
+        "Weekly signal: Good Buy",
+        "Weekly VSA: Neutral"
+      ],
+      "limitations": [
+        "weekly price RRG unavailable"
+      ],
+      "standout": false,
+      "adverse_alignment": false
+    }
+  ],
+  "developments": {
+    "status": "unavailable",
+    "reason": "No previous comparable Technical Summary snapshot was supplied to the opportunity engine."
+  },
+  "news_research": {
+    "status": "unavailable",
+    "reason": "No sourced news feed is connected to this workflow; no news catalyst claims are made."
+  },
+  "quantitative_group_analysis": [
+    {
+      "group": "Bonds Universe",
+      "region": "Bonds",
+      "instrument_count": 13,
+      "daily_above_ma18_count": 8,
+      "weekly_above_ma18_count": 6,
+      "daily_eligible_count": 4,
+      "weekly_eligible_count": 3,
+      "daily_score_mean": 0.46,
+      "weekly_score_mean": 0.08,
+      "daily_rrg_distribution": {
+        "lagging": 12
+      },
+      "weekly_rrg_distribution": {
+        "lagging": 3,
+        "weakening": 9
+      },
+      "daily_vsa_distribution": {
+        "neutral": 9,
+        "no demand": 1,
+        "no supply": 3
+      },
+      "weekly_vsa_distribution": {
+        "neutral": 10,
+        "buying pressure": 1,
+        "supply coming in": 1,
+        "strength coming in": 1
+      },
+      "daily_adverse_count": 0,
+      "weekly_adverse_count": 1
+    },
+    {
+      "group": "Canada Markets",
+      "region": "Canada",
+      "instrument_count": 28,
+      "daily_above_ma18_count": 4,
+      "weekly_above_ma18_count": 5,
+      "daily_eligible_count": 4,
+      "weekly_eligible_count": 5,
+      "daily_score_mean": -0.46,
+      "weekly_score_mean": 0.04,
+      "daily_rrg_distribution": {
+        "weakening": 3,
+        "lagging": 17,
+        "leading": 7
+      },
+      "weekly_rrg_distribution": {
+        "leading": 11,
+        "lagging": 11,
+        "improving": 3,
+        "weakening": 1
+      },
+      "daily_vsa_distribution": {
+        "neutral": 14,
+        "no demand": 9,
+        "unavailable": 4,
+        "no supply": 1
+      },
+      "weekly_vsa_distribution": {
+        "supply coming in": 11,
+        "neutral": 14,
+        "strength coming in": 1,
+        "stopping volume": 1,
+        "buying pressure": 1
+      },
+      "daily_adverse_count": 6,
+      "weekly_adverse_count": 6
+    },
+    {
+      "group": "Commodities & Alternatives",
+      "region": "Commodities & Alternatives",
+      "instrument_count": 26,
+      "daily_above_ma18_count": 2,
+      "weekly_above_ma18_count": 1,
+      "daily_eligible_count": 2,
+      "weekly_eligible_count": 1,
+      "daily_score_mean": -0.04,
+      "weekly_score_mean": -1.04,
+      "daily_rrg_distribution": {
+        "lagging": 4,
+        "weakening": 1
+      },
+      "weekly_rrg_distribution": {
+        "lagging": 2,
+        "improving": 1,
+        "weakening": 2
+      },
+      "daily_vsa_distribution": {
+        "neutral": 22,
+        "supply coming in": 1,
+        "strength coming in": 1,
+        "stopping volume": 1,
+        "no demand": 1
+      },
+      "weekly_vsa_distribution": {
+        "neutral": 15,
+        "supply coming in": 9,
+        "selling pressure": 2
+      },
+      "daily_adverse_count": 1,
+      "weekly_adverse_count": 8
+    },
+    {
+      "group": "Global / International",
+      "region": "Global / International",
+      "instrument_count": 49,
+      "daily_above_ma18_count": 4,
+      "weekly_above_ma18_count": 7,
+      "daily_eligible_count": 5,
+      "weekly_eligible_count": 7,
+      "daily_score_mean": -0.06,
+      "weekly_score_mean": -0.47,
+      "daily_rrg_distribution": {
+        "weakening": 3,
+        "leading": 14,
+        "lagging": 26,
+        "improving": 5
+      },
+      "weekly_rrg_distribution": {
+        "leading": 14,
+        "weakening": 5,
+        "lagging": 25,
+        "improving": 3
+      },
+      "daily_vsa_distribution": {
+        "neutral": 37,
+        "unavailable": 5,
+        "supply coming in": 1,
+        "no demand": 3,
+        "stopping volume": 1,
+        "buying pressure": 2
+      },
+      "weekly_vsa_distribution": {
+        "neutral": 32,
+        "supply coming in": 17
+      },
+      "daily_adverse_count": 4,
+      "weekly_adverse_count": 15
+    },
+    {
+      "group": "India Markets",
+      "region": "India",
+      "instrument_count": 42,
+      "daily_above_ma18_count": 32,
+      "weekly_above_ma18_count": 30,
+      "daily_eligible_count": 15,
+      "weekly_eligible_count": 15,
+      "daily_score_mean": 1.1,
+      "weekly_score_mean": 0.98,
+      "daily_rrg_distribution": {
+        "lagging": 29,
+        "improving": 4,
+        "weakening": 3,
+        "leading": 5
+      },
+      "weekly_rrg_distribution": {
+        "lagging": 28,
+        "weakening": 7,
+        "improving": 1,
+        "leading": 5
+      },
+      "daily_vsa_distribution": {
+        "neutral": 27,
+        "strength coming in": 4,
+        "selling pressure": 1,
+        "buying pressure": 1,
+        "upthrust": 2,
+        "unavailable": 5,
+        "no supply": 2
+      },
+      "weekly_vsa_distribution": {
+        "neutral": 21,
+        "no demand": 1,
+        "buying pressure": 7,
+        "supply coming in": 1,
+        "stopping volume": 3,
+        "unavailable": 5,
+        "strength coming in": 3,
+        "upthrust": 1
+      },
+      "daily_adverse_count": 0,
+      "weekly_adverse_count": 2
+    },
+    {
+      "group": "US Markets",
+      "region": "United States",
+      "instrument_count": 48,
+      "daily_above_ma18_count": 10,
+      "weekly_above_ma18_count": 16,
+      "daily_eligible_count": 11,
+      "weekly_eligible_count": 14,
+      "daily_score_mean": 0.65,
+      "weekly_score_mean": 0.29,
+      "daily_rrg_distribution": {
+        "lagging": 14,
+        "leading": 25,
+        "improving": 5,
+        "weakening": 3
+      },
+      "weekly_rrg_distribution": {
+        "lagging": 15,
+        "leading": 25,
+        "weakening": 4,
+        "improving": 3
+      },
+      "daily_vsa_distribution": {
+        "neutral": 41,
+        "strength coming in": 1,
+        "unavailable": 1,
+        "no demand": 4,
+        "buying pressure": 1
+      },
+      "weekly_vsa_distribution": {
+        "neutral": 27,
+        "supply coming in": 20,
+        "selling pressure": 1
+      },
+      "daily_adverse_count": 2,
+      "weekly_adverse_count": 12
     }
   ],
   "risks": [
-    "Concentration in Canadian equities may amplify regional shocks.",
-    "Mixed monthly/annual risk signals (Risk Off, Watch) could trigger a shift.",
-    "VSA shows No Demand for many symbols, indicating possible demand weakness.",
-    "Lagging quadrants (e.g., RBOT, XMA.TO) could drag broader sentiment if they deteriorate.",
-    "Lagging equities (many below MA18, lagging RRG).",
-    "Bond weakening quadrant may reverse on rate changes.",
-    "Supply pressure in SHLD and BOTZ could limit upside.",
-    "Volume ratios below 1 in several symbols indicate low participation.",
-    "Broad risk‑off macro environment weighing on commodities.",
-    "Prices significantly below key moving averages, indicating further downside risk.",
-    "Supply pressure indicated by VSA weekly signals for NLR and SETM.",
-    "Low volume ratios in several VSA daily readings, limiting conviction."
+    "AI coverage is incomplete; do not treat this as a complete market assessment."
   ],
   "what_to_watch": [
-    "Changes in RRG quadrant status, especially moves from leading to weakening.",
-    "VSA demand signals turning from No Demand to Supply Coming In.",
-    "Price approaching weekly pivot, support or resistance levels.",
-    "Monthly and annual risk signal updates.",
-    "RRG quadrant shifts for lagging equities.",
-    "MA18 crossovers for symbols currently below the line.",
-    "Changes in VSA volume ratios, especially rising supply signals.",
-    "Macro data that could affect bond weakening (interest rates, inflation).",
-    "Absence of RRG data limits momentum assessment for commodities.",
-    "Potential shift in monthly/annual signals if macro risk appetite changes.",
-    "Evolution of VSA weekly supply/demand signals for NLR and SETM."
+    "Review failed batches and rerun AI Pulse after resolving the errors."
   ],
-  "confidence": "medium",
+  "confidence": "low",
   "confidence_notes": [
-    "Evidence spans bullish risk‑on equity/bond signals and defensive commodity signals, creating a mixed picture.",
-    "High‑tier symbols show strong alignment, but many medium/low‑tier symbols remain below MA18 or in lagging RRG quadrants.",
-    "Limited VSA and RRG data for some asset classes adds uncertainty."
+    "Full-data coverage: 180/206.",
+    "AI batches successful: 9/9; failed: 0.",
+    "Final synthesis: failed or unavailable.",
+    "Confidence is calculated from full-data coverage, successful batch coverage and final synthesis status; it is not assigned by the language model."
   ],
   "ai_batch_status": {
     "total": 9,
@@ -821,7 +3182,7 @@
     "failed": 0,
     "failed_batches": []
   },
-  "ai_status": "complete",
+  "ai_status": "partial",
   "failed_batches": [],
   "successful_batch_numbers": [
     1,

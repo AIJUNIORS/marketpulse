@@ -28,37 +28,20 @@
 @media(max-width:1000px){.pulse-only-groups,.pulse-leader-wrap{grid-template-columns:1fr}.ps-metrics{grid-template-columns:repeat(2,minmax(82px,1fr));min-width:0;width:100%}}
 
 
-/* AI Quant panel */
-details.ai{background:#fff;border:1px solid #e5e7eb;border-left:4px solid #7c3aed;border-radius:10px;margin-bottom:10px;overflow:hidden}
-details.ai>summary{cursor:pointer;list-style:none;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#faf5ff}
-details.ai>summary::-webkit-details-marker{display:none}
-.ai-t{font-size:10px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;color:#7c3aed}
-.ai-reg{font-size:13px;font-weight:800;color:#111827;flex:1;min-width:160px}
-.ai-conf{font-size:10px;font-weight:800;padding:2px 8px;border-radius:99px;background:#ede9fe;color:#5b21b6;text-transform:uppercase}
-.ai-conf.high{background:#dcfce7;color:#166534}.ai-conf.low{background:#fee2e2;color:#991b1b}
-.ai-stale{font-size:10px;font-weight:800;padding:2px 8px;border-radius:99px;background:#fef3c7;color:#92400e}
-.ai-body{padding:12px 14px;display:grid;gap:12px;font-size:12px;line-height:1.5;color:#1f2937}
-.ai-thesis{font-size:13px;font-weight:600}
-.ai-g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:800px){.ai-g2{grid-template-columns:1fr}}
-.ai-h{font-size:9px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;color:#6b7280;margin-bottom:4px}
-.ai-body ul{padding-left:16px}.ai-body li{margin:2px 0}
-.ai-none{color:#9ca3af;font-size:11px}
-.ai-tbl{width:100%;border-collapse:collapse;font-size:11px}.ai-tbl th{text-align:left;font-size:9px;text-transform:uppercase;color:#6b7280;padding:4px 6px;border-bottom:1px solid #e5e7eb}.ai-tbl td{padding:5px 6px;border-bottom:1px solid #f3f4f6;vertical-align:top}
-.ai-lv{font-weight:800;white-space:nowrap}
-.ai-foot{font-size:10px;color:#6b7280;border-top:1px solid #f3f4f6;padding-top:8px}
-.ai-go{border:1px solid #7c3aed;color:#5b21b6;background:#fff;border-radius:6px;padding:3px 9px;font-size:11px;font-weight:700;cursor:pointer}
+/* AI Pulse dedicated view */
+.ai-pulse-wrap{max-width:1200px;margin:0 auto}.ai-pulse-hero{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:10px}.ai-kicker{font-size:9px;font-weight:900;letter-spacing:1px;color:#6b7280}.ai-pulse-hero h2{font-size:20px;margin:3px 0}.ai-regime{font-size:13px;font-weight:900;color:#2563eb;margin:4px 0 7px}.ai-pulse-hero p{font-size:12px;line-height:1.55;max-width:760px}.ai-meta{display:flex;flex-direction:column;gap:5px;min-width:180px;font-size:10px;color:#6b7280}.ai-meta b{color:#111827}.ai-stale{color:#92400e;background:#fef3c7;padding:4px 7px;border-radius:5px}.ai-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:10px}.ai-count{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:10px}.ai-count b{display:block;font:900 18px 'Courier New',monospace}.ai-count span,.ai-muted{font-size:10px;color:#6b7280}.ai-section{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px;margin-bottom:10px}.ai-section h3{font-size:12px;margin-bottom:7px}.ai-tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:7px}.ai-tier{border:1px solid #e5e7eb;border-radius:7px;padding:9px;font-size:11px}.ai-tier b{display:block;margin-bottom:3px}.ai-pulse-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:7px;margin-top:8px}.ai-pulse-row{border:1px solid #e5e7eb;border-radius:7px;padding:9px;font-size:11px;line-height:1.5}.ai-pulse-row-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:4px}.ai-pill{font-size:9px;background:#f3f4f6;border-radius:99px;padding:2px 7px;color:#4b5563}.ai-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ai-picks{display:grid;gap:7px}.ai-pick{display:grid;grid-template-columns:100px 1fr;gap:8px;font-size:11px;border-bottom:1px solid #f3f4f6;padding-bottom:6px}.ai-section ul{padding-left:17px;font-size:11px}.ai-section li{margin:3px 0}.ai-foot{font-size:10px;color:#6b7280;padding:5px 2px 12px}
+@media(max-width:800px){.ai-pulse-hero{display:block}.ai-meta{margin-top:12px}.ai-counts{grid-template-columns:repeat(2,minmax(0,1fr))}.ai-two{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="topbar"><div class="logo">Market<em>Pulse</em></div><div class="mkt-strip" id="mktStrip"></div><div class="upd" id="updated">Loading…</div></div>
-<div class="tabs" id="tabs"><div class="tab on" data-view="pulse">Pulse</div><div class="tab" data-view="broad">Broad Markets</div><div class="tab" data-view="detail">Detailed Group Analysis</div><div class="tab" data-view="technical">Technical Analysis</div></div>
+<div class="tabs" id="tabs"><div class="tab on" data-view="pulse">Pulse</div><div class="tab" data-view="broad">Broad Markets</div><div class="tab" data-view="detail">Detailed Group Analysis</div><div class="tab" data-view="technical">Technical Analysis</div><div class="tab" data-view="aiPulse">AI Pulse</div></div>
 <div class="subbar" id="subbar"></div><div class="sectionbar" id="sectionbar"></div><div class="cnt" id="app"><div class="loading">Loading MarketPulse JSON…</div></div><div class="footer">MarketPulse · close-based returns · prices preserved · technical analysis at the end</div>
 <script>
 const DATA_PATHS=['data/market_pulse_combined.json','./data/market_pulse_combined.json','market_pulse_combined.json','./market_pulse_combined.json'];
 const LAST_PATHS=['data/last_updated.json','./data/last_updated.json','last_updated.json','./last_updated.json'];
 const TECH_PATHS=['data/technical_summary.json','./data/technical_summary.json','technical_summary.json','./technical_summary.json'];
-const AI_PATHS=['data/ai_insights.json','./data/ai_insights.json','ai_insights.json','./ai_insights.json'];
+const AI_PULSE_PATHS=['data/ai_pulse.json','./data/ai_pulse.json','ai_pulse.json','./ai_pulse.json'];
 const MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const GROUP_ORDER=['US Markets','Canada Markets','India Markets','Global / International','Gold','Silver & Other Metals','Crude Oil & Commodities','Natural Gas','Bonds Universe','Crypto'];
 const GROUP_LABELS={
@@ -79,7 +62,7 @@ const BENCH={
   US:'^GSPC',Canada:'^GSPTSE',India:'^NSEI',Global:'XEF.TO',SilverMetals:'SI=F',CrudeOil:'CL=F',NaturalGas:'NG=F',Bonds:'TLT'
 };
 const MAJOR_SYMS=['^GSPC','^GSPTSE','^NSEI','XEF.TO','GC=F','SI=F','CL=F','NG=F','TLT','SHY','BTC-USD','ETH-USD'];
-let STATE={ai:null,aiOpen:true,ma18Group:'ALL',data:null,last:null,techRaw:null,techMap:{},groups:[],items:[],view:'pulse',group:'ALL',broadKey:'CROSS',broadSection:'overview',techGroup:'ALL',techTf:'monthly',techCoverage:'complete',sort:{},filter:''};
+let STATE={aiPulse:null,ma18Group:'ALL',data:null,last:null,techRaw:null,techMap:{},groups:[],items:[],view:'pulse',group:'ALL',broadKey:'CROSS',broadSection:'overview',techGroup:'ALL',techTf:'monthly',techCoverage:'complete',sort:{},filter:''};
 async function fetchFirst(paths,optional=false){let e;for(const p of paths){try{const r=await fetch(p+'?v='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json();e=new Error(p+' '+r.status)}catch(x){e=x}}if(optional)return null;throw e||new Error('No JSON found')}
 function num(v){if(v===null||v===undefined||v==='')return null;if(typeof v==='number')return isFinite(v)?v:null;const n=parseFloat(String(v).replace('%','').replace('+','').replace(/,/g,''));return isFinite(n)?n:null}
 function get(o,paths,f=null){for(const p of paths){let x=o;for(const k of p.split('.')){if(x&&Object.prototype.hasOwnProperty.call(x,k))x=x[k];else{x=undefined;break}}if(x!==undefined&&x!==null&&x!=='')return x}return f}
@@ -147,7 +130,7 @@ function itemsForGroupKey(key){if(key==='ALL')return STATE.items;return STATE.it
 function assetLabel(i){const sym=String(i.symbol||'');const map={'^GSPC':'S&P 500','^GSPTSE':'TSX Composite','^NSEI':'Nifty 50','XEF.TO':'Global EAFE','GC=F':'Gold','SI=F':'Silver','CL=F':'Crude Oil','NG=F':'Natural Gas','TLT':'Long Bonds','SHY':'Short Bonds','BTC-USD':'Bitcoin','ETH-USD':'Ethereum'};return map[sym]||i.display_group||groupName(i)||i.market_group||sym}
 function renderSubbars(){const sb=document.getElementById('subbar'),sec=document.getElementById('sectionbar');sb.className='subbar';sec.className='sectionbar';sb.innerHTML='';sec.innerHTML='';if(STATE.view==='broad'){const assets=broadAssets();sb.classList.add('show');sb.innerHTML=`<button class="subpill ${STATE.broadKey==='CROSS'?'on':''}" onclick="setBroadAsset('CROSS')">Cross-Asset</button>`+assets.map(a=>`<button class="subpill ${STATE.broadKey===a.asset_key?'on':''}" onclick="setBroadAsset('${esc(a.asset_key)}')">${esc(assetLabel(a))}</button>`).join('')}else if(STATE.view==='detail'){sb.classList.add('show');sb.innerHTML=STATE.groups.map(g=>`<button class="subpill ${STATE.group===g.market_group?'on':''}" onclick="setGroup('${esc(g.market_group)}')">${esc(groupName(g))}</button>`).join('')}}
 function setView(v){STATE.view=v;STATE.filter='';if(v==='detail'&&(STATE.group==='ALL'||!STATE.groups.some(g=>g.market_group===STATE.group)))STATE.group=STATE.groups[0]?.market_group||'ALL';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view===v));render()}function setGroup(g){STATE.group=g;STATE.filter='';render()}function setBroadAsset(k){STATE.broadKey=k;STATE.filter='';render()}function setBroadSection(s){STATE.broadSection=s;render()}function showBroadAsset(k){STATE.view='broad';STATE.broadKey=k;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view==='broad'));render()}document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)setView(t.dataset.view)});window.setGroup=setGroup;window.setBroadAsset=setBroadAsset;window.setBroadSection=setBroadSection;window.showBroadAsset=showBroadAsset;
-function render(){buildStrip();renderSubbars();if(STATE.view==='pulse')renderPulse();if(STATE.view==='broad')renderBroad();if(STATE.view==='detail')renderDetail();if(STATE.view==='technical')renderTechnical();aiMount()}
+function render(){buildStrip();renderSubbars();if(STATE.view==='pulse')renderPulse();if(STATE.view==='broad')renderBroad();if(STATE.view==='detail')renderDetail();if(STATE.view==='technical')renderTechnical();if(STATE.view==='aiPulse')renderAIPulse()}
 function renderPulse(){const all=summaries(STATE.items),pg=pulseGroups();document.getElementById('app').innerHTML=`<div class="pulse-wrap"><div class="pulse-summary"><div class="ps-main"><div class="ps-label">All Markets Pulse</div><div class="ps-text"><b>${STATE.items.length}</b> instruments across <b>${STATE.groups.length}</b> focused groups. Pulse is a single landing page — no internal filters or sub-pages. The persistent top bar carries each group benchmark move.</div></div><div class="ps-metrics"><div class="ps-box"><div class="ps-box-l">MTD Avg</div><div class="ps-box-v ${cls(all.m)}">${fmt(all.m)}</div></div><div class="ps-box"><div class="ps-box-l">YTD Avg</div><div class="ps-box-v ${cls(all.y)}">${fmt(all.y)}</div></div><div class="ps-box"><div class="ps-box-l">Breadth</div><div class="ps-box-v">${all.pos}/${STATE.items.length}</div></div><div class="ps-box"><div class="ps-box-l">Current DD</div><div class="ps-box-v ${cls(all.cd)}">${fmt(all.cd)}</div></div></div></div><div class="pulse-title-row"><div><div class="pulse-title">Group Pulse</div><div class="pulse-sub">Each section shows benchmark close / MTD / YTD plus Top 5 MTD leaders and laggards. All Markets is summary only, not a selectable group.</div></div></div><div class="pulse-only-groups">${pg.map(groupPulse).join('')}</div></div>`}
 function benchmarkGrid(items){return`<div class="grid g4">${items.map(i=>`<div class="card"><div class="card-h"><div><div class="card-title">${esc(i.display_group||i.market_group)}</div><div class="card-sub">${esc(i.symbol)} · Close ${money(close(i))}</div></div><span class="badge ${mtd(i)>=0?'bd':'br'}">MTD ${fmt(mtd(i))}</span></div><div class="metric-row"><div class="metric"><div class="ml">YTD</div><div class="mv ${cls(ytd(i))}">${fmt(ytd(i))}</div></div><div class="metric"><div class="ml">Cur DD</div><div class="mv ${cls(dd(i))}">${fmt(dd(i))}</div></div><div class="metric"><div class="ml">Signal</div><div class="mv">${zbadge(signal(i))}</div></div></div></div>`).join('')}</div>`}
 function pulseGroups(){
@@ -333,38 +316,25 @@ function cell(c,v){
 function drawdownTable(items){return sortableTable(items.map(i=>({Symbol:i.symbol,Name:itemName(i),Close:close(i),CurrentDD:dd(i),MaxDD:maxdd(i),MTD:mtd(i),YTD:ytd(i),_item:i})).sort((a,b)=>(a.CurrentDD??0)-(b.CurrentDD??0)).slice(0,30),'drawdown')}
 function supportTable(items){return sortableTable(items.map(i=>({Symbol:i.symbol,Close:close(i),Signal:signal(i),Pivot:level(i,'pivot'),S1:level(i,'s1'),S2:level(i,'s2'),R1:level(i,'r1'),R2:level(i,'r2'),CPR:cprText(i),_item:i})).slice(0,50),'support')}
 
-/* ---- AI Quant panel: optional, fail-soft, all text escaped ---- */
-function aiKey(){const v=STATE.view;if(v==='pulse')return'pulse';if(v==='broad')return'broad';if(v==='technical')return'technical';if(v==='detail')return'detail:'+STATE.group;return null}
-function aiUl(a,fn){return a&&a.length?'<ul>'+a.map(fn).join('')+'</ul>':'<div class="ai-none">None flagged</div>'}
-function aiEv(a){return aiUl(a,x=>`<li title="${esc((x.source_fields||[]).join(', '))}">${esc(x.claim)}</li>`)}
-function aiTs(s){return esc(String(s||'').replace('T',' ').replace('+00:00',' UTC'))}
-function aiPanel(key){
-  const ins=STATE.ai&&STATE.ai.insights&&STATE.ai.insights[key];if(!ins||typeof ins!=='object')return'';
-  try{
-    const src=key==='technical'?STATE.techRaw?.generated_at:STATE.data?.generated_at;
-    const stale=!!(src&&ins.data_generated_at&&src!==ins.data_generated_at);
-    const lvl=(ins.confidence&&ins.confidence.level)||'low';
-    const sc=(ins.scenarios||[]).map(s=>`<tr><td><b>${esc(s.symbol||'')}</b> ${esc(s.name||'')}</td><td>${esc(s.trigger||'')}${s.trigger_level!=null?` <span class="ai-lv">${esc(s.trigger_direction)} ${esc(money(s.trigger_level))}</span>`:''}</td><td>${esc(s.confirmation||'')}</td><td>${esc(s.invalidation||'')}${s.invalidation_level!=null?` <span class="ai-lv">${esc(s.invalidation_direction)} ${esc(money(s.invalidation_level))}</span>`:''}</td></tr>`).join('');
-    const rc=(ins.ranked_candidates||[]).map(c=>`<li><b>${esc(c.rank)}. ${esc(c.symbol)}</b> — ${esc(c.reason)}</li>`).join('');
-    const pr=(ins.prior_call_review||[]).map(c=>`<li><b>${esc(c.symbol)}</b> ${esc(c.scenario||'')}: ${esc(String(c.status||'').replace(/_/g,' '))}${c.trigger_date?` (trigger ${esc(c.trigger_date)})`:''}${c.invalidation_date?` (invalidated ${esc(c.invalidation_date)})`:''}</li>`).join('');
-    const nt=ins.next_tab&&ins.next_tab.tab&&ins.next_tab.tab!=='none'?`<div><button class="ai-go" data-tab="${esc(ins.next_tab.tab)}" data-target="${esc(ins.next_tab.target||'')}" onclick="aiGo(this.dataset.tab,this.dataset.target)">Next: ${esc(ins.next_tab.tab)}${ins.next_tab.target?' · '+esc(ins.next_tab.target):''} →</button> <span class="ai-none">${esc(ins.next_tab.why||'')}</span></div>`:'';
-    return `<details class="ai" ${STATE.aiOpen===false?'':'open'} ontoggle="STATE.aiOpen=this.open"><summary><span class="ai-t">AI Quant read</span><span class="ai-reg">${esc(ins.regime||'')}</span><span class="ai-conf ${esc(lvl)}">${esc(lvl)} confidence</span>${stale?'<span class="ai-stale">Stale: data updated since this read</span>':''}</summary><div class="ai-body">`+
-      `<div class="ai-thesis">${esc(ins.thesis||'')}</div>`+
-      (ins.confidence&&ins.confidence.reasons?`<div class="ai-none">Confidence: ${esc(ins.confidence.reasons.join(' · '))}</div>`:'')+
-      `<div class="ai-g2"><div><div class="ai-h">Evidence for</div>${aiEv(ins.evidence_for)}</div><div><div class="ai-h">Evidence against</div>${aiEv(ins.evidence_against)}</div></div>`+
-      `<div><div class="ai-h">Conflicts</div>${aiEv(ins.conflicts)}</div>`+
-      (sc?`<div><div class="ai-h">Scenarios · triggers and invalidation from supplied levels</div><div class="table-wrap"><table class="ai-tbl"><tr><th>Scenario</th><th>Trigger</th><th>Confirmation</th><th>Invalidation</th></tr>${sc}</table></div></div>`:'')+
-      (rc?`<div><div class="ai-h">Ranked</div><ul>${rc}</ul></div>`:'')+
-      `<div class="ai-g2"><div><div class="ai-h">Risks</div>${aiUl(ins.risks,x=>`<li>${esc(x)}</li>`)}</div><div><div class="ai-h">What would change my view</div>${aiUl(ins.what_would_change_my_view,x=>`<li>${esc(x)}</li>`)}</div></div>`+
-      (ins.change_since_last_run?`<div><div class="ai-h">Change since last run</div>${esc(ins.change_since_last_run)}</div>`:'')+
-      (pr?`<div><div class="ai-h">Prior call review · scored by backend</div><ul>${pr}</ul></div>`:'')+
-      (ins.sample_size_flags&&ins.sample_size_flags.length?`<div><div class="ai-h">Sample size / evidence limits</div>${aiUl(ins.sample_size_flags,x=>`<li>${esc(x)}</li>`)}</div>`:'')+
-      nt+
-      `<div class="ai-foot">Model ${esc(ins.model||'?')} · prompt ${esc(ins.prompt_version||'?')} · generated ${aiTs(ins.generated_at)} · data ${aiTs(ins.data_generated_at)}. ${esc((STATE.ai&&STATE.ai.disclaimer)||'Analysis for your own decision. Not trade advice.')}</div></div></details>`;
-  }catch(e){return''}
+/* ---- Consolidated AI Pulse view ---- */
+function aiList(items){return items&&items.length?'<ul>'+items.map(x=>'<li>'+esc(typeof x==='string'?x:(x.rationale||x.view||x.claim||JSON.stringify(x)))+'</li>').join('')+'</ul>':'<div class="ai-muted">No items flagged in this run.</div>'}
+function aiAnalysisCards(items,limited=false){return items&&items.length?items.map(x=>`<article class="ai-pulse-row"><div class="ai-pulse-row-head"><b>${esc(x.symbol||'')}</b><span class="ai-pill">${esc(x.priority|| (limited?'Limited data':'Full data'))}</span></div><div>${esc(x.view||x.rationale||'')}</div>${x.evidence?`<div class="ai-muted">Evidence: ${esc(Array.isArray(x.evidence)?x.evidence.join(' · '):x.evidence)}</div>`:''}${x.available_evidence?`<div class="ai-muted">Available: ${esc(x.available_evidence.join(', '))}</div>`:''}${x.limitations?`<div class="ai-muted">Unavailable: ${esc(x.limitations.join(', '))}</div>`:''}</article>`).join(''):'<div class="ai-muted">No instrument commentary generated for this section.</div>'}
+function renderAIPulse(){
+ const d=STATE.aiPulse;
+ if(!d){document.getElementById('app').innerHTML='<div class="err">AI Pulse is not available yet. The daily AI workflow may not have completed successfully.</div>';return}
+ const stale=!!(STATE.techRaw?.generated_at&&d.data_generated_at&&STATE.techRaw.generated_at!==d.data_generated_at);
+ const tiers=(d.priority_tiers||[]).map(t=>`<div class="ai-tier"><b>${esc(t.tier||'Priority')}</b><div>${esc(t.description||'')}</div><div class="ai-muted">${esc((t.symbols||[]).join(' · ')||'No symbols listed')}</div></div>`).join('');
+ const picks=(arr)=>arr&&arr.length?'<div class="ai-picks">'+arr.map(x=>`<div class="ai-pick"><b>${esc(x.symbol||'')}</b><span>${esc(x.rationale||'')}</span></div>`).join('')+'</div>':'<div class="ai-muted">No pick identified from the supplied evidence.</div>';
+ document.getElementById('app').innerHTML=`<div class="ai-pulse-wrap"><div class="ai-pulse-hero"><div><div class="ai-kicker">MARKETPULSE · DAILY QUANT READ</div><h2>AI Pulse</h2><div class="ai-regime">${esc(d.market_regime||'Regime not stated')}</div><p>${esc(d.market_overview||'')}</p></div><div class="ai-meta"><b>${esc(d.confidence||'low').toUpperCase()} confidence</b><span>As of ${esc(d.asof||'—')}</span><span>Generated ${esc(String(d.generated_at||'').replace('T',' ').replace('+00:00',' UTC'))}</span>${stale?'<span class="ai-stale">Technical data updated since this AI run</span>':''}</div></div>
+ <div class="ai-counts"><div class="ai-count"><b>${Number(d.meta?.universe_count||0)}</b><span>Instruments</span></div><div class="ai-count"><b>${Number(d.meta?.full_data_count||0)}</b><span>Full-data</span></div><div class="ai-count"><b>${Number(d.meta?.limited_data_count||0)}</b><span>Limited-data</span></div><div class="ai-count"><b>${esc(d.confidence||'—')}</b><span>Confidence</span></div></div>
+ <section class="ai-section"><h3>Priority tiers</h3><div class="ai-tier-grid">${tiers||'<div class="ai-muted">No priority tiers supplied.</div>'}</div></section>
+ <section class="ai-section"><h3>Full-data instrument analysis</h3><p class="ai-muted">Instruments with the required combination of technical, RRG and daily/weekly VSA fields.</p><div class="ai-pulse-list">${aiAnalysisCards(d.full_data_analysis,false)}</div></section>
+ <section class="ai-section"><h3>Limited-data instrument analysis</h3><p class="ai-muted">Interpreted only from available fields; missing evidence is shown rather than inferred.</p><div class="ai-pulse-list">${aiAnalysisCards(d.limited_data_analysis,true)}</div></section>
+ <div class="ai-two"><section class="ai-section"><h3>Daily picks · watchlist</h3>${picks(d.daily_picks)}</section><section class="ai-section"><h3>Weekly picks · watchlist</h3>${picks(d.weekly_picks)}</section></div>
+ <div class="ai-two"><section class="ai-section"><h3>Risks</h3>${aiList(d.risks)}</section><section class="ai-section"><h3>What to watch</h3>${aiList(d.what_to_watch)}</section></div>
+ <section class="ai-section"><h3>Confidence and evidence limits</h3>${aiList(d.confidence_notes)}</section>
+ <div class="ai-foot">Model ${esc(d.model||'—')} · Prompt ${esc(d.prompt_version||'—')} · Data snapshot ${esc(d.data_generated_at||'—')}. ${esc(d.disclaimer||'')}</div></div>`;
 }
-function aiMount(){try{const k=aiKey(),h=k?aiPanel(k):'';if(h)document.getElementById('app').insertAdjacentHTML('afterbegin',h)}catch(e){}}
-function aiGo(tab,target){if(tab==='detail'&&target&&STATE.groups.some(g=>g.market_group===target))STATE.group=target;setView(tab)}
-async function init(){try{const[data,last,tech,ai]=await Promise.all([fetchFirst(DATA_PATHS),fetchFirst(LAST_PATHS,true),fetchFirst(TECH_PATHS,true),fetchFirst(AI_PATHS,true).catch(()=>null)]);const n=norm(data);STATE.data=data;STATE.last=last;STATE.techRaw=tech;STATE.ai=ai;STATE.techMap=buildTechMap(tech);STATE.groups=n.groups;STATE.items=n.items;STATE.group=STATE.groups[0]?.market_group||'ALL';setUpdated();buildStrip();render()}catch(e){document.getElementById('app').innerHTML=`<div class="err"><b>Unable to load MarketPulse data.</b><br>${esc(e.message)}<br><br>Expected JSON paths: ${DATA_PATHS.join(', ')}</div>`}}init();
+async function init(){try{const[data,last,tech,aiPulse]=await Promise.all([fetchFirst(DATA_PATHS),fetchFirst(LAST_PATHS,true),fetchFirst(TECH_PATHS,true),fetchFirst(AI_PULSE_PATHS,true).catch(()=>null)]);const n=norm(data);STATE.data=data;STATE.last=last;STATE.techRaw=tech;STATE.aiPulse=aiPulse;STATE.techMap=buildTechMap(tech);STATE.groups=n.groups;STATE.items=n.items;STATE.group=STATE.groups[0]?.market_group||'ALL';setUpdated();buildStrip();render()}catch(e){document.getElementById('app').innerHTML=`<div class="err"><b>Unable to load MarketPulse data.</b><br>${esc(e.message)}<br><br>Expected JSON paths: ${DATA_PATHS.join(', ')}</div>`}}init();
 </script>
 </body></html>

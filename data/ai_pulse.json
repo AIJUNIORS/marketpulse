@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.0",
+  "prompt_version": "ai-pulse-v1.2-independent-batches",
+  "generated_at": "2026-11-25T20:04:04+00:00",
+  "data_generated_at": "2026-11-25T17:48:39+00:00",
+  "asof": "2026-11-25",
+  "model": "openai/gpt-oss-120b,openai/gpt-oss-20b,fallback",
+  "meta": {
+    "data_generated_at": "2026-11-25T17:48:39+00:00",
+    "asof": "2026-11-25",
+    "universe_count": 206,
+    "full_data_count": 180,
+    "limited_data_count": 26,
+    "source": "data/output/technical_summary.json"
+  },
+  "coverage": {
+    "technical_symbols": 206,
+    "rotation_instruments": 180,
+    "instruments_with_vsa": 206
+  },
+  "market_overview": "Partial AI review: 5 batch(es) completed and 4 batch(es) failed. This is not a complete-universe conclusion.",
+  "market_regime": "Mixed / incomplete AI coverage",
+  "full_data_analysis": [
+    {
+      "symbol": "NV20BEES.NS",
+      "priority": "High",
+      "view": "Strong bullish stance.",
+      "evidence": "Weekly Good Buy, above MA18 (+3.69% daily), RRG improving quadrant with rs_momentum 100.6, VSA Upthrust."
+    },
+    {
+      "symbol": "HDFCBSE500.NS",
+      "priority": "High",
+      "view": "Robust bullish momentum.",
+      "evidence": "Weekly Good Buy, above MA18 (+3.82% daily), lagging quadrant but rs_momentum 94.55, VSA Neutral."
+    },
+    {
+      "symbol": "NIFTY_FIN_SERVICE.NS",
+      "priority": "High",
+      "view": "Leading sector strength.",
+      "evidence": "Weekly Good Buy, above MA18 (+9.07% weekly), leading RRG quadrant, rs_momentum 102.47, VSA Strength Coming In weekly."
+    },
+    {
+      "symbol": "NIFTY_PVT_BANK.NS",
+      "priority": "High",
+      "view": "Leading sector strength.",
+      "evidence": "Weekly Good Buy, above MA18 (+10.52% weekly), leading RRG quadrant, rs_momentum 105.57, VSA data unavailable."
+    },
+    {
+      "symbol": "CONSUMBEES.NS",
+      "priority": "Medium",
+      "view": "Bullish but with weakening RRG.",
+      "evidence": "Weekly Good Buy, above MA18 (+6.62% weekly), weakening quadrant, rs_momentum 96.55, VSA Buying Pressure."
+    },
+    {
+      "symbol": "LOWVOL.NS",
+      "priority": "Medium",
+      "view": "Steady bullish bias.",
+      "evidence": "Weekly Good Buy, above MA18 (+5.07% weekly), lagging quadrant, rs_momentum 95.82, VSA Neutral."
+    },
+    {
+      "symbol": "MOM100.NS",
+      "priority": "Medium",
+      "view": "Bullish with strong volume.",
+      "evidence": "Weekly Good Buy, above MA18 (+1.10% weekly), lagging quadrant, rs_momentum 88.91, VSA Strength Coming In daily."
+    },
+    {
+      "symbol": "ESG.NS",
+      "priority": "Medium",
+      "view": "Bullish with high momentum.",
+      "evidence": "Weekly Good Buy, above MA18 (+6.16% weekly), lagging quadrant, rs_momentum 98.43, VSA Neutral."
+    },
+    {
+      "symbol": "SILVERBEES.NS",
+      "priority": "Low",
+      "view": "Potential weakness.",
+      "evidence": "Weekly Good Buy but below MA18 (-44.42% weekly), lagging quadrant, rs_momentum 54.36, VSA Selling Pressure, annual signal Watch."
+    },
+    {
+      "symbol": "^INDIAVIX",
+      "priority": "Low",
+      "view": "Rising volatility risk.",
+      "evidence": "Weekly Risk On, above MA18 (+22.56% weekly), leading RRG quadrant, rs_momentum 136.70, VSA unavailable."
+    },
+    {
+      "symbol": "USDINR=X",
+      "priority": "Low",
+      "view": "Currency risk, mixed bullish signal.",
+      "evidence": "Weekly Good Buy, below MA18 (-3.09% weekly), lagging quadrant, rs_momentum 88.39, VSA unavailable."
+    },
+    {
+      "symbol": "HNGSNGBEES.NS",
+      "priority": "Low",
+      "view": "Watch for downside.",
+      "evidence": "Weekly Good Buy but below MA18 (-8.08% weekly), lagging quadrant, rs_momentum 83.56, annual signal Risk Off."
+    },
+    {
+      "symbol": "^CNXFMCG",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and buying pressure",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 99.4, VSA weekly Buying Pressure, MA18 above"
+    },
+    {
+      "symbol": "^CNXINFRA",
+      "priority": "2",
+      "view": "Better buy with lagging momentum and buying pressure",
+      "evidence": "Weekly Better Buy, RRG lagging rs_momentum 96.3, VSA weekly Buying Pressure, MA18 above"
+    },
+    {
+      "symbol": "^CNXIT",
+      "priority": "2",
+      "view": "Good buy with lagging momentum, neutral volume",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 98.4, VSA weekly Neutral, MA18 above"
+    },
+    {
+      "symbol": "^CNXMEDIA",
+      "priority": "2",
+      "view": "Good buy with weakening momentum, no VSA data",
+      "evidence": "Weekly Good Buy, RRG weakening rs_momentum 99.6, VSA unavailable, MA18 below"
+    },
+    {
+      "symbol": "^CNXMETAL",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and stopping volume",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 81.8, VSA weekly Stopping Volume, MA18 below"
+    },
+    {
+      "symbol": "^CNXMNC",
+      "priority": "2",
+      "view": "Better buy with lagging momentum and buying pressure",
+      "evidence": "Weekly Better Buy, RRG lagging rs_momentum 85.6, VSA weekly Buying Pressure, MA18 above"
+    },
+    {
+      "symbol": "^CNXPHARMA",
+      "priority": "2",
+      "view": "Good buy with weakening momentum, neutral volume",
+      "evidence": "Weekly Good Buy, RRG weakening rs_momentum 94.7, VSA weekly Neutral, MA18 above"
+    },
+    {
+      "symbol": "^CNXPSUBANK",
+      "priority": "1",
+      "view": "Good buy with leading momentum and strength coming in",
+      "evidence": "Weekly Good Buy, RRG leading rs_momentum 103.4, VSA weekly Strength Coming In, MA18 above"
+    },
+    {
+      "symbol": "^CNXREALTY",
+      "priority": "2",
+      "view": "Better buy with weakening momentum and buying pressure",
+      "evidence": "Weekly Better Buy, RRG weakening rs_momentum 96.4, VSA weekly Buying Pressure, MA18 above"
+    },
+    {
+      "symbol": "^NSEBANK",
+      "priority": "1",
+      "view": "Good buy with leading momentum and neutral volume",
+      "evidence": "Weekly Good Buy, RRG leading rs_momentum 103.1, VSA weekly Neutral, MA18 above"
+    },
+    {
+      "symbol": "HDFCSML250.NS",
+      "priority": "2",
+      "view": "Better buy with lagging momentum and neutral volume",
+      "evidence": "Weekly Better Buy, RRG lagging rs_momentum 88.2, VSA weekly Neutral, MA18 above"
+    },
+    {
+      "symbol": "NIFTY_MIDCAP_100.NS",
+      "priority": "2",
+      "view": "Better buy with lagging momentum, no VSA data",
+      "evidence": "Weekly Better Buy, RRG lagging rs_momentum 89.2, VSA unavailable, MA18 above"
+    },
+    {
+      "symbol": "CPSEETF.NS",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and upthrust volume",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 90.1, VSA weekly Upthrust, MA18 above"
+    },
+    {
+      "symbol": "GROWWRAIL.NS",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and neutral volume",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 91.1, VSA weekly Neutral, MA18 below"
+    },
+    {
+      "symbol": "ICICIB22.NS",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and buying pressure",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 95.2, VSA weekly Buying Pressure, MA18 above"
+    },
+    {
+      "symbol": "INFRA.NS",
+      "priority": "2",
+      "view": "Good buy with lagging momentum and neutral volume",
+      "evidence": "Weekly Good Buy, RRG lagging rs_momentum 92.1, VSA weekly Neutral, MA18 above"
+    },
+    {
+      "symbol": "COMM.TO",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Daily price above MA18, leading RRG and high RS momentum point to strong bullish pressure.",
+      "evidence": [
+        "Daily MA18 above (0.0588% above)",
+        "Weekly Better Buy",
+        "RRG quadrant leading",
+        "RS momentum 106.05",
+        "Weekly volume ratio 1.702 (Supply Coming In)"
+      ]
+    },
+    {
+      "symbol": "CGR.TO",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Above MA18 on weekly chart, leading RRG and RS momentum above 108 support upside.",
+      "evidence": [
+        "Weekly MA18 above (1.6726% above)",
+        "Weekly Good Buy",
+        "RRG quadrant leading",
+        "RS momentum 108.90",
+        "Neutral volume ratios"
+      ]
+    },
+    {
+      "symbol": "HHL.TO",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Weekly MA18 above and leading RRG with RS momentum >107 suggest continued strength.",
+      "evidence": [
+        "Weekly MA18 above (2.8156% above)",
+        "Weekly Good Buy",
+        "RRG quadrant leading",
+        "RS momentum 107.99",
+        "Neutral volume ratios"
+      ]
+    },
+    {
+      "symbol": "HUTS.TO",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Daily and weekly MA18 above, leading RRG and the highest RS momentum (115.99) indicate strong bullishness.",
+      "evidence": [
+        "Daily MA18 above (3.68% above)",
+        "Weekly MA18 above (6.32% above)",
+        "Weekly Good Buy",
+        "RRG quadrant leading",
+        "RS momentum 115.99",
+        "Neutral volume ratios"
+      ]
+    },
+    {
+      "symbol": "KSA",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Improving RRG with RS momentum >103 and weekly Better Buy signal shows emerging strength.",
+      "evidence": [
+        "Weekly Better Buy",
+        "RRG quadrant improving",
+        "RS momentum 103.64",
+        "Daily MA18 below (‑1.56% below)",
+        "Weekly volume ratio 1.791 (Supply Coming In)"
+      ]
+    },
+    {
+      "symbol": "XEU.TO",
+      "priority": "Tier 1 - Leading Momentum",
+      "view": "Leading RRG and RS momentum just above 100 with weekly Better Buy suggest solid upside.",
+      "evidence": [
+        "Weekly Better Buy",
+        "RRG quadrant leading",
+        "RS momentum 100.95",
+        "Daily MA18 below (‑4.09% below)",
+        "Neutral volume ratios"
+      ]
+    },
+    {
+      "symbol": "ZXM.TO",
+      "priority": "Tier 2 - Lagging Bullish",
+      "view": "Below MA18 but weekly Good Buy and lagging RRG with high RS momentum (94.7) imply upside potential.",
+      "evidence": [
+        "Daily MA18 below (‑2.65% below)",
+        "Weekly Good Buy",
+        "RRG quadrant lagging",
+        "RS momentum 94.72",
+        "Weekly volume ratio 1.991 (Supply Coming In)"
+      ]
+    },
+    {
+      "symbol": "ASEA",
+      "priority": "Tier 2 - Lagging Bullish",
+      "view": "Consistently below MA18, weekly Good Buy and lagging RRG with RS momentum ~90 support a modest bullish case.",
+      "evidence": [
+        "Daily MA18 below (‑3.37% below)",
+        "Weekly Good Buy",
+        "RRG quadrant lagging",
+        "RS momentum 90.83",
+        "Daily volume ratio 0.281 (No Demand)"
+      ]
+    },
+    {
+      "symbol": "GOLDBEES.NS",
+      "priority": "High",
+      "view": "Strong buy case: weekly Good Buy signal, RRG quadrant weakening but VSA indicates supply coming in, and price below MA18 suggests a potential rebound.",
+      "evidence": "weekly signal Good Buy, VSA weekly Supply Coming In, daily MA18 below"
+    },
+    {
+      "symbol": "XGD.TO",
+      "priority": "Medium",
+      "view": "Risk‑on signal with weekly Risk On, VSA neutral, but price below MA18 and RRG weakening suggest caution.",
+      "evidence": "weekly signal Risk On, RRG quadrant weakening, daily MA18 below"
+    },
+    {
+      "symbol": "ETH-USD",
+      "priority": "Low",
+      "view": "Watch signal with RRG lagging and VSA neutral; price below MA18 indicates potential downside.",
+      "evidence": "weekly signal Watch, RRG lagging, VSA neutral, daily MA18 below"
+    },
+    {
+      "symbol": "CGL.TO",
+      "priority": "Low",
+      "view": "Watch signal, RRG improving but VSA weekly Supply Coming In; price below MA18 signals potential support.",
+      "evidence": "weekly signal Watch, RRG improving, VSA weekly Supply Coming In, daily MA18 below"
+    },
+    {
+      "symbol": "SVR.TO",
+      "priority": "Low",
+      "view": "Watch signal, RRG lagging, VSA weekly Supply Coming In; price below MA18 suggests limited upside.",
+      "evidence": "weekly signal Watch, RRG lagging, VSA weekly Supply Coming In, daily MA18 below"
+    }
+  ],
+  "limited_data_analysis": [
+    {
+      "symbol": "^NSEI",
+      "view": "Good Buy with monthly and annual Risk On; VSA neutral; daily MA18 above.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "^GSPC",
+      "view": "Good Buy, monthly Watch, annual Risk On; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "XIC.TO",
+      "view": "Good Buy, monthly and annual Watch; VSA weekly Supply Coming In; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "XEF.TO",
+      "view": "Good Buy, monthly and annual Watch; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "TLT",
+      "view": "Good Buy, monthly Good Buy, annual Watch; VSA neutral; daily MA18 above.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "DBA",
+      "view": "Better Buy, monthly Good Buy, annual Watch; VSA neutral; daily MA18 above.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "MOO",
+      "view": "Good Buy, monthly and annual Watch; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "NIKL",
+      "view": "Watch, monthly and annual Risk Off; VSA weekly Supply Coming In; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "PALL",
+      "view": "Watch, monthly and annual Risk Off; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "PPLT",
+      "view": "Watch, monthly and annual Risk Off; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "REMX",
+      "view": "Watch, monthly and annual Risk Off; VSA weekly Selling Pressure; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "COPP.TO",
+      "view": "Watch, monthly and annual Risk Off; VSA weekly Supply Coming In; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "HLIT.TO",
+      "view": "Watch, monthly and annual Risk Off; VSA weekly Supply Coming In; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "HURA.TO",
+      "view": "Watch, monthly and annual Risk Off; VSA neutral; daily MA18 below.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "BATT",
+      "view": "Price 10.61 is 12.8% below the 18‑day MA; weekly signal is Watch and both monthly and annual signals are Risk Off, with neutral VSA, suggesting limited upside.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "COW.TO",
+      "view": "Price 64.81 is 4.1% below the 18‑day MA; weekly signal is Good Buy while monthly/annual are Watch, and VSA is neutral, indicating a mixed but relatively more bullish stance.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "HYDR",
+      "view": "Price 28.70 is 12.1% below the 18‑day MA; weekly Watch with VSA weekly showing Selling Pressure, and Risk Off macro signals, pointing to bearish pressure.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "LIT",
+      "view": "Price 51.88 is 11.3% below the 18‑day MA; weekly Watch, Risk Off monthly/annual, neutral VSA, indicating continued downside bias.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "NLR",
+      "view": "Price 76.26 is 12.2% below the 18‑day MA; weekly Watch, Risk Off macro, VSA daily No Demand and weekly Supply Coming In, suggesting strong bearish pressure.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    },
+    {
+      "symbol": "SETM",
+      "view": "Price 19.87 is 15.4% below the 18‑day MA; weekly Watch, Risk Off macro, VSA weekly Supply Coming In, indicating a pronounced downtrend.",
+      "available_evidence": [
+        "close",
+        "daily_ma18",
+        "weekly",
+        "monthly_signal",
+        "annual_signal",
+        "vsa_daily",
+        "vsa_weekly"
+      ],
+      "limitations": [
+        "RRG"
+      ]
+    }
+  ],
+  "priority_tiers": [],
+  "daily_picks": [],
+  "weekly_picks": [],
+  "risks": [
+    "AI coverage is incomplete; do not treat this as a complete market assessment."
+  ],
+  "what_to_watch": [
+    "Review failed batches and rerun AI Pulse after resolving the errors."
+  ],
+  "confidence": "low",
+  "confidence_notes": [
+    "Final AI synthesis was unavailable; successful batch outputs were retained."
+  ],
+  "ai_batch_status": {
+    "total": 9,
+    "succeeded": 5,
+    "failed": 4,
+    "failed_batches": [
+      {
+        "batch": 3,
+        "instrument_count": 25,
+        "symbols": [
+          "SPHB",
+          "USMV",
+          "VIG",
+          "XSUS.TO",
+          "ZLU.TO",
+          "UUP",
+          "IHI",
+          "ITA",
+          "IYT",
+          "KIE",
+          "PAVE",
+          "PEJ",
+          "SOXX",
+          "XBI",
+          "XLB",
+          "XLC",
+          "XLE",
+          "XLF",
+          "XLI",
+          "XLK",
+          "XLP",
+          "XLRE",
+          "XLU",
+          "XLV",
+          "XLY"
+        ],
+        "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5705, Requested 4889. Please try again in 19.455s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+      },
+      {
+        "batch": 4,
+        "instrument_count": 25,
+        "symbols": [
+          "TQSM.TO",
+          "XMC.TO",
+          "XSU.TO",
+          "AIPO",
+          "CIAI.TO",
+          "CIBR.TO",
+          "DATA.TO",
+          "HERO.TO",
+          "RBOT.TO",
+          "TECH.TO",
+          "XDNA.TO",
+          "XEXP.TO",
+          "ZJG.TO",
+          "XIU.TO",
+          "^GSPTSE",
+          "FCCQ.TO",
+          "HEB.TO",
+          "MCLC.TO",
+          "VDY.TO",
+          "WXM.TO",
+          "XCG.TO",
+          "XESG.TO",
+          "ZLB.TO",
+          "ZVC.TO",
+          "MORE.TO"
+        ],
+        "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4837, Requested 6910. Please try again in 28.1025s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/setting"
+      },
+      {
+        "batch": 5,
+        "instrument_count": 25,
+        "symbols": [
+          "RING.TO",
+          "XEG.TO",
+          "XFN.TO",
+          "XIT.TO",
+          "XMA.TO",
+          "XRE.TO",
+          "XST.TO",
+          "XUT.TO",
+          "ZWB.TO",
+          "MCSM.TO",
+          "XCS.TO",
+          "XMD.TO",
+          "MTRX",
+          "RBOT",
+          "SGRD.TO",
+          "DBMF",
+          "PZW.TO",
+          "CGDV.TO",
+          "DRFD.TO",
+          "FCIQ.TO",
+          "RPD.TO",
+          "WSRI.TO",
+          "XEC.TO",
+          "ZEQ.TO",
+          "ZLE.TO"
+        ],
+        "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3972, Requested 6906. Please try again in 21.585s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+      },
+      {
+        "batch": 7,
+        "instrument_count": 25,
+        "symbols": [
+          "IPAY",
+          "SHLD",
+          "STPL.TO",
+          "TEC.TO",
+          "ZDJ.TO",
+          "BOTZ",
+          "CLML.TO",
+          "CWW.TO",
+          "GRID",
+          "NASA",
+          "QTUM",
+          "SRVR",
+          "ZCLN.TO",
+          "HYG",
+          "LQD",
+          "AGG",
+          "BNDX",
+          "EMB",
+          "FLOT",
+          "PFF",
+          "TIP",
+          "VGIT",
+          "XBB",
+          "ZCS.TO",
+          "SHY"
+        ],
+        "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2409, Requested 6924. Please try again in 9.9975s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+      }
+    ]
+  },
+  "ai_status": "partial",
+  "failed_batches": [
+    {
+      "batch": 3,
+      "instrument_count": 25,
+      "symbols": [
+        "SPHB",
+        "USMV",
+        "VIG",
+        "XSUS.TO",
+        "ZLU.TO",
+        "UUP",
+        "IHI",
+        "ITA",
+        "IYT",
+        "KIE",
+        "PAVE",
+        "PEJ",
+        "SOXX",
+        "XBI",
+        "XLB",
+        "XLC",
+        "XLE",
+        "XLF",
+        "XLI",
+        "XLK",
+        "XLP",
+        "XLRE",
+        "XLU",
+        "XLV",
+        "XLY"
+      ],
+      "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5705, Requested 4889. Please try again in 19.455s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+    },
+    {
+      "batch": 4,
+      "instrument_count": 25,
+      "symbols": [
+        "TQSM.TO",
+        "XMC.TO",
+        "XSU.TO",
+        "AIPO",
+        "CIAI.TO",
+        "CIBR.TO",
+        "DATA.TO",
+        "HERO.TO",
+        "RBOT.TO",
+        "TECH.TO",
+        "XDNA.TO",
+        "XEXP.TO",
+        "ZJG.TO",
+        "XIU.TO",
+        "^GSPTSE",
+        "FCCQ.TO",
+        "HEB.TO",
+        "MCLC.TO",
+        "VDY.TO",
+        "WXM.TO",
+        "XCG.TO",
+        "XESG.TO",
+        "ZLB.TO",
+        "ZVC.TO",
+        "MORE.TO"
+      ],
+      "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4837, Requested 6910. Please try again in 28.1025s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/setting"
+    },
+    {
+      "batch": 5,
+      "instrument_count": 25,
+      "symbols": [
+        "RING.TO",
+        "XEG.TO",
+        "XFN.TO",
+        "XIT.TO",
+        "XMA.TO",
+        "XRE.TO",
+        "XST.TO",
+        "XUT.TO",
+        "ZWB.TO",
+        "MCSM.TO",
+        "XCS.TO",
+        "XMD.TO",
+        "MTRX",
+        "RBOT",
+        "SGRD.TO",
+        "DBMF",
+        "PZW.TO",
+        "CGDV.TO",
+        "DRFD.TO",
+        "FCIQ.TO",
+        "RPD.TO",
+        "WSRI.TO",
+        "XEC.TO",
+        "ZEQ.TO",
+        "ZLE.TO"
+      ],
+      "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3972, Requested 6906. Please try again in 21.585s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+    },
+    {
+      "batch": 7,
+      "instrument_count": 25,
+      "symbols": [
+        "IPAY",
+        "SHLD",
+        "STPL.TO",
+        "TEC.TO",
+        "ZDJ.TO",
+        "BOTZ",
+        "CLML.TO",
+        "CWW.TO",
+        "GRID",
+        "NASA",
+        "QTUM",
+        "SRVR",
+        "ZCLN.TO",
+        "HYG",
+        "LQD",
+        "AGG",
+        "BNDX",
+        "EMB",
+        "FLOT",
+        "PFF",
+        "TIP",
+        "VGIT",
+        "XBB",
+        "ZCS.TO",
+        "SHY"
+      ],
+      "error": "RuntimeError: RuntimeError: Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m7zxq6wpen29m0xaabjkragw` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2409, Requested 6924. Please try again in 9.9975s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings"
+    }
+  ],
+  "successful_batch_numbers": [
+    1,
+    2,
+    6,
+    8,
+    9
+  ],
+  "disclaimer": "AI interpretation of supplied Technical Summary fields only. Verify source data; not investment advice."
+}

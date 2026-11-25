@@ -68,20 +68,14 @@ footer{color:var(--muted);font-size:11px;padding:20px 0}
   <div class="metrics">
     <div class="card"><div class="metric-label">Benchmark</div><div class="metric-value" id="benchmark">—</div></div>
     <div class="card"><div class="metric-label">Constituents</div><div class="metric-value" id="count">—</div></div>
-    <div class="card"><div class="metric-label">Return RRG available</div><div class="metric-value" id="returnCount">—</div></div>
-    <div class="card"><div class="metric-label">Volume RRG available</div><div class="metric-value" id="volumeCount">—</div></div>
+    <div class="card"><div class="metric-label">Weekly Price RRG available</div><div class="metric-value" id="returnCount">—</div></div>
   </div>
 
   <div class="charts">
     <section class="chart-card">
-      <h2>Return RRG</h2>
-      <div class="chart-note">Relative strength vs. relative momentum · 100 is the benchmark centre</div>
+      <h2>Weekly Price RRG</h2>
+      <div class="chart-note">Sector leadership based on relative price strength and momentum · 100 is the benchmark centre</div>
       <div id="returnChart"></div>
-    </section>
-    <section class="chart-card">
-      <h2>Volume RRG</h2>
-      <div class="chart-note">Relative volume participation · display values capped at 200</div>
-      <div id="volumeChart"></div>
     </section>
   </div>
 
@@ -91,8 +85,7 @@ footer{color:var(--muted);font-size:11px;padding:20px 0}
     <input id="search" type="search" placeholder="Search sector, ETF or symbol…">
     <select id="metricFilter">
       <option value="all">All classifications</option>
-      <option value="return">Return RRG available</option>
-      <option value="volume">Volume RRG available</option>
+      <option value="return">Weekly Price RRG available</option>
     </select>
     <select id="quadrantFilter">
       <option value="all">All quadrants</option>
@@ -110,7 +103,7 @@ footer{color:var(--muted);font-size:11px;padding:20px 0}
         <thead><tr>
           <th>Sector / ETF</th><th>Symbol</th><th>Weekly Close</th>
           <th>Weekly MA18</th><th>Weekly Pivot</th>
-          <th>Return RRG</th><th>Volume RRG</th><th>History</th>
+          <th>Weekly Price RRG</th><th>History</th>
         </tr></thead>
         <tbody id="rows"><tr><td colspan="8">Loading…</td></tr></tbody>
       </table>
@@ -118,9 +111,9 @@ footer{color:var(--muted);font-size:11px;padding:20px 0}
   </section>
 
   <footer>
-    RRG-style calculations use the project's custom relative-strength and momentum methodology.
-    They are not represented as official JdK RRG indicators. Volume chart values are visually capped;
-    underlying values and quadrant classifications are not changed by that display cap.
+    RRG-style calculations use the project's custom relative-price-strength and momentum methodology.
+    They are not represented as official JdK RRG indicators. Volume behaviour is evaluated separately
+    through Daily and Weekly VSA in the Technical Summary.
   </footer>
 </main>
 
@@ -150,10 +143,7 @@ function getItems(data) {
   return Array.isArray(data?.items) ? data.items : [];
 }
 function getReturn(item) {
-  return item.return_rrg || item.returnRrg || null;
-}
-function getVolume(item) {
-  return item.volume_rrg || item.volumeRrg || null;
+  return item.weekly_price_rrg || item.return_rrg || item.returnRrg || null;
 }
 function getRatio(obj) {
   return num(obj?.rs_ratio ?? obj?.rsRatio);
@@ -165,7 +155,7 @@ function getQuadrant(obj) {
   return String(obj?.quadrant || "unavailable").toLowerCase();
 }
 function getTrail(item, type) {
-  const obj = type === "return" ? getReturn(item) : getVolume(item);
+  const obj = getReturn(item);
   return Array.isArray(obj?.trail) ? obj.trail : [];
 }
 function getName(item) {
@@ -203,19 +193,16 @@ function render() {
   const items = getItems(currentData);
   const benchmark = currentData.benchmark || currentData.benchmark_symbol || "—";
   const returnAvailable = items.filter(i => getRatio(getReturn(i)) !== null).length;
-  const volumeAvailable = items.filter(i => getRatio(getVolume(i)) !== null).length;
 
   $("benchmark").textContent = benchmark;
   $("count").textContent = items.length;
   $("returnCount").textContent = returnAvailable + " / " + items.length;
-  $("volumeCount").textContent = volumeAvailable + " / " + items.length;
 
   const week = currentData.benchmark_latest_week || currentData.latest_completed_week || currentData.as_of || "";
   $("status").textContent = "Market: " + currentMarket.toUpperCase() +
     (week ? " · Latest completed week: " + week : "") +
     " · Select a chart point's trail or use the table filters below.";
   renderChart("returnChart", "return");
-  renderChart("volumeChart", "volume");
   renderTable();
 }
 
@@ -296,22 +283,20 @@ function renderTable() {
   const filtered = items.filter(item => {
     const searchable = [getName(item),item.symbol,item.sector].join(" ").toLowerCase();
     if (query && !searchable.includes(query)) return false;
-    const ret = getReturn(item), vol = getVolume(item);
+    const ret = getReturn(item);
     if (metric==="return" && getRatio(ret)===null) return false;
-    if (metric==="volume" && getRatio(vol)===null) return false;
-    if (quadrant!=="all" &&
-        getQuadrant(ret)!==quadrant && getQuadrant(vol)!==quadrant) return false;
+    if (quadrant!=="all" && getQuadrant(ret)!==quadrant) return false;
     return true;
   });
 
   if (!filtered.length) {
-    $("rows").innerHTML = '<tr><td colspan="8">No matching constituents.</td></tr>';
+    $("rows").innerHTML = '<tr><td colspan="7">No matching constituents.</td></tr>';
     return;
   }
 
   $("rows").innerHTML = filtered.map(item => {
-    const ret=getReturn(item), vol=getVolume(item);
-    const rq=getQuadrant(ret), vq=getQuadrant(vol);
+    const ret=getReturn(item);
+    const rq=getQuadrant(ret);
     const history=item.history_mode || item.history_status || "—";
     return `<tr>
       <td>${esc(getName(item))}</td>
@@ -320,7 +305,6 @@ function renderTable() {
       <td>${fmt(getMA(item))}</td>
       <td>${fmt(getPivot(item))}</td>
       <td><span class="quad ${esc(rq)}">${getRatio(ret)===null?"—":esc(rq)} · ${fmt(getRatio(ret))} / ${fmt(getMomentum(ret))}</span></td>
-      <td><span class="quad ${esc(vq)}">${getRatio(vol)===null?"—":esc(vq)} · ${fmt(getRatio(vol))} / ${fmt(getMomentum(vol))}</span></td>
       <td>${esc(history)}</td>
     </tr>`;
   }).join("");

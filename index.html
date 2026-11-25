@@ -232,10 +232,11 @@ function renderTechnical(){
   const rows=items.map(i=>{
     const daily=technicalSignalRecord(i,'daily_signal');
     const weekly=technicalSignalRecord(i,'weekly_signal');
-    const rotation=rotationRecord(i);
-    const priceRrg=rrgPoint(rotation?.return_rrg);
-    const volumeRrg=rrgPoint(rotation?.volume_rrg);
-    const q=priceRrg?.quadrant||null;
+    const rec=techRec(i), rotation=rec.rotation||{};
+    const weeklyRrg=rrgPoint(rotation.weekly_price_rrg||rotation.return_rrg);
+    const dailyRrg=rrgPoint(rotation.daily_price_rrg);
+    const vsa=rec.vsa||{};
+    const dailyVsa=vsa.daily||{}, weeklyVsa=vsa.weekly||{};
     return {
       Symbol:i.symbol,
       Group:i.market_group,
@@ -252,21 +253,28 @@ function renderTechnical(){
       'Daily Pivot':compactPivot(daily),
       'Weekly Pivot':compactPivot(weekly),
       Coverage:techCoverage(i,STATE.techTf),
-      'Price RRG':rrgQuadrantLabel(q),
-      'RS-Ratio':priceRrg?.rs_ratio??null,
-      'RS-Momentum':priceRrg?.rs_momentum??null,
-      'Volume RRG':rrgQuadrantLabel(volumeRrg?.quadrant),
-      'Rotation Direction':techRec(i)?.combined_interpretation?.rotation_direction?.replaceAll('_',' ')||rotationDirection(priceRrg),
-      'Combined Interpretation':techRec(i)?.combined_interpretation?.interpretation||combinedInterpretation(daily?.signal,weekly?.signal,q),
+      'Weekly Price RRG':rrgQuadrantLabel(weeklyRrg?.quadrant),
+      'Weekly RS-Ratio':weeklyRrg?.rs_ratio??null,
+      'Weekly RS-Momentum':weeklyRrg?.rs_momentum??null,
+      'Daily Price RRG':rrgQuadrantLabel(dailyRrg?.quadrant),
+      'Daily RS-Ratio':dailyRrg?.rs_ratio??null,
+      'Daily RS-Momentum':dailyRrg?.rs_momentum??null,
+      'Daily VSA':dailyVsa.signal||'Unavailable',
+      'Weekly VSA':weeklyVsa.signal||'Unavailable',
+      'VSA Confirmation':rec.combined_interpretation?.vsa_confirmation||'Unavailable',
+      'Rotation Direction':rotationDirection(dailyRrg||weeklyRrg),
+      'Combined Interpretation':rec.combined_interpretation?.interpretation||'Rotation/VSA evidence pending',
       _item:i
     };
   });
-  const rotationCount=base.filter(i=>rotationRecord(i)?.return_rrg).length;
+  const rotationCount=base.filter(i=>techRec(i)?.rotation?.weekly_price_rrg||techRec(i)?.rotation?.return_rrg).length;
+  const dailyRrgCount=base.filter(i=>techRec(i)?.rotation?.daily_price_rrg).length;
+  const vsaCount=base.filter(i=>techRec(i)?.vsa?.daily||techRec(i)?.vsa?.weekly).length;
   document.getElementById('app').innerHTML=`
     <div class="pnl">
       <div class="ptl">
         Technical Analysis — one table, table-level filters
-        <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending · ${rotationCount}/${base.length} with price Rotation</span>
+        <span>${rows.length} shown · ${cov.complete} complete · ${cov.partial} partial · ${cov.pending} pending · Weekly RRG ${rotationCount}/${base.length} · Daily RRG ${dailyRrgCount}/${base.length} · VSA ${vsaCount}/${base.length}</span>
       </div>
       <div class="controls">
         <select class="select" onchange="STATE.techGroup=this.value;STATE.filter='';render()">
@@ -283,7 +291,7 @@ function renderTechnical(){
           <option value="pending" ${STATE.techCoverage==='pending'?'selected':''}>Data pending rows</option>
           <option value="all" ${STATE.techCoverage==='all'?'selected':''}>All ${base.length} instruments</option>
         </select>
-        <input class="search" placeholder="Filter symbol/name/rotation…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()">
+        <input class="search" placeholder="Filter symbol/name/rotation/VSA…" value="${esc(STATE.filter)}" oninput="STATE.filter=this.value;render()">
       </div>
       ${sortableTable(rows,'technical')}
     </div>`;
@@ -299,13 +307,13 @@ function cell(c,v){
   if(c==='Daily Pivot'||c==='Weekly Pivot')
     return `<td class="mono">${esc(v??'—')}</td>`;
 
-  if(c==='RS-Ratio'||c==='RS-Momentum')
+  if(c==='RS-Ratio'||c==='RS-Momentum'||c==='Weekly RS-Ratio'||c==='Weekly RS-Momentum'||c==='Daily RS-Ratio'||c==='Daily RS-Momentum')
     return `<td class="mono">${v===null||v===undefined?'—':num(v).toFixed(2)}</td>`;
 
-  if(c==='Price RRG'||c==='Volume RRG')
+  if(c==='Weekly Price RRG'||c==='Daily Price RRG')
     return `<td>${v==='Unavailable'?'—':`<span class="zone ${String(v).toLowerCase()==='leading'?'best':String(v).toLowerCase()==='improving'?'better':String(v).toLowerCase()==='weakening'?'watch':String(v).toLowerCase()==='lagging'?'bad':'neutral'}">${esc(v)}</span>`}</td>`;
 
-  if(c==='Rotation Direction'||c==='Combined Interpretation')
+  if(c==='Rotation Direction'||c==='Combined Interpretation'||c==='Daily VSA'||c==='Weekly VSA')
     return `<td class="small" style="text-align:left;white-space:normal;min-width:170px;max-width:280px">${esc(v||'—')}</td>`;
 
   if(c==='Level Detail')
